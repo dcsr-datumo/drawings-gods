@@ -4448,8 +4448,7 @@
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-VillageHList> ;
 				knora-base:listNodeName "reconvilier" ;
 				knora-base:listNodePosition 0 ;
-				rdfs:label "Reconvilier"@fr , "Reconvillier"@en .
-
+				rdfs:label "Reconvilier"@fr , "Reconvilier"@en .
 		<http://rdfh.ch/lists/drawings-gods-2016-list-VillageHList-fribourgCanton> a knora-base:ListNode ;
 			knora-base:listNodeName "fribourgCanton" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-VillageHList> ;
