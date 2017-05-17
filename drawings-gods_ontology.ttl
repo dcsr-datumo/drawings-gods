@@ -128,8 +128,10 @@
                      	"Internal comment (annotation)"@en ;
 				   rdfs:comment "Commentaire interne (annotation)"@fr ,
 					 	"Internal comment (annotation)"@en ;
-				   salsah-gui:guiElement salsah-gui:SimpleText ;
-		           salsah-gui:guiOrder "1"^^xsd:integer .
+		         salsah-gui:guiElement salsah-gui:Textarea ;
+		         salsah-gui:guiOrder "2"^^xsd:integer ;
+				 salsah-gui:guiAttribute "width=95%" ,
+		                        		"rows=10" .
 
 ###  http://www.knora.org/ontology/0105#hasInstruction
 ### suppression predicate property inheritance OK
@@ -216,8 +218,10 @@
                      	"Internal comment (campaign)"@en ;
 					 rdfs:comment "Commentaire interne (campagne)"@fr ,
 					 	"Internal comment (campaign)"@en ;
-				 salsah-gui:guiElement salsah-gui:SimpleText ;
-		         salsah-gui:guiOrder "1"^^xsd:integer .
+		         salsah-gui:guiElement salsah-gui:Textarea ;
+		         salsah-gui:guiOrder "2"^^xsd:integer ;
+				 salsah-gui:guiAttribute "width=95%" ,
+		                        		"rows=10" .
 
 
 ###  http://www.knora.org/ontology/0105#hasCampaignDate
@@ -243,8 +247,10 @@
               			"Description of the research campaign"@en ;
 			  		 rdfs:comment "Description de la campagne de recherche."@fr ,
 			  			"Description of the research campaign."@en ;
-			  		 salsah-gui:guiElement salsah-gui:SimpleText ;
-		             salsah-gui:guiOrder "2"^^xsd:integer .
+			         salsah-gui:guiElement salsah-gui:Textarea ;
+			         salsah-gui:guiOrder "2"^^xsd:integer ;
+					 salsah-gui:guiAttribute "width=95%" ,
+			                        		"rows=10" .
 
 
 
@@ -452,8 +458,10 @@
 				"Commentary in English"@en ;
 		   rdfs:comment "Commentaire en anglais."@fr ,
 				"Commentary in English."@en ;
-		   salsah-gui:guiElement salsah-gui:SimpleText ;
-      	   salsah-gui:guiOrder "2"^^xsd:integer .
+         salsah-gui:guiElement salsah-gui:Textarea ;
+         salsah-gui:guiOrder "2"^^xsd:integer ;
+		 salsah-gui:guiAttribute "width=95%" ,
+                        		"rows=10" .
 
 
 
@@ -466,8 +474,10 @@
 				"Commentary in French"@en ;
 		   rdfs:comment "Commentaire en français."@fr ,
 				"Commentary in French."@en ;
-		   salsah-gui:guiElement salsah-gui:SimpleText ;
-      	   salsah-gui:guiOrder "2"^^xsd:integer .
+         salsah-gui:guiElement salsah-gui:Textarea ;
+         salsah-gui:guiOrder "2"^^xsd:integer ;
+		 salsah-gui:guiAttribute "width=95%" ,
+                        		"rows=10" .
 
 
 ###  http://www.knora.org/ontology/0105#hasCommentOriginal
@@ -479,8 +489,10 @@
 					"Commentary in original language"@en ;
 		   		 rdfs:comment "Commentaire du collecteur en langue originale (observations)."@fr ,
 					"Commentary of the collector in original language (observations)."@en ;
-				 salsah-gui:guiElement salsah-gui:SimpleText ;
-	      	   	 salsah-gui:guiOrder "2"^^xsd:integer .
+		         salsah-gui:guiElement salsah-gui:Textarea ;
+		         salsah-gui:guiOrder "2"^^xsd:integer ;
+				 salsah-gui:guiAttribute "width=95%" ,
+		                        		"rows=10" .
 
 
 ###  http://www.knora.org/ontology/0105#hasCommentOriginalLanguage
@@ -506,8 +518,10 @@
 			"Context of collect"@en ;
 		 rdfs:comment "Cadre de l'enseignement (pour un contexte qui peut être multiple - ex.: cours de religion à l'école)."@fr ,
 			"Teaching frame (for a context which can be multiple - ex.: religion scores at school)."@en ;
-		 salsah-gui:guiElement salsah-gui:SimpleText ;
-      	 salsah-gui:guiOrder "2"^^xsd:integer .
+         salsah-gui:guiElement salsah-gui:Textarea ;
+         salsah-gui:guiOrder "2"^^xsd:integer ;
+		 salsah-gui:guiAttribute "width=95%" ,
+                        		"rows=10" .
 
 
 ####  http://www.knora.org/ontology/0105#date
@@ -633,8 +647,10 @@
 			"Collect diary"@en ;
 	   rdfs:comment "Remarques détaillées sur la collecte."@fr ,
 			"Collect diary."@en ;
-	   salsah-gui:guiElement salsah-gui:SimpleText ;
-       salsah-gui:guiOrder "2"^^xsd:integer .
+       salsah-gui:guiElement salsah-gui:Textarea ;
+       salsah-gui:guiOrder "2"^^xsd:integer ;
+	   salsah-gui:guiAttribute "width=95%" ,
+                        		"rows=10" .
 
 
 ###  http://www.knora.org/ontology/0105#hasDrawerAgeAssignedMonth
@@ -723,8 +739,10 @@
                      	"Internal comment (public drawing)"@en ;
 				rdfs:comment "Commentaire interne (en accès public)."@fr ,
 					 	"Internal comment (public drawing)."@en ;
-			 	salsah-gui:guiElement salsah-gui:SimpleText ;
-		        salsah-gui:guiOrder "1"^^xsd:integer .
+		         salsah-gui:guiElement salsah-gui:Textarea ;
+		         salsah-gui:guiOrder "2"^^xsd:integer ;
+				 salsah-gui:guiAttribute "width=95%" ,
+		                        		"rows=10" .
 
 ###  http://www.knora.org/ontology/0105#hasDrawingPrivateComment
 :hasDrawingPrivateComment rdf:type owl:ObjectProperty ;
@@ -735,8 +753,10 @@
                      	"Internal comment (private drawing)"@en ;
 				rdfs:comment "Commentaire interne (dessin en accès restreint)."@fr ,
 					 	"Internal comment (private drawing)."@en ;
-			 	salsah-gui:guiElement salsah-gui:SimpleText ;
-		        salsah-gui:guiOrder "1"^^xsd:integer .
+		         salsah-gui:guiElement salsah-gui:Textarea ;
+		         salsah-gui:guiOrder "2"^^xsd:integer ;
+				 salsah-gui:guiAttribute "width=95%" ,
+		                        		"rows=10" .
 
 
 ###  http://www.knora.org/ontology/0105#hasDrawingDate
@@ -1076,8 +1096,10 @@
                      	"Internal comment (instruction)"@en ;
 					rdfs:comment "Commentaire interne (instruction)"@fr ,
 					 	"Internal comment (instruction)"@en ;
-					salsah-gui:guiElement salsah-gui:SimpleText ;
-		            salsah-gui:guiOrder "1"^^xsd:integer .
+			         salsah-gui:guiElement salsah-gui:Textarea ;
+			         salsah-gui:guiOrder "2"^^xsd:integer ;
+					 salsah-gui:guiAttribute "width=95%" ,
+			                        		"rows=10" .
 
 ###  http://www.knora.org/ontology/0105#hasInstructionCode
 :hasInstructionCode rdf:type owl:ObjectProperty ;
@@ -1736,8 +1758,10 @@
                      	"Internal comment (person)"@en ;
 			   rdfs:comment "Commentaire interne (personne)"@fr ,
 					 	"Internal comment (person)"@en ;
-			   salsah-gui:guiElement salsah-gui:SimpleText ;
-		       salsah-gui:guiOrder "1"^^xsd:integer .
+	         salsah-gui:guiElement salsah-gui:Textarea ;
+	         salsah-gui:guiOrder "2"^^xsd:integer ;
+			 salsah-gui:guiAttribute "width=95%" ,
+	                        		"rows=10" .
 
 ###  http://www.knora.org/ontology/0105#hasPersonLinkedFileComment
 :hasPersonLinkedFileComment rdf:type owl:ObjectProperty ;
@@ -1748,8 +1772,10 @@
                      	"Internal comment (linked files)"@en ;
 			   rdfs:comment "Commentaire interne (fichiers attachés)"@fr ,
 					 	"Internal comment (linked files)"@en ;
-			   salsah-gui:guiElement salsah-gui:SimpleText ;
-		       salsah-gui:guiOrder "1"^^xsd:integer .
+		         salsah-gui:guiElement salsah-gui:Textarea ;
+		         salsah-gui:guiOrder "2"^^xsd:integer ;
+				 salsah-gui:guiAttribute "width=95%" ,
+		                        		"rows=10" .
 
 
 ###  http://www.knora.org/ontology/0105#personContact
@@ -1823,8 +1849,10 @@
                      	"Internal comment (quality control)"@en ;
 			   	rdfs:comment "Commentaire interne (contrôle qualité)"@fr ,
 					 	"Internal comment (quality control)"@en ;
-				salsah-gui:guiElement salsah-gui:SimpleText ;
-		        salsah-gui:guiOrder "1"^^xsd:integer .
+		         salsah-gui:guiElement salsah-gui:Textarea ;
+		         salsah-gui:guiOrder "2"^^xsd:integer ;
+				 salsah-gui:guiAttribute "width=95%" ,
+		                        		"rows=10" .
 
 
 ###  http://www.knora.org/ontology/0105#hasQuestionnaireAvailable
@@ -1875,8 +1903,10 @@
                      		"Internal comment (standardized questionnaire)"@en ;
 			   			  rdfs:comment "Commentaire interne (questionnaire standardisé)"@fr ,
 					 		"Internal comment (standardized questionnaire)"@en ;
-					 	  salsah-gui:guiElement salsah-gui:SimpleText ;
-				          salsah-gui:guiOrder "1"^^xsd:integer .
+				         salsah-gui:guiElement salsah-gui:Textarea ;
+				         salsah-gui:guiOrder "2"^^xsd:integer ;
+						 salsah-gui:guiAttribute "width=95%" ,
+				                        		"rows=10" .
 
 ###  http://www.knora.org/ontology/0105#hasQuestionnaireBaseImageComment
 :hasQuestionnaireBaseImageComment rdf:type owl:ObjectProperty ;
@@ -1887,8 +1917,10 @@
                      		"Internal comment (standardized questionnaire page)"@en ;
 			   			  rdfs:comment "Commentaire interne (page de questionnaire standardisé)"@fr ,
 					 		"Internal comment (standardized questionnaire page)"@en ;
-					 	  salsah-gui:guiElement salsah-gui:SimpleText ;
-				          salsah-gui:guiOrder "3"^^xsd:integer .
+				         salsah-gui:guiElement salsah-gui:Textarea ;
+				         salsah-gui:guiOrder "3"^^xsd:integer ;
+						 salsah-gui:guiAttribute "width=95%" ,
+				                        		"rows=10" .
 
 
 ###  http://www.knora.org/ontology/0105#hasQuestionnaireBaseFile
@@ -1989,8 +2021,10 @@
                      				"Internal comment (individual questionnaire)"@en ;
 			   			  		rdfs:comment "Commentaire interne (questionnaire individuel)"@fr ,
 					 				"Internal comment (individual questionnaire)"@en ;
-					 			salsah-gui:guiElement salsah-gui:SimpleText ;
-						        salsah-gui:guiOrder "1"^^xsd:integer .
+						         salsah-gui:guiElement salsah-gui:Textarea ;
+						         salsah-gui:guiOrder "2"^^xsd:integer ;
+								 salsah-gui:guiAttribute "width=95%" ,
+						                        		"rows=10" .
 
 
 ###  http://www.knora.org/ontology/0105#hasQuestionnairePageComment
@@ -2002,8 +2036,10 @@
                      				"Internal comment (individual questionnaire page)"@en ;
 			   			  		rdfs:comment "Commentaire interne (page de questionnaire individuel)"@fr ,
 					 				"Internal comment (individual questionnaire page)"@en ;
-					 	  salsah-gui:guiElement salsah-gui:SimpleText ;
-				          salsah-gui:guiOrder "1"^^xsd:integer .
+				         salsah-gui:guiElement salsah-gui:Textarea ;
+				         salsah-gui:guiOrder "2"^^xsd:integer ;
+						 salsah-gui:guiAttribute "width=95%" ,
+				                        		"rows=10" .
 
 
 ###  http://www.knora.org/ontology/0105#hasQuestionnairePageFile
@@ -2182,8 +2218,10 @@
              	"Internal comment (collection site)"@en ;
 			 rdfs:comment "Commentaire interne (site de collecte)"@fr ,
 				"Internal comment (collection site)"@en ;
-			 salsah-gui:guiElement salsah-gui:SimpleText ;
-		     salsah-gui:guiOrder "1"^^xsd:integer .
+	         salsah-gui:guiElement salsah-gui:Textarea ;
+	         salsah-gui:guiOrder "2"^^xsd:integer ;
+			 salsah-gui:guiAttribute "width=95%" ,
+	                        		"rows=10" .
 
 
 ###  http://www.knora.org/ontology/0105#hasSiteGender
@@ -2301,7 +2339,7 @@
                 			"Child's comments translator"@en ;
 						 rdfs:comment "Traducteur des commentaires de l’enfant."@fr ,
 			  				"Child's comments translator."@en ;
-			  			 salsah-gui:guiOrder "1"^^xsd:integer ;
+			  			 salsah-gui:guiOrder "5"^^xsd:integer ;
             			 salsah-gui:guiElement salsah-gui:Pulldown ;
                	     salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TranslatorList>" .
 
@@ -2341,8 +2379,10 @@
              	"Internal comment (verso)"@en ;
 			  rdfs:comment "Commentaire interne (verso)"@fr ,
 				"Internal comment (verso)"@en ;
-			  salsah-gui:guiElement salsah-gui:SimpleText ;
-		      salsah-gui:guiOrder "1"^^xsd:integer .
+	         salsah-gui:guiElement salsah-gui:Textarea ;
+	         salsah-gui:guiOrder "2"^^xsd:integer ;
+			 salsah-gui:guiAttribute "width=95%" ,
+	                        		"rows=10" .
 
 
 ###  http://www.knora.org/ontology/0105#versoTranslatorEn
@@ -2395,9 +2435,7 @@
       rdfs:label "Commentaires de l'enfant sur le recto"@fr ,
                "Child's comments on recto"@en ;
 	  rdfs:comment "Propriété à ne pas utiliser directement: à la place, utiliser \"Commentaires de l'enfant sur le recto (anglais)\", \"Commentaires de l'enfant sur le recto (français)\" ou encore \"Commentaires de l'enfant sur le recto en langue originale\"."@fr ,
-	   "Property is not meant to be used directly: use \"Child's comments on recto (English)\", \"Child's comments on recto (French)\" or \"Child's comments on recto in original language\" instead. This property is for query purpose only."@en ;
-	  salsah-gui:guiElement salsah-gui:SimpleText ;
-      salsah-gui:guiOrder "5"^^xsd:integer .
+	   "Property is not meant to be used directly: use \"Child's comments on recto (English)\", \"Child's comments on recto (French)\" or \"Child's comments on recto in original language\" instead. This property is for query purpose only."@en .
 
 
 ###  http://www.knora.org/ontology/0105#hasWordEn
@@ -2409,8 +2447,10 @@
                "Child's comments on recto (English)"@en ;
         rdfs:comment "Commentaires de l'enfant sur le recto (anglais)."@fr ,
                "Child's comments on recto (English)."@en ;
-        salsah-gui:guiElement salsah-gui:SimpleText ;
-        salsah-gui:guiOrder "5"^^xsd:integer .
+       salsah-gui:guiElement salsah-gui:Textarea ;
+       salsah-gui:guiOrder "4"^^xsd:integer ;
+	   salsah-gui:guiAttribute "width=95%" ,
+                        		"rows=10" .
 
 
 ###  http://www.knora.org/ontology/0105#hasWordFr
@@ -2422,8 +2462,10 @@
                "Child's comments on recto (French)"@en ;
         rdfs:comment "Commentaires de l'enfant sur le recto (français)."@fr ,
                "Child's comments on recto (French)."@en ;
-        salsah-gui:guiElement salsah-gui:SimpleText ;
-        salsah-gui:guiOrder "5"^^xsd:integer .
+       salsah-gui:guiElement salsah-gui:Textarea ;
+       salsah-gui:guiOrder "3"^^xsd:integer ;
+	   salsah-gui:guiAttribute "width=95%" ,
+                        		"rows=10" .
 
 
 ###  http://www.knora.org/ontology/0105#hasWordOriginal
@@ -2435,8 +2477,10 @@
                "Child's comments on recto in original language"@en ;
         	  rdfs:comment "Commentaires de l'enfant sur le recto en langue originale."@fr ,
                "Child's comments on recto in original language."@en ;
-              salsah-gui:guiElement salsah-gui:SimpleText ;
-		      salsah-gui:guiOrder "5"^^xsd:integer .
+		       salsah-gui:guiElement salsah-gui:Textarea ;
+		       salsah-gui:guiOrder "2"^^xsd:integer ;
+			   salsah-gui:guiAttribute "width=95%" ,
+		                        		"rows=10" .
 
 
 ###  http://www.knora.org/ontology/0105#hasWordOriginalLanguage
@@ -2449,7 +2493,9 @@
 			   		  rdfs:comment "Langue originale des commentaires de l'enfant sur le recto."@fr ,
 					 			"Original language of child's comments on recto."@en ;
           			  salsah-gui:guiElement salsah-gui:Pulldown ;
+						salsah-gui:guiOrder "1"^^xsd:integer ;
                      salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList>" .
+
 
 #################################################################
 #    Questionnaire properties
@@ -3449,28 +3495,23 @@
                          ] ,
                          [ rdf:type owl:Restriction ;
                            owl:onProperty :hasCodeRecto ;
-#                          owl:cardinality "1"^^xsd:nonNegativeInteger
-						   owl:minCardinality "0"^^xsd:nonNegativeInteger
+                           owl:cardinality "1"^^xsd:nonNegativeInteger
                          ] ,
                          [ rdf:type owl:Restriction ;
                            owl:onProperty :hasDrawingDate ;
-#                           owl:cardinality "1"^^xsd:nonNegativeInteger
-						   owl:minCardinality "0"^^xsd:nonNegativeInteger
+                           owl:cardinality "1"^^xsd:nonNegativeInteger
                          ] ,
                          [ rdf:type owl:Restriction ;
                            owl:onProperty :hasDrawingType ;
-#                           owl:cardinality "1"^^xsd:nonNegativeInteger
-						   owl:minCardinality "0"^^xsd:nonNegativeInteger
+                           owl:cardinality "1"^^xsd:nonNegativeInteger
                          ] ,
                          [ rdf:type owl:Restriction ;
                            owl:onProperty :hasOrientation ;
-#                           owl:cardinality "1"^^xsd:nonNegativeInteger
-						   owl:minCardinality "0"^^xsd:nonNegativeInteger
+                           owl:cardinality "1"^^xsd:nonNegativeInteger
                          ] ,
                          [ rdf:type owl:Restriction ;
                            owl:onProperty :hasDrawingOrder ;
-#                           owl:cardinality "1"^^xsd:nonNegativeInteger
-						   owl:minCardinality "0"^^xsd:nonNegativeInteger
+                           owl:cardinality "1"^^xsd:nonNegativeInteger
                          ] ,
                          [ rdf:type owl:Restriction ;
                            owl:onProperty :hasAgeDecimal ;
@@ -3478,13 +3519,11 @@
                          ] ,
                          [ rdf:type owl:Restriction ;
                            owl:onProperty :hasInstruction ;
-#                           owl:minCardinality "1"^^xsd:nonNegativeInteger
-							owl:minCardinality "0"^^xsd:nonNegativeInteger
+                           owl:minCardinality "1"^^xsd:nonNegativeInteger
                          ] ,
                          [ rdf:type owl:Restriction ;
                            owl:onProperty :hasInstructionValue ;
-#                           owl:minCardinality "1"^^xsd:nonNegativeInteger
-							owl:minCardinality "0"^^xsd:nonNegativeInteger
+                           owl:minCardinality "1"^^xsd:nonNegativeInteger
                          ] ,
                          [ rdf:type owl:Restriction ;
                            owl:onProperty :hasDrawerAgeAssignedMonth ;
@@ -3690,13 +3729,11 @@
         rdfs:subClassOf knora-base:Resource ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasDrawing ;
-                          owl:minCardinality "0"^^xsd:nonNegativeInteger
- #                         owl:minCardinality "1"^^xsd:nonNegativeInteger
+                          owl:minCardinality "1"^^xsd:nonNegativeInteger
                         ] ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasDrawingValue ;
-                          owl:minCardinality "0"^^xsd:nonNegativeInteger
- #                         owl:minCardinality "1"^^xsd:nonNegativeInteger
+                          owl:minCardinality "1"^^xsd:nonNegativeInteger
                         ] ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasLanguageOther ;
@@ -3779,19 +3816,19 @@
                              ] ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty :hasAnnotationAvailable ;
-                               owl:cardinality "1"^^xsd:nonNegativeInteger
+                               owl:maxCardinality "1"^^xsd:nonNegativeInteger
                              ] ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty :hasDescriptionOk ;
-                               owl:cardinality "1"^^xsd:nonNegativeInteger
+                               owl:maxCardinality "1"^^xsd:nonNegativeInteger
                              ] ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty :hasGrayscale ;
-                               owl:cardinality "1"^^xsd:nonNegativeInteger
+                               owl:maxCardinality "1"^^xsd:nonNegativeInteger
                              ] ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty :hasMaterialOk ;
-                               owl:cardinality "1"^^xsd:nonNegativeInteger
+                               owl:maxCardinality "1"^^xsd:nonNegativeInteger
                              ] ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty :hasPhysicalStorage ;
@@ -3799,47 +3836,47 @@
                              ] ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty :hasQuestionnaireAvailable ;
-                               owl:cardinality "1"^^xsd:nonNegativeInteger
+                               owl:maxCardinality "1"^^xsd:nonNegativeInteger
                              ] ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty :hasQuestionnaireComplete ;
-                               owl:cardinality "1"^^xsd:nonNegativeInteger
+                               owl:maxCardinality "1"^^xsd:nonNegativeInteger
                              ] ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty :hasQuestionnaireEntered ;
-                               owl:cardinality "1"^^xsd:nonNegativeInteger
+                               owl:maxCardinality "1"^^xsd:nonNegativeInteger
                              ] ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty :hasRectoAvailable ;
-                               owl:cardinality "1"^^xsd:nonNegativeInteger
+                               owl:maxCardinality "1"^^xsd:nonNegativeInteger
                              ] ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty :hasRectoCleaned ;
-                               owl:cardinality "1"^^xsd:nonNegativeInteger
+                               owl:maxCardinality "1"^^xsd:nonNegativeInteger
                              ] ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty :hasRectoRestricted ;
-                               owl:cardinality "1"^^xsd:nonNegativeInteger
+                               owl:maxCardinality "1"^^xsd:nonNegativeInteger
                              ] ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty :hasRectoToBeCleaned ;
-                               owl:cardinality "1"^^xsd:nonNegativeInteger
+                               owl:maxCardinality "1"^^xsd:nonNegativeInteger
                              ] ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty :hasTaskOk ;
-                               owl:cardinality "1"^^xsd:nonNegativeInteger
+                               owl:maxCardinality "1"^^xsd:nonNegativeInteger
                              ] ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty :hasTextEntered ;
-                               owl:cardinality "1"^^xsd:nonNegativeInteger
+                               owl:maxCardinality "1"^^xsd:nonNegativeInteger
                              ] ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty :hasVersoAvailable ;
-                               owl:cardinality "1"^^xsd:nonNegativeInteger
+                               owl:maxCardinality "1"^^xsd:nonNegativeInteger
                              ] ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty :hasBlankPage ;
-                               owl:cardinality "1"^^xsd:nonNegativeInteger
+                               owl:maxCardinality "1"^^xsd:nonNegativeInteger
                              ] ;
 			rdfs:label "Contrôle qualité des données"@fr ,
              			"Data quality control"@en ;
