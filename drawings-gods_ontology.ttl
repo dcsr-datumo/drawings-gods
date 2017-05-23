@@ -2502,7 +2502,7 @@
 #################################################################
 
 
-###  http://www.knora.org/ontology/0105#religiousAffiliation
+###  http://www.knora.org/ontology/drawings-gods#religiousAffiliation
 :religiousAffiliation rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -2513,349 +2513,9 @@
 							"Religious affiliation or identity recognized or claimed by the child"@en ;
 		                salsah-gui:guiOrder "1"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:List ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList>" .
-
-
-###  http://www.knora.org/ontology/0105#enteredChurch
-:enteredChurch rdf:type owl:ObjectProperty ;
-		                rdfs:subPropertyOf knora-base:hasValue ;
-		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
-		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "Familiarité avec le lieu de culte. Es-tu déjà entré dans l'Eglise?"@fr ,
-							"Familiarity with place of worship. Have you ever entered a Church?"@en ;
-						rdfs:comment "Familiarité avec le lieu de culte. Es-tu déjà entré dans l'Eglise?"@fr ,
-							"Familiarity with place of worship. Have you ever entered a Church?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
-		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
-
-###  http://www.knora.org/ontology/0105#enteredChurchHowOften
-:enteredChurchHowOften rdf:type owl:ObjectProperty ;
-		                rdfs:subPropertyOf knora-base:hasValue ;
-		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
-		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "Familiarité avec le lieu de culte: Eglise. Fréquence?"@fr ,
-							"Familiarity with place of worship: Church. How often?"@en ;
-						rdfs:comment "Familiarité avec le lieu de culte: Eglise Fréquence?"@fr ,
-							"Familiarity with place of worship: Church. How often?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
-		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
-
-
-###	http://www.knora.org/ontology/0105#enteredMosque
-:enteredMosque rdf:type owl:ObjectProperty ;
-		                rdfs:subPropertyOf knora-base:hasValue ;
-		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
-		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "Familiarité avec le lieu de culte. Es-tu déjà entré dans la mosquée?"@fr ,
-							"Familiarity with place of worship. Have you ever entered a Mosque?"@en ;
-						rdfs:comment "Familiarité avec le lieu de culte. Es-tu déjà entré dans la mosquée?"@fr ,
-							"Familiarity with place of worship. Have you ever entered a Mosque?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
-		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
-
-###	http://www.knora.org/ontology/0105#enteredMosqueHowOften
-:enteredMosqueHowOften rdf:type owl:ObjectProperty ;
-		                rdfs:subPropertyOf knora-base:hasValue ;
-		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
-		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "Familiarité avec le lieu de culte: la mosquée. Fréquence?"@fr ,
-							"Familiarity with place of worship: Mosque. How often?"@en ;
-						rdfs:comment "Familiarité avec le lieu de culte: la mosquée. Fréquence?"@fr ,
-							"Familiarity with place of worship: Mosque. How often?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
-		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
-
-###	http://www.knora.org/ontology/0105#enteredBuddhistTemple
-:enteredBuddhistTemple rdf:type owl:ObjectProperty ;
-		                rdfs:subPropertyOf knora-base:hasValue ;
-		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
-		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "Familiarité avec le lieu de culte. Es-tu déjà entré dans un temple bouddhiste?"@fr ,
-							"Familiarity with place of worship. Have you ever entered a Buddhist temple?"@en ;
-						rdfs:comment "Familiarité avec le lieu de culte. Es-tu déjà entré dans  un temple bouddhiste?"@fr ,
-							"Familiarity with place of worship. Have you ever entered a Buddhist temple?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
-		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
-
-###	http://www.knora.org/ontology/0105#enteredBuddhistTempleHowOften
-:enteredBuddhistTempleHowOften rdf:type owl:ObjectProperty ;
-		                rdfs:subPropertyOf knora-base:hasValue ;
-		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
-		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "Familiarité avec le lieu de culte: temple bouddhiste. Fréquence?"@fr ,
-							"Familiarity with place of worship: Buddhist temple. How often?"@en ;
-						rdfs:comment "Familiarité avec le lieu de culte: temple bouddhiste. Fréquence?"@fr ,
-							"Familiarity with place of worship: Buddhist temple. How often?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
-		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
-
-###	http://www.knora.org/ontology/0105#enteredHinduTemple
-:enteredHinduTemple rdf:type owl:ObjectProperty ;
-		                rdfs:subPropertyOf knora-base:hasValue ;
-		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
-		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "Familiarité avec le lieu de culte. Es-tu déjà entré dans un temple hindou?"@fr ,
-							"Familiarity with place of worship. Have you ever entered a Hindu temple?"@en ;
-						rdfs:comment "Familiarité avec le lieu de culte. Es-tu déjà entré dans un temple hindou?"@fr ,
-							"Familiarity with place of worship. Have you ever entered a Hindu temple?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
-		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
-
-###	http://www.knora.org/ontology/0105#enteredHinduTempleHowOften
-:enteredHinduTempleHowOften rdf:type owl:ObjectProperty ;
-		                rdfs:subPropertyOf knora-base:hasValue ;
-		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
-		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "Familiarité avec le lieu de culte: temple hindou. Fréquence?"@fr ,
-							"Familiarity with place of worship: Hindu temple. How often?"@en ;
-						rdfs:comment "Familiarité avec le lieu de culte: temple hindou. Fréquence?"@fr ,
-							"Familiarity with place of worship: Hindu temple. How often?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
-		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
-
-###	http://www.knora.org/ontology/0105#enteredSynagogue
-:enteredSynagogue rdf:type owl:ObjectProperty ;
-		                rdfs:subPropertyOf knora-base:hasValue ;
-		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
-		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "Familiarité avec le lieu de culte. Es-tu déjà entré dans une synagogue?"@fr ,
-							"Familiarity with place of worship. Have you ever entered a Synagogue?"@en ;
-						rdfs:comment "Familiarité avec le lieu de culte. Es-tu déjà entré dans une synagogue?"@fr ,
-							"Familiarity with place of worship. Have you ever entered a Synagogue?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
-		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
-
-###	http://www.knora.org/ontology/0105#enteredSynagogueHowOften
-:enteredSynagogueHowOften rdf:type owl:ObjectProperty ;
-		                rdfs:subPropertyOf knora-base:hasValue ;
-		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
-		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "Familiarité avec le lieu de culte: synagogue. Fréquence?"@fr ,
-							"Familiarity with place of worship: Synagogue. How often?"@en ;
-						rdfs:comment "Familiarité avec le lieu de culte: synagogue Fréquence?"@fr ,
-							"Familiarity with place of worship: Synagogue. How often?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
-		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
-
-###	http://www.knora.org/ontology/0105#enteredZorotemple
-:enteredZorotemple rdf:type owl:ObjectProperty ;
-		                rdfs:subPropertyOf knora-base:hasValue ;
-		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
-		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "Familiarité avec le lieu de culte. Es-tu déjà entré dans une temple Zoroastrien?"@fr ,
-							"Familiarity with place of worship. Have you ever entered a  Zoroastrian temple?"@en ;
-						rdfs:comment "Familiarité avec le lieu de culte. Es-tu déjà entré dans une temple Zoroastrien?"@fr ,
-							"Familiarity with place of worship. Have you ever entered a  Zoroastrian temple?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
-		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
-
-###	http://www.knora.org/ontology/0105#enteredZorotempleHowOften
-:enteredZorotempleHowOften rdf:type owl:ObjectProperty ;
-		                rdfs:subPropertyOf knora-base:hasValue ;
-		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
-		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "Familiarité avec le lieu de culte: temple Zoroastrien. Fréquence?"@fr ,
-							"Familiarity with place of worship: Zoroastrian temple. How often?"@en ;
-						rdfs:comment "Familiarité avec le lieu de culte: temple Zoroastrien Fréquence?"@fr ,
-							"Familiarity with place of worship: Zoroastrian temple. How often?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
-		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
-
-###	http://www.knora.org/ontology/0105#enteredTempleNotDefined
-:enteredTempleNotDefined rdf:type owl:ObjectProperty ;
-		                rdfs:subPropertyOf knora-base:hasValue ;
-		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
-		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "Familiarité avec le lieu de culte. Es-tu déjà entré dans un temple quelconque?"@fr ,
-							"Familiarity with place of worship. Have you ever entered any non specific temple?"@en ;
-						rdfs:comment "Familiarité avec le lieu de culte. Es-tu déjà entré dans un temple quelconque?"@fr ,
-							"Familiarity with place of worship. Have you ever entered any non specific temple?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
-		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
-
-###	http://www.knora.org/ontology/0105#enteredTempleNotDefinedHowOften
-:enteredTempleNotDefinedHowOften rdf:type owl:ObjectProperty ;
-		                rdfs:subPropertyOf knora-base:hasValue ;
-		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
-		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "Familiarité avec le lieu de culte: temple quelconque. Fréquence?"@fr ,
-							"Familiarity with place of worship: any unspecific temple. How often?"@en ;
-						rdfs:comment "Familiarité avec le lieu de culte: temple quelconque. Fréquence?"@fr ,
-							"Familiarity with place of worship: any unspecific temple. How often?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
-		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
-
-###	http://www.knora.org/ontology/0105#enteredJinjyaOrOtera
-:enteredJinjyaOrOtera rdf:type owl:ObjectProperty ;
-		                rdfs:subPropertyOf knora-base:hasValue ;
-		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
-		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "Est-ce que vous visitez un temple (jinjya ou otéra) en dehors du Nouvel An?"@fr ,
-							"Do you get to visit a temple (jinjya or otera) besides New Year's Eve?"@en ;
-						rdfs:comment "Est-ce que vous visitez un temple (jinjya ou otéra) en dehors du Nouvel An?"@fr ,
-							"Do you get to visit a temple (jinjya or otera) besides New Year's Eve?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
-		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
-
-###	http://www.knora.org/ontology/0105#enteredJinjyaOrOteraHowOften
-:enteredJinjyaOrOteraHowOften rdf:type owl:ObjectProperty ;
-		                rdfs:subPropertyOf knora-base:hasValue ;
-		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
-		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "Familiarité avec le lieu de culte: jinjya ou otera. Fréquence?"@fr ,
-							"Familiarity with place of worship: jinjya or otera How often?"@en ;
-						rdfs:comment "Familiarité avec le lieu de culte: jinjya ou otera. Fréquence?"@fr ,
-							"Familiarity with place of worship: jinjya or otera How often?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
-		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
-
-###	http://www.knora.org/ontology/0105#jinjyaOrOteraNewYearsEve
-:jinjyaOrOteraNewYearsEve rdf:type owl:ObjectProperty ;
-		                rdfs:subPropertyOf knora-base:hasValue ;
-		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
-		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "Est-ce que vous visitez un temple (jinjya ou otéra) pour le Nouvel An?"@fr ,
-							"Do you get to visit a temple (jinjya or otera) on New Year's Eve?"@en ;
-						rdfs:comment "Est-ce que vous visitez un temple (jinjya ou otéra) pour le Nouvel An?"@fr ,
-							"Do you get to visit a temple (jinjya or otera) on New Year's Eve?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
-		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
-
-###	http://www.knora.org/ontology/0105#jinjya
-:jinjya rdf:type owl:ObjectProperty ;
-		                rdfs:subPropertyOf knora-base:hasValue ;
-		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
-		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "Est-ce que vous visitez un jinjya en dehors du Nouvel An?"@fr ,
-							"Do you get to visit a jinjya besides New Year's Eve?"@en ;
-						rdfs:comment "Est-ce que vous visitez un jinjya en dehors du Nouvel An?"@fr ,
-							"Do you get to visit a jinjya besides New Year's Eve?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
-		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
-
-###	http://www.knora.org/ontology/0105#jinjyaHowOften
-:jinjyaHowOften rdf:type owl:ObjectProperty ;
-		                rdfs:subPropertyOf knora-base:hasValue ;
-		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
-		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "Familiarité avec le lieu de culte: jinjya. Fréquence?"@fr ,
-							"Familiarity with place of worship: jinjya. How often?"@en ;
-						rdfs:comment "Familiarité avec le lieu de culte: jinjya. Fréquence?"@fr ,
-							"Familiarity with place of worship: jinjya. How often?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
-		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
-
-###	http://www.knora.org/ontology/0105#jinjyaNewYearsEve
-:jinjyaNewYearsEve rdf:type owl:ObjectProperty ;
-		                rdfs:subPropertyOf knora-base:hasValue ;
-		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
-		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "Est-ce que vous visitez un jinjya pour le Nouvel An?"@fr ,
-							"Do you get to visit a jinjya on New Year's Eve?"@en ;
-						rdfs:comment "Est-ce que vous visitez un jinjya pour le Nouvel An?"@fr ,
-							"Do you get to visit a jinjya on New Year's Eve?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
-		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
-
-###	http://www.knora.org/ontology/0105#otera
-:otera rdf:type owl:ObjectProperty ;
-		                rdfs:subPropertyOf knora-base:hasValue ;
-		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
-		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "Est-ce que vous visitez un otéra en dehors du Nouvel An?"@fr ,
-							"Do you get to visit an otera besides New Year's Eve?"@en ;
-						rdfs:comment "Est-ce que vous visitez un otéra en dehors du Nouvel An?"@fr ,
-							"Do you get to visit an otera besides New Year's Eve?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
-		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
-
-###	http://www.knora.org/ontology/0105#oteraHowOften
-:oteraHowOften rdf:type owl:ObjectProperty ;
-		                rdfs:subPropertyOf knora-base:hasValue ;
-		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
-		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "Familiarité avec le lieu de culte: otera. Fréquence?"@fr ,
-							"Familiarity with place of worship: otera. How often?"@en ;
-						rdfs:comment "Familiarité avec le lieu de culte: otera. Fréquence?"@fr ,
-							"Familiarity with place of worship: otera. How often?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
-		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
-
-###	http://www.knora.org/ontology/0105#oteraNewYearsEve
-:oteraNewYearsEve rdf:type owl:ObjectProperty ;
-		                rdfs:subPropertyOf knora-base:hasValue ;
-		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
-		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "Est-ce que vous visitez un otera pour le Nouvel An?"@fr ,
-							"Do you get to visit an otera on New Year's Eve?"@en ;
-						rdfs:comment "Est-ce que vous visitez un otera pour le Nouvel An?"@fr ,
-							"Do you get to visit an otera on New Year's Eve?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
-		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
-
-###	http://www.knora.org/ontology/0105#visitOnNewYearsEve
-:visitOnNewYearsEve rdf:type owl:ObjectProperty ;
-		                rdfs:subPropertyOf knora-base:hasValue ;
-		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
-		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "Quel temple visitez-vous au Nouvel An?"@fr ,
-							"Which temple do you get to visit on New Year's Eve?"@en ;
-						rdfs:comment "Quel temple visitez-vous au Nouvel An?"@fr ,
-							"Which temple do you get to visit on New Year's Eve?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
-		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-JapanNYListQ>" .
-
-###	http://www.knora.org/ontology/0105#cultObjectAtHomePresence
-:cultObjectAtHomePresence rdf:type owl:ObjectProperty ;
-		                rdfs:subPropertyOf knora-base:hasValue ;
-		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
-		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "Est-ce que tu as un budsudan ou un kamidana à la maison?"@fr ,
-							"Do you have a budsudan or a kamidana at home?"@en ;
-						rdfs:comment "Est-ce que tu as un budsudan ou un kamidana à la maison?"@fr ,
-							"Do you have a budsudan or a kamidana at home?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
-		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
-
-###	http://www.knora.org/ontology/0105#cultObjectAtHomePresenceWhich
-:cultObjectAtHomePresenceWhich rdf:type owl:ObjectProperty ;
-		                rdfs:subPropertyOf knora-base:hasValue ;
-		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
-		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "A la maison, as-tu un budsudan ou un kamidana?"@fr ,
-							"Which one do you have at home: a budsudan or a kamidana?"@en ;
-						rdfs:comment "A la maison, as-tu un budsudan ou un kamidana?"@fr ,
-							"Which one do you have at home: a budsudan or a kamidana?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
-		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-JapanObjectListQ>" .
-
-###	http://www.knora.org/ontology/0105#knowWhatWordGodMeans
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-ReligiousIdentityHList>" .
+		                
+###	http://www.knora.org/ontology/drawings-gods#knowWhatWordGodMeans
 :knowWhatWordGodMeans rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -2866,282 +2526,9 @@
 							"Do you know what the word god mean?"@en ;
 		                salsah-gui:guiOrder "1"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
-
-###	http://www.knora.org/ontology/0105#knowWhoBuddhaIs
-:knowWhoBuddhaIs rdf:type owl:ObjectProperty ;
-		                rdfs:subPropertyOf knora-base:hasValue ;
-		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
-		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "Sais-tu qui est Bouddha?"@fr ,
-							"Do you know who Buddha is?"@en ;
-						rdfs:comment "Sais-tu qui est Bouddha?"@fr ,
-							"Do you know who Buddha is?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
-		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
-
-###	http://www.knora.org/ontology/0105#ifIToldYouGodCouldYouDrawJesus
-:ifIToldYouGodCouldYouDrawJesus rdf:type owl:ObjectProperty ;
-		                rdfs:subPropertyOf knora-base:hasValue ;
-		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
-		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "Si je te dis dieu, pourrais-tu dessiner Jésus?"@fr ,
-							"If I told you god could you draw Jesus?"@en ;
-						rdfs:comment "Si je te dis dieu, pourrais-tu dessiner Jésus?"@fr ,
-							"If I told you god could you draw Jesus?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
-		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
-
-###	http://www.knora.org/ontology/0105#ifIToldYouGodCouldYouDrawMary
-:ifIToldYouGodCouldYouDrawMary rdf:type owl:ObjectProperty ;
-		                rdfs:subPropertyOf knora-base:hasValue ;
-		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
-		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "Si je te dis dieu, pourrais-tu dessiner Marie?"@fr ,
-							"If I told you god could you draw Mary?"@en ;
-						rdfs:comment "Si je te dis dieu, pourrais-tu dessiner Marie?"@fr ,
-							"If I told you god could you draw Mary?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
-		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
-
-###	http://www.knora.org/ontology/0105#ifIToldYouGodCouldYouDrawMuhammad
-:ifIToldYouGodCouldYouDrawMuhammad rdf:type owl:ObjectProperty ;
-		                rdfs:subPropertyOf knora-base:hasValue ;
-		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
-		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "Si je te dis dieu, pourrais-tu dessiner Mohammed?"@fr ,
-							"If I told you god could you draw Muhammad?"@en ;
-						rdfs:comment "Si je te dis dieu, pourrais-tu dessiner Mohammed?"@fr ,
-							"If I told you god could you draw Muhammad?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
-		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
-
-###	http://www.knora.org/ontology/0105#ifIToldYouGodCouldYouDrawAllah
-:ifIToldYouGodCouldYouDrawAllah rdf:type owl:ObjectProperty ;
-		                rdfs:subPropertyOf knora-base:hasValue ;
-		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
-		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "Si je te dis dieu, pourrais-tu dessiner Allah?"@fr ,
-							"If I told you god could you draw Allah?"@en ;
-						rdfs:comment "Si je te dis dieu, pourrais-tu dessiner Allah?"@fr ,
-							"If I told you god could you draw Allah?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
-		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
-
-###	http://www.knora.org/ontology/0105#ifIToldYouGodCouldYouDrawBuddha
-:ifIToldYouGodCouldYouDrawBuddha rdf:type owl:ObjectProperty ;
-		                rdfs:subPropertyOf knora-base:hasValue ;
-		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
-		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "Si je te dis dieu, pourrais-tu dessiner Bouddha?"@fr ,
-							"If I told you god could you draw Buddha?"@en ;
-						rdfs:comment "Si je te dis dieu, pourrais-tu dessiner Bouddha?"@fr ,
-							"If I told you god could you draw Buddha?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
-		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
-
-###	http://www.knora.org/ontology/0105#ifIToldYouGodCouldYouDrawMoses
-:ifIToldYouGodCouldYouDrawMoses rdf:type owl:ObjectProperty ;
-		                rdfs:subPropertyOf knora-base:hasValue ;
-		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
-		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "Si je te dis dieu, pourrais-tu dessiner Moïse?"@fr ,
-							"If I told you god could you draw Moses?"@en ;
-						rdfs:comment "Si je te dis dieu, pourrais-tu dessiner Moïse?"@fr ,
-							"If I told you god could you draw Moses?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
-		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
-
-###	http://www.knora.org/ontology/0105#ifIToldYouGodCouldYouDrawZoro
-:ifIToldYouGodCouldYouDrawZoro rdf:type owl:ObjectProperty ;
-		                rdfs:subPropertyOf knora-base:hasValue ;
-		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
-		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "Si je te dis dieu, pourrais-tu dessiner Zoroastre?"@fr ,
-							"If I told you god could you draw Zoroaster?"@en ;
-						rdfs:comment "Si je te dis dieu, pourrais-tu dessiner Zoroastre?"@fr ,
-							"If I told you god could you draw Zoroaster?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
-		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
-
-###	http://www.knora.org/ontology/0105#ifIToldYouGodCouldYouDrawDoNotKnow
-:ifIToldYouGodCouldYouDrawDoNotKnow rdf:type owl:ObjectProperty ;
-		                rdfs:subPropertyOf knora-base:hasValue ;
-		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
-		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "Si je te dis dieu, pourrais-tu dessiner je ne sais pas quoi?"@fr ,
-							"If I told you god could you draw no matter what?"@en ;
-						rdfs:comment "Si je te dis dieu, pourrais-tu dessiner je ne sais pas quoi?"@fr ,
-							"If I told you god could you draw no matter what?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
-		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
-
-###	http://www.knora.org/ontology/0105#ifIToldYouGodCouldYouDrawSomethingElse
-:ifIToldYouGodCouldYouDrawSomethingElse rdf:type owl:ObjectProperty ;
-		                rdfs:subPropertyOf knora-base:hasValue ;
-		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
-		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "Si je te dis dieu, pourrais-tu dessiner quelquechose de différent?"@fr ,
-							"If I told you god could you draw something different?"@en ;
-						rdfs:comment "Si je te dis dieu, pourrais-tu dessiner quelquechose de différent?"@fr ,
-							"If I told you god could you draw something different?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
-		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
-
-###	http://www.knora.org/ontology/0105#seenOtherPeoplePray
-:seenOtherPeoplePray rdf:type owl:ObjectProperty ;
-		                rdfs:subPropertyOf knora-base:hasValue ;
-		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
-		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "As-tu déjà vu des gens prier?"@fr ,
-							"Have you ever seen other people pray?"@en ;
-						rdfs:comment "As-tu déjà vu des gens prier?"@fr ,
-							"Have you ever seen other people pray?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
-		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
-
-###	http://www.knora.org/ontology/0105#seenOtherPeoplePrayWhen
-:seenOtherPeoplePrayWhen rdf:type owl:ObjectProperty ;
-		                rdfs:subPropertyOf knora-base:hasValue ;
-		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
-		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "A quel moment as-tu déjà vu des gens prier?"@fr ,
-							"When/how often did you see other people pray?"@en ;
-						rdfs:comment "A quel moment as-tu déjà vu des gens prier?"@fr ,
-							"When/how often did you see other people pray?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
-		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
-
-###	http://www.knora.org/ontology/0105#prayingAtHome
-:prayingAtHome rdf:type owl:ObjectProperty ;
-		                rdfs:subPropertyOf knora-base:hasValue ;
-		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
-		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "Est-ce que tu pries à la maison?"@fr ,
-							"Do you pray at home?"@en ;
-						rdfs:comment "Est-ce que tu pries à la maison?"@fr ,
-							"Do you pray at home?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
-		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
-
-###	http://www.knora.org/ontology/0105#prayingAtHomeWhen
-:prayingAtHomeWhen rdf:type owl:ObjectProperty ;
-		                rdfs:subPropertyOf knora-base:hasValue ;
-		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
-		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "Quand est-ce que tu pries à la maison?"@fr ,
-							"When do you pray at home?"@en ;
-						rdfs:comment "Quand est-ce que tu pries à la maison?"@fr ,
-							"When do you pray at home?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
-		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
-
-###	http://www.knora.org/ontology/0105#prayingWithOtherPeople
-:prayingWithOtherPeople rdf:type owl:ObjectProperty ;
-		                rdfs:subPropertyOf knora-base:hasValue ;
-		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
-		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "Est-ce que tu pries avec d'autres gens?"@fr ,
-							"Do you get to pray with other people?"@en ;
-						rdfs:comment "Est-ce que tu pries avec d'autres gens?"@fr ,
-							"Do you get to pray with other people?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
-		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
-
-###	http://www.knora.org/ontology/0105#prayingWithOtherPeopleHowOften
-:prayingWithOtherPeopleHowOften rdf:type owl:ObjectProperty ;
-		                rdfs:subPropertyOf knora-base:hasValue ;
-		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
-		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "A quelle fréquence pries-tu avec d'autres gens?"@fr ,
-							"How often do you get to pray with other people?"@en ;
-						rdfs:comment "A quelle fréquence pries-tu avec d'autres gens?"@fr ,
-							"How often do you get to pray with other people?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
-		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
-
-###	http://www.knora.org/ontology/0105#prayingAlone
-:prayingAlone rdf:type owl:ObjectProperty ;
-		                rdfs:subPropertyOf knora-base:hasValue ;
-		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
-		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "Est-ce qu'il t'arrive de prier seul-e?"@fr ,
-							"Do you ever pray alone?"@en ;
-						rdfs:comment "Est-ce qu'il t'arrive de prier seul-e?"@fr ,
-							"Do you ever pray alone?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
-		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
-
-###	http://www.knora.org/ontology/0105#prayingAloneHowOften
-:prayingAloneHowOften rdf:type owl:ObjectProperty ;
-		                rdfs:subPropertyOf knora-base:hasValue ;
-		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
-		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "A quelle fréquence pries-tu seul-e?"@fr ,
-							"How often do you get to pray alone?"@en ;
-						rdfs:comment "A quelle fréquence pries-tu seul-e?"@fr ,
-							"How often do you get to pray alone?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
-		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
-
-###	http://www.knora.org/ontology/0105#whereIsGod
-:whereIsGod rdf:type owl:ObjectProperty ;
-		                rdfs:subPropertyOf knora-base:hasValue ;
-		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
-		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "Selon toi, dieu se trouve à..."@fr ,
-							"According to you god is located in..."@en ;
-						rdfs:comment "Selon toi, dieu se trouve à..."@fr ,
-							"According to you god is located in..."@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
-		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-LocGodListQ>" .
-
-###	http://www.knora.org/ontology/0105#sexOfGod
-:sexOfGod rdf:type owl:ObjectProperty ;
-		                rdfs:subPropertyOf knora-base:hasValue ;
-		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
-		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "Sexe de dieu"@fr ,
-							"Sex of god"@en ;
-						rdfs:comment "Sexe de dieu"@fr ,
-							"Sex of god"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
-		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-GodSexListQ>" .
-
-###	http://www.knora.org/ontology/0105#ageOfGod
-:ageOfGod rdf:type owl:ObjectProperty ;
-		                rdfs:subPropertyOf knora-base:hasValue ;
-		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
-		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "Age de dieu"@fr ,
-							"Age of god"@en ;
-						rdfs:comment "Age de dieu"@fr ,
-							"Age of god"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
-		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-GodAgeListQ>" .
-
-###	http://www.knora.org/ontology/0105#alreadyDrawnGodInThePast
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .		                
+		                
+###	http://www.knora.org/ontology/drawings-gods#alreadyDrawnGodInThePast
 :alreadyDrawnGodInThePast rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3152,9 +2539,178 @@
 							"Have you ever happened to draw god in the past?"@en ;
 		                salsah-gui:guiOrder "1"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
+		                
+###	http://www.knora.org/ontology/drawings-gods#whereIsGod
+:whereIsGod rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:ListValue ;
+						rdfs:label "Selon toi, dieu se trouve à..."@fr ,
+							"According to you god is located in..."@en ;
+						rdfs:comment "Selon toi, dieu se trouve à..."@fr ,
+							"According to you god is located in..."@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Pulldown ;
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-LocGodListQ>" .
 
-###	http://www.knora.org/ontology/0105#baptized
+###	http://www.knora.org/ontology/drawings-gods#ifIToldYouGodCouldYouDrawDoNotKnow
+:ifIToldYouGodCouldYouDrawDoNotKnow rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:ListValue ;
+						rdfs:label "Si je te dis dieu, pourrais-tu dessiner je ne sais pas quoi?"@fr ,
+							"If I told you god could you draw no matter what?"@en ;
+						rdfs:comment "Si je te dis dieu, pourrais-tu dessiner je ne sais pas quoi?"@fr ,
+							"If I told you god could you draw no matter what?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Pulldown ;
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
+
+###	http://www.knora.org/ontology/drawings-gods#ifIToldYouGodCouldYouDrawSomethingElse
+:ifIToldYouGodCouldYouDrawSomethingElse rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:ListValue ;
+						rdfs:label "Si je te dis dieu, pourrais-tu dessiner quelquechose de différent?"@fr ,
+							"If I told you god could you draw something different?"@en ;
+						rdfs:comment "Si je te dis dieu, pourrais-tu dessiner quelquechose de différent?"@fr ,
+							"If I told you god could you draw something different?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Pulldown ;
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
+
+###	http://www.knora.org/ontology/drawings-gods#prayingAtHome
+:prayingAtHome rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:ListValue ;
+						rdfs:label "Est-ce que tu pries à la maison?"@fr ,
+							"Do you pray at home?"@en ;
+						rdfs:comment "Est-ce que tu pries à la maison?"@fr ,
+							"Do you pray at home?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Pulldown ;
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
+
+###	http://www.knora.org/ontology/drawings-gods#seenOtherPeoplePray
+:seenOtherPeoplePray rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:ListValue ;
+						rdfs:label "As-tu déjà vu des gens prier?"@fr ,
+							"Have you ever seen other people pray?"@en ;
+						rdfs:comment "As-tu déjà vu des gens prier?"@fr ,
+							"Have you ever seen other people pray?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Pulldown ;
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
+
+###	http://www.knora.org/ontology/drawings-gods#seenOtherPeoplePrayWhen
+:seenOtherPeoplePrayWhen rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:ListValue ;
+						rdfs:label "A quel moment as-tu déjà vu des gens prier?"@fr ,
+							"When/how often did you see other people pray?"@en ;
+						rdfs:comment "A quel moment as-tu déjà vu des gens prier?"@fr ,
+							"When/how often did you see other people pray?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Pulldown ;
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
+		                
+###	http://www.knora.org/ontology/drawings-gods#prayingWithOtherPeople
+:prayingWithOtherPeople rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:ListValue ;
+						rdfs:label "Est-ce que tu pries avec d'autres gens?"@fr ,
+							"Do you get to pray with other people?"@en ;
+						rdfs:comment "Est-ce que tu pries avec d'autres gens?"@fr ,
+							"Do you get to pray with other people?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Pulldown ;
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
+		                
+###	http://www.knora.org/ontology/drawings-gods#prayingWithOtherPeopleHowOften
+:prayingWithOtherPeopleHowOften rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:ListValue ;
+						rdfs:label "A quelle fréquence pries-tu avec d'autres gens?"@fr ,
+							"How often do you get to pray with other people?"@en ;
+						rdfs:comment "A quelle fréquence pries-tu avec d'autres gens?"@fr ,
+							"How often do you get to pray with other people?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Pulldown ;
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
+		                
+###	http://www.knora.org/ontology/drawings-gods#prayingAlone
+:prayingAlone rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:ListValue ;
+						rdfs:label "Est-ce qu'il t'arrive de prier seul-e?"@fr ,
+							"Do you ever pray alone?"@en ;
+						rdfs:comment "Est-ce qu'il t'arrive de prier seul-e?"@fr ,
+							"Do you ever pray alone?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Pulldown ;
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .		                
+
+###	http://www.knora.org/ontology/drawings-gods#prayingAloneHowOften
+:prayingAloneHowOften rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:ListValue ;
+						rdfs:label "A quelle fréquence pries-tu seul-e?"@fr ,
+							"How often do you get to pray alone?"@en ;
+						rdfs:comment "A quelle fréquence pries-tu seul-e?"@fr ,
+							"How often do you get to pray alone?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Pulldown ;
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
+
+###	http://www.knora.org/ontology/drawings-gods#prayingAtHomeWhen
+:prayingAtHomeWhen rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:ListValue ;
+						rdfs:label "Quand est-ce que tu pries à la maison?"@fr ,
+							"When do you pray at home?"@en ;
+						rdfs:comment "Quand est-ce que tu pries à la maison?"@fr ,
+							"When do you pray at home?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Pulldown ;
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
+		                
+###  http://www.knora.org/ontology/drawings-gods#enteredChurch
+:enteredChurch rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:ListValue ;
+						rdfs:label "Familiarité avec le lieu de culte. Es-tu déjà entré dans l'Eglise?"@fr ,
+							"Familiarity with place of worship. Have you ever entered a Church?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte. Es-tu déjà entré dans l'Eglise?"@fr ,
+							"Familiarity with place of worship. Have you ever entered a Church?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Pulldown ;
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
+
+###  http://www.knora.org/ontology/drawings-gods#enteredChurchHowOften
+:enteredChurchHowOften rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:ListValue ;
+						rdfs:label "Familiarité avec le lieu de culte: Eglise. Fréquence?"@fr ,
+							"Familiarity with place of worship: Church. How often?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: Eglise Fréquence?"@fr ,
+							"Familiarity with place of worship: Church. How often?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Pulldown ;
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
+		                
+###	http://www.knora.org/ontology/drawings-gods#baptized
 :baptized rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3165,9 +2721,9 @@
 							"Is the child baptized?"@en ;
 		                salsah-gui:guiOrder "1"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
-
-###	http://www.knora.org/ontology/0105#communion
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
+		                
+###	http://www.knora.org/ontology/drawings-gods#communion
 :communion rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3178,88 +2734,426 @@
 							"Did the child receive his/her communion?"@en ;
 		                salsah-gui:guiOrder "1"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .		                
 
-###	http://www.knora.org/ontology/0105#otherLanguages1
-:otherLanguages1 rdf:type owl:ObjectProperty ;
+###	http://www.knora.org/ontology/drawings-gods#ifIToldYouGodCouldYouDrawJesus
+:ifIToldYouGodCouldYouDrawJesus rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
 		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "L'enfant parle-t-il/elle d'autres langues?"@fr ,
-							"Does the child speak other languages?"@en ;
-						rdfs:comment "L'enfant parle-t-il/elle d'autres langues?"@fr ,
-							"Does the child speak other languages?"@en ;
+						rdfs:label "Si je te dis dieu, pourrais-tu dessiner Jésus?"@fr ,
+							"If I told you god could you draw Jesus?"@en ;
+						rdfs:comment "Si je te dis dieu, pourrais-tu dessiner Jésus?"@fr ,
+							"If I told you god could you draw Jesus?"@en ;
 		                salsah-gui:guiOrder "1"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
-
-###	http://www.knora.org/ontology/0105#enjoyedTheActivity
-:enjoyedTheActivity rdf:type owl:ObjectProperty ;
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
+		                
+###	http://www.knora.org/ontology/drawings-gods#ifIToldYouGodCouldYouDrawMary
+:ifIToldYouGodCouldYouDrawMary rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
 		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "L'enfant a-t-il/elle apprécié d'effectuer cette activité"@fr ,
-							"Did the child enjoy carrying out this activity"@en ;
-						rdfs:comment "L'enfant a-t-il/elle apprécié d'effectuer cette activité"@fr ,
-							"Did the child enjoy carrying out this activity"@en ;
+						rdfs:label "Si je te dis dieu, pourrais-tu dessiner Marie?"@fr ,
+							"If I told you god could you draw Mary?"@en ;
+						rdfs:comment "Si je te dis dieu, pourrais-tu dessiner Marie?"@fr ,
+							"If I told you god could you draw Mary?"@en ;
 		                salsah-gui:guiOrder "1"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
-###	http://www.knora.org/ontology/0105#carriedOutTaskSeriously
-:carriedOutTaskSeriously rdf:type owl:ObjectProperty ;
+###	http://www.knora.org/ontology/drawings-gods#ifIToldYouGodCouldYouDrawMoses
+:ifIToldYouGodCouldYouDrawMoses rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
 		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "L'enfant a-t-il/elle effectué cette activité avec sérieux"@fr ,
-							"Did the child carry out this activity seriously"@en ;
-						rdfs:comment "L'enfant a-t-il/elle effectué cette activité avec sérieux"@fr ,
-							"Did the child carry out this activity seriously"@en ;
+						rdfs:label "Si je te dis dieu, pourrais-tu dessiner Moïse?"@fr ,
+							"If I told you god could you draw Moses?"@en ;
+						rdfs:comment "Si je te dis dieu, pourrais-tu dessiner Moïse?"@fr ,
+							"If I told you god could you draw Moses?"@en ;
 		                salsah-gui:guiOrder "1"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
-###	http://www.knora.org/ontology/0105#selfEsteemExplicit
-:selfEsteemExplicit rdf:type owl:ObjectProperty ;
+###	http://www.knora.org/ontology/drawings-gods#enteredBuddhistTemple
+:enteredBuddhistTemple rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
 		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "Estime de soi explicite (auto-rapportée)"@fr ,
-							"Self-rated explicit self-esteem"@en ;
-						rdfs:comment "Estime de soi explicite (auto-rapportée)"@fr ,
-							"Self-rated explicit self-esteem"@en ;
+						rdfs:label "Familiarité avec le lieu de culte. Es-tu déjà entré dans un temple bouddhiste?"@fr ,
+							"Familiarity with place of worship. Have you ever entered a Buddhist temple?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte. Es-tu déjà entré dans  un temple bouddhiste?"@fr ,
+							"Familiarity with place of worship. Have you ever entered a Buddhist temple?"@en ;
 		                salsah-gui:guiOrder "1"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedNumListQ>" .
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
-###	http://www.knora.org/ontology/0105#happinessGeneral
-:happinessGeneral rdf:type owl:ObjectProperty ;
+###	http://www.knora.org/ontology/drawings-gods#enteredBuddhistTempleHowOften
+:enteredBuddhistTempleHowOften rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
 		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "Degré de bonheur général auto-rapporté"@fr ,
-							"Self-rated general happiness"@en ;
-						rdfs:comment "Degré de bonheur général auto-rapporté"@fr ,
-							"Self-rated general happiness"@en ;
+						rdfs:label "Familiarité avec le lieu de culte: temple bouddhiste. Fréquence?"@fr ,
+							"Familiarity with place of worship: Buddhist temple. How often?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: temple bouddhiste. Fréquence?"@fr ,
+							"Familiarity with place of worship: Buddhist temple. How often?"@en ;
 		                salsah-gui:guiOrder "1"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedNumListQ>" .
-
-###	http://www.knora.org/ontology/0105#stress
-:stress rdf:type owl:ObjectProperty ;
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
+		                
+###	http://www.knora.org/ontology/drawings-gods#knowWhoBuddhaIs
+:knowWhoBuddhaIs rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
 		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "Niveau de stress auto-rapporté"@fr ,
-							"Level of recent stress (self-rated)"@en ;
-						rdfs:comment "Niveau de stress auto-rapporté"@fr ,
-							"Level of recent stress (self-rated)"@en ;
+						rdfs:label "Sais-tu qui est Bouddha?"@fr ,
+							"Do you know who Buddha is?"@en ;
+						rdfs:comment "Sais-tu qui est Bouddha?"@fr ,
+							"Do you know who Buddha is?"@en ;
 		                salsah-gui:guiOrder "1"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedNumListQ>" .
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .		                
+		                
+###	http://www.knora.org/ontology/drawings-gods#ifIToldYouGodCouldYouDrawBuddha
+:ifIToldYouGodCouldYouDrawBuddha rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:ListValue ;
+						rdfs:label "Si je te dis dieu, pourrais-tu dessiner Bouddha?"@fr ,
+							"If I told you god could you draw Buddha?"@en ;
+						rdfs:comment "Si je te dis dieu, pourrais-tu dessiner Bouddha?"@fr ,
+							"If I told you god could you draw Buddha?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Pulldown ;
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .		                
+		                	                
+###	http://www.knora.org/ontology/drawings-gods#visitOnNewYearsEve
+:visitOnNewYearsEve rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:ListValue ;
+						rdfs:label "Quel temple visitez-vous au Nouvel An?"@fr ,
+							"Which temple do you get to visit on New Year's Eve?"@en ;
+						rdfs:comment "Quel temple visitez-vous au Nouvel An?"@fr ,
+							"Which temple do you get to visit on New Year's Eve?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Pulldown ;
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-JapanNYListQ>" .		                
+		                
+###	http://www.knora.org/ontology/drawings-gods#jinjyaOrOteraNewYearsEve
+:jinjyaOrOteraNewYearsEve rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:ListValue ;
+						rdfs:label "Est-ce que vous visitez un temple (jinjya ou otéra) pour le Nouvel An?"@fr ,
+							"Do you get to visit a temple (jinjya or otera) on New Year's Eve?"@en ;
+						rdfs:comment "Est-ce que vous visitez un temple (jinjya ou otéra) pour le Nouvel An?"@fr ,
+							"Do you get to visit a temple (jinjya or otera) on New Year's Eve?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Pulldown ;
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .		                
+		                
+###	http://www.knora.org/ontology/drawings-gods#jinjyaNewYearsEve
+:jinjyaNewYearsEve rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:ListValue ;
+						rdfs:label "Est-ce que vous visitez un jinjya pour le Nouvel An?"@fr ,
+							"Do you get to visit a jinjya on New Year's Eve?"@en ;
+						rdfs:comment "Est-ce que vous visitez un jinjya pour le Nouvel An?"@fr ,
+							"Do you get to visit a jinjya on New Year's Eve?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Pulldown ;
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .	                
+		                
+###	http://www.knora.org/ontology/drawings-gods#oteraNewYearsEve
+:oteraNewYearsEve rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:ListValue ;
+						rdfs:label "Est-ce que vous visitez un otera pour le Nouvel An?"@fr ,
+							"Do you get to visit an otera on New Year's Eve?"@en ;
+						rdfs:comment "Est-ce que vous visitez un otera pour le Nouvel An?"@fr ,
+							"Do you get to visit an otera on New Year's Eve?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Pulldown ;
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .		                
+		                
+###	http://www.knora.org/ontology/drawings-gods#enteredJinjyaOrOtera
+:enteredJinjyaOrOtera rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:ListValue ;
+						rdfs:label "Est-ce que vous visitez un temple (jinjya ou otéra) en dehors du Nouvel An?"@fr ,
+							"Do you get to visit a temple (jinjya or otera) besides New Year's Eve?"@en ;
+						rdfs:comment "Est-ce que vous visitez un temple (jinjya ou otéra) en dehors du Nouvel An?"@fr ,
+							"Do you get to visit a temple (jinjya or otera) besides New Year's Eve?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Pulldown ;
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .		                
+		                
+		                
+###	http://www.knora.org/ontology/drawings-gods#otera
+:otera rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:ListValue ;
+						rdfs:label "Est-ce que vous visitez un otéra en dehors du Nouvel An?"@fr ,
+							"Do you get to visit an otera besides New Year's Eve?"@en ;
+						rdfs:comment "Est-ce que vous visitez un otéra en dehors du Nouvel An?"@fr ,
+							"Do you get to visit an otera besides New Year's Eve?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Pulldown ;
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .		                
+		                
+###	http://www.knora.org/ontology/drawings-gods#jinjya
+:jinjya rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:ListValue ;
+						rdfs:label "Est-ce que vous visitez un jinjya en dehors du Nouvel An?"@fr ,
+							"Do you get to visit a jinjya besides New Year's Eve?"@en ;
+						rdfs:comment "Est-ce que vous visitez un jinjya en dehors du Nouvel An?"@fr ,
+							"Do you get to visit a jinjya besides New Year's Eve?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Pulldown ;
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .			                
+		                
+###	http://www.knora.org/ontology/drawings-gods#enteredJinjyaOrOteraHowOften
+:enteredJinjyaOrOteraHowOften rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:ListValue ;
+						rdfs:label "Familiarité avec le lieu de culte: jinjya ou otera. Fréquence?"@fr ,
+							"Familiarity with place of worship: jinjya or otera How often?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: jinjya ou otera. Fréquence?"@fr ,
+							"Familiarity with place of worship: jinjya or otera How often?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Pulldown ;
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
+		                
+###	http://www.knora.org/ontology/drawings-gods#jinjyaHowOften
+:jinjyaHowOften rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:ListValue ;
+						rdfs:label "Familiarité avec le lieu de culte: jinjya. Fréquence?"@fr ,
+							"Familiarity with place of worship: jinjya. How often?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: jinjya. Fréquence?"@fr ,
+							"Familiarity with place of worship: jinjya. How often?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Pulldown ;
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-TimeRelatedListQ>" .		                
+		                
+###	http://www.knora.org/ontology/drawings-gods#oteraHowOften
+:oteraHowOften rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:ListValue ;
+						rdfs:label "Familiarité avec le lieu de culte: otera. Fréquence?"@fr ,
+							"Familiarity with place of worship: otera. How often?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: otera. Fréquence?"@fr ,
+							"Familiarity with place of worship: otera. How often?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Pulldown ;
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-TimeRelatedListQ>" .		                
+		                
+###	http://www.knora.org/ontology/drawings-gods#cultObjectAtHomePresence
+:cultObjectAtHomePresence rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:ListValue ;
+						rdfs:label "Est-ce que tu as un butsudan ou un kamidana à la maison?"@fr ,
+							"Do you have a butsudan or a kamidana at home?"@en ;
+						rdfs:comment "Est-ce que tu as un butsudan ou un kamidana à la maison?"@fr ,
+							"Do you have a butsudan or a kamidana at home?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Pulldown ;
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
+###	http://www.knora.org/ontology/drawings-gods#cultObjectAtHomePresenceWhich
+:cultObjectAtHomePresenceWhich rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:ListValue ;
+						rdfs:label "A la maison, as-tu un butsudan ou un kamidana?"@fr ,
+							"Which one do you have at home: a butsudan or a kamidana?"@en ;
+						rdfs:comment "A la maison, as-tu un butsudan ou un kamidana?"@fr ,
+							"Which one do you have at home: a butsudan or a kamidana?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Pulldown ;
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-JapanObjectListQ>" .		                
+		                
+###	http://www.knora.org/ontology/drawings-gods#enteredMosque
+:enteredMosque rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:ListValue ;
+						rdfs:label "Familiarité avec le lieu de culte. Es-tu déjà entré dans la mosquée?"@fr ,
+							"Familiarity with place of worship. Have you ever entered a Mosque?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte. Es-tu déjà entré dans la mosquée?"@fr ,
+							"Familiarity with place of worship. Have you ever entered a Mosque?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Pulldown ;
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
-###  http://www.knora.org/ontology/0105#dadsReligion
+###	http://www.knora.org/ontology/drawings-gods#enteredMosqueHowOften
+:enteredMosqueHowOften rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:ListValue ;
+						rdfs:label "Familiarité avec le lieu de culte: la mosquée. Fréquence?"@fr ,
+							"Familiarity with place of worship: Mosque. How often?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: la mosquée. Fréquence?"@fr ,
+							"Familiarity with place of worship: Mosque. How often?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Pulldown ;
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
+
+###	http://www.knora.org/ontology/drawings-gods#ifIToldYouGodCouldYouDrawAllah
+:ifIToldYouGodCouldYouDrawAllah rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:ListValue ;
+						rdfs:label "Si je te dis dieu, pourrais-tu dessiner Allah?"@fr ,
+							"If I told you god could you draw Allah?"@en ;
+						rdfs:comment "Si je te dis dieu, pourrais-tu dessiner Allah?"@fr ,
+							"If I told you god could you draw Allah?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Pulldown ;
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-AgreementRelatedListQ>" 
+
+###	http://www.knora.org/ontology/drawings-gods#ifIToldYouGodCouldYouDrawMuhammad
+:ifIToldYouGodCouldYouDrawMuhammad rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:ListValue ;
+						rdfs:label "Si je te dis dieu, pourrais-tu dessiner Mohammed?"@fr ,
+							"If I told you god could you draw Muhammad?"@en ;
+						rdfs:comment "Si je te dis dieu, pourrais-tu dessiner Mohammed?"@fr ,
+							"If I told you god could you draw Muhammad?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Pulldown ;
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
+
+###	http://www.knora.org/ontology/drawings-gods#enteredHinduTemple
+:enteredHinduTemple rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:ListValue ;
+						rdfs:label "Familiarité avec le lieu de culte. Es-tu déjà entré dans un temple hindou?"@fr ,
+							"Familiarity with place of worship. Have you ever entered a Hindu temple?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte. Es-tu déjà entré dans un temple hindou?"@fr ,
+							"Familiarity with place of worship. Have you ever entered a Hindu temple?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Pulldown ;
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
+
+###	http://www.knora.org/ontology/drawings-gods#enteredHinduTempleHowOften
+:enteredHinduTempleHowOften rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:ListValue ;
+						rdfs:label "Familiarité avec le lieu de culte: temple hindou. Fréquence?"@fr ,
+							"Familiarity with place of worship: Hindu temple. How often?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: temple hindou. Fréquence?"@fr ,
+							"Familiarity with place of worship: Hindu temple. How often?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Pulldown ;
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-TimeRelatedListQ>" .		                
+
+###	http://www.knora.org/ontology/drawings-gods#enteredSynagogue
+:enteredSynagogue rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:ListValue ;
+						rdfs:label "Familiarité avec le lieu de culte. Es-tu déjà entré dans une synagogue?"@fr ,
+							"Familiarity with place of worship. Have you ever entered a Synagogue?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte. Es-tu déjà entré dans une synagogue?"@fr ,
+							"Familiarity with place of worship. Have you ever entered a Synagogue?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Pulldown ;
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
+
+###	http://www.knora.org/ontology/drawings-gods#enteredSynagogueHowOften
+:enteredSynagogueHowOften rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:ListValue ;
+						rdfs:label "Familiarité avec le lieu de culte: synagogue. Fréquence?"@fr ,
+							"Familiarity with place of worship: Synagogue. How often?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: synagogue Fréquence?"@fr ,
+							"Familiarity with place of worship: Synagogue. How often?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Pulldown ;
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
+		                
+###	http://www.knora.org/ontology/drawings-gods#enteredZorotemple
+:enteredZorotemple rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:ListValue ;
+						rdfs:label "Familiarité avec le lieu de culte. Es-tu déjà entré dans une temple Zoroastrien?"@fr ,
+							"Familiarity with place of worship. Have you ever entered a  Zoroastrian temple?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte. Es-tu déjà entré dans une temple Zoroastrien?"@fr ,
+							"Familiarity with place of worship. Have you ever entered a  Zoroastrian temple?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Pulldown ;
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
+
+###	http://www.knora.org/ontology/drawings-gods#enteredZorotempleHowOften
+:enteredZorotempleHowOften rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:ListValue ;
+						rdfs:label "Familiarité avec le lieu de culte: temple Zoroastrien. Fréquence?"@fr ,
+							"Familiarity with place of worship: Zoroastrian temple. How often?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: temple Zoroastrien Fréquence?"@fr ,
+							"Familiarity with place of worship: Zoroastrian temple. How often?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Pulldown ;
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
+		                
+###	http://www.knora.org/ontology/drawings-gods#ifIToldYouGodCouldYouDrawZoro
+:ifIToldYouGodCouldYouDrawZoro rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:ListValue ;
+						rdfs:label "Si je te dis dieu, pourrais-tu dessiner Zoroastre?"@fr ,
+							"If I told you god could you draw Zoroaster?"@en ;
+						rdfs:comment "Si je te dis dieu, pourrais-tu dessiner Zoroastre?"@fr ,
+							"If I told you god could you draw Zoroaster?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Pulldown ;
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .		                
+
+###	http://www.knora.org/ontology/drawings-gods#enteredTempleNotDefined
+:enteredTempleNotDefined rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:ListValue ;
+						rdfs:label "Familiarité avec le lieu de culte. Es-tu déjà entré dans un temple quelconque?"@fr ,
+							"Familiarity with place of worship. Have you ever entered any non specific temple?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte. Es-tu déjà entré dans un temple quelconque?"@fr ,
+							"Familiarity with place of worship. Have you ever entered any non specific temple?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Pulldown ;
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
+
+###	http://www.knora.org/ontology/drawings-gods#enteredTempleNotDefinedHowOften
+:enteredTempleNotDefinedHowOften rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:ListValue ;
+						rdfs:label "Familiarité avec le lieu de culte: temple quelconque. Fréquence?"@fr ,
+							"Familiarity with place of worship: any unspecific temple. How often?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: temple quelconque. Fréquence?"@fr ,
+							"Familiarity with place of worship: any unspecific temple. How often?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Pulldown ;
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
+
+###  http://www.knora.org/ontology/drawings-gods#dadsReligion
 :dadsReligion rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3270,9 +3164,9 @@
 							"Child's dad's religion"@en ;
 		                salsah-gui:guiOrder "1"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:List ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList>" .
-
-###  http://www.knora.org/ontology/0105#momsReligion
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-ReligiousIdentityHList>" .
+		                
+###  http://www.knora.org/ontology/drawings-gods#momsReligion
 :momsReligion rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3283,9 +3177,9 @@
 							"Child's mom's religion"@en ;
 		                salsah-gui:guiOrder "1"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:List ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList>" .
-
-###  http://www.knora.org/ontology/0105#motherTongue
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-ReligiousIdentityHList>" . 
+		                
+###  http://www.knora.org/ontology/drawings-gods#motherTongue
 :motherTongue rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3296,9 +3190,22 @@
 							"Child's mother tongue(s)"@en ;
 		                salsah-gui:guiOrder "1"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList>" .
-
-###  http://www.knora.org/ontology/0105#otherLanguages2
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-LanguageList>" . 
+		                
+###	http://www.knora.org/ontology/drawings-gods#otherLanguages1
+:otherLanguages1 rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:ListValue ;
+						rdfs:label "L'enfant parle-t-il/elle d'autres langues?"@fr ,
+							"Does the child speak other languages?"@en ;
+						rdfs:comment "L'enfant parle-t-il/elle d'autres langues?"@fr ,
+							"Does the child speak other languages?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Pulldown ;
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .		                
+		                
+###  http://www.knora.org/ontology/drawings-gods#otherLanguages2
 :otherLanguages2 rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3309,10 +3216,9 @@
 							"Other languages often spoken by the child"@en ;
 		                salsah-gui:guiOrder "1"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList>" .
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-LanguageList>" .		                		                
 
-
-###  http://www.knora.org/ontology/0105#languageSpokenMostOften
+###  http://www.knora.org/ontology/drawings-gods#languageSpokenMostOften
 :languageSpokenMostOften rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3323,9 +3229,98 @@
 							"Language spoken most often by the child"@en ;
 		                salsah-gui:guiOrder "1"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList>" .
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-LanguageList>" . 
 
+###	http://www.knora.org/ontology/drawings-gods#sexOfGod
+:sexOfGod rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:ListValue ;
+						rdfs:label "Sexe de dieu"@fr ,
+							"Sex of god"@en ;
+						rdfs:comment "Sexe de dieu"@fr ,
+							"Sex of god"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Pulldown ;
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-GodSexListQ>" .
 
+###	http://www.knora.org/ontology/drawings-gods#ageOfGod
+:ageOfGod rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:ListValue ;
+						rdfs:label "Age de dieu"@fr ,
+							"Age of god"@en ;
+						rdfs:comment "Age de dieu"@fr ,
+							"Age of god"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Pulldown ;
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-GodAgeListQ>" .
+		                
+###	http://www.knora.org/ontology/drawings-gods#enjoyedTheActivity
+:enjoyedTheActivity rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:ListValue ;
+						rdfs:label "L'enfant a-t-il/elle apprécié d'effectuer cette activité"@fr ,
+							"Did the child enjoy carrying out this activity"@en ;
+						rdfs:comment "L'enfant a-t-il/elle apprécié d'effectuer cette activité"@fr ,
+							"Did the child enjoy carrying out this activity"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Pulldown ;
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .				                
+		                
+###	http://www.knora.org/ontology/drawings-gods#carriedOutTaskSeriously
+:carriedOutTaskSeriously rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:ListValue ;
+						rdfs:label "L'enfant a-t-il/elle effectué cette activité avec sérieux"@fr ,
+							"Did the child carry out this activity seriously"@en ;
+						rdfs:comment "L'enfant a-t-il/elle effectué cette activité avec sérieux"@fr ,
+							"Did the child carry out this activity seriously"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Pulldown ;
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .			                
+		                
+###	http://www.knora.org/ontology/drawings-gods#selfEsteemExplicit
+:selfEsteemExplicit rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:ListValue ;
+						rdfs:label "Estime de soi explicite (auto-rapportée)"@fr ,
+							"Self-rated explicit self-esteem"@en ;
+						rdfs:comment "Estime de soi explicite (auto-rapportée)"@fr ,
+							"Self-rated explicit self-esteem"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Pulldown ;
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-AgreementRelatedNumListQ>" .					                
+		                
+###	http://www.knora.org/ontology/drawings-gods#happinessGeneral
+:happinessGeneral rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:ListValue ;
+						rdfs:label "Degré de bonheur général auto-rapporté"@fr ,
+							"Self-rated general happiness"@en ;
+						rdfs:comment "Degré de bonheur général auto-rapporté"@fr ,
+							"Self-rated general happiness"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Pulldown ;
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-AgreementRelatedNumListQ>" .			                
+		                
+###	http://www.knora.org/ontology/drawings-gods#stress
+:stress rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:ListValue ;
+						rdfs:label "Niveau de stress auto-rapporté"@fr ,
+							"Level of recent stress (self-rated)"@en ;
+						rdfs:comment "Niveau de stress auto-rapporté"@fr ,
+							"Level of recent stress (self-rated)"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Pulldown ;
+		                salsah-gui:guiAttribute "hlist=<http://data.knora.org/lists/drawings-gods-2016-list-AgreementRelatedNumListQ>" .		
 
 #################################################################
 #    Classes
