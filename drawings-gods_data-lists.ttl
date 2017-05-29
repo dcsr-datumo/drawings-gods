@@ -6376,7 +6376,7 @@
 									<http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList-amonganimals> ,
 									<http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList-amongangels> ,
 									<http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList-amongrelbuildings> ,
-									<http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList-amongbuildings> .
+									<http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList-amongbuildings> ,
 									<http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList-otherpos> .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList-aboveall> a knora-base:ListNode ;

@@ -3021,7 +3021,7 @@
 							"If I told you god could you draw Allah?"@en ;
 		                salsah-gui:guiOrder "40"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>"
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
 ###	http://www.knora.org/ontology/0105#ifIToldYouGodCouldYouDrawMuhammad
 :ifIToldYouGodCouldYouDrawMuhammad rdf:type owl:ObjectProperty ;
