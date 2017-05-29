@@ -81,8 +81,8 @@
           rdfs:subPropertyOf knora-base:hasValue ;
           knora-base:objectClassConstraint knora-base:IntValue ;
 	      knora-base:subjectClassConstraint :Drawing ;
-          rdfs:label "Age en mois"@fr ,
-          	"Age in months"@en ;
+          rdfs:label "[Age en mois]"@fr ,
+          	"[Age in months]"@en ;
 	      salsah-gui:guiElement salsah-gui:Spinbox ;
 	      salsah-gui:guiOrder "5"^^xsd:integer .
 
@@ -95,8 +95,8 @@
          rdfs:subPropertyOf knora-base:hasValue ;
          knora-base:objectClassConstraint knora-base:IntValue ;
 	     knora-base:subjectClassConstraint :Drawing ;
-         rdfs:label "Age en années"@fr ,
-          	"Age in years"@en ;
+         rdfs:label "[Age en années]"@fr ,
+          	"[Age in years]"@en ;
          knora-base:objectClassConstraint knora-base:IntValue ;
 	     knora-base:subjectClassConstraint :Drawing ;
 	     salsah-gui:guiElement salsah-gui:Spinbox ;
@@ -286,8 +286,8 @@
 :hasCode rdf:type owl:ObjectProperty ;
       rdfs:subPropertyOf knora-base:hasValue ;
       knora-base:objectClassConstraint knora-base:TextValue ;
-      rdfs:label "Cote ou code"@fr ,
-      	"Code or "@en ;
+      rdfs:label "[Cote ou code]"@fr ,
+      	"[Code]"@en ;
       rdfs:comment "S'applique à un dessin, un verso, une personne."@fr ,
       	"Applies to drawing, verso or person"@en ;
       salsah-gui:guiElement salsah-gui:SimpleText ;
@@ -1268,8 +1268,8 @@
 :hasInternalComment rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf knora-base:hasValue ;
                  knora-base:objectClassConstraint knora-base:TextValue ;
-                 rdfs:label "Commentaire interne*"@fr ,
-                     	"Internal comment*"@en ;
+                 rdfs:label "[Commentaire interne]"@fr ,
+                     	"[Internal comment]"@en ;
 				 rdfs:comment "Commentaire interne"@fr ,
 					 	"Internal comment"@en ;
 				 salsah-gui:guiElement salsah-gui:SimpleText ;
@@ -2022,7 +2022,7 @@
 			   			  		rdfs:comment "Commentaire interne (questionnaire individuel)"@fr ,
 					 				"Internal comment (individual questionnaire)"@en ;
 						         salsah-gui:guiElement salsah-gui:Textarea ;
-						         salsah-gui:guiOrder "2"^^xsd:integer ;
+						         salsah-gui:guiOrder "63"^^xsd:integer ;
 								 salsah-gui:guiAttribute "width=95%" ,
 						                        		"rows=10" .
 
@@ -2432,8 +2432,8 @@
       rdfs:subPropertyOf knora-base:hasValue ;
       knora-base:objectClassConstraint knora-base:TextValue ;
       knora-base:subjectClassConstraint :TextOnDrawing ;
-      rdfs:label "Commentaires de l'enfant sur le recto"@fr ,
-               "Child's comments on recto"@en ;
+      rdfs:label "[Commentaires de l'enfant sur le recto]"@fr ,
+               "[Child's comments on recto]"@en ;
 	  rdfs:comment "Propriété à ne pas utiliser directement: à la place, utiliser \"Commentaires de l'enfant sur le recto (anglais)\", \"Commentaires de l'enfant sur le recto (français)\" ou encore \"Commentaires de l'enfant sur le recto en langue originale\"."@fr ,
 	   "Property is not meant to be used directly: use \"Child's comments on recto (English)\", \"Child's comments on recto (French)\" or \"Child's comments on recto in original language\" instead. This property is for query purpose only."@en .
 
@@ -3580,8 +3580,8 @@
                            owl:onProperty :hasDrawingReligiousIdentity ;
                            owl:minCardinality "0"^^xsd:nonNegativeInteger
                          ] ;
-		rdfs:label "Dessin*"@fr ,
-			"Drawing*"@en ;
+		rdfs:label "[Dessin]"@fr ,
+			"[Drawing]"@en ;
 		rdfs:comment """Ressource à ne pas utiliser directement : à la place, créer les ressources ou "Dessin en accès public", "Dessin en accès restreint"."""@fr ,
              		 """Resource not meant to be used directly: use "Drawing (public access)" or "Drawing (restricted access)" instead."""@en .
 
@@ -3929,8 +3929,8 @@
                                           owl:onProperty :hasQuestionnaireBaseSeqnum ;
                                           owl:cardinality "1"^^xsd:nonNegativeInteger
                                         ] ;
-                        rdfs:label "Page de questionnaire standardisé*"@fr ,
-             				"Standardized questionnaire page*"@en ;
+                        rdfs:label "[Page de questionnaire standardisé]"@fr ,
+             				"[Standardized questionnaire page]"@en ;
              			rdfs:comment """Ressource à ne pas utiliser directement: à la place, créer les ressources "Page de questionnaire standardisé en français", "Page de questionnaire standardisé en anglais" ou encore "Page de questionnaire standardisé en langue originale"."""@fr ,
              				"""Resource not meant to be used directly: use "Standardized questionnaire page in English", "Standardized questionnaire page in French" or "Standardized questionnaire page in original language" instead."""@en .
 
