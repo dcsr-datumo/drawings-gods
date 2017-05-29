@@ -443,7 +443,7 @@
 		knora-base:listNodePosition 1 ;
 		rdfs:label "Parent"@fr , "Parent"@en .
 
-	<http://rdfh.ch/lists/drawings-gods-2016-list-DrawingTypeList-parent> a knora-base:ListNode ;
+	<http://rdfh.ch/lists/drawings-gods-2016-list-DrawingTypeList-other> a knora-base:ListNode ;
 		knora-base:listNodeName "other" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-DrawingTypeList> ;
 		knora-base:listNodePosition 2 ;
