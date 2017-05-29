@@ -2524,7 +2524,7 @@
 							"Do you know what the word god mean?"@en ;
 						rdfs:comment "Sais-tu ce que le mot dieu veut dire?"@fr ,
 							"Do you know what the word god mean?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "2"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -2537,7 +2537,7 @@
 							"Have you ever happened to draw god in the past?"@en ;
 						rdfs:comment "As-tu déjà dessiné dieu dans le passé?"@fr ,
 							"Have you ever happened to draw god in the past?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "3"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -2550,7 +2550,7 @@
 							"According to you god is located in..."@en ;
 						rdfs:comment "Selon toi, dieu se trouve à..."@fr ,
 							"According to you god is located in..."@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "4"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-LocGodListQ>" .
 
@@ -2563,7 +2563,7 @@
 							"If I told you god could you draw no matter what?"@en ;
 						rdfs:comment "Si je te dis dieu, pourrais-tu dessiner je ne sais pas quoi?"@fr ,
 							"If I told you god could you draw no matter what?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "5"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -2576,7 +2576,7 @@
 							"If I told you god could you draw something different?"@en ;
 						rdfs:comment "Si je te dis dieu, pourrais-tu dessiner quelquechose de différent?"@fr ,
 							"If I told you god could you draw something different?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "6"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -2589,7 +2589,7 @@
 							"Do you pray at home?"@en ;
 						rdfs:comment "Est-ce que tu pries à la maison?"@fr ,
 							"Do you pray at home?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "7"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -2602,7 +2602,7 @@
 							"Have you ever seen other people pray?"@en ;
 						rdfs:comment "As-tu déjà vu des gens prier?"@fr ,
 							"Have you ever seen other people pray?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "8"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -2615,7 +2615,7 @@
 							"When/how often did you see other people pray?"@en ;
 						rdfs:comment "A quel moment as-tu déjà vu des gens prier?"@fr ,
 							"When/how often did you see other people pray?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "9"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
 
@@ -2628,7 +2628,7 @@
 							"Do you get to pray with other people?"@en ;
 						rdfs:comment "Est-ce que tu pries avec d'autres gens?"@fr ,
 							"Do you get to pray with other people?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "10"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -2641,7 +2641,7 @@
 							"How often do you get to pray with other people?"@en ;
 						rdfs:comment "A quelle fréquence pries-tu avec d'autres gens?"@fr ,
 							"How often do you get to pray with other people?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "11"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
 
@@ -2654,7 +2654,7 @@
 							"Do you ever pray alone?"@en ;
 						rdfs:comment "Est-ce qu'il t'arrive de prier seul-e?"@fr ,
 							"Do you ever pray alone?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "12"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -2667,7 +2667,7 @@
 							"How often do you get to pray alone?"@en ;
 						rdfs:comment "A quelle fréquence pries-tu seul-e?"@fr ,
 							"How often do you get to pray alone?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "13"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
 
@@ -2680,7 +2680,7 @@
 							"When do you pray at home?"@en ;
 						rdfs:comment "Quand est-ce que tu pries à la maison?"@fr ,
 							"When do you pray at home?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "14"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
 
@@ -2693,7 +2693,7 @@
 							"Familiarity with place of worship. Have you ever entered a Church?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte. Es-tu déjà entré dans l'Eglise?"@fr ,
 							"Familiarity with place of worship. Have you ever entered a Church?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "15"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -2706,7 +2706,7 @@
 							"Familiarity with place of worship: Church. How often?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: Eglise Fréquence?"@fr ,
 							"Familiarity with place of worship: Church. How often?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "16"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
 
@@ -2719,7 +2719,7 @@
 							"Is the child baptized?"@en ;
 						rdfs:comment "L'enfant est-il/elle baptisé-e"@fr ,
 							"Is the child baptized?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "17"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -2732,7 +2732,7 @@
 							"Did the child receive his/her communion?"@en ;
 						rdfs:comment "L'enfant a-t-il/elle fait sa communion?"@fr ,
 							"Did the child receive his/her communion?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "18"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -2745,7 +2745,7 @@
 							"If I told you god could you draw Jesus?"@en ;
 						rdfs:comment "Si je te dis dieu, pourrais-tu dessiner Jésus?"@fr ,
 							"If I told you god could you draw Jesus?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "19"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -2758,7 +2758,7 @@
 							"If I told you god could you draw Mary?"@en ;
 						rdfs:comment "Si je te dis dieu, pourrais-tu dessiner Marie?"@fr ,
 							"If I told you god could you draw Mary?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "20"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -2771,7 +2771,7 @@
 							"If I told you god could you draw Moses?"@en ;
 						rdfs:comment "Si je te dis dieu, pourrais-tu dessiner Moïse?"@fr ,
 							"If I told you god could you draw Moses?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "21"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -2784,7 +2784,7 @@
 							"Familiarity with place of worship. Have you ever entered a Buddhist temple?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte. Es-tu déjà entré dans  un temple bouddhiste?"@fr ,
 							"Familiarity with place of worship. Have you ever entered a Buddhist temple?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "22"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -2797,7 +2797,7 @@
 							"Familiarity with place of worship: Buddhist temple. How often?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: temple bouddhiste. Fréquence?"@fr ,
 							"Familiarity with place of worship: Buddhist temple. How often?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "23"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
 
@@ -2810,7 +2810,7 @@
 							"Do you know who Buddha is?"@en ;
 						rdfs:comment "Sais-tu qui est Bouddha?"@fr ,
 							"Do you know who Buddha is?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "24"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -2823,7 +2823,7 @@
 							"If I told you god could you draw Buddha?"@en ;
 						rdfs:comment "Si je te dis dieu, pourrais-tu dessiner Bouddha?"@fr ,
 							"If I told you god could you draw Buddha?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "25"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -2836,7 +2836,7 @@
 							"Which temple do you get to visit on New Year's Eve?"@en ;
 						rdfs:comment "Quel temple visitez-vous au Nouvel An?"@fr ,
 							"Which temple do you get to visit on New Year's Eve?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "26"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-JapanNYListQ>" .
 
@@ -2849,7 +2849,7 @@
 							"Do you get to visit a temple (jinjya or otera) on New Year's Eve?"@en ;
 						rdfs:comment "Est-ce que vous visitez un temple (jinjya ou otéra) pour le Nouvel An?"@fr ,
 							"Do you get to visit a temple (jinjya or otera) on New Year's Eve?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "27"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -2862,7 +2862,7 @@
 							"Do you get to visit a jinjya on New Year's Eve?"@en ;
 						rdfs:comment "Est-ce que vous visitez un jinjya pour le Nouvel An?"@fr ,
 							"Do you get to visit a jinjya on New Year's Eve?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "28"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -2875,7 +2875,7 @@
 							"Do you get to visit an otera on New Year's Eve?"@en ;
 						rdfs:comment "Est-ce que vous visitez un otera pour le Nouvel An?"@fr ,
 							"Do you get to visit an otera on New Year's Eve?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "29"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -2888,7 +2888,7 @@
 							"Do you get to visit a temple (jinjya or otera) besides New Year's Eve?"@en ;
 						rdfs:comment "Est-ce que vous visitez un temple (jinjya ou otéra) en dehors du Nouvel An?"@fr ,
 							"Do you get to visit a temple (jinjya or otera) besides New Year's Eve?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "30"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -2902,7 +2902,7 @@
 							"Do you get to visit an otera besides New Year's Eve?"@en ;
 						rdfs:comment "Est-ce que vous visitez un otéra en dehors du Nouvel An?"@fr ,
 							"Do you get to visit an otera besides New Year's Eve?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "31"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -2915,7 +2915,7 @@
 							"Do you get to visit a jinjya besides New Year's Eve?"@en ;
 						rdfs:comment "Est-ce que vous visitez un jinjya en dehors du Nouvel An?"@fr ,
 							"Do you get to visit a jinjya besides New Year's Eve?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "32"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -2928,7 +2928,7 @@
 							"Familiarity with place of worship: jinjya or otera How often?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: jinjya ou otera. Fréquence?"@fr ,
 							"Familiarity with place of worship: jinjya or otera How often?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "33"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
 
@@ -2941,7 +2941,7 @@
 							"Familiarity with place of worship: jinjya. How often?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: jinjya. Fréquence?"@fr ,
 							"Familiarity with place of worship: jinjya. How often?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "34"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
 
@@ -2954,7 +2954,7 @@
 							"Familiarity with place of worship: otera. How often?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: otera. Fréquence?"@fr ,
 							"Familiarity with place of worship: otera. How often?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "35"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
 
@@ -2967,7 +2967,7 @@
 							"Do you have a butsudan or a kamidana at home?"@en ;
 						rdfs:comment "Est-ce que tu as un butsudan ou un kamidana à la maison?"@fr ,
 							"Do you have a butsudan or a kamidana at home?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "36"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -2980,7 +2980,7 @@
 							"Which one do you have at home: a butsudan or a kamidana?"@en ;
 						rdfs:comment "A la maison, as-tu un butsudan ou un kamidana?"@fr ,
 							"Which one do you have at home: a butsudan or a kamidana?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "37"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-JapanObjectListQ>" .
 
@@ -2993,7 +2993,7 @@
 							"Familiarity with place of worship. Have you ever entered a Mosque?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte. Es-tu déjà entré dans la mosquée?"@fr ,
 							"Familiarity with place of worship. Have you ever entered a Mosque?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "38"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -3006,7 +3006,7 @@
 							"Familiarity with place of worship: Mosque. How often?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: la mosquée. Fréquence?"@fr ,
 							"Familiarity with place of worship: Mosque. How often?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "39"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
 
@@ -3019,7 +3019,7 @@
 							"If I told you god could you draw Allah?"@en ;
 						rdfs:comment "Si je te dis dieu, pourrais-tu dessiner Allah?"@fr ,
 							"If I told you god could you draw Allah?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "40"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>"
 
@@ -3032,7 +3032,7 @@
 							"If I told you god could you draw Muhammad?"@en ;
 						rdfs:comment "Si je te dis dieu, pourrais-tu dessiner Mohammed?"@fr ,
 							"If I told you god could you draw Muhammad?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "41"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -3045,7 +3045,7 @@
 							"Familiarity with place of worship. Have you ever entered a Hindu temple?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte. Es-tu déjà entré dans un temple hindou?"@fr ,
 							"Familiarity with place of worship. Have you ever entered a Hindu temple?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "42"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -3058,7 +3058,7 @@
 							"Familiarity with place of worship: Hindu temple. How often?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: temple hindou. Fréquence?"@fr ,
 							"Familiarity with place of worship: Hindu temple. How often?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "43"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
 
@@ -3071,7 +3071,7 @@
 							"Familiarity with place of worship. Have you ever entered a Synagogue?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte. Es-tu déjà entré dans une synagogue?"@fr ,
 							"Familiarity with place of worship. Have you ever entered a Synagogue?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "44"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -3084,7 +3084,7 @@
 							"Familiarity with place of worship: Synagogue. How often?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: synagogue Fréquence?"@fr ,
 							"Familiarity with place of worship: Synagogue. How often?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "45"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
 
@@ -3097,7 +3097,7 @@
 							"Familiarity with place of worship. Have you ever entered a  Zoroastrian temple?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte. Es-tu déjà entré dans une temple Zoroastrien?"@fr ,
 							"Familiarity with place of worship. Have you ever entered a  Zoroastrian temple?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "46"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -3110,7 +3110,7 @@
 							"Familiarity with place of worship: Zoroastrian temple. How often?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: temple Zoroastrien Fréquence?"@fr ,
 							"Familiarity with place of worship: Zoroastrian temple. How often?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "47"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
 
@@ -3123,7 +3123,7 @@
 							"If I told you god could you draw Zoroaster?"@en ;
 						rdfs:comment "Si je te dis dieu, pourrais-tu dessiner Zoroastre?"@fr ,
 							"If I told you god could you draw Zoroaster?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "48"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -3136,7 +3136,7 @@
 							"Familiarity with place of worship. Have you ever entered any non specific temple?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte. Es-tu déjà entré dans un temple quelconque?"@fr ,
 							"Familiarity with place of worship. Have you ever entered any non specific temple?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "49"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -3149,7 +3149,7 @@
 							"Familiarity with place of worship: any unspecific temple. How often?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: temple quelconque. Fréquence?"@fr ,
 							"Familiarity with place of worship: any unspecific temple. How often?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "50"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
 
@@ -3162,7 +3162,7 @@
 							"Child's dad's religion"@en ;
 						rdfs:comment "La religion du papa de l'enfant"@fr ,
 							"Child's dad's religion"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "51"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:List ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList>" .
 
@@ -3175,7 +3175,7 @@
 							"Child's mom's religion"@en ;
 						rdfs:comment "La religion de la maman de l'enfant"@fr ,
 							"Child's mom's religion"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "52"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:List ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList>" .
 
@@ -3188,7 +3188,7 @@
 							"Child's mother tongue(s)"@en ;
 						rdfs:comment "Langue(s) maternelle(s) de l'enfant"@fr ,
 							"Child's mother tongue(s)"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "53"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList>" .
 
@@ -3201,7 +3201,7 @@
 							"Does the child speak other languages?"@en ;
 						rdfs:comment "L'enfant parle-t-il/elle d'autres langues?"@fr ,
 							"Does the child speak other languages?"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "54"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -3214,7 +3214,7 @@
 							"Other languages often spoken by the child"@en ;
 						rdfs:comment "Autres langues parlées par l'enfant"@fr ,
 							"Other languages often spoken by the child"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "55"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList>" .
 
@@ -3227,7 +3227,7 @@
 							"Language spoken most often by the child"@en ;
 						rdfs:comment "Langue parlée le plus souvent par l'enfant"@fr ,
 							"Language spoken most often by the child"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "56"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList>" .
 
@@ -3240,7 +3240,7 @@
 							"Sex of god"@en ;
 						rdfs:comment "Sexe de dieu"@fr ,
 							"Sex of god"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "56"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-GodSexListQ>" .
 
@@ -3253,7 +3253,7 @@
 							"Age of god"@en ;
 						rdfs:comment "Age de dieu"@fr ,
 							"Age of god"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "58"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-GodAgeListQ>" .
 
@@ -3266,7 +3266,7 @@
 							"Did the child enjoy carrying out this activity"@en ;
 						rdfs:comment "L'enfant a-t-il/elle apprécié d'effectuer cette activité"@fr ,
 							"Did the child enjoy carrying out this activity"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "59"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -3279,7 +3279,7 @@
 							"Did the child carry out this activity seriously"@en ;
 						rdfs:comment "L'enfant a-t-il/elle effectué cette activité avec sérieux"@fr ,
 							"Did the child carry out this activity seriously"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "60"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -3292,7 +3292,7 @@
 							"Self-rated explicit self-esteem"@en ;
 						rdfs:comment "Estime de soi explicite (auto-rapportée)"@fr ,
 							"Self-rated explicit self-esteem"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "61"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedNumListQ>" .
 
@@ -3305,7 +3305,7 @@
 							"Self-rated general happiness"@en ;
 						rdfs:comment "Degré de bonheur général auto-rapporté"@fr ,
 							"Self-rated general happiness"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "62"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedNumListQ>" .
 
@@ -3318,7 +3318,7 @@
 							"Level of recent stress (self-rated)"@en ;
 						rdfs:comment "Niveau de stress auto-rapporté"@fr ,
 							"Level of recent stress (self-rated)"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "63"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedNumListQ>" .
 
