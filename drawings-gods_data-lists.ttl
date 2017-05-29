@@ -428,7 +428,8 @@
 	rdfs:comment "Liste de choix pour le type de dessin"@fr ;
 	rdfs:label "Type de dessin (liste)"@fr , "Type of drawing (list)"@en ;
 	knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-DrawingTypeList-god> ,
-	<http://rdfh.ch/lists/drawings-gods-2016-list-DrawingTypeList-parent> .
+	<http://rdfh.ch/lists/drawings-gods-2016-list-DrawingTypeList-parent> ,
+	<http://rdfh.ch/lists/drawings-gods-2016-list-DrawingTypeList-other> .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-DrawingTypeList-god> a knora-base:ListNode ;
 		knora-base:listNodeName "god" ;
@@ -441,6 +442,12 @@
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-DrawingTypeList> ;
 		knora-base:listNodePosition 1 ;
 		rdfs:label "Parent"@fr , "Parent"@en .
+
+	<http://rdfh.ch/lists/drawings-gods-2016-list-DrawingTypeList-other> a knora-base:ListNode ;
+		knora-base:listNodeName "other" ;
+		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-DrawingTypeList> ;
+		knora-base:listNodePosition 2 ;
+		rdfs:label "Autre"@fr , "Other"@en .
 
 ###   GenderList
 
@@ -679,7 +686,7 @@
 		knora-base:listNodeName "japan" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-InstructionEnList> ;
 		knora-base:listNodePosition 1 ;
-		rdfs:label "(JAPANeng) In japanese : When I say \"Kam\" (God), could you please draw anything that comes to your imagination?"@en .
+		rdfs:label "(JAPANeng) In japanese : When I say \"Kami\" (God), could you please draw anything that comes to your imagination?"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-InstructionEnList-nepal> a knora-base:ListNode ;
 		knora-base:listNodeName "nepal" ;
@@ -4449,6 +4456,7 @@
 				knora-base:listNodeName "reconvilier" ;
 				knora-base:listNodePosition 0 ;
 				rdfs:label "Reconvilier"@fr , "Reconvilier"@en .
+
 		<http://rdfh.ch/lists/drawings-gods-2016-list-VillageHList-fribourgCanton> a knora-base:ListNode ;
 			knora-base:listNodeName "fribourgCanton" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-VillageHList> ;
@@ -5149,7 +5157,7 @@
 						rdfs:label "Mort d'Ali"@fr , "Killing of Ali"@en .
 
 					<http://rdfh.ch/lists/drawings-gods-2016-list-DrawingPartsHList-other2> a knora-base:ListNode ;
-						knora-base:listNodeName "other" ;
+						knora-base:listNodeName "other2" ;
 						knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-DrawingPartsHList> ;
 						knora-base:listNodePosition 4 ;
 						rdfs:label "Autre"@fr , "Other"@en .
@@ -5339,7 +5347,8 @@
 										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-tara> ,
 										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-vishnu> ,
 										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-greekgod> ,
-										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-egyptiangod> .
+										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-egyptiangod> ,
+										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-othergod> .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-angel> a knora-base:ListNode ;
 					knora-base:listNodeName "angel" ;
@@ -5473,6 +5482,12 @@
 					knora-base:listNodePosition 21 ;
 					rdfs:label "Dieu ou déesse de l'Egypte"@fr , "Egyptian god or goddess"@en .
 
+				<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-othergod> a knora-base:ListNode ;
+					knora-base:listNodeName "othergod" ;
+					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList> ;
+					knora-base:listNodePosition 22 ;
+					rdfs:label "Autre dieu ou déesse (à préciser dans le commentaire)"@fr , "Other god or goddess (to note in the commentary which)"@en .
+
 			<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-specialbody> a knora-base:ListNode ;
 				knora-base:listNodeName "specialbody" ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList> ;
@@ -5502,7 +5517,8 @@
 										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-symmetrical> ,
 										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-assymetrical> ,
 										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-unhumanshape> ,
-										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-wings> .
+										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-wings> ,
+										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-othersbody> .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-addlimbs> a knora-base:ListNode ;
 					knora-base:listNodeName "addlimbs" ;
@@ -5653,6 +5669,12 @@
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList> ;
 					knora-base:listNodePosition 24 ;
 					rdfs:label "Ailes"@fr , "Wings"@en .
+
+				<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-othersbody> a knora-base:ListNode ;
+					knora-base:listNodeName "othersbody" ;
+					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList> ;
+					knora-base:listNodePosition 25 ;
+					rdfs:label "Autre particularités corporelles (à préciser dans le commentaire)"@fr , "Other body particularities (note in the commentary)"@en .
 
 			<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-specialapara> a knora-base:ListNode ;
 				knora-base:listNodeName "specialapara" ;
@@ -5940,7 +5962,8 @@
 										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-stupa> ,
 										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-stick> ,
 										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-yinyang> ,
-										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-yantra> .
+										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-yantra> ,
+										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-othersymbol> .
 
 			<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-ayudhas> a knora-base:ListNode ;
 				knora-base:listNodeName "ayudhas" ;
@@ -6061,6 +6084,12 @@
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList> ;
 				knora-base:listNodePosition 18 ;
 				rdfs:label "Yantra"@fr , "Yantra"@en .
+
+			<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-othersymbol> a knora-base:ListNode ;
+				knora-base:listNodeName "othersymbol" ;
+				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList> ;
+				knora-base:listNodePosition 19 ;
+				rdfs:label "Autre symbole"@fr , "Other symbol"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-wordtext> a knora-base:ListNode ;
 			knora-base:listNodeName "wordtext" ;
@@ -6185,7 +6214,8 @@
 									<http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList-withoutpurpose> ,
 									<http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList-intbenevolent> ,
 									<http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList-intmalevolent> ,
-									<http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList-intneutral> .
+									<http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList-intneutral> ,
+									<http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList-otherfunction> .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList-creator> a knora-base:ListNode ;
 			knora-base:listNodeName "creator" ;
@@ -6313,6 +6343,12 @@
 			knora-base:listNodePosition 20 ;
 			rdfs:label "L'intention de dieu est neutre"@fr , "Intention of god is neutral"@en .
 
+		<http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList-otherfunction> a knora-base:ListNode ;
+			knora-base:listNodeName "otherfunction" ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList> ;
+			knora-base:listNodePosition 21 ;
+			rdfs:label "Dieu a une autre fonction (à préciser dans le comm.)"@fr , "God has another function (Note in the commentary)"@en .
+
 
 ###    GodPositionList
 <http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList> a knora-base:ListNode ;
@@ -6341,6 +6377,7 @@
 									<http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList-amongangels> ,
 									<http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList-amongrelbuildings> ,
 									<http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList-amongbuildings> .
+									<http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList-otherpos> .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList-aboveall> a knora-base:ListNode ;
 			knora-base:listNodeName "aboveall" ;
@@ -6473,6 +6510,12 @@
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList> ;
 			knora-base:listNodePosition 21 ;
 			rdfs:label "Dieu est parmi les bâtiments normaux"@fr , "God is among usual buildings"@en .
+
+		<http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList-otherpos> a knora-base:ListNode ;
+			knora-base:listNodeName "otherpos" ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList> ;
+			knora-base:listNodePosition 22 ;
+			rdfs:label "Dieu a une autre position (à préciser dans le comm.)"@fr , "God has another position (note in the commentary)"@en .
 
 
 ###    DrawingReligiousIdentityList
