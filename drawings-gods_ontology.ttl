@@ -3425,10 +3425,10 @@
                                   owl:onProperty :hasSiteLanguage ;
                                   owl:minCardinality "1"^^xsd:nonNegativeInteger
                                 ] ,
-                                [ rdf:type owl:Restriction ;
-                                  owl:onProperty :hasGeonameCode ;
-                                  owl:maxCardinality "1"^^xsd:nonNegativeInteger
-                                ] ,
+#                                [ rdf:type owl:Restriction ;
+#                                  owl:onProperty :hasGeonameCode ;
+#                                  owl:maxCardinality "1"^^xsd:nonNegativeInteger
+#                                ] ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty :hasGlobalLocation ;
                                   owl:cardinality "1"^^xsd:nonNegativeInteger
