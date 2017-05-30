@@ -512,7 +512,7 @@
 		knora-base:listNodeName "mixed" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GenderListSchool> ;
 		knora-base:listNodePosition 0 ;
-		rdfs:label "Inconnu"@fr , "Unknown"@en .
+		rdfs:label "Mixte"@fr , "Mixed-gender"@en .
 
 ###   CollectorMainList
 
