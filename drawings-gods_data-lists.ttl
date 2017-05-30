@@ -2478,7 +2478,7 @@
 		knora-base:listNodeName "russia" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 		knora-base:listNodePosition 5 ;
-		rdfs:label "Roussie"@fr , "Russia"@en ;
+		rdfs:label "Russie"@fr , "Russia"@en ;
 		knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-saintpetersburgRegion> ,
 									<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-buryatiaRegion> .
 
@@ -5038,7 +5038,7 @@
 		knora-base:listNodeName "russia" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-VillageHList> ;
 		knora-base:listNodePosition 5 ;
-		rdfs:label "Roussie"@fr , "Russia"@en ;
+		rdfs:label "Russie"@fr , "Russia"@en ;
 		knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-VillageHList-saintpetersburgRegion> ,
 									<http://rdfh.ch/lists/drawings-gods-2016-list-VillageHList-buryatiaRegion> .
 
