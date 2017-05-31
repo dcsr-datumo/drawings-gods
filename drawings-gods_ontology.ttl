@@ -268,6 +268,20 @@
 
 
 
+###  http://www.knora.org/ontology/0105#hasQuestionnaireBaseName
+:hasQuestionnaireBaseName rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf knora-base:hasValue ;
+              knora-base:objectClassConstraint knora-base:TextValue ;
+              knora-base:subjectClassConstraint :QuestionnaireBase ;
+              rdfs:label "Nom"@fr ,
+              	"Name"@en ;
+			  rdfs:comment "Nom du questionnaire standardisé."@fr ,
+			  	"Name of the standardized questionnairen."@en ;
+			  salsah-gui:guiElement salsah-gui:SimpleText ;
+      		  salsah-gui:guiOrder "1"^^xsd:integer .
+
+
+
 ###  http://www.knora.org/ontology/0105#hasCampaignPersonContact
 :hasCampaignPersonContact rdf:type owl:ObjectProperty ;
                        rdfs:subPropertyOf knora-base:hasValue ;
@@ -364,7 +378,9 @@
            				"Rules explained to children"@en ;
 		   			 rdfs:comment "Règles expliquées aux enfants (ex: ne pas parler aux autres enfants)."@fr ,
 						"Rules explained to children (ex. do not speek to other childrens)"@en ;
-					 salsah-gui:guiElement salsah-gui:SimpleText ;
+					 salsah-gui:guiElement salsah-gui:TextArea ;
+					 salsah-gui:guiAttribute "width=95%" ,
+							                 "rows=3" ;
       				 salsah-gui:guiOrder "2"^^xsd:integer .
 
 
@@ -1055,23 +1071,25 @@
 :includes rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf knora-base:hasLinkTo ;
           knora-base:objectClassConstraint :Passage ;
-          knora-base:subjectClassConstraint :Campaign ;
-          rdfs:label "Dessins récoltés dans le cadre de cette campagne"@fr ,
-                     "Drawings gathered within this campaign"@en ;
-          rdfs:comment "Dessins récoltés dans le cadre d'une campagne donnée."@fr ,
-					 	"Drawings gathered within a given campaign."@en;
+          knora-base:subjectClassConstraint :CollectionSite ;
+          rdfs:label "Passage(s) associé(s) à un site de collecte"@fr ,
+                     "Passage(s) associated with a collection site"@en ;
+          rdfs:comment "Passage(s) associé(s) à un site de collecte."@fr ,
+					 	"Passage(s) associated with a collection site."@en;
           salsah-gui:guiElement salsah-gui:Searchbox ;
           salsah-gui:guiOrder "3"^^xsd:integer .
+
+
 
 ###  http://www.knora.org/ontology/0105#includesValue
 :includesValue rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf knora-base:hasLinkToValue ;
           knora-base:objectClassConstraint knora-base:LinkValue ;
-          knora-base:subjectClassConstraint :Campaign ;
-          rdfs:label "Dessins récoltés dans le cadre de cette campagne"@fr ,
-                     "Drawings gathered within this campaign"@en ;
-          rdfs:comment "Dessins récoltés dans le cadre d'une campagne donnée."@fr ,
-					 	"Drawings gathered within a given campaign."@en;
+          knora-base:subjectClassConstraint :CollectionSite ;
+          rdfs:label "Passage(s) associé(s) à un site de collecte"@fr ,
+                     "Passage(s) associated with a collection site"@en ;
+          rdfs:comment "Passage(s) associé(s) à un site de collecte."@fr ,
+					 	"Passage(s) associated with a collection site."@en;
           salsah-gui:guiElement salsah-gui:Searchbox ;
           salsah-gui:guiOrder "3"^^xsd:integer .
 
@@ -3357,14 +3375,6 @@
                             owl:minCardinality "0"^^xsd:nonNegativeInteger
                           ] ,
                           [ rdf:type owl:Restriction ;
-                            owl:onProperty :includes ;
-                            owl:minCardinality "0"^^xsd:nonNegativeInteger
-                          ] ,
-                          [ rdf:type owl:Restriction ;
-                            owl:onProperty :includesValue ;
-                            owl:minCardinality "0"^^xsd:nonNegativeInteger
-                          ] ,
-                          [ rdf:type owl:Restriction ;
                             owl:onProperty :isAttachedTo ;
                             owl:minCardinality "1"^^xsd:nonNegativeInteger
                           ] ,
@@ -3429,6 +3439,14 @@
 #                                  owl:onProperty :hasGeonameCode ;
 #                                  owl:maxCardinality "1"^^xsd:nonNegativeInteger
 #                                ] ,
+							  	[ rdf:type owl:Restriction ;
+	                              owl:onProperty :includes ;
+	                              owl:minCardinality "0"^^xsd:nonNegativeInteger
+	                          	] ,
+	                          	[ rdf:type owl:Restriction ;
+	                              owl:onProperty :includesValue ;
+	                              owl:minCardinality "0"^^xsd:nonNegativeInteger
+	                          	] ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty :hasGlobalLocation ;
                                   owl:cardinality "1"^^xsd:nonNegativeInteger
@@ -3676,7 +3694,7 @@
                          ] ,
                          [ rdf:type owl:Restriction ;
                            owl:onProperty :hasCollectRulesGeneral ;
-                           owl:cardinality "1"^^xsd:nonNegativeInteger
+                           owl:maxCardinality "1"^^xsd:nonNegativeInteger
                          ] ,
                          [ rdf:type owl:Restriction ;
                            owl:onProperty :hasDrawingPassageTotal ;
@@ -3886,6 +3904,10 @@
                                    [ rdf:type owl:Restriction ;
                                      owl:onProperty :hasQuestionnaireBaseComment ;
                                      owl:minCardinality "0"^^xsd:nonNegativeInteger
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :hasQuestionnaireBaseName ;
+                                     owl:cardinality "1"^^xsd:nonNegativeInteger
 #                                   ] ,
 #                                   [ rdf:type owl:Restriction ;
 #                                     owl:onProperty :hasQuestionnaireBaseTranslator ;
