@@ -2235,7 +2235,7 @@
 					 	"Type of school according to the sex of participants (ex. mix school, girls, boys, unknown)."@en ;
 			salsah-gui:guiOrder "1"^^xsd:integer ;
 	        salsah-gui:guiElement salsah-gui:Pulldown ;
-	        salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-GenderList>" .
+	        salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-GenderListSchool>" .
 
 
 ###  http://www.knora.org/ontology/0105#hasSiteLanguage
