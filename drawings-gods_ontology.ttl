@@ -378,7 +378,7 @@
            				"Rules explained to children"@en ;
 		   			 rdfs:comment "Règles expliquées aux enfants (ex: ne pas parler aux autres enfants)."@fr ,
 						"Rules explained to children (ex. do not speek to other childrens)"@en ;
-					 salsah-gui:guiElement salsah-gui:TextArea ;
+					 salsah-gui:guiElement salsah-gui:Textarea ;
 					 salsah-gui:guiAttribute "width=95%" ,
 							                 "rows=3" ;
       				 salsah-gui:guiOrder "2"^^xsd:integer .
@@ -1955,12 +1955,12 @@
 :hasQuestionnaireBaseOriginalLanguage rdf:type owl:ObjectProperty ;
                                        rdfs:subPropertyOf knora-base:hasValue ;
                                        knora-base:objectClassConstraint knora-base:ListValue ;
-                                       knora-base:subjectClassConstraint :QuestionnaireBaseOriginal ;
-                                       rdfs:label "Langue originale du questionnaire standardisé"@fr ,
-                     						"Original language of standardized questionnaire"@en ;
-			   		   				   rdfs:comment "Langue originale du questionnaire standardisé."@fr ,
-					 						"Original language of standardized questionnaire."@en ;
-					 				   salsah-gui:guiOrder "1"^^xsd:integer ;
+                                       knora-base:subjectClassConstraint :QuestionnaireBase ;
+                                       rdfs:label "Langue (si questionnaire en langue originale)"@fr ,
+                     						"Language ( if the questionnaire is in original language)"@en ;
+			   		   				   rdfs:comment "Langue questionnaire standardisé, si le questionnaire standardisé est dans la langue d'origine."@fr ,
+					 						"Original language of standardized questionnaire, if in original language."@en ;
+					 				   salsah-gui:guiOrder "2"^^xsd:integer ;
 						               salsah-gui:guiElement salsah-gui:Pulldown ;
 					          	       salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList>" .
 
@@ -3906,6 +3906,10 @@
                                      owl:minCardinality "0"^^xsd:nonNegativeInteger
                                    ] ,
                                    [ rdf:type owl:Restriction ;
+                                     owl:onProperty :hasQuestionnaireBaseOriginalLanguage ;
+                                     owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
                                      owl:onProperty :hasQuestionnaireBaseName ;
                                      owl:cardinality "1"^^xsd:nonNegativeInteger
 #                                   ] ,
@@ -3960,15 +3964,11 @@
 
 ###  http://www.knora.org/ontology/0105#QuestionnaireBaseOriginal
 :QuestionnaireBaseOriginal rdf:type owl:Class ;
-                           rdfs:subClassOf :QuestionnaireBaseImage ,
-                                           [ rdf:type owl:Restriction ;
-                                             owl:onProperty :hasQuestionnaireBaseOriginalLanguage ;
-                                             owl:cardinality "1"^^xsd:nonNegativeInteger
-#                                           ] ,
+                           rdfs:subClassOf :QuestionnaireBaseImage ;
 #                                           [ rdf:type owl:Restriction ;
 #                                             owl:onProperty :hasQuestionnaireBaseSeqnum ;
 #                                             owl:cardinality "1"^^xsd:nonNegativeInteger
-                                           ] ;
+#                                           ] ;
                            rdfs:label "Page de questionnaire standardisé en langue originale"@fr ,
              					"Standardized questionnaire page in original language"@en .
 
