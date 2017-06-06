@@ -22,7 +22,7 @@
 	<http://rdfh.ch/lists/drawings-gods-2016-list-AdditionalTaskList-drawingParent> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-AdditionalTaskList-other> .
 	
-	<http://rdfh.ch/lists/drawings-gods-2016-list-AdditionalTaskList-attachmentTest> a knora-base:ListNode ;
+	<http://rdfh.ch/lists/drawings-gods-2016-list-AdditionalTaskList--> a knora-base:ListNode ;
 		knora-base:listNodeName "-" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-AdditionalTaskList> ;
 		knora-base:listNodePosition 0 ;
