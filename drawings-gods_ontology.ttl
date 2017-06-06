@@ -161,6 +161,33 @@
           salsah-gui:guiOrder "3"^^xsd:integer .
 
 
+
+###  http://www.knora.org/ontology/0105#hasCollectionContext
+### suppression predicate property inheritance OK
+:hasCollectionContext rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf knora-base:hasLinkTo ;
+          knora-base:objectClassConstraint :Passage ;
+          knora-base:subjectClassConstraint :Drawing ;
+          rdfs:label "Passage"@fr ,
+                     "Passage"@en ;
+          rdfs:comment "Le dessin a été collecté dans le cadre d'un passage donné."@fr ,
+					 "The drawing was collected within a given passage."@en ;
+          salsah-gui:guiElement salsah-gui:Searchbox ;
+          salsah-gui:guiOrder "3"^^xsd:integer .
+
+
+###  http://www.knora.org/ontology/0105#hasCollectionContextValue
+### suppression predicate property inheritance OK
+:hasCollectionContextValue rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf knora-base:hasLinkToValue ;
+          knora-base:objectClassConstraint knora-base:LinkValue ;
+          knora-base:subjectClassConstraint :Drawing ;
+          rdfs:label "Passage"@fr ,
+                     "Passage"@en ;
+          rdfs:comment "Le dessin a été collecté dans le cadre d'un passage donné."@fr ,
+					 "The drawing was collected within a given passage."@en .
+
+
 ###  http://www.knora.org/ontology/0105#annotationFile
 #:annotationFile rdf:type owl:ObjectProperty ;
 #                rdfs:subPropertyOf :file ,
@@ -378,9 +405,10 @@
            				"Rules explained to children"@en ;
 		   			 rdfs:comment "Règles expliquées aux enfants (ex: ne pas parler aux autres enfants)."@fr ,
 						"Rules explained to children (ex. do not speek to other childrens)"@en ;
-					 salsah-gui:guiElement salsah-gui:Textarea ;
-					 salsah-gui:guiAttribute "width=95%" ,
-							                 "rows=3" ;
+					salsah-gui:guiElement salsah-gui:Textarea ;
+					salsah-gui:guiAttribute "width=95%" ,
+                        "rows=10" ,
+                        "wrap=soft" ;
       				 salsah-gui:guiOrder "2"^^xsd:integer .
 
 
@@ -3537,6 +3565,14 @@
                          [ rdf:type owl:Restriction ;
                            owl:onProperty :hasInstructionValue ;
                            owl:minCardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasCollectionContext ;
+                           owl:cardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasCollectionContextValue ;
+                           owl:cardinality "1"^^xsd:nonNegativeInteger
                          ] ,
                          [ rdf:type owl:Restriction ;
                            owl:onProperty :hasDrawerAgeAssignedMonth ;
