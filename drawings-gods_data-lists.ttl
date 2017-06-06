@@ -17,26 +17,33 @@
 	knora-base:isRootNode true ;
 	rdfs:comment "Liste de choix pour les devoirs additionnels"@fr ;
 	rdfs:label "Devoirs additionnels (liste)"@fr , "Additional tasks (list)"@en ;
-	knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-AdditionalTaskList-attachmentTest> ,
+	knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-AdditionalTaskList--> ,
+	<http://rdfh.ch/lists/drawings-gods-2016-list-AdditionalTaskList-attachmentTest> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-AdditionalTaskList-drawingParent> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-AdditionalTaskList-other> .
+	
+	<http://rdfh.ch/lists/drawings-gods-2016-list-AdditionalTaskList-attachmentTest> a knora-base:ListNode ;
+		knora-base:listNodeName "-" ;
+		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-AdditionalTaskList> ;
+		knora-base:listNodePosition 0 ;
+		rdfs:label "-"@fr , "-"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-AdditionalTaskList-attachmentTest> a knora-base:ListNode ;
 		knora-base:listNodeName "attachmenttest" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-AdditionalTaskList> ;
-		knora-base:listNodePosition 0 ;
+		knora-base:listNodePosition 1 ;
 		rdfs:label "Test d'attachement"@fr , "Attachment test"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-AdditionalTaskList-drawingParent> a knora-base:ListNode ;
 		knora-base:listNodeName "drawingparent" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-AdditionalTaskList> ;
-		knora-base:listNodePosition 1 ;
+		knora-base:listNodePosition 2 ;
 		rdfs:label "Dessin de parent"@fr , "Drawing of parent"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-AdditionalTaskList-other> a knora-base:ListNode ;
 		knora-base:listNodeName "other" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-AdditionalTaskList> ;
-		knora-base:listNodePosition 2 ;
+		knora-base:listNodePosition 3 ;
 		rdfs:label "Autre"@fr , "Other"@en .
 
 ###   CommentAuthorList
@@ -99,7 +106,8 @@
 	knora-base:isRootNode true ;
 	rdfs:comment "Liste de choix pour l'auteur de la description sur le verso"@fr ;
 	rdfs:label "Auteur de la description sur le verso (liste)"@fr , "Author of description on verso (list)"@en ;
-	knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-DescriptionAuthorList-child> ,
+	knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-DescriptionAuthorList--> ,
+	<http://rdfh.ch/lists/drawings-gods-2016-list-DescriptionAuthorList-child> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-DescriptionAuthorList-collector> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-DescriptionAuthorList-teacher> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-DescriptionAuthorList-unknownAdult> ,
@@ -107,46 +115,52 @@
 	<http://rdfh.ch/lists/drawings-gods-2016-list-DescriptionAuthorList-other> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-DescriptionAuthorList-irrelevant> .
 
+	<http://rdfh.ch/lists/drawings-gods-2016-list-DescriptionAuthorList--> a knora-base:ListNode ;
+		knora-base:listNodeName "-" ;
+		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-DescriptionAuthorList> ;
+		knora-base:listNodePosition 0 ;
+		rdfs:label "-"@fr , "-"@en .
+
 	<http://rdfh.ch/lists/drawings-gods-2016-list-DescriptionAuthorList-child> a knora-base:ListNode ;
 		knora-base:listNodeName "child" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-DescriptionAuthorList> ;
-		knora-base:listNodePosition 0 ;
+		knora-base:listNodePosition 1 ;
 		rdfs:label "Enfant"@fr , "Child"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-DescriptionAuthorList-collector> a knora-base:ListNode ;
 		knora-base:listNodeName "collector" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-DescriptionAuthorList> ;
-		knora-base:listNodePosition 1 ;
+		knora-base:listNodePosition 2 ;
 		rdfs:label "Collecteur"@fr , "Collector"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-DescriptionAuthorList-teacher> a knora-base:ListNode ;
 		knora-base:listNodeName "teacher" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-DescriptionAuthorList> ;
-		knora-base:listNodePosition 2 ;
+		knora-base:listNodePosition 3 ;
 		rdfs:label "Maître d'école"@fr , "Teacher"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-DescriptionAuthorList-unknownAdult> a knora-base:ListNode ;
 		knora-base:listNodeName "unknownadult" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-DescriptionAuthorList> ;
-		knora-base:listNodePosition 3 ;
+		knora-base:listNodePosition 4 ;
 		rdfs:label "Adulte non-identifié"@fr , "Unknown adult"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-DescriptionAuthorList-translator> a knora-base:ListNode ;
 		knora-base:listNodeName "translator" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-DescriptionAuthorList> ;
-		knora-base:listNodePosition 4 ;
+		knora-base:listNodePosition 5 ;
 		rdfs:label "Traducteur"@fr , "Translator"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-DescriptionAuthorList-other> a knora-base:ListNode ;
 		knora-base:listNodeName "other" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-DescriptionAuthorList> ;
-		knora-base:listNodePosition 5 ;
+		knora-base:listNodePosition 6 ;
 		rdfs:label "Autre"@fr , "Other"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-DescriptionAuthorList-irrelevant> a knora-base:ListNode ;
 		knora-base:listNodeName "irrelevant" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-DescriptionAuthorList> ;
-		knora-base:listNodePosition 6 ;
+		knora-base:listNodePosition 7 ;
 		rdfs:label "Non pertinent"@fr , "Irrelevant"@en .
 
 ###    GlobalLocationHList
@@ -663,33 +677,40 @@
 	knora-base:isRootNode true ;
 	rdfs:comment "Liste de choix pour la consigne en Anglais"@fr ;
 	rdfs:label "Consigne Anglais (liste)"@fr , "Task English (list)"@en ;
-	knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-InstructionCodeList-C1> ,
+	knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-InstructionCodeList--> ,
+						<http://rdfh.ch/lists/drawings-gods-2016-list-InstructionCodeList-C1> ,
 						<http://rdfh.ch/lists/drawings-gods-2016-list-InstructionCodeList-C2> ,
 						<http://rdfh.ch/lists/drawings-gods-2016-list-InstructionCodeList-C3> ,
 						<http://rdfh.ch/lists/drawings-gods-2016-list-InstructionCodeList-C4> .
 
+<http://rdfh.ch/lists/drawings-gods-2016-list-InstructionCodeList--> a knora-base:ListNode ;
+		knora-base:listNodeName "-" ;
+		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-InstructionCodeList> ;
+		knora-base:listNodePosition 0 ;
+		rdfs:label "-"@fr , "-"@en .
+
 <http://rdfh.ch/lists/drawings-gods-2016-list-InstructionCodeList-C1> a knora-base:ListNode ;
 		knora-base:listNodeName "C1" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-InstructionCodeList> ;
-		knora-base:listNodePosition 0 ;
+		knora-base:listNodePosition 1 ;
 		rdfs:label "C1"@fr , "C1"@en .
 
 <http://rdfh.ch/lists/drawings-gods-2016-list-InstructionCodeList-C2> a knora-base:ListNode ;
 		knora-base:listNodeName "C2" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-InstructionCodeList> ;
-		knora-base:listNodePosition 1 ;
+		knora-base:listNodePosition 2 ;
 		rdfs:label "C2"@fr , "C2"@en .
 
 <http://rdfh.ch/lists/drawings-gods-2016-list-InstructionCodeList-C3> a knora-base:ListNode ;
 		knora-base:listNodeName "C3" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-InstructionCodeList> ;
-		knora-base:listNodePosition 2 ;
+		knora-base:listNodePosition 3 ;
 		rdfs:label "C3"@fr , "C3"@en .
 
 <http://rdfh.ch/lists/drawings-gods-2016-list-InstructionCodeList-C4> a knora-base:ListNode ;
 		knora-base:listNodeName "C4" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-InstructionCodeList> ;
-		knora-base:listNodePosition 3 ;
+		knora-base:listNodePosition 4 ;
 		rdfs:label "C4"@fr , "C4"@en .
 
 ### InstructionEnList
@@ -1108,7 +1129,7 @@
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "petitprince" ;
 					knora-base:listNodePosition 0 ;
-					rdfs:label "Ecole primaire d'Attalens Le Petit Prince"@fr , "Ecole primaire d'Attalens Le Petit Prince"@en .
+					rdfs:label "Ecole primaire d'Attalens Le Petit Prince (ras)"@fr , "Ecole primaire d'Attalens Le Petit Prince (ras)"@en .
 
 			<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-bossonnens> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
@@ -1121,7 +1142,7 @@
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "epbossonnens" ;
 					knora-base:listNodePosition 0 ;
-					rdfs:label "Ecole publique Ecole primaire de Bossonnens"@fr , "Public school Ecole primaire de Bossonnens"@en .
+					rdfs:label "Ecole publique Ecole primaire de Bossonnens (rbe)"@fr , "Public school Ecole primaire de Bossonnens (rbe)"@en .
 
 			<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-bulle> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
@@ -1134,7 +1155,7 @@
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "eplechere" ;
 					knora-base:listNodePosition 0 ;
-					rdfs:label "Ecole primaire La Léchère"@fr , "Primary school La Léchère"@en .
+					rdfs:label "Ecole primaire La Léchère (rle)"@fr , "Primary school La Léchère (rle)"@en .
 
 			<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-courtepin> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
@@ -1147,7 +1168,7 @@
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "epcourtepin" ;
 					knora-base:listNodePosition 0 ;
-					rdfs:label "Ecole publique primaire de Courtepin"@fr , "Primary public school of Courtepin"@en .
+					rdfs:label "Ecole publique primaire de Courtepin (rci)"@fr , "Primary public school of Courtepin (rci)"@en .
 
 			<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-courtion> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
@@ -1160,7 +1181,7 @@
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "epcourtion" ;
 					knora-base:listNodePosition 0 ;
-					rdfs:label "Ecole publique primaire de Courtion"@fr , "Public primary school of Courtion"@en .
+					rdfs:label "Ecole publique primaire de Courtion (rcn)"@fr , "Public primary school of Courtion (rcn)"@en .
 
 			<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-estavayer> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
@@ -1174,13 +1195,13 @@
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "epestavayer" ;
 					knora-base:listNodePosition 0 ;
-					rdfs:label "Ecole publique CEP d'Estavayer-le-lac"@fr , "Public school CEP d'Estavayer-le-lac"@en .
+					rdfs:label "Ecole publique CEP d'Estavayer-le-lac (rec)"@fr , "Public school CEP d'Estavayer-le-lac (rec)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-coestavayer> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "coestavayer" ;
 					knora-base:listNodePosition 1 ;
-					rdfs:label "Cycle d'orientation d'Estavayer-le-lac"@fr , "Cycle of orientation school of Estavayer-le-lac"@en .
+					rdfs:label "Cycle d'orientation d'Estavayer-le-lac (rel)"@fr , "Cycle of orientation school of Estavayer-le-lac (rel)"@en .
 
 			<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-porsel> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
@@ -1193,7 +1214,7 @@
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "epporsel" ;
 					knora-base:listNodePosition 0 ;
-					rdfs:label "Ecole publique primaire de Porsel"@fr , "Public primary school of Porsel"@en .
+					rdfs:label "Ecole publique primaire de Porsel (rpl)"@fr , "Public primary school of Porsel (rpl)"@en .
 
 			<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-remaufens> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
@@ -1206,7 +1227,7 @@
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "epremaufens" ;
 					knora-base:listNodePosition 0 ;
-					rdfs:label "Ecole publique primaire de Remaufens"@fr , "Public primary school of Remaufens"@en .
+					rdfs:label "Ecole publique primaire de Remaufens (rrs)"@fr , "Public primary school of Remaufens (rrs)"@en .
 
 			<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-saintaubin> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
@@ -1225,7 +1246,7 @@
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "eptourdetreme" ;
 					knora-base:listNodePosition 0 ;
-					rdfs:label "Ecole primaire La Tour-de-Trême"@fr , "Primary school La Tour-de-Trême"@en .
+					rdfs:label "Ecole primaire La Tour-de-Trême (rlt)"@fr , "Primary school La Tour-de-Trême (rlt)"@en .
 
 			<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-vaulruz> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
@@ -1238,7 +1259,7 @@
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "epvaulruz" ;
 					knora-base:listNodePosition 0 ;
-					rdfs:label "Ecole publique primaire de Vaulruz"@fr , "Public primary school of Vaulruz"@en .
+					rdfs:label "Ecole publique primaire de Vaulruz (rvz)"@fr , "Public primary school of Vaulruz (rvz)"@en .
 
 			<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-villeneuve> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
@@ -1270,37 +1291,37 @@
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "airedelignon" ;
 					knora-base:listNodePosition 0 ;
-					rdfs:label "Paroisse de Aïre le Lignon"@fr , "Parish Aïre le Lignon"@en .
+					rdfs:label "Paroisse de Aïre le Lignon (ral)"@fr , "Parish Aïre le Lignon (ral)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-chantal> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "chantal" ;
 					knora-base:listNodePosition 1 ;
-					rdfs:label "Paroisse Sainte-Jeanne-de-Chantal"@fr , "Parish Sainte-Jeanne-de-Chantal"@en .
+					rdfs:label "Paroisse Sainte-Jeanne-de-Chantal (rje)"@fr , "Parish Sainte-Jeanne-de-Chantal (rje)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-chatelaine> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "chatelaine" ;
 					knora-base:listNodePosition 2 ;
-					rdfs:label "Paroisse Eglise Saint-Pie X à Châtelaine"@fr , "Parish Eglise Saint-Pie X in Chatelaine"@en .
+					rdfs:label "Paroisse Eglise Saint-Pie X à Châtelaine (rpi)"@fr , "Parish Eglise Saint-Pie X in Chatelaine (rpi)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-contamines> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "contamines" ;
 					knora-base:listNodePosition 3 ;
-					rdfs:label "Ecole publique de Contamines"@fr , "Public school of Contamines"@en .
+					rdfs:label "Ecole publique de Contamines (pco)"@fr , "Public school of Contamines (pco)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-flue> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "flue" ;
 					knora-base:listNodePosition 4 ;
-					rdfs:label "Paroisse Saint-Nicolas de Flue"@fr , "Parish Saint-Nicolas de Flue"@en .
+					rdfs:label "Paroisse Saint-Nicolas de Flue (rnf)"@fr , "Parish Saint-Nicolas de Flue (rnf)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-padoue> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "padoue" ;
 					knora-base:listNodePosition 5 ;
-					rdfs:label "Paroisse Saint-Antoine de Padoue"@fr , "Parish Saint-Antoine de Padoue"@en .
+					rdfs:label "Paroisse Saint-Antoine de Padoue (rap)"@fr , "Parish Saint-Antoine de Padoue (rap)"@en .
 
 			<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-confignon> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
@@ -1313,7 +1334,7 @@
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "bernex" ;
 					knora-base:listNodePosition 0 ;
-					rdfs:label "Paroisse Bernex-Confignon"@fr , "Parish Bernex-Confignon"@en .
+					rdfs:label "Paroisse Bernex-Confignon (rbc)"@fr , "Parish Bernex-Confignon (rbc)"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-juraCanton> a knora-base:ListNode ;
 			knora-base:listNodeName "juraCanton" ;
@@ -1333,7 +1354,7 @@
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "epvicques" ;
 					knora-base:listNodePosition 0 ;
-					rdfs:label "Ecole publique primaire de Vicques"@fr , "Public primary school of Vicques"@en .
+					rdfs:label "Ecole publique primaire de Vicques (pvi)"@fr , "Public primary school of Vicques (pvi)"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-neuchatelCanton> a knora-base:ListNode ;
 			knora-base:listNodeName "neuchatelCanton" ;
@@ -1356,19 +1377,19 @@
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "bulles" ;
 					knora-base:listNodePosition 0 ;
-					rdfs:label "Eglise évangélique mennonite Les Bulles"@fr , "Evangelical mennonite church Les Bulles"@en .
+					rdfs:label "Eglise évangélique mennonite Les Bulles (rbi)"@fr , "Evangelical mennonite church Les Bulles (rbi)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-charriere> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "charriere" ;
 					knora-base:listNodePosition 1 ;
-					rdfs:label "Collège Charrière"@fr , "Public school Collège Charrière"@en .
+					rdfs:label "Collège Charrière (pcc)"@fr , "Public school Collège Charrière (pcc)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-forges> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "forges" ;
 					knora-base:listNodePosition 2 ;
-					rdfs:label "Ecole publique Les Forges"@fr , "Public school Les Forges"@en .
+					rdfs:label "Ecole publique Les Forges (pfo)"@fr , "Public school Les Forges (pfo)"@en .
 
 			<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-savagnier> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
@@ -1381,7 +1402,7 @@
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "epsavagnier" ;
 					knora-base:listNodePosition 0 ;
-					rdfs:label "Collège de Savagnier"@fr , "Public school Collège de Savagnier"@en .
+					rdfs:label "Collège de Savagnier (psr)"@fr , "Public school Collège de Savagnier (psr)"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-valaisCanton> a knora-base:ListNode ;
 			knora-base:listNodeName "valaisCanton" ;
@@ -1403,7 +1424,7 @@
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "cobassenendaz" ;
 					knora-base:listNodePosition 0 ;
-					rdfs:label "Cycle d'orientation de Basse-Nendaz"@fr , "Public school Cycle d'orientation of Basse-Nendaz"@en .
+					rdfs:label "Cycle d'orientation de Basse-Nendaz (pbs)"@fr , "Public school Cycle d'orientation of Basse-Nendaz (pbs)"@en .
 
 			<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-hautenendaz> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
@@ -1416,7 +1437,7 @@
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "ephautenendaz" ;
 					knora-base:listNodePosition 0 ;
-					rdfs:label "Ecole publique primaire de Haute-Nendaz"@fr , "Public primary school of Haute-Nendaz"@en .
+					rdfs:label "Ecole publique primaire de Haute-Nendaz (phn)"@fr , "Public primary school of Haute-Nendaz (phn)"@en .
 
 			<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-saintgingolph> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
@@ -1429,7 +1450,7 @@
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "bouveret" ;
 					knora-base:listNodePosition 0 ;
-					rdfs:label "Ecole religieuse Camp du Bouveret"@fr , "Religious school Camp du Bouveret"@en .
+					rdfs:label "Ecole religieuse Camp du Bouveret (rcb)"@fr , "Religious school Camp du Bouveret (rcb)"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-vaudCanton> a knora-base:ListNode ;
 			knora-base:listNodeName "vaudCanton" ;
@@ -1459,7 +1480,7 @@
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "epbussigny" ;
 					knora-base:listNodePosition 0 ;
-					rdfs:label "Ecole publique de Bussigny"@fr , "Public school of Bussigny"@en .
+					rdfs:label "Ecole publique de Bussigny (pbu)"@fr , "Public school of Bussigny (pbu)"@en .
 
 			<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-cossonay> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
@@ -1472,7 +1493,7 @@
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "epscossonay" ;
 					knora-base:listNodePosition 0 ;
-					rdfs:label "Etablissement primaire et secondaire de Cossonay-Penthalaz"@fr , "Primary and secondary school of Cossonay-Penthalaz"@en .
+					rdfs:label "Etablissement primaire et secondaire de Cossonay-Penthalaz (pcp)"@fr , "Primary and secondary school of Cossonay-Penthalaz (pcp)"@en .
 
 			<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-epalinges> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
@@ -1486,13 +1507,13 @@
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "choixblanche" ;
 					knora-base:listNodePosition 0 ;
-					rdfs:label "Ecole publique Collège de la Croix-Blanche"@fr , "Public school Collège de la Croix-Blanche"@en .
+					rdfs:label "Ecole publique Collège de la Croix-Blanche (pep)"@fr , "Public school Collège de la Croix-Blanche (pep)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-croisettes> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "croisettes" ;
 					knora-base:listNodePosition 1 ;
-					rdfs:label "Paroisse Les Croisettes"@fr , "Parish Les Croisettes"@en .
+					rdfs:label "Paroisse Les Croisettes (rce)"@fr , "Parish Les Croisettes (rce)"@en .
 
 			<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-jongny> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
@@ -1505,7 +1526,7 @@
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "pjongny" ;
 					knora-base:listNodePosition 0 ;
-					rdfs:label "Paroisse de Jongny"@fr , "Parish of Jongny"@en .
+					rdfs:label "Paroisse de Jongny (rjo)"@fr , "Parish of Jongny (rjo)"@en .
 
 			<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-jouxtensmezery> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
@@ -1518,7 +1539,7 @@
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "pjouxtens" ;
 					knora-base:listNodePosition 0 ;
-					rdfs:label "Paroisse de Jouxtens"@fr , "Parish of Jouxtens"@en .
+					rdfs:label "Paroisse de Jouxtens (rjs)"@fr , "Parish of Jouxtens (rjs)"@en .
 
 			<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-lonay> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
@@ -1532,13 +1553,13 @@
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "erlonay" ;
 					knora-base:listNodePosition 0 ;
-					rdfs:label "Ecole religieuse, domicile à Lonay"@fr , "Religious school, home in Lonay"@en .
+					rdfs:label "Ecole religieuse, domicile à Lonay (rld)"@fr , "Religious school, home in Lonay (rld)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-plonay> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "plonay" ;
 					knora-base:listNodePosition 1 ;
-					rdfs:label "Paroisse de Lonay-Préverenges"@fr , "Parish of Lonay-Préverenges"@en .
+					rdfs:label "Paroisse de Lonay-Préverenges (rlp)"@fr , "Parish of Lonay-Préverenges (rlp)"@en .
 
 			<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-morges> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
@@ -1552,13 +1573,13 @@
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "ermorges1" ;
 					knora-base:listNodePosition 0 ;
-					rdfs:label "Ecole religieuse, domicile à Morges"@fr , "Religious school, home in Morges"@en .
+					rdfs:label "Ecole religieuse, domicile à Morges (rmd)"@fr , "Religious school, home in Morges (rmd)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-ermorges2> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "ermorges2" ;
 					knora-base:listNodePosition 1 ;
-					rdfs:label "Religious school, home in Morges 2"@fr , "Religious school, home in Morges 2"@en .
+					rdfs:label "Religious school, home in Morges 2 (rsd)"@fr , "Religious school, home in Morges 2 (rsd)"@en .
 
 			<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-prilly> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
@@ -1571,7 +1592,7 @@
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "pprilly" ;
 					knora-base:listNodePosition 0 ;
-					rdfs:label "Paroisse de Prilly"@fr , "Parish of Prilly"@en .
+					rdfs:label "Paroisse de Prilly (rpr)"@fr , "Parish of Prilly (rpr)"@en .
 
 			<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-rolle> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
@@ -1585,13 +1606,13 @@
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "errolle" ;
 					knora-base:listNodePosition 0 ;
-					rdfs:label "Ecole religieuse, domicile à Rolle"@fr , "Religious school, home in Rolle"@en .
+					rdfs:label "Ecole religieuse, domicile à Rolle (rrd)"@fr , "Religious school, home in Rolle (rrd)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-erprolle> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "erprolle" ;
 					knora-base:listNodePosition 1 ;
-					rdfs:label "Ecole religieuse Paroisse de Rolle"@fr , "Religious school Paroisse de Rolle"@en .
+					rdfs:label "Ecole religieuse Paroisse de Rolle (rro)"@fr , "Religious school Paroisse de Rolle (rro)"@en .
 
 			<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-saintprex> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
@@ -1604,7 +1625,7 @@
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "erstprex" ;
 					knora-base:listNodePosition 0 ;
-					rdfs:label "Ecole religieuse Salle de paroisse de Saint-Prex"@fr , "Religious school Salle de paroisse de Saint-Prex"@en .
+					rdfs:label "Ecole religieuse Salle de paroisse de Saint-Prex (rsp)"@fr , "Religious school Salle de paroisse de Saint-Prex (rsp)"@en .
 
 			<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-tolochenaz> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
@@ -1617,7 +1638,7 @@
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "poste" ;
 					knora-base:listNodePosition 0 ;
-					rdfs:label "Salle de l'Ancienne Poste"@fr , "Salle de l'Ancienne Poste"@en .
+					rdfs:label "Salle de l'Ancienne Poste (rtz)"@fr , "Salle de l'Ancienne Poste (rtz)"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-iran> a knora-base:ListNode ;
 		knora-base:listNodeName "iran" ;
@@ -1654,37 +1675,37 @@
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "ahadi" ;
 					knora-base:listNodePosition 0 ;
-					rdfs:label "Ecole publique Ahadi"@fr , "Public school Ahadi"@en .
+					rdfs:label "Ecole publique Ahadi (pai)"@fr , "Public school Ahadi (pai)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-emamat1> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "emamat" ;
 					knora-base:listNodePosition 1 ;
-					rdfs:label "Ecole publique Emamat"@fr , "Public school Emamat"@en .
+					rdfs:label "Ecole publique Emamat (pet)"@fr , "Public school Emamat (pet)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-fatemeh> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "fatemeh" ;
 					knora-base:listNodePosition 2 ;
-					rdfs:label "Ecole publique Fatemeh"@fr , "Public school Fatemeh"@en .
+					rdfs:label "Ecole publique Fatemeh (pfh)"@fr , "Public school Fatemeh (pfh)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-imamali> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "imamali" ;
 					knora-base:listNodePosition 3 ;
-					rdfs:label "Ecole publique Imam Ali"@fr , "Public school Imam Ali"@en .
+					rdfs:label "Ecole publique Imam Ali (pia)"@fr , "Public school Imam Ali (pia)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-imamhadi> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "imamhadi" ;
 					knora-base:listNodePosition 4 ;
-					rdfs:label "Ecole publique Imam Hadi"@fr , "Public school Imam Hadi"@en .
+					rdfs:label "Ecole publique Imam Hadi (pih)"@fr , "Public school Imam Hadi (pih)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-narges> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "narges" ;
 					knora-base:listNodePosition 5 ;
-					rdfs:label "Ecole publique Narges"@fr , "Public school Narges"@en .
+					rdfs:label "Ecole publique Narges (pns)"@fr , "Public school Narges (pns)"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-eastazerbaijanProvince> a knora-base:ListNode ;
 			knora-base:listNodeName "eastazerbaijanProvince" ;
@@ -1713,61 +1734,61 @@
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "bahadari" ;
 					knora-base:listNodePosition 0 ;
-					rdfs:label "Ecole publique Bahadari"@fr , "Public school Bahadari"@en .
+					rdfs:label "Ecole publique Bahadari (pba)"@fr , "Public school Bahadari (pba)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-bani> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "bani" ;
 					knora-base:listNodePosition 1 ;
-					rdfs:label "Ecole publique Bani Hashem"@fr , "Public school Bani Hashem"@en .
+					rdfs:label "Ecole publique Bani Hashem (pbh)"@fr , "Public school Bani Hashem (pbh)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-fahmideh> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "fahmideh" ;
 					knora-base:listNodePosition 2 ;
-					rdfs:label "Ecole publique Fahmideh"@fr , "Public school Fahmideh"@en .
+					rdfs:label "Ecole publique Fahmideh (pfm)"@fr , "Public school Fahmideh (pfm)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-godsie> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "godsie" ;
 					knora-base:listNodePosition 3 ;
-					rdfs:label "Ecole publique Godsie"@fr , "Public school Godsie"@en .
+					rdfs:label "Ecole publique Godsie (pgs)"@fr , "Public school Godsie (pgs)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-khatamolanbia> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "khatamolanbia" ;
 					knora-base:listNodePosition 4 ;
-					rdfs:label "Ecole publique Khatamolanbia"@fr , "Public school Khatamolanbia"@en .
+					rdfs:label "Ecole publique Khatamolanbia (pla)"@fr , "Public school Khatamolanbia (pla)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-khiabani> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "khiabani" ;
 					knora-base:listNodePosition 5 ;
-					rdfs:label "Ecole publique Khiabani"@fr , "Public school Khiabani"@en .
+					rdfs:label "Ecole publique Khiabani (pki)"@fr , "Public school Khiabani (pki)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-kosar> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "kosar" ;
 					knora-base:listNodePosition 6 ;
-					rdfs:label "Ecole publique Kosar"@fr , "Public school Kosar"@en .
+					rdfs:label "Ecole publique Kosar (pko)"@fr , "Public school Kosar (pko)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-maleki> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "maleki" ;
 					knora-base:listNodePosition 7 ;
-					rdfs:label "Ecole publique Maleki"@fr , "Public school Maleki"@en .
+					rdfs:label "Ecole publique Maleki (pma)"@fr , "Public school Maleki (pma)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-shakiba> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "shakiba" ;
 					knora-base:listNodePosition 8 ;
-					rdfs:label "Ecole publique Shakiba"@fr , "Public school Shakiba"@en .
+					rdfs:label "Ecole publique Shakiba (psa)"@fr , "Public school Shakiba (psa)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-sobhani> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "sobhani" ;
 					knora-base:listNodePosition 9 ;
-					rdfs:label "Ecole publique Sobhani"@fr , "Public school Sobhani"@en .
+					rdfs:label "Ecole publique Sobhani (pso)"@fr , "Public school Sobhani (pso)"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-farsProvince> a knora-base:ListNode ;
 			knora-base:listNodeName "farsProvince" ;
@@ -1793,43 +1814,43 @@
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "azarm" ;
 					knora-base:listNodePosition 0 ;
-					rdfs:label "Ecole publique Azarm"@fr , "Public school Azarm"@en .
+					rdfs:label "Ecole publique Azarm (paz)"@fr , "Public school Azarm (paz)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-dasteyheyb> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "dasteyheyb" ;
 					knora-base:listNodePosition 1 ;
-					rdfs:label "Ecole publique Dasteyheyb"@fr , "Public school Dasteyheyb"@en .
+					rdfs:label "Ecole publique Dasteyheyb (pdt)"@fr , "Public school Dasteyheyb (pdt)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-dinodanesh> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "dinodanesh" ;
 					knora-base:listNodePosition 2 ;
-					rdfs:label "Ecole publique Dinodanesh"@fr , "Public school Dinodanesh"@en .
+					rdfs:label "Ecole publique Dinodanesh (pdi)"@fr , "Public school Dinodanesh (pdi)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-farahmandi> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "farahmandi" ;
 					knora-base:listNodePosition 3 ;
-					rdfs:label "Ecole publique Farahmandi"@fr , "Public school Farahmandi"@en .
+					rdfs:label "Ecole publique Farahmandi (pfi)"@fr , "Public school Farahmandi (pfi)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-gharinia> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "gharinia" ;
 					knora-base:listNodePosition 4 ;
-					rdfs:label "Ecole publique Gharinia"@fr , "Public school Gharinia"@en .
+					rdfs:label "Ecole publique Gharinia (pgh)"@fr , "Public school Gharinia (pgh)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-khordad> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "khordad" ;
 					knora-base:listNodePosition 5 ;
-					rdfs:label "Ecole publique Khordad"@fr , "Public school Khordad"@en .
+					rdfs:label "Ecole publique Khordad (pkh)"@fr , "Public school Khordad (pkh)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-shahrivar> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "shahrivar" ;
 					knora-base:listNodePosition 6 ;
-					rdfs:label "Ecole publique Shahrivar"@fr , "Public school Shahrivar"@en .
+					rdfs:label "Ecole publique Shahrivar (psh)"@fr , "Public school Shahrivar (psh)"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-kordestanProvince> a knora-base:ListNode ;
 			knora-base:listNodeName "kordestanProvince" ;
@@ -1855,43 +1876,43 @@
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "adham" ;
 					knora-base:listNodePosition 0 ;
-					rdfs:label "Ecole publique Adham Mozafare"@fr , "Public school Adham Mozafare"@en .
+					rdfs:label "Ecole publique Adham Mozafare (pae)"@fr , "Public school Adham Mozafare (pae)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-bahman> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "bahman" ;
 					knora-base:listNodePosition 1 ;
-					rdfs:label "Ecole publique Bahman"@fr , "Public school Bahman"@en .
+					rdfs:label "Ecole publique Bahman (pbn)"@fr , "Public school Bahman (pbn)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-farhang> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "farhang" ;
 					knora-base:listNodePosition 2 ;
-					rdfs:label "Ecole publique Farhang"@fr , "Public school Farhang"@en .
+					rdfs:label "Ecole publique Farhang (pfg)"@fr , "Public school Farhang (pfg)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-mehroar> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "mehroar" ;
 					knora-base:listNodePosition 3 ;
-					rdfs:label "Ecole publique Mehroar"@fr , "Public school Mehroar"@en .
+					rdfs:label "Ecole publique Mehroar (pmr)"@fr , "Public school Mehroar (pmr)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-salehin> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "salehin" ;
 					knora-base:listNodePosition 4 ;
-					rdfs:label "Ecole publique Salehin"@fr , "Public school Salehin"@en .
+					rdfs:label "Ecole publique Salehin (psl)"@fr , "Public school Salehin (psl)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-yarane> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "yarane" ;
 					knora-base:listNodePosition 5 ;
-					rdfs:label "Ecole publique Yarane Imam"@fr , "Public school Yarane Imam"@en .
+					rdfs:label "Ecole publique Yarane Imam (pym)"@fr , "Public school Yarane Imam (pym)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-zakie> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "zakie" ;
 					knora-base:listNodePosition 6 ;
-					rdfs:label "Ecole publique Zakie"@fr , "Public school Zakie"@en .
+					rdfs:label "Ecole publique Zakie (pze)"@fr , "Public school Zakie (pze)"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-mazandaranProvince> a knora-base:ListNode ;
 			knora-base:listNodeName "mazandaranProvince" ;
@@ -1917,43 +1938,43 @@
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "azar" ;
 					knora-base:listNodePosition 0 ;
-					rdfs:label "Ecole publique Azar"@fr , "Public school Azar"@en .
+					rdfs:label "Ecole publique Azar (paz)"@fr , "Public school Azar (paz)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-esmati> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "esmati" ;
 					knora-base:listNodePosition 1 ;
-					rdfs:label "Ecole publique Esmati"@fr , "Public school Esmati"@en .
+					rdfs:label "Ecole publique Esmati (pes)"@fr , "Public school Esmati (pes)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-imamhoussein> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "imamhoussein" ;
 					knora-base:listNodePosition 2 ;
-					rdfs:label "Ecole publique Imam Houssein"@fr , "Public school Imam Houssein"@en .
+					rdfs:label "Ecole publique Imam Houssein (phe)"@fr , "Public school Imam Houssein (phe)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-mohadeseh> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "mohadeseh" ;
 					knora-base:listNodePosition 3 ;
-					rdfs:label "Ecole publique Mohadeseh"@fr , "Public school Mohadeseh"@en .
+					rdfs:label "Ecole publique Mohadeseh (pmh)"@fr , "Public school Mohadeseh (pmh)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-nehzat1> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "nehzat" ;
 					knora-base:listNodePosition 4 ;
-					rdfs:label "Ecole publique Nehzat"@fr , "Public school Nehzat"@en .
+					rdfs:label "Ecole publique Nehzat (pnt)"@fr , "Public school Nehzat (pnt)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-shahed> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "shahed" ;
 					knora-base:listNodePosition 5 ;
-					rdfs:label "Ecole publique Shahed"@fr , "Public school Shahed"@en .
+					rdfs:label "Ecole publique Shahed (ped)"@fr , "Public school Shahed (ped)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-shahidquasemi> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "shahidquasemi" ;
 					knora-base:listNodePosition 6 ;
-					rdfs:label "Ecole publique Shahid Quasemi"@fr , "Public school Shahid Quasemi"@en .
+					rdfs:label "Ecole publique Shahid Quasemi (psq)"@fr , "Public school Shahid Quasemi (psq)"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-tehranProvince> a knora-base:ListNode ;
 			knora-base:listNodeName "tehranProvince" ;
@@ -1993,127 +2014,127 @@
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "allameh" ;
 					knora-base:listNodePosition 0 ;
-					rdfs:label "Ecole publique Allameh"@fr , "Public school Allameh"@en .
+					rdfs:label "Ecole publique Allameh Helli (pl)"@fr , "Public school Allameh Helli(pl)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-asef> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "asef" ;
 					knora-base:listNodePosition 1 ;
-					rdfs:label "Ecole publique Asef"@fr , "Public school Asef"@en .
+					rdfs:label "Ecole publique Asef (pf)"@fr , "Public school Asef (pf)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-azadi> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "azadi" ;
 					knora-base:listNodePosition 2 ;
-					rdfs:label "Ecole publique Azadi"@fr , "Public school Azadi"@en .
+					rdfs:label "Ecole publique Azadi (pa)"@fr , "Public school Azadi (pa)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-dehkhoda> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "dehkhoda" ;
 					knora-base:listNodePosition 3 ;
-					rdfs:label "Ecole publique Dehkhoda"@fr , "Public school Dehkhoda"@en .
+					rdfs:label "Ecole publique Dehkhoda (pda)"@fr , "Public school Dehkhoda (pda)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-emamat2> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "emamat" ;
 					knora-base:listNodePosition 4 ;
-					rdfs:label "Ecole publique Emamat"@fr , "Public school Emamat"@en .
+					rdfs:label "Ecole publique Emamat (pt)"@fr , "Public school Emamat (pt)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-ghaffari> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "ghaffari" ;
 					knora-base:listNodePosition 5 ;
-					rdfs:label "Ecole publique Ghaffari"@fr , "Public school Ghaffari"@en .
+					rdfs:label "Ecole publique Ghaffari (pg)"@fr , "Public school Ghaffari (pg)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-kashef> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "kashef" ;
 					knora-base:listNodePosition 6 ;
-					rdfs:label "Ecole publique Kashef"@fr , "Public school Kashef"@en .
+					rdfs:label "Ecole publique Kashef (pk)"@fr , "Public school Kashef (pk)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-mahallati> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "mahallati" ;
 					knora-base:listNodePosition 7 ;
-					rdfs:label "Ecole publique Mahallati"@fr , "Public school Mahallati"@en .
+					rdfs:label "Ecole publique Mahallati (ph)"@fr , "Public school Mahallati (ph)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-mohaddes> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "mohaddes" ;
 					knora-base:listNodePosition 8 ;
-					rdfs:label "Ecole publique Mohaddes"@fr , "Public school Mohaddes"@en .
+					rdfs:label "Ecole publique Mohaddes (pd)"@fr , "Public school Mohaddes (pd)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-moslem> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "moslem" ;
 					knora-base:listNodePosition 9 ;
-					rdfs:label "Ecole publique Moslem"@fr , "Public school Moslem"@en .
+					rdfs:label "Ecole publique Moslem (pm)"@fr , "Public school Moslem (pm)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-narjes> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "narjes" ;
 					knora-base:listNodePosition 10 ;
-					rdfs:label "Ecole publique Narjes"@fr , "Public school Narjes"@en .
+					rdfs:label "Ecole publique Narjes (pj)"@fr , "Public school Narjes (pj)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-nehzat2> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "nehzat" ;
 					knora-base:listNodePosition 11 ;
-					rdfs:label "Ecole publique Nehzat"@fr , "Public school Nehzat"@en .
+					rdfs:label "Ecole publique Nehzat (pe)"@fr , "Public school Nehzat (pe)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-rajaei> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "rajaei" ;
 					knora-base:listNodePosition 12 ;
-					rdfs:label "Ecole publique Rajaei"@fr , "Public school Rajaei"@en .
+					rdfs:label "Ecole publique Rajaei (pei)"@fr , "Public school Rajaei (pei)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-razieh> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "razieh" ;
 					knora-base:listNodePosition 13 ;
-					rdfs:label "Ecole publique Razieh"@fr , "Public school Razieh"@en .
+					rdfs:label "Ecole publique Razieh (pr)"@fr , "Public school Razieh (pr)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-raziehshahed> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "raziehshahed" ;
 					knora-base:listNodePosition 14 ;
-					rdfs:label "Ecole publique Razieh Shahed"@fr , "Public school Razieh Shahed"@en .
+					rdfs:label "Ecole publique Razieh Shahed (pz)"@fr , "Public school Razieh Shahed (pz)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-rezvan> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "rezvan" ;
 					knora-base:listNodePosition 15 ;
-					rdfs:label "Ecole publique Rezvan"@fr , "Public school Rezvan"@en .
+					rdfs:label "Ecole publique Rezvan (pv)"@fr , "Public school Rezvan (pv)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-sadr> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "sadr" ;
 					knora-base:listNodePosition 16 ;
-					rdfs:label "Ecole publique Sadr"@fr , "Public school Sadr"@en .
+					rdfs:label "Ecole publique Sadr (ps)"@fr , "Public school Sadr (ps)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-shohada> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "shohada" ;
 					knora-base:listNodePosition 17 ;
-					rdfs:label "Ecole publique Shohada"@fr , "Public school Shohada"@en .
+					rdfs:label "Ecole publique Shohada (pso)"@fr , "Public school Shohada (pso)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-solha> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "solha" ;
 					knora-base:listNodePosition 18 ;
-					rdfs:label "Ecole publique Solha"@fr , "Public school Solha"@en .
+					rdfs:label "Ecole publique Solha (po)"@fr , "Public school Solha (po)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-taleqani> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "taleqani" ;
 					knora-base:listNodePosition 19 ;
-					rdfs:label "Ecole publique Taleqani"@fr , "Public school Taleqani"@en .
+					rdfs:label "Ecole publique Taleqani (pqa)"@fr , "Public school Taleqani (pqa)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-yeganeh> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "yeganeh" ;
 					knora-base:listNodePosition 20 ;
-					rdfs:label "Ecole publique Yeganeh"@fr , "Public school Yeganeh"@en .
+					rdfs:label "Ecole publique Yeganeh (py)"@fr , "Public school Yeganeh (py)"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-japan> a knora-base:ListNode ;
 		knora-base:listNodeName "japan" ;
@@ -2145,7 +2166,7 @@
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "ebichikawa" ;
 					knora-base:listNodePosition 0 ;
-					rdfs:label "Ecole bouddhiste à Ichikawa"@fr , "Buddhist school in Ichikawa"@en .
+					rdfs:label "Ecole bouddhiste à Ichikawa (rix)"@fr , "Buddhist school in Ichikawa (rix)"@en .
 
 			<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-fuchu> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
@@ -2158,7 +2179,7 @@
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "epfuchuu" ;
 					knora-base:listNodePosition 0 ;
-					rdfs:label "Ecole bouddhiste à Fuchuu"@fr , "Buddhist school in Fuchuu"@en .
+					rdfs:label "Ecole publique à Fuchuu (pfx)"@fr , "Public school in Fuchuu (pfx)"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-fukushimaPrefecture> a knora-base:ListNode ;
 			knora-base:listNodeName "fukushimaPrefecture" ;
@@ -2178,7 +2199,7 @@
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "epkagamiishi" ;
 					knora-base:listNodePosition 0 ;
-					rdfs:label "Ecole publique à Kagamiishi"@fr , "Public school in Kagamiishi"@en .
+					rdfs:label "Ecole publique à Kagamiishi (pkx)"@fr , "Public school in Kagamiishi (pkx)"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-kyotoPrefecture> a knora-base:ListNode ;
 			knora-base:listNodeName "kyotoPrefecture" ;
@@ -2198,7 +2219,7 @@
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "ebkyoto" ;
 					knora-base:listNodePosition 0 ;
-					rdfs:label "Ecole bouddhiste à Kyoto"@fr , "Buddhist school in Kyoto"@en .
+					rdfs:label "Ecole bouddhiste à Kyoto (ryx)"@fr , "Buddhist school in Kyoto (ryx)"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-nonidentifiedPrefecture> a knora-base:ListNode ;
 			knora-base:listNodeName "nonidentifiedPrefecture" ;
@@ -2218,7 +2239,7 @@
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "nonidentified" ;
 					knora-base:listNodePosition 0 ;
-					rdfs:label "Ecole non-identifiée"@fr , "Non-identified school"@en .
+					rdfs:label "Ecole non-identifiée (rx)"@fr , "Non-identified school (rx)"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-tokyoPrefecture> a knora-base:ListNode ;
 			knora-base:listNodeName "tokyoPrefecture" ;
@@ -2240,7 +2261,7 @@
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "ebitabashi" ;
 					knora-base:listNodePosition 0 ;
-					rdfs:label "Ecole bouddhiste à Itabashi"@fr , "Buddhist school in Itabashi"@en .
+					rdfs:label "Ecole bouddhiste à Itabashi (rtx)"@fr , "Buddhist school in Itabashi (rtx)"@en .
 
 			<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-kunitachi> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
@@ -2253,7 +2274,7 @@
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "epkunitachi" ;
 					knora-base:listNodePosition 0 ;
-					rdfs:label "Ecole publique à Kunitachi"@fr , "Public school in Kunitachi"@en .
+					rdfs:label "Ecole publique à Kunitachi (pux)"@fr , "Public school in Kunitachi (pux)"@en .
 
 			<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-nakano> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
@@ -2266,7 +2287,7 @@
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "ebnakano" ;
 					knora-base:listNodePosition 0 ;
-					rdfs:label "Ecole bouddhiste à Nakano"@fr , "Buddhist school in Nakano"@en .
+					rdfs:label "Ecole bouddhiste à Nakano (rnx)"@fr , "Buddhist school in Nakano (rnx)"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-nepal> a knora-base:ListNode ;
 		knora-base:listNodeName "nepal" ;
@@ -2296,7 +2317,7 @@
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "tekhu" ;
 					knora-base:listNodePosition 0 ;
-					rdfs:label "A coté de temple de Tekhu"@fr , "near the Tekhu temple"@en .
+					rdfs:label "A coté de temple de Tekhu (rtk)"@fr , "near the Tekhu temple (rtk)"@en .
 
 			<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-khopasi> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
@@ -2309,7 +2330,7 @@
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "makhlogaon" ;
 					knora-base:listNodePosition 0 ;
-					rdfs:label "Makhlo gaon (sanctuaire rural)"@fr , "Makhlo gaon (rural sanctuary)"@en .
+					rdfs:label "Makhlo gaon (sanctuaire rural) (rkh)"@fr , "Makhlo gaon (rural sanctuary) (rkh)"@en .
 
 			<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-panauti> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
@@ -2322,7 +2343,7 @@
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "kamigaon" ;
 					knora-base:listNodePosition 0 ;
-					rdfs:label "Village de forgerons de Kamigaon"@fr , "Village of blacksmiths de Kamigaon"@en .
+					rdfs:label "Village de forgerons de Kamigaon (pkm)"@fr , "Village of blacksmiths de Kamigaon (pkm)"@en .
 
 			<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-swayambhunath> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
@@ -2335,7 +2356,7 @@
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "swayam" ;
 					knora-base:listNodePosition 0 ;
-					rdfs:label "A coté de temple de Swayambhounath"@fr , "Near Swayambhunath temple"@en .
+					rdfs:label "A coté de temple de Swayambhounath (rsw)"@fr , "Near Swayambhunath temple (rsw)"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-netherlands> a knora-base:ListNode ;
 		knora-base:listNodeName "netherlands" ;
@@ -2366,13 +2387,13 @@
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "foareker" ;
 					knora-base:listNodePosition 0 ;
-					rdfs:label "cbs De Foareker"@fr , "cbs De Foareker"@en .
+					rdfs:label "cbs De Foareker (rdf)"@fr , "cbs De Foareker (rdf)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-sneek> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "sneek" ;
 					knora-base:listNodePosition 1 ;
-					rdfs:label "PKN gemeente Sneek"@fr , "PKN gemeente Sneek"@en .
+					rdfs:label "PKN gemeente Sneek (rsk)"@fr , "PKN gemeente Sneek (rsk)"@en .
 
 			<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-leeuwarden> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
@@ -2385,7 +2406,7 @@
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "comenius" ;
 					knora-base:listNodePosition 0 ;
-					rdfs:label "csg Comenius à Leeuwarden"@fr , "csg Comenius in Leeuwarden"@en .
+					rdfs:label "csg Comenius à Leeuwarden (rcg)"@fr , "csg Comenius in Leeuwarden (rcg)"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-groningenRegion> a knora-base:ListNode ;
 			knora-base:listNodeName "groningenRegion" ;
@@ -2405,7 +2426,7 @@
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "vuurtoren" ;
 					knora-base:listNodePosition 0 ;
-					rdfs:label "OBS De Vuurtoren"@fr , "OBS De Vuurtoren"@en .
+					rdfs:label "OBS De Vuurtoren (pov)"@fr , "OBS De Vuurtoren (pov)"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-nonidentifiedRegion> a knora-base:ListNode ;
 			knora-base:listNodeName "nonidentifiedRegion" ;
@@ -2425,7 +2446,7 @@
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "home" ;
 					knora-base:listNodePosition 0 ;
-					rdfs:label "A la maison"@fr , "At home"@en .
+					rdfs:label "A la maison (pho)"@fr , "At home (pho)"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-romania> a knora-base:ListNode ;
 		knora-base:listNodeName "romania" ;
@@ -2453,7 +2474,7 @@
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "epbrasov" ;
 					knora-base:listNodePosition 0 ;
-					rdfs:label "Ecole publique en ville de Brasov"@fr , "Public school in the city of Brasov"@en .
+					rdfs:label "Ecole publique en ville de Brasov (pb)"@fr , "Public school in the city of Brasov (pb)"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-moldaviaCounty> a knora-base:ListNode ;
 			knora-base:listNodeName "moldaviaCounty" ;
@@ -2475,13 +2496,13 @@
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "bancila" ;
 					knora-base:listNodePosition 0 ;
-					rdfs:label "Octav Băncilă National College of Art"@fr , "Octav Băncilă National College of Art"@en .
+					rdfs:label "Octav Băncilă National College of Art (pi)"@fr , "Octav Băncilă National College of Art (pi)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-mihail> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "mihail" ;
 					knora-base:listNodePosition 1 ;
-					rdfs:label "Mihail Kogalniceanu Elementary School, école subordonnée à Costache Antoniu Elementary and Middle School, Tiganasi"@fr , "Mihail Kogalniceanu Elementary School, school subordinated to Costache Antoniu Elementary and Middle School, Tiganasi"@en .
+					rdfs:label "Mihail Kogalniceanu Elementary School, école subordonnée à Costache Antoniu Elementary and Middle School, Tiganasi (pi)"@fr , "Mihail Kogalniceanu Elementary School, school subordinated to Costache Antoniu Elementary and Middle School, Tiganasi (pi)"@en .
 
 			<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-moldavia> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
@@ -2496,19 +2517,19 @@
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "bujor" ;
 					knora-base:listNodePosition 0 ;
-					rdfs:label "Paul Bujor High School, Beresti (urbain)"@fr , "Paul Bujor High School, Beresti (urban)"@en .
+					rdfs:label "Paul Bujor High School, Beresti (urbain) (pv)"@fr , "Paul Bujor High School, Beresti (urban) (pv)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-grigor> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "grigor" ;
 					knora-base:listNodePosition 1 ;
-					rdfs:label "No.2 Grigore Hagiu, Middle School, Tg. Bujor (urbain)"@fr , "No.2 Grigore Hagiu, Middle School, Tg. Bujor (urban)"@en .
+					rdfs:label "No.2 Grigore Hagiu, Middle School, Tg. Bujor (urbain) (pv)"@fr , "No.2 Grigore Hagiu, Middle School, Tg. Bujor (urban) (pv)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-traian> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "traian" ;
 					knora-base:listNodePosition 2 ;
-					rdfs:label "Traian Elementary School (subordonnée à Braniste Middle School) (rurale)"@fr , "Traian Elementary School (subordinated to Braniste Middle School) (rural)"@en .
+					rdfs:label "Traian Elementary School (subordonnée à Braniste Middle School) (rurale) (pr)"@fr , "Traian Elementary School (subordinated to Braniste Middle School) (rural) (pr)"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-russia> a knora-base:ListNode ;
 		knora-base:listNodeName "russia" ;
@@ -2537,13 +2558,13 @@
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "ortho" ;
 					knora-base:listNodePosition 0 ;
-					rdfs:label "Paroisses orthodoxes, écoles de dimanche (6 lieux)"@fr , "Orthodox parishes, Sunday schools (6 places)"@en .
+					rdfs:label "Paroisses orthodoxes, écoles de dimanche (6 lieux) (ro, rb, etc)"@fr , "Orthodox parishes, Sunday schools (6 places) (ro, rb, etc)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-gym> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "gym" ;
 					knora-base:listNodePosition 1 ;
-					rdfs:label "Gymnasium 622"@fr , "Gymnasium 622"@en .
+					rdfs:label "Gymnasium 622 (px)"@fr , "Gymnasium 622 (px)"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-buryatiaRegion> a knora-base:ListNode ;
 			knora-base:listNodeName "buryatiaRegion" ;
@@ -2564,13 +2585,13 @@
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "lyc" ;
 					knora-base:listNodePosition 0 ;
-					rdfs:label "Republican National Boarding Lyceum n. 1"@fr , "Republican National Boarding Lyceum n. 1"@en .
+					rdfs:label "Republican National Boarding Lyceum n. 1 (px, etc.)"@fr , "Republican National Boarding Lyceum n. 1 (px, etc.)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-schools> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "schools" ;
 					knora-base:listNodePosition 1 ;
-					rdfs:label "Ecoles n. 8 et 25"@fr , "Schools n. 8 and 25"@en .
+					rdfs:label "Ecoles n. 8 et 25 (px, etc.)"@fr , "Schools n. 8 and 25 (px, etc.)"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-usa> a knora-base:ListNode ;
 		knora-base:listNodeName "usa" ;
@@ -2607,67 +2628,67 @@
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "joe" ;
 					knora-base:listNodePosition 0 ;
-					rdfs:label "Eglise catholique romaine St. Joe"@fr , "Roman Catholic Church St. Joe"@en .
+					rdfs:label "Eglise catholique romaine St. Joe (rc)"@fr , "Roman Catholic Church St. Joe (rc)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-luther> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "luther" ;
 					knora-base:listNodePosition 1 ;
-					rdfs:label "Eglise évangélique luthérienne d'Amérique"@fr , "Evangelical Lutheran Church of America"@en .
+					rdfs:label "Eglise évangélique luthérienne d'Amérique (rl)"@fr , "Evangelical Lutheran Church of America (rl)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-lighthouse> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "lighthouse" ;
 					knora-base:listNodePosition 2 ;
-					rdfs:label "Eglise pentecôtiste Lighthouse"@fr , "Pentecostal Lighthouse Church"@en .
+					rdfs:label "Eglise pentecôtiste Lighthouse (rsl)"@fr , "Pentecostal Lighthouse Church (rsl)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-methodiste> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "methodiste" ;
 					knora-base:listNodePosition 3 ;
-					rdfs:label "Eglise méthodiste unie"@fr , "United Methodist Church"@en .
+					rdfs:label "Eglise méthodiste unie (rm)"@fr , "United Methodist Church (rm)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-christunie> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "christunie" ;
 					knora-base:listNodePosition 4 ;
-					rdfs:label "Eglise du Christ unie"@fr , "United Church of Christ"@en .
+					rdfs:label "Eglise du Christ unie (ru)"@fr , "United Church of Christ (ru)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-nazareen> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "nazareen" ;
 					knora-base:listNodePosition 5 ;
-					rdfs:label "Eglise évangélique protestante nazaréenne"@fr , "Evangelical Protestant Nazarene Church"@en .
+					rdfs:label "Eglise évangélique protestante nazaréenne (re)"@fr , "Evangelical Protestant Nazarene Church (re)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-baptiste> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "baptiste" ;
 					knora-base:listNodePosition 6 ;
-					rdfs:label "Eglises baptistes américaines"@fr , "American Baptist denomination"@en .
+					rdfs:label "Eglises baptistes américaines (rb)"@fr , "American Baptist denomination (rb)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-presbyt> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "presbyt" ;
 					knora-base:listNodePosition 7 ;
-					rdfs:label "Eglise presbytérienne"@fr , "Presbyterian Church"@en .
+					rdfs:label "Eglise presbytérienne (rp)"@fr , "Presbyterian Church (rp)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-mary> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "mary" ;
 					knora-base:listNodePosition 8 ;
-					rdfs:label "Eglise catholique romaine St. Mary"@fr , "Roman Catholic Church St. Mary"@en .
+					rdfs:label "Eglise catholique romaine St. Mary (rc)"@fr , "Roman Catholic Church St. Mary (rc)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-trinity> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "trinity" ;
 					knora-base:listNodePosition 9 ;
-					rdfs:label "Eglise protestante de Trinité UCC"@fr , "Protestant Church Trinity UCC"@en .
+					rdfs:label "Eglise protestante de Trinité UCC (rt)"@fr , "Protestant Church Trinity UCC (rt)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-pentecost> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "pentecost" ;
 					knora-base:listNodePosition 10 ;
-					rdfs:label "Eglise pentecôtiste 4SQ"@fr , "Pentecostal Church 4SQ"@en .
+					rdfs:label "Eglise pentecôtiste 4SQ (rss)"@fr , "Pentecostal Church 4SQ (rss)"@en .
 
 ### InstructionOriginalList
 
@@ -2761,33 +2782,40 @@
 	knora-base:isRootNode true ;
 	rdfs:comment "Liste de choix pour l'ethnicité"@fr ;
 	rdfs:label "Ethnicité (liste)"@fr , "Ethnicity (list)"@en ;
-	knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-EthnicityList-buryat> ,
+	knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-EthnicityList--> ,
+	<http://rdfh.ch/lists/drawings-gods-2016-list-EthnicityList-buryat> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-EthnicityList-khaschhetri> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-EthnicityList-newar> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-EthnicityList-tamang> .
 
+	<http://rdfh.ch/lists/drawings-gods-2016-list-EthnicityList--> a knora-base:ListNode ;
+		knora-base:listNodeName "-" ;
+		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-EthnicityList> ;
+		knora-base:listNodePosition 0 ;
+		rdfs:label "-"@fr , "-"@en .
+
 	<http://rdfh.ch/lists/drawings-gods-2016-list-EthnicityList-buryat> a knora-base:ListNode ;
 		knora-base:listNodeName "buryat" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-EthnicityList> ;
-		knora-base:listNodePosition 0 ;
+		knora-base:listNodePosition 1 ;
 		rdfs:label "Bouriate"@fr , "Buryat"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-EthnicityList-khaschhetri> a knora-base:ListNode ;
 		knora-base:listNodeName "khaschhetri" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-EthnicityList> ;
-		knora-base:listNodePosition 1 ;
+		knora-base:listNodePosition 2 ;
 		rdfs:label "Khas-Chhetri"@fr , "Khas-Chhetri"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-EthnicityList-newar> a knora-base:ListNode ;
 		knora-base:listNodeName "newar" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-EthnicityList> ;
-		knora-base:listNodePosition 2 ;
+		knora-base:listNodePosition 3 ;
 		rdfs:label "Newar"@fr , "Newar"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-EthnicityList-tamang> a knora-base:ListNode ;
 		knora-base:listNodeName "tamang" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-EthnicityList> ;
-		knora-base:listNodePosition 3 ;
+		knora-base:listNodePosition 4 ;
 		rdfs:label "Tamang"@fr , "Tamang"@en .
 
 
@@ -2797,7 +2825,8 @@
 	knora-base:isRootNode true ;
 	rdfs:comment "Liste de choix pour la nationalité"@fr ;
 	rdfs:label "Nationalité (liste)"@fr , "Nationality (list)"@en ;
-	knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-NationalityList-american> ,
+	knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-NationalityList--> ,
+	<http://rdfh.ch/lists/drawings-gods-2016-list-NationalityList-american> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-NationalityList-dutch> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-NationalityList-greek> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-NationalityList-iranian> ,
@@ -2807,58 +2836,64 @@
 	<http://rdfh.ch/lists/drawings-gods-2016-list-NationalityList-russian> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-NationalityList-swiss> .
 
+	<http://rdfh.ch/lists/drawings-gods-2016-list-NationalityList--> a knora-base:ListNode ;
+		knora-base:listNodeName "-" ;
+		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-NationalityList> ;
+		knora-base:listNodePosition 0 ;
+		rdfs:label "-"@fr , "-"@en .
+
 	<http://rdfh.ch/lists/drawings-gods-2016-list-NationalityList-american> a knora-base:ListNode ;
 		knora-base:listNodeName "american" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-NationalityList> ;
-		knora-base:listNodePosition 0 ;
+		knora-base:listNodePosition 1 ;
 		rdfs:label "Américain"@fr , "American"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-NationalityList-dutch> a knora-base:ListNode ;
 		knora-base:listNodeName "dutch" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-NationalityList> ;
-		knora-base:listNodePosition 1 ;
+		knora-base:listNodePosition 2 ;
 		rdfs:label "Néerlandais "@fr , "Dutch"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-NationalityList-greek> a knora-base:ListNode ;
 		knora-base:listNodeName "greek" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-NationalityList> ;
-		knora-base:listNodePosition 2 ;
+		knora-base:listNodePosition 3 ;
 		rdfs:label "Grecque"@fr , "Greek"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-NationalityList-iranian> a knora-base:ListNode ;
 		knora-base:listNodeName "iranian" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-NationalityList> ;
-		knora-base:listNodePosition 3 ;
+		knora-base:listNodePosition 4 ;
 		rdfs:label "Iranien"@fr , "Iranian"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-NationalityList-japanese> a knora-base:ListNode ;
 		knora-base:listNodeName "japanese" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-NationalityList> ;
-		knora-base:listNodePosition 4 ;
+		knora-base:listNodePosition 5 ;
 		rdfs:label "Japonais"@fr , "Japanese"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-NationalityList-nepalese> a knora-base:ListNode ;
 		knora-base:listNodeName "nepalese" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-NationalityList> ;
-		knora-base:listNodePosition 5 ;
+		knora-base:listNodePosition 6 ;
 		rdfs:label "Népalais"@fr , "Nepalese"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-NationalityList-romanian> a knora-base:ListNode ;
 		knora-base:listNodeName "romanian" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-NationalityList> ;
-		knora-base:listNodePosition 6 ;
+		knora-base:listNodePosition 7 ;
 		rdfs:label "Roumain"@fr , "Romanian"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-NationalityList-russian> a knora-base:ListNode ;
 		knora-base:listNodeName "russian" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-NationalityList> ;
-		knora-base:listNodePosition 7 ;
+		knora-base:listNodePosition 8 ;
 		rdfs:label "Russe"@fr , "Russian"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-NationalityList-swiss> a knora-base:ListNode ;
 		knora-base:listNodeName "swiss" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-NationalityList> ;
-		knora-base:listNodePosition 8 ;
+		knora-base:listNodePosition 9 ;
 		rdfs:label "Suisse"@fr , "Swiss"@en .
 
 ###    ReligiousIdentityHList
@@ -3698,7 +3733,8 @@
 	knora-base:isRootNode true ;
 	rdfs:comment "Liste de choix pour l'accord"@fr ;
 	rdfs:label "Accord (liste)"@fr , "Agreement (list)"@en ;
-	knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ-yes> ,
+	knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ--> ,
+	<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ-yes> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ-no> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ-noanswer> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ-notatall> ,
@@ -3712,82 +3748,88 @@
 	<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ-veryseriously> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ-notasked> .
 
+	<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ--> a knora-base:ListNode ;
+		knora-base:listNodeName "-" ;
+		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ> ;
+		knora-base:listNodePosition 0 ;
+		rdfs:label "-"@fr , "-"@en .
+
 	<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ-yes> a knora-base:ListNode ;
 		knora-base:listNodeName "yes" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ> ;
-		knora-base:listNodePosition 0 ;
+		knora-base:listNodePosition 1 ;
 		rdfs:label "Oui"@fr , "Yes"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ-no> a knora-base:ListNode ;
 		knora-base:listNodeName "no" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ> ;
-		knora-base:listNodePosition 1 ;
+		knora-base:listNodePosition 2 ;
 		rdfs:label "Non"@fr , "No"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ-noanswer> a knora-base:ListNode ;
 		knora-base:listNodeName "noanswer" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ> ;
-		knora-base:listNodePosition 2 ;
+		knora-base:listNodePosition 3 ;
 		rdfs:label "Pas de réponse"@fr , "No answer"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ-notatall> a knora-base:ListNode ;
 		knora-base:listNodeName "notatall" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ> ;
-		knora-base:listNodePosition 3 ;
+		knora-base:listNodePosition 4 ;
 		rdfs:label "Pas du tout"@fr , "Not at all"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ-rathernot> a knora-base:ListNode ;
 		knora-base:listNodeName "rathernot" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ> ;
-		knora-base:listNodePosition 4 ;
+		knora-base:listNodePosition 5 ;
 		rdfs:label "Plutôt non"@fr , "Rather not"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ-notparticularly> a knora-base:ListNode ;
 		knora-base:listNodeName "notparticularly" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ> ;
-		knora-base:listNodePosition 5 ;
+		knora-base:listNodePosition 6 ;
 		rdfs:label "Pas en particulier"@fr , "Not particularly"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ-ratheryes> a knora-base:ListNode ;
 		knora-base:listNodeName "ratheryes" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ> ;
-		knora-base:listNodePosition 6 ;
+		knora-base:listNodePosition 7 ;
 		rdfs:label "Plutôt oui"@fr , "Rather yes"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ-notveryseriously> a knora-base:ListNode ;
 		knora-base:listNodeName "notveryseriously" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ> ;
-		knora-base:listNodePosition 7 ;
+		knora-base:listNodePosition 8 ;
 		rdfs:label "Pas très sérieux"@fr , "Not very seriously"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ-totally> a knora-base:ListNode ;
 		knora-base:listNodeName "totally" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ> ;
-		knora-base:listNodePosition 8 ;
+		knora-base:listNodePosition 9 ;
 		rdfs:label "Totalement"@fr , "Totally"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ-ratherseriously> a knora-base:ListNode ;
 		knora-base:listNodeName "ratherseriously" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ> ;
-		knora-base:listNodePosition 9 ;
+		knora-base:listNodePosition 10 ;
 		rdfs:label "Plutôt sérieux"@fr , "Rather seriously"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ-seriously> a knora-base:ListNode ;
 		knora-base:listNodeName "seriously" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ> ;
-		knora-base:listNodePosition 10 ;
+		knora-base:listNodePosition 11 ;
 		rdfs:label "Sérieux"@fr , "Seriously"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ-veryseriously> a knora-base:ListNode ;
 		knora-base:listNodeName "veryseriously" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ> ;
-		knora-base:listNodePosition 11 ;
+		knora-base:listNodePosition 12 ;
 		rdfs:label "Très sérieusement"@fr , "Very seriously"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ-notasked> a knora-base:ListNode ;
 		knora-base:listNodeName "notasked" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ> ;
-		knora-base:listNodePosition 12 ;
+		knora-base:listNodePosition 13 ;
 		rdfs:label "Pas demandé"@fr , "Not asked"@en .
 
 ###   AgreementRelatedNumListQ
@@ -3797,7 +3839,8 @@
 	knora-base:isRootNode true ;
 	rdfs:comment "Liste de choix pour l'accord numérique"@fr ;
 	rdfs:label "Accord (liste)"@fr , "Agreement (list)"@en ;
-	knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedNumListQ-1> ,
+	knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedNumListQ--> ,
+	<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedNumListQ-1> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedNumListQ-2> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedNumListQ-3> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedNumListQ-4> ,
@@ -3808,64 +3851,70 @@
 	<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedNumListQ-9> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedNumListQ-10> .
 
+	<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedNumListQ--> a knora-base:ListNode ;
+		knora-base:listNodeName "-" ;
+		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedNumListQ> ;
+		knora-base:listNodePosition 0 ;
+		rdfs:label "-"@fr , "-"@en .
+
 	<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedNumListQ-1> a knora-base:ListNode ;
 		knora-base:listNodeName "1" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedNumListQ> ;
-		knora-base:listNodePosition 0 ;
+		knora-base:listNodePosition 1 ;
 		rdfs:label "1"@fr , "1"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedNumListQ-2> a knora-base:ListNode ;
 		knora-base:listNodeName "2" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedNumListQ> ;
-		knora-base:listNodePosition 1 ;
+		knora-base:listNodePosition 2 ;
 		rdfs:label "2"@fr , "2"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedNumListQ-3> a knora-base:ListNode ;
 		knora-base:listNodeName "3" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedNumListQ> ;
-		knora-base:listNodePosition 2 ;
+		knora-base:listNodePosition 3 ;
 		rdfs:label "3"@fr , "3"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedNumListQ-4> a knora-base:ListNode ;
 		knora-base:listNodeName "4" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedNumListQ> ;
-		knora-base:listNodePosition 3 ;
+		knora-base:listNodePosition 4 ;
 		rdfs:label "4"@fr , "4"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedNumListQ-5> a knora-base:ListNode ;
 		knora-base:listNodeName "5" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedNumListQ> ;
-		knora-base:listNodePosition 4 ;
+		knora-base:listNodePosition 5 ;
 		rdfs:label "5"@fr , "5"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedNumListQ-6> a knora-base:ListNode ;
 		knora-base:listNodeName "6" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedNumListQ> ;
-		knora-base:listNodePosition 5 ;
+		knora-base:listNodePosition 6 ;
 		rdfs:label "6"@fr , "6"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedNumListQ-7> a knora-base:ListNode ;
 		knora-base:listNodeName "7" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedNumListQ> ;
-		knora-base:listNodePosition 6 ;
+		knora-base:listNodePosition 7 ;
 		rdfs:label "7"@fr , "7"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedNumListQ-8> a knora-base:ListNode ;
 		knora-base:listNodeName "8" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedNumListQ> ;
-		knora-base:listNodePosition 7 ;
+		knora-base:listNodePosition 8 ;
 		rdfs:label "8"@fr , "8"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedNumListQ-9> a knora-base:ListNode ;
 		knora-base:listNodeName "9" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedNumListQ> ;
-		knora-base:listNodePosition 8 ;
+		knora-base:listNodePosition 9 ;
 		rdfs:label "9"@fr , "9"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedNumListQ-10> a knora-base:ListNode ;
 		knora-base:listNodeName "10" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedNumListQ> ;
-		knora-base:listNodePosition 9 ;
+		knora-base:listNodePosition 10 ;
 		rdfs:label "10"@fr , "10"@en .
 
 ###   TranslatorList
@@ -3949,7 +3998,8 @@
 	knora-base:isRootNode true ;
 	rdfs:comment "Liste de choix pour le temps"@fr ;
 	rdfs:label "Temps (liste)"@fr , "Time (list)"@en ;
-	knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ-awake> ,
+	knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ--> ,
+	<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ-awake> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ-beforemeals> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ-evenings> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ-daily> ,
@@ -3967,106 +4017,112 @@
 	<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ-notasked> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ-irrelevant> .
 
+	<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ--> a knora-base:ListNode ;
+		knora-base:listNodeName "-" ;
+		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ> ;
+		knora-base:listNodePosition 0 ;
+		rdfs:label "-"@fr , "-"@en .
+
 	<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ-awake> a knora-base:ListNode ;
 		knora-base:listNodeName "awake" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ> ;
-		knora-base:listNodePosition 0 ;
+		knora-base:listNodePosition 1 ;
 		rdfs:label "Au reveil"@fr , "On awakening"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ-beforemeals> a knora-base:ListNode ;
 		knora-base:listNodeName "beforemeals" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ> ;
-		knora-base:listNodePosition 1 ;
+		knora-base:listNodePosition 2 ;
 		rdfs:label "Avant manger"@fr , "Before meals"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ-evenings> a knora-base:ListNode ;
 		knora-base:listNodeName "evenings" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ> ;
-		knora-base:listNodePosition 2 ;
+		knora-base:listNodePosition 3 ;
 		rdfs:label "Les soirs"@fr , "in the evenings"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ-daily> a knora-base:ListNode ;
 		knora-base:listNodeName "daily" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ> ;
-		knora-base:listNodePosition 3 ;
+		knora-base:listNodePosition 4 ;
 		rdfs:label "Chaque jour"@fr , "Daily"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ-weekly> a knora-base:ListNode ;
 		knora-base:listNodeName "weekly" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ> ;
-		knora-base:listNodePosition 4 ;
+		knora-base:listNodePosition 5 ;
 		rdfs:label "Chaque semaine"@fr , "Weekly"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ-monthly> a knora-base:ListNode ;
 		knora-base:listNodeName "monthly" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ> ;
-		knora-base:listNodePosition 5 ;
+		knora-base:listNodePosition 6 ;
 		rdfs:label "Chaque mois"@fr , "Monthly"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ-yearly> a knora-base:ListNode ;
 		knora-base:listNodeName "yearly" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ> ;
-		knora-base:listNodePosition 6 ;
+		knora-base:listNodePosition 7 ;
 		rdfs:label "Chaque année"@fr , "Early"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ-fewtimesayear> a knora-base:ListNode ;
 		knora-base:listNodeName "fewtimesayear" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ> ;
-		knora-base:listNodePosition 7 ;
+		knora-base:listNodePosition 8 ;
 		rdfs:label "Quelque fois par année"@fr , "A few times per year"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ-once> a knora-base:ListNode ;
 		knora-base:listNodeName "once" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ> ;
-		knora-base:listNodePosition 8 ;
+		knora-base:listNodePosition 9 ;
 		rdfs:label "Une fois"@fr , "Once"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ-afterlunch> a knora-base:ListNode ;
 		knora-base:listNodeName "afterlunch" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ> ;
-		knora-base:listNodePosition 9 ;
+		knora-base:listNodePosition 10 ;
 		rdfs:label "Après le diner"@fr , "After Lunch"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ-threetimesday> a knora-base:ListNode ;
 		knora-base:listNodeName "threetimesday" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ> ;
-		knora-base:listNodePosition 10 ;
+		knora-base:listNodePosition 11 ;
 		rdfs:label "Trois fois par jour fois"@fr , "Three times a day"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ-fivetimesday> a knora-base:ListNode ;
 		knora-base:listNodeName "fivetimesday" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ> ;
-		knora-base:listNodePosition 11 ;
+		knora-base:listNodePosition 12 ;
 		rdfs:label "Cinq fois par jour fois"@fr , "Five times a day"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ-other> a knora-base:ListNode ;
 		knora-base:listNodeName "other" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ> ;
-		knora-base:listNodePosition 12 ;
+		knora-base:listNodePosition 13 ;
 		rdfs:label "Autre"@fr , "Other"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ-never> a knora-base:ListNode ;
 		knora-base:listNodeName "never" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ> ;
-		knora-base:listNodePosition 13 ;
+		knora-base:listNodePosition 14 ;
 		rdfs:label "Jamais"@fr , "Never"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ-noanswer> a knora-base:ListNode ;
 		knora-base:listNodeName "noanswer" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ> ;
-		knora-base:listNodePosition 14 ;
+		knora-base:listNodePosition 15 ;
 		rdfs:label "Pas de réponse"@fr , "No answer"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ-notasked> a knora-base:ListNode ;
 		knora-base:listNodeName "notasked" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ> ;
-		knora-base:listNodePosition 15 ;
+		knora-base:listNodePosition 16 ;
 		rdfs:label "Pas demandé"@fr , "Not asked"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ-irrelevant> a knora-base:ListNode ;
 		knora-base:listNodeName "irrelevant" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ> ;
-		knora-base:listNodePosition 16 ;
+		knora-base:listNodePosition 17 ;
 		rdfs:label "Non pertinent"@fr , "Irrelevant"@en .
 
 ###   GodAgeListQ
@@ -4076,47 +4132,54 @@
 	knora-base:isRootNode true ;
 	rdfs:comment "Liste de choix pour références possible de l'âge des dieux"@fr ;
 	rdfs:label "Age de dieu (liste)"@fr , "Age of god (list)"@en ;
-	knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodAgeListQ-veryyoung> ,
+	knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodAgeListQ--> ,
+	<http://rdfh.ch/lists/drawings-gods-2016-list-GodAgeListQ-veryyoung> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-GodAgeListQ-young> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-GodAgeListQ-old> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-GodAgeListQ-other> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-GodAgeListQ-noanswer> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-GodAgeListQ-notasked> .
 
+	<http://rdfh.ch/lists/drawings-gods-2016-list-GodAgeListQ--> a knora-base:ListNode ;
+		knora-base:listNodeName "-" ;
+		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodAgeListQ> ;
+		knora-base:listNodePosition 0 ;
+		rdfs:label "-"@fr , "-"@en .
+
 	<http://rdfh.ch/lists/drawings-gods-2016-list-GodAgeListQ-veryyoung> a knora-base:ListNode ;
 		knora-base:listNodeName "veryyoung" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodAgeListQ> ;
-		knora-base:listNodePosition 0 ;
+		knora-base:listNodePosition 1 ;
 		rdfs:label "très jeune"@fr , "very young"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-GodAgeListQ-young> a knora-base:ListNode ;
 		knora-base:listNodeName "young" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodAgeListQ> ;
-		knora-base:listNodePosition 1 ;
+		knora-base:listNodePosition 2 ;
 		rdfs:label "jeune"@fr , "young"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-GodAgeListQ-old> a knora-base:ListNode ;
 		knora-base:listNodeName "old" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodAgeListQ> ;
-		knora-base:listNodePosition 2 ;
+		knora-base:listNodePosition 3 ;
 		rdfs:label "vieux"@fr , "old"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-GodAgeListQ-other> a knora-base:ListNode ;
 		knora-base:listNodeName "other" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodAgeListQ> ;
-		knora-base:listNodePosition 3 ;
+		knora-base:listNodePosition 4 ;
 		rdfs:label "autre"@fr , "other"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-GodAgeListQ-noanswer> a knora-base:ListNode ;
 		knora-base:listNodeName "noanswer" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodAgeListQ> ;
-		knora-base:listNodePosition 4 ;
+		knora-base:listNodePosition 5 ;
 		rdfs:label "Pas de réponse"@fr , "No answer"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-GodAgeListQ-notasked> a knora-base:ListNode ;
 		knora-base:listNodeName "notasked" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodAgeListQ> ;
-		knora-base:listNodePosition 5 ;
+		knora-base:listNodePosition 6 ;
 		rdfs:label "Pas demandé"@fr , "Not asked"@en .
 
 ###   GodRelListQ
@@ -4190,7 +4253,8 @@
 	knora-base:isRootNode true ;
 	rdfs:comment "Liste de choix pour références possible de sex des dieux"@fr ;
 	rdfs:label "Genre de dieu (liste)"@fr , "Sex of god (list)"@en ;
-	knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodSexListQ-female> ,
+	knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodSexListQ--> ,
+	<http://rdfh.ch/lists/drawings-gods-2016-list-GodSexListQ-female> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-GodSexListQ-male> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-GodSexListQ-neuter> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-GodSexListQ-malefemale> ,
@@ -4198,46 +4262,52 @@
 	<http://rdfh.ch/lists/drawings-gods-2016-list-GodSexListQ-noanswer> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-GodSexListQ-notasked> .
 
+	<http://rdfh.ch/lists/drawings-gods-2016-list-GodSexListQ--> a knora-base:ListNode ;
+		knora-base:listNodeName "-" ;
+		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodSexListQ> ;
+		knora-base:listNodePosition 0 ;
+		rdfs:label "-"@fr , "-"@en .
+	
 	<http://rdfh.ch/lists/drawings-gods-2016-list-GodSexListQ-female> a knora-base:ListNode ;
 		knora-base:listNodeName "female" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodSexListQ> ;
-		knora-base:listNodePosition 0 ;
+		knora-base:listNodePosition 1 ;
 		rdfs:label "féminin"@fr , "Female"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-GodSexListQ-male> a knora-base:ListNode ;
 		knora-base:listNodeName "male" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodSexListQ> ;
-		knora-base:listNodePosition 1 ;
+		knora-base:listNodePosition 2 ;
 		rdfs:label "masculin"@fr , "male"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-GodSexListQ-neuter> a knora-base:ListNode ;
 		knora-base:listNodeName "neuter" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodSexListQ> ;
-		knora-base:listNodePosition 2 ;
+		knora-base:listNodePosition 3 ;
 		rdfs:label "neutre"@fr , "neuter"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-GodSexListQ-malefemale> a knora-base:ListNode ;
 		knora-base:listNodeName "malefemale" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodSexListQ> ;
-		knora-base:listNodePosition 3 ;
+		knora-base:listNodePosition 4 ;
 		rdfs:label "masculin et féminin"@fr , "male and female"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-GodSexListQ-other> a knora-base:ListNode ;
 		knora-base:listNodeName "other" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodSexListQ> ;
-		knora-base:listNodePosition 4 ;
+		knora-base:listNodePosition 5 ;
 		rdfs:label "autre"@fr , "other"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-GodSexListQ-noanswer> a knora-base:ListNode ;
 		knora-base:listNodeName "noanswer" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodSexListQ> ;
-		knora-base:listNodePosition 5 ;
+		knora-base:listNodePosition 6 ;
 		rdfs:label "Pas de réponse"@fr , "No answer"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-GodSexListQ-notasked> a knora-base:ListNode ;
 		knora-base:listNodeName "notasked" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodSexListQ> ;
-		knora-base:listNodePosition 6 ;
+		knora-base:listNodePosition 7 ;
 		rdfs:label "Pas demandé"@fr , "Not asked"@en .
 
 ###   JapanNYListQ
@@ -4247,7 +4317,8 @@
 	knora-base:isRootNode true ;
 	rdfs:comment "Liste de choix pour le visites aux temple au Japon pendant la fête de Nouvelle An"@fr ;
 	rdfs:label "Visite de temple au Japon pendant le Nouvel An (liste)"@fr , "Temple visit in Japan at New Year Eve (list)"@en ;
-	knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-JapanNYListQ-jinjyaotera> ,
+	knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-JapanNYListQ--> ,
+	<http://rdfh.ch/lists/drawings-gods-2016-list-JapanNYListQ-jinjyaotera> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-JapanNYListQ-jinjya> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-JapanNYListQ-otera> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-JapanNYListQ-temple> ,
@@ -4256,52 +4327,58 @@
 	<http://rdfh.ch/lists/drawings-gods-2016-list-JapanNYListQ-noanswer> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-JapanNYListQ-notasked> .
 
+	<http://rdfh.ch/lists/drawings-gods-2016-list-JapanNYListQ--> a knora-base:ListNode ;
+		knora-base:listNodeName "-" ;
+		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-JapanNYListQ> ;
+		knora-base:listNodePosition 0 ;
+		rdfs:label "-"@fr , "-"@en .
+
 	<http://rdfh.ch/lists/drawings-gods-2016-list-JapanNYListQ-jinjyaotera> a knora-base:ListNode ;
 		knora-base:listNodeName "jinjyaotera" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-JapanNYListQ> ;
-		knora-base:listNodePosition 0 ;
+		knora-base:listNodePosition 1 ;
 		rdfs:label "jinjya ou otera"@fr , "jinjya or otera"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-JapanNYListQ-jinjya> a knora-base:ListNode ;
 		knora-base:listNodeName "jinjya" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-JapanNYListQ> ;
-		knora-base:listNodePosition 1 ;
+		knora-base:listNodePosition 2 ;
 		rdfs:label "jinjya"@fr , "jinjya"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-JapanNYListQ-otera> a knora-base:ListNode ;
 		knora-base:listNodeName "otera" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-JapanNYListQ> ;
-		knora-base:listNodePosition 2 ;
+		knora-base:listNodePosition 3 ;
 		rdfs:label "otera"@fr , "otera"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-JapanNYListQ-temple> a knora-base:ListNode ;
 		knora-base:listNodeName "temple" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-JapanNYListQ> ;
-		knora-base:listNodePosition 3 ;
+		knora-base:listNodePosition 4 ;
 		rdfs:label "temple"@fr , "temple"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-JapanNYListQ-church> a knora-base:ListNode ;
 		knora-base:listNodeName "church" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-JapanNYListQ> ;
-		knora-base:listNodePosition 4 ;
+		knora-base:listNodePosition 5 ;
 		rdfs:label "eglise"@fr , "church"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-JapanNYListQ-other> a knora-base:ListNode ;
 		knora-base:listNodeName "other" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-JapanNYListQ> ;
-		knora-base:listNodePosition 5 ;
+		knora-base:listNodePosition 6 ;
 		rdfs:label "autre"@fr , "other"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-JapanNYListQ-noanswer> a knora-base:ListNode ;
 		knora-base:listNodeName "noanswer" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-JapanNYListQ> ;
-		knora-base:listNodePosition 6 ;
+		knora-base:listNodePosition 7 ;
 		rdfs:label "Pas de réponse"@fr , "No answer"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-JapanNYListQ-notasked> a knora-base:ListNode ;
 		knora-base:listNodeName "notasked" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-JapanNYListQ> ;
-		knora-base:listNodePosition 7 ;
+		knora-base:listNodePosition 8 ;
 		rdfs:label "Pas demandé"@fr , "Not asked"@en .
 
 ###   JapanObjectListQ
@@ -4311,7 +4388,8 @@
 	knora-base:isRootNode true ;
 	rdfs:comment "Liste de choix pour l'objet de culte à la maison au Japon"@fr ;
 	rdfs:label "Objet de culte à la maison au Japon (liste)"@fr , "Religious object at home in Japan (list)"@en ;
-	knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-JapanObjectListQ-butsudankamidana> ,
+	knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-JapanObjectListQ--> ,
+	<http://rdfh.ch/lists/drawings-gods-2016-list-JapanObjectListQ-butsudankamidana> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-JapanObjectListQ-butsudan> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-JapanObjectListQ-kamidana> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-JapanObjectListQ-altar> ,
@@ -4319,46 +4397,52 @@
 	<http://rdfh.ch/lists/drawings-gods-2016-list-JapanObjectListQ-noanswer> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-JapanObjectListQ-notasked> .
 
+	<http://rdfh.ch/lists/drawings-gods-2016-list-JapanObjectListQ--> a knora-base:ListNode ;
+		knora-base:listNodeName "-" ;
+		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-JapanObjectListQ> ;
+		knora-base:listNodePosition 0 ;
+		rdfs:label "-"@fr , "-"@en .
+
 	<http://rdfh.ch/lists/drawings-gods-2016-list-JapanObjectListQ-butsudankamidana> a knora-base:ListNode ;
 		knora-base:listNodeName "butsudankamidana" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-JapanObjectListQ> ;
-		knora-base:listNodePosition 0 ;
+		knora-base:listNodePosition 1 ;
 		rdfs:label "butsudan ou kamidana"@fr , "butsudan or kamidana"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-JapanObjectListQ-butsudan> a knora-base:ListNode ;
 		knora-base:listNodeName "butsudan" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-JapanObjectListQ> ;
-		knora-base:listNodePosition 1 ;
+		knora-base:listNodePosition 2 ;
 		rdfs:label "butsudan"@fr , "butsudan"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-JapanObjectListQ-kamidana> a knora-base:ListNode ;
 		knora-base:listNodeName "kamidana" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-JapanObjectListQ> ;
-		knora-base:listNodePosition 2 ;
+		knora-base:listNodePosition 3 ;
 		rdfs:label "kamidana"@fr , "kamidana"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-JapanObjectListQ-altar> a knora-base:ListNode ;
 		knora-base:listNodeName "altar" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-JapanObjectListQ> ;
-		knora-base:listNodePosition 3 ;
+		knora-base:listNodePosition 4 ;
 		rdfs:label "altar"@fr , "altar"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-JapanObjectListQ-other> a knora-base:ListNode ;
 		knora-base:listNodeName "other" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-JapanObjectListQ> ;
-		knora-base:listNodePosition 4 ;
+		knora-base:listNodePosition 5 ;
 		rdfs:label "autre"@fr , "other"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-JapanObjectListQ-noanswer> a knora-base:ListNode ;
 		knora-base:listNodeName "noanswer" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-JapanObjectListQ> ;
-		knora-base:listNodePosition 5 ;
+		knora-base:listNodePosition 6 ;
 		rdfs:label "Pas de réponse"@fr , "No answer"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-JapanObjectListQ-notasked> a knora-base:ListNode ;
 		knora-base:listNodeName "notasked" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-JapanObjectListQ> ;
-		knora-base:listNodePosition 6 ;
+		knora-base:listNodePosition 7 ;
 		rdfs:label "Pas demandé"@fr , "Not asked"@en .
 
 ###   LocGodListQ
@@ -4368,7 +4452,8 @@
 	knora-base:isRootNode true ;
 	rdfs:comment "Liste de choix pour références possible aux places des dieux"@fr ;
 	rdfs:label "Place de dieu (liste)"@fr , "Place of god (list)"@en ;
-	knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-LocGodListQ-sky> ,
+	knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-LocGodListQ--> ,
+	<http://rdfh.ch/lists/drawings-gods-2016-list-LocGodListQ-sky> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-LocGodListQ-earth> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-LocGodListQ-sun> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-LocGodListQ-everywhere> ,
@@ -4381,76 +4466,83 @@
 	<http://rdfh.ch/lists/drawings-gods-2016-list-LocGodListQ-noanswer> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-LocGodListQ-notasked> .
 
+
+	<http://rdfh.ch/lists/drawings-gods-2016-list-LocGodListQ--> a knora-base:ListNode ;
+		knora-base:listNodeName "-" ;
+		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-LocGodListQ> ;
+		knora-base:listNodePosition 0 ;
+		rdfs:label "-"@fr , "-"@en .
+
 	<http://rdfh.ch/lists/drawings-gods-2016-list-LocGodListQ-sky> a knora-base:ListNode ;
 		knora-base:listNodeName "sky" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-LocGodListQ> ;
-		knora-base:listNodePosition 0 ;
+		knora-base:listNodePosition 1 ;
 		rdfs:label "ciel"@fr , "sky"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-LocGodListQ-earth> a knora-base:ListNode ;
 		knora-base:listNodeName "earth" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-LocGodListQ> ;
-		knora-base:listNodePosition 1 ;
+		knora-base:listNodePosition 2 ;
 		rdfs:label "terre"@fr , "earth"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-LocGodListQ-sun> a knora-base:ListNode ;
 		knora-base:listNodeName "sun" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-LocGodListQ> ;
-		knora-base:listNodePosition 2 ;
+		knora-base:listNodePosition 3 ;
 		rdfs:label "soleil"@fr , "sun"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-LocGodListQ-everywhere> a knora-base:ListNode ;
 		knora-base:listNodeName "everywhere" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-LocGodListQ> ;
-		knora-base:listNodePosition 3 ;
+		knora-base:listNodePosition 4 ;
 		rdfs:label "partout"@fr , "everywhere"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-LocGodListQ-self> a knora-base:ListNode ;
 		knora-base:listNodeName "self" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-LocGodListQ> ;
-		knora-base:listNodePosition 4 ;
+		knora-base:listNodePosition 5 ;
 		rdfs:label "En soi"@fr , "Self"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-LocGodListQ-jesus> a knora-base:ListNode ;
 		knora-base:listNodeName "jesus" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-LocGodListQ> ;
-		knora-base:listNodePosition 5 ;
+		knora-base:listNodePosition 6 ;
 		rdfs:label "Jésus"@fr , "Jesus"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-LocGodListQ-mary> a knora-base:ListNode ;
 		knora-base:listNodeName "mary" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-LocGodListQ> ;
-		knora-base:listNodePosition 6 ;
+		knora-base:listNodePosition 7 ;
 		rdfs:label "Marie"@fr , "Mary"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-LocGodListQ-buddha> a knora-base:ListNode ;
 		knora-base:listNodeName "buddha" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-LocGodListQ> ;
-		knora-base:listNodePosition 7 ;
+		knora-base:listNodePosition 8 ;
 		rdfs:label "Bouddha"@fr , "Buddha"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-LocGodListQ-notexist> a knora-base:ListNode ;
 		knora-base:listNodeName "notexist" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-LocGodListQ> ;
-		knora-base:listNodePosition 8 ;
+		knora-base:listNodePosition 9 ;
 		rdfs:label "N'existe pas"@fr , "Does not exist"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-LocGodListQ-doesnotknow> a knora-base:ListNode ;
 		knora-base:listNodeName "doesnotknow" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-LocGodListQ> ;
-		knora-base:listNodePosition 9 ;
+		knora-base:listNodePosition 10 ;
 		rdfs:label "Ne sait pas"@fr , "Does not know"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-LocGodListQ-noanswer> a knora-base:ListNode ;
 		knora-base:listNodeName "noanswer" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-LocGodListQ> ;
-		knora-base:listNodePosition 10 ;
+		knora-base:listNodePosition 11 ;
 		rdfs:label "Pas de réponse"@fr , "No answer"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-LocGodListQ-notasked> a knora-base:ListNode ;
 		knora-base:listNodeName "notasked" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-LocGodListQ> ;
-		knora-base:listNodePosition 11 ;
+		knora-base:listNodePosition 12 ;
 		rdfs:label "Pas demandé"@fr , "Not asked"@en .
 
 ###    VillageHList
@@ -5129,19 +5221,26 @@
 	knora-base:isRootNode true ;
 	rdfs:comment "Liste hiérarchique de choix : les representations sont-elles composées d'un seul élément ou de multiples éléments"@fr ;
 	rdfs:label "Représentation seule ou multiple"@fr , "Single or multiple representation"@en ;
-	knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-DrawingPartsHList-single> ,
+	knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-DrawingPartsHList--> ,
+									<http://rdfh.ch/lists/drawings-gods-2016-list-DrawingPartsHList-single> ,
 									<http://rdfh.ch/lists/drawings-gods-2016-list-DrawingPartsHList-multiple> .
+
+		<http://rdfh.ch/lists/drawings-gods-2016-list-DrawingPartsHList--> a knora-base:ListNode ;
+			knora-base:listNodeName "-" ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-DrawingPartsHList> ;
+			knora-base:listNodePosition 0 ;
+			rdfs:label "-"@fr , "-"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-DrawingPartsHList-single> a knora-base:ListNode ;
 			knora-base:listNodeName "single" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-DrawingPartsHList> ;
-			knora-base:listNodePosition 0 ;
+			knora-base:listNodePosition 1 ;
 			rdfs:label "Figure seule"@fr , "Single figure"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-DrawingPartsHList-multiple> a knora-base:ListNode ;
 			knora-base:listNodeName "multiple" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-DrawingPartsHList> ;
-			knora-base:listNodePosition 1 ;
+			knora-base:listNodePosition 2 ;
 			rdfs:label "Figures multiples"@fr , "Multiple figures"@en ;
 			knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-DrawingPartsHList-MFhistory> ,
 										<http://rdfh.ch/lists/drawings-gods-2016-list-DrawingPartsHList-MFrandom> ,
@@ -5337,7 +5436,8 @@
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList> ;
 			knora-base:listNodePosition 0 ;
 			rdfs:label "Figure humanoide"@fr , "humanoid figure"@en ;
-			knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-normalhuman> ,
+			knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList--> ,
+										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-normalhuman> ,
 										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-culturalfigure> ,
 										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-religiousfigure> ,
 										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-specialbody> ,
@@ -5345,22 +5445,28 @@
 										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-specialposture> ,
 										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-gender> .
 
+			<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList--> a knora-base:ListNode ;
+				knora-base:listNodeName "-" ;
+				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList> ;
+				knora-base:listNodePosition 0 ;
+				rdfs:label "-"@fr , "-"@en .
+
 			<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-normalhuman> a knora-base:ListNode ;
 				knora-base:listNodeName "normalhuman" ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList> ;
-				knora-base:listNodePosition 0 ;
+				knora-base:listNodePosition 1 ;
 				rdfs:label "Figure humaine ordinaire"@fr , "Usual human figure"@en .
 
 			<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-culturalfigure> a knora-base:ListNode ;
 				knora-base:listNodeName "culturalfigure" ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList> ;
-				knora-base:listNodePosition 1 ;
+				knora-base:listNodePosition 2 ;
 				rdfs:label "Figure culturelle qu'on peut reconnaître"@fr , "Cultural figure which one can recognize"@en .
 
 			<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-religiousfigure> a knora-base:ListNode ;
 				knora-base:listNodeName "religiousfigure" ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList> ;
-				knora-base:listNodePosition 2 ;
+				knora-base:listNodePosition 3 ;
 				rdfs:label "Figure religieuse qu'on peut reconnaître"@fr , "Religious figure which one can recognize"@en ;
 				knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-angel> ,
 										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-buddha> ,
@@ -5527,7 +5633,7 @@
 			<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-specialbody> a knora-base:ListNode ;
 				knora-base:listNodeName "specialbody" ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList> ;
-				knora-base:listNodePosition 3 ;
+				knora-base:listNodePosition 4 ;
 				rdfs:label "Figure humaine, mais avec des particularités corporelles"@fr , "Usual human figure, but having some physical particularities"@en ;
 				knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-addlimbs> ,
 										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-animalparts> ,
@@ -5715,7 +5821,7 @@
 			<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-specialapara> a knora-base:ListNode ;
 				knora-base:listNodeName "specialapara" ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList> ;
-				knora-base:listNodePosition 4 ;
+				knora-base:listNodePosition 5 ;
 				rdfs:label "Figure humaine, mais avec des particularités pour les habits ou des decorations"@fr , "Usual human figure, but having particularities in clothing or decor"@en ;
 				knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-ayudhas> ,
 										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-clothes> ,
@@ -5785,7 +5891,7 @@
 			<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-specialposture> a knora-base:ListNode ;
 				knora-base:listNodeName "specialposture" ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList> ;
-				knora-base:listNodePosition 5 ;
+				knora-base:listNodePosition 6 ;
 				rdfs:label "Figure humaine, mais avec des particularités dans la posture"@fr , "Usual human figure, but having particularities in posture"@en ;
 				knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-arms> ,
 										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-asana> ,
@@ -5841,7 +5947,7 @@
 			<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-gender> a knora-base:ListNode ;
 				knora-base:listNodeName "gender" ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList> ;
-				knora-base:listNodePosition 6 ;
+				knora-base:listNodePosition 7 ;
 				rdfs:label "Genre"@fr , "Gender"@en ;
 				knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-female> ,
 										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-male> ,
@@ -6230,7 +6336,8 @@
 	knora-base:isRootNode true ;
 	rdfs:comment "Liste de choix pour les fonctions de dieu"@fr ;
 	rdfs:label "Fonction de dieu dans le dessin"@fr , "Function of god in the image"@en ;
-	knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList-creator> ,
+	knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList--> ,
+									<http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList-creator> ,
 									<http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList-emanator> ,
 									<http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList-earthholder> ,
 									<http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList-controller> ,
@@ -6253,136 +6360,142 @@
 									<http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList-intneutral> ,
 									<http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList-otherfunction> .
 
+		<http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList--> a knora-base:ListNode ;
+			knora-base:listNodeName "-" ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList> ;
+			knora-base:listNodePosition 0 ;
+			rdfs:label "-"@fr , "-"@en .
+
 		<http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList-creator> a knora-base:ListNode ;
 			knora-base:listNodeName "creator" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList> ;
-			knora-base:listNodePosition 0 ;
+			knora-base:listNodePosition 1 ;
 			rdfs:label "Dieu crée et influence la nature"@fr , "God creates an influences the nature"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList-emanator> a knora-base:ListNode ;
 			knora-base:listNodeName "emanator" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList> ;
-			knora-base:listNodePosition 1 ;
+			knora-base:listNodePosition 2 ;
 			rdfs:label "Dieu emane les éléments de la nature"@fr , "God emanates the elements of nature"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList-earthholder> a knora-base:ListNode ;
 			knora-base:listNodeName "earthholder" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList> ;
-			knora-base:listNodePosition 2 ;
+			knora-base:listNodePosition 3 ;
 			rdfs:label "Dieu garde la terre"@fr , "God holds earth"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList-controller> a knora-base:ListNode ;
 			knora-base:listNodeName "controller" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList> ;
-			knora-base:listNodePosition 3 ;
+			knora-base:listNodePosition 4 ;
 			rdfs:label "Dieu influence les animaux et les humains"@fr , "God influences animals and humans"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList-omnipresent> a knora-base:ListNode ;
 			knora-base:listNodeName "omnipresent" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList> ;
-			knora-base:listNodePosition 4 ;
+			knora-base:listNodePosition 5 ;
 			rdfs:label "Dieu est dissout dans la nature"@fr , "God is dissolved in nature"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList-masterofelements> a knora-base:ListNode ;
 			knora-base:listNodeName "masterofelements" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList> ;
-			knora-base:listNodePosition 5 ;
+			knora-base:listNodePosition 6 ;
 			rdfs:label "Dieu maîtrise les elements"@fr , "God masters the elements"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList-relatedtosemidivine> a knora-base:ListNode ;
 			knora-base:listNodeName "relatedtosemidivine" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList> ;
-			knora-base:listNodePosition 6 ;
+			knora-base:listNodePosition 7 ;
 			rdfs:label "Dieu est en relation avec les êtres semidivins"@fr , "God relates to the semi-divine beings"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList-polarity> a knora-base:ListNode ;
 			knora-base:listNodeName "polarity" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList> ;
-			knora-base:listNodePosition 7 ;
+			knora-base:listNodePosition 8 ;
 			rdfs:label "Dieu représente la polarité"@fr , "God represents polarity"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList-answersprayers> a knora-base:ListNode ;
 			knora-base:listNodeName "answersprayers" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList> ;
-			knora-base:listNodePosition 8 ;
+			knora-base:listNodePosition 9 ;
 			rdfs:label "Dieu répond à des prières"@fr , "God answers the prayers"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList-showsway> a knora-base:ListNode ;
 			knora-base:listNodeName "showsway" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList> ;
-			knora-base:listNodePosition 9 ;
+			knora-base:listNodePosition 10 ;
 			rdfs:label "Dieu montre la voie"@fr , "God shows way"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList-meditating> a knora-base:ListNode ;
 			knora-base:listNodeName "meditating" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList> ;
-			knora-base:listNodePosition 10 ;
+			knora-base:listNodePosition 11 ;
 			rdfs:label "Dieu médite"@fr , "God meditates"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList-praying> a knora-base:ListNode ;
 			knora-base:listNodeName "praying" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList> ;
-			knora-base:listNodePosition 11 ;
+			knora-base:listNodePosition 12 ;
 			rdfs:label "Dieu prie"@fr , "God prays"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList-judging> a knora-base:ListNode ;
 			knora-base:listNodeName "judging" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList> ;
-			knora-base:listNodePosition 12 ;
+			knora-base:listNodePosition 13 ;
 			rdfs:label "Dieu juge les autres"@fr , "God judges the others"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList-observing> a knora-base:ListNode ;
 			knora-base:listNodeName "observing" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList> ;
-			knora-base:listNodePosition 13 ;
+			knora-base:listNodePosition 14 ;
 			rdfs:label "Dieu observe quelque chose"@fr , "God is observing something"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList-intervenes> a knora-base:ListNode ;
 			knora-base:listNodeName "intervenes" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList> ;
-			knora-base:listNodePosition 14 ;
+			knora-base:listNodePosition 15 ;
 			rdfs:label "Dieu intervient"@fr , "God intervenes"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList-doesnotintervene> a knora-base:ListNode ;
 			knora-base:listNodeName "doesnotintervene" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList> ;
-			knora-base:listNodePosition 15 ;
+			knora-base:listNodePosition 16 ;
 			rdfs:label "Dieu n'intervient pas"@fr , "God does not intervene"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList-withpurpose> a knora-base:ListNode ;
 			knora-base:listNodeName "withpurpose" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList> ;
-			knora-base:listNodePosition 16 ;
+			knora-base:listNodePosition 17 ;
 			rdfs:label "Dieu agit avec un but"@fr , "God acts with purpose"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList-withoutpurpose> a knora-base:ListNode ;
 			knora-base:listNodeName "withoutpurpose" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList> ;
-			knora-base:listNodePosition 17 ;
+			knora-base:listNodePosition 18 ;
 			rdfs:label "Dieu agit sans but"@fr , "God acts without purpose"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList-intbenevolent> a knora-base:ListNode ;
 			knora-base:listNodeName "intbenevolent" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList> ;
-			knora-base:listNodePosition 18 ;
+			knora-base:listNodePosition 19 ;
 			rdfs:label "Dieu est bienveillant"@fr , "God is benevolent"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList-intmalevolent> a knora-base:ListNode ;
 			knora-base:listNodeName "intmalevolent" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList> ;
-			knora-base:listNodePosition 19 ;
+			knora-base:listNodePosition 20 ;
 			rdfs:label "Dieu est malveillant"@fr , "God is malevolent"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList-intneutral> a knora-base:ListNode ;
 			knora-base:listNodeName "intneutral" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList> ;
-			knora-base:listNodePosition 20 ;
+			knora-base:listNodePosition 21 ;
 			rdfs:label "L'intention de dieu est neutre"@fr , "Intention of god is neutral"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList-otherfunction> a knora-base:ListNode ;
 			knora-base:listNodeName "otherfunction" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList> ;
-			knora-base:listNodePosition 21 ;
+			knora-base:listNodePosition 22 ;
 			rdfs:label "Dieu a une autre fonction (à préciser dans le comm.)"@fr , "God has another function (Note in the commentary)"@en .
 
 
@@ -6391,7 +6504,8 @@
 	knora-base:isRootNode true ;
 	rdfs:comment "Liste hiérarchique de choix pour la position de dieu et la manière d'apparition"@fr ;
 	rdfs:label "La position de dieu dans l'espace"@fr , "What is the position of god in space?"@en ;
-	knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList-aboveall> ,
+	knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList--> ,
+									<http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList-aboveall> ,
 									<http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList-eruption> ,
 									<http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList-floating> ,
 									<http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList-hidden> ,
@@ -6415,142 +6529,148 @@
 									<http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList-amongbuildings> ,
 									<http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList-otherpos> .
 
+		<http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList--> a knora-base:ListNode ;
+			knora-base:listNodeName "-" ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList> ;
+			knora-base:listNodePosition 0 ;
+			rdfs:label "-"@fr , "-"@en .
+
 		<http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList-aboveall> a knora-base:ListNode ;
 			knora-base:listNodeName "aboveall" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList> ;
-			knora-base:listNodePosition 0 ;
+			knora-base:listNodePosition 1 ;
 			rdfs:label "Par-dessus tout"@fr , "Above all"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList-eruption> a knora-base:ListNode ;
 			knora-base:listNodeName "eruption" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList> ;
-			knora-base:listNodePosition 1 ;
+			knora-base:listNodePosition 2 ;
 			rdfs:label "Eruption"@fr , "Eruption"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList-floating> a knora-base:ListNode ;
 			knora-base:listNodeName "floating" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList> ;
-			knora-base:listNodePosition 2 ;
+			knora-base:listNodePosition 3 ;
 			rdfs:label "Flottant"@fr , "Floating"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList-hidden> a knora-base:ListNode ;
 			knora-base:listNodeName "hidden" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList> ;
-			knora-base:listNodePosition 3 ;
+			knora-base:listNodePosition 4 ;
 			rdfs:label "Caché"@fr , "Hidden"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList-direction> a knora-base:ListNode ;
 			knora-base:listNodeName "direction" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList> ;
-			knora-base:listNodePosition 4 ;
+			knora-base:listNodePosition 5 ;
 			rdfs:label "Image est structurée vers une direction particulière"@fr , "Image is structured towards one special direction"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList-godevident> a knora-base:ListNode ;
 			knora-base:listNodeName "godevident" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList> ;
-			knora-base:listNodePosition 5 ;
+			knora-base:listNodePosition 6 ;
 			rdfs:label "Dieu est évident"@fr , "God is evident"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList-godnotevident> a knora-base:ListNode ;
 			knora-base:listNodeName "godnotevident" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList> ;
-			knora-base:listNodePosition 6 ;
+			knora-base:listNodePosition 7 ;
 			rdfs:label "Dieu n'est pas évident"@fr , "God is not evident"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList-regardsshowgod> a knora-base:ListNode ;
 			knora-base:listNodeName "regardsshowgod" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList> ;
-			knora-base:listNodePosition 7 ;
+			knora-base:listNodePosition 8 ;
 			rdfs:label "Les êtres regardent vers le dieu"@fr , "Other beings have eyes turned towards gods"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList-multiplegods> a knora-base:ListNode ;
 			knora-base:listNodeName "multiplegods" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList> ;
-			knora-base:listNodePosition 8 ;
+			knora-base:listNodePosition 9 ;
 			rdfs:label "Les dieux sont multiples"@fr , "Multiple gods"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList-symmetryprominent> a knora-base:ListNode ;
 			knora-base:listNodeName "symmetryprominent" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList> ;
-			knora-base:listNodePosition 9 ;
+			knora-base:listNodePosition 10 ;
 			rdfs:label "Image est très symmetrique"@fr , "Drawing is very symmetrical"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList-inpicture> a knora-base:ListNode ;
 			knora-base:listNodeName "inpicture" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList> ;
-			knora-base:listNodePosition 10 ;
+			knora-base:listNodePosition 11 ;
 			rdfs:label "Dieu est sur une image ou thangka"@fr , "God is on the image or thangka"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList-paradisecontext> a knora-base:ListNode ;
 			knora-base:listNodeName "paradisecontext" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList> ;
-			knora-base:listNodePosition 11 ;
+			knora-base:listNodePosition 12 ;
 			rdfs:label "Dieu est dans le contexte du paradis"@fr , "God is in paradise context"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList-hellcontext> a knora-base:ListNode ;
 			knora-base:listNodeName "hellcontext" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList> ;
-			knora-base:listNodePosition 12 ;
+			knora-base:listNodePosition 13 ;
 			rdfs:label "Dieu est dans le contexte de l'enfer"@fr , "God is in hell context"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList-templecontext> a knora-base:ListNode ;
 			knora-base:listNodeName "templecontext" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList> ;
-			knora-base:listNodePosition 13 ;
+			knora-base:listNodePosition 14 ;
 			rdfs:label "Dieu est dans le contexte d'un temple"@fr , "Drawing is in temple context"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList-celestialcontext> a knora-base:ListNode ;
 			knora-base:listNodeName "celestialcontext" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList> ;
-			knora-base:listNodePosition 14 ;
+			knora-base:listNodePosition 15 ;
 			rdfs:label "Dieu est dans le contexte céléste"@fr , "God is in celestial context"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList-naturecontext> a knora-base:ListNode ;
 			knora-base:listNodeName "naturecontext" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList> ;
-			knora-base:listNodePosition 15 ;
+			knora-base:listNodePosition 16 ;
 			rdfs:label "Dieu est dans la nature"@fr , "God is in nature context"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList-citycontext> a knora-base:ListNode ;
 			knora-base:listNodeName "citycontext" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList> ;
-			knora-base:listNodePosition 16 ;
+			knora-base:listNodePosition 17 ;
 			rdfs:label "Dieu est dans le contexte d'une ville/village"@fr , "God is in the context of town or village"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList-amonghumans> a knora-base:ListNode ;
 			knora-base:listNodeName "amonghumans" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList> ;
-			knora-base:listNodePosition 17 ;
+			knora-base:listNodePosition 18 ;
 			rdfs:label "Dieu est parmi les gens"@fr , "God is among humans"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList-amonganimals> a knora-base:ListNode ;
 			knora-base:listNodeName "amonganimals" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList> ;
-			knora-base:listNodePosition 18 ;
+			knora-base:listNodePosition 19 ;
 			rdfs:label "Dieu est parmi les animaux"@fr , "God is among animals"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList-amongangels> a knora-base:ListNode ;
 			knora-base:listNodeName "amongangels" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList> ;
-			knora-base:listNodePosition 19 ;
+			knora-base:listNodePosition 20 ;
 			rdfs:label "Dieu est parmi les anges"@fr , "God is among angels"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList-amongrelbuildings> a knora-base:ListNode ;
 			knora-base:listNodeName "amongrelbuildings" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList> ;
-			knora-base:listNodePosition 20 ;
+			knora-base:listNodePosition 21 ;
 			rdfs:label "Dieu est parmi les bâtiments religieux"@fr , "God is among religious buildings"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList-amongbuildings> a knora-base:ListNode ;
 			knora-base:listNodeName "amongbuildings" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList> ;
-			knora-base:listNodePosition 21 ;
+			knora-base:listNodePosition 22 ;
 			rdfs:label "Dieu est parmi les bâtiments normaux"@fr , "God is among usual buildings"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList-otherpos> a knora-base:ListNode ;
 			knora-base:listNodeName "otherpos" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList> ;
-			knora-base:listNodePosition 22 ;
+			knora-base:listNodePosition 23 ;
 			rdfs:label "Dieu a une autre position (à préciser dans le comm.)"@fr , "God has another position (note in the commentary)"@en .
 
 
