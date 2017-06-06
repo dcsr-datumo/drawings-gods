@@ -5417,7 +5417,8 @@
 	knora-base:isRootNode true ;
 	rdfs:comment "Liste hiérarchique de choix pour les motifs principaux"@fr ;
 	rdfs:label "Qu'est-ce qui est représenté?"@fr , "What is represented?"@en ;
-	knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-humanoid> ,
+	knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList--> ,
+									<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-humanoid> ,
 									<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-passage> ,
 									<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-plantortree> ,
 									<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-sunlightrays> ,
@@ -5431,13 +5432,18 @@
 									<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-empty> ,
 									<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-othermotif> .
 
+		<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList--> a knora-base:ListNode ;
+			knora-base:listNodeName "-" ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList> ;
+			knora-base:listNodePosition 0 ;
+			rdfs:label "-"@fr , "-"@en .		
+		
 		<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-humanoid> a knora-base:ListNode ;
 			knora-base:listNodeName "humanoid" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList> ;
-			knora-base:listNodePosition 0 ;
+			knora-base:listNodePosition 1 ;
 			rdfs:label "Figure humanoide"@fr , "humanoid figure"@en ;
-			knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList--> ,
-										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-normalhuman> ,
+			knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-normalhuman> ,
 										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-culturalfigure> ,
 										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-religiousfigure> ,
 										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-specialbody> ,
@@ -5445,28 +5451,23 @@
 										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-specialposture> ,
 										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-gender> .
 
-			<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList--> a knora-base:ListNode ;
-				knora-base:listNodeName "-" ;
-				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList> ;
-				knora-base:listNodePosition 0 ;
-				rdfs:label "-"@fr , "-"@en .
 
 			<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-normalhuman> a knora-base:ListNode ;
 				knora-base:listNodeName "normalhuman" ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList> ;
-				knora-base:listNodePosition 1 ;
+				knora-base:listNodePosition 0 ;
 				rdfs:label "Figure humaine ordinaire"@fr , "Usual human figure"@en .
 
 			<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-culturalfigure> a knora-base:ListNode ;
 				knora-base:listNodeName "culturalfigure" ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList> ;
-				knora-base:listNodePosition 2 ;
+				knora-base:listNodePosition 1 ;
 				rdfs:label "Figure culturelle qu'on peut reconnaître"@fr , "Cultural figure which one can recognize"@en .
 
 			<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-religiousfigure> a knora-base:ListNode ;
 				knora-base:listNodeName "religiousfigure" ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList> ;
-				knora-base:listNodePosition 3 ;
+				knora-base:listNodePosition 2 ;
 				rdfs:label "Figure religieuse qu'on peut reconnaître"@fr , "Religious figure which one can recognize"@en ;
 				knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-angel> ,
 										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-buddha> ,
@@ -5633,7 +5634,7 @@
 			<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-specialbody> a knora-base:ListNode ;
 				knora-base:listNodeName "specialbody" ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList> ;
-				knora-base:listNodePosition 4 ;
+				knora-base:listNodePosition 3 ;
 				rdfs:label "Figure humaine, mais avec des particularités corporelles"@fr , "Usual human figure, but having some physical particularities"@en ;
 				knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-addlimbs> ,
 										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-animalparts> ,
@@ -5821,7 +5822,7 @@
 			<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-specialapara> a knora-base:ListNode ;
 				knora-base:listNodeName "specialapara" ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList> ;
-				knora-base:listNodePosition 5 ;
+				knora-base:listNodePosition 4 ;
 				rdfs:label "Figure humaine, mais avec des particularités pour les habits ou des decorations"@fr , "Usual human figure, but having particularities in clothing or decor"@en ;
 				knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-ayudhas> ,
 										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-clothes> ,
@@ -5891,7 +5892,7 @@
 			<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-specialposture> a knora-base:ListNode ;
 				knora-base:listNodeName "specialposture" ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList> ;
-				knora-base:listNodePosition 6 ;
+				knora-base:listNodePosition 5 ;
 				rdfs:label "Figure humaine, mais avec des particularités dans la posture"@fr , "Usual human figure, but having particularities in posture"@en ;
 				knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-arms> ,
 										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-asana> ,
@@ -5947,7 +5948,7 @@
 			<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-gender> a knora-base:ListNode ;
 				knora-base:listNodeName "gender" ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList> ;
-				knora-base:listNodePosition 7 ;
+				knora-base:listNodePosition 6 ;
 				rdfs:label "Genre"@fr , "Gender"@en ;
 				knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-female> ,
 										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-male> ,
@@ -5982,7 +5983,7 @@
 		<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-passage> a knora-base:ListNode ;
 			knora-base:listNodeName "passage" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList> ;
-			knora-base:listNodePosition 1 ;
+			knora-base:listNodePosition 2 ;
 			rdfs:label "Passage d'un monde à l'autre"@fr , "Passage from one world to another"@en ;
 			knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-gate> ,
 										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-mountain> ,
