@@ -4806,43 +4806,43 @@
 			<http://rdfh.ch/lists/drawings-gods-2016-list-VillageHList-lonay> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-VillageHList> ;
 				knora-base:listNodeName "lonay" ;
-				knora-base:listNodePosition 5 ;
+				knora-base:listNodePosition 6 ;
 				rdfs:label "Lonay"@fr , "Lonay"@en .
 
 			<http://rdfh.ch/lists/drawings-gods-2016-list-VillageHList-morges> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-VillageHList> ;
 				knora-base:listNodeName "morges" ;
-				knora-base:listNodePosition 6 ;
+				knora-base:listNodePosition 7 ;
 				rdfs:label "Morges"@fr , "Morges"@en .
 
 			<http://rdfh.ch/lists/drawings-gods-2016-list-VillageHList-prilly> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-VillageHList> ;
 				knora-base:listNodeName "prilly" ;
-				knora-base:listNodePosition 7 ;
+				knora-base:listNodePosition 8 ;
 				rdfs:label "Prilly"@fr , "Prilly"@en .
 
 			<http://rdfh.ch/lists/drawings-gods-2016-list-VillageHList-rolle> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-VillageHList> ;
 				knora-base:listNodeName "rolle" ;
-				knora-base:listNodePosition 8 ;
+				knora-base:listNodePosition 9 ;
 				rdfs:label "Rolle"@fr , "Rolle"@en .
 
 			<http://rdfh.ch/lists/drawings-gods-2016-list-VillageHList-saintprex> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-VillageHList> ;
 				knora-base:listNodeName "saintprex" ;
-				knora-base:listNodePosition 9 ;
+				knora-base:listNodePosition 10 ;
 				rdfs:label "Saint-Prex"@fr , "Saint-Prex"@en .
 
 			<http://rdfh.ch/lists/drawings-gods-2016-list-VillageHList-tolochenaz> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-VillageHList> ;
 				knora-base:listNodeName "tolochenaz" ;
-				knora-base:listNodePosition 9 ;
+				knora-base:listNodePosition 11 ;
 				rdfs:label "Tolochenaz"@fr , "Tolochenaz"@en .
 				
 			<http://rdfh.ch/lists/drawings-gods-2016-list-VillageHList-lausanne> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-VillageHList> ;
 				knora-base:listNodeName "lausanne" ;
-				knora-base:listNodePosition 10 ;
+				knora-base:listNodePosition 5 ;
 				rdfs:label "Lausanne"@fr , "Lausanne"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-VillageHList-iran> a knora-base:ListNode ;
