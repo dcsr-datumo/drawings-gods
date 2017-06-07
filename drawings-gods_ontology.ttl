@@ -558,8 +558,8 @@
          rdfs:subPropertyOf knora-base:hasValue ;
          knora-base:objectClassConstraint knora-base:TextValue ;
          knora-base:subjectClassConstraint :Passage ;
-         rdfs:label "Contexte de la collecte"@fr ,
-			"Context of collect"@en ;
+         rdfs:label "Contexte de la collecte (spécifique au passage)"@fr ,
+			"Context of collect (passage specific)"@en ;
 		 rdfs:comment "Cadre de l'enseignement (pour un contexte qui peut être multiple - ex.: cours de religion à l'école)."@fr ,
 			"Teaching frame (for a context which can be multiple - ex.: religion scores at school)."@en ;
          salsah-gui:guiElement salsah-gui:Textarea ;
