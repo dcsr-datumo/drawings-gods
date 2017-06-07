@@ -558,8 +558,8 @@
          rdfs:subPropertyOf knora-base:hasValue ;
          knora-base:objectClassConstraint knora-base:TextValue ;
          knora-base:subjectClassConstraint :Passage ;
-         rdfs:label "Contexte de la collecte"@fr ,
-			"Context of collect"@en ;
+         rdfs:label "Contexte de la collecte (spécifique au passage)"@fr ,
+			"Context of collect (passage specific)"@en ;
 		 rdfs:comment "Cadre de l'enseignement (pour un contexte qui peut être multiple - ex.: cours de religion à l'école)."@fr ,
 			"Teaching frame (for a context which can be multiple - ex.: religion scores at school)."@en ;
          salsah-gui:guiElement salsah-gui:Textarea ;
@@ -1352,7 +1352,7 @@
               rdfs:subPropertyOf knora-base:hasLinkTo ;
               knora-base:objectClassConstraint :CollectionSite ;
               knora-base:subjectClassConstraint :Campaign ;
-              rdfs:label "Site(s) de collecte correspondants"@fr ,
+              rdfs:label "Site(s) de collecte correspondant(s)"@fr ,
                      "Relevant collection site(s)"@en ;
           	  rdfs:comment "Campagne portant sur un/des site(s) de collecte donné(s)."@fr ,
 					 "Collection site(s) concerned by the campaign."@en ;
@@ -1365,7 +1365,7 @@
               rdfs:subPropertyOf knora-base:hasLinkToValue ;
               knora-base:objectClassConstraint knora-base:LinkValue ;
               knora-base:subjectClassConstraint :Campaign ;
-              rdfs:label "Site(s) de collecte correspondants"@fr ,
+              rdfs:label "Site(s) de collecte correspondant(s)"@fr ,
                      "Relevant collection site(s)"@en ;
           	  rdfs:comment "Campagne portant sur un/des site(s) de collecte donné(s)."@fr ,
 					 "Collection site(s) concerned by the campaign."@en ;
@@ -1553,10 +1553,10 @@
           rdfs:subPropertyOf knora-base:hasValue ;
           knora-base:objectClassConstraint knora-base:ListValue ;
           knora-base:subjectClassConstraint :CollectionSite ;
-          rdfs:label "Localisation du village"@fr ,
-                     "Village location"@en ;
-		  rdfs:comment "Localisation du village."@fr ,
-					 "Village location."@en ;
+          rdfs:label "Localisation de la ville ou du village"@fr ,
+                     "Town or village location"@en ;
+		  rdfs:comment "Localisation de la ville ou du village (pour une institution ou un événement)."@fr ,
+					 "Town or village location (for an institution or an event)."@en ;
           salsah-gui:guiOrder "1"^^xsd:integer ;
           salsah-gui:guiElement salsah-gui:List ;
           salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-VillageHList>" .
@@ -2275,8 +2275,8 @@
             rdfs:subPropertyOf knora-base:hasValue ;
             knora-base:objectClassConstraint knora-base:ListValue ;
             knora-base:subjectClassConstraint :CollectionSite ;
-            rdfs:label "Genre représenté dans l'école"@fr ,
-                     	"Gender represented in the school"@en ;
+            rdfs:label "Genre représenté sur le site"@fr ,
+                     	"Gender represented on the site"@en ;
 			rdfs:comment "Type d'école en fonction du sexe des participants (ex.: école mixte, de filles, de garçons, non connue)."@fr ,
 					 	"Type of school according to the sex of participants (ex. mix school, girls, boys, unknown)."@en ;
 			salsah-gui:guiOrder "1"^^xsd:integer ;
