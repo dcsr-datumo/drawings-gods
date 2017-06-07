@@ -1352,7 +1352,7 @@
               rdfs:subPropertyOf knora-base:hasLinkTo ;
               knora-base:objectClassConstraint :CollectionSite ;
               knora-base:subjectClassConstraint :Campaign ;
-              rdfs:label "Site(s) de collecte correspondants"@fr ,
+              rdfs:label "Site(s) de collecte correspondant(s)"@fr ,
                      "Relevant collection site(s)"@en ;
           	  rdfs:comment "Campagne portant sur un/des site(s) de collecte donné(s)."@fr ,
 					 "Collection site(s) concerned by the campaign."@en ;
@@ -1365,7 +1365,7 @@
               rdfs:subPropertyOf knora-base:hasLinkToValue ;
               knora-base:objectClassConstraint knora-base:LinkValue ;
               knora-base:subjectClassConstraint :Campaign ;
-              rdfs:label "Site(s) de collecte correspondants"@fr ,
+              rdfs:label "Site(s) de collecte correspondant(s)"@fr ,
                      "Relevant collection site(s)"@en ;
           	  rdfs:comment "Campagne portant sur un/des site(s) de collecte donné(s)."@fr ,
 					 "Collection site(s) concerned by the campaign."@en ;
