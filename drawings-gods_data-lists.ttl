@@ -4027,7 +4027,7 @@
 		knora-base:listNodeName "awake" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ> ;
 		knora-base:listNodePosition 1 ;
-		rdfs:label "Au reveil"@fr , "On awakening"@en .
+		rdfs:label "Au réveil"@fr , "On awakening"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ-beforemeals> a knora-base:ListNode ;
 		knora-base:listNodeName "beforemeals" ;
@@ -4069,7 +4069,7 @@
 		knora-base:listNodeName "fewtimesayear" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ> ;
 		knora-base:listNodePosition 8 ;
-		rdfs:label "Quelque fois par année"@fr , "A few times per year"@en .
+		rdfs:label "Quelques fois par année"@fr , "A few times per year"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ-once> a knora-base:ListNode ;
 		knora-base:listNodeName "once" ;
@@ -6384,7 +6384,7 @@
 			knora-base:listNodeName "emanator" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList> ;
 			knora-base:listNodePosition 2 ;
-			rdfs:label "Dieu emane les éléments de la nature"@fr , "God emanates the elements of nature"@en .
+			rdfs:label "Dieu produit les éléments de la nature"@fr , "God emanates the elements of nature"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList-earthholder> a knora-base:ListNode ;
 			knora-base:listNodeName "earthholder" ;
