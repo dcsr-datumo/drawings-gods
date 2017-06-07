@@ -4770,7 +4770,8 @@
 									<http://rdfh.ch/lists/drawings-gods-2016-list-VillageHList-prilly> ,
 									<http://rdfh.ch/lists/drawings-gods-2016-list-VillageHList-rolle> ,
 									<http://rdfh.ch/lists/drawings-gods-2016-list-VillageHList-saintprex> ,
-									<http://rdfh.ch/lists/drawings-gods-2016-list-VillageHList-tolochenaz> .
+									<http://rdfh.ch/lists/drawings-gods-2016-list-VillageHList-tolochenaz>,
+									<http://rdfh.ch/lists/drawings-gods-2016-list-VillageHList-lausanne>.
 
 			<http://rdfh.ch/lists/drawings-gods-2016-list-VillageHList-bussigny> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-VillageHList> ;
@@ -4837,6 +4838,12 @@
 				knora-base:listNodeName "tolochenaz" ;
 				knora-base:listNodePosition 9 ;
 				rdfs:label "Tolochenaz"@fr , "Tolochenaz"@en .
+				
+			<http://rdfh.ch/lists/drawings-gods-2016-list-VillageHList-lausanne> a knora-base:ListNode ;
+				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-VillageHList> ;
+				knora-base:listNodeName "lausanne" ;
+				knora-base:listNodePosition 10 ;
+				rdfs:label "Lausanne"@fr , "Lausanne"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-VillageHList-iran> a knora-base:ListNode ;
 		knora-base:listNodeName "iran" ;
