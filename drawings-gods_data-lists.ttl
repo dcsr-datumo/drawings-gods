@@ -2903,8 +2903,15 @@
 	rdfs:comment "Liste hiérarchique de choix pour les religions (participants et institutions)"@fr ;
 	rdfs:label "Religion (liste hiérarchique)"@fr , "Religion (hierarchical list)"@en ;
 	knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-christian> ,
-									<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-otherreligions> ,
-									<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-other1> .
+				<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-buddhist> ,
+				<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-hinduist> ,
+				<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-jewish> ,
+				<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-muslim> ,
+				<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-shamanist> ,
+				<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-shintoist> ,
+				<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-taoist> ,
+				<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-zoroastrian> ,
+				<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-other1> .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-christian> a knora-base:ListNode ;
 		knora-base:listNodeName "christian" ;
@@ -2940,79 +2947,80 @@
 			knora-base:listNodePosition 3 ;
 			rdfs:label "Evangélique"@fr , "Evangelical"@en .
 
-	<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-otherreligions> a knora-base:ListNode ;
-		knora-base:listNodeName "otherreligions" ;
+	<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-buddhist> a knora-base:ListNode ;
+		knora-base:listNodeName "buddhist" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList> ;
 		knora-base:listNodePosition 1 ;
-		rdfs:label "Autres religions"@fr , "Other religions"@en ;
-		knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-buddhist> ,
-									<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-hinduist> ,
-									<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-jewish> ,
-									<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-muslim> ,
-									<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-shamanist> ,
-									<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-shintoist> ,
-									<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-taoist> ,
-									<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-zoroastrian> .
+		rdfs:label "Bouddhiste"@fr , "Buddhist"@en .
+		
+	<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-hinduist> a knora-base:ListNode ;
+		knora-base:listNodeName "hinduist" ;
+		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList> ;
+		knora-base:listNodePosition 2 ;
+		rdfs:label "Hindouiste"@fr , "Hinduist"@en .
 
-		<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-buddhist> a knora-base:ListNode ;
-			knora-base:listNodeName "buddhist" ;
+	<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-jewish> a knora-base:ListNode ;
+		knora-base:listNodeName "jewish" ;
+		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList> ;
+		knora-base:listNodePosition 3 ;
+		rdfs:label "Juif"@fr , "Jewish"@en .
+			
+	<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-muslim> a knora-base:ListNode ;
+		knora-base:listNodeName "muslim" ;
+		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList> ;
+		knora-base:listNodePosition 4 ;
+		rdfs:label "Musulmane"@fr , "Muslim"@en ;
+		knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-shiit> ,
+						<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-sunnit> .
+			
+		<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-shiit> a knora-base:ListNode ;
+			knora-base:listNodeName "shiit" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList> ;
 			knora-base:listNodePosition 0 ;
-			rdfs:label "Bouddhiste"@fr , "Buddhist"@en .
+			rdfs:label "shiite"@fr , "Shia"@en .
 
-		<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-hinduist> a knora-base:ListNode ;
-			knora-base:listNodeName "hinduist" ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-sunnit> a knora-base:ListNode ;
+			knora-base:listNodeName "sunnit" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList> ;
 			knora-base:listNodePosition 1 ;
-			rdfs:label "Hindouiste"@fr , "Hinduist"@en .
+			rdfs:label "Sunnite"@fr , "Sunni"@en .
+	
+	<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-shamanist> a knora-base:ListNode ;
+		knora-base:listNodeName "shamanist" ;
+		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList> ;
+		knora-base:listNodePosition 5 ;
+		rdfs:label "Shamaniste"@fr , "Shamanist"@en .
 
-		<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-jewish> a knora-base:ListNode ;
-			knora-base:listNodeName "jewish" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList> ;
-			knora-base:listNodePosition 2 ;
-			rdfs:label "Juif"@fr , "Jewish"@en .
+	<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-shintoist> a knora-base:ListNode ;
+		knora-base:listNodeName "shintoist" ;
+		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList> ;
+		knora-base:listNodePosition 6 ;
+		rdfs:label "Shintoiste"@fr , "Shintoist"@en .			
 
-		<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-muslim> a knora-base:ListNode ;
-			knora-base:listNodeName "muslim" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList> ;
-			knora-base:listNodePosition 3 ;
-			rdfs:label "Musulmane"@fr , "Muslim"@en .
-
-		<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-shamanist> a knora-base:ListNode ;
-			knora-base:listNodeName "shamanist" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList> ;
-			knora-base:listNodePosition 4 ;
-			rdfs:label "Shamaniste"@fr , "Shamanist"@en .
-
-		<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-shintoist> a knora-base:ListNode ;
-			knora-base:listNodeName "shintoist" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList> ;
-			knora-base:listNodePosition 5 ;
-			rdfs:label "Shintoiste"@fr , "Shintoist"@en .
-
-		<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-taoist> a knora-base:ListNode ;
-			knora-base:listNodeName "taoist" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList> ;
-			knora-base:listNodePosition 6 ;
-			rdfs:label "Taoiste"@fr , "Taoist"@en .
-
-		<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-zoroastrian> a knora-base:ListNode ;
-			knora-base:listNodeName "zoroastrian" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList> ;
-			knora-base:listNodePosition 7 ;
-			rdfs:label "Zoroastrien"@fr , "Zoroastrian"@en .
+	<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-taoist> a knora-base:ListNode ;
+		knora-base:listNodeName "taoist" ;
+		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList> ;
+		knora-base:listNodePosition 7 ;
+		rdfs:label "Taoiste"@fr , "Taoist"@en .
+		
+	<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-zoroastrian> a knora-base:ListNode ;
+		knora-base:listNodeName "zoroastrian" ;
+		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList> ;
+		knora-base:listNodePosition 8 ;
+		rdfs:label "Zoroastrien"@fr , "Zoroastrian"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-other1> a knora-base:ListNode ;
 		knora-base:listNodeName "other" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList> ;
-		knora-base:listNodePosition 2 ;
+		knora-base:listNodePosition 9 ;
 		rdfs:label "Autre"@fr , "Other"@en ;
 		knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-atheist> ,
 									<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-doesnotknow> ,
 									<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-noreply> ,
 									<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-replyunusable> ,
 									<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-other2> ,
-									<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-irrelevant> .
+									<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-irrelevant> ,
+									<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-otherreligion> .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-atheist> a knora-base:ListNode ;
 			knora-base:listNodeName "atheist" ;
@@ -3049,6 +3057,12 @@
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList> ;
 			knora-base:listNodePosition 5 ;
 			rdfs:label "Non-pertinent"@fr , "Irrelevant"@en .
+
+		<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-otherreligion> a knora-base:ListNode ;
+			knora-base:listNodeName "otherreligion" ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList> ;
+			knora-base:listNodePosition 6 ;
+			rdfs:label "Autre tradition religieuse (à noter dans le commentaire)"@fr , "Other religious tradition (please comment)"@en .
 
 ###   StorageList
 
