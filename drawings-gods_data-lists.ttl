@@ -2969,7 +2969,21 @@
 		knora-base:listNodeName "muslim" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList> ;
 		knora-base:listNodePosition 4 ;
-		rdfs:label "Musulmane"@fr , "Muslim"@en .	
+		rdfs:label "Musulmane"@fr , "Muslim"@en ;
+		knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-shiit> ,
+						<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-sunnit> .
+			
+		<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-shiit> a knora-base:ListNode ;
+			knora-base:listNodeName "shiit" ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList> ;
+			knora-base:listNodePosition 0 ;
+			rdfs:label "shiite"@fr , "Shia"@en .
+
+		<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-sunnit> a knora-base:ListNode ;
+			knora-base:listNodeName "sunnit" ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList> ;
+			knora-base:listNodePosition 1 ;
+			rdfs:label "Sunnite"@fr , "Sunni"@en .
 	
 	<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-shamanist> a knora-base:ListNode ;
 		knora-base:listNodeName "shamanist" ;
