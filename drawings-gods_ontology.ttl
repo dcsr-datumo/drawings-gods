@@ -3369,6 +3369,998 @@
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedNumListQ>" .
 
 #################################################################
+#    Object Properties
+#################################################################
+
+
+###  http://www.knora.org/ontology/drawings-gods#EnteredChurchWithWhom
+:EnteredChurchWithWhom rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:hasDefaultViewPermission knora-base:UnknownUser ,
+		                										knora-base:KnownUser ;
+		       			knora-base:hasDefaultModifyPermission knora-base:ProjectMember ;
+		       			knora-base:hasDefaultDeletePermission knora-base:Owner .
+#						paramètres à adapter:
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Familiarité avec le lieu de culte: eglise. Avec qui?"@fr ,
+							"Familiarity with place of worship: Church. With whom?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: eglise. Avec qui?"@fr ,
+							"Familiarity with place of worship: Church. With whom?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:SimpleText .
+
+###  http://www.knora.org/ontology/drawings-gods#EnteredChurchWhy
+:EnteredChurchWhy rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:hasDefaultViewPermission knora-base:UnknownUser ,
+		                										knora-base:KnownUser ;
+		       			knora-base:hasDefaultModifyPermission knora-base:ProjectMember ;
+		       			knora-base:hasDefaultDeletePermission knora-base:Owner .
+#						paramètres à adapter:
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Familiarité avec le lieu de culte: eglise. Pourquoi?"@fr ,
+							"Familiarity with place of worship: Church. Why?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: eglise. Pourquoi?"@fr ,
+							"Familiarity with place of worship: Church. Why?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:SimpleText .		                
+		                
+###  http://www.knora.org/ontology/drawings-gods#EnteredChurchLastTime
+:EnteredChurchLastTime rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:hasDefaultViewPermission knora-base:UnknownUser ,
+		                										knora-base:KnownUser ;
+		       			knora-base:hasDefaultModifyPermission knora-base:ProjectMember ;
+		       			knora-base:hasDefaultDeletePermission knora-base:Owner .
+#						paramètres à adapter:
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Familiarité avec le lieu de culte: eglise. La dernière fois?"@fr ,
+							"Familiarity with place of worship: Church. Last time?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: eglise. La dernière fois?"@fr ,
+							"Familiarity with place of worship: Church. Last time?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:SimpleText .	
+		                
+###  http://www.knora.org/ontology/drawings-gods#EnteredMosqueWithWhom
+:EnteredMosqueWithWhom rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:hasDefaultViewPermission knora-base:UnknownUser ,
+		                										knora-base:KnownUser ;
+		       			knora-base:hasDefaultModifyPermission knora-base:ProjectMember ;
+		       			knora-base:hasDefaultDeletePermission knora-base:Owner .
+#						paramètres à adapter:
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Familiarité avec le lieu de culte: la mosquée. Avec qui?"@fr ,
+							"Familiarity with place of worship: Mosque. With whom?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: la mosquée. Avec qui?"@fr ,
+							"Familiarity with place of worship: Mosque. With whom?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:SimpleText .
+
+###  http://www.knora.org/ontology/drawings-gods#EnteredMosqueWhy
+:EnteredMosqueWhy rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:hasDefaultViewPermission knora-base:UnknownUser ,
+		                										knora-base:KnownUser ;
+		       			knora-base:hasDefaultModifyPermission knora-base:ProjectMember ;
+		       			knora-base:hasDefaultDeletePermission knora-base:Owner .
+#						paramètres à adapter:
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Familiarité avec le lieu de culte: la mosquée. Pourquoi?"@fr ,
+							"Familiarity with place of worship: Mosque. Why?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: la mosquée. Pourquoi?"@fr ,
+							"Familiarity with place of worship: Mosque. Why?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:SimpleText .		                
+		                
+###  http://www.knora.org/ontology/drawings-gods#EnteredMosqueLastTime
+:EnteredMosqueLastTime rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:hasDefaultViewPermission knora-base:UnknownUser ,
+		                										knora-base:KnownUser ;
+		       			knora-base:hasDefaultModifyPermission knora-base:ProjectMember ;
+		       			knora-base:hasDefaultDeletePermission knora-base:Owner .
+#						paramètres à adapter:
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Familiarité avec le lieu de culte: la mosquée. La dernière fois?"@fr ,
+							"Familiarity with place of worship: Mosque. Last time?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: la mosquée. La dernière fois?"@fr ,
+							"Familiarity with place of worship: Mosque. Last time?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:SimpleText .	
+		                
+###  http://www.knora.org/ontology/drawings-gods#EnteredBuddhistTempleWithWhom
+:EnteredBuddhistTempleWithWhom rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:hasDefaultViewPermission knora-base:UnknownUser ,
+		                										knora-base:KnownUser ;
+		       			knora-base:hasDefaultModifyPermission knora-base:ProjectMember ;
+		       			knora-base:hasDefaultDeletePermission knora-base:Owner .
+#						paramètres à adapter:
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Familiarité avec le lieu de culte: temple bouddhiste. Avec qui?"@fr ,
+							"Familiarity with place of worship: Buddhist temple. With whom?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: temple bouddhiste. Avec qui?"@fr ,
+							"Familiarity with place of worship: Buddhist temple. With whom?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:SimpleText .
+
+###  http://www.knora.org/ontology/drawings-gods#EnteredBuddhistTempleWhy
+:EnteredBuddhistTempleWhy rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:hasDefaultViewPermission knora-base:UnknownUser ,
+		                										knora-base:KnownUser ;
+		       			knora-base:hasDefaultModifyPermission knora-base:ProjectMember ;
+		       			knora-base:hasDefaultDeletePermission knora-base:Owner .
+#						paramètres à adapter:
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Familiarité avec le lieu de culte: temple bouddhiste. Pourquoi?"@fr ,
+							"Familiarity with place of worship: Buddhist temple. Why?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: temple bouddhiste. Pourquoi?"@fr ,
+							"Familiarity with place of worship: Buddhist temple. Why?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:SimpleText .		                
+		                
+###  http://www.knora.org/ontology/drawings-gods#EnteredBuddhistTempleLastTime
+:EnteredBuddhistTempleLastTime rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:hasDefaultViewPermission knora-base:UnknownUser ,
+		                										knora-base:KnownUser ;
+		       			knora-base:hasDefaultModifyPermission knora-base:ProjectMember ;
+		       			knora-base:hasDefaultDeletePermission knora-base:Owner .
+#						paramètres à adapter:
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Familiarité avec le lieu de culte: temple bouddhiste. La dernière fois?"@fr ,
+							"Familiarity with place of worship: Buddhist temple. Last time?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: temple bouddhiste. La dernière fois?"@fr ,
+							"Familiarity with place of worship: Buddhist temple. Last time?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:SimpleText .	
+		                
+###  http://www.knora.org/ontology/drawings-gods#EnteredHinduTempleWithWhom
+:EnteredHinduTempleWithWhom rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:hasDefaultViewPermission knora-base:UnknownUser ,
+		                										knora-base:KnownUser ;
+		       			knora-base:hasDefaultModifyPermission knora-base:ProjectMember ;
+		       			knora-base:hasDefaultDeletePermission knora-base:Owner .
+#						paramètres à adapter:
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Familiarité avec le lieu de culte: temple hindou. Avec qui?"@fr ,
+							"Familiarity with place of worship: Hindu temple. With whom?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: temple hindou. Avec qui?"@fr ,
+							"Familiarity with place of worship: Hindu temple. With whom?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:SimpleText .
+
+###  http://www.knora.org/ontology/drawings-gods#EnteredHinduTempleWhy
+:EnteredHinduTempleWhy rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:hasDefaultViewPermission knora-base:UnknownUser ,
+		                										knora-base:KnownUser ;
+		       			knora-base:hasDefaultModifyPermission knora-base:ProjectMember ;
+		       			knora-base:hasDefaultDeletePermission knora-base:Owner .
+#						paramètres à adapter:
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Familiarité avec le lieu de culte: temple hindou. Pourquoi?"@fr ,
+							"Familiarity with place of worship: Hindu temple. Why?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: temple hindou. Pourquoi?"@fr ,
+							"Familiarity with place of worship: Hindu temple. Why?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:SimpleText .		                
+		                
+###  http://www.knora.org/ontology/drawings-gods#EnteredHinduTempleLastTime
+:EnteredHinduTempleLastTime rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:hasDefaultViewPermission knora-base:UnknownUser ,
+		                										knora-base:KnownUser ;
+		       			knora-base:hasDefaultModifyPermission knora-base:ProjectMember ;
+		       			knora-base:hasDefaultDeletePermission knora-base:Owner .
+#						paramètres à adapter:
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Familiarité avec le lieu de culte: temple hindou. La dernière fois?"@fr ,
+							"Familiarity with place of worship: Hindu temple. Last time?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: temple hindou. La dernière fois?"@fr ,
+							"Familiarity with place of worship: Hindu temple. Last time?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:SimpleText .	
+		                
+###  http://www.knora.org/ontology/drawings-gods#EnteredSynagogueWithWhom
+:EnteredSynagogueWithWhom rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:hasDefaultViewPermission knora-base:UnknownUser ,
+		                										knora-base:KnownUser ;
+		       			knora-base:hasDefaultModifyPermission knora-base:ProjectMember ;
+		       			knora-base:hasDefaultDeletePermission knora-base:Owner .
+#						paramètres à adapter:
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Familiarité avec le lieu de culte: synagogue. Avec qui?"@fr ,
+							"Familiarity with place of worship: Synagogue. With whom?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte : synagogue. Avec qui?"@fr ,
+							"Familiarity with place of worship: Synagogue. With whom?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:SimpleText .
+
+###  http://www.knora.org/ontology/drawings-gods#EnteredSynagogueWhy
+:EnteredSynagogueWhy rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:hasDefaultViewPermission knora-base:UnknownUser ,
+		                										knora-base:KnownUser ;
+		       			knora-base:hasDefaultModifyPermission knora-base:ProjectMember ;
+		       			knora-base:hasDefaultDeletePermission knora-base:Owner .
+#						paramètres à adapter:
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Familiarité avec le lieu de culte: synagogue. Pourquoi?"@fr ,
+							"Familiarity with place of worship: Synagogue. Why?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: synagogue. Pourquoi?"@fr ,
+							"Familiarity with place of worship: Synagogue. Why?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:SimpleText .		                
+		                
+###  http://www.knora.org/ontology/drawings-gods#EnteredSynagogueLastTime
+:EnteredSynagogueLastTime rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:hasDefaultViewPermission knora-base:UnknownUser ,
+		                										knora-base:KnownUser ;
+		       			knora-base:hasDefaultModifyPermission knora-base:ProjectMember ;
+		       			knora-base:hasDefaultDeletePermission knora-base:Owner .
+#						paramètres à adapter:
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Familiarité avec le lieu de culte: synagogue. La dernière fois?"@fr ,
+							"Familiarity with place of worship: Synagogue. Last time?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: synagogue. La dernière fois?"@fr ,
+							"Familiarity with place of worship: Synagogue. Last time?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:SimpleText .		   
+		                
+###  http://www.knora.org/ontology/drawings-gods#EnteredTempleNotDefinedWithWhom
+:EnteredTempleNotDefinedWithWhom rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:hasDefaultViewPermission knora-base:UnknownUser ,
+		                										knora-base:KnownUser ;
+		       			knora-base:hasDefaultModifyPermission knora-base:ProjectMember ;
+		       			knora-base:hasDefaultDeletePermission knora-base:Owner .
+#						paramètres à adapter:
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Familiarité avec le lieu de culte: temple non-spécifié. Avec qui?"@fr ,
+							"Familiarity with place of worship: Non-specific temple. With whom?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: temple non-spécifié. Avec qui?"@fr ,
+							"Familiarity with place of worship: Non-specific temple. With whom?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:SimpleText .
+
+###  http://www.knora.org/ontology/drawings-gods#EnteredTempleNotDefinedWhy
+:EnteredTempleNotDefinedWhy rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:hasDefaultViewPermission knora-base:UnknownUser ,
+		                										knora-base:KnownUser ;
+		       			knora-base:hasDefaultModifyPermission knora-base:ProjectMember ;
+		       			knora-base:hasDefaultDeletePermission knora-base:Owner .
+#						paramètres à adapter:
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Familiarité avec le lieu de culte: temple non-spécifié. Pourquoi?"@fr ,
+							"Familiarity with place of worship: Non-specific temple. Why?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: temple non-spécifié. Pourquoi?"@fr ,
+							"Familiarity with place of worship: Non-specific temple. Why?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:SimpleText .		                
+		                
+###  http://www.knora.org/ontology/drawings-gods#EnteredTempleNotDefinedLastTime
+:EnteredTempleNotDefinedLastTime rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:hasDefaultViewPermission knora-base:UnknownUser ,
+		                										knora-base:KnownUser ;
+		       			knora-base:hasDefaultModifyPermission knora-base:ProjectMember ;
+		       			knora-base:hasDefaultDeletePermission knora-base:Owner .
+#						paramètres à adapter:
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Familiarité avec le lieu de culte: temple non-spécifié. La dernière fois?"@fr ,
+							"Familiarity with place of worship: Non-specific temple. Last time?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: temple non-spécifié. La dernière fois?"@fr ,
+							"Familiarity with place of worship: Non-specific temple. Last time?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:SimpleText .     
+		                
+###  http://www.knora.org/ontology/drawings-gods#JinjyaOrOteraOccasion
+:JinjyaOrOteraOccasion rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:hasDefaultViewPermission knora-base:UnknownUser ,
+		                										knora-base:KnownUser ;
+		       			knora-base:hasDefaultModifyPermission knora-base:ProjectMember ;
+		       			knora-base:hasDefaultDeletePermission knora-base:Owner .
+#						paramètres à adapter:
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "A quelle occasion as-tu visité jinjya ou otera?"@fr ,
+							"On what occasion did you visit jinjya or otera?"@en ;
+						rdfs:comment "A quelle occasion as-tu visité jinjya ou otera?"@fr ,
+							"On what occasion did you visit jinjya or otera?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:SimpleText .      
+		                
+###  http://www.knora.org/ontology/drawings-gods#JinjyaOrOteraWithWhom
+:JinjyaOrOteraWithWhom rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:hasDefaultViewPermission knora-base:UnknownUser ,
+		                										knora-base:KnownUser ;
+		       			knora-base:hasDefaultModifyPermission knora-base:ProjectMember ;
+		       			knora-base:hasDefaultDeletePermission knora-base:Owner .
+#						paramètres à adapter:
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Familiarité avec le lieu de culte: jinjya ou otera. Avec qui?"@fr ,
+							"Familiarity with place of worship: jinjya or otera. With whom?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: jinjya ou otera. Avec qui?"@fr ,
+							"Familiarity with place of worship: jinjya or otera. With whom?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:SimpleText .
+
+###  http://www.knora.org/ontology/drawings-gods#JinjyaOrOteraWhy
+:JinjyaOrOteraWhy rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:hasDefaultViewPermission knora-base:UnknownUser ,
+		                										knora-base:KnownUser ;
+		       			knora-base:hasDefaultModifyPermission knora-base:ProjectMember ;
+		       			knora-base:hasDefaultDeletePermission knora-base:Owner .
+#						paramètres à adapter:
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Familiarité avec le lieu de culte: : jinjya ou otera. Pourquoi?"@fr ,
+							"Familiarity with place of worship: jinjya or otera. Why?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: jinjya ou otera. Pourquoi?"@fr ,
+							"Familiarity with place of worship: jinjya or otera. Why?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:SimpleText .		                
+		                
+###  http://www.knora.org/ontology/drawings-gods#JinjyaOrOteraLastTime
+:JinjyaOrOteraLastTime rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:hasDefaultViewPermission knora-base:UnknownUser ,
+		                										knora-base:KnownUser ;
+		       			knora-base:hasDefaultModifyPermission knora-base:ProjectMember ;
+		       			knora-base:hasDefaultDeletePermission knora-base:Owner .
+#						paramètres à adapter:
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Familiarité avec le lieu de culte: : jinjya ou otera. La dernière fois?"@fr ,
+							"Familiarity with place of worship: jinjya or otera. Last time?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: : jinjya ou otera. La dernière fois?"@fr ,
+							"Familiarity with place of worship: jinjya or otera. Last time?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:SimpleText .       
+		                
+###  http://www.knora.org/ontology/drawings-gods#JinjyaOccasion
+:JinjyaOccasion rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:hasDefaultViewPermission knora-base:UnknownUser ,
+		                										knora-base:KnownUser ;
+		       			knora-base:hasDefaultModifyPermission knora-base:ProjectMember ;
+		       			knora-base:hasDefaultDeletePermission knora-base:Owner .
+#						paramètres à adapter:
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "A quelle occasion as-tu visité jinjya ou otera?"@fr ,
+							"On what occasion did you visit jinjya or otera?"@en ;
+						rdfs:comment "A quelle occasion as-tu visité jinjya ou otera?"@fr ,
+							"On what occasion did you visit jinjya or otera?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:SimpleText .  
+		                
+###  http://www.knora.org/ontology/drawings-gods#JinjyaWithWhom
+:JinjyaWithWhom rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:hasDefaultViewPermission knora-base:UnknownUser ,
+		                										knora-base:KnownUser ;
+		       			knora-base:hasDefaultModifyPermission knora-base:ProjectMember ;
+		       			knora-base:hasDefaultDeletePermission knora-base:Owner .
+#						paramètres à adapter:
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Familiarité avec le lieu de culte: jinjya. Avec qui?"@fr ,
+							"Familiarity with place of worship: jinjya. With whom?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: jinjya. Avec qui?"@fr ,
+							"Familiarity with place of worship: jinjya. With whom?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:SimpleText .
+
+###  http://www.knora.org/ontology/drawings-gods#JinjyaWhy
+:JinjyaWhy rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:hasDefaultViewPermission knora-base:UnknownUser ,
+		                										knora-base:KnownUser ;
+		       			knora-base:hasDefaultModifyPermission knora-base:ProjectMember ;
+		       			knora-base:hasDefaultDeletePermission knora-base:Owner .
+#						paramètres à adapter:
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Familiarité avec le lieu de culte: jinjya. Pourquoi?"@fr ,
+							"Familiarity with place of worship: jinjya. Why?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: jinjya. Pourquoi?"@fr ,
+							"Familiarity with place of worship: jinjya. Why?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:SimpleText .		                
+		                
+###  http://www.knora.org/ontology/drawings-gods#JinjyaLastTime
+:JinjyaLastTime rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:hasDefaultViewPermission knora-base:UnknownUser ,
+		                										knora-base:KnownUser ;
+		       			knora-base:hasDefaultModifyPermission knora-base:ProjectMember ;
+		       			knora-base:hasDefaultDeletePermission knora-base:Owner .
+#						paramètres à adapter:
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Familiarité avec le lieu de culte: jinjya. La dernière fois?"@fr ,
+							"Familiarity with place of worship: jinjya. Last time?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: jinjya. La dernière fois?"@fr ,
+							"Familiarity with place of worship: jinjya. Last time?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:SimpleText .  		                
+		                                
+		                
+###  http://www.knora.org/ontology/drawings-gods#OteraOccasion
+:OteraOccasion rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:hasDefaultViewPermission knora-base:UnknownUser ,
+		                										knora-base:KnownUser ;
+		       			knora-base:hasDefaultModifyPermission knora-base:ProjectMember ;
+		       			knora-base:hasDefaultDeletePermission knora-base:Owner .
+#						paramètres à adapter:
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "A quelle occasion as-tu visité otera?"@fr ,
+							"On what occasion did you visit otera?"@en ;
+						rdfs:comment "A quelle occasion as-tu visité otera?"@fr ,
+							"On what occasion did you visit otera?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:SimpleText .  
+		                
+###  http://www.knora.org/ontology/drawings-gods#OteraWithWhom
+:OteraWithWhom rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:hasDefaultViewPermission knora-base:UnknownUser ,
+		                										knora-base:KnownUser ;
+		       			knora-base:hasDefaultModifyPermission knora-base:ProjectMember ;
+		       			knora-base:hasDefaultDeletePermission knora-base:Owner .
+#						paramètres à adapter:
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Familiarité avec le lieu de culte: otera. Avec qui?"@fr ,
+							"Familiarity with place of worship: otera. With whom?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: otera. Avec qui?"@fr ,
+							"Familiarity with place of worship: otera. With whom?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:SimpleText .
+
+###  http://www.knora.org/ontology/drawings-gods#OteraWhy
+:OteraWhy rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:hasDefaultViewPermission knora-base:UnknownUser ,
+		                										knora-base:KnownUser ;
+		       			knora-base:hasDefaultModifyPermission knora-base:ProjectMember ;
+		       			knora-base:hasDefaultDeletePermission knora-base:Owner .
+#						paramètres à adapter:
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Familiarité avec le lieu de culte: otera. Pourquoi?"@fr ,
+							"Familiarity with place of worship: otera. Why?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: otera. Pourquoi?"@fr ,
+							"Familiarity with place of worship: otera. Why?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:SimpleText .		                
+		                
+###  http://www.knora.org/ontology/drawings-gods#OteraLastTime
+:OteraLastTime rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:hasDefaultViewPermission knora-base:UnknownUser ,
+		                										knora-base:KnownUser ;
+		       			knora-base:hasDefaultModifyPermission knora-base:ProjectMember ;
+		       			knora-base:hasDefaultDeletePermission knora-base:Owner .
+#						paramètres à adapter:
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Familiarité avec le lieu de culte: otera. La dernière fois?"@fr ,
+							"Familiarity with place of worship: otera. Last time?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: otera. La dernière fois?"@fr ,
+							"Familiarity with place of worship: otera. Last time?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:SimpleText . 
+		                
+###  http://www.knora.org/ontology/drawings-gods#CultObjectAtHomeFamilyMembersActions
+:CultObjectAtHomeFamilyMembersActions rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:hasDefaultViewPermission knora-base:UnknownUser ,
+		                										knora-base:KnownUser ;
+		       			knora-base:hasDefaultModifyPermission knora-base:ProjectMember ;
+		       			knora-base:hasDefaultDeletePermission knora-base:Owner .
+#						paramètres à adapter:
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Qu'est-ce que vous ou votre famille faites devant ce butsudan ou ce kamidana?"@fr ,
+							"What do you or your family do in front of that butsudan or kamidana?"@en ;
+						rdfs:comment "Qu'est-ce que vous ou votre famille faites devant ce butsudan ou ce kamidana?"@fr ,
+							"What do you or your family do in front of that butsudan or kamidana?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:SimpleText . 
+		                
+###  http://www.knora.org/ontology/drawings-gods#WhatWordGodMeans
+:WhatWordGodMeans rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:hasDefaultViewPermission knora-base:UnknownUser ,
+		                										knora-base:KnownUser ;
+		       			knora-base:hasDefaultModifyPermission knora-base:ProjectMember ;
+		       			knora-base:hasDefaultDeletePermission knora-base:Owner .
+#						paramètres à adapter:
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Ce que le mot dieu veut dire..."@fr ,
+							"What the word god means..."@en ;
+						rdfs:comment "Ce que le mot dieu veut dire..."@fr ,
+							"What the word god means..."@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:SimpleText . 
+		                
+###  http://www.knora.org/ontology/drawings-gods#WhoBuddhaIs
+:WhoBuddhaIs rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:hasDefaultViewPermission knora-base:UnknownUser ,
+		                										knora-base:KnownUser ;
+		       			knora-base:hasDefaultModifyPermission knora-base:ProjectMember ;
+		       			knora-base:hasDefaultDeletePermission knora-base:Owner .
+#						paramètres à adapter:
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Qui est Bouddha..."@fr ,
+							"Who Buddha is..."@en ;
+						rdfs:comment "Qui est Bouddha..."@fr ,
+							"Who Buddha is..."@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:SimpleText . 
+		                
+###  http://www.knora.org/ontology/drawings-gods#IfIToldYouGodCouldYouDrawSomethingElseWho
+:IfIToldYouGodCouldYouDrawSomethingElseWho rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:hasDefaultViewPermission knora-base:UnknownUser ,
+		                										knora-base:KnownUser ;
+		       			knora-base:hasDefaultModifyPermission knora-base:ProjectMember ;
+		       			knora-base:hasDefaultDeletePermission knora-base:Owner .
+#						paramètres à adapter:
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Qui/quoi d'autre pourrais-tu dessiner?"@fr ,
+							"Whom/what else could you draw?"@en ;
+						rdfs:comment "Qui/quoi d'autre pourrais-tu dessiner?"@fr ,
+							"Whom/what else could you draw?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:SimpleText . 
+		                
+###  http://www.knora.org/ontology/drawings-gods#SeenOtherPeoplePrayWhenOther
+:SeenOtherPeoplePrayWhenOther rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:hasDefaultViewPermission knora-base:UnknownUser ,
+		                										knora-base:KnownUser ;
+		       			knora-base:hasDefaultModifyPermission knora-base:ProjectMember ;
+		       			knora-base:hasDefaultDeletePermission knora-base:Owner .
+#						paramètres à adapter:
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "A quelle occasion as-tu vu des gens prié?"@fr ,
+							"On what occasion did you get to see other people pray?"@en ;
+						rdfs:comment "A quelle occasion as-tu vu des gens prié?"@fr ,
+							"On what occasion did you get to see other people pray?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:SimpleText . 
+		                
+###  http://www.knora.org/ontology/drawings-gods#PrayingAtHomeOtherTimes
+:PrayingAtHomeOtherTimes rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:hasDefaultViewPermission knora-base:UnknownUser ,
+		                										knora-base:KnownUser ;
+		       			knora-base:hasDefaultModifyPermission knora-base:ProjectMember ;
+		       			knora-base:hasDefaultDeletePermission knora-base:Owner .
+#						paramètres à adapter:
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Est-ce que tu pries à d'autres moments à la maison? Quels?"@fr ,
+							"Do you pray at home at other times? Which?"@en ;
+						rdfs:comment "Est-ce que tu pries à d'autres moments à la maison? Quels?"@fr ,
+							"Do you pray at home at other times?Which?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:SimpleText . 
+		                
+###  http://www.knora.org/ontology/drawings-gods#PrayingWithOtherPeopleWhen
+:PrayingWithOtherPeopleWhen rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:hasDefaultViewPermission knora-base:UnknownUser ,
+		                										knora-base:KnownUser ;
+		       			knora-base:hasDefaultModifyPermission knora-base:ProjectMember ;
+		       			knora-base:hasDefaultDeletePermission knora-base:Owner .
+#						paramètres à adapter:
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Quand est-ce que tu pries avec d'autres gens?"@fr ,
+							"When do you pray with other people?"@en ;
+						rdfs:comment "Quand est-ce que tu pries avec d'autres gens?"@fr ,
+							"When do you pray with other people?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:SimpleText . 
+		                
+###  http://www.knora.org/ontology/drawings-gods#PrayingWithOtherPeopleLastTime
+:PrayingWithOtherPeopleLastTime rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:hasDefaultViewPermission knora-base:UnknownUser ,
+		                										knora-base:KnownUser ;
+		       			knora-base:hasDefaultModifyPermission knora-base:ProjectMember ;
+		       			knora-base:hasDefaultDeletePermission knora-base:Owner .
+#						paramètres à adapter:
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Quand as-tu prié avec d'autres gens pour la dernière fois?"@fr ,
+							"When did you get to pray with other people for the last time?"@en ;
+						rdfs:comment "Quand as-tu prié avec d'autres gens pour la dernière fois?"@fr ,
+							"When did you get to pray with other people for the last time?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:SimpleText . 
+		                
+###  http://www.knora.org/ontology/drawings-gods#PrayingWithOtherPeopleHowOftenOther
+:PrayingWithOtherPeopleHowOftenOther rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:hasDefaultViewPermission knora-base:UnknownUser ,
+		                										knora-base:KnownUser ;
+		       			knora-base:hasDefaultModifyPermission knora-base:ProjectMember ;
+		       			knora-base:hasDefaultDeletePermission knora-base:Owner .
+#						paramètres à adapter:
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "A quelle fréquence pries-tu avec d'autres gens? Autre..."@fr ,
+							"How often do you get to pray with other people? Other..."@en ;
+						rdfs:comment "A quelle fréquence pries-tu avec d'autres gens? Autre..."@fr ,
+							"How often do you get to pray with other people? Other..."@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:SimpleText . 
+		                
+###  http://www.knora.org/ontology/drawings-gods#PrayingAloneWhen
+:PrayingAloneWhen rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:hasDefaultViewPermission knora-base:UnknownUser ,
+		                										knora-base:KnownUser ;
+		       			knora-base:hasDefaultModifyPermission knora-base:ProjectMember ;
+		       			knora-base:hasDefaultDeletePermission knora-base:Owner .
+#						paramètres à adapter:
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Quand est-ce qu'il t'arrive de prier seul-e?"@fr ,
+							"When do you get to pray alone?"@en ;
+						rdfs:comment "Quand est-ce qu'il t'arrive de prier seul-e?"@fr ,
+							"When do you get to pray alone?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:SimpleText . 
+		                
+###  http://www.knora.org/ontology/drawings-gods#PrayingAloneLastTime
+:PrayingAloneLastTime rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:hasDefaultViewPermission knora-base:UnknownUser ,
+		                										knora-base:KnownUser ;
+		       			knora-base:hasDefaultModifyPermission knora-base:ProjectMember ;
+		       			knora-base:hasDefaultDeletePermission knora-base:Owner .
+#						paramètres à adapter:
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Quand as-tu prié seul-e pour la dernière fois?"@fr ,
+							"When did you pray alone for the last time?"@en ;
+						rdfs:comment "Quand as-tu prié seul-e pour la dernière fois?"@fr ,
+							"When did you pray alone for the last time?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:SimpleText . 
+		                
+###  http://www.knora.org/ontology/drawings-gods#PrayingAloneHowOftenOther
+:PrayingAloneHowOftenOther rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:hasDefaultViewPermission knora-base:UnknownUser ,
+		                										knora-base:KnownUser ;
+		       			knora-base:hasDefaultModifyPermission knora-base:ProjectMember ;
+		       			knora-base:hasDefaultDeletePermission knora-base:Owner .
+#						paramètres à adapter:
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "A quelle fréquence pries-tu seul-e? Autre..."@fr ,
+							"How often do you get to pray alone? Other..."@en ;
+						rdfs:comment "A quelle fréquence pries-tu seul-e? Autre..."@fr ,
+							"How often do you get to pray alone? Other..."@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:SimpleText . 
+		                
+###  http://www.knora.org/ontology/drawings-gods#WhereisgodOther
+:WhereisgodOther rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:hasDefaultViewPermission knora-base:UnknownUser ,
+		                										knora-base:KnownUser ;
+		       			knora-base:hasDefaultModifyPermission knora-base:ProjectMember ;
+		       			knora-base:hasDefaultDeletePermission knora-base:Owner .
+#						paramètres à adapter:
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Selon toi, dieu se trouve... Autre"@fr ,
+							"According to you god is located... Other"@en ;
+						rdfs:comment "Selon toi, dieu se trouve... Autre"@fr ,
+							"According to you god is located... Other"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:SimpleText . 
+		                
+###  http://www.knora.org/ontology/drawings-gods#SexOfGodOther
+:SexOfGodOther rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:hasDefaultViewPermission knora-base:UnknownUser ,
+		                										knora-base:KnownUser ;
+		       			knora-base:hasDefaultModifyPermission knora-base:ProjectMember ;
+		       			knora-base:hasDefaultDeletePermission knora-base:Owner .
+#						paramètres à adapter:
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Sexe de dieu. Autre..."@fr ,
+							"Sex of god. Other..."@en ;
+						rdfs:comment "Sexe de dieu. Autre..."@fr ,
+							"Sex of god. Other..."@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:SimpleText . 
+		                
+###  http://www.knora.org/ontology/drawings-gods#AgeOfGodOther
+:AgeOfGodOther rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:hasDefaultViewPermission knora-base:UnknownUser ,
+		                										knora-base:KnownUser ;
+		       			knora-base:hasDefaultModifyPermission knora-base:ProjectMember ;
+		       			knora-base:hasDefaultDeletePermission knora-base:Owner .
+#						paramètres à adapter:
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Age de dieu. Autre..."@fr ,
+							"Age of god. Other..."@en ;
+						rdfs:comment "Age de dieu. Autre..."@fr ,
+							"Age of god. Other..."@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:SimpleText . 
+		                
+###  http://www.knora.org/ontology/drawings-gods#AlreadyDrawnGodInThePastWhen
+:AlreadyDrawnGodInThePastWhen rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:hasDefaultViewPermission knora-base:UnknownUser ,
+		                										knora-base:KnownUser ;
+		       			knora-base:hasDefaultModifyPermission knora-base:ProjectMember ;
+		       			knora-base:hasDefaultDeletePermission knora-base:Owner .
+#						paramètres à adapter:
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Quand l'enfant a-t-il/elle dessiné dieu dans le passé?"@fr ,
+							"When did the child happen to draw god in the past?"@en ;
+						rdfs:comment "Quand l'enfant a-t-il/elle dessiné dieu dans le passé?"@fr ,
+							"When did the child happen to draw god in the past?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:SimpleText . 
+		                
+###  http://www.knora.org/ontology/drawings-gods#AlreadyDrawnGodInThePastLastTime
+:AlreadyDrawnGodInThePastLastTime rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:hasDefaultViewPermission knora-base:UnknownUser ,
+		                										knora-base:KnownUser ;
+		       			knora-base:hasDefaultModifyPermission knora-base:ProjectMember ;
+		       			knora-base:hasDefaultDeletePermission knora-base:Owner .
+#						paramètres à adapter:
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Quand l'enfant a dessiné dieu pour la dernière fois?"@fr ,
+							"When did the child happen to draw god for the last time?"@en ;
+						rdfs:comment "Quand l'enfant a dessiné dieu pour la dernière fois?"@fr ,
+							"When did the child happen to draw god for the last time?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:SimpleText . 
+		                
+###  http://www.knora.org/ontology/drawings-gods#AlreadyDrawnGodInThePastWhat
+:AlreadyDrawnGodInThePastWhat rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:hasDefaultViewPermission knora-base:UnknownUser ,
+		                										knora-base:KnownUser ;
+		       			knora-base:hasDefaultModifyPermission knora-base:ProjectMember ;
+		       			knora-base:hasDefaultDeletePermission knora-base:Owner .
+#						paramètres à adapter:
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Description  dessin(s) de dieu par l'enfant dans le passé."@fr ,
+							"Description of the child's drawing(s) of god in the past."@en ;
+						rdfs:comment "Description  dessin(s) de dieu par l'enfant dans le passé."@fr ,
+							"Description of the child's drawing(s) of god in the past."@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:SimpleText . 
+		                
+###  http://www.knora.org/ontology/drawings-gods#BaptizedWhen
+:BaptizedWhen rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:hasDefaultViewPermission knora-base:UnknownUser ,
+		                										knora-base:KnownUser ;
+		       			knora-base:hasDefaultModifyPermission knora-base:ProjectMember ;
+		       			knora-base:hasDefaultDeletePermission knora-base:Owner .
+#						paramètres à adapter:
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Quand l'enfant a-t-il/elle été baptisé-e?"@fr ,
+							"When was the child baptized?"@en ;
+						rdfs:comment "Quand l'enfant a-t-il/elle été baptisé-e?"@fr ,
+							"When was the child baptized?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:SimpleText . 
+		                
+###  http://www.knora.org/ontology/drawings-gods#CommunionWhen
+:CommunionWhen rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:hasDefaultViewPermission knora-base:UnknownUser ,
+		                										knora-base:KnownUser ;
+		       			knora-base:hasDefaultModifyPermission knora-base:ProjectMember ;
+		       			knora-base:hasDefaultDeletePermission knora-base:Owner .
+#						paramètres à adapter:
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Quand l'enfant a-t-il/elle fait sa communion?"@fr ,
+							"When did the child receive his/her communion?"@en ;
+						rdfs:comment "Quand l'enfant a-t-il/elle fait sa communion?"@fr ,
+							"When did the child receive his/her communion?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:SimpleText . 
+		                
+###  http://www.knora.org/ontology/drawings-gods#CathechismWhen
+:CathechismWhen rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:hasDefaultViewPermission knora-base:UnknownUser ,
+		                										knora-base:KnownUser ;
+		       			knora-base:hasDefaultModifyPermission knora-base:ProjectMember ;
+		       			knora-base:hasDefaultDeletePermission knora-base:Owner .
+#						paramètres à adapter:
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Quand l'enfant a-t-il/elle commencé les cours de catéchisme?"@fr ,
+							"When did the child start attending catechism class?"@en ;
+						rdfs:comment "Quand l'enfant a-t-il/elle commencé les cours de catéchisme?"@fr ,
+							"When did the child start attending catechism class?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:SimpleText . 
+		                
+###  http://www.knora.org/ontology/drawings-gods#DadsReligion
+:DadsReligion rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:hasDefaultViewPermission knora-base:UnknownUser ,
+		                										knora-base:KnownUser ;
+		       			knora-base:hasDefaultModifyPermission knora-base:ProjectMember ;
+		       			knora-base:hasDefaultDeletePermission knora-base:Owner .
+#						paramètres à adapter:
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "La religion du papa de l'enfant. Autre..."@fr ,
+							"Child's dad's religion. Other..."@en ;
+						rdfs:comment "La religion du papa de l'enfant. Autre..."@fr ,
+							"Child's dad's religion. Other..."@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:SimpleText . 
+		                
+###  http://www.knora.org/ontology/drawings-gods#MomsReligion
+:MomsReligion rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:hasDefaultViewPermission knora-base:UnknownUser ,
+		                										knora-base:KnownUser ;
+		       			knora-base:hasDefaultModifyPermission knora-base:ProjectMember ;
+		       			knora-base:hasDefaultDeletePermission knora-base:Owner .
+#						paramètres à adapter:
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "La religion de la maman de l'enfant. Autre..."@fr ,
+							"Child's mom's religion. Other..."@en ;
+						rdfs:comment "La religion de la maman de l'enfant. Autre..."@fr ,
+							"Child's mom's religion. Other..."@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:SimpleText . 
+		                
+###  http://www.knora.org/ontology/drawings-gods#PlaceOfBirth
+:PlaceOfBirth rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:hasDefaultViewPermission knora-base:UnknownUser ,
+		                										knora-base:KnownUser ;
+		       			knora-base:hasDefaultModifyPermission knora-base:ProjectMember ;
+		       			knora-base:hasDefaultDeletePermission knora-base:Owner .
+#						paramètres à adapter:
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Lieu de naissance de l'enfant"@fr ,
+							"Child's place of birth"@en ;
+						rdfs:comment "Lieu de naissance de l'enfant"@fr ,
+							"Child's place of birth"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:SimpleText . 
+		                
+###  http://www.knora.org/ontology/drawings-gods#MotherTongue
+:MotherTongue rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:hasDefaultViewPermission knora-base:UnknownUser ,
+		                										knora-base:KnownUser ;
+		       			knora-base:hasDefaultModifyPermission knora-base:ProjectMember ;
+		       			knora-base:hasDefaultDeletePermission knora-base:Owner .
+#						paramètres à adapter:
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Langue(s) maternelle(s) de l'enfant. Autre..."@fr ,
+							"Child's mother tongue(s). Other..."@en ;
+						rdfs:comment "Langue(s) maternelle(s) de l'enfant. Autre..."@fr ,
+							"Child's mother tongue(s). Other..."@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:SimpleText . 
+		                
+###  http://www.knora.org/ontology/drawings-gods#OtherLanguages
+:OtherLanguages rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:hasDefaultViewPermission knora-base:UnknownUser ,
+		                										knora-base:KnownUser ;
+		       			knora-base:hasDefaultModifyPermission knora-base:ProjectMember ;
+		       			knora-base:hasDefaultDeletePermission knora-base:Owner .
+#						paramètres à adapter:
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Autres langues parlées par l'enfant. Autre..."@fr ,
+							"Other languages often spoken by the child. Other..."@en ;
+						rdfs:comment "Autres langues parlées par l'enfant. . Autre..."@fr ,
+							"Other languages often spoken by the child. Other..."@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:SimpleText . 
+		                
+###  http://www.knora.org/ontology/drawings-gods#LanguageSpokenMostOften
+:LanguageSpokenMostOften rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:hasDefaultViewPermission knora-base:UnknownUser ,
+		                										knora-base:KnownUser ;
+		       			knora-base:hasDefaultModifyPermission knora-base:ProjectMember ;
+		       			knora-base:hasDefaultDeletePermission knora-base:Owner .
+#						paramètres à adapter:
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Langue parlée le plus souvent par l'enfant. Autre..."@fr ,
+							"Language spoken most often by the child. Other..."@en ;
+						rdfs:comment "Langue parlée le plus souvent par l'enfant. Autre..."@fr ,
+							"Language spoken most often by the child. Other..."@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:SimpleText . 
+		                
+###  http://www.knora.org/ontology/drawings-gods#YearsLivingInSwitzerland
+:YearsLivingInSwitzerland rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:hasDefaultViewPermission knora-base:UnknownUser ,
+		                										knora-base:KnownUser ;
+		       			knora-base:hasDefaultModifyPermission knora-base:ProjectMember ;
+		       			knora-base:hasDefaultDeletePermission knora-base:Owner .
+#						paramètres à adapter:
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Depuis quand l'enfant habite-t-il/elle en Suisse"@fr ,
+							"Since when does the child live in Switzerland"@en ;
+						rdfs:comment "Depuis quand l'enfant habite-t-il/elle en Suisse"@fr ,
+							"Since when does the child live in Switzerland"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:SimpleText . 
+
+#################################################################
 #    Classes
 #################################################################
 
