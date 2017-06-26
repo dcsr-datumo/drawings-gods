@@ -1295,7 +1295,6 @@
 						          	    salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList>" .
 
 
-
 ###  http://www.knora.org/ontology/0105#hasInstructionTranslator
 :hasInstructionTranslator rdf:type owl:ObjectProperty ;
                        rdfs:subPropertyOf :hasTranslator ;
@@ -2024,18 +2023,7 @@
 #               	          salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TranslatorList>" .
 
 
-###  http://www.knora.org/ontology/0105#hasInstructionTranslator
-:hasInstructionTranslator rdf:type owl:ObjectProperty ;
-                       rdfs:subPropertyOf :hasTranslator ;
-                       knora-base:objectClassConstraint knora-base:ListValue ;
-                       knora-base:subjectClassConstraint :Instruction ;
-                       rdfs:label "Traducteur de l'instruction"@fr ,
-									"Translator of instructions"@en ;
-		   		 	   rdfs:comment "Traducteur de l'instruction."@fr ,
-									"Translator of instructions."@en ;
-					   salsah-gui:guiOrder "1"^^xsd:integer ;
-		               salsah-gui:guiElement salsah-gui:Pulldown ;
-               	   salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TranslatorList>" .
+
 
 
 ####  http://www.knora.org/ontology/0105#questionnaireComment
@@ -3368,6 +3356,879 @@
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedNumListQ>" .
 
+### --- ajout 26/06/17
+
+###  http://www.knora.org/ontology/0105#enteredChurchWithWhom
+:enteredChurchWithWhom rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Familiarité avec le lieu de culte: eglise. Avec qui?"@fr ,
+							"Familiarity with place of worship: Church. With whom?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: eglise. Avec qui?"@fr ,
+							"Familiarity with place of worship: Church. With whom?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+                           salsah-gui:guiOrder "30"^^xsd:integer ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" .
+
+###  http://www.knora.org/ontology/0105#enteredChurchWhy
+:enteredChurchWhy rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Familiarité avec le lieu de culte: eglise. Pourquoi?"@fr ,
+							"Familiarity with place of worship: Church. Why?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: eglise. Pourquoi?"@fr ,
+							"Familiarity with place of worship: Church. Why?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+                           salsah-gui:guiOrder "30"^^xsd:integer ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" .		                
+		                
+###  http://www.knora.org/ontology/0105#enteredChurchLastTime
+:enteredChurchLastTime rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Familiarité avec le lieu de culte: eglise. La dernière fois?"@fr ,
+							"Familiarity with place of worship: Church. Last time?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: eglise. La dernière fois?"@fr ,
+							"Familiarity with place of worship: Church. Last time?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+                           salsah-gui:guiOrder "30"^^xsd:integer ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" .	
+		                
+###  http://www.knora.org/ontology/0105#enteredMosqueWithWhom
+:enteredMosqueWithWhom rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Familiarité avec le lieu de culte: la mosquée. Avec qui?"@fr ,
+							"Familiarity with place of worship: Mosque. With whom?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: la mosquée. Avec qui?"@fr ,
+							"Familiarity with place of worship: Mosque. With whom?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+                           salsah-gui:guiOrder "30"^^xsd:integer ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" .
+
+###  http://www.knora.org/ontology/0105#enteredMosqueWhy
+:enteredMosqueWhy rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Familiarité avec le lieu de culte: la mosquée. Pourquoi?"@fr ,
+							"Familiarity with place of worship: Mosque. Why?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: la mosquée. Pourquoi?"@fr ,
+							"Familiarity with place of worship: Mosque. Why?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+                           salsah-gui:guiOrder "30"^^xsd:integer ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" .		                
+		                
+###  http://www.knora.org/ontology/0105#enteredMosqueLastTime
+:enteredMosqueLastTime rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Familiarité avec le lieu de culte: la mosquée. La dernière fois?"@fr ,
+							"Familiarity with place of worship: Mosque. Last time?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: la mosquée. La dernière fois?"@fr ,
+							"Familiarity with place of worship: Mosque. Last time?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+                           salsah-gui:guiOrder "30"^^xsd:integer ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" .	
+		                
+###  http://www.knora.org/ontology/0105#enteredBuddhistTempleWithWhom
+:enteredBuddhistTempleWithWhom rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Familiarité avec le lieu de culte: temple bouddhiste. Avec qui?"@fr ,
+							"Familiarity with place of worship: Buddhist temple. With whom?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: temple bouddhiste. Avec qui?"@fr ,
+							"Familiarity with place of worship: Buddhist temple. With whom?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+                           salsah-gui:guiOrder "30"^^xsd:integer ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" .
+
+###  http://www.knora.org/ontology/0105#enteredBuddhistTempleWhy
+:enteredBuddhistTempleWhy rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Familiarité avec le lieu de culte: temple bouddhiste. Pourquoi?"@fr ,
+							"Familiarity with place of worship: Buddhist temple. Why?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: temple bouddhiste. Pourquoi?"@fr ,
+							"Familiarity with place of worship: Buddhist temple. Why?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+                           salsah-gui:guiOrder "30"^^xsd:integer ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" .		                
+		                
+###  http://www.knora.org/ontology/0105#enteredBuddhistTempleLastTime
+:enteredBuddhistTempleLastTime rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Familiarité avec le lieu de culte: temple bouddhiste. La dernière fois?"@fr ,
+							"Familiarity with place of worship: Buddhist temple. Last time?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: temple bouddhiste. La dernière fois?"@fr ,
+							"Familiarity with place of worship: Buddhist temple. Last time?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+                           salsah-gui:guiOrder "30"^^xsd:integer ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" .	
+		                
+###  http://www.knora.org/ontology/0105#enteredHinduTempleWithWhom
+:enteredHinduTempleWithWhom rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Familiarité avec le lieu de culte: temple hindou. Avec qui?"@fr ,
+							"Familiarity with place of worship: Hindu temple. With whom?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: temple hindou. Avec qui?"@fr ,
+							"Familiarity with place of worship: Hindu temple. With whom?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+                           salsah-gui:guiOrder "30"^^xsd:integer ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" .
+
+###  http://www.knora.org/ontology/0105#enteredHinduTempleWhy
+:enteredHinduTempleWhy rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Familiarité avec le lieu de culte: temple hindou. Pourquoi?"@fr ,
+							"Familiarity with place of worship: Hindu temple. Why?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: temple hindou. Pourquoi?"@fr ,
+							"Familiarity with place of worship: Hindu temple. Why?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+                           salsah-gui:guiOrder "30"^^xsd:integer ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" .		                
+		                
+###  http://www.knora.org/ontology/0105#enteredHinduTempleLastTime
+:enteredHinduTempleLastTime rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Familiarité avec le lieu de culte: temple hindou. La dernière fois?"@fr ,
+							"Familiarity with place of worship: Hindu temple. Last time?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: temple hindou. La dernière fois?"@fr ,
+							"Familiarity with place of worship: Hindu temple. Last time?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+                           salsah-gui:guiOrder "30"^^xsd:integer ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" .	
+		                
+###  http://www.knora.org/ontology/0105#enteredSynagogueWithWhom
+:enteredSynagogueWithWhom rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Familiarité avec le lieu de culte: synagogue. Avec qui?"@fr ,
+							"Familiarity with place of worship: Synagogue. With whom?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte : synagogue. Avec qui?"@fr ,
+							"Familiarity with place of worship: Synagogue. With whom?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+                           salsah-gui:guiOrder "30"^^xsd:integer ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" .
+
+###  http://www.knora.org/ontology/0105#enteredSynagogueWhy
+:enteredSynagogueWhy rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Familiarité avec le lieu de culte: synagogue. Pourquoi?"@fr ,
+							"Familiarity with place of worship: Synagogue. Why?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: synagogue. Pourquoi?"@fr ,
+							"Familiarity with place of worship: Synagogue. Why?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+                           salsah-gui:guiOrder "30"^^xsd:integer ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" .		                
+		                
+###  http://www.knora.org/ontology/0105#enteredSynagogueLastTime
+:enteredSynagogueLastTime rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Familiarité avec le lieu de culte: synagogue. La dernière fois?"@fr ,
+							"Familiarity with place of worship: Synagogue. Last time?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: synagogue. La dernière fois?"@fr ,
+							"Familiarity with place of worship: Synagogue. Last time?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+                           salsah-gui:guiOrder "30"^^xsd:integer ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" .		   
+		                
+###  http://www.knora.org/ontology/0105#enteredTempleNotDefinedWithWhom
+:enteredTempleNotDefinedWithWhom rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Familiarité avec le lieu de culte: temple non-spécifié. Avec qui?"@fr ,
+							"Familiarity with place of worship: Non-specific temple. With whom?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: temple non-spécifié. Avec qui?"@fr ,
+							"Familiarity with place of worship: Non-specific temple. With whom?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+                           salsah-gui:guiOrder "30"^^xsd:integer ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" .
+
+###  http://www.knora.org/ontology/0105#enteredTempleNotDefinedWhy
+:enteredTempleNotDefinedWhy rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Familiarité avec le lieu de culte: temple non-spécifié. Pourquoi?"@fr ,
+							"Familiarity with place of worship: Non-specific temple. Why?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: temple non-spécifié. Pourquoi?"@fr ,
+							"Familiarity with place of worship: Non-specific temple. Why?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+                           salsah-gui:guiOrder "30"^^xsd:integer ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" .		                
+		                
+###  http://www.knora.org/ontology/0105#enteredTempleNotDefinedLastTime
+:enteredTempleNotDefinedLastTime rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Familiarité avec le lieu de culte: temple non-spécifié. La dernière fois?"@fr ,
+							"Familiarity with place of worship: Non-specific temple. Last time?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: temple non-spécifié. La dernière fois?"@fr ,
+							"Familiarity with place of worship: Non-specific temple. Last time?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+                           salsah-gui:guiOrder "30"^^xsd:integer ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" .     
+		                
+###  http://www.knora.org/ontology/0105#jinjyaOrOteraOccasion
+:jinjyaOrOteraOccasion rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "A quelle occasion as-tu visité jinjya ou otera?"@fr ,
+							"On what occasion did you visit jinjya or otera?"@en ;
+						rdfs:comment "A quelle occasion as-tu visité jinjya ou otera?"@fr ,
+							"On what occasion did you visit jinjya or otera?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+                           salsah-gui:guiOrder "30"^^xsd:integer ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" .      
+		                
+###  http://www.knora.org/ontology/0105#jinjyaOrOteraWithWhom
+:jinjyaOrOteraWithWhom rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Familiarité avec le lieu de culte: jinjya ou otera. Avec qui?"@fr ,
+							"Familiarity with place of worship: jinjya or otera. With whom?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: jinjya ou otera. Avec qui?"@fr ,
+							"Familiarity with place of worship: jinjya or otera. With whom?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+                           salsah-gui:guiOrder "30"^^xsd:integer ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" .
+
+###  http://www.knora.org/ontology/0105#jinjyaOrOteraWhy
+:jinjyaOrOteraWhy rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Familiarité avec le lieu de culte: : jinjya ou otera. Pourquoi?"@fr ,
+							"Familiarity with place of worship: jinjya or otera. Why?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: jinjya ou otera. Pourquoi?"@fr ,
+							"Familiarity with place of worship: jinjya or otera. Why?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+                           salsah-gui:guiOrder "30"^^xsd:integer ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" .		                
+		                
+###  http://www.knora.org/ontology/0105#jinjyaOrOteraLastTime
+:jinjyaOrOteraLastTime rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Familiarité avec le lieu de culte: : jinjya ou otera. La dernière fois?"@fr ,
+							"Familiarity with place of worship: jinjya or otera. Last time?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: : jinjya ou otera. La dernière fois?"@fr ,
+							"Familiarity with place of worship: jinjya or otera. Last time?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+                           salsah-gui:guiOrder "30"^^xsd:integer ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" .       
+		                
+###  http://www.knora.org/ontology/0105#jinjyaOccasion
+:jinjyaOccasion rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "A quelle occasion as-tu visité jinjya ou otera?"@fr ,
+							"On what occasion did you visit jinjya or otera?"@en ;
+						rdfs:comment "A quelle occasion as-tu visité jinjya ou otera?"@fr ,
+							"On what occasion did you visit jinjya or otera?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+                           salsah-gui:guiOrder "30"^^xsd:integer ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" .  
+		                
+###  http://www.knora.org/ontology/0105#jinjyaWithWhom
+:jinjyaWithWhom rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Familiarité avec le lieu de culte: jinjya. Avec qui?"@fr ,
+							"Familiarity with place of worship: jinjya. With whom?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: jinjya. Avec qui?"@fr ,
+							"Familiarity with place of worship: jinjya. With whom?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+                           salsah-gui:guiOrder "30"^^xsd:integer ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" .
+
+###  http://www.knora.org/ontology/0105#jinjyaWhy
+:jinjyaWhy rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Familiarité avec le lieu de culte: jinjya. Pourquoi?"@fr ,
+							"Familiarity with place of worship: jinjya. Why?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: jinjya. Pourquoi?"@fr ,
+							"Familiarity with place of worship: jinjya. Why?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+                           salsah-gui:guiOrder "30"^^xsd:integer ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" .		                
+		                
+###  http://www.knora.org/ontology/0105#jinjyaLastTime
+:jinjyaLastTime rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Familiarité avec le lieu de culte: jinjya. La dernière fois?"@fr ,
+							"Familiarity with place of worship: jinjya. Last time?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: jinjya. La dernière fois?"@fr ,
+							"Familiarity with place of worship: jinjya. Last time?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+                           salsah-gui:guiOrder "30"^^xsd:integer ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" .  		                
+		                                
+		                
+###  http://www.knora.org/ontology/0105#oteraOccasion
+:oteraOccasion rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "A quelle occasion as-tu visité otera?"@fr ,
+							"On what occasion did you visit otera?"@en ;
+						rdfs:comment "A quelle occasion as-tu visité otera?"@fr ,
+							"On what occasion did you visit otera?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+                           salsah-gui:guiOrder "30"^^xsd:integer ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" .  
+		                
+###  http://www.knora.org/ontology/0105#oteraWithWhom
+:oteraWithWhom rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Familiarité avec le lieu de culte: otera. Avec qui?"@fr ,
+							"Familiarity with place of worship: otera. With whom?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: otera. Avec qui?"@fr ,
+							"Familiarity with place of worship: otera. With whom?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+                           salsah-gui:guiOrder "30"^^xsd:integer ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" .
+
+###  http://www.knora.org/ontology/0105#oteraWhy
+:oteraWhy rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Familiarité avec le lieu de culte: otera. Pourquoi?"@fr ,
+							"Familiarity with place of worship: otera. Why?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: otera. Pourquoi?"@fr ,
+							"Familiarity with place of worship: otera. Why?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+                           salsah-gui:guiOrder "30"^^xsd:integer ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" .		                
+		                
+###  http://www.knora.org/ontology/0105#oteraLastTime
+:oteraLastTime rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Familiarité avec le lieu de culte: otera. La dernière fois?"@fr ,
+							"Familiarity with place of worship: otera. Last time?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: otera. La dernière fois?"@fr ,
+							"Familiarity with place of worship: otera. Last time?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+                           salsah-gui:guiOrder "30"^^xsd:integer ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" . 
+		                
+###  http://www.knora.org/ontology/0105#cultObjectAtHomeFamilyMembersActions
+:cultObjectAtHomeFamilyMembersActions rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Qu'est-ce que vous ou votre famille faites devant ce butsudan ou ce kamidana?"@fr ,
+							"What do you or your family do in front of that butsudan or kamidana?"@en ;
+						rdfs:comment "Qu'est-ce que vous ou votre famille faites devant ce butsudan ou ce kamidana?"@fr ,
+							"What do you or your family do in front of that butsudan or kamidana?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+                           salsah-gui:guiOrder "30"^^xsd:integer ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" . 
+		                
+###  http://www.knora.org/ontology/0105#whatWordGodMeans
+:whatWordGodMeans rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Ce que le mot dieu veut dire..."@fr ,
+							"What the word god means..."@en ;
+						rdfs:comment "Ce que le mot dieu veut dire..."@fr ,
+							"What the word god means..."@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+                           salsah-gui:guiOrder "30"^^xsd:integer ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" . 
+		                
+###  http://www.knora.org/ontology/0105#whoBuddhaIs
+:whoBuddhaIs rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Qui est Bouddha..."@fr ,
+							"Who Buddha is..."@en ;
+						rdfs:comment "Qui est Bouddha..."@fr ,
+							"Who Buddha is..."@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+                           salsah-gui:guiOrder "30"^^xsd:integer ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" . 
+		                
+###  http://www.knora.org/ontology/0105#ifIToldYouGodCouldYouDrawSomethingElseWho
+:ifIToldYouGodCouldYouDrawSomethingElseWho rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Qui/quoi d'autre pourrais-tu dessiner?"@fr ,
+							"Whom/what else could you draw?"@en ;
+						rdfs:comment "Qui/quoi d'autre pourrais-tu dessiner?"@fr ,
+							"Whom/what else could you draw?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+                           salsah-gui:guiOrder "30"^^xsd:integer ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" . 
+		                
+###  http://www.knora.org/ontology/0105#seenOtherPeoplePrayWhenOther
+:seenOtherPeoplePrayWhenOther rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "A quelle occasion as-tu vu des gens prié?"@fr ,
+							"On what occasion did you get to see other people pray?"@en ;
+						rdfs:comment "A quelle occasion as-tu vu des gens prié?"@fr ,
+							"On what occasion did you get to see other people pray?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+                           salsah-gui:guiOrder "30"^^xsd:integer ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" . 
+		                
+###  http://www.knora.org/ontology/0105#prayingAtHomeOtherTimes
+:prayingAtHomeOtherTimes rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Est-ce que tu pries à d'autres moments à la maison? Quels?"@fr ,
+							"Do you pray at home at other times? Which?"@en ;
+						rdfs:comment "Est-ce que tu pries à d'autres moments à la maison? Quels?"@fr ,
+							"Do you pray at home at other times?Which?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+                           salsah-gui:guiOrder "30"^^xsd:integer ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" . 
+		                
+###  http://www.knora.org/ontology/0105#prayingWithOtherPeopleWhen
+:prayingWithOtherPeopleWhen rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Quand est-ce que tu pries avec d'autres gens?"@fr ,
+							"When do you pray with other people?"@en ;
+						rdfs:comment "Quand est-ce que tu pries avec d'autres gens?"@fr ,
+							"When do you pray with other people?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+                           salsah-gui:guiOrder "30"^^xsd:integer ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" . 
+		                
+###  http://www.knora.org/ontology/0105#prayingWithOtherPeopleLastTime
+:prayingWithOtherPeopleLastTime rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Quand as-tu prié avec d'autres gens pour la dernière fois?"@fr ,
+							"When did you get to pray with other people for the last time?"@en ;
+						rdfs:comment "Quand as-tu prié avec d'autres gens pour la dernière fois?"@fr ,
+							"When did you get to pray with other people for the last time?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+                           salsah-gui:guiOrder "30"^^xsd:integer ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" . 
+		                
+###  http://www.knora.org/ontology/0105#prayingWithOtherPeopleHowOftenOther
+:prayingWithOtherPeopleHowOftenOther rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "A quelle fréquence pries-tu avec d'autres gens? Autre..."@fr ,
+							"How often do you get to pray with other people? Other..."@en ;
+						rdfs:comment "A quelle fréquence pries-tu avec d'autres gens? Autre..."@fr ,
+							"How often do you get to pray with other people? Other..."@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+                           salsah-gui:guiOrder "30"^^xsd:integer ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" . 
+		                
+###  http://www.knora.org/ontology/0105#prayingAloneWhen
+:prayingAloneWhen rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Quand est-ce qu'il t'arrive de prier seul-e?"@fr ,
+							"When do you get to pray alone?"@en ;
+						rdfs:comment "Quand est-ce qu'il t'arrive de prier seul-e?"@fr ,
+							"When do you get to pray alone?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+                           salsah-gui:guiOrder "30"^^xsd:integer ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" . 
+		                
+###  http://www.knora.org/ontology/0105#prayingAloneLastTime
+:prayingAloneLastTime rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Quand as-tu prié seul-e pour la dernière fois?"@fr ,
+							"When did you pray alone for the last time?"@en ;
+						rdfs:comment "Quand as-tu prié seul-e pour la dernière fois?"@fr ,
+							"When did you pray alone for the last time?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+                           salsah-gui:guiOrder "30"^^xsd:integer ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" . 
+		                
+###  http://www.knora.org/ontology/0105#prayingAloneHowOftenOther
+:prayingAloneHowOftenOther rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "A quelle fréquence pries-tu seul-e? Autre..."@fr ,
+							"How often do you get to pray alone? Other..."@en ;
+						rdfs:comment "A quelle fréquence pries-tu seul-e? Autre..."@fr ,
+							"How often do you get to pray alone? Other..."@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+                           salsah-gui:guiOrder "30"^^xsd:integer ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" . 
+		                
+###  http://www.knora.org/ontology/0105#whereIsGodOther
+:whereIsGodOther rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Selon toi, dieu se trouve... Autre"@fr ,
+							"According to you god is located... Other"@en ;
+						rdfs:comment "Selon toi, dieu se trouve... Autre"@fr ,
+							"According to you god is located... Other"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+                           salsah-gui:guiOrder "30"^^xsd:integer ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" . 
+		                
+###  http://www.knora.org/ontology/0105#sexOfGodOther
+:sexOfGodOther rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Sexe de dieu. Autre..."@fr ,
+							"Sex of god. Other..."@en ;
+						rdfs:comment "Sexe de dieu. Autre..."@fr ,
+							"Sex of god. Other..."@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+                           salsah-gui:guiOrder "30"^^xsd:integer ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" . 
+		                
+###  http://www.knora.org/ontology/0105#ageOfGodOther
+:ageOfGodOther rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Age de dieu. Autre..."@fr ,
+							"Age of god. Other..."@en ;
+						rdfs:comment "Age de dieu. Autre..."@fr ,
+							"Age of god. Other..."@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+                           salsah-gui:guiOrder "30"^^xsd:integer ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" . 
+		                
+###  http://www.knora.org/ontology/0105#alreadyDrawnGodInThePastWhen
+:alreadyDrawnGodInThePastWhen rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Quand l'enfant a-t-il/elle dessiné dieu dans le passé?"@fr ,
+							"When did the child happen to draw god in the past?"@en ;
+						rdfs:comment "Quand l'enfant a-t-il/elle dessiné dieu dans le passé?"@fr ,
+							"When did the child happen to draw god in the past?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+                           salsah-gui:guiOrder "30"^^xsd:integer ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" . 
+		                
+###  http://www.knora.org/ontology/0105#alreadyDrawnGodInThePastLastTime
+:alreadyDrawnGodInThePastLastTime rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Quand l'enfant a dessiné dieu pour la dernière fois?"@fr ,
+							"When did the child happen to draw god for the last time?"@en ;
+						rdfs:comment "Quand l'enfant a dessiné dieu pour la dernière fois?"@fr ,
+							"When did the child happen to draw god for the last time?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+                           salsah-gui:guiOrder "30"^^xsd:integer ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" . 
+		                
+###  http://www.knora.org/ontology/0105#alreadyDrawnGodInThePastWhat
+:alreadyDrawnGodInThePastWhat rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Description  dessin(s) de dieu par l'enfant dans le passé."@fr ,
+							"Description of the child's drawing(s) of god in the past."@en ;
+						rdfs:comment "Description  dessin(s) de dieu par l'enfant dans le passé."@fr ,
+							"Description of the child's drawing(s) of god in the past."@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+                           salsah-gui:guiOrder "30"^^xsd:integer ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" . 
+		                
+###  http://www.knora.org/ontology/0105#baptizedWhen
+:baptizedWhen rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Quand l'enfant a-t-il/elle été baptisé-e?"@fr ,
+							"When was the child baptized?"@en ;
+						rdfs:comment "Quand l'enfant a-t-il/elle été baptisé-e?"@fr ,
+							"When was the child baptized?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+                           salsah-gui:guiOrder "30"^^xsd:integer ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" . 
+		                
+###  http://www.knora.org/ontology/0105#communionWhen
+:communionWhen rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Quand l'enfant a-t-il/elle fait sa communion?"@fr ,
+							"When did the child receive his/her communion?"@en ;
+						rdfs:comment "Quand l'enfant a-t-il/elle fait sa communion?"@fr ,
+							"When did the child receive his/her communion?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+                           salsah-gui:guiOrder "30"^^xsd:integer ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" . 
+		                
+###  http://www.knora.org/ontology/0105#cathechismWhen
+:cathechismWhen rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Quand l'enfant a-t-il/elle commencé les cours de catéchisme?"@fr ,
+							"When did the child start attending catechism class?"@en ;
+						rdfs:comment "Quand l'enfant a-t-il/elle commencé les cours de catéchisme?"@fr ,
+							"When did the child start attending catechism class?"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+                           salsah-gui:guiOrder "30"^^xsd:integer ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" . 
+		                
+###  http://www.knora.org/ontology/0105#otherDadsReligion
+:otherDadsReligion rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "La religion du papa de l'enfant. Autre..."@fr ,
+							"Child's dad's religion. Other..."@en ;
+						rdfs:comment "La religion du papa de l'enfant. Autre..."@fr ,
+							"Child's dad's religion. Other..."@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+                           salsah-gui:guiOrder "30"^^xsd:integer ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" . 
+		                
+###  http://www.knora.org/ontology/0105#otherMomsReligion
+:otherMomsReligion rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "La religion de la maman de l'enfant. Autre..."@fr ,
+							"Child's mom's religion. Other..."@en ;
+						rdfs:comment "La religion de la maman de l'enfant. Autre..."@fr ,
+							"Child's mom's religion. Other..."@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+                           salsah-gui:guiOrder "30"^^xsd:integer ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" . 
+		                
+###  http://www.knora.org/ontology/0105#placeOfBirth
+:placeOfBirth rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Lieu de naissance de l'enfant"@fr ,
+							"Child's place of birth"@en ;
+						rdfs:comment "Lieu de naissance de l'enfant"@fr ,
+							"Child's place of birth"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+                           salsah-gui:guiOrder "30"^^xsd:integer ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" . 
+		                
+###  http://www.knora.org/ontology/0105#otherMotherTongue
+:otherMotherTongue rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Langue(s) maternelle(s) de l'enfant. Autre..."@fr ,
+							"Child's mother tongue(s). Other..."@en ;
+						rdfs:comment "Langue(s) maternelle(s) de l'enfant. Autre..."@fr ,
+							"Child's mother tongue(s). Other..."@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+                           salsah-gui:guiOrder "30"^^xsd:integer ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" . 
+		                
+###  http://www.knora.org/ontology/0105#otherLanguages3
+:otherLanguages3 rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Autres langues parlées par l'enfant. Autre..."@fr ,
+							"Other languages often spoken by the child. Other..."@en ;
+						rdfs:comment "Autres langues parlées par l'enfant. . Autre..."@fr ,
+							"Other languages often spoken by the child. Other..."@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+                           salsah-gui:guiOrder "30"^^xsd:integer ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" . 
+		                
+###  http://www.knora.org/ontology/0105#otherLanguageSpokenMostOften
+:otherLanguageSpokenMostOften rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Langue parlée le plus souvent par l'enfant. Autre..."@fr ,
+							"Language spoken most often by the child. Other..."@en ;
+						rdfs:comment "Langue parlée le plus souvent par l'enfant. Autre..."@fr ,
+							"Language spoken most often by the child. Other..."@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+                           salsah-gui:guiOrder "30"^^xsd:integer ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" . 
+		                
+###  http://www.knora.org/ontology/0105#yearsLivingInSwitzerland
+:yearsLivingInSwitzerland rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Depuis quand l'enfant habite-t-il/elle en Suisse"@fr ,
+							"Since when does the child live in Switzerland"@en ;
+						rdfs:comment "Depuis quand l'enfant habite-t-il/elle en Suisse"@fr ,
+							"Since when does the child live in Switzerland"@en ;
+		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+                           salsah-gui:guiOrder "30"^^xsd:integer ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" . 
+
 #################################################################
 #    Classes
 #################################################################
@@ -4274,6 +5135,238 @@
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :languageSpokenMostOften ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,									
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :enteredChurchWithWhom ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :enteredChurchWhy ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :enteredChurchLastTime ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :enteredMosqueWithWhom ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :enteredMosqueWhy ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :enteredMosqueLastTime ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :enteredBuddhistTempleWithWhom ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :enteredBuddhistTempleWhy ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :enteredBuddhistTempleLastTime ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :enteredHinduTempleWithWhom ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :enteredHinduTempleWhy ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :enteredHinduTempleLastTime ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :enteredSynagogueWithWhom ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :enteredSynagogueWhy ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :enteredSynagogueLastTime ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :enteredTempleNotDefinedWithWhom ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :enteredTempleNotDefinedWhy ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :enteredTempleNotDefinedLastTime ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :jinjyaOrOteraOccasion ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :jinjyaOrOteraWithWhom ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :jinjyaOrOteraWhy ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :jinjyaOrOteraLastTime ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :jinjyaOccasion ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :jinjyaWithWhom ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :jinjyaWhy ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :jinjyaLastTime ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :oteraOccasion ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :oteraWithWhom ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :oteraWhy ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :oteraLastTime ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :cultObjectAtHomeFamilyMembersActions ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :whatWordGodMeans ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :whoBuddhaIs ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :ifIToldYouGodCouldYouDrawSomethingElseWho ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :seenOtherPeoplePrayWhenOther ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :prayingAtHomeOtherTimes ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :prayingWithOtherPeopleWhen ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :prayingWithOtherPeopleLastTime ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :cultObjectAtHomeFamilyMembersActions ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :prayingWithOtherPeopleHowOftenOther ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :prayingAloneWhen ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :prayingAloneLastTime ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :prayingAloneHowOftenOther ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :whereIsGodOther ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :sexOfGodOther ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :alreadyDrawnGodInThePastWhen ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :alreadyDrawnGodInThePastLastTime ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :alreadyDrawnGodInThePastWhat ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :baptizedWhen ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :communionWhen ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :cathechismWhen ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :otherDadsReligion ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :otherMomsReligion ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :placeOfBirth ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :otherMotherTongue ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :otherLanguages3 ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :otherLanguageSpokenMostOften ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :yearsLivingInSwitzerland ;
 										owl:maxCardinality "1"^^xsd:nonNegativeInteger
 										] ;
 						 rdfs:label "Questionnaire individuel"@fr ,
