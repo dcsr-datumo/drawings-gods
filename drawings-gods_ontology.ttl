@@ -4361,11 +4361,11 @@
 #                                ] ,
 							  	[ rdf:type owl:Restriction ;
 	                              owl:onProperty :includes ;
-	                              owl:minCardinality "0"^^xsd:nonNegativeInteger
+	                              owl:cardinality "1"^^xsd:nonNegativeInteger
 	                          	] ,
 	                          	[ rdf:type owl:Restriction ;
 	                              owl:onProperty :includesValue ;
-	                              owl:minCardinality "0"^^xsd:nonNegativeInteger
+	                              owl:cardinality "1"^^xsd:nonNegativeInteger
 	                          	] ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty :hasGlobalLocation ;
