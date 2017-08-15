@@ -4738,7 +4738,7 @@
                         ] ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasLanguageNative ;
-                          owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                          owl:minCardinality "0"^^xsd:nonNegativeInteger
                         ] ;
 		rdfs:label "Personne"@fr ,
             "Person"@en .
@@ -5460,8 +5460,8 @@
                                ] ;
 				rdfs:label "Commentaires de l’enfant"@fr ,
 							"Child's comments"@en ;
-				rdfs:comment "(attention, pas les commentaires des collecteurs)"@fr ,
-							"(not collectors' comments)"@en .
+				rdfs:comment "Commentaires de l'enfant sur le recto (attention, pas les commentaires des collecteurs)"@fr ,
+							"Child's comments on recto (not collectors' comments)"@en .
 
 
 
