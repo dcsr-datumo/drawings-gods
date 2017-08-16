@@ -4320,11 +4320,11 @@
                           ] ,
                           [ rdf:type owl:Restriction ;
                             owl:onProperty :isBasedOn ;
-                            owl:cardinality "1"^^xsd:nonNegativeInteger
+                            owl:minCardinality "0"^^xsd:nonNegativeInteger
                           ] ,
                           [ rdf:type owl:Restriction ;
                             owl:onProperty :isBasedOnValue ;
-                            owl:cardinality "1"^^xsd:nonNegativeInteger
+                            owl:minCardinality "0"^^xsd:nonNegativeInteger
                           ] ,
                           [ rdf:type owl:Restriction ;
                            owl:onProperty :reliesUpon ;
