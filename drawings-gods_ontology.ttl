@@ -407,7 +407,7 @@
 					salsah-gui:guiAttribute "width=95%" ,
                         "rows=10" ,
                         "wrap=soft" ;
-      				 salsah-gui:guiOrder "2"^^xsd:integer .
+      				 salsah-gui:guiOrder "10"^^xsd:integer .
 
 
 ###  http://www.knora.org/ontology/0105#hasCollectRulesMaterial
@@ -419,7 +419,7 @@
            				"Standard rules of the collect for the material"@en ;
 		   			  rdfs:comment "Est-ce que les règles standard ont été respectées pour type de papier et les couleurs (A4, papier blanc, néocolors)?"@fr ,
 						"Were the standard rules respected for the paper type and the colors (A4, white paper, neocolors)?"@en ;
-					  salsah-gui:guiOrder "6"^^xsd:integer ;
+					  salsah-gui:guiOrder "7"^^xsd:integer ;
        		  		  salsah-gui:guiElement salsah-gui:Checkbox .
 
 
@@ -432,7 +432,7 @@
            				"Standard rules of the collect for the place"@en ;
 		   		   rdfs:comment "Est-ce que les enfants ne pouvaient pas regarder les autres enfants et sont dans une pièce intérieure (ex: salle de classe)?"@fr ,
 						"Have the children no possibility to show to other children and were they in an intern place (ex: classroom)?"@en ;
-       			   salsah-gui:guiOrder "6"^^xsd:integer ;
+       			   salsah-gui:guiOrder "8"^^xsd:integer ;
        		  	   salsah-gui:guiElement salsah-gui:Checkbox .
 
 
@@ -460,7 +460,7 @@
 		   rdfs:comment "Collecteurs sur place."@fr ,
 						"Collectors in situ."@en ;
 		   salsah-gui:guiElement salsah-gui:SimpleText ;
-      	   salsah-gui:guiOrder "2"^^xsd:integer .
+      	   salsah-gui:guiOrder "5"^^xsd:integer .
 
 
 ###  http://www.knora.org/ontology/0105#hasCollectorMain
@@ -561,7 +561,7 @@
 		 rdfs:comment "Cadre de l'enseignement (pour un contexte qui peut être multiple - ex.: cours de religion à l'école)."@fr ,
 			"Teaching frame (for a context which can be multiple - ex.: religion scores at school)."@en ;
          salsah-gui:guiElement salsah-gui:Textarea ;
-         salsah-gui:guiOrder "2"^^xsd:integer ;
+         salsah-gui:guiOrder "4"^^xsd:integer ;
 		 salsah-gui:guiAttribute "width=95%" ,
                         		"rows=10" .
 
@@ -698,7 +698,7 @@
 	   rdfs:comment "Remarques détaillées sur la collecte."@fr ,
 			"Collect diary."@en ;
        salsah-gui:guiElement salsah-gui:Textarea ;
-       salsah-gui:guiOrder "2"^^xsd:integer ;
+       salsah-gui:guiOrder "9"^^xsd:integer ;
 	   salsah-gui:guiAttribute "width=95%" ,
                         		"rows=10" .
 
@@ -843,7 +843,7 @@
 	         		 rdfs:comment "Nombre de dessins collectés."@fr ,
 					 	"Number of drawings collected."@en ;
 					 salsah-gui:guiElement salsah-gui:Spinbox ;
-		             salsah-gui:guiOrder "5"^^xsd:integer .
+		             salsah-gui:guiOrder "11"^^xsd:integer .
 
 
 ####  http://www.knora.org/ontology/0105#hasDrawingTotal
@@ -1231,7 +1231,7 @@
 		   		 		 	 		rdfs:comment "Restitution de l'instruction en langue originale non-corrigée."@fr ,
 										"Restitution of the task in original language non-corrected."@en ;
 									salsah-gui:guiElement salsah-gui:Textarea ;
-					                salsah-gui:guiOrder "9"^^xsd:integer ;
+					                salsah-gui:guiOrder "4"^^xsd:integer ;
 								    salsah-gui:guiAttribute "width=95%" ,
 												         "rows=3" .
 
@@ -1246,7 +1246,7 @@
 		   		 		  rdfs:comment "Restitution de l'instruction en anglais."@fr ,
 									"Restitution of the task in English."@en ;
 						  salsah-gui:guiElement salsah-gui:Textarea ;
-			              salsah-gui:guiOrder "9"^^xsd:integer ;
+			              salsah-gui:guiOrder "5"^^xsd:integer ;
 						  salsah-gui:guiAttribute "width=95%" ,
 										         "rows=3" .
 
@@ -1261,7 +1261,7 @@
 		   		 		  rdfs:comment "Restitution de l'instruction en français."@fr ,
 									"Restitution of the task in French."@en ;
 						  salsah-gui:guiElement salsah-gui:Textarea ;
-			              salsah-gui:guiOrder "9"^^xsd:integer ;
+			              salsah-gui:guiOrder "6"^^xsd:integer ;
 						  salsah-gui:guiAttribute "width=95%" ,
 										         "rows=3" .
 
@@ -1276,7 +1276,7 @@
 		   		 		 	 	rdfs:comment "Restitution de l'instruction en langue originale."@fr ,
 									"Restitution of the task in original language."@en ;
 							    salsah-gui:guiElement salsah-gui:Textarea ;
-				                salsah-gui:guiOrder "9"^^xsd:integer ;
+				                salsah-gui:guiOrder "3"^^xsd:integer ;
 							    salsah-gui:guiAttribute "width=95%" ,
 											         "rows=3" .
 
@@ -1726,7 +1726,7 @@
 				rdfs:comment "Commentaire interne (passage)"@fr ,
 					 	"Internal comment (passage)"@en ;
 				salsah-gui:guiElement salsah-gui:SimpleText ;
-		        salsah-gui:guiOrder "1"^^xsd:integer .
+		        salsah-gui:guiOrder "16"^^xsd:integer .
 
 
 ###  http://www.knora.org/ontology/0105#hasPassageDate
@@ -1739,7 +1739,7 @@
 			 rdfs:comment "Dates et heures du passage."@fr ,
 					 	"Dates and times of the passage."@en ;
 			 salsah-gui:guiElement salsah-gui:Date ;
-		     salsah-gui:guiOrder "3"^^xsd:integer .
+		     salsah-gui:guiOrder "1"^^xsd:integer .
 
 
 ###  http://www.knora.org/ontology/0105#hasPassageMaxAgeRangeYear
@@ -1752,7 +1752,7 @@
                      	rdfs:comment "Age maximal dans le groupe de collecte (années)"@fr ,
 					 		"Maximal age in the data collection group participating (years)"@en ;
 					 	salsah-gui:guiElement salsah-gui:Spinbox ;
-				        salsah-gui:guiOrder "5"^^xsd:integer .
+				        salsah-gui:guiOrder "13"^^xsd:integer .
 
 
 ###  http://www.knora.org/ontology/0105#hasPassageMinAgeRangeYear
@@ -1765,7 +1765,7 @@
                      	rdfs:comment "Age minimal dans le groupe de collecte (années)"@fr ,
 					 		"Minimal age in the data collection group participating (years)"@en ;
 					 	salsah-gui:guiElement salsah-gui:Spinbox ;
-				        salsah-gui:guiOrder "5"^^xsd:integer .
+				        salsah-gui:guiOrder "12"^^xsd:integer .
 
 
 ###  http://www.knora.org/ontology/0105#hasPassageNumber
@@ -1777,7 +1777,7 @@
                      		"Group identifier"@en ;
                rdfs:comment "Numéro qui indique l'ordre de passage pour un site et une campagne donnés"@fr ,
 					 		"Number refering to a visit (in chronological order) corresponding to a specific collection site and campaign"@en ;
-			   salsah-gui:guiOrder "1"^^xsd:integer ;
+			   salsah-gui:guiOrder "2"^^xsd:integer ;
                salsah-gui:guiElement salsah-gui:Spinbox ;
                salsah-gui:guiAttribute "min=0" ,
                                    "max=-1" .
@@ -1793,7 +1793,7 @@
                		  rdfs:comment "Personne de contact interne par rapport à un passage (ex: instituteur)."@fr ,
 					 		"Internal contact person according to a passage (ex: teacher)."@en ;
 					  salsah-gui:guiElement salsah-gui:SimpleText ;
-		              salsah-gui:guiOrder "2"^^xsd:integer .
+		              salsah-gui:guiOrder "6"^^xsd:integer .
 
 
 ###  http://www.knora.org/ontology/0105#hasPassageReligiousIdentity
@@ -1805,7 +1805,7 @@
                      		"Religious identity of the context of collect"@en ;
                		  	  rdfs:comment "Contexte religieux de l'activité."@fr ,
 					 		"Activity religious context."@en ;
-					 	  salsah-gui:guiOrder "31"^^xsd:integer ;
+					 	  salsah-gui:guiOrder "3"^^xsd:integer ;
 	                      salsah-gui:guiElement salsah-gui:List ;
 	                      salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList>" .
 
@@ -2228,7 +2228,7 @@
                      "Brand of the scanner "@en ;
           		 rdfs:comment "Marque du scanner utilisé pour scanner les dessins."@fr ,
 					 "Brand of the scanner used to scan the drawings."@en;
-                 salsah-gui:guiOrder "1"^^xsd:integer ;
+                 salsah-gui:guiOrder "15"^^xsd:integer ;
                  salsah-gui:guiElement salsah-gui:List ;
                  salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-ScannerBrandList>" .
 
@@ -2241,7 +2241,7 @@
                      "Standard scanner settings"@en ;
           		 rdfs:comment "Est-ce que les paramètres standards du scanner ont bien été respectés ? (300dpi, tiff, color - millions, A4)"@fr ,
 					 "Are the standard scanner settings respected ? (300dpi, tiff, color - millions, A4)"@en;
-                 salsah-gui:guiOrder "1"^^xsd:integer ;
+                 salsah-gui:guiOrder "14"^^xsd:integer ;
                  salsah-gui:guiElement salsah-gui:List ;
                  salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-ScannerSettingsList>" .
 
@@ -2443,7 +2443,7 @@
                 			"Verso translator (English)"@en ;
 				   rdfs:comment "Traducteur du verso (anglais)."@fr ,
 			  				"Verso translator (English)."@en ;
-			  	   salsah-gui:guiOrder "19"^^xsd:integer ;
+			  	   salsah-gui:guiOrder "18"^^xsd:integer ;
 		           salsah-gui:guiElement salsah-gui:Pulldown ;
                    salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TranslatorList>" .
 
@@ -2458,7 +2458,7 @@
                 			"Verso translator (French)"@en ;
 				   rdfs:comment "Traducteur du verso (français)."@fr ,
 			  				"Verso translator (French)."@en ;
-			  	   salsah-gui:guiOrder "18"^^xsd:integer ;
+			  	   salsah-gui:guiOrder "19"^^xsd:integer ;
 		           salsah-gui:guiElement salsah-gui:Pulldown ;
                    salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TranslatorList>" .
 
