@@ -2550,6 +2550,7 @@
 #    Questionnaire properties
 #################################################################
 
+% here comes (1.) label and (2.) model of questionnaire %
 
 ###  http://www.knora.org/ontology/0105#religiousAffiliation
 :religiousAffiliation rdf:type owl:ObjectProperty ;
@@ -2564,33 +2565,6 @@
 		                salsah-gui:guiElement salsah-gui:List ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList>" .
 		                
-###	http://www.knora.org/ontology/0105#whereIsGod
-:whereIsGod rdf:type owl:ObjectProperty ;
-		                rdfs:subPropertyOf knora-base:hasValue ;
-		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
-		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "Selon toi, dieu se trouve à..."@fr ,
-							"According to you god is located in..."@en ;
-						rdfs:comment "Selon toi, dieu se trouve à..."@fr ,
-							"According to you god is located in..."@en ;
-		                salsah-gui:guiOrder "2"^^xsd:integer ;
-		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-LocGodListQ>" .
-		                
-###  http://www.knora.org/ontology/0105#whereIsGodOther
-:whereIsGodOther rdf:type owl:ObjectProperty ;
-		                rdfs:subPropertyOf knora-base:hasValue ;
-		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
-		                knora-base:objectClassConstraint knora-base:TextValue ;
-						rdfs:label "Selon toi, dieu se trouve... Autre"@fr ,
-							"According to you god is located... Other"@en ;
-						rdfs:comment "Selon toi, dieu se trouve... Autre"@fr ,
-							"According to you god is located... Other"@en ;
-		                salsah-gui:guiOrder "3"^^xsd:integer ;
-		                salsah-gui:guiElement salsah-gui:Textarea ;
-                           salsah-gui:guiOrder "30"^^xsd:integer ;
-						   salsah-gui:guiAttribute "width=95%" ,
-							                        "rows=3" . 
 
 ###  http://www.knora.org/ontology/0105#enteredChurch
 :enteredChurch rdf:type owl:ObjectProperty ;
@@ -3645,6 +3619,35 @@
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" . 
 
+
+###	http://www.knora.org/ontology/0105#whereIsGod
+:whereIsGod rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:ListValue ;
+						rdfs:label "Selon toi, dieu se trouve à..."@fr ,
+							"According to you god is located in..."@en ;
+						rdfs:comment "Selon toi, dieu se trouve à..."@fr ,
+							"According to you god is located in..."@en ;
+		                salsah-gui:guiOrder "81"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Pulldown ;
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-LocGodListQ>" .
+		                
+###  http://www.knora.org/ontology/0105#whereIsGodOther
+:whereIsGodOther rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Selon toi, dieu se trouve... Autre"@fr ,
+							"According to you god is located... Other"@en ;
+						rdfs:comment "Selon toi, dieu se trouve... Autre"@fr ,
+							"According to you god is located... Other"@en ;
+		                salsah-gui:guiOrder "82"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+                           salsah-gui:guiOrder "30"^^xsd:integer ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" . 		
+
 ###	http://www.knora.org/ontology/0105#sexOfGod
 :sexOfGod rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
@@ -3654,7 +3657,7 @@
 							"Sex of god"@en ;
 						rdfs:comment "Sexe de dieu"@fr ,
 							"Sex of god"@en ;
-		                salsah-gui:guiOrder "80"^^xsd:integer ;
+		                salsah-gui:guiOrder "84"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-GodSexListQ>" .
 
@@ -3667,7 +3670,7 @@
 							"Sex of god. Other..."@en ;
 						rdfs:comment "Sexe de dieu. Autre..."@fr ,
 							"Sex of god. Other..."@en ;
-		                salsah-gui:guiOrder "81"^^xsd:integer ;
+		                salsah-gui:guiOrder "85"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
                            salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
@@ -3682,7 +3685,7 @@
 							"Age of god"@en ;
 						rdfs:comment "Age de dieu"@fr ,
 							"Age of god"@en ;
-		                salsah-gui:guiOrder "82"^^xsd:integer ;
+		                salsah-gui:guiOrder "86"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-GodAgeListQ>" .
 
@@ -3695,7 +3698,7 @@
 							"Age of god. Other..."@en ;
 						rdfs:comment "Age de dieu. Autre..."@fr ,
 							"Age of god. Other..."@en ;
-		                salsah-gui:guiOrder "83"^^xsd:integer ;
+		                salsah-gui:guiOrder "87"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
                            salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
@@ -3710,7 +3713,7 @@
 							"Do you know what the word god mean?"@en ;
 						rdfs:comment "Sais-tu ce que le mot dieu veut dire?"@fr ,
 							"Do you know what the word god mean?"@en ;
-		                salsah-gui:guiOrder "84"^^xsd:integer ;
+		                salsah-gui:guiOrder "88"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .							                        
 							                        
@@ -3723,7 +3726,7 @@
 							"What the word god means..."@en ;
 						rdfs:comment "Ce que le mot dieu veut dire..."@fr ,
 							"What the word god means..."@en ;
-		                salsah-gui:guiOrder "85"^^xsd:integer ;
+		                salsah-gui:guiOrder "89"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
                            salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
@@ -3738,7 +3741,7 @@
 							"Do you know who Buddha is?"@en ;
 						rdfs:comment "Sais-tu qui est Bouddha?"@fr ,
 							"Do you know who Buddha is?"@en ;
-		                salsah-gui:guiOrder "86"^^xsd:integer ;
+		                salsah-gui:guiOrder "90"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .							                        
 							                        
@@ -3753,7 +3756,7 @@
 							"Who Buddha is..."@en ;
 		                salsah-gui:guiOrder "87"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
-                           salsah-gui:guiOrder "30"^^xsd:integer ;
+                           salsah-gui:guiOrder "91"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" . 						                        
 							                        
@@ -3767,7 +3770,7 @@
 							"Have you ever happened to draw god in the past?"@en ;
 						rdfs:comment "As-tu déjà dessiné dieu dans le passé?"@fr ,
 							"Have you ever happened to draw god in the past?"@en ;
-		                salsah-gui:guiOrder "88"^^xsd:integer ;
+		                salsah-gui:guiOrder "92"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -3781,7 +3784,7 @@
 							"When did the child happen to draw god in the past?"@en ;
 						rdfs:comment "Quand l'enfant a-t-il/elle dessiné dieu dans le passé?"@fr ,
 							"When did the child happen to draw god in the past?"@en ;
-		                salsah-gui:guiOrder "89"^^xsd:integer ;
+		                salsah-gui:guiOrder "93"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
                            salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
@@ -3797,7 +3800,7 @@
 							"Description of the child's drawing(s) of god in the past."@en ;
 						rdfs:comment "Description  dessin(s) de dieu par l'enfant dans le passé."@fr ,
 							"Description of the child's drawing(s) of god in the past."@en ;
-		                salsah-gui:guiOrder "90"^^xsd:integer ;
+		                salsah-gui:guiOrder "94"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
                            salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
@@ -3812,7 +3815,7 @@
 							"When did the child happen to draw god for the last time?"@en ;
 						rdfs:comment "Quand l'enfant a dessiné dieu pour la dernière fois?"@fr ,
 							"When did the child happen to draw god for the last time?"@en ;
-		                salsah-gui:guiOrder "91"^^xsd:integer ;
+		                salsah-gui:guiOrder "95"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
                            salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
@@ -3827,7 +3830,7 @@
 							"Do you get to pray with other people?"@en ;
 						rdfs:comment "Est-ce que tu pries avec d'autres gens?"@fr ,
 							"Do you get to pray with other people?"@en ;
-		                salsah-gui:guiOrder "92"^^xsd:integer ;
+		                salsah-gui:guiOrder "96"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -3840,7 +3843,7 @@
 							"How often do you get to pray with other people?"@en ;
 						rdfs:comment "A quelle fréquence pries-tu avec d'autres gens?"@fr ,
 							"How often do you get to pray with other people?"@en ;
-		                salsah-gui:guiOrder "93"^^xsd:integer ;
+		                salsah-gui:guiOrder "97"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
 		                
@@ -3853,7 +3856,7 @@
 							"How often do you get to pray with other people? Other..."@en ;
 						rdfs:comment "A quelle fréquence pries-tu avec d'autres gens? Autre..."@fr ,
 							"How often do you get to pray with other people? Other..."@en ;
-		                salsah-gui:guiOrder "94"^^xsd:integer ;
+		                salsah-gui:guiOrder "98"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
                            salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
@@ -3867,7 +3870,7 @@
 							"When do you pray with other people?"@en ;
 						rdfs:comment "Quand est-ce que tu pries avec d'autres gens?"@fr ,
 							"When do you pray with other people?"@en ;
-		                salsah-gui:guiOrder "95"^^xsd:integer ;
+		                salsah-gui:guiOrder "99"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
                            salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
@@ -3882,7 +3885,7 @@
 							"When did you get to pray with other people for the last time?"@en ;
 						rdfs:comment "Quand as-tu prié avec d'autres gens pour la dernière fois?"@fr ,
 							"When did you get to pray with other people for the last time?"@en ;
-		                salsah-gui:guiOrder "96"^^xsd:integer ;
+		                salsah-gui:guiOrder "100"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
                            salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
@@ -3897,7 +3900,7 @@
 							"Do you ever pray alone?"@en ;
 						rdfs:comment "Est-ce qu'il t'arrive de prier seul-e?"@fr ,
 							"Do you ever pray alone?"@en ;
-		                salsah-gui:guiOrder "97"^^xsd:integer ;
+		                salsah-gui:guiOrder "101"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
 		                
@@ -3910,7 +3913,7 @@
 							"When do you get to pray alone?"@en ;
 						rdfs:comment "Quand est-ce qu'il t'arrive de prier seul-e?"@fr ,
 							"When do you get to pray alone?"@en ;
-		                salsah-gui:guiOrder "98"^^xsd:integer ;
+		                salsah-gui:guiOrder "102"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
                            salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
@@ -3925,7 +3928,7 @@
 							"How often do you get to pray alone?"@en ;
 						rdfs:comment "A quelle fréquence pries-tu seul-e?"@fr ,
 							"How often do you get to pray alone?"@en ;
-		                salsah-gui:guiOrder "99"^^xsd:integer ;
+		                salsah-gui:guiOrder "103"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
 
@@ -3938,7 +3941,7 @@
 							"How often do you get to pray alone? Other..."@en ;
 						rdfs:comment "A quelle fréquence pries-tu seul-e? Autre..."@fr ,
 							"How often do you get to pray alone? Other..."@en ;
-		                salsah-gui:guiOrder "100"^^xsd:integer ;
+		                salsah-gui:guiOrder "104"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
                            salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
@@ -3953,7 +3956,7 @@
 							"When did you pray alone for the last time?"@en ;
 						rdfs:comment "Quand as-tu prié seul-e pour la dernière fois?"@fr ,
 							"When did you pray alone for the last time?"@en ;
-		                salsah-gui:guiOrder "101"^^xsd:integer ;
+		                salsah-gui:guiOrder "105"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
                            salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
@@ -3969,7 +3972,7 @@
 							"Is the child baptized?"@en ;
 						rdfs:comment "L'enfant est-il/elle baptisé-e"@fr ,
 							"Is the child baptized?"@en ;
-		                salsah-gui:guiOrder "102"^^xsd:integer ;
+		                salsah-gui:guiOrder "106"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -3982,7 +3985,7 @@
 							"When was the child baptized?"@en ;
 						rdfs:comment "Quand l'enfant a-t-il/elle été baptisé-e?"@fr ,
 							"When was the child baptized?"@en ;
-		                salsah-gui:guiOrder "103"^^xsd:integer ;
+		                salsah-gui:guiOrder "107"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
                            salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
@@ -3997,7 +4000,7 @@
 							"Did the child receive his/her communion?"@en ;
 						rdfs:comment "L'enfant a-t-il/elle fait sa communion?"@fr ,
 							"Did the child receive his/her communion?"@en ;
-		                salsah-gui:guiOrder "104"^^xsd:integer ;
+		                salsah-gui:guiOrder "108"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -4010,7 +4013,7 @@
 							"When did the child receive his/her communion?"@en ;
 						rdfs:comment "Quand l'enfant a-t-il/elle fait sa communion?"@fr ,
 							"When did the child receive his/her communion?"@en ;
-		                salsah-gui:guiOrder "105"^^xsd:integer ;
+		                salsah-gui:guiOrder "109"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Date ;
                            salsah-gui:guiOrder "30"^^xsd:integer . 
 
@@ -4023,7 +4026,7 @@
 							"When did the child start attending catechism class?"@en ;
 						rdfs:comment "Quand l'enfant a-t-il/elle commencé les cours de catéchisme?"@fr ,
 							"When did the child start attending catechism class?"@en ;
-		                salsah-gui:guiOrder "106"^^xsd:integer ;
+		                salsah-gui:guiOrder "110"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
                            salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
@@ -4038,7 +4041,7 @@
 							"Child's dad's religion"@en ;
 						rdfs:comment "La religion du papa de l'enfant"@fr ,
 							"Child's dad's religion"@en ;
-		                salsah-gui:guiOrder "107"^^xsd:integer ;
+		                salsah-gui:guiOrder "111"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:List ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList>" .
 
@@ -4051,7 +4054,7 @@
 							"Child's dad's religion. Other..."@en ;
 						rdfs:comment "La religion du papa de l'enfant. Autre..."@fr ,
 							"Child's dad's religion. Other..."@en ;
-		                salsah-gui:guiOrder "108"^^xsd:integer ;
+		                salsah-gui:guiOrder "112"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
                            salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
@@ -4066,7 +4069,7 @@
 							"Child's mom's religion"@en ;
 						rdfs:comment "La religion de la maman de l'enfant"@fr ,
 							"Child's mom's religion"@en ;
-		                salsah-gui:guiOrder "109"^^xsd:integer ;
+		                salsah-gui:guiOrder "113"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:List ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList>" .
 
@@ -4079,7 +4082,7 @@
 							"Child's mom's religion. Other..."@en ;
 						rdfs:comment "La religion de la maman de l'enfant. Autre..."@fr ,
 							"Child's mom's religion. Other..."@en ;
-		                salsah-gui:guiOrder "110"^^xsd:integer ;
+		                salsah-gui:guiOrder "114"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
                            salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
@@ -4094,7 +4097,7 @@
 							"Child's place of birth"@en ;
 						rdfs:comment "Lieu de naissance de l'enfant"@fr ,
 							"Child's place of birth"@en ;
-		                salsah-gui:guiOrder "111"^^xsd:integer ;
+		                salsah-gui:guiOrder "115"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
                            salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
@@ -4109,7 +4112,7 @@
 							"Child's mother tongue(s)"@en ;
 						rdfs:comment "Langue(s) maternelle(s) de l'enfant"@fr ,
 							"Child's mother tongue(s)"@en ;
-		                salsah-gui:guiOrder "112"^^xsd:integer ;
+		                salsah-gui:guiOrder "116"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList>" .
 
@@ -4122,11 +4125,14 @@
 							"Child's mother tongue(s). Other..."@en ;
 						rdfs:comment "Langue(s) maternelle(s) de l'enfant. Autre..."@fr ,
 							"Child's mother tongue(s). Other..."@en ;
-		                salsah-gui:guiOrder "113"^^xsd:integer ;
+		                salsah-gui:guiOrder "117"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
                            salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" . 
+
+					                        
+							                        
 ###	http://www.knora.org/ontology/0105#otherLanguages1
 :otherLanguages1 rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
@@ -4136,7 +4142,7 @@
 							"Does the child speak other languages?"@en ;
 						rdfs:comment "L'enfant parle-t-il/elle d'autres langues?"@fr ,
 							"Does the child speak other languages?"@en ;
-		                salsah-gui:guiOrder "114"^^xsd:integer ;
+		                salsah-gui:guiOrder "118"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -4149,7 +4155,7 @@
 							"Other languages often spoken by the child"@en ;
 						rdfs:comment "Autres langues parlées par l'enfant"@fr ,
 							"Other languages often spoken by the child"@en ;
-		                salsah-gui:guiOrder "115"^^xsd:integer ;
+		                salsah-gui:guiOrder "119"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList>" .
 
@@ -4162,7 +4168,7 @@
 							"Language spoken most often by the child"@en ;
 						rdfs:comment "Langue parlée le plus souvent par l'enfant"@fr ,
 							"Language spoken most often by the child"@en ;
-		                salsah-gui:guiOrder "116"^^xsd:integer ;
+		                salsah-gui:guiOrder "120"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList>" .
 
@@ -4175,7 +4181,7 @@
 							"Language spoken most often by the child. Other..."@en ;
 						rdfs:comment "Langue parlée le plus souvent par l'enfant. Autre..."@fr ,
 							"Language spoken most often by the child. Other..."@en ;
-		                salsah-gui:guiOrder "117"^^xsd:integer ;
+		                salsah-gui:guiOrder "121"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
                            salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
@@ -4191,7 +4197,7 @@
 							"Since when does the child live in Switzerland"@en ;
 						rdfs:comment "Depuis quand l'enfant habite-t-il/elle en Suisse"@fr ,
 							"Since when does the child live in Switzerland"@en ;
-		                salsah-gui:guiOrder "118"^^xsd:integer ;
+		                salsah-gui:guiOrder "122"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:SimpleText ;
                            salsah-gui:guiOrder "30"^^xsd:integer . 
 
@@ -4204,7 +4210,7 @@
 							"Did the child enjoy carrying out this activity"@en ;
 						rdfs:comment "L'enfant a-t-il/elle apprécié d'effectuer cette activité"@fr ,
 							"Did the child enjoy carrying out this activity"@en ;
-		                salsah-gui:guiOrder "119"^^xsd:integer ;
+		                salsah-gui:guiOrder "123"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -4217,7 +4223,7 @@
 							"Did the child carry out this activity seriously"@en ;
 						rdfs:comment "L'enfant a-t-il/elle effectué cette activité avec sérieux"@fr ,
 							"Did the child carry out this activity seriously"@en ;
-		                salsah-gui:guiOrder "120"^^xsd:integer ;
+		                salsah-gui:guiOrder "124"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -4230,7 +4236,7 @@
 							"Self-rated explicit self-esteem"@en ;
 						rdfs:comment "Estime de soi explicite (auto-rapportée)"@fr ,
 							"Self-rated explicit self-esteem"@en ;
-		                salsah-gui:guiOrder "121"^^xsd:integer ;
+		                salsah-gui:guiOrder "125"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedNumListQ>" .
 
@@ -4243,7 +4249,7 @@
 							"Self-rated general happiness"@en ;
 						rdfs:comment "Degré de bonheur général auto-rapporté"@fr ,
 							"Self-rated general happiness"@en ;
-		                salsah-gui:guiOrder "122"^^xsd:integer ;
+		                salsah-gui:guiOrder "126"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedNumListQ>" .
 
@@ -4256,7 +4262,7 @@
 							"Level of recent stress (self-rated)"@en ;
 						rdfs:comment "Niveau de stress auto-rapporté"@fr ,
 							"Level of recent stress (self-rated)"@en ;
-		                salsah-gui:guiOrder "123"^^xsd:integer ;
+		                salsah-gui:guiOrder "127"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedNumListQ>" .
 
