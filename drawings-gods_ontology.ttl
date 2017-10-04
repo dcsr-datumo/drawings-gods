@@ -2550,7 +2550,6 @@
 #    Questionnaire properties
 #################################################################
 
-% here comes (1.) label and (2.) model of questionnaire %
 
 ###  http://www.knora.org/ontology/0105#religiousAffiliation
 :religiousAffiliation rdf:type owl:ObjectProperty ;

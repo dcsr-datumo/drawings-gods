@@ -1969,8 +1969,8 @@
 					knora-base:listNodeName "shahed" ;
 					knora-base:listNodePosition 5 ;
 					rdfs:label "Ecole publique Shahed (ped)"@fr , "Public school Shahed (ped)"@en .
-
-				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-shahidquasemi> a knora-base:ListNode ;
+		
+				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-shahidqasemi> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "shahidqasemi" ;
 					knora-base:listNodePosition 6 ;
@@ -2038,7 +2038,7 @@
 					knora-base:listNodePosition 4 ;
 					rdfs:label "Ecole publique Ghaffari (pgf)"@fr , "Public school Ghaffari (pgf)"@en .
 					
-				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-ghaffari> a knora-base:ListNode ;
+				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-helli> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "helli" ;
 					knora-base:listNodePosition 5 ;
@@ -2104,7 +2104,7 @@
 					knora-base:listNodePosition 18 ;
 					rdfs:label "Ecole publique Shohada (pso)"@fr , "Public school Shohada (pso)"@en .
 
-				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-solha> a knora-base:ListNode ;
+				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-solaha> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "solaha" ;
 					knora-base:listNodePosition 19 ;
