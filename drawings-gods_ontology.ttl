@@ -110,8 +110,8 @@
                      rdfs:subPropertyOf knora-base:hasValue ;
                      knora-base:objectClassConstraint knora-base:BooleanValue ;
               		 knora-base:subjectClassConstraint :QualityData ;
-                     rdfs:label "Annotation effectuée"@fr ,
-                     	"Annotation done"@en ;
+                     rdfs:label "Annotation complete effectuée"@fr ,
+                     	"Complete annotation done"@en ;
 					 rdfs:comment "Annotation effectuée"@fr ,
 					 	"Annotation done"@en ;
 					 salsah-gui:guiOrder "14"^^xsd:integer ;
@@ -651,10 +651,22 @@
                rdfs:subPropertyOf knora-base:hasValue ;
                knora-base:objectClassConstraint knora-base:BooleanValue ;
                knora-base:subjectClassConstraint :QualityData ;
-               rdfs:label "Description de l'image conforme à la consigne"@fr ,
+               rdfs:label "Description en accord avec la tâche"@fr ,
 					"Description is in accordance with the given task"@en ;
-			   rdfs:comment "Description de l'image conforme à la consigne."@fr ,
+			   rdfs:comment "Description d'image ne contredit pas la consigne."@fr ,
 					"Description is in accordance with the given task."@en ;
+			   salsah-gui:guiElement salsah-gui:Checkbox ;
+      	       salsah-gui:guiOrder "10"^^xsd:integer .
+
+###  http://www.knora.org/ontology/0105#hasDrawingOk
+:hasDrawingOk rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf knora-base:hasValue ;
+               knora-base:objectClassConstraint knora-base:BooleanValue ;
+               knora-base:subjectClassConstraint :QualityData ;
+               rdfs:label "Dessin en accord avec la tâche"@fr ,
+					"Drawing is in accordance with the given task"@en ;
+			   rdfs:comment "Dessin en accord avec la tâche."@fr ,
+					"Drawing is in accordance with the given task."@en ;
 			   salsah-gui:guiElement salsah-gui:Checkbox ;
       	       salsah-gui:guiOrder "10"^^xsd:integer .
 
@@ -933,10 +945,10 @@
            rdfs:subPropertyOf knora-base:hasValue ;
            knora-base:objectClassConstraint knora-base:BooleanValue ;
            knora-base:subjectClassConstraint :QualityData ;
-           rdfs:label "Image en échelle de gris"@fr ,
-                     	"Image is in grayscale"@en ;
-		   rdfs:comment "Image en échelle de gris."@fr ,
-					 	"Image is in grayscale."@en ;
+           rdfs:label "Image est fait en une seule couleur"@fr ,
+                     	"Image is in a single color"@en ;
+		   rdfs:comment "Image est fait en une seule couleur."@fr ,
+					 	"Image is in a single color."@en ;
 		   salsah-gui:guiOrder "7"^^xsd:integer ;
        	   salsah-gui:guiElement salsah-gui:Checkbox .
 
@@ -1573,10 +1585,23 @@
             rdfs:subPropertyOf knora-base:hasValue ;
             knora-base:objectClassConstraint knora-base:BooleanValue ;
             knora-base:subjectClassConstraint :QualityData ;
-            rdfs:label "Utilisation d'un matériel standard"@fr ,
-                     "Material is standard"@en ;
-		  	rdfs:comment "Taille et qualité de papier standards, couleurs et techniques permises, ex.: pas d'origami, pas de stickers."@fr ,
-					 "Paper is of standard size, used techniques, colors, etc. are allowed; for example, no origami, no stickers should be done to the paper."@en ;
+            rdfs:label "Materiel est standard (UNIL)"@fr ,
+                     "Material is standard (UNIL)"@en ;
+		  	rdfs:comment "néocolors, feuille A4 blanche, crayon papier."@fr ,
+					 "Neocolors, A4, paper pencil."@en ;
+       		salsah-gui:guiOrder "16"^^xsd:integer ;
+	        salsah-gui:guiElement salsah-gui:Checkbox .
+
+
+###  http://www.knora.org/ontology/0105#hasMaterialCurrent
+:hasMaterialCurrent rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf knora-base:hasValue ;
+            knora-base:objectClassConstraint knora-base:BooleanValue ;
+            knora-base:subjectClassConstraint :QualityData ;
+            rdfs:label "Matériel est acceptable, mais pas UNIL"@fr ,
+                     "Material is acceptable, but is not UNIL"@en ;
+		  	rdfs:comment "crayons de couleur ou feutre de couleur, feuille A4 blanche, pas d’autocollants, pas de règles et matériel de géométrie..."@fr ,
+					 "Color pencils or feutres, A4 white, no stickers, the trafarets were not used..."@en ;
        		salsah-gui:guiOrder "16"^^xsd:integer ;
 	        salsah-gui:guiElement salsah-gui:Checkbox .
 
@@ -1664,30 +1689,6 @@
 		                     				"Relevant individual questionnaire for this page"@en ;
 				  	 				rdfs:comment "Page faisant partie d'un questionnaire individuel donné."@fr ,
 							 				"Page relevant to a given questionnaire."@en .
-
-
-###  http://www.knora.org/ontology/0105#hasIndividualQuestionnaireAttached
-:hasIndividualQuestionnaireAttached rdf:type owl:ObjectProperty ;
-                               rdfs:subPropertyOf knora-base:isPartOf ;
-                               knora-base:subjectClassConstraint :Drawing ;
-             				   knora-base:objectClassConstraint :QuestionnaireIndividual ;
-                               rdfs:label "Questionnaire individuel associé à ce dessin"@fr ,
-                     				"Individual questionnaire attached to the drawing"@en ;
-		  	 				   rdfs:comment "Questionnaire individuel associé à ce dessin."@fr ,
-					 				"Individual questionnaire attached to the drawing."@en ;
-					 		   salsah-gui:guiElement salsah-gui:Searchbox ;
-					           salsah-gui:guiOrder "16"^^xsd:integer .
-
-
-###  http://www.knora.org/ontology/0105#hasIndividualQuestionnaireAttachedValue
-:hasIndividualQuestionnaireAttachedValue rdf:type owl:ObjectProperty ;
-		                            rdfs:subPropertyOf knora-base:isPartOfValue ;
-		                            knora-base:subjectClassConstraint :Drawing ;
-             				        knora-base:objectClassConstraint knora-base:LinkValue ;
-                               		rdfs:label "Questionnaire individuel associé à ce dessin"@fr ,
-                     					"Individual questionnaire attached to the drawing"@en ;
-		  	 				   		rdfs:comment "Questionnaire individuel associé à ce dessin."@fr ,
-					 					"Individual questionnaire attached to the drawing."@en .
 
 
 ###  http://www.knora.org/ontology/0105#isPartOfQuestionnaireBase
@@ -1915,16 +1916,15 @@
 				 salsah-gui:guiAttribute "width=95%" ,
 		                        		"rows=10" .
 
-
-###  http://www.knora.org/ontology/0105#hasQuestionnaireAvailable
-:hasQuestionnaireAvailable rdf:type owl:ObjectProperty ;
+###  http://www.knora.org/ontology/0105#hasDescriptionUnavailable
+:hasDescriptionUnavailable rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf knora-base:hasValue ;
                 knora-base:objectClassConstraint knora-base:BooleanValue ;
-              	knora-base:subjectClassConstraint :QualityData ;
-                rdfs:label "Questionnaire disponible"@fr ,
-                     	"Questionnaire available"@en ;
-			   	rdfs:comment "Questionnaire disponible."@fr ,
-					 	"Questionnaire available."@en ;
+              	knora-base:subjectClassConstraint :Verso ;
+                rdfs:label "Description est absente"@fr ,
+                     	"Description is absent"@en ;
+			   	rdfs:comment "Description est absente."@fr ,
+					 	"Description is absent."@en ;
 				salsah-gui:guiOrder "11"^^xsd:integer ;
        		  	salsah-gui:guiElement salsah-gui:Checkbox .
 
@@ -1934,9 +1934,9 @@
                rdfs:subPropertyOf knora-base:hasValue ;
                knora-base:objectClassConstraint knora-base:BooleanValue ;
                knora-base:subjectClassConstraint :QualityData ;
-               rdfs:label "Questionnaire complet"@fr ,
-                     	"Questionnaire complete"@en ;
-			   rdfs:comment "Toutes les pages du questionnaire ont été téléchargées."@fr ,
+               rdfs:label "Questionnaire complet(pour les questionnaires sur plusieures pages)"@fr ,
+                     	"Questionally complete (for questionnaires on many pages)"@en ;
+			   rdfs:comment "toutes les pages de questionnaire sont uploadées."@fr ,
 					 	"All pages of the questionary have been uploaded."@en ;
 			   salsah-gui:guiOrder "12"^^xsd:integer ;
        		   salsah-gui:guiElement salsah-gui:Checkbox .
@@ -1949,7 +1949,7 @@
               knora-base:subjectClassConstraint :QualityData ;
               rdfs:label "Questionnaire transcrit"@fr ,
                      	"Questionnaire transcribed"@en ;
-			  rdfs:comment "Le questionnaire a été transcrit."@fr ,
+			  rdfs:comment "Questionnaire est transcrit."@fr ,
 					 	"Questionnaire data has been entered."@en ;
 			  salsah-gui:guiOrder "13"^^xsd:integer ;
        		  salsah-gui:guiElement salsah-gui:Checkbox .
@@ -2131,15 +2131,15 @@
 #       salsah-gui:guiElement salsah-gui:Checkbox .
 
 
-###  http://www.knora.org/ontology/0105#hasRectoAvailable
-:hasRectoAvailable rdf:type owl:ObjectProperty ;
+###  http://www.knora.org/ontology/0105#hasRectoOk
+:hasRectoOk rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf knora-base:hasValue ;
                 knora-base:objectClassConstraint knora-base:BooleanValue ;
               	knora-base:subjectClassConstraint :QualityData ;
-                rdfs:label "Recto disponible"@fr ,
-                     	"Recto available"@en ;
-			   	rdfs:comment "Recto disponible."@fr ,
-					 	"Recto available."@en ;
+                rdfs:label "Recto prêt pour les analyses informatiques"@fr ,
+                     	"Recto ready for computer analysis"@en ;
+			   	rdfs:comment "Recto prêt pour les analyses informatiques (correspond aux standards définis pour le projet)."@fr ,
+					 	"Recto ready for computer analysis (fits the project's standard)."@en ;
 				salsah-gui:guiOrder "2"^^xsd:integer ;
        		    salsah-gui:guiElement salsah-gui:Checkbox .
 
@@ -2149,10 +2149,10 @@
               rdfs:subPropertyOf knora-base:hasValue ;
               knora-base:objectClassConstraint knora-base:BooleanValue ;
        		  knora-base:subjectClassConstraint :QualityData ;
-              rdfs:label "Recto nettoyé"@fr ,
-                     	"Recto cleaned up"@en ;
-			  rdfs:comment "Recto nettoyé."@fr ,
-					 	"Recto cleaned up."@en ;
+              rdfs:label "Recto a été modifié"@fr ,
+                     	"Recto cleaned up (=image has been modified)"@en ;
+			  rdfs:comment "Recto a été modifié."@fr ,
+					 	"Recto cleaned up (=image has been modified)."@en ;
 			  salsah-gui:guiOrder "5"^^xsd:integer ;
        		  salsah-gui:guiElement salsah-gui:Checkbox .
 
@@ -2162,9 +2162,9 @@
                  rdfs:subPropertyOf knora-base:hasValue ;
                  knora-base:objectClassConstraint knora-base:BooleanValue ;
        		  	 knora-base:subjectClassConstraint :QualityData ;
-                 rdfs:label "Recto non accessible (droits d'accès restreints)"@fr ,
+                 rdfs:label "Recto indisponible (droits d'accès limités)"@fr ,
                      	"Recto unavailable (limited access rights)"@en ;
-			  	 rdfs:comment "Recto non accessible (droits d'accès restreints)."@fr ,
+			  	 rdfs:comment "Recto indisponible (droits d'accès limités)."@fr ,
 					 	"Recto unavailable (limited access rights)."@en ;
 				 salsah-gui:guiOrder "3"^^xsd:integer ;
        		     salsah-gui:guiElement salsah-gui:Checkbox .
@@ -2175,8 +2175,8 @@
                   rdfs:subPropertyOf knora-base:hasValue ;
                   knora-base:objectClassConstraint knora-base:BooleanValue ;
        		  	  knora-base:subjectClassConstraint :QualityData ;
-                  rdfs:label "Recto à nettoyer"@fr ,
-                     	"Recto to be cleaned"@en ;
+                  rdfs:label "Recto doit être nettoyé"@fr ,
+                     	"Recto to be cleaned  (=list to do)"@en ;
 			  	  rdfs:comment "Le recto contient des informations qui doivent être effacées : il doit être nettoyé et chargé à nouveau."@fr ,
 					 	"The recto contains information that has to be cleaned, i.e. it must be cleaned and reuploaded."@en ;
 				  salsah-gui:guiOrder "4"^^xsd:integer ;
@@ -2358,24 +2358,48 @@
         rdfs:subPropertyOf knora-base:hasValue ;
         knora-base:objectClassConstraint knora-base:BooleanValue ;
         knora-base:subjectClassConstraint :QualityData ;
-        rdfs:label "Consigne correctement comprise"@fr ,
-                "Task understood correctly"@en ;
-		rdfs:comment "L'enfant a compris et restitué correctement la consigne."@fr ,
+        rdfs:label "Restitution de la consigne est en accord avec la tâche"@fr ,
+                "Recall is in accordance with a given task"@en ;
+		rdfs:comment "Enfant a compris et restitié correctement la consigne."@fr ,
 			  	"Child understood correctly and restituted the task properly."@en ;
 		       salsah-gui:guiOrder "9"^^xsd:integer ;
         salsah-gui:guiElement salsah-gui:Checkbox .
 
 
-###  http://www.knora.org/ontology/0105#hasTextEntered
-:hasTextEntered rdf:type owl:ObjectProperty ;
+###  http://www.knora.org/ontology/0105#hasTextEnteredFr
+:hasTextEnteredFr rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf knora-base:hasValue ;
              knora-base:objectClassConstraint knora-base:BooleanValue ;
              knora-base:subjectClassConstraint :QualityData ;
-             rdfs:label "Données textuelles complètes"@fr ,
-                "Textual data is complete"@en ;
-			 rdfs:comment "Consigne, description et commentaires ajoutés."@fr ,
-			  	"Task restitution, description and comments entered."@en ;
+             rdfs:label "Données textuelles sont completes en français"@fr ,
+                "Textual data is complete in french"@en ;
+			 rdfs:comment "Consigne, descr., word on recto, et commentaire sont ajoutés en français."@fr ,
+			  	"Task restit, descr., word on recto and the commentaries are entered in french."@en ;
        		 salsah-gui:guiOrder "15"^^xsd:integer ;
+       		 salsah-gui:guiElement salsah-gui:Checkbox .
+
+###  http://www.knora.org/ontology/0105#hasTextEnteredEn
+:hasTextEnteredEn rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf knora-base:hasValue ;
+             knora-base:objectClassConstraint knora-base:BooleanValue ;
+             knora-base:subjectClassConstraint :QualityData ;
+             rdfs:label "Données textuelles sont completes en anglais"@fr ,
+                "Textual data is complete in english"@en ;
+			 rdfs:comment "Consigne, descr., word on recto, et commentaire sont ajoutés en anglais."@fr ,
+			  	"Task restit, descr., word on recto and the commentaries are entered in english."@en ;
+       		 salsah-gui:guiOrder "16"^^xsd:integer ;
+       		 salsah-gui:guiElement salsah-gui:Checkbox .
+
+###  http://www.knora.org/ontology/0105#hasTextEnteredOr
+:hasTextEnteredOr rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf knora-base:hasValue ;
+             knora-base:objectClassConstraint knora-base:BooleanValue ;
+             knora-base:subjectClassConstraint :QualityData ;
+             rdfs:label "Données textuelles sont completes en langue originale"@fr ,
+                "Textual data is complete in original language"@en ;
+			 rdfs:comment "Consigne, descr., word on recto, et commentaire sont ajoutés en langue originale."@fr ,
+			  	"Task restit, descr., word on recto and the commentaries are entered in original language."@en ;
+       		 salsah-gui:guiOrder "17"^^xsd:integer ;
        		 salsah-gui:guiElement salsah-gui:Checkbox .
 
 
@@ -2406,15 +2430,28 @@
 
 
 
-###  http://www.knora.org/ontology/0105#hasVersoAvailable
-:hasVersoAvailable rdf:type owl:ObjectProperty ;
+###  http://www.knora.org/ontology/0105#hasVersoUnavailable
+:hasVersoUnavailable rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf knora-base:hasValue ;
                 knora-base:objectClassConstraint knora-base:BooleanValue ;
-              	knora-base:subjectClassConstraint :QualityData ;
-                rdfs:label "Verso disponible"@fr ,
-                     	"Verso available"@en ;
-			   	rdfs:comment "Verso disponible."@fr ,
-					 	"Verso available."@en ;
+              	knora-base:subjectClassConstraint :Verso ;
+                rdfs:label "Verso est absent"@fr ,
+                     	"Verso is absent"@en ;
+			   	rdfs:comment "Le verso est vierge ou indisponible."@fr ,
+					 	"Verso is blank or not available."@en ;
+				salsah-gui:guiOrder "8"^^xsd:integer ;
+       		    salsah-gui:guiElement salsah-gui:Checkbox .
+
+
+###  http://www.knora.org/ontology/0105#hasRecallUnavailable
+:hasRecallUnavailable rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf knora-base:hasValue ;
+                knora-base:objectClassConstraint knora-base:BooleanValue ;
+              	knora-base:subjectClassConstraint :Verso ;
+                rdfs:label "Restitution de consigne est absente"@fr ,
+                     	"Recall of the task is absent"@en ;
+			   	rdfs:comment "Restitution de consigne est absente."@fr ,
+					 	"Recall of the task is absent."@en ;
 				salsah-gui:guiOrder "8"^^xsd:integer ;
        		    salsah-gui:guiElement salsah-gui:Checkbox .
 
@@ -2468,10 +2505,10 @@
        rdfs:subPropertyOf knora-base:hasValue ;
        knora-base:objectClassConstraint knora-base:BooleanValue ;
        knora-base:subjectClassConstraint :QualityData ;
-       rdfs:label "Page vierge"@fr ,
+       rdfs:label "Page blanche"@fr ,
                "Blank page"@en ;
-	   rdfs:comment "L'image est une page vierge."@fr ,
-			   "Image is an empty page."@en ;
+	   rdfs:comment "image est une feuille blanche."@fr ,
+			   "Image is a white paper."@en ;
        salsah-gui:guiOrder "6"^^xsd:integer ;
        salsah-gui:guiElement salsah-gui:Checkbox .
 
@@ -2546,9 +2583,44 @@
                      salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList>" .
 
 
+###  http://www.knora.org/ontology/0105#hasIndividualQuestionnaireAttachedValue
+:hasIndividualQuestionnaireAttachedValue rdf:type owl:ObjectProperty ;
+		                            rdfs:subPropertyOf knora-base:isPartOfValue ;
+		                            knora-base:subjectClassConstraint :Drawing ;
+             				        knora-base:objectClassConstraint knora-base:LinkValue ;
+                               		rdfs:label "Questionnaire individuel associé à ce dessin"@fr ,
+                     					"Individual questionnaire attached to the drawing"@en ;
+		  	 				   		rdfs:comment "Questionnaire individuel associé à ce dessin."@fr ,
+					 					"Individual questionnaire attached to the drawing."@en .
+
+
 #################################################################
 #    Questionnaire properties
 #################################################################
+
+###  http://www.knora.org/ontology/0105#hasQuestionnaireUnavailable
+:hasQuestionnaireUnavailable rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf knora-base:hasValue ;
+                knora-base:objectClassConstraint knora-base:BooleanValue ;
+              	knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+                rdfs:label "Questionnaire indisponible"@fr ,
+                     	"Questionnaire unavailable"@en ;
+			   	rdfs:comment "Questionnaire indisponible."@fr ,
+					 	"uestionnaire unavailable."@en ;
+				salsah-gui:guiOrder "11"^^xsd:integer ;
+       		  	salsah-gui:guiElement salsah-gui:Checkbox .
+
+###  http://www.knora.org/ontology/0105#hasIndividualQuestionnaireAttached
+:hasIndividualQuestionnaireAttached rdf:type owl:ObjectProperty ;
+                               rdfs:subPropertyOf knora-base:isPartOf ;
+                               knora-base:subjectClassConstraint :Drawing ;
+             				   knora-base:objectClassConstraint :QuestionnaireIndividual ;
+                               rdfs:label "Questionnaire individuel associé à ce dessin"@fr ,
+                     				"Individual questionnaire attached to the drawing"@en ;
+		  	 				   rdfs:comment "Questionnaire individuel associé à ce dessin."@fr ,
+					 				"Individual questionnaire attached to the drawing."@en ;
+					 		   salsah-gui:guiElement salsah-gui:Searchbox ;
+					           salsah-gui:guiOrder "16"^^xsd:integer .
 
 
 ###  http://www.knora.org/ontology/0105#religiousAffiliation
@@ -2602,7 +2674,6 @@
 							"Familiarity with place of worship: Church. Why?"@en ;
 		                salsah-gui:guiOrder "6"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
-                           salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .	
 ###  http://www.knora.org/ontology/0105#enteredChurchWithWhom
@@ -2616,7 +2687,6 @@
 							"Familiarity with place of worship: Church. With whom?"@en ;
 		                salsah-gui:guiOrder "7"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
-                           salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
 		                
@@ -2631,7 +2701,6 @@
 							"Familiarity with place of worship: Church. Last time?"@en ;
 		                salsah-gui:guiOrder "8"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
-                           salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .	
 
@@ -2673,7 +2742,6 @@
 							"Familiarity with place of worship: Mosque. Why?"@en ;
 		                salsah-gui:guiOrder "11"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
-                           salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
 
@@ -2688,7 +2756,6 @@
 							"Familiarity with place of worship: Mosque. With whom?"@en ;
 		                salsah-gui:guiOrder "12"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
-                           salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .		                
 		                
@@ -2703,7 +2770,6 @@
 							"Familiarity with place of worship: Mosque. Last time?"@en ;
 		                salsah-gui:guiOrder "13"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
-                           salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .	
 							                        
@@ -2745,7 +2811,6 @@
 							"Familiarity with place of worship: Buddhist temple. Why?"@en ;
 		                salsah-gui:guiOrder "16"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
-                           salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .	
 		                
@@ -2760,7 +2825,6 @@
 							"Familiarity with place of worship: Buddhist temple. With whom?"@en ;
 		                salsah-gui:guiOrder "17"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
-                           salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
 		                
@@ -2775,7 +2839,6 @@
 							"Familiarity with place of worship: Buddhist temple. Last time?"@en ;
 		                salsah-gui:guiOrder "18"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
-                           salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .	
 
@@ -2816,7 +2879,6 @@
 							"Familiarity with place of worship: Hindu temple. Why?"@en ;
 		                salsah-gui:guiOrder "21"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
-                           salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
 						                        
@@ -2831,7 +2893,6 @@
 							"Familiarity with place of worship: Hindu temple. With whom?"@en ;
 		                salsah-gui:guiOrder "22"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
-                           salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
 
@@ -2847,7 +2908,6 @@
 							"Familiarity with place of worship: Hindu temple. Last time?"@en ;
 		                salsah-gui:guiOrder "23"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
-                           salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .	
 							                        
@@ -2888,7 +2948,6 @@
 							"Familiarity with place of worship: Synagogue. Why?"@en ;
 		                salsah-gui:guiOrder "26"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
-                           salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
 				
@@ -2903,7 +2962,6 @@
 							"Familiarity with place of worship: Synagogue. With whom?"@en ;
 		                salsah-gui:guiOrder "27"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
-                           salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .            
 		                
@@ -2918,7 +2976,6 @@
 							"Familiarity with place of worship: Synagogue. Last time?"@en ;
 		                salsah-gui:guiOrder "28"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
-                           salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .		   
 				
@@ -2959,7 +3016,6 @@
 							"Familiarity with place of worship: Zoroastrian temple. Why?"@en ;
 		                salsah-gui:guiOrder "31"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
-                           salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
 				
@@ -2974,7 +3030,6 @@
 							"Familiarity with place of worship: Zoroastrian temple. With whom?"@en ;
 		                salsah-gui:guiOrder "32"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
-                           salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .            
 		                
@@ -2989,7 +3044,6 @@
 							"Familiarity with place of worship: Zoroastrian temple. Last time?"@en ;
 		                salsah-gui:guiOrder "33"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
-                           salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .					
 
@@ -3030,7 +3084,6 @@
 							"Familiarity with place of worship: Non-specific temple. Why?"@en ;
 		                salsah-gui:guiOrder "36"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
-                           salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .	
 
@@ -3045,7 +3098,6 @@
 							"Familiarity with place of worship: Non-specific temple. With whom?"@en ;
 		                salsah-gui:guiOrder "37"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
-                           salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
 
@@ -3060,7 +3112,6 @@
 							"Familiarity with place of worship: Non-specific temple. Last time?"@en ;
 		                salsah-gui:guiOrder "38"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
-                           salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .     			
 				
@@ -3088,7 +3139,6 @@
 							"Familiarity with place of worship: jinjya or otera. Why?"@en ;
 		                salsah-gui:guiOrder "40"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
-                           salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .		                
 
@@ -3103,7 +3153,6 @@
 							"Familiarity with place of worship: jinjya or otera. With whom?"@en ;
 		                salsah-gui:guiOrder "41"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
-                           salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .							                        
 							                        
@@ -3118,7 +3167,6 @@
 							"Familiarity with place of worship: jinjya or otera. Last time?"@en ;
 		                salsah-gui:guiOrder "42"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
-                           salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .       							                    						                        
 							                        
@@ -3172,7 +3220,6 @@
 							"On what occasion did you visit jinjya or otera?"@en ;
 		                salsah-gui:guiOrder "46"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
-                           salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" . 		                
 		                
@@ -3226,7 +3273,6 @@
 							"Familiarity with place of worship: otera. Why?"@en ;
 		                salsah-gui:guiOrder "51"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
-                           salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .	
 		                
@@ -3241,7 +3287,6 @@
 							"Familiarity with place of worship: otera. With whom?"@en ;
 		                salsah-gui:guiOrder "52"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
-                           salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
 
@@ -3257,7 +3302,6 @@
 							"Familiarity with place of worship: otera. Last time?"@en ;
 		                salsah-gui:guiOrder "53"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
-                           salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" . 
 		                
@@ -3272,7 +3316,6 @@
 							"On what occasion did you visit otera?"@en ;
 		                salsah-gui:guiOrder "54"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
-                           salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" . 		                
 		                
@@ -3326,7 +3369,6 @@
 							"Familiarity with place of worship: jinjya. Why?"@en ;
 		                salsah-gui:guiOrder "58"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
-                           salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .	
 		                
@@ -3341,7 +3383,6 @@
 							"Familiarity with place of worship: jinjya. With whom?"@en ;
 		                salsah-gui:guiOrder "59"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
-                           salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
 		                
@@ -3356,7 +3397,6 @@
 							"Familiarity with place of worship: jinjya. Last time?"@en ;
 		                salsah-gui:guiOrder "60"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
-                           salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" . 		                
 		                
@@ -3371,7 +3411,6 @@
 							"On what occasion did you visit jinjya?"@en ;
 		                salsah-gui:guiOrder "61"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
-                           salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .  		                
 		                
@@ -3412,7 +3451,6 @@
 							"What do you or your family do in front of that butsudan or kamidana?"@en ;
 		                salsah-gui:guiOrder "64"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
-                           salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" . 						                        
 							                        
@@ -3453,7 +3491,6 @@
 							"Do you pray at home at other times?Which?"@en ;
 		                salsah-gui:guiOrder "67"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
-                           salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" . 
 
@@ -3495,7 +3532,6 @@
 							"On what occasion did you get to see other people pray?"@en ;
 		                salsah-gui:guiOrder "70"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
-                           salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" . 
 
@@ -3614,7 +3650,6 @@
 							"Whom/what else could you draw?"@en ;
 		                salsah-gui:guiOrder "79"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
-                           salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" . 
 
@@ -3643,7 +3678,6 @@
 							"According to you god is located... Other"@en ;
 		                salsah-gui:guiOrder "82"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
-                           salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" . 		
 
@@ -3671,7 +3705,6 @@
 							"Sex of god. Other..."@en ;
 		                salsah-gui:guiOrder "85"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
-                           salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" . 
 
@@ -3699,7 +3732,6 @@
 							"Age of god. Other..."@en ;
 		                salsah-gui:guiOrder "87"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
-                           salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" . 
 							                        
@@ -3727,7 +3759,6 @@
 							"What the word god means..."@en ;
 		                salsah-gui:guiOrder "89"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
-                           salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" . 							                        
 							                        
@@ -3753,7 +3784,6 @@
 							"Who Buddha is..."@en ;
 						rdfs:comment "Qui est Bouddha..."@fr ,
 							"Who Buddha is..."@en ;
-		                salsah-gui:guiOrder "87"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
                            salsah-gui:guiOrder "91"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
@@ -3785,7 +3815,6 @@
 							"When did the child happen to draw god in the past?"@en ;
 		                salsah-gui:guiOrder "93"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
-                           salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" . 
 		            
@@ -3801,7 +3830,6 @@
 							"Description of the child's drawing(s) of god in the past."@en ;
 		                salsah-gui:guiOrder "94"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
-                           salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" . 
 
@@ -3816,7 +3844,6 @@
 							"When did the child happen to draw god for the last time?"@en ;
 		                salsah-gui:guiOrder "95"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
-                           salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" . 
 
@@ -3857,7 +3884,6 @@
 							"How often do you get to pray with other people? Other..."@en ;
 		                salsah-gui:guiOrder "98"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
-                           salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" . 
 ###  http://www.knora.org/ontology/0105#prayingWithOtherPeopleWhen
@@ -3871,7 +3897,6 @@
 							"When do you pray with other people?"@en ;
 		                salsah-gui:guiOrder "99"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
-                           salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" . 
 		                
@@ -3886,7 +3911,6 @@
 							"When did you get to pray with other people for the last time?"@en ;
 		                salsah-gui:guiOrder "100"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
-                           salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" . 
 
@@ -3914,7 +3938,6 @@
 							"When do you get to pray alone?"@en ;
 		                salsah-gui:guiOrder "102"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
-                           salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
 
@@ -3942,7 +3965,6 @@
 							"How often do you get to pray alone? Other..."@en ;
 		                salsah-gui:guiOrder "104"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
-                           salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .  
 		                
@@ -3957,7 +3979,6 @@
 							"When did you pray alone for the last time?"@en ;
 		                salsah-gui:guiOrder "105"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
-                           salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" . 
 		            
@@ -3986,7 +4007,6 @@
 							"When was the child baptized?"@en ;
 		                salsah-gui:guiOrder "107"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
-                           salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" . 
 
@@ -4013,8 +4033,7 @@
 						rdfs:comment "Quand l'enfant a-t-il/elle fait sa communion?"@fr ,
 							"When did the child receive his/her communion?"@en ;
 		                salsah-gui:guiOrder "109"^^xsd:integer ;
-		                salsah-gui:guiElement salsah-gui:Date ;
-                           salsah-gui:guiOrder "30"^^xsd:integer . 
+		                salsah-gui:guiElement salsah-gui:Date . 
 
 ###  http://www.knora.org/ontology/0105#cathechismWhen
 :cathechismWhen rdf:type owl:ObjectProperty ;
@@ -4027,7 +4046,6 @@
 							"When did the child start attending catechism class?"@en ;
 		                salsah-gui:guiOrder "110"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
-                           salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" . 
 
@@ -4055,7 +4073,6 @@
 							"Child's dad's religion. Other..."@en ;
 		                salsah-gui:guiOrder "112"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
-                           salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" . 
 
@@ -4083,7 +4100,6 @@
 							"Child's mom's religion. Other..."@en ;
 		                salsah-gui:guiOrder "114"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
-                           salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" . 
 
@@ -4098,7 +4114,6 @@
 							"Child's place of birth"@en ;
 		                salsah-gui:guiOrder "115"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
-                           salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" . 
 
@@ -4126,7 +4141,6 @@
 							"Child's mother tongue(s). Other..."@en ;
 		                salsah-gui:guiOrder "117"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
-                           salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" . 
 
@@ -4182,7 +4196,6 @@
 							"Language spoken most often by the child. Other..."@en ;
 		                salsah-gui:guiOrder "121"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
-                           salsah-gui:guiOrder "30"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" . 
 
@@ -4197,8 +4210,7 @@
 						rdfs:comment "Depuis quand l'enfant habite-t-il/elle en Suisse"@fr ,
 							"Since when does the child live in Switzerland"@en ;
 		                salsah-gui:guiOrder "122"^^xsd:integer ;
-		                salsah-gui:guiElement salsah-gui:SimpleText ;
-                           salsah-gui:guiOrder "30"^^xsd:integer . 
+		                salsah-gui:guiElement salsah-gui:SimpleText . 
 
 ###	http://www.knora.org/ontology/0105#enjoyedTheActivity
 :enjoyedTheActivity rdf:type owl:ObjectProperty ;
@@ -4773,6 +4785,10 @@
                                owl:maxCardinality "1"^^xsd:nonNegativeInteger
                              ] ,
                              [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasRectoOk ;
+                               owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                             ] ,
+                             [ rdf:type owl:Restriction ;
                                owl:onProperty :hasDescriptionOk ;
                                owl:maxCardinality "1"^^xsd:nonNegativeInteger
                              ] ,
@@ -4789,19 +4805,11 @@
                                owl:cardinality "1"^^xsd:nonNegativeInteger
                              ] ,
                              [ rdf:type owl:Restriction ;
-                               owl:onProperty :hasQuestionnaireAvailable ;
-                               owl:maxCardinality "1"^^xsd:nonNegativeInteger
-                             ] ,
-                             [ rdf:type owl:Restriction ;
                                owl:onProperty :hasQuestionnaireComplete ;
                                owl:maxCardinality "1"^^xsd:nonNegativeInteger
                              ] ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty :hasQuestionnaireEntered ;
-                               owl:maxCardinality "1"^^xsd:nonNegativeInteger
-                             ] ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty :hasRectoAvailable ;
                                owl:maxCardinality "1"^^xsd:nonNegativeInteger
                              ] ,
                              [ rdf:type owl:Restriction ;
@@ -4821,15 +4829,27 @@
                                owl:maxCardinality "1"^^xsd:nonNegativeInteger
                              ] ,
                              [ rdf:type owl:Restriction ;
-                               owl:onProperty :hasTextEntered ;
+                               owl:onProperty :hasTextEnteredFr ;
                                owl:maxCardinality "1"^^xsd:nonNegativeInteger
                              ] ,
                              [ rdf:type owl:Restriction ;
-                               owl:onProperty :hasVersoAvailable ;
+                               owl:onProperty :hasTextEnteredEn ;
+                               owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasTextEnteredOr ;
                                owl:maxCardinality "1"^^xsd:nonNegativeInteger
                              ] ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty :hasBlankPage ;
+                               owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasMaterialCurrent ;
+                               owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasDrawingOk ;
                                owl:maxCardinality "1"^^xsd:nonNegativeInteger
                              ] ;
 			rdfs:label "Contrôle qualité des données"@fr ,
@@ -5412,7 +5432,11 @@
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :yearsLivingInSwitzerland ;
 										owl:maxCardinality "1"^^xsd:nonNegativeInteger
-										] ;
+										] ,
+										[ rdf:type owl:Restriction ;
+			                               owl:onProperty :hasQuestionnaireUnavailable ;
+			                               owl:maxCardinality "1"^^xsd:nonNegativeInteger
+			                             ] ;
 						 rdfs:label "Questionnaire individuel"@fr ,
              				"Individual questionnaire"@en .
 
@@ -5552,6 +5576,18 @@
                        ] ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasInstructionRestitutionOriginal ;
+                         owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasVersoUnavailable ;
+                         owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasRecallUnavailable ;
+                         owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasDescriptionUnavailable ;
                          owl:maxCardinality "1"^^xsd:nonNegativeInteger
                        ] ;
 		rdfs:label "Verso"@fr ,
