@@ -2719,7 +2719,7 @@
 		knora-base:listNodeName "iran1" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-InstructionOriginalList> ;
 		knora-base:listNodePosition 0 ;
-		rdfs:label """(IRANor1) آیا تا به حال از کلمه "خدا" شنیده [به فارسی ترجمه شده به عنوان خدابخش]؟ حالا چشمانتان را ببندید و سعی کنید تصور کنید، و سپس قرعه کشی. به نظر نمی آید به همکاران خود را، چرا که من می خواهم به دانستن چگونه می توانید تصور می کنید و یا فکر می کنم. قرعه کشی به عنوان دوست دارید و به عنوان شما تصور کنید.""" .
+		rdfs:label """(IRANor1) به نظر شما خدا چه شکلی است؟ خدا را نقاشی کنید.""" .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-InstructionOriginalList-iran2> a knora-base:ListNode ;
 		knora-base:listNodeName "iran2" ;
@@ -2732,7 +2732,7 @@
 		knora-base:listNodeName "japan" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-InstructionOriginalList> ;
 		knora-base:listNodePosition 2 ;
-		rdfs:label """(JAPANor) 私が "神" と言うとき、あなたの想像力に何かを引き寄せてください。""" .
+		rdfs:label """(JAPANor) 神と言ったら、何か想像できますか？ 想像できたら今からそれを書いてください。""" .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-InstructionOriginalList-nepal> a knora-base:ListNode ;
 		knora-base:listNodeName "nepal" ;
