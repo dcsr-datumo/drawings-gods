@@ -2607,7 +2607,7 @@
                      	"Questionnaire unavailable"@en ;
 			   	rdfs:comment "Questionnaire indisponible."@fr ,
 					 	"uestionnaire unavailable."@en ;
-				salsah-gui:guiOrder "11"^^xsd:integer ;
+				salsah-gui:guiOrder "1"^^xsd:integer ;
        		  	salsah-gui:guiElement salsah-gui:Checkbox .
 
 ###  http://www.knora.org/ontology/0105#hasIndividualQuestionnaireAttached
@@ -2620,7 +2620,7 @@
 		  	 				   rdfs:comment "Questionnaire individuel associé à ce dessin."@fr ,
 					 				"Individual questionnaire attached to the drawing."@en ;
 					 		   salsah-gui:guiElement salsah-gui:Searchbox ;
-					           salsah-gui:guiOrder "16"^^xsd:integer .
+					           salsah-gui:guiOrder "2"^^xsd:integer .
 
 
 ###  http://www.knora.org/ontology/0105#religiousAffiliation
@@ -2632,7 +2632,7 @@
 							"Affiliation religieuse à laquelle s’identifie l’enfant"@en ;
 						rdfs:comment "Religious affiliation to which the child identifies themselves"@fr ,
 							"Religious affiliation to which the child identifies themselves"@en ;
-		                salsah-gui:guiOrder "1"^^xsd:integer ;
+		                salsah-gui:guiOrder "3"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:List ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList>" .
 		                
