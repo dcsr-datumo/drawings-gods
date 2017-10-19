@@ -745,13 +745,13 @@
 		knora-base:listNodeName "iran1" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-InstructionEnList> ;
 		knora-base:listNodePosition 0 ;
-		rdfs:label "(IRANeng1) How is god in your opinion? Draw god.\"@en .
+		rdfs:label "(IRANeng1) How is god in your opinion? Draw god."@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-InstructionEnList-iran2> a knora-base:ListNode ;
 		knora-base:listNodeName "iran2" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-InstructionEnList> ;
 		knora-base:listNodePosition 1 ;
-		rdfs:label "(IRANeng2) Draw what you imagine in relation to god.\"@en .
+		rdfs:label "(IRANeng2) Draw what you imagine in relation to god."@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-InstructionEnList-japan> a knora-base:ListNode ;
 		knora-base:listNodeName "japan" ;
@@ -763,7 +763,7 @@
 		knora-base:listNodeName "nepal" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-InstructionEnList> ;
 		knora-base:listNodePosition 3 ;
-		rdfs:label "(NEPALeng)Free translation into Nepali of \" Have you ever heard of the word \"God\"? Now close your eyes and try to imagine, then draw. Do not look over to your colleagues', because I would like to know how you you imagine or think. Draw as you like and as you imagine. \"@en .
+		rdfs:label "(NEPALeng)Free translation into Nepali of \" Have you ever heard of the word \"God\"? Now close your eyes and try to imagine, then draw. Do not look over to your colleagues', because I would like to know how you you imagine or think. Draw as you like and as you imagine."@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-InstructionEnList-netherlands> a knora-base:ListNode ;
 		knora-base:listNodeName "netherlands" ;
@@ -838,13 +838,13 @@
 		knora-base:listNodeName "iran1" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-InstructionFrList> ;
 		knora-base:listNodePosition 0 ;
-		rdfs:label "(IRANfre1) A votre avis dieu est comment ? Dessinez dieu.\"@fr  .
+		rdfs:label "(IRANfre1) A votre avis dieu est comment ? Dessinez dieu."@fr  .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-InstructionFrList-iran2> a knora-base:ListNode ;
 		knora-base:listNodeName "iran2" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-InstructionFrList> ;
 		knora-base:listNodePosition 1 ;
-		rdfs:label "(IRANfre2) Dessinez ce que vous imaginez à propos de dieu.\"@fr  .
+		rdfs:label "(IRANfre2) Dessinez ce que vous imaginez à propos de dieu."@fr  .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-InstructionFrList-japan> a knora-base:ListNode ;
 		knora-base:listNodeName "japan" ;
@@ -856,7 +856,7 @@
 		knora-base:listNodeName "nepal" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-InstructionFrList> ;
 		knora-base:listNodePosition 3 ;
-		rdfs:label "(NEPALfre) Traduction libre en Népalais de \"Est-ce que vous avez déjà entendu le mot \"Dieu\" ? Maintenant fermez les yeux et essayez de l'imaginer, puis de dessiner. Ne regardez pas le dessin de vos voisins car je voudrais savoir comment vous, vous l'imaginez ou pensez. Dessinez comme vous voulez et comme vous l'imaginez.\"@fr .
+		rdfs:label "(NEPALfre) Traduction libre en Népalais de \"Est-ce que vous avez déjà entendu le mot \"Dieu\" ? Maintenant fermez les yeux et essayez de l'imaginer, puis de dessiner. Ne regardez pas le dessin de vos voisins car je voudrais savoir comment vous, vous l'imaginez ou pensez. Dessinez comme vous voulez et comme vous l'imaginez."@fr .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-InstructionFrList-netherlands> a knora-base:ListNode ;
 		knora-base:listNodeName "netherlands" ;
