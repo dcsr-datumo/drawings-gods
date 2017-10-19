@@ -2560,6 +2560,18 @@
                      salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList>" .
 
 
+###  http://www.knora.org/ontology/0105#hasIndividualQuestionnaireAttached
+:hasIndividualQuestionnaireAttached rdf:type owl:ObjectProperty ;
+                               rdfs:subPropertyOf knora-base:isPartOf ;
+                               knora-base:subjectClassConstraint :Drawing ;
+             				   knora-base:objectClassConstraint :QuestionnaireIndividual ;
+                               rdfs:label "Questionnaire individuel associé à ce dessin"@fr ,
+                     				"Individual questionnaire attached to the drawing"@en ;
+		  	 				   rdfs:comment "Questionnaire individuel associé à ce dessin."@fr ,
+					 				"Individual questionnaire attached to the drawing."@en ;
+					 		   salsah-gui:guiElement salsah-gui:Searchbox ;
+					           salsah-gui:guiOrder "16"^^xsd:integer .
+
 ###  http://www.knora.org/ontology/0105#hasIndividualQuestionnaireAttachedValue
 :hasIndividualQuestionnaireAttachedValue rdf:type owl:ObjectProperty ;
 		                            rdfs:subPropertyOf knora-base:isPartOfValue ;
@@ -2587,17 +2599,6 @@
 				salsah-gui:guiOrder "1"^^xsd:integer ;
        		  	salsah-gui:guiElement salsah-gui:Checkbox .
 
-###  http://www.knora.org/ontology/0105#hasIndividualQuestionnaireAttached
-:hasIndividualQuestionnaireAttached rdf:type owl:ObjectProperty ;
-                               rdfs:subPropertyOf knora-base:isPartOf ;
-                               knora-base:subjectClassConstraint :Drawing ;
-             				   knora-base:objectClassConstraint :QuestionnaireIndividual ;
-                               rdfs:label "Questionnaire individuel associé à ce dessin"@fr ,
-                     				"Individual questionnaire attached to the drawing"@en ;
-		  	 				   rdfs:comment "Questionnaire individuel associé à ce dessin."@fr ,
-					 				"Individual questionnaire attached to the drawing."@en ;
-					 		   salsah-gui:guiElement salsah-gui:Searchbox ;
-					           salsah-gui:guiOrder "2"^^xsd:integer .
 
 ###  http://www.knora.org/ontology/0105#hasModel
 :hasModel rdf:type owl:ObjectProperty ;
