@@ -745,13 +745,13 @@
 		knora-base:listNodeName "iran1" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-InstructionEnList> ;
 		knora-base:listNodePosition 0 ;
-		rdfs:label "(IRANeng1) Free translation into Farsi of \" Have you ever heard of the word \"God\"[translated into farsi as Khuda]? Now close your eyes and try to imagine, then draw. Do not look over to your colleagues', because I would like to know how you you imagine or think. Draw as you like and as you imagine.\""@en .
+		rdfs:label "(IRANeng1) How is god in your opinion? Draw god.\"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-InstructionEnList-iran2> a knora-base:ListNode ;
 		knora-base:listNodeName "iran2" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-InstructionEnList> ;
 		knora-base:listNodePosition 1 ;
-		rdfs:label "(IRANeng2) Free translation into Farsi of \" Have you ever heard of the word \"God\"[translated into farsi as Khuda]? Now close your eyes and try to imagine, then draw. Do not look over to your colleagues', because I would like to know how you you imagine or think. Draw as you like and as you imagine.\""@en .
+		rdfs:label "(IRANeng2) Draw what you imagine in relation to god.\"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-InstructionEnList-japan> a knora-base:ListNode ;
 		knora-base:listNodeName "japan" ;
@@ -763,7 +763,7 @@
 		knora-base:listNodeName "nepal" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-InstructionEnList> ;
 		knora-base:listNodePosition 3 ;
-		rdfs:label "(NEPALeng)Free translation into Nepali of \" Have you ever heard of the word \"God\"? Now close your eyes and try to imagine, then draw. Do not look over to your colleagues', because I would like to know how you you imagine or think. Draw as you like and as you imagine. \""@en .
+		rdfs:label "(NEPALeng)Free translation into Nepali of \" Have you ever heard of the word \"God\"? Now close your eyes and try to imagine, then draw. Do not look over to your colleagues', because I would like to know how you you imagine or think. Draw as you like and as you imagine. \"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-InstructionEnList-netherlands> a knora-base:ListNode ;
 		knora-base:listNodeName "netherlands" ;
@@ -838,13 +838,13 @@
 		knora-base:listNodeName "iran1" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-InstructionFrList> ;
 		knora-base:listNodePosition 0 ;
-		rdfs:label "(IRANfre1)Traduction libre en persan de \"Est-ce que vous avez déjà entendu le mot \"Dieu\" [traduit en farsi par Khuda]? Maintenant fermez les yeux et essayez de l'imaginer, puis de dessiner. Ne regardez pas le dessin de vos voisins car je voudrais savoir comment vous, vous l'imaginez ou pensez. Dessinez comme vous voulez et comme vous l'imaginez.\""@fr  .
+		rdfs:label "(IRANfre1) A votre avis dieu est comment ? Dessinez dieu.\"@fr  .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-InstructionFrList-iran2> a knora-base:ListNode ;
 		knora-base:listNodeName "iran2" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-InstructionFrList> ;
 		knora-base:listNodePosition 1 ;
-		rdfs:label "(IRANfre2)Traduction libre en persan de \"Est-ce que vous avez déjà entendu le mot \"Dieu\" [traduit en farsi par Khuda]? Maintenant fermez les yeux et essayez de l'imaginer, puis de dessiner. Ne regardez pas le dessin de vos voisins car je voudrais savoir comment vous, vous l'imaginez ou pensez. Dessinez comme vous voulez et comme vous l'imaginez.\""@fr  .
+		rdfs:label "(IRANfre2) Dessinez ce que vous imaginez à propos de dieu.\"@fr  .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-InstructionFrList-japan> a knora-base:ListNode ;
 		knora-base:listNodeName "japan" ;
@@ -856,7 +856,7 @@
 		knora-base:listNodeName "nepal" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-InstructionFrList> ;
 		knora-base:listNodePosition 3 ;
-		rdfs:label "(NEPALfre) Traduction libre en Népalais de \"Est-ce que vous avez déjà entendu le mot \"Dieu\" ? Maintenant fermez les yeux et essayez de l'imaginer, puis de dessiner. Ne regardez pas le dessin de vos voisins car je voudrais savoir comment vous, vous l'imaginez ou pensez. Dessinez comme vous voulez et comme vous l'imaginez.\""@fr .
+		rdfs:label "(NEPALfre) Traduction libre en Népalais de \"Est-ce que vous avez déjà entendu le mot \"Dieu\" ? Maintenant fermez les yeux et essayez de l'imaginer, puis de dessiner. Ne regardez pas le dessin de vos voisins car je voudrais savoir comment vous, vous l'imaginez ou pensez. Dessinez comme vous voulez et comme vous l'imaginez.\"@fr .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-InstructionFrList-netherlands> a knora-base:ListNode ;
 		knora-base:listNodeName "netherlands" ;
@@ -2725,14 +2725,14 @@
 		knora-base:listNodeName "iran2" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-InstructionOriginalList> ;
 		knora-base:listNodePosition 1 ;
-		rdfs:label """(IRANor2) آیا تا به حال از کلمه "خدا" شنیده [به فارسی ترجمه شده به عنوان خدابخش]؟ حالا چشمانتان را ببندید و سعی کنید تصور کنید، و سپس قرعه کشی. به نظر نمی آید به همکاران خود را، چرا که من می خواهم به دانستن چگونه می توانید تصور می کنید و یا فکر می کنم. قرعه کشی به عنوان دوست دارید و به عنوان شما تصور کنید.""" .
+		rdfs:label """(IRANor2) تصور خود را درباره خداوند بکشید.""" .
 
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-InstructionOriginalList-japan> a knora-base:ListNode ;
 		knora-base:listNodeName "japan" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-InstructionOriginalList> ;
 		knora-base:listNodePosition 2 ;
-		rdfs:label """(JAPANor) 神と言ったら、何か想像できますか？ 想像できたら今からそれを書いてください。""" .
+		rdfs:label """(JAPANor) “ 神と言ったら、何か想像できますか？　(何か)想像できましたか？　　できたら今からそれを前にある紙に描いてください”。""" .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-InstructionOriginalList-nepal> a knora-base:ListNode ;
 		knora-base:listNodeName "nepal" ;
@@ -3100,7 +3100,7 @@
 		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-CH08> ,
 		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-CH10> ,
 		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-CH14> ,
-		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-CH15> ,
+		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-CH1516> ,
 		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-CH16> .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-CH05> a knora-base:ListNode ;
@@ -3176,27 +3176,25 @@
 				knora-base:listNodePosition 2 ;
 				rdfs:label "CH1414DRV0303"@fr , "CH1414DRV0303"@en .
 
-		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-CH15> a knora-base:ListNode ;
-			knora-base:listNodeName "CH15" ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-CH1516> a knora-base:ListNode ;
+			knora-base:listNodeName "CH1516" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-StorageList> ;
 			knora-base:listNodePosition 4 ;
-			rdfs:label "CH15"@fr , "CH15"@en ;
-			knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-CH1515DRV0101> .
+			rdfs:label "CH15-16"@fr , "CH15-16"@en ;
+			knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-CH1516DRV0101> .
 
-			<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-CH1515DRV0101> a knora-base:ListNode ;
+			<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-CH1516DRV0101> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-StorageList> ;
 				knora-base:listNodeName "CH1515DRV0101" ;
 				knora-base:listNodePosition 2 ;
-				rdfs:label "CH1515DRV0101"@fr , "CH1515DRV0101"@en .
+				rdfs:label "CH1516DRV0101"@fr , "CH1516DRV0101"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-CH16> a knora-base:ListNode ;
 			knora-base:listNodeName "CH16" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-StorageList> ;
 			knora-base:listNodePosition 5 ;
 			rdfs:label "CH16"@fr , "CH16"@en ;
-			knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-CH1616DNV0101> ,
-			<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-CH1616DRV0102> ,
-			<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-CH1616DRV0202> .
+			knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-CH1616DNV0101> .
 
 			<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-CH1616DNV0101> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-StorageList> ;
@@ -3204,17 +3202,6 @@
 				knora-base:listNodePosition 2 ;
 				rdfs:label "CH1616DNV0101"@fr , "CH1616DNV0101"@en .
 
-			<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-CH1616DRV0102> a knora-base:ListNode ;
-				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-StorageList> ;
-				knora-base:listNodeName "CH1616DRV0102" ;
-				knora-base:listNodePosition 2 ;
-				rdfs:label "CH1616DRV0102"@fr , "CH1616DRV0102"@en .
-
-			<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-CH1616DRV0202> a knora-base:ListNode ;
-				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-StorageList> ;
-				knora-base:listNodeName "CH1616DRV0202" ;
-				knora-base:listNodePosition 2 ;
-				rdfs:label "CH1616DRV0202"@fr , "CH1616DRV0202"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-RO> a knora-base:ListNode ;
 		knora-base:listNodeName "RO" ;
@@ -3372,216 +3359,174 @@
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-StorageList> ;
 			knora-base:listNodePosition 0 ;
 			rdfs:label "IR14"@fr , "IR14"@en ;
-			knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV0130> ,
-		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV0230> ,
-		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV0330> ,
-		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV0430> ,
-		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV0530> ,
-		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV0630> ,
-		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV0730> ,
-		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV0830> ,
-		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV0930> ,
-		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV1030> ,
-		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV1130> ,
-		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV1230> ,
-		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV1330> ,
-		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV1430> ,
-		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV1530> ,
-		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV1630> ,
-		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV1730> ,
-		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV1830> ,
-		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV1930> ,
-		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV2030> ,
-		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV2130> ,
-		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV2230> ,
-		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV2330> ,
-		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV2430> ,
-		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV2530> ,
-		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV2630> ,
-		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV2730> ,
-		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV2830> ,
-		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV2930> ,
-		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV3030> .
+			knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV0124> ,
+		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV0224> ,
+		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV0324> ,
+		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV0424> ,
+		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV0524> ,
+		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV0624> ,
+		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV0724> ,
+		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV0824> ,
+		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV0924> ,
+		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV1024> ,
+		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV1124> ,
+		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV1224> ,
+		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV1324> ,
+		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV1424> ,
+		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV1524> ,
+		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV1624> ,
+		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV1724> ,
+		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV1824> ,
+		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV1924> ,
+		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV2024> ,
+		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV2124> ,
+		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV2224> ,
+		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV2324> ,
+		<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV2424> .
 
-			<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV0130> a knora-base:ListNode ;
+			<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV0124> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-StorageList> ;
-				knora-base:listNodeName "IR1414DRV0130" ;
+				knora-base:listNodeName "IR1414DRV0124" ;
 				knora-base:listNodePosition 0 ;
-				rdfs:label "IR1414DRV0130"@fr , "IR1414DRV0130"@en .
+				rdfs:label "IR1414DRV0124"@fr , "IR1414DRV0124"@en .
 
-			<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV0230> a knora-base:ListNode ;
+			<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV0224> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-StorageList> ;
-				knora-base:listNodeName "IR1414DRV0230" ;
+				knora-base:listNodeName "IR1414DRV0224" ;
 				knora-base:listNodePosition 1 ;
-				rdfs:label "IR1414DRV0230"@fr , "IR1414DRV0230"@en .
+				rdfs:label "IR1414DRV0224"@fr , "IR1414DRV0224"@en .
 
-			<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV0330> a knora-base:ListNode ;
+			<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV0324> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-StorageList> ;
-				knora-base:listNodeName "IR1414DRV0330" ;
+				knora-base:listNodeName "IR1414DRV0324" ;
 				knora-base:listNodePosition 2 ;
-				rdfs:label "IR1414DRV0330"@fr , "IR1414DRV0330"@en .
+				rdfs:label "IR1414DRV0324"@fr , "IR1414DRV0324"@en .
 
-			<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV0430> a knora-base:ListNode ;
+			<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV0424> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-StorageList> ;
-				knora-base:listNodeName "IR1414DRV0430" ;
+				knora-base:listNodeName "IR1414DRV0424" ;
 				knora-base:listNodePosition 3 ;
-				rdfs:label "IR1414DRV0430"@fr , "IR1414DRV0430"@en .
+				rdfs:label "IR1414DRV0424"@fr , "IR1414DRV0424"@en .
 
-			<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV0530> a knora-base:ListNode ;
+			<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV0524> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-StorageList> ;
-				knora-base:listNodeName "IR1414DRV0530" ;
+				knora-base:listNodeName "IR1414DRV0524" ;
 				knora-base:listNodePosition 4 ;
-				rdfs:label "IR1414DRV0530"@fr , "IR1414DRV0530"@en .
+				rdfs:label "IR1414DRV0524"@fr , "IR1414DRV0524"@en .
 
-			<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV0630> a knora-base:ListNode ;
+			<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV0624> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-StorageList> ;
-				knora-base:listNodeName "IR1414DRV0630" ;
+				knora-base:listNodeName "IR1414DRV0624" ;
 				knora-base:listNodePosition 5 ;
-				rdfs:label "IR1414DRV0630"@fr , "IR1414DRV0630"@en .
+				rdfs:label "IR1414DRV0624"@fr , "IR1414DRV0624"@en .
 
-			<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV0730> a knora-base:ListNode ;
+			<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV0724> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-StorageList> ;
-				knora-base:listNodeName "IR1414DRV0730" ;
+				knora-base:listNodeName "IR1414DRV0724" ;
 				knora-base:listNodePosition 6 ;
-				rdfs:label "IR1414DRV0730"@fr , "IR1414DRV0730"@en .
+				rdfs:label "IR1414DRV0724"@fr , "IR1414DRV0724"@en .
 
-			<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV0830> a knora-base:ListNode ;
+			<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV0824> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-StorageList> ;
-				knora-base:listNodeName "IR1414DRV0830" ;
+				knora-base:listNodeName "IR1414DRV0824" ;
 				knora-base:listNodePosition 7 ;
-				rdfs:label "IR1414DRV0830"@fr , "IR1414DRV0830"@en .
+				rdfs:label "IR1414DRV0824"@fr , "IR1414DRV0824"@en .
 
-			<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV0930> a knora-base:ListNode ;
+			<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV0924> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-StorageList> ;
-				knora-base:listNodeName "IR1414DRV0930" ;
+				knora-base:listNodeName "IR1414DRV0924" ;
 				knora-base:listNodePosition 8 ;
-				rdfs:label "IR1414DRV0930"@fr , "IR1414DRV0930"@en .
+				rdfs:label "IR1414DRV0924"@fr , "IR1414DRV0924"@en .
 
-			<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV1030> a knora-base:ListNode ;
+			<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV1024> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-StorageList> ;
-				knora-base:listNodeName "IR1414DRV1030" ;
+				knora-base:listNodeName "IR1414DRV1024" ;
 				knora-base:listNodePosition 9 ;
-				rdfs:label "IR1414DRV1030"@fr , "IR1414DRV1030"@en .
+				rdfs:label "IR1414DRV1024"@fr , "IR1414DRV1024"@en .
 
-			<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV1130> a knora-base:ListNode ;
+			<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV1124> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-StorageList> ;
-				knora-base:listNodeName "IR1414DRV1130" ;
+				knora-base:listNodeName "IR1414DRV1124" ;
 				knora-base:listNodePosition 10 ;
-				rdfs:label "IR1414DRV1130"@fr , "IR1414DRV1130"@en .
+				rdfs:label "IR1414DRV1124"@fr , "IR1414DRV1124"@en .
 
-			<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV1230> a knora-base:ListNode ;
+			<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV1224> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-StorageList> ;
-				knora-base:listNodeName "IR1414DRV1230" ;
+				knora-base:listNodeName "IR1414DRV1224" ;
 				knora-base:listNodePosition 11 ;
-				rdfs:label "IR1414DRV1230"@fr , "IR1414DRV1230"@en .
+				rdfs:label "IR1414DRV1224"@fr , "IR1414DRV1224"@en .
 
-			<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV1330> a knora-base:ListNode ;
+			<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV1324> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-StorageList> ;
-				knora-base:listNodeName "IR1414DRV1330" ;
+				knora-base:listNodeName "IR1414DRV1324" ;
 				knora-base:listNodePosition 12 ;
-				rdfs:label "IR1414DRV1330"@fr , "IR1414DRV1330"@en .
+				rdfs:label "IR1414DRV1324"@fr , "IR1414DRV1324"@en .
 
-			<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV1430> a knora-base:ListNode ;
+			<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV1424> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-StorageList> ;
-				knora-base:listNodeName "IR1414DRV1430" ;
+				knora-base:listNodeName "IR1414DRV1424" ;
 				knora-base:listNodePosition 13 ;
-				rdfs:label "IR1414DRV1430"@fr , "IR1414DRV1430"@en .
+				rdfs:label "IR1414DRV1424"@fr , "IR1414DRV1424"@en .
 
-			<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV1530> a knora-base:ListNode ;
+			<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV1524> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-StorageList> ;
-				knora-base:listNodeName "IR1414DRV1530" ;
+				knora-base:listNodeName "IR1414DRV1524" ;
 				knora-base:listNodePosition 14 ;
-				rdfs:label "IR1414DRV1530"@fr , "IR1414DRV1530"@en .
+				rdfs:label "IR1414DRV1524"@fr , "IR1414DRV1524"@en .
 
-			<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV1630> a knora-base:ListNode ;
+			<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV1624> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-StorageList> ;
-				knora-base:listNodeName "IR1414DRV1630" ;
+				knora-base:listNodeName "IR1414DRV1624" ;
 				knora-base:listNodePosition 15 ;
-				rdfs:label "IR1414DRV1630"@fr , "IR1414DRV1630"@en .
+				rdfs:label "IR1414DRV1624"@fr , "IR1414DRV1624"@en .
 
-			<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV1730> a knora-base:ListNode ;
+			<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV1724> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-StorageList> ;
-				knora-base:listNodeName "IR1414DRV1730" ;
+				knora-base:listNodeName "IR1414DRV1724" ;
 				knora-base:listNodePosition 16 ;
-				rdfs:label "IR1414DRV1730"@fr , "IR1414DRV1730"@en .
+				rdfs:label "IR1414DRV1724"@fr , "IR1414DRV1724"@en .
 
-			<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV1830> a knora-base:ListNode ;
+			<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV1824> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-StorageList> ;
-				knora-base:listNodeName "IR1414DRV1830" ;
+				knora-base:listNodeName "IR1414DRV1824" ;
 				knora-base:listNodePosition 17 ;
-				rdfs:label "IR1414DRV1830"@fr , "IR1414DRV1830"@en .
+				rdfs:label "IR1414DRV1824"@fr , "IR1414DRV1824"@en .
 
-			<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV1930> a knora-base:ListNode ;
+			<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV1924> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-StorageList> ;
-				knora-base:listNodeName "IR1414DRV1930" ;
+				knora-base:listNodeName "IR1414DRV1924" ;
 				knora-base:listNodePosition 18 ;
-				rdfs:label "IR1414DRV1930"@fr , "IR1414DRV1930"@en .
+				rdfs:label "IR1414DRV1924"@fr , "IR1414DRV1924"@en .
 
-			<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV2030> a knora-base:ListNode ;
+			<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV2024> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-StorageList> ;
-				knora-base:listNodeName "IR1414DRV2030" ;
+				knora-base:listNodeName "IR1414DRV2025" ;
 				knora-base:listNodePosition 19 ;
-				rdfs:label "IR1414DRV2030"@fr , "IR1414DRV2030"@en .
+				rdfs:label "IR1414DRV2025"@fr , "IR1414DRV2025"@en .
 
-			<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV2130> a knora-base:ListNode ;
+			<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV2124> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-StorageList> ;
-				knora-base:listNodeName "IR1414DRV2130" ;
+				knora-base:listNodeName "IR1414DRV2124" ;
 				knora-base:listNodePosition 20 ;
-				rdfs:label "IR1414DRV2130"@fr , "IR1414DRV2130"@en .
+				rdfs:label "IR1414DRV2124"@fr , "IR1414DRV2124"@en .
 
-			<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV2230> a knora-base:ListNode ;
+			<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV2224> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-StorageList> ;
-				knora-base:listNodeName "IR1414DRV2230" ;
+				knora-base:listNodeName "IR1414DRV2224" ;
 				knora-base:listNodePosition 21 ;
-				rdfs:label "IR1414DRV2230"@fr , "IR1414DRV2230"@en .
+				rdfs:label "IR1414DRV2224"@fr , "IR1414DRV2224"@en .
 
-			<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV2330> a knora-base:ListNode ;
+			<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV2324> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-StorageList> ;
-				knora-base:listNodeName "IR1414DRV2330" ;
+				knora-base:listNodeName "IR1414DRV2324" ;
 				knora-base:listNodePosition 22 ;
-				rdfs:label "IR1414DRV2330"@fr , "IR1414DRV2330"@en .
+				rdfs:label "IR1414DRV2324"@fr , "IR1414DRV2324"@en .
 
-			<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV2430> a knora-base:ListNode ;
+			<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV2424> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-StorageList> ;
-				knora-base:listNodeName "IR1414DRV2430" ;
+				knora-base:listNodeName "IR1414DRV2424" ;
 				knora-base:listNodePosition 23 ;
-				rdfs:label "IR1414DRV2430"@fr , "IR1414DRV2430"@en .
-
-			<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV2530> a knora-base:ListNode ;
-				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-StorageList> ;
-				knora-base:listNodeName "IR1414DRV2530" ;
-				knora-base:listNodePosition 24 ;
-				rdfs:label "IR1414DRV2530"@fr , "IR1414DRV2530"@en .
-
-			<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV2630> a knora-base:ListNode ;
-				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-StorageList> ;
-				knora-base:listNodeName "IR1414DRV2630" ;
-				knora-base:listNodePosition 25 ;
-				rdfs:label "IR1414DRV2630"@fr , "IR1414DRV2630"@en .
-
-			<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV2730> a knora-base:ListNode ;
-				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-StorageList> ;
-				knora-base:listNodeName "IR1414DRV2730" ;
-				knora-base:listNodePosition 26 ;
-				rdfs:label "IR1414DRV2730"@fr , "IR1414DRV2730"@en .
-
-			<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV2830> a knora-base:ListNode ;
-				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-StorageList> ;
-				knora-base:listNodeName "IR1414DRV2830" ;
-				knora-base:listNodePosition 27 ;
-				rdfs:label "IR1414DRV2830"@fr , "IR1414DRV2830"@en .
-
-			<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV2930> a knora-base:ListNode ;
-				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-StorageList> ;
-				knora-base:listNodeName "IR1414DRV2930" ;
-				knora-base:listNodePosition 28 ;
-				rdfs:label "IR1414DRV2930"@fr , "IR1414DRV2930"@en .
-
-			<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-IR1414DRV3030> a knora-base:ListNode ;
-				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-StorageList> ;
-				knora-base:listNodeName "IR1414DRV3030" ;
-				knora-base:listNodePosition 29 ;
-				rdfs:label "IR1414DRV3030"@fr , "IR1414DRV3030"@en .
+				rdfs:label "IR1414DRV2424"@fr , "IR1414DRV2424"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList-US> a knora-base:ListNode ;
 		knora-base:listNodeName "US" ;
