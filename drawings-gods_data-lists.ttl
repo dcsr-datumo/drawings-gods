@@ -51,7 +51,7 @@
 	knora-base:isRootNode true ;
 	rdfs:comment "Liste de choix pour l'auteur du commentaire sur le verso"@fr ;
 	rdfs:label "Auteur du commentaire sur le verso (liste)"@fr , "Author of comment on verso (list)"@en ;
-	knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-CommentAuthorList-child> ,
+	knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-CommentAuthorList-nocomment> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-CommentAuthorList-collector> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-CommentAuthorList-teacher> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-CommentAuthorList-unknownAdult> ,
@@ -59,11 +59,11 @@
 	<http://rdfh.ch/lists/drawings-gods-2016-list-CommentAuthorList-other> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-CommentAuthorList-irrelevant> .
 
-	<http://rdfh.ch/lists/drawings-gods-2016-list-CommentAuthorList-child> a knora-base:ListNode ;
-		knora-base:listNodeName "child" ;
+	<http://rdfh.ch/lists/drawings-gods-2016-list-CommentAuthorList-nocomment> a knora-base:ListNode ;
+		knora-base:listNodeName "nocomment" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-CommentAuthorList> ;
 		knora-base:listNodePosition 0 ;
-		rdfs:label "Enfant"@fr , "Child"@en .
+		rdfs:label "Pas de commentaire"@fr , "No comments"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-CommentAuthorList-collector> a knora-base:ListNode ;
 		knora-base:listNodeName "collector" ;
@@ -106,8 +106,7 @@
 	knora-base:isRootNode true ;
 	rdfs:comment "Liste de choix pour l'auteur de la description sur le verso"@fr ;
 	rdfs:label "Auteur de la description sur le verso (liste)"@fr , "Author of description on verso (list)"@en ;
-	knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-DescriptionAuthorList--> ,
-	<http://rdfh.ch/lists/drawings-gods-2016-list-DescriptionAuthorList-child> ,
+	knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-DescriptionAuthorList-child> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-DescriptionAuthorList-collector> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-DescriptionAuthorList-teacher> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-DescriptionAuthorList-unknownAdult> ,
@@ -115,52 +114,46 @@
 	<http://rdfh.ch/lists/drawings-gods-2016-list-DescriptionAuthorList-other> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-DescriptionAuthorList-irrelevant> .
 
-	<http://rdfh.ch/lists/drawings-gods-2016-list-DescriptionAuthorList--> a knora-base:ListNode ;
-		knora-base:listNodeName "-" ;
-		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-DescriptionAuthorList> ;
-		knora-base:listNodePosition 0 ;
-		rdfs:label "-"@fr , "-"@en .
-
 	<http://rdfh.ch/lists/drawings-gods-2016-list-DescriptionAuthorList-child> a knora-base:ListNode ;
 		knora-base:listNodeName "child" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-DescriptionAuthorList> ;
-		knora-base:listNodePosition 1 ;
+		knora-base:listNodePosition 0 ;
 		rdfs:label "Enfant"@fr , "Child"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-DescriptionAuthorList-collector> a knora-base:ListNode ;
 		knora-base:listNodeName "collector" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-DescriptionAuthorList> ;
-		knora-base:listNodePosition 2 ;
+		knora-base:listNodePosition 1 ;
 		rdfs:label "Collecteur"@fr , "Collector"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-DescriptionAuthorList-teacher> a knora-base:ListNode ;
 		knora-base:listNodeName "teacher" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-DescriptionAuthorList> ;
-		knora-base:listNodePosition 3 ;
+		knora-base:listNodePosition 2 ;
 		rdfs:label "Maître d'école"@fr , "Teacher"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-DescriptionAuthorList-unknownAdult> a knora-base:ListNode ;
 		knora-base:listNodeName "unknownadult" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-DescriptionAuthorList> ;
-		knora-base:listNodePosition 4 ;
+		knora-base:listNodePosition 3 ;
 		rdfs:label "Adulte non-identifié"@fr , "Unknown adult"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-DescriptionAuthorList-translator> a knora-base:ListNode ;
 		knora-base:listNodeName "translator" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-DescriptionAuthorList> ;
-		knora-base:listNodePosition 5 ;
+		knora-base:listNodePosition 4 ;
 		rdfs:label "Traducteur"@fr , "Translator"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-DescriptionAuthorList-other> a knora-base:ListNode ;
 		knora-base:listNodeName "other" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-DescriptionAuthorList> ;
-		knora-base:listNodePosition 6 ;
+		knora-base:listNodePosition 5 ;
 		rdfs:label "Autre"@fr , "Other"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-DescriptionAuthorList-irrelevant> a knora-base:ListNode ;
 		knora-base:listNodeName "irrelevant" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-DescriptionAuthorList> ;
-		knora-base:listNodePosition 7 ;
+		knora-base:listNodePosition 6 ;
 		rdfs:label "Non pertinent"@fr , "Irrelevant"@en .
 
 ###    GlobalLocationHList
@@ -656,7 +649,7 @@
 		knora-base:listNodeName "event" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-CollSiteList> ;
 		knora-base:listNodePosition 1 ;
-		rdfs:label "Evenement"@fr , "Event"@en ;
+		rdfs:label "Evénement"@fr , "Event"@en ;
 		knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-CollSiteList-layEvent> ,
 									<http://rdfh.ch/lists/drawings-gods-2016-list-CollSiteList-relEvent> .
 
@@ -664,19 +657,19 @@
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-CollSiteList> ;
 				knora-base:listNodeName "layEvent" ;
 				knora-base:listNodePosition 0 ;
-				rdfs:label "Evenement laïque"@fr , "Lay event"@en .
+				rdfs:label "Evénement laïque"@fr , "Lay event"@en .
 
 <http://rdfh.ch/lists/drawings-gods-2016-list-CollSiteList-relEvent> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-CollSiteList> ;
 				knora-base:listNodeName "relEvent" ;
 				knora-base:listNodePosition 1 ;
-				rdfs:label "Evenement religieux"@fr , "Religious event"@en .
+				rdfs:label "Evénement religieux"@fr , "Religious event"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-CollSiteList-singularCollect> a knora-base:ListNode ;
 		knora-base:listNodeName "singularCollect" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-CollSiteList> ;
 		knora-base:listNodePosition 2 ;
-		rdfs:label "Collect singulier"@fr , "Singular collect"@en .
+		rdfs:label "Collecte individuelle"@fr , "Individual collect"@en .
 
 ###   InstructionCodeList
 
@@ -686,7 +679,7 @@
 	rdfs:label "Consigne Anglais (liste)"@fr , "Task English (list)"@en ;
 	knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-InstructionCodeList--> ,
 						<http://rdfh.ch/lists/drawings-gods-2016-list-InstructionCodeList-UNIL> ,
-						<http://rdfh.ch/lists/drawings-gods-2016-list-InstructionCodeList-UNILlocalterms> ,
+						<http://rdfh.ch/lists/drawings-gods-2016-list-InstructionCodeList-UNILmodif> ,
 						<http://rdfh.ch/lists/drawings-gods-2016-list-InstructionCodeList-UNILfreeint> ,
 						<http://rdfh.ch/lists/drawings-gods-2016-list-InstructionCodeList-NONUNIL> .
 
@@ -703,11 +696,11 @@
 		knora-base:listNodePosition 1 ;
 		rdfs:label "UNIL"@fr , "UNIL"@en .
 
-<http://rdfh.ch/lists/drawings-gods-2016-list-InstructionCodeList-UNILlocalterms> a knora-base:ListNode ;
-		knora-base:listNodeName "UNILlocalterms" ;
+<http://rdfh.ch/lists/drawings-gods-2016-list-InstructionCodeList-UNILmodif> a knora-base:ListNode ;
+		knora-base:listNodeName "UNILmodif" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-InstructionCodeList> ;
 		knora-base:listNodePosition 2 ;
-		rdfs:label "UNIL strandard, mais avec les termes locaux, p.e. kami, burkhan"@fr , "UNIL standrad but with local terms, e.g. kami, burkhan"@en .
+		rdfs:label "UNIL modifiée"@fr , "UNIL modified"@en .
 
 <http://rdfh.ch/lists/drawings-gods-2016-list-InstructionCodeList-UNILfreeint> a knora-base:ListNode ;
 		knora-base:listNodeName "UNILfreeint" ;
@@ -757,25 +750,25 @@
 		knora-base:listNodeName "japan" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-InstructionEnList> ;
 		knora-base:listNodePosition 2 ;
-		rdfs:label "(JAPANeng) In japanese : When I say \"Kami\" (God), could you please draw anything that comes to your imagination?"@en .
+		rdfs:label "(JAPANeng) In japanese : When I say \"kami\" (god), could you please draw anything that comes to your imagination?"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-InstructionEnList-nepal> a knora-base:ListNode ;
 		knora-base:listNodeName "nepal" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-InstructionEnList> ;
 		knora-base:listNodePosition 3 ;
-		rdfs:label "(NEPALeng)Free translation into Nepali of \" Have you ever heard of the word \"God\"? Now close your eyes and try to imagine, then draw. Do not look over to your colleagues', because I would like to know how you you imagine or think. Draw as you like and as you imagine."@en .
+		rdfs:label "(NEPALeng)Free translation into Nepali of \" Have you ever heard of the word \"god\"? Now close your eyes and try to imagine, then draw. Do not look over to your colleagues', because I would like to know how you imagine or think. Draw as you like and as you imagine."@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-InstructionEnList-netherlands> a knora-base:ListNode ;
 		knora-base:listNodeName "netherlands" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-InstructionEnList> ;
 		knora-base:listNodePosition 4 ;
-		rdfs:label "(NETHERLANDSeng)Have you ever heard the word \"God\"? Try to make a representation and draw this."@en .
+		rdfs:label "(NETHERLANDSeng)Have you ever heard the word \"god\"? Try to make a representation and draw this."@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-InstructionEnList-romania> a knora-base:ListNode ;
 		knora-base:listNodeName "romania" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-InstructionEnList> ;
 		knora-base:listNodePosition 5 ;
-		rdfs:label "(ROMANIAeng) In Romanian: When I say \"God\", what can you imagine? Can you imagine something? If yes, can you draw it right now?"@en .
+		rdfs:label "(ROMANIAeng) In Romanian: When I say \"god\", what can you imagine? Can you imagine something? If yes, can you draw it right now?"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-InstructionEnList-russia1> a knora-base:ListNode ;
 		knora-base:listNodeName "russia1" ;
@@ -793,13 +786,13 @@
 		knora-base:listNodeName "switzerland1" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-InstructionEnList> ;
 		knora-base:listNodePosition 8 ;
-		rdfs:label "(SWITZ1eng) Have you ever heard of the word \"God\"? Could you draw, please? You can draw anything that comes up to your mind when you think of the word \"God\"."@en .
+		rdfs:label "(SWITZ1eng) Have you ever heard of the word \"god\"? Could you draw, please? You can draw anything that comes up to your mind when you think of the word \"god\"."@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-InstructionEnList-switzerland2> a knora-base:ListNode ;
 		knora-base:listNodeName "switzerland2" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-InstructionEnList> ;
 		knora-base:listNodePosition 9 ;
-		rdfs:label "(SWITZ2eng)  Have you ever heard of the word \"God\"? Now close your eyes and try to imagine, then draw. Do not look over to your colleagues', because I would like to know how you you imagine or think. Draw as you like and as you imagine."@en .
+		rdfs:label "(SWITZ2eng)  Have you ever heard of the word \"god\"? Now close your eyes and try to imagine, then draw. Do not look over to your colleagues', because I would like to know how you imagine or think. Draw as you like and as you imagine."@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-InstructionEnList-switzerland3> a knora-base:ListNode ;
 		knora-base:listNodeName "switzerland3" ;
@@ -811,7 +804,7 @@
 		knora-base:listNodeName "usa" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-InstructionEnList> ;
 		knora-base:listNodePosition 11 ;
-		rdfs:label "(USAeng) In English: Please use this piece of paper and the pencils, crayons, and markers to draw a picture of God. There is no right or wrong way to draw the picture, just draw what you think God looks like."@en .
+		rdfs:label "(USAeng) In English: Please use this piece of paper and the pencils, crayons, and markers to draw a picture of god. There is no right or wrong way to draw the picture, just draw what you think god looks like."@en .
 
 
 ###   InstructionFrList
@@ -850,49 +843,49 @@
 		knora-base:listNodeName "japan" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-InstructionFrList> ;
 		knora-base:listNodePosition 2 ;
-		rdfs:label "(JAPANfre) En japonais : Quand je te dis \"Kami\", qu'est-ce que tu peux imaginer/ Peux-tu imaginer quelque chose/ Vous pouvez dessiner tout ce qui vous vient à l'esprit lorsque vous pensez au mot \" Dieu \"."@fr .
+		rdfs:label "(JAPANfre) En japonais : Quand je te dis \"kami\", qu'est-ce que tu peux imaginer/ Peux-tu imaginer quelque chose/ Vous pouvez dessiner tout ce qui vous vient à l'esprit lorsque vous pensez au mot \" dieu \"."@fr .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-InstructionFrList-nepal> a knora-base:ListNode ;
 		knora-base:listNodeName "nepal" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-InstructionFrList> ;
 		knora-base:listNodePosition 3 ;
-		rdfs:label "(NEPALfre) Traduction libre en Népalais de \"Est-ce que vous avez déjà entendu le mot \"Dieu\" ? Maintenant fermez les yeux et essayez de l'imaginer, puis de dessiner. Ne regardez pas le dessin de vos voisins car je voudrais savoir comment vous, vous l'imaginez ou pensez. Dessinez comme vous voulez et comme vous l'imaginez."@fr .
+		rdfs:label "(NEPALfre) Traduction libre en Népalais de \"Est-ce que vous avez déjà entendu le mot \"dieu\" ? Maintenant fermez les yeux et essayez de l'imaginer, puis de dessiner. Ne regardez pas le dessin de vos voisins car je voudrais savoir comment vous, vous l'imaginez ou pensez. Dessinez comme vous voulez et comme vous l'imaginez."@fr .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-InstructionFrList-netherlands> a knora-base:ListNode ;
 		knora-base:listNodeName "netherlands" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-InstructionFrList> ;
 		knora-base:listNodePosition 4 ;
-		rdfs:label "(NETHERLANDSfre) Est-ce que vous avez déjà entendu le mot \"Dieu\" ? Maintenant fermez les yeux et essayez de l'imaginer, puis de dessiner."@fr .
+		rdfs:label "(NETHERLANDSfre) Est-ce que vous avez déjà entendu le mot \"dieu\" ? Maintenant fermez les yeux et essayez de l'imaginer, puis de dessiner."@fr .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-InstructionFrList-romania> a knora-base:ListNode ;
 		knora-base:listNodeName "romania" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-InstructionFrList> ;
 		knora-base:listNodePosition 5 ;
-		rdfs:label "(ROMAINIAfre) En roumain : Avez-vous déjà entendu le mot \"Dumnezeu\". Est-ce que vous pouvez me dessiner Dumnezeu sur une feuille, la façon dont vous vous l'imaginez."@fr .
+		rdfs:label "(ROMAINIAfre) En roumain : Avez-vous déjà entendu le mot \"dumnezeu\". Est-ce que vous pouvez me dessiner dumnezeu sur une feuille, la façon dont vous vous l'imaginez."@fr .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-InstructionFrList-russia1> a knora-base:ListNode ;
 		knora-base:listNodeName "russia1" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-InstructionFrList> ;
 		knora-base:listNodePosition 6 ;
-		rdfs:label "(RUSSIA1fre) En russe : As-tu déjà entendu le mot \"Bog\". Maintenant, essaye de l'imaginer et dessine-le sur cette feuille."@fr .
+		rdfs:label "(RUSSIA1fre) En russe : As-tu déjà entendu le mot \"bog\". Maintenant, essaye de l'imaginer et dessine-le sur cette feuille."@fr .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-InstructionFrList-russia2> a knora-base:ListNode ;
 		knora-base:listNodeName "russia2" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-InstructionFrList> ;
 		knora-base:listNodePosition 7 ;
-		rdfs:label "(RUSSIA2fre) En russe : As-tu déjà entendu le mot \"Bourkhane\" (Dieu en bouriate). Maintenant, essaye de l'imaginer et dessine-le sur cette feuille."@fr .
+		rdfs:label "(RUSSIA2fre) En russe : As-tu déjà entendu le mot \"bourkhane\" (dieu en bouriate). Maintenant, essaye de l'imaginer et dessine-le sur cette feuille."@fr .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-InstructionFrList-switzerland1> a knora-base:ListNode ;
 		knora-base:listNodeName "switzerland1" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-InstructionFrList> ;
 		knora-base:listNodePosition 8 ;
-		rdfs:label "(SWITZ1fre) Vous avez déjà entendu le mot \"Dieu\" ? Est-ce que vous pouvez me le dessiner s'il vous plaît ? Vous pouvez dessiner tout ce qui vous vient à l'esprit lorsque vous pensez au mot \"Dieu\"."@fr .
+		rdfs:label "(SWITZ1fre) Vous avez déjà entendu le mot \"dieu\" ? Est-ce que vous pouvez me le dessiner s'il vous plaît ? Vous pouvez dessiner tout ce qui vous vient à l'esprit lorsque vous pensez au mot \"dieu\"."@fr .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-InstructionFrList-switzerland2> a knora-base:ListNode ;
 		knora-base:listNodeName "switzerland2" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-InstructionFrList> ;
 		knora-base:listNodePosition 9 ;
-		rdfs:label "(SWITZ2fre) Est-ce que vous avez déjà entendu le mot \"Dieu\" ? Maintenant fermez les yeux et essayez de l'imaginer, puis de dessiner. Ne regardez pas le dessin de vos voisins car je voudrais savoir comment vous, vous l'imaginez ou pensez. Dessinez comme vous voulez et comme vous l'imaginez."@fr .
+		rdfs:label "(SWITZ2fre) Est-ce que vous avez déjà entendu le mot \"dieu\" ? Maintenant fermez les yeux et essayez de l'imaginer, puis de dessiner. Ne regardez pas le dessin de vos voisins car je voudrais savoir comment vous, vous l'imaginez ou pensez. Dessinez comme vous voulez et comme vous l'imaginez."@fr .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-InstructionFrList-switzerland3> a knora-base:ListNode ;
 		knora-base:listNodeName "switzerland3" ;
@@ -904,7 +897,7 @@
 		knora-base:listNodeName "usa" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-InstructionFrList> ;
 		knora-base:listNodePosition 11 ;
-		rdfs:label "(USAfre) En anglais: SVP, utilisez ce papier, crayons et marquers pour dessiner un image de Dieu. Il n'a pas de façon correcte ou incorrecte pour dessiner, simplement dessinez comme vous pensez Dieu il est."@fr .
+		rdfs:label "(USAfre) En anglais: SVP, utilisez ce papier, crayons et feutres pour dessiner un image de dieu. Il n'a pas de façon correcte ou incorrecte pour dessiner, simplement dessinez comme vous pensez dieu il est."@fr .
 
 
 ###   LanguageList
@@ -912,7 +905,9 @@
 	knora-base:isRootNode true ;
 	rdfs:comment "Liste de choix pour les langues"@fr ;
 	rdfs:label "Langues (liste)"@fr , "Languages (list)"@en ;
-	knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList-Buriat> ,
+	knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList-NotAsked> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList-None> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList-Buriat> ,
 							<http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList-English> ,
 							<http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList-Persian> ,
 							<http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList-French> ,
@@ -925,76 +920,88 @@
 							<http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList-Romanian> ,
 							<http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList-Russian> .
 
+<http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList-NotAsked> a knora-base:ListNode ;
+		knora-base:listNodeName "NotAsked" ;
+		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList> ;
+		knora-base:listNodePosition 0 ;
+		rdfs:label "Pas demandé"@fr , "Not asked"@en .
+		
+<http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList-None> a knora-base:ListNode ;
+		knora-base:listNodeName "None" ;
+		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList> ;
+		knora-base:listNodePosition 1 ;
+		rdfs:label "Aucune"@fr , "None"@en .
+		
 <http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList-Buriat> a knora-base:ListNode ;
 		knora-base:listNodeName "buriat" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList> ;
-		knora-base:listNodePosition 0 ;
+		knora-base:listNodePosition 2 ;
 		rdfs:label "bouriate"@fr , "Buriat"@en .
 
 <http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList-English> a knora-base:ListNode ;
 		knora-base:listNodeName "english" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList> ;
-		knora-base:listNodePosition 1 ;
+		knora-base:listNodePosition 3 ;
 		rdfs:label "anglais"@fr , "English"@en .
 
 <http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList-Persian> a knora-base:ListNode ;
 		knora-base:listNodeName "persian" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList> ;
-		knora-base:listNodePosition 2 ;
+		knora-base:listNodePosition 4 ;
 		rdfs:label "persan"@fr , "Persian"@en .
 
 <http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList-French> a knora-base:ListNode ;
 		knora-base:listNodeName "french" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList> ;
-		knora-base:listNodePosition 3 ;
+		knora-base:listNodePosition 5 ;
 		rdfs:label "français"@fr , "French"@en .
 
 <http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList-Hindi> a knora-base:ListNode ;
 		knora-base:listNodeName "hindi" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList> ;
-		knora-base:listNodePosition 4 ;
+		knora-base:listNodePosition 6 ;
 		rdfs:label "hindi"@fr , "Hindi"@en .
 
 <http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList-Italian> a knora-base:ListNode ;
 		knora-base:listNodeName "italian" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList> ;
-		knora-base:listNodePosition 5 ;
+		knora-base:listNodePosition 7 ;
 		rdfs:label "italien"@fr , "Italian"@en .
 
 <http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList-Japanese> a knora-base:ListNode ;
 		knora-base:listNodeName "japanese" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList> ;
-		knora-base:listNodePosition 6 ;
+		knora-base:listNodePosition 8 ;
 		rdfs:label "japonais"@fr , "Japanese"@en .
 
 <http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList-Nepali> a knora-base:ListNode ;
 		knora-base:listNodeName "nepali" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList> ;
-		knora-base:listNodePosition 7 ;
+		knora-base:listNodePosition 9 ;
 		rdfs:label "népali"@fr , "Nepali"@en .
 
 <http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList-Dutch> a knora-base:ListNode ;
 		knora-base:listNodeName "dutch" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList> ;
-		knora-base:listNodePosition 8 ;
+		knora-base:listNodePosition 10 ;
 		rdfs:label "néerlandais"@fr , "Dutch"@en .
 
 <http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList-Portuguese> a knora-base:ListNode ;
 		knora-base:listNodeName "portuguese" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList> ;
-		knora-base:listNodePosition 9 ;
+		knora-base:listNodePosition 11 ;
 		rdfs:label "portugais"@fr , "Portuguese"@en .
 
 <http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList-Romanian> a knora-base:ListNode ;
 		knora-base:listNodeName "romanian" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList> ;
-		knora-base:listNodePosition 10 ;
+		knora-base:listNodePosition 12 ;
 		rdfs:label "roumain"@fr , "Romanian"@en .
 
 <http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList-Russian> a knora-base:ListNode ;
 		knora-base:listNodeName "russian" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList> ;
-		knora-base:listNodePosition 11 ;
+		knora-base:listNodePosition 13 ;
 		rdfs:label "russe"@fr , "Russian"@en .
 
 ###    ScannerBrandList
@@ -2342,7 +2349,7 @@
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 				knora-base:listNodeName "panauti" ;
 				knora-base:listNodePosition 2 ;
-				rdfs:label "Town of Panauti"@fr , "ville de Panauti"@en ;
+				rdfs:label "Ville de Panauti"@fr , "Town of Panauti"@en ;
 				knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-kamigaon> .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-kamigaon> a knora-base:ListNode ;
@@ -2768,13 +2775,13 @@
 		knora-base:listNodeName "switzerland1" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-InstructionOriginalList> ;
 		knora-base:listNodePosition 8 ;
-		rdfs:label "(SWITZ1or) Vous avez déjà entendu le mot \"Dieu\" ? Est-ce que vous pouvez me le dessiner s'il vous plaît ? Vous pouvez dessiner tout ce qui vous vient à l'esprit lorsque vous pensez au mot \"Dieu\"." .
+		rdfs:label "(SWITZ1or) Vous avez déjà entendu le mot \"dieu\" ? Est-ce que vous pouvez me le dessiner s'il vous plaît ? Vous pouvez dessiner tout ce qui vous vient à l'esprit lorsque vous pensez au mot \"dieu\"." .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-InstructionOriginalList-switzerland2> a knora-base:ListNode ;
 		knora-base:listNodeName "switzerland2" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-InstructionOriginalList> ;
 		knora-base:listNodePosition 9 ;
-		rdfs:label "(SWITZ2or) Est-ce que vous avez déjà entendu le mot \"Dieu\" ? Maintenant fermez les yeux et essayez de l'imaginer, puis de dessiner. Ne regardez pas le dessin de vos voisins car je voudrais savoir comment vous, vous l'imaginez ou pensez. Dessinez comme vous voulez et comme vous l'imaginez." .
+		rdfs:label "(SWITZ2or) Est-ce que vous avez déjà entendu le mot \"dieu\" ? Maintenant fermez les yeux et essayez de l'imaginer, puis de dessiner. Ne regardez pas le dessin de vos voisins car je voudrais savoir comment vous, vous l'imaginez ou pensez. Dessinez comme vous voulez et comme vous l'imaginez." .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-InstructionOriginalList-switzerland3> a knora-base:ListNode ;
 		knora-base:listNodeName "switzerland3" ;
@@ -2786,7 +2793,7 @@
 		knora-base:listNodeName "usa" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-InstructionOriginalList> ;
 		knora-base:listNodePosition 11 ;
-		rdfs:label "(USAor) Please use this piece of paper and the pencils, crayons, and markers to draw a picture of God. There is no right or wrong way to draw the picture, just draw what you think God looks like." .
+		rdfs:label "(USAor) Please use this piece of paper and the pencils, crayons, and markers to draw a picture of god. There is no right or wrong way to draw the picture, just draw what you think god looks like." .
 
 
 ###   EthnicityList
@@ -2915,7 +2922,9 @@
 	knora-base:isRootNode true ;
 	rdfs:comment "Liste hiérarchique de choix pour les religions (participants et institutions)"@fr ;
 	rdfs:label "Religion (liste hiérarchique)"@fr , "Religion (hierarchical list)"@en ;
-	knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-christian> ,
+	knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-notasked> ,
+				<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-notrelinst> ,
+				<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-christian> ,
 				<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-buddhist> ,
 				<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-hinduist> ,
 				<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-jewish> ,
@@ -2926,10 +2935,22 @@
 				<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-zoroastrian> ,
 				<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-other1> .
 
+	<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-notasked> a knora-base:ListNode ;
+		knora-base:listNodeName "notasked" ;
+		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList> ;
+		knora-base:listNodePosition 0 ;
+		rdfs:label "Pas demandé"@fr , "Not asked"@en .
+		
+	<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-notrelinst> a knora-base:ListNode ;
+		knora-base:listNodeName "notrelinst" ;
+		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList> ;
+		knora-base:listNodePosition 1 ;
+		rdfs:label "Non-religieuse (pour les institutions)"@fr , "Non-religious (for institutions)"@en .
+									
 	<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-christian> a knora-base:ListNode ;
 		knora-base:listNodeName "christian" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList> ;
-		knora-base:listNodePosition 0 ;
+		knora-base:listNodePosition 2 ;
 		rdfs:label "Chrétien"@fr , "Christian"@en ;
 		knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-catholic> ,
 									<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-protestant> ,
@@ -2963,25 +2984,25 @@
 	<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-buddhist> a knora-base:ListNode ;
 		knora-base:listNodeName "buddhist" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList> ;
-		knora-base:listNodePosition 1 ;
+		knora-base:listNodePosition 3 ;
 		rdfs:label "Bouddhiste"@fr , "Buddhist"@en .
 		
 	<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-hinduist> a knora-base:ListNode ;
 		knora-base:listNodeName "hinduist" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList> ;
-		knora-base:listNodePosition 2 ;
+		knora-base:listNodePosition 4 ;
 		rdfs:label "Hindouiste"@fr , "Hinduist"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-jewish> a knora-base:ListNode ;
 		knora-base:listNodeName "jewish" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList> ;
-		knora-base:listNodePosition 3 ;
+		knora-base:listNodePosition 5 ;
 		rdfs:label "Juif"@fr , "Jewish"@en .
 			
 	<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-muslim> a knora-base:ListNode ;
 		knora-base:listNodeName "muslim" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList> ;
-		knora-base:listNodePosition 4 ;
+		knora-base:listNodePosition 6 ;
 		rdfs:label "Musulmane"@fr , "Muslim"@en ;
 		knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-shiit> ,
 						<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-sunnit> .
@@ -3001,31 +3022,31 @@
 	<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-shamanist> a knora-base:ListNode ;
 		knora-base:listNodeName "shamanist" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList> ;
-		knora-base:listNodePosition 5 ;
-		rdfs:label "Shamaniste"@fr , "Shamanist"@en .
+		knora-base:listNodePosition 7 ;
+		rdfs:label "Chamaniste"@fr , "Shamanist"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-shintoist> a knora-base:ListNode ;
 		knora-base:listNodeName "shintoist" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList> ;
-		knora-base:listNodePosition 6 ;
+		knora-base:listNodePosition 8 ;
 		rdfs:label "Shintoiste"@fr , "Shintoist"@en .			
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-taoist> a knora-base:ListNode ;
 		knora-base:listNodeName "taoist" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList> ;
-		knora-base:listNodePosition 7 ;
+		knora-base:listNodePosition 9 ;
 		rdfs:label "Taoiste"@fr , "Taoist"@en .
 		
 	<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-zoroastrian> a knora-base:ListNode ;
 		knora-base:listNodeName "zoroastrian" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList> ;
-		knora-base:listNodePosition 8 ;
+		knora-base:listNodePosition 10 ;
 		rdfs:label "Zoroastrien"@fr , "Zoroastrian"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-other1> a knora-base:ListNode ;
 		knora-base:listNodeName "other" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList> ;
-		knora-base:listNodePosition 9 ;
+		knora-base:listNodePosition 11 ;
 		rdfs:label "Autre"@fr , "Other"@en ;
 		knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-atheist> ,
 									<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList-doesnotknow> ,
@@ -3973,6 +3994,7 @@
 	<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ-weekly> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ-monthly> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ-yearly> ,
+	<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ-NewYear> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ-fewtimesayear> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ-once> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ-afterlunch> ,
@@ -4030,6 +4052,12 @@
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ> ;
 		knora-base:listNodePosition 7 ;
 		rdfs:label "Chaque année"@fr , "Early"@en .
+		
+	<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ-NewYear> a knora-base:ListNode ;
+		knora-base:listNodeName "NewYear" ;
+		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ> ;
+		knora-base:listNodePosition 7 ;
+		rdfs:label "A nouvel an"@fr , "On New Year's eve"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ-fewtimesayear> a knora-base:ListNode ;
 		knora-base:listNodeName "fewtimesayear" ;
@@ -4268,8 +4296,8 @@
 	rdfs:comment "Liste de choix pour le visites aux temple au Japon pendant la fête de Nouvelle An"@fr ;
 	rdfs:label "Visite de temple au Japon pendant le Nouvel An (liste)"@fr , "Temple visit in Japan at New Year Eve (list)"@en ;
 	knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-JapanNYListQ-notasked> ,
-	<http://rdfh.ch/lists/drawings-gods-2016-list-JapanNYListQ-jinjyaotera> ,
-	<http://rdfh.ch/lists/drawings-gods-2016-list-JapanNYListQ-jinjya> ,
+	<http://rdfh.ch/lists/drawings-gods-2016-list-JapanNYListQ-jinjaotera> ,
+	<http://rdfh.ch/lists/drawings-gods-2016-list-JapanNYListQ-jinja> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-JapanNYListQ-otera> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-JapanNYListQ-temple> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-JapanNYListQ-church> ,
@@ -4282,17 +4310,17 @@
 		knora-base:listNodePosition 0 ;
 		rdfs:label "Pas demandé"@fr , "Not asked"@en .
 
-	<http://rdfh.ch/lists/drawings-gods-2016-list-JapanNYListQ-jinjyaotera> a knora-base:ListNode ;
-		knora-base:listNodeName "jinjyaotera" ;
+	<http://rdfh.ch/lists/drawings-gods-2016-list-JapanNYListQ-jinjaotera> a knora-base:ListNode ;
+		knora-base:listNodeName "jinjaotera" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-JapanNYListQ> ;
 		knora-base:listNodePosition 1 ;
-		rdfs:label "jinjya ou otera"@fr , "jinjya or otera"@en .
+		rdfs:label "jinja ou otera"@fr , "jinja or otera"@en .
 
-	<http://rdfh.ch/lists/drawings-gods-2016-list-JapanNYListQ-jinjya> a knora-base:ListNode ;
-		knora-base:listNodeName "jinjya" ;
+	<http://rdfh.ch/lists/drawings-gods-2016-list-JapanNYListQ-jinja> a knora-base:ListNode ;
+		knora-base:listNodeName "jinja" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-JapanNYListQ> ;
 		knora-base:listNodePosition 2 ;
-		rdfs:label "jinjya"@fr , "jinjya"@en .
+		rdfs:label "jinja"@fr , "jinja"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-JapanNYListQ-otera> a knora-base:ListNode ;
 		knora-base:listNodeName "otera" ;
@@ -4310,7 +4338,7 @@
 		knora-base:listNodeName "church" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-JapanNYListQ> ;
 		knora-base:listNodePosition 5 ;
-		rdfs:label "eglise"@fr , "church"@en .
+		rdfs:label "église"@fr , "church"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-JapanNYListQ-other> a knora-base:ListNode ;
 		knora-base:listNodeName "other" ;
@@ -4369,7 +4397,7 @@
 		knora-base:listNodeName "altar" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-JapanObjectListQ> ;
 		knora-base:listNodePosition 4 ;
-		rdfs:label "altar"@fr , "altar"@en .
+		rdfs:label "autel"@fr , "altar"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-JapanObjectListQ-other> a knora-base:ListNode ;
 		knora-base:listNodeName "other" ;
@@ -5000,7 +5028,7 @@
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-VillageHList> ;
 				knora-base:listNodeName "panauti" ;
 				knora-base:listNodePosition 2 ;
-				rdfs:label "Town of Panauti"@fr , "ville de Panauti"@en .
+				rdfs:label "Ville de Panauti"@fr , "Town of Panauti"@en .
 
 			<http://rdfh.ch/lists/drawings-gods-2016-list-VillageHList-swayambhunath> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-VillageHList> ;
@@ -5384,7 +5412,7 @@
 			knora-base:listNodeName "humanoid" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList> ;
 			knora-base:listNodePosition 1 ;
-			rdfs:label "Figure humanoide"@fr , "humanoid figure"@en ;
+			rdfs:label "Figure humanoïde"@fr , "humanoid figure"@en ;
 			knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-normalhuman> ,
 										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-culturalfigure> ,
 										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-religiousfigure> ,
@@ -5463,7 +5491,7 @@
 					knora-base:listNodeName "ganesha" ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList> ;
 					knora-base:listNodePosition 4 ;
-					rdfs:label "Ganesh"@fr , "Ganesha"@en .
+					rdfs:label "Ganesa"@fr , "Ganesh"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-jesus> a knora-base:ListNode ;
 					knora-base:listNodeName "jesus" ;
@@ -5553,7 +5581,7 @@
 					knora-base:listNodeName "vishnu" ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList> ;
 					knora-base:listNodePosition 19 ;
-					rdfs:label "Vishnu"@fr , "Vishnou"@en .
+					rdfs:label "Vishnu"@fr , "Vishnu"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-greekgod> a knora-base:ListNode ;
 					knora-base:listNodeName "greekgod" ;
@@ -5663,7 +5691,7 @@
 					knora-base:listNodeName "nimb" ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList> ;
 					knora-base:listNodePosition 9 ;
-					rdfs:label "Nimbe"@fr , "Nimb"@en .
+					rdfs:label "Nimbe"@fr , "Nimbus"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-noface> a knora-base:ListNode ;
 					knora-base:listNodeName "noface" ;
@@ -5681,7 +5709,7 @@
 					knora-base:listNodeName "onlyeyes" ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList> ;
 					knora-base:listNodePosition 12 ;
-					rdfs:label "Ques des yeux (un oeil)"@fr , "Only eyes (or eye)"@en .
+					rdfs:label "Que des yeux (un oeil)"@fr , "Only eyes (or eye)"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-manyeyes> a knora-base:ListNode ;
 					knora-base:listNodeName "manyeyes" ;
@@ -5735,13 +5763,13 @@
 					knora-base:listNodeName "symmetrical" ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList> ;
 					knora-base:listNodePosition 21 ;
-					rdfs:label "Corps symmétrique"@fr , "Symmetrical body"@en .
+					rdfs:label "Corps symétrique"@fr , "Symmetrical body"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-assymetrical> a knora-base:ListNode ;
 					knora-base:listNodeName "assymetrical" ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList> ;
 					knora-base:listNodePosition 22 ;
-					rdfs:label "Corps assymétrique"@fr , "Asymmetrical body"@en .
+					rdfs:label "Corps asymétrique"@fr , "Asymmetrical body"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-unhumanshape> a knora-base:ListNode ;
 					knora-base:listNodeName "unhumanshape" ;
@@ -5782,7 +5810,7 @@
 					knora-base:listNodeName "clothes" ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList> ;
 					knora-base:listNodePosition 1 ;
-					rdfs:label "Habits particulers"@fr , "Special clothes"@en ;
+					rdfs:label "Habits particuliers"@fr , "Special clothes"@en ;
 					knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-whiterobe> ,
 										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-religiousclothes> ,
 										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-modernclothes> ,
@@ -5993,7 +6021,7 @@
 			knora-base:listNodeName "sunlightrays" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList> ;
 			knora-base:listNodePosition 4 ;
-			rdfs:label "Soleil, limière"@fr , "Sun, light, rays"@en ;
+			rdfs:label "Soleil, lumière"@fr , "Sun, light, rays"@en ;
 			knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-light> ,
 										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-rays> ,
 										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-stars> ,
@@ -6078,13 +6106,13 @@
 				knora-base:listNodeName "colombe" ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList> ;
 				knora-base:listNodePosition 4 ;
-				rdfs:label "Colombe"@fr , "Colombe"@en .
+				rdfs:label "Colombe"@fr , "Pigeon"@en .
 
 			<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-Coran> a knora-base:ListNode ;
 				knora-base:listNodeName "Coran" ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList> ;
 				knora-base:listNodePosition 5 ;
-				rdfs:label "Coran"@fr , "Coran"@en .
+				rdfs:label "Coran"@fr , "Koran"@en .
 
 			<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-cross> a knora-base:ListNode ;
 				knora-base:listNodeName "cross" ;
@@ -6132,7 +6160,7 @@
 				knora-base:listNodeName "svastika" ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList> ;
 				knora-base:listNodePosition 13 ;
-				rdfs:label "Svastika"@fr , "Svastika"@en .
+				rdfs:label "Svastika"@fr , "Swastika"@en .
 
 			<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-tilak> a knora-base:ListNode ;
 				knora-base:listNodeName "tilak" ;
@@ -6162,7 +6190,7 @@
 				knora-base:listNodeName "yinyang" ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList> ;
 				knora-base:listNodePosition 18 ;
-				rdfs:label "Yinyang"@fr , "Yinyang"@en .
+				rdfs:label "Yin yang"@fr , "Yinyang"@en .
 
 			<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-yantra> a knora-base:ListNode ;
 				knora-base:listNodeName "yantra" ;
@@ -6536,7 +6564,7 @@
 			knora-base:listNodeName "symmetryprominent" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList> ;
 			knora-base:listNodePosition 10 ;
-			rdfs:label "Image est très symmetrique"@fr , "Drawing is very symmetrical"@en .
+			rdfs:label "Image est très symétrique"@fr , "Drawing is very symmetrical"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList-inpicture> a knora-base:ListNode ;
 			knora-base:listNodeName "inpicture" ;
@@ -6622,8 +6650,7 @@
 	knora-base:isRootNode true ;
 	rdfs:comment "Liste hiérarchique de choix pour l'identité religieuse de l'image"@fr ;
 	rdfs:label "Identité religieuse du dessin"@fr , "Religious identity of the image"@en ;
-	knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-DrawingReligiousIdentityList-clear> ,
-									<http://rdfh.ch/lists/drawings-gods-2016-list-DrawingReligiousIdentityList-none> ,
+	knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-DrawingReligiousIdentityList-unclear> ,
 									<http://rdfh.ch/lists/drawings-gods-2016-list-DrawingReligiousIdentityList-christian> ,
 									<http://rdfh.ch/lists/drawings-gods-2016-list-DrawingReligiousIdentityList-muslim> ,
 									<http://rdfh.ch/lists/drawings-gods-2016-list-DrawingReligiousIdentityList-buddhist> ,
@@ -6636,82 +6663,76 @@
 									<http://rdfh.ch/lists/drawings-gods-2016-list-DrawingReligiousIdentityList-shamanist> ,
 									<http://rdfh.ch/lists/drawings-gods-2016-list-DrawingReligiousIdentityList-other3> .
 
-		<http://rdfh.ch/lists/drawings-gods-2016-list-DrawingReligiousIdentityList-clear> a knora-base:ListNode ;
-			knora-base:listNodeName "clear" ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-DrawingReligiousIdentityList-unclear> a knora-base:ListNode ;
+			knora-base:listNodeName "unclear" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-DrawingReligiousIdentityList> ;
 			knora-base:listNodePosition 0 ;
-			rdfs:label "L'identité religieuse est claire"@fr , "The image has clear religious identity"@en .
-
-		<http://rdfh.ch/lists/drawings-gods-2016-list-DrawingReligiousIdentityList-none> a knora-base:ListNode ;
-			knora-base:listNodeName "none" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-DrawingReligiousIdentityList> ;
-			knora-base:listNodePosition 1 ;
-			rdfs:label "L'image n'a pas d'identité religieuse claire"@fr , "The image has no clear religious identity"@en .
+			rdfs:label "L'identité religieuse non-detéctée"@fr , "The image has no clear religious identity"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-DrawingReligiousIdentityList-christian> a knora-base:ListNode ;
 			knora-base:listNodeName "christian" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-DrawingReligiousIdentityList> ;
-			knora-base:listNodePosition 2 ;
+			knora-base:listNodePosition 1 ;
 			rdfs:label "Chrétien"@fr , "Christian"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-DrawingReligiousIdentityList-muslim> a knora-base:ListNode ;
 			knora-base:listNodeName "muslim" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-DrawingReligiousIdentityList> ;
-			knora-base:listNodePosition 3 ;
+			knora-base:listNodePosition 2 ;
 			rdfs:label "Musulman"@fr , "Muslim"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-DrawingReligiousIdentityList-buddhist> a knora-base:ListNode ;
 			knora-base:listNodeName "buddhist" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-DrawingReligiousIdentityList> ;
-			knora-base:listNodePosition 4 ;
+			knora-base:listNodePosition 3 ;
 			rdfs:label "Bouddhiste"@fr , "Buddhist"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-DrawingReligiousIdentityList-hindu> a knora-base:ListNode ;
 			knora-base:listNodeName "hindu" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-DrawingReligiousIdentityList> ;
-			knora-base:listNodePosition 5 ;
+			knora-base:listNodePosition 4 ;
 			rdfs:label "Hindou"@fr , "Hindu"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-DrawingReligiousIdentityList-jewish> a knora-base:ListNode ;
 			knora-base:listNodeName "jewish" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-DrawingReligiousIdentityList> ;
-			knora-base:listNodePosition 6 ;
+			knora-base:listNodePosition 5 ;
 			rdfs:label "Juif"@fr , "Jewish"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-DrawingReligiousIdentityList-shinto> a knora-base:ListNode ;
 			knora-base:listNodeName "shinto" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-DrawingReligiousIdentityList> ;
-			knora-base:listNodePosition 7 ;
+			knora-base:listNodePosition 6 ;
 			rdfs:label "Shinto"@fr , "Shinto"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-DrawingReligiousIdentityList-taoist> a knora-base:ListNode ;
 			knora-base:listNodeName "taoist" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-DrawingReligiousIdentityList> ;
-			knora-base:listNodePosition 8 ;
-			rdfs:label "Taoist"@fr , "Taoist"@en .
+			knora-base:listNodePosition 7 ;
+			rdfs:label "Taoïste"@fr , "Taoist"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-DrawingReligiousIdentityList-greek> a knora-base:ListNode ;
 			knora-base:listNodeName "greek" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-DrawingReligiousIdentityList> ;
-			knora-base:listNodePosition 9 ;
-			rdfs:label "Greque (ancient)"@fr , "Greek"@en .
+			knora-base:listNodePosition 8 ;
+			rdfs:label "Grecque (ancien)"@fr , "Greek"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-DrawingReligiousIdentityList-egyptian> a knora-base:ListNode ;
 			knora-base:listNodeName "egyptian" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-DrawingReligiousIdentityList> ;
-			knora-base:listNodePosition 10 ;
+			knora-base:listNodePosition 9 ;
 			rdfs:label "Egyptien"@fr , "Egyptian"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-DrawingReligiousIdentityList-shamanist> a knora-base:ListNode ;
 			knora-base:listNodeName "shamanist" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-DrawingReligiousIdentityList> ;
-			knora-base:listNodePosition 11 ;
-			rdfs:label "Shamanist, animalist"@fr , "Shamanist, animalist"@en .
+			knora-base:listNodePosition 10 ;
+			rdfs:label "Chamaniste, animalist"@fr , "Shamanist, animalist"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-DrawingReligiousIdentityList-other3> a knora-base:ListNode ;
 			knora-base:listNodeName "other" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-DrawingReligiousIdentityList> ;
-			knora-base:listNodePosition 12 ;
+			knora-base:listNodePosition 11 ;
 			rdfs:label "Autre tradition religieuse"@fr , "Other religious tradition"@en .
 
 
