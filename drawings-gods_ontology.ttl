@@ -168,7 +168,7 @@
           knora-base:subjectClassConstraint :Drawing ;
           rdfs:label "Visite"@fr ,
                      "Group visit"@en ;
-          rdfs:comment "Le dessin a été collecté dans le cadre d'un visite donné."@fr ,
+          rdfs:comment "Le dessin a été collecté dans le cadre d'une visite précise."@fr ,
 					 "The drawing was collected within a given group visit."@en ;
           salsah-gui:guiElement salsah-gui:Searchbox ;
           salsah-gui:guiOrder "6"^^xsd:integer .
@@ -182,7 +182,7 @@
           knora-base:subjectClassConstraint :Drawing ;
           rdfs:label "Visite"@fr ,
                      "Group visit"@en ;
-          rdfs:comment "Le dessin a été collecté dans le cadre d'un visite donné."@fr ,
+          rdfs:comment "Le dessin a été collecté dans le cadre d'une visite précise."@fr ,
 					 "The drawing was collected within a given group visit."@en .
 
 
@@ -301,7 +301,7 @@
               rdfs:label "Nom"@fr ,
               	"Name"@en ;
 			  rdfs:comment "Nom du questionnaire standardisé."@fr ,
-			  	"Name of the standardized questionnairen."@en ;
+			  	"Name of the standardized questionnaire."@en ;
 			  salsah-gui:guiElement salsah-gui:SimpleText ;
       		  salsah-gui:guiOrder "1"^^xsd:integer .
 
@@ -314,7 +314,7 @@
                        knora-base:subjectClassConstraint :Campaign ;
                        rdfs:label "Personne de contact (campagne de recherche)"@fr ,
               				"Contact person (research wave)"@en ;
-			  		   rdfs:comment "Personne coordinatrice rattachée à l'institution avec laquelle a lieu la récolte."@fr ,
+			  		   rdfs:comment "Personne coordinatrice rattachée à l'institution dans laquelle a lieu la récolte."@fr ,
 			  				"Coordinator affiliated with data collection institution."@en ;
 			  		   salsah-gui:guiElement salsah-gui:SimpleText ;
 		               salsah-gui:guiOrder "5"^^xsd:integer .
@@ -351,9 +351,9 @@
             rdfs:subPropertyOf :hasCode ;
             knora-base:objectClassConstraint knora-base:TextValue ;
             knora-base:subjectClassConstraint :Person ;
-            rdfs:label "Code du participant"@fr ,
+            rdfs:label "Cote du participant"@fr ,
            		"Code of the participant"@en ;
-		 	rdfs:comment "ID de person stable."@fr ,
+		 	rdfs:comment "ID unique pour chaque personne."@fr ,
 				"ID for each person."@en ;
 			salsah-gui:guiElement salsah-gui:SimpleText ;
 	        salsah-gui:guiOrder "1"^^xsd:integer .
@@ -415,9 +415,9 @@
                       rdfs:subPropertyOf knora-base:hasValue ;
                       knora-base:subjectClassConstraint :Passage ;
                       knora-base:objectClassConstraint knora-base:BooleanValue ;
-                      rdfs:label "Règles standard de la collecte pour le matériel"@fr ,
+                      rdfs:label "Règles standard de collecte pour le matériel"@fr ,
            				"Standard rules of the collect for the material"@en ;
-		   			  rdfs:comment "Est-ce que les règles standard ont été respectées pour type de papier et les couleurs (A4, papier blanc, néocolors)?"@fr ,
+		   			  rdfs:comment "Est-ce que les règles standard ont été respectées pour le type de papier et les couleurs (A4, papier blanc, néocolors)?"@fr ,
 						"Were the standard rules respected for the paper type and the colours (A4, white paper, neocolors)?"@en ;
 					  salsah-gui:guiOrder "7"^^xsd:integer ;
        		  		  salsah-gui:guiElement salsah-gui:Checkbox .
@@ -428,9 +428,9 @@
                    rdfs:subPropertyOf knora-base:hasValue ;
                    knora-base:subjectClassConstraint :Passage ;
                    knora-base:objectClassConstraint knora-base:BooleanValue ;
-                   rdfs:label "Règles standard de la collecte pour le lieu"@fr ,
+                   rdfs:label "Règles standard de collecte pour le lieu"@fr ,
            				"Standard rules of the collect for the place"@en ;
-		   		   rdfs:comment "Est-ce que les enfants ne pouvaient pas regarder les autres enfants et sont dans une pièce intérieure (ex: salle de classe)?"@fr ,
+		   		   rdfs:comment "Est-ce que les enfants ne pouvaient pas regarder les autres enfants et étaient dans une pièce intérieure (ex: salle de classe)?"@fr ,
 						"Have the children no possibility to show to other children and were they in an intern place (ex: classroom)?"@en ;
        			   salsah-gui:guiOrder "8"^^xsd:integer ;
        		  	   salsah-gui:guiElement salsah-gui:Checkbox .
@@ -483,9 +483,9 @@
                knora-base:objectClassConstraint knora-base:ListValue ;
                knora-base:subjectClassConstraint :Verso ;
                rdfs:label "Auteur(s) du commentaire"@fr ,
-           			"Author(s) of the commentary"@en ;
+           			"Author(s) of the comment"@en ;
 		   	   rdfs:comment "Auteur(s) du commentaire."@fr ,
-					"Author(s) of the commentary."@en ;
+					"Author(s) of the comment."@en ;
                salsah-gui:guiOrder "17"^^xsd:integer ;
                salsah-gui:guiElement salsah-gui:Pulldown ;
                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-CommentAuthorList>" .
@@ -497,9 +497,9 @@
            knora-base:objectClassConstraint knora-base:TextValue ;
            knora-base:subjectClassConstraint :Verso ;
            rdfs:label "Commentaire en anglais"@fr ,
-				"Commentary in English"@en ;
+				"Comment in English"@en ;
 		   rdfs:comment "Commentaire en anglais."@fr ,
-				"Commentary in English."@en ;
+				"Comment in English."@en ;
          salsah-gui:guiElement salsah-gui:Textarea ;
          salsah-gui:guiOrder "15"^^xsd:integer ;
 		 salsah-gui:guiAttribute "width=95%" ,
@@ -513,9 +513,9 @@
            knora-base:objectClassConstraint knora-base:TextValue ;
            knora-base:subjectClassConstraint :Verso ;
            rdfs:label "Commentaire en français"@fr ,
-				"Commentary in French"@en ;
+				"Comment in French"@en ;
 		   rdfs:comment "Commentaire en français."@fr ,
-				"Commentary in French."@en ;
+				"Comment in French."@en ;
          salsah-gui:guiElement salsah-gui:Textarea ;
          salsah-gui:guiOrder "16"^^xsd:integer ;
 		 salsah-gui:guiAttribute "width=95%" ,
@@ -528,9 +528,9 @@
                  knora-base:objectClassConstraint knora-base:TextValue ;
            		 knora-base:subjectClassConstraint :Verso ;
                  rdfs:label "Commentaire en langue originale"@fr ,
-					"Commentary in original language"@en ;
+					"Comment in original language"@en ;
 		   		 rdfs:comment "Commentaire du collecteur en langue originale (observations)."@fr ,
-					"Commentary of the collector in original language (observations)."@en ;
+					"Comment of the collector in original language (observations)."@en ;
 		         salsah-gui:guiElement salsah-gui:Textarea ;
 		         salsah-gui:guiOrder "14"^^xsd:integer ;
 				 salsah-gui:guiAttribute "width=95%" ,
@@ -543,9 +543,9 @@
              	  		 knora-base:objectClassConstraint knora-base:ListValue ;
                          knora-base:subjectClassConstraint :Verso ;
                          rdfs:label "Langue originale du commentaire"@fr ,
-							"Original language of the commentary"@en ;
+							"Original language of the comment"@en ;
 		   		 		 rdfs:comment "Langue originale du commentaire."@fr ,
-							"Original language of the commentary."@en ;
+							"Original language of the comment."@en ;
 						 salsah-gui:guiOrder "13"^^xsd:integer ;
 			             salsah-gui:guiElement salsah-gui:Pulldown ;
 		          	     salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList>" .
@@ -556,10 +556,10 @@
          rdfs:subPropertyOf knora-base:hasValue ;
          knora-base:objectClassConstraint knora-base:TextValue ;
          knora-base:subjectClassConstraint :Passage ;
-         rdfs:label "Contexte de la collecte (spécifique au visite)"@fr ,
+         rdfs:label "Contexte de la collecte (spécifique à la visite)"@fr ,
 			"Context of collect (group visit specific)"@en ;
 		 rdfs:comment "Cadre de l'enseignement (pour un contexte qui peut être multiple - ex.: cours de religion à l'école)."@fr ,
-			"Teaching frame (for a context which can be multiple - ex.: religion scores at school)."@en ;
+			"Teaching frame (for a context which can be multiple - ex.: religion class at school)."@en ;
          salsah-gui:guiElement salsah-gui:Textarea ;
          salsah-gui:guiOrder "4"^^xsd:integer ;
 		 salsah-gui:guiAttribute "width=95%" ,
@@ -651,9 +651,9 @@
                rdfs:subPropertyOf knora-base:hasValue ;
                knora-base:objectClassConstraint knora-base:BooleanValue ;
                knora-base:subjectClassConstraint :QualityData ;
-               rdfs:label "Description en accord avec la tâche"@fr ,
+               rdfs:label "La description est en accord avec la tâche"@fr ,
 					"Description is in accordance with the given task"@en ;
-			   rdfs:comment "Description d'image ne contredit pas la consigne."@fr ,
+			   rdfs:comment "La description de l'image ne contredit pas la consigne."@fr ,
 					"Description is in accordance with the given task."@en ;
 			   salsah-gui:guiElement salsah-gui:Checkbox ;
       	       salsah-gui:guiOrder "10"^^xsd:integer .
@@ -663,9 +663,9 @@
                rdfs:subPropertyOf knora-base:hasValue ;
                knora-base:objectClassConstraint knora-base:BooleanValue ;
                knora-base:subjectClassConstraint :QualityData ;
-               rdfs:label "Dessin en accord avec la tâche"@fr ,
+               rdfs:label "Le dessin est en accord avec la tâche"@fr ,
 					"Drawing is in accordance with the given task"@en ;
-			   rdfs:comment "Dessin en accord avec la tâche."@fr ,
+			   rdfs:comment "Le dessin est en accord avec la tâche."@fr ,
 					"Drawing is in accordance with the given task."@en ;
 			   salsah-gui:guiElement salsah-gui:Checkbox ;
       	       salsah-gui:guiOrder "10"^^xsd:integer .
@@ -733,7 +733,7 @@
                        rdfs:subPropertyOf :hasAgeYear ;
                        knora-base:subjectClassConstraint :Drawing ;
                        knora-base:objectClassConstraint knora-base:IntValue ;
-                       rdfs:label "Age approximé estimé en années"@fr ,
+                       rdfs:label "Age estimé et attribué en années"@fr ,
 							"Approximate assigned age in years"@en ;
 	   				   rdfs:comment "Age estimé en années."@fr ,
 							"Estimated age in years."@en ;
@@ -910,9 +910,9 @@
            knora-base:objectClassConstraint knora-base:TextValue ;
            knora-base:subjectClassConstraint :Person ;
            rdfs:label "Prénom"@fr ,
-                     	"Personal name"@en ;
+                     	"First name"@en ;
 		   rdfs:comment "Prénom."@fr ,
-					 	"Personal name."@en ;
+					 	"First name."@en ;
 		   salsah-gui:guiElement salsah-gui:SimpleText ;
       	   salsah-gui:guiOrder "3"^^xsd:integer .
 
@@ -945,10 +945,10 @@
            rdfs:subPropertyOf knora-base:hasValue ;
            knora-base:objectClassConstraint knora-base:BooleanValue ;
            knora-base:subjectClassConstraint :QualityData ;
-           rdfs:label "Image est fait en une seule couleur"@fr ,
-                     	"Image is in a single colour"@en ;
-		   rdfs:comment "Image est fait en une seule couleur."@fr ,
-					 	"Image is in a single colour."@en ;
+           rdfs:label "Le dessin se compose d'une seule couleur"@fr ,
+                     	"Drawing is in a single colour"@en ;
+		   rdfs:comment "Le dessin se compose d'une seule couleur."@fr ,
+					 	"Drawing is in a single colour."@en ;
 		   salsah-gui:guiOrder "7"^^xsd:integer ;
        	   salsah-gui:guiElement salsah-gui:Checkbox .
 
@@ -982,7 +982,7 @@
             rdfs:label "A dessiné"@fr ,
                      	"Has drawn"@en ;
             rdfs:comment "Est l'auteur des dessins suivants."@fr ,
-					 	"Is author of the following drawings."@en ;
+					 	"Is the author of the following drawings."@en ;
 			salsah-gui:guiElement salsah-gui:Searchbox ;
             salsah-gui:guiOrder "6"^^xsd:integer .
 
@@ -995,7 +995,7 @@
             rdfs:label "A dessiné"@fr ,
                      	"Has drawn"@en ;
             rdfs:comment "Est l'auteur des dessins suivants"@fr ,
-					 	"Is author of the following drawings"@en .
+					 	"Is the author of the following drawings"@en .
 
 ###  http://www.knora.org/ontology/0105#hasLinkedFile
 :hasLinkedFile rdf:type owl:ObjectProperty ;
@@ -1177,7 +1177,7 @@
                      knora-base:objectClassConstraint knora-base:ListValue ;
                      rdfs:label "Instruction en langue originale"@fr ,
                      	"Instruction in original language"@en ;
-			   		 rdfs:comment "Instruction en originale."@fr ,
+			   		 rdfs:comment "Instruction en langue originale."@fr ,
 					 	"Instruction in original language."@en ;
 					 salsah-gui:guiOrder "3"^^xsd:integer ;
         	   		 salsah-gui:guiElement salsah-gui:Pulldown ;
@@ -1205,7 +1205,7 @@
                         knora-base:objectClassConstraint knora-base:TextValue ;
                         knora-base:subjectClassConstraint :Verso ;
                         rdfs:label "Restitution de l'instruction"@fr ,
-								"Restitution of the task"@en ;
+								"Recall of the task"@en ;
 					    salsah-gui:guiElement salsah-gui:SimpleText ;
 		                salsah-gui:guiOrder "2"^^xsd:integer .
 
@@ -1216,9 +1216,9 @@
                                     knora-base:objectClassConstraint knora-base:TextValue ;
                         			knora-base:subjectClassConstraint :Verso ;
                                     rdfs:label "Restitution de l'instruction en langue originale non-corrigée"@fr ,
-										"Restitution of the task in original language non-corrected"@en ;
+										"Recall of the task in original language non-corrected"@en ;
 		   		 		 	 		rdfs:comment "Restitution de l'instruction en langue originale non-corrigée."@fr ,
-										"Restitution of the task in original language non-corrected."@en ;
+										"Recall of the task in original language non-corrected."@en ;
 									salsah-gui:guiElement salsah-gui:Textarea ;
 					                salsah-gui:guiOrder "4"^^xsd:integer ;
 								    salsah-gui:guiAttribute "width=95%" ,
@@ -1231,9 +1231,9 @@
                           knora-base:objectClassConstraint knora-base:TextValue ;
                           knora-base:subjectClassConstraint :Verso ;
                           rdfs:label "Restitution de l'instruction en anglais"@fr ,
-									"Restitution of the task in English"@en ;
+									"Recall of the task in English"@en ;
 		   		 		  rdfs:comment "Restitution de l'instruction en anglais."@fr ,
-									"Restitution of the task in English."@en ;
+									"Recall of the task in English."@en ;
 						  salsah-gui:guiElement salsah-gui:Textarea ;
 			              salsah-gui:guiOrder "5"^^xsd:integer ;
 						  salsah-gui:guiAttribute "width=95%" ,
@@ -1246,9 +1246,9 @@
                           knora-base:objectClassConstraint knora-base:TextValue ;
                           knora-base:subjectClassConstraint :Verso ;
                           rdfs:label "Restitution de l'instruction en français"@fr ,
-									"Restitution of the task in French"@en ;
+									"Recall of the task in French"@en ;
 		   		 		  rdfs:comment "Restitution de l'instruction en français."@fr ,
-									"Restitution of the task in French."@en ;
+									"Recall of the task in French."@en ;
 						  salsah-gui:guiElement salsah-gui:Textarea ;
 			              salsah-gui:guiOrder "6"^^xsd:integer ;
 						  salsah-gui:guiAttribute "width=95%" ,
@@ -1261,9 +1261,9 @@
                                 knora-base:objectClassConstraint knora-base:TextValue ;
                              	knora-base:subjectClassConstraint :Verso ;
                                 rdfs:label "Restitution de l'instruction en langue originale corrigée"@fr ,
-									"Restitution of the task in original language, corrected"@en ;
+									"Recall of the task in original language, corrected"@en ;
 		   		 		 	 	rdfs:comment "Restitution de l'instruction en langue originale corrigée."@fr ,
-									"Restitution of the task in original language, corrected."@en ;
+									"Recall of the task in original language, corrected."@en ;
 							    salsah-gui:guiElement salsah-gui:Textarea ;
 				                salsah-gui:guiOrder "3"^^xsd:integer ;
 							    salsah-gui:guiAttribute "width=95%" ,
@@ -1276,9 +1276,9 @@
                                         knora-base:objectClassConstraint knora-base:ListValue ;
                                         knora-base:subjectClassConstraint :Verso ;
                                         rdfs:label "Langue originale de la restitution de l'instruction"@fr ,
-											"Original language of the restitution of the task"@en ;
+											"Original language of the recall of the task"@en ;
 		   		 		 	 			rdfs:comment "Langue originale de restitution de l'instruction."@fr ,
-											"Original language of the restitution of the task."@en ;
+											"Original language of the recall of the task."@en ;
 										salsah-gui:guiOrder "2"^^xsd:integer ;
 							            salsah-gui:guiElement salsah-gui:Pulldown ;
 						          	    salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList>" .
@@ -1290,9 +1290,9 @@
                        knora-base:objectClassConstraint knora-base:ListValue ;
                        knora-base:subjectClassConstraint :Instruction ;
                        rdfs:label "Traducteur de l'instruction"@fr ,
-									"Translator of instructions"@en ;
+									"Translator of instruction"@en ;
 		   		 	   rdfs:comment "Traducteur de l'instruction."@fr ,
-									"Translator of instructions."@en ;
+									"Translator of instruction."@en ;
 					   salsah-gui:guiOrder "6"^^xsd:integer ;
 		               salsah-gui:guiElement salsah-gui:Pulldown ;
                	    salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TranslatorList>" .
@@ -1548,9 +1548,9 @@
           rdfs:subPropertyOf knora-base:hasValue ;
           knora-base:objectClassConstraint knora-base:ListValue ;
           knora-base:subjectClassConstraint :CollectionSite ;
-          rdfs:label "Identification de l'école"@fr ,
+          rdfs:label "Localisation de l'école"@fr ,
                      "School location"@en ;
-		  rdfs:comment "Identification de l'école."@fr ,
+		  rdfs:comment "Localisation de l'école."@fr ,
 					 "School location."@en ;
           salsah-gui:guiOrder "4"^^xsd:integer ;
           salsah-gui:guiElement salsah-gui:List ;
@@ -1562,7 +1562,7 @@
             rdfs:subPropertyOf knora-base:hasValue ;
             knora-base:objectClassConstraint knora-base:BooleanValue ;
             knora-base:subjectClassConstraint :QualityData ;
-            rdfs:label "Materiel est standard (UNIL)"@fr ,
+            rdfs:label "Le matériel est standard (UNIL)"@fr ,
                      "Material is standard (UNIL)"@en ;
 		  	rdfs:comment "néocolors, feuille A4 blanche, crayon papier."@fr ,
 					 "Neocolors, A4, paper pencil."@en ;
@@ -1575,7 +1575,7 @@
             rdfs:subPropertyOf knora-base:hasValue ;
             knora-base:objectClassConstraint knora-base:BooleanValue ;
             knora-base:subjectClassConstraint :QualityData ;
-            rdfs:label "Matériel est acceptable, mais pas UNIL"@fr ,
+            rdfs:label "Le matériel est acceptable, mais pas UNIL"@fr ,
                      "Material is acceptable, but is not UNIL"@en ;
 		  	rdfs:comment "crayons de couleur ou feutre de couleur, feuille A4 blanche, pas d’autocollants, pas de règles et matériel de géométrie..."@fr ,
 					 "Color pencils or feutres, A4 white, no stickers, the rulers were not used..."@en ;
@@ -1753,7 +1753,7 @@
                knora-base:subjectClassConstraint :Passage ;
                rdfs:label "Identifiant du groupe"@fr ,
                      		"Group identifier"@en ;
-               rdfs:comment "Numéro qui indique l'ordre de visite pour un site et une campagne donnés"@fr ,
+               rdfs:comment "Numéro qui indique l'ordre (chronologique) de visite pour un site et une campagne donnés"@fr ,
 					 		"Number refering to a group visit (in chronological order) corresponding to a specific collection site and research wave"@en ;
 			   salsah-gui:guiOrder "2"^^xsd:integer ;
                salsah-gui:guiElement salsah-gui:Spinbox ;
@@ -1911,9 +1911,9 @@
                rdfs:subPropertyOf knora-base:hasValue ;
                knora-base:objectClassConstraint knora-base:BooleanValue ;
                knora-base:subjectClassConstraint :QualityData ;
-               rdfs:label "Questionnaire complet (pour les questionnaires sur plusieures pages)"@fr ,
+               rdfs:label "Questionnaire complet (pour les questionnaires sur plusieurs pages)"@fr ,
                      	"Questionaire complete (for questionnaires on many pages)"@en ;
-			   rdfs:comment "toutes les pages de questionnaire sont uploadées."@fr ,
+			   rdfs:comment "Toutes les pages du questionnaire sont uploadées."@fr ,
 					 	"All pages of the questionnaire have been uploaded."@en ;
 			   salsah-gui:guiOrder "12"^^xsd:integer ;
        		   salsah-gui:guiElement salsah-gui:Checkbox .
@@ -1926,7 +1926,7 @@
               knora-base:subjectClassConstraint :QualityData ;
               rdfs:label "Questionnaire transcrit"@fr ,
                      	"Questionnaire transcribed"@en ;
-			  rdfs:comment "Questionnaire est transcrit."@fr ,
+			  rdfs:comment "Le questionnaire est transcrit."@fr ,
 					 	"Questionnaire data has been entered."@en ;
 			  salsah-gui:guiOrder "13"^^xsd:integer ;
        		  salsah-gui:guiElement salsah-gui:Checkbox .
@@ -1977,9 +1977,9 @@
                                        knora-base:objectClassConstraint knora-base:ListValue ;
                                        knora-base:subjectClassConstraint :QuestionnaireBase ;
                                        rdfs:label "Langue (si questionnaire en langue originale)"@fr ,
-                     						"Language ( if the questionnaire is in original language)"@en ;
-			   		   				   rdfs:comment "Langue questionnaire standardisé, si le questionnaire standardisé est dans la langue d'origine."@fr ,
-					 						"Original language of standardized questionnaire, if in original language."@en ;
+                     						"Language (if the questionnaire is in original language)"@en ;
+			   		   				   rdfs:comment "Langue du questionnaire standardisé, si le questionnaire standardisé est en langue originale."@fr ,
+					 						"Original language of standardized questionnaire, if the questionnaire is in original language."@en ;
 					 				   salsah-gui:guiOrder "2"^^xsd:integer ;
 						               salsah-gui:guiElement salsah-gui:Pulldown ;
 					          	       salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList>" .
@@ -2126,9 +2126,9 @@
               rdfs:subPropertyOf knora-base:hasValue ;
               knora-base:objectClassConstraint knora-base:BooleanValue ;
        		  knora-base:subjectClassConstraint :QualityData ;
-              rdfs:label "Recto a été modifié"@fr ,
+              rdfs:label "Recto nettoyé (=image modifiée)"@fr ,
                      	"Recto cleaned up (=image has been modified)"@en ;
-			  rdfs:comment "Recto a été modifié."@fr ,
+			  rdfs:comment "Le recto a été nettoyé (=image modifiée)."@fr ,
 					 	"Recto cleaned up (=image has been modified)."@en ;
 			  salsah-gui:guiOrder "5"^^xsd:integer ;
        		  salsah-gui:guiElement salsah-gui:Checkbox .
@@ -2268,7 +2268,7 @@
               rdfs:subPropertyOf knora-base:hasValue ;
               knora-base:objectClassConstraint knora-base:ListValue ;
               knora-base:subjectClassConstraint :CollectionSite ;
-              rdfs:label "Langue principale représentée sur le site de collecte"@fr ,
+              rdfs:label "Langue principale sur le site de collecte"@fr ,
                      	"Main language on collection site"@en ;
 			  rdfs:comment "Langue principale parlée dans une institution ou durant un événement."@fr ,
 					 	"Main language spoken in an institution or at an event."@en ;
@@ -2337,7 +2337,7 @@
         knora-base:subjectClassConstraint :QualityData ;
         rdfs:label "Restitution de la consigne est en accord avec la tâche"@fr ,
                 "Recall is in accordance with a given task"@en ;
-		rdfs:comment "Enfant a compris et restitié correctement la consigne."@fr ,
+		rdfs:comment "Enfant a compris et restitué correctement la consigne."@fr ,
 			  	"Child understood correctly and recalled the task properly."@en ;
 		       salsah-gui:guiOrder "9"^^xsd:integer ;
         salsah-gui:guiElement salsah-gui:Checkbox .
@@ -2348,9 +2348,9 @@
              rdfs:subPropertyOf knora-base:hasValue ;
              knora-base:objectClassConstraint knora-base:BooleanValue ;
              knora-base:subjectClassConstraint :QualityData ;
-             rdfs:label "Données textuelles sont completes en français"@fr ,
+             rdfs:label "Données textuelles sont complètes en français"@fr ,
                 "Textual data is complete in French"@en ;
-			 rdfs:comment "Consigne, description, les mots sur le recto, et commentaire sont ajoutés en français."@fr ,
+			 rdfs:comment "Consigne, description, les mots sur le recto, et les commentaires sont ajoutés en français."@fr ,
 			  	"Task restitution, description, words on recto and the commentaries are entered in French."@en ;
        		 salsah-gui:guiOrder "15"^^xsd:integer ;
        		 salsah-gui:guiElement salsah-gui:Checkbox .
@@ -2360,9 +2360,9 @@
              rdfs:subPropertyOf knora-base:hasValue ;
              knora-base:objectClassConstraint knora-base:BooleanValue ;
              knora-base:subjectClassConstraint :QualityData ;
-             rdfs:label "Données textuelles sont completes en anglais"@fr ,
+             rdfs:label "Données textuelles sont complètes en anglais"@fr ,
                 "Textual data is complete in English"@en ;
-			 rdfs:comment "Consigne, description, les mots sur le recto, et commentaire sont ajoutés en anglais."@fr ,
+			 rdfs:comment "Consigne, description, les mots sur le recto, et les commentaires sont ajoutés en anglais."@fr ,
 			  	"Task restitution, description, words on recto and the commentaries are entered in English."@en ;
        		 salsah-gui:guiOrder "16"^^xsd:integer ;
        		 salsah-gui:guiElement salsah-gui:Checkbox .
@@ -2372,7 +2372,7 @@
              rdfs:subPropertyOf knora-base:hasValue ;
              knora-base:objectClassConstraint knora-base:BooleanValue ;
              knora-base:subjectClassConstraint :QualityData ;
-             rdfs:label "Données textuelles sont completes en langue originale"@fr ,
+             rdfs:label "Données textuelles sont complètes en langue originale"@fr ,
                 "Textual data is complete in original language"@en ;
 			 rdfs:comment "Consigne, description, les mots sur le recto, et commentaire sont ajoutés en langue originale."@fr ,
 			  	"Task restitution, description, words on recto and the commentaries are entered in original language."@en ;
@@ -2425,9 +2425,9 @@
                 rdfs:subPropertyOf knora-base:hasValue ;
                 knora-base:objectClassConstraint knora-base:BooleanValue ;
               	knora-base:subjectClassConstraint :Verso ;
-                rdfs:label "Restitution de consigne est absente"@fr ,
+                rdfs:label "Restitution de consigne absente"@fr ,
                      	"Recall of the task is absent"@en ;
-			   	rdfs:comment "Restitution de consigne est absente."@fr ,
+			   	rdfs:comment "La restitution de consigne est absente."@fr ,
 					 	"Recall of the task is absent."@en ;
 				salsah-gui:guiOrder "8"^^xsd:integer ;
        		    salsah-gui:guiElement salsah-gui:Checkbox .
@@ -2484,7 +2484,7 @@
        knora-base:subjectClassConstraint :QualityData ;
        rdfs:label "Page blanche"@fr ,
                "Blank page"@en ;
-	   rdfs:comment "image est une feuille blanche."@fr ,
+	   rdfs:comment "L'image est une feuille blanche."@fr ,
 			   "Image is a white paper."@en ;
        salsah-gui:guiOrder "6"^^xsd:integer ;
        salsah-gui:guiElement salsah-gui:Checkbox .
@@ -2506,7 +2506,7 @@
         rdfs:subPropertyOf :hasWord ;
         knora-base:objectClassConstraint knora-base:TextValue ;
         knora-base:subjectClassConstraint :TextOnDrawing ;
-        rdfs:label "Texte par l'enfant sur le recto sur le recto (anglais)"@fr ,
+        rdfs:label "Texte par l'enfant sur le recto (anglais)"@fr ,
                "Words written by child on the recto (English)"@en ;
         rdfs:comment "Texte par l'enfant sur le recto (anglais)."@fr ,
                "Words written by child on the recto (English)."@en ;
@@ -2628,8 +2628,8 @@
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
 		                knora-base:objectClassConstraint knora-base:ListValue ;
 						rdfs:label "Affiliation religieuse à laquelle s’identifie l’enfant"@fr ,
-							"Affiliation religieuse à laquelle s’identifie l’enfant"@en ;
-						rdfs:comment "Religious affiliation to which the child identifies themselves"@fr ,
+							"Religious affiliation to which the child identifies themselves"@en ;
+						rdfs:comment "Affiliation religieuse à laquelle s’identifie l’enfant"@fr ,
 							"Religious affiliation to which the child identifies themselves"@en ;
 		                salsah-gui:guiOrder "10"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:List ;
@@ -2641,9 +2641,9 @@
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
 		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "Familiarité avec le lieu de culte. Es-tu déjà entré dans l'église?"@fr ,
+						rdfs:label "Familiarité avec le lieu de culte. Es-tu déjà entré dans une église?"@fr ,
 							"Familiarity with place of worship. Have you ever entered a church?"@en ;
-						rdfs:comment "Familiarité avec le lieu de culte. Es-tu déjà entré dans l'église?"@fr ,
+						rdfs:comment "Familiarité avec le lieu de culte. Es-tu déjà entré dans une église?"@fr ,
 							"Familiarity with place of worship. Have you ever entered a church?"@en ;
 		                salsah-gui:guiOrder "11"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
@@ -2709,9 +2709,9 @@
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
 		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "Familiarité avec le lieu de culte. Es-tu déjà entré dans la mosquée?"@fr ,
+						rdfs:label "Familiarité avec le lieu de culte. Es-tu déjà entré dans une mosquée?"@fr ,
 							"Familiarity with place of worship. Have you ever entered a mosque?"@en ;
-						rdfs:comment "Familiarité avec le lieu de culte. Es-tu déjà entré dans la mosquée?"@fr ,
+						rdfs:comment "Familiarité avec le lieu de culte. Es-tu déjà entré dans une mosquée?"@fr ,
 							"Familiarity with place of worship. Have you ever entered a mosque?"@en ;
 		                salsah-gui:guiOrder "16"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
@@ -3052,9 +3052,9 @@
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
 		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "Familiarité avec le lieu de culte. Es-tu déjà entré dans un temple non-spécifié?"@fr ,
+						rdfs:label "Familiarité avec le lieu de culte. Es-tu déjà entré dans un temple non-spécifique?"@fr ,
 							"Familiarity with place of worship. Have you ever entered any non specific temple?"@en ;
-						rdfs:comment "Familiarité avec le lieu de culte. Es-tu déjà entré dans un temple non-spécifié?"@fr ,
+						rdfs:comment "Familiarité avec le lieu de culte. Es-tu déjà entré dans un temple non-spécifique?"@fr ,
 							"Familiarity with place of worship. Have you ever entered any non specific temple?"@en ;
 		                salsah-gui:guiOrder "41"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
@@ -3065,9 +3065,9 @@
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
 		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "Familiarité avec le lieu de culte: temple non-spécifié. Fréquence?"@fr ,
+						rdfs:label "Familiarité avec le lieu de culte: temple non-spécifique. Fréquence?"@fr ,
 							"Familiarity with place of worship: any unspecific temple. How often?"@en ;
-						rdfs:comment "Familiarité avec le lieu de culte: temple non-spécifié. Fréquence?"@fr ,
+						rdfs:comment "Familiarité avec le lieu de culte: temple non-spécifique. Fréquence?"@fr ,
 							"Familiarity with place of worship: any unspecific temple. How often?"@en ;
 		                salsah-gui:guiOrder "42"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
@@ -3078,9 +3078,9 @@
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
 		                knora-base:objectClassConstraint knora-base:TextValue ;
-						rdfs:label "Familiarité avec le lieu de culte: temple non-spécifié. Pourquoi?"@fr ,
+						rdfs:label "Familiarité avec le lieu de culte: temple non-spécifique. Pourquoi?"@fr ,
 							"Familiarity with place of worship: Non-specific temple. Why?"@en ;
-						rdfs:comment "Familiarité avec le lieu de culte: temple non-spécifié. Pourquoi?"@fr ,
+						rdfs:comment "Familiarité avec le lieu de culte: temple non-spécifique. Pourquoi?"@fr ,
 							"Familiarity with place of worship: Non-specific temple. Why?"@en ;
 		                salsah-gui:guiOrder "43"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
@@ -3092,9 +3092,9 @@
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
 		                knora-base:objectClassConstraint knora-base:TextValue ;
-						rdfs:label "Familiarité avec le lieu de culte: temple non-spécifié. Avec qui?"@fr ,
+						rdfs:label "Familiarité avec le lieu de culte: temple non-spécifique. Avec qui?"@fr ,
 							"Familiarity with place of worship: Non-specific temple. With whom?"@en ;
-						rdfs:comment "Familiarité avec le lieu de culte: temple non-spécifié. Avec qui?"@fr ,
+						rdfs:comment "Familiarité avec le lieu de culte: temple non-spécifique. Avec qui?"@fr ,
 							"Familiarity with place of worship: Non-specific temple. With whom?"@en ;
 		                salsah-gui:guiOrder "44"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
@@ -3106,9 +3106,9 @@
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
 		                knora-base:objectClassConstraint knora-base:TextValue ;
-						rdfs:label "Familiarité avec le lieu de culte: temple non-spécifié. La dernière fois?"@fr ,
+						rdfs:label "Familiarité avec le lieu de culte: temple non-spécifique. La dernière fois?"@fr ,
 							"Familiarity with place of worship: Non-specific temple. Last time?"@en ;
-						rdfs:comment "Familiarité avec le lieu de culte: temple non-spécifié. La dernière fois?"@fr ,
+						rdfs:comment "Familiarité avec le lieu de culte: temple non-spécifique. La dernière fois?"@fr ,
 							"Familiarity with place of worship: Non-specific temple. Last time?"@en ;
 		                salsah-gui:guiOrder "45"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
@@ -3230,7 +3230,7 @@
 		                knora-base:objectClassConstraint knora-base:ListValue ;
 						rdfs:label "Familiarité avec le lieu de culte. Es-tu déjà entré dans un temple shinto (jinja)?"@fr ,
 							"Familiarity with place of worship. Have you ever entered a shinto temple (jinja)?"@en ;
-						rdfs:comment "Familiarité avec le lieu de culte. Es-tu déjà entré dans  un temple shinto (jinja)?"@fr ,
+						rdfs:comment "Familiarité avec le lieu de culte. Es-tu déjà entré dans un temple shinto (jinja)?"@fr ,
 							"Familiarity with place of worship. Have you ever entered a shinto temple (jinja)?"@en ;
 		                salsah-gui:guiOrder "54"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
@@ -3404,9 +3404,9 @@
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
 		                knora-base:objectClassConstraint knora-base:TextValue ;
-						rdfs:label "A quelle occasion as-tu vu des gens prié?"@fr ,
+						rdfs:label "A quelle occasion as-tu vu des gens prier?"@fr ,
 							"On what occasion did you get to see other people pray?"@en ;
-						rdfs:comment "A quelle occasion as-tu vu des gens prié?"@fr ,
+						rdfs:comment "A quelle occasion as-tu vu des gens prier?"@fr ,
 							"On what occasion did you get to see other people pray?"@en ;
 		                salsah-gui:guiOrder "67"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
@@ -3838,9 +3838,9 @@
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
 		                knora-base:objectClassConstraint knora-base:TextValue ;
-						rdfs:label "Description  dessin(s) de dieu par l'enfant dans le passé."@fr ,
+						rdfs:label "Description du/des dessin(s) de dieu par l'enfant dans le passé."@fr ,
 							"Description of the child's drawing(s) of god in the past."@en ;
-						rdfs:comment "Description  dessin(s) de dieu par l'enfant dans le passé."@fr ,
+						rdfs:comment "Description du/des dessin(s) de dieu par l'enfant dans le passé."@fr ,
 							"Description of the child's drawing(s) of god in the past."@en ;
 		                salsah-gui:guiOrder "99"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
@@ -4042,9 +4042,9 @@
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
 		                knora-base:objectClassConstraint knora-base:ListValue ;
 						rdfs:label "Autres langues parlées par l'enfant"@fr ,
-							"Other languages often spoken by the child"@en ;
+							"Other languages spoken by the child"@en ;
 						rdfs:comment "Autres langues parlées par l'enfant"@fr ,
-							"Other languages often spoken by the child"@en ;
+							"Other languages spoken by the child"@en ;
 		                salsah-gui:guiOrder "114"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList>" .
@@ -4081,10 +4081,10 @@
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
 		                knora-base:objectClassConstraint knora-base:DecimalValue ;
-						rdfs:label "Depuis quand l'enfant habite-t-il/elle en Suisse"@fr ,
-							"Since when does the child live in Switzerland"@en ;
-						rdfs:comment "Depuis quand l'enfant habite-t-il/elle en Suisse"@fr ,
-							"Since when does the child live in Switzerland"@en ;
+						rdfs:label "Depuis quand l'enfant habite-t-il/elle en Suisse?"@fr ,
+							"Since when does the child live in Switzerland?"@en ;
+						rdfs:comment "Depuis quand l'enfant habite-t-il/elle en Suisse?"@fr ,
+							"Since when does the child live in Switzerland?"@en ;
 		                salsah-gui:guiOrder "117"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:SimpleText . 
 
@@ -4119,9 +4119,9 @@
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
 		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "Estime de soi explicite (auto-rapportée)"@fr ,
+						rdfs:label "Estime de soi explicite auto-rapportée"@fr ,
 							"Self-rated explicit self-esteem"@en ;
-						rdfs:comment "Estime de soi explicite (auto-rapportée)"@fr ,
+						rdfs:comment "Estime de soi explicite auto-rapportée"@fr ,
 							"Self-rated explicit self-esteem"@en ;
 		                salsah-gui:guiOrder "120"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
@@ -4146,9 +4146,9 @@
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
 		                knora-base:objectClassConstraint knora-base:ListValue ;
 						rdfs:label "Niveau de stress auto-rapporté"@fr ,
-							"Level of recent stress (self-rated)"@en ;
+							"Level of recent stress self-rated"@en ;
 						rdfs:comment "Niveau de stress auto-rapporté"@fr ,
-							"Level of recent stress (self-rated)"@en ;
+							"Level of recent stress self-rated"@en ;
 		                salsah-gui:guiOrder "122"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedNumListQ>" .
