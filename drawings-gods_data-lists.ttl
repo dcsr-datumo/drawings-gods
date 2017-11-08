@@ -15,8 +15,8 @@
 ###   AdditionalTaskList
 <http://rdfh.ch/lists/drawings-gods-2016-list-AdditionalTaskList> a knora-base:ListNode ;
 	knora-base:isRootNode true ;
-	rdfs:comment "Liste de choix pour les devoirs additionnels"@fr ;
-	rdfs:label "Devoirs additionnels (liste)"@fr , "Additional tasks (list)"@en ;
+	rdfs:comment "Liste de choix pour les tâches additionnelles"@fr ;
+	rdfs:label "Tâches additionnelles (liste)"@fr , "Additional tasks (list)"@en ;
 	knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-AdditionalTaskList--> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-AdditionalTaskList-attachmentTest> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-AdditionalTaskList-drawingParent> ,
@@ -160,7 +160,7 @@
 <http://rdfh.ch/lists/drawings-gods-2016-list-GlobalLocationHList> a knora-base:ListNode ;
 	knora-base:isRootNode true ;
 	rdfs:comment "Liste hiérarchique de choix pour la localisation du site niveau pays et région"@fr ;
-	rdfs:label "Localisation niveau pays et région (liste hiérarchique)"@fr , "Location du site level country and region (hierarchical list)"@en ;
+	rdfs:label "Localisation niveau pays et région (liste hiérarchique)"@fr , "Location, level country and region (hierarchical list)"@en ;
 	knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-GlobalLocationHList-switzerland> ,
 									<http://rdfh.ch/lists/drawings-gods-2016-list-GlobalLocationHList-iran> ,
 									<http://rdfh.ch/lists/drawings-gods-2016-list-GlobalLocationHList-japan> ,
@@ -205,7 +205,7 @@
 			knora-base:listNodeName "juraCanton" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GlobalLocationHList> ;
 			knora-base:listNodePosition 3 ;
-			rdfs:label "Canton de Jura"@fr , "Jura Canton"@en .
+			rdfs:label "Canton du Jura"@fr , "Jura Canton"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-GlobalLocationHList-neuchatelCanton> a knora-base:ListNode ;
 			knora-base:listNodeName "neuchatelCanton" ;
@@ -217,7 +217,7 @@
 			knora-base:listNodeName "valaisCanton" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GlobalLocationHList> ;
 			knora-base:listNodePosition 5 ;
-			rdfs:label "Canton de Valais"@fr , "Valais Canton"@en .
+			rdfs:label "Canton du Valais"@fr , "Valais Canton"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-GlobalLocationHList-vaudCanton> a knora-base:ListNode ;
 			knora-base:listNodeName "vaudCanton" ;
@@ -624,7 +624,7 @@
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-CollSiteList> ;
 				knora-base:listNodeName "layschool" ;
 				knora-base:listNodePosition 0 ;
-				rdfs:label "Ecole laïque"@fr , "Public school"@en .
+				rdfs:label "Ecole publique"@fr , "Public school"@en .
 
 <http://rdfh.ch/lists/drawings-gods-2016-list-CollSiteList-relschool> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-CollSiteList> ;
@@ -675,8 +675,8 @@
 
 <http://rdfh.ch/lists/drawings-gods-2016-list-InstructionCodeList> a knora-base:ListNode ;
 	knora-base:isRootNode true ;
-	rdfs:comment "Liste de choix pour la consigne en Anglais"@fr ;
-	rdfs:label "Consigne Anglais (liste)"@fr , "Task English (list)"@en ;
+	rdfs:comment "Liste de choix pour le type de consigne"@fr ;
+	rdfs:label "Type de consigne (liste)"@fr , "Instruction type (list)"@en ;
 	knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-InstructionCodeList--> ,
 						<http://rdfh.ch/lists/drawings-gods-2016-list-InstructionCodeList-UNIL> ,
 						<http://rdfh.ch/lists/drawings-gods-2016-list-InstructionCodeList-UNILmodif> ,
@@ -720,7 +720,7 @@
 <http://rdfh.ch/lists/drawings-gods-2016-list-InstructionEnList> a knora-base:ListNode ;
 	knora-base:isRootNode true ;
 	rdfs:comment "Liste de choix pour la consigne en Anglais"@fr ;
-	rdfs:label "Consigne Anglais (liste)"@fr , "Task English (list)"@en ;
+	rdfs:label "Consigne Anglais (liste)"@fr , "Instruction English (list)"@en ;
 	knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-InstructionEnList-iran1> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-InstructionEnList-iran2> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-InstructionEnList-japan> ,
@@ -756,13 +756,13 @@
 		knora-base:listNodeName "nepal" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-InstructionEnList> ;
 		knora-base:listNodePosition 3 ;
-		rdfs:label "(NEPALeng)Free translation into Nepali of \" Have you ever heard of the word \"god\"? Now close your eyes and try to imagine, then draw. Do not look over to your colleagues', because I would like to know how you imagine or think. Draw as you like and as you imagine."@en .
+		rdfs:label "(NEPALeng) Free translation into Nepali of \" Have you ever heard of the word \"god\"? Now close your eyes and try to imagine, then draw. Do not look over to your colleagues', because I would like to know how you imagine or think. Draw as you like and as you imagine."@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-InstructionEnList-netherlands> a knora-base:ListNode ;
 		knora-base:listNodeName "netherlands" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-InstructionEnList> ;
 		knora-base:listNodePosition 4 ;
-		rdfs:label "(NETHERLANDSeng)Have you ever heard the word \"god\"? Try to make a representation and draw this."@en .
+		rdfs:label "(NETHERLANDSeng) Have you ever heard the word \"god\"? Try to make a representation and draw this."@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-InstructionEnList-romania> a knora-base:ListNode ;
 		knora-base:listNodeName "romania" ;
@@ -774,13 +774,13 @@
 		knora-base:listNodeName "russia1" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-InstructionEnList> ;
 		knora-base:listNodePosition 6 ;
-		rdfs:label "(RUSSIA1eng)In Russian : Have you ever heard the word \"god\"? Now close your eyes and try to imagine. Have you imagined? Now draw what you have imagined."@en .
+		rdfs:label "(RUSSIA1eng) In Russian : Have you ever heard the word \"god\"? Now close your eyes and try to imagine. Have you imagined? Now draw what you have imagined."@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-InstructionEnList-russia2> a knora-base:ListNode ;
 		knora-base:listNodeName "russia2" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-InstructionEnList> ;
 		knora-base:listNodePosition 7 ;
-		rdfs:label "(RUSSIA2eng)In Russian : Have you ever heard of the word \"burkhan\"? Now close your eyes and try to imagine. Have you imagined? Now draw what you have imagined."@en .
+		rdfs:label "(RUSSIA2eng) In Russian : Have you ever heard of the word \"burkhan\"? Now close your eyes and try to imagine. Have you imagined? Now draw what you have imagined."@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-InstructionEnList-switzerland1> a knora-base:ListNode ;
 		knora-base:listNodeName "switzerland1" ;
