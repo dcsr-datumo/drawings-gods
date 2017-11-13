@@ -5491,7 +5491,7 @@
 					knora-base:listNodeName "ganesha" ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList> ;
 					knora-base:listNodePosition 4 ;
-					rdfs:label "Ganesa"@fr , "Ganesh"@en .
+					rdfs:label "Ganesh"@fr , "Ganesha"@en .
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-jesus> a knora-base:ListNode ;
 					knora-base:listNodeName "jesus" ;
