@@ -2583,6 +2583,7 @@
 					 					"Individual questionnaire attached to the drawing."@en .
 
 
+
 #################################################################
 #    Questionnaire properties
 #################################################################
@@ -2621,6 +2622,7 @@
                      "Model questionnaire"@en ;
           rdfs:comment "Questionnaire individuel fondé sur le questionnaire standardisé suivant"@fr ,
 					 	"Individual questionnaire is based on the following standardized questionnaire"@en .
+NO number here?
 
 ###  http://www.knora.org/ontology/0105#religiousAffiliation
 :religiousAffiliation rdf:type owl:ObjectProperty ;
@@ -2841,6 +2843,74 @@
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .	
+							                        
+###	http://www.knora.org/ontology/0105#enteredShintoTemple
+:enteredBuddhistTemple rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:ListValue ;
+						rdfs:label "Familiarité avec le lieu de culte. Es-tu déjà entré dans un temple shinto (jinja)?"@fr ,
+							"Familiarity with place of worship. Have you ever entered a shinto temple (jinja)?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte. Es-tu déjà entré dans un temple shinto (jinja)?"@fr ,
+							"Familiarity with place of worship. Have you ever entered a shinto temple (jinja)?"@en ;
+		                salsah-gui:guiOrder "26"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Pulldown ;
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .               
+		                
+###	http://www.knora.org/ontology/0105#jinjaHowOften
+:jinjaHowOften rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:ListValue ;
+						rdfs:label "Familiarité avec le lieu de culte: un temple shinto (jinja). Fréquence?"@fr ,
+							"Familiarity with place of worship: a shinto temple (jinja). How often?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: un temple shinto (jinja). Fréquence?"@fr ,
+							"Familiarity with place of worship: a shinto temple (jinja). How often?"@en ;
+		                salsah-gui:guiOrder "27"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Pulldown ;
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
+
+###  http://www.knora.org/ontology/0105#jinjaWhy
+:jinjaWhy rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Familiarité avec le lieu de culte: un temple shinto (jinja). Pourquoi?"@fr ,
+							"Familiarity with place of worship: a shinto temple (jinja). Why?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: un temple shinto (jinja). Pourquoi?"@fr ,
+							"Familiarity with place of worship: a shinto temple (jinja). Why?"@en ;
+		                salsah-gui:guiOrder "28"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" .	
+		                
+###  http://www.knora.org/ontology/0105#jinjaWithWhom
+:jinjaWithWhom rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Familiarité avec le lieu de culte: jinja. Avec qui?"@fr ,
+							"Familiarity with place of worship: jinja. With whom?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: jinja. Avec qui?"@fr ,
+							"Familiarity with place of worship: jinja. With whom?"@en ;
+		                salsah-gui:guiOrder "29"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" .
+		                
+###  http://www.knora.org/ontology/0105#jinjaLastTime
+:jinjaLastTime rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "Familiarité avec le lieu de culte: jinja. La dernière fois?"@fr ,
+							"Familiarity with place of worship: jinja. Last time?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: jinja. La dernière fois?"@fr ,
+							"Familiarity with place of worship: jinja. Last time?"@en ;
+		                salsah-gui:guiOrder "30"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" .
 
 ###	http://www.knora.org/ontology/0105#enteredHinduTemple
 :enteredHinduTemple rdf:type owl:ObjectProperty ;
@@ -2851,7 +2921,7 @@
 							"Familiarity with place of worship. Have you ever entered a hindu temple?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte. Es-tu déjà entré dans un temple hindou?"@fr ,
 							"Familiarity with place of worship. Have you ever entered a hindu temple?"@en ;
-		                salsah-gui:guiOrder "26"^^xsd:integer ;
+		                salsah-gui:guiOrder "31"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -2864,7 +2934,7 @@
 							"Familiarity with place of worship: hindu temple. How often?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: temple hindou. Fréquence?"@fr ,
 							"Familiarity with place of worship: hindu temple. How often?"@en ;
-		                salsah-gui:guiOrder "27"^^xsd:integer ;
+		                salsah-gui:guiOrder "32"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
 
@@ -2877,7 +2947,7 @@
 							"Familiarity with place of worship: hindu temple. Why?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: temple hindou. Pourquoi?"@fr ,
 							"Familiarity with place of worship: hindu temple. Why?"@en ;
-		                salsah-gui:guiOrder "28"^^xsd:integer ;
+		                salsah-gui:guiOrder "33"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
@@ -2891,7 +2961,7 @@
 							"Familiarity with place of worship: hindu temple. With whom?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: temple hindou. Avec qui?"@fr ,
 							"Familiarity with place of worship: hindu temple. With whom?"@en ;
-		                salsah-gui:guiOrder "29"^^xsd:integer ;
+		                salsah-gui:guiOrder "34"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
@@ -2906,7 +2976,7 @@
 							"Familiarity with place of worship: hindu temple. Last time?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: temple hindou. La dernière fois?"@fr ,
 							"Familiarity with place of worship: hindu temple. Last time?"@en ;
-		                salsah-gui:guiOrder "30"^^xsd:integer ;
+		                salsah-gui:guiOrder "35"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .	
@@ -2920,7 +2990,7 @@
 							"Familiarity with place of worship. Have you ever entered a synagogue?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte. Es-tu déjà entré dans une synagogue?"@fr ,
 							"Familiarity with place of worship. Have you ever entered a synagogue?"@en ;
-		                salsah-gui:guiOrder "31"^^xsd:integer ;
+		                salsah-gui:guiOrder "36"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -2933,7 +3003,7 @@
 							"Familiarity with place of worship: synagogue. How often?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: synagogue Fréquence?"@fr ,
 							"Familiarity with place of worship: synagogue. How often?"@en ;
-		                salsah-gui:guiOrder "32"^^xsd:integer ;
+		                salsah-gui:guiOrder "37"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
 
@@ -2946,7 +3016,7 @@
 							"Familiarity with place of worship: synagogue. Why?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: synagogue. Pourquoi?"@fr ,
 							"Familiarity with place of worship: synagogue. Why?"@en ;
-		                salsah-gui:guiOrder "33"^^xsd:integer ;
+		                salsah-gui:guiOrder "38"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
@@ -2960,7 +3030,7 @@
 							"Familiarity with place of worship: synagogue. With whom?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte : synagogue. Avec qui?"@fr ,
 							"Familiarity with place of worship: synagogue. With whom?"@en ;
-		                salsah-gui:guiOrder "34"^^xsd:integer ;
+		                salsah-gui:guiOrder "39"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .            
@@ -2974,7 +3044,7 @@
 							"Familiarity with place of worship: synagogue. Last time?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: synagogue. La dernière fois?"@fr ,
 							"Familiarity with place of worship: synagogue. Last time?"@en ;
-		                salsah-gui:guiOrder "35"^^xsd:integer ;
+		                salsah-gui:guiOrder "40"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .		   
@@ -2988,7 +3058,7 @@
 							"Familiarity with place of worship. Have you ever entered a  zoroastrian temple?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte. Es-tu déjà entré dans une temple zoroastrien?"@fr ,
 							"Familiarity with place of worship. Have you ever entered a  zoroastrian temple?"@en ;
-		                salsah-gui:guiOrder "36"^^xsd:integer ;
+		                salsah-gui:guiOrder "41"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -3001,7 +3071,7 @@
 							"Familiarity with place of worship: zoroastrian temple. How often?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: temple zoroastrien Fréquence?"@fr ,
 							"Familiarity with place of worship: zoroastrian temple. How often?"@en ;
-		                salsah-gui:guiOrder "37"^^xsd:integer ;
+		                salsah-gui:guiOrder "42"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
 				
@@ -3014,7 +3084,7 @@
 							"Familiarity with place of worship: zoroastrian temple. Why?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: temple zoroastrien. Pourquoi?"@fr ,
 							"Familiarity with place of worship: zoroastrian temple. Why?"@en ;
-		                salsah-gui:guiOrder "38"^^xsd:integer ;
+		                salsah-gui:guiOrder "43"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
@@ -3028,7 +3098,7 @@
 							"Familiarity with place of worship: zoroastrian temple. With whom?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte : temple zoroastrien. Avec qui?"@fr ,
 							"Familiarity with place of worship: zoroastrian temple. With whom?"@en ;
-		                salsah-gui:guiOrder "39"^^xsd:integer ;
+		                salsah-gui:guiOrder "44"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .            
@@ -3042,7 +3112,7 @@
 							"Familiarity with place of worship: zoroastrian temple. Last time?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: temple zoroastrien. La dernière fois?"@fr ,
 							"Familiarity with place of worship: zoroastrian temple. Last time?"@en ;
-		                salsah-gui:guiOrder "40"^^xsd:integer ;
+		                salsah-gui:guiOrder "45"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .					
@@ -3056,7 +3126,7 @@
 							"Familiarity with place of worship. Have you ever entered any non specific temple?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte. Es-tu déjà entré dans un temple non-spécifique?"@fr ,
 							"Familiarity with place of worship. Have you ever entered any non specific temple?"@en ;
-		                salsah-gui:guiOrder "41"^^xsd:integer ;
+		                salsah-gui:guiOrder "46"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -3069,7 +3139,7 @@
 							"Familiarity with place of worship: any unspecific temple. How often?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: temple non-spécifique. Fréquence?"@fr ,
 							"Familiarity with place of worship: any unspecific temple. How often?"@en ;
-		                salsah-gui:guiOrder "42"^^xsd:integer ;
+		                salsah-gui:guiOrder "47"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
 
@@ -3082,7 +3152,7 @@
 							"Familiarity with place of worship: Non-specific temple. Why?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: temple non-spécifique. Pourquoi?"@fr ,
 							"Familiarity with place of worship: Non-specific temple. Why?"@en ;
-		                salsah-gui:guiOrder "43"^^xsd:integer ;
+		                salsah-gui:guiOrder "48"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .	
@@ -3096,7 +3166,7 @@
 							"Familiarity with place of worship: Non-specific temple. With whom?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: temple non-spécifique. Avec qui?"@fr ,
 							"Familiarity with place of worship: Non-specific temple. With whom?"@en ;
-		                salsah-gui:guiOrder "44"^^xsd:integer ;
+		                salsah-gui:guiOrder "49"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
@@ -3110,11 +3180,65 @@
 							"Familiarity with place of worship: Non-specific temple. Last time?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: temple non-spécifique. La dernière fois?"@fr ,
 							"Familiarity with place of worship: Non-specific temple. Last time?"@en ;
-		                salsah-gui:guiOrder "45"^^xsd:integer ;
+		                salsah-gui:guiOrder "50"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
-							                        "rows=3" .     			
+							                        "rows=3" .     		
 				
+###	http://www.knora.org/ontology/0105#visitOnNewYearsEve
+:visitOnNewYearsEve rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:ListValue ;
+						rdfs:label "Quel temple visitez-vous au Nouvel An?"@fr ,
+							"Which temple do you get to visit on New Year's Eve?"@en ;
+						rdfs:comment "Quel temple visitez-vous au Nouvel An?"@fr ,
+							"Which temple do you get to visit on New Year's Eve?"@en ;
+		                salsah-gui:guiOrder "51"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Pulldown ;
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-JapanNYListQ>" .
+
+###	http://www.knora.org/ontology/0105#jinjaOrOteraNewYearsEve
+:jinjaOrOteraNewYearsEve rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:ListValue ;
+						rdfs:label "Est-ce que vous visitez un temple (jinja ou otera) pour le Nouvel An?"@fr ,
+							"Do you get to visit a temple (jinja or otera) on New Year's Eve?"@en ;
+						rdfs:comment "Est-ce que vous visitez un temple (jinja ou otera) pour le Nouvel An?"@fr ,
+							"Do you get to visit a temple (jinja or otera) on New Year's Eve?"@en ;
+		                salsah-gui:guiOrder "52"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Pulldown ;
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
+		                
+###	http://www.knora.org/ontology/0105#enteredjinjaOrOtera
+:enteredjinjaOrOtera rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:ListValue ;
+						rdfs:label "Est-ce que vous visitez un temple (jinja ou otera) en dehors du Nouvel An?"@fr ,
+							"Do you get to visit a temple (jinja or otera) besides New Year's Eve?"@en ;
+						rdfs:comment "Est-ce que vous visitez un temple (jinja ou otera) en dehors du Nouvel An?"@fr ,
+							"Do you get to visit a temple (jinja or otera) besides New Year's Eve?"@en ;
+		                salsah-gui:guiOrder "53"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Pulldown ;
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .	                
+		                
+###  http://www.knora.org/ontology/0105#jinjaOrOteraOccasion
+:jinjaOrOteraOccasion rdf:type owl:ObjectProperty ;
+		                rdfs:subPropertyOf knora-base:hasValue ;
+		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+		                knora-base:objectClassConstraint knora-base:TextValue ;
+						rdfs:label "A quelle occasion as-tu visité jinja ou otera?"@fr ,
+							"On what occasion did you visit jinja or otera?"@en ;
+						rdfs:comment "A quelle occasion as-tu visité jinja ou otera?"@fr ,
+							"On what occasion did you visit jinja or otera?"@en ;
+		                salsah-gui:guiOrder "54"^^xsd:integer ;
+		                salsah-gui:guiElement salsah-gui:Textarea ;
+						   salsah-gui:guiAttribute "width=95%" ,
+							                        "rows=3" . 		                
+
+
 ###	http://www.knora.org/ontology/0105#enteredjinjaOrOteraHowOften
 :enteredjinjaOrOteraHowOften rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
@@ -3124,7 +3248,7 @@
 							"Familiarity with place of worship: jinja or otera How often?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: jinja ou otera. Fréquence?"@fr ,
 							"Familiarity with place of worship: jinja or otera How often?"@en ;
-		                salsah-gui:guiOrder "46"^^xsd:integer ;
+		                salsah-gui:guiOrder "55"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
 				
@@ -3137,7 +3261,7 @@
 							"Familiarity with place of worship: jinja or otera. Why?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: jinja ou otera. Pourquoi?"@fr ,
 							"Familiarity with place of worship: jinja or otera. Why?"@en ;
-		                salsah-gui:guiOrder "47"^^xsd:integer ;
+		                salsah-gui:guiOrder "56"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .		                
@@ -3151,7 +3275,7 @@
 							"Familiarity with place of worship: jinja or otera. With whom?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: jinja ou otera. Avec qui?"@fr ,
 							"Familiarity with place of worship: jinja or otera. With whom?"@en ;
-		                salsah-gui:guiOrder "48"^^xsd:integer ;
+		                salsah-gui:guiOrder "57"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .							                        
@@ -3165,133 +3289,12 @@
 							"Familiarity with place of worship: jinja or otera. Last time?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: : jinja ou otera. La dernière fois?"@fr ,
 							"Familiarity with place of worship: jinja or otera. Last time?"@en ;
-		                salsah-gui:guiOrder "49"^^xsd:integer ;
+		                salsah-gui:guiOrder "58"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .       							                    						                        
 							                        
-###	http://www.knora.org/ontology/0105#visitOnNewYearsEve
-:visitOnNewYearsEve rdf:type owl:ObjectProperty ;
-		                rdfs:subPropertyOf knora-base:hasValue ;
-		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
-		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "Quel temple visitez-vous au Nouvel An?"@fr ,
-							"Which temple do you get to visit on New Year's Eve?"@en ;
-						rdfs:comment "Quel temple visitez-vous au Nouvel An?"@fr ,
-							"Which temple do you get to visit on New Year's Eve?"@en ;
-		                salsah-gui:guiOrder "50"^^xsd:integer ;
-		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-JapanNYListQ>" .
-
-###	http://www.knora.org/ontology/0105#jinjaOrOteraNewYearsEve
-:jinjaOrOteraNewYearsEve rdf:type owl:ObjectProperty ;
-		                rdfs:subPropertyOf knora-base:hasValue ;
-		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
-		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "Est-ce que vous visitez un temple (jinja ou otera) pour le Nouvel An?"@fr ,
-							"Do you get to visit a temple (jinja or otera) on New Year's Eve?"@en ;
-						rdfs:comment "Est-ce que vous visitez un temple (jinja ou otera) pour le Nouvel An?"@fr ,
-							"Do you get to visit a temple (jinja or otera) on New Year's Eve?"@en ;
-		                salsah-gui:guiOrder "51"^^xsd:integer ;
-		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
-		                
-###	http://www.knora.org/ontology/0105#enteredjinjaOrOtera
-:enteredjinjaOrOtera rdf:type owl:ObjectProperty ;
-		                rdfs:subPropertyOf knora-base:hasValue ;
-		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
-		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "Est-ce que vous visitez un temple (jinja ou otera) en dehors du Nouvel An?"@fr ,
-							"Do you get to visit a temple (jinja or otera) besides New Year's Eve?"@en ;
-						rdfs:comment "Est-ce que vous visitez un temple (jinja ou otera) en dehors du Nouvel An?"@fr ,
-							"Do you get to visit a temple (jinja or otera) besides New Year's Eve?"@en ;
-		                salsah-gui:guiOrder "52"^^xsd:integer ;
-		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .	                
-		                
-###  http://www.knora.org/ontology/0105#jinjaOrOteraOccasion
-:jinjaOrOteraOccasion rdf:type owl:ObjectProperty ;
-		                rdfs:subPropertyOf knora-base:hasValue ;
-		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
-		                knora-base:objectClassConstraint knora-base:TextValue ;
-						rdfs:label "A quelle occasion as-tu visité jinja ou otera?"@fr ,
-							"On what occasion did you visit jinja or otera?"@en ;
-						rdfs:comment "A quelle occasion as-tu visité jinja ou otera?"@fr ,
-							"On what occasion did you visit jinja or otera?"@en ;
-		                salsah-gui:guiOrder "53"^^xsd:integer ;
-		                salsah-gui:guiElement salsah-gui:Textarea ;
-						   salsah-gui:guiAttribute "width=95%" ,
-							                        "rows=3" . 		                	                               
-		                
-###	http://www.knora.org/ontology/0105#enteredShintoTemple
-:enteredBuddhistTemple rdf:type owl:ObjectProperty ;
-		                rdfs:subPropertyOf knora-base:hasValue ;
-		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
-		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "Familiarité avec le lieu de culte. Es-tu déjà entré dans un temple shinto (jinja)?"@fr ,
-							"Familiarity with place of worship. Have you ever entered a shinto temple (jinja)?"@en ;
-						rdfs:comment "Familiarité avec le lieu de culte. Es-tu déjà entré dans un temple shinto (jinja)?"@fr ,
-							"Familiarity with place of worship. Have you ever entered a shinto temple (jinja)?"@en ;
-		                salsah-gui:guiOrder "54"^^xsd:integer ;
-		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .               
-		                
-###	http://www.knora.org/ontology/0105#jinjaHowOften
-:jinjaHowOften rdf:type owl:ObjectProperty ;
-		                rdfs:subPropertyOf knora-base:hasValue ;
-		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
-		                knora-base:objectClassConstraint knora-base:ListValue ;
-						rdfs:label "Familiarité avec le lieu de culte: un temple shinto (jinja). Fréquence?"@fr ,
-							"Familiarity with place of worship: a shinto temple (jinja). How often?"@en ;
-						rdfs:comment "Familiarité avec le lieu de culte: un temple shinto (jinja). Fréquence?"@fr ,
-							"Familiarity with place of worship: a shinto temple (jinja). How often?"@en ;
-		                salsah-gui:guiOrder "55"^^xsd:integer ;
-		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
-
-###  http://www.knora.org/ontology/0105#jinjaWhy
-:jinjaWhy rdf:type owl:ObjectProperty ;
-		                rdfs:subPropertyOf knora-base:hasValue ;
-		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
-		                knora-base:objectClassConstraint knora-base:TextValue ;
-						rdfs:label "Familiarité avec le lieu de culte: un temple shinto (jinja). Pourquoi?"@fr ,
-							"Familiarity with place of worship: a shinto temple (jinja). Why?"@en ;
-						rdfs:comment "Familiarité avec le lieu de culte: un temple shinto (jinja). Pourquoi?"@fr ,
-							"Familiarity with place of worship: a shinto temple (jinja). Why?"@en ;
-		                salsah-gui:guiOrder "56"^^xsd:integer ;
-		                salsah-gui:guiElement salsah-gui:Textarea ;
-						   salsah-gui:guiAttribute "width=95%" ,
-							                        "rows=3" .	
-		                
-###  http://www.knora.org/ontology/0105#jinjaWithWhom
-:jinjaWithWhom rdf:type owl:ObjectProperty ;
-		                rdfs:subPropertyOf knora-base:hasValue ;
-		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
-		                knora-base:objectClassConstraint knora-base:TextValue ;
-						rdfs:label "Familiarité avec le lieu de culte: jinja. Avec qui?"@fr ,
-							"Familiarity with place of worship: jinja. With whom?"@en ;
-						rdfs:comment "Familiarité avec le lieu de culte: jinja. Avec qui?"@fr ,
-							"Familiarity with place of worship: jinja. With whom?"@en ;
-		                salsah-gui:guiOrder "57"^^xsd:integer ;
-		                salsah-gui:guiElement salsah-gui:Textarea ;
-						   salsah-gui:guiAttribute "width=95%" ,
-							                        "rows=3" .
-		                
-###  http://www.knora.org/ontology/0105#jinjaLastTime
-:jinjaLastTime rdf:type owl:ObjectProperty ;
-		                rdfs:subPropertyOf knora-base:hasValue ;
-		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
-		                knora-base:objectClassConstraint knora-base:TextValue ;
-						rdfs:label "Familiarité avec le lieu de culte: jinja. La dernière fois?"@fr ,
-							"Familiarity with place of worship: jinja. Last time?"@en ;
-						rdfs:comment "Familiarité avec le lieu de culte: jinja. La dernière fois?"@fr ,
-							"Familiarity with place of worship: jinja. Last time?"@en ;
-		                salsah-gui:guiOrder "58"^^xsd:integer ;
-		                salsah-gui:guiElement salsah-gui:Textarea ;
-						   salsah-gui:guiAttribute "width=95%" ,
-							                        "rows=3" . 		                
-		                 		                
-		                
+	                               		                
 ###	http://www.knora.org/ontology/0105#cultObjectAtHomePresence
 :cultObjectAtHomePresence rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
@@ -4152,6 +4155,7 @@
 		                salsah-gui:guiOrder "122"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedNumListQ>" .
+ .
 
 #################################################################
 #    Classes
