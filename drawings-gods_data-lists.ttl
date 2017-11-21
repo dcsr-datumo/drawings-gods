@@ -5458,7 +5458,6 @@
 										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-shiva> ,
 										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-linga> ,
 										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-otherhindu> ,
-										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-sacredSpirit> ,
 										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-saint> ,
 										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-santaclaus> ,
 										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-mermaid> ,
@@ -5585,17 +5584,11 @@
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList> ;
 					knora-base:listNodePosition 18 ;
 					rdfs:label "Autre divinité hindoue"@fr , "Other hindu deity"@en .
-
-				<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-sacredSpirit> a knora-base:ListNode ;
-					knora-base:listNodeName "sacredSpirit" ;
-					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList> ;
-					knora-base:listNodePosition 19 ;
-					rdfs:label "Saint Esprit"@fr , "Holz Spirit"@en .
 					
 				<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-saint> a knora-base:ListNode ;
 					knora-base:listNodeName "saint" ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList> ;
-					knora-base:listNodePosition 20 ;
+					knora-base:listNodePosition 19 ;
 					rdfs:label "Saint"@fr , "Saint"@en .
 					
 				<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-santaclaus> a knora-base:ListNode ;
