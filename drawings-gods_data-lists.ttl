@@ -5465,7 +5465,6 @@
 										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-tara> ,
 										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-vampire> ,
 										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-vishnu> ,
-										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-witch> ,
 										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-greekgod> ,
 										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-egyptiangod> ,
 										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-extraterr> ,
@@ -5927,10 +5926,7 @@
 										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-face> ,
 										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-profile> ,
 										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-rear> ,
-										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-3quarts> ,
-										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-gazeviewer> ,
-										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-gazein> ,
-										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-gazeoff> .
+										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-3quarts> .
 										
 
 				<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-arms> a knora-base:ListNode ;
@@ -6177,8 +6173,6 @@
 										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-mudra> ,
 										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-paradise> ,
 										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-svastika> ,
-										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-temple> ,
-										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-throne> ,
 										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-tilak> ,
 										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-religiousbuilging> ,
 										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-stupa> ,
