@@ -7486,612 +7486,612 @@
 		knora-base:listNodePosition 0 ;
 		rdfs:label "Pas de contexte"@fr , "No background"@en .
 			
-### KeywordsHList2
-<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> a knora-base:ListNode ;
+### KeywordsHListOther
+<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> a knora-base:ListNode ;
 	knora-base:isRootNode true ;
 	rdfs:comment "Mot-clés: autre (ni figure principale, ni contexte)"@fr ;
 	rdfs:label "Mots-clés: autre (ni figure principale, ni contexte, ou les deux)"@fr , "Keywords: other (neither principal figure, nor context, or both)"@en ;
-	knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-celestial> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-terrestrial> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-symbols> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-agency> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-nocontext> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-sexofgod> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-attributes> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-framing> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-relational> .
+	knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-celestial> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-terrestrial> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-symbols> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-agency> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-nocontext> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-sexofgod> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-attributes> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-framing> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-relational> .
 
-	<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-celestial> a knora-base:ListNode ;
+	<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-celestial> a knora-base:ListNode ;
 		knora-base:listNodeName "celestial" ;
-		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 		knora-base:listNodePosition 0 ;
 		rdfs:label "Contexte céleste"@fr , "Celestial context"@en ;
-		knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-universe> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-sun> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-light> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-sky> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-cloud> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-moon> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-star> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-lightning> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-earth> .
+		knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-universe> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-sun> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-light> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-sky> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-cloud> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-moon> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-star> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-lightning> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-earth> .
 		
-		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-universe> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-universe> a knora-base:ListNode ;
 			knora-base:listNodeName "universe" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 			knora-base:listNodePosition 0 ;
 			rdfs:label "Univers"@fr , "Universe"@en .
 			
-		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-sun> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-sun> a knora-base:ListNode ;
 			knora-base:listNodeName "sun" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 			knora-base:listNodePosition 1 ;
 			rdfs:label "Soleil"@fr , "Sun"@en .
 			
-		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-light> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-light> a knora-base:ListNode ;
 			knora-base:listNodeName "light" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 			knora-base:listNodePosition 2 ;
 			rdfs:label "Lumière"@fr , "Light"@en .
 			
-		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-sky> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-sky> a knora-base:ListNode ;
 			knora-base:listNodeName "sky" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 			knora-base:listNodePosition 3 ;
 			rdfs:label "Ciel"@fr , "Sky"@en .
 			
-		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-cloud> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-cloud> a knora-base:ListNode ;
 			knora-base:listNodeName "cloud" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 			knora-base:listNodePosition 4 ;
 			rdfs:label "Nuage"@fr , "Cloud"@en .
 			
-		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-moon> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-moon> a knora-base:ListNode ;
 			knora-base:listNodeName "moon" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 			knora-base:listNodePosition 5 ;
 			rdfs:label "Lune"@fr , "Moon"@en .
 			
-		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-star> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-star> a knora-base:ListNode ;
 			knora-base:listNodeName "star" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 			knora-base:listNodePosition 6 ;
 			rdfs:label "Etoile"@fr , "Star"@en .
 			
-		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-lightning> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-lightning> a knora-base:ListNode ;
 			knora-base:listNodeName "lightning" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 			knora-base:listNodePosition 7 ;
 			rdfs:label "Foudre"@fr , "Lightning"@en .
 			
-		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-earth> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-earth> a knora-base:ListNode ;
 			knora-base:listNodeName "earth" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 			knora-base:listNodePosition 8 ;
 			rdfs:label "Terre (planète)"@fr , "Earth (planet)"@en .
 		
-	<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-terrestrial> a knora-base:ListNode ;
+	<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-terrestrial> a knora-base:ListNode ;
 		knora-base:listNodeName "terrestrial" ;
-		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 		knora-base:listNodePosition 1 ;
 		rdfs:label "Contexte terrestre"@fr , "Terrestrial context"@en ;
-		knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-nature> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-water> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-fire> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-vegetation> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-temple> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-otherbuild> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-throne> .
+		knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-nature> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-water> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-fire> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-vegetation> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-temple> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-otherbuild> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-throne> .
 							
-		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-nature> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-nature> a knora-base:ListNode ;
 			knora-base:listNodeName "nature" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 			knora-base:listNodePosition 0 ;
 			rdfs:label "Nature"@fr , "Nature"@en .
 			
-		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-water> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-water> a knora-base:ListNode ;
 			knora-base:listNodeName "water" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 			knora-base:listNodePosition 1 ;
 			rdfs:label "Eau"@fr , "Water"@en .
 			
-		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-fire> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-fire> a knora-base:ListNode ;
 			knora-base:listNodeName "fire" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 			knora-base:listNodePosition 2 ;
 			rdfs:label "Feu"@fr , "Fire"@en .
 			
-		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-vegetation> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-vegetation> a knora-base:ListNode ;
 			knora-base:listNodeName "vegetation" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 			knora-base:listNodePosition 3 ;
 			rdfs:label "Végétation"@fr , "Vegetation"@en .
 			
-		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-temple> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-temple> a knora-base:ListNode ;
 			knora-base:listNodeName "temple" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 			knora-base:listNodePosition 4 ;
 			rdfs:label "Temple"@fr , "Temple"@en .
 			
-		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-otherbuild> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-otherbuild> a knora-base:ListNode ;
 			knora-base:listNodeName "otherbuild" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 			knora-base:listNodePosition 5 ;
 			rdfs:label "Autre(s) bâtiment(s)"@fr , "Other building(s)"@en .
 			
-		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-throne> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-throne> a knora-base:ListNode ;
 			knora-base:listNodeName "throne" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 			knora-base:listNodePosition 6 ;
 			rdfs:label "Trône"@fr , "Throne"@en .
 
 		
-	<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-symbols> a knora-base:ListNode ;
+	<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-symbols> a knora-base:ListNode ;
 		knora-base:listNodeName "symbols" ;
-		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 		knora-base:listNodePosition 2 ;
 		rdfs:label "Symboles"@fr , "Symbols"@en ;
-		knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-bible> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-koran> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-book> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-cross>,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-kaaba> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-mecca> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-temple2a> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-stupa> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-throne2a> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-heart> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-weapon> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-eye> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-text> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-colours> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-paradise> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-hell> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-othersym> .
+		knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-bible> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-koran> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-book> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-cross>,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-kaaba> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-mecca> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-temple2a> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-stupa> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-throne2a> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-heart> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-weapon> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-eye> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-text> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-colours> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-paradise> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-hell> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-othersym> .
 							
-		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-bible> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-bible> a knora-base:ListNode ;
 			knora-base:listNodeName "bible" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 			knora-base:listNodePosition 0 ;
 			rdfs:label "Bible"@fr , "Bible"@en .
 			
-		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-koran> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-koran> a knora-base:ListNode ;
 			knora-base:listNodeName "koran" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 			knora-base:listNodePosition 1 ;
 			rdfs:label "Coran"@fr , "Koran"@en .
 			
-		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-book> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-book> a knora-base:ListNode ;
 			knora-base:listNodeName "book" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 			knora-base:listNodePosition 2 ;
 			rdfs:label "Livre"@fr , "Book"@en .
 			
-		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-cross> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-cross> a knora-base:ListNode ;
 			knora-base:listNodeName "cross" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 			knora-base:listNodePosition 3 ;
 			rdfs:label "Croix"@fr , "Cross"@en .
 			
-		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-kaaba> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-kaaba> a knora-base:ListNode ;
 			knora-base:listNodeName "kaaba" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 			knora-base:listNodePosition 4 ;
 			rdfs:label "Kaaba"@fr , "Kaaba"@en .
 			
-		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-mecca> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-mecca> a knora-base:ListNode ;
 			knora-base:listNodeName "mecca" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 			knora-base:listNodePosition 5 ;
 			rdfs:label "Mecque"@fr , "Mecca"@en .
 			
-		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-temple2a> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-temple2a> a knora-base:ListNode ;
 			knora-base:listNodeName "temple2a" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 			knora-base:listNodePosition 6 ;
 			rdfs:label "Temple"@fr , "Temple"@en .
 			
-		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-stupa> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-stupa> a knora-base:ListNode ;
 			knora-base:listNodeName "stupa" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 			knora-base:listNodePosition 7 ;
 			rdfs:label "Stupa"@fr , "Stupa"@en .
 			
-		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-throne2a> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-throne2a> a knora-base:ListNode ;
 			knora-base:listNodeName "throne2a" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 			knora-base:listNodePosition 8 ;
 			rdfs:label "Trône"@fr , "Throne"@en .
 			
-		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-heart> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-heart> a knora-base:ListNode ;
 			knora-base:listNodeName "heart" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 			knora-base:listNodePosition 9 ;
 			rdfs:label "Cœur"@fr , "Heart"@en .
 			
-		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-weapon> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-weapon> a knora-base:ListNode ;
 			knora-base:listNodeName "weapon" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 			knora-base:listNodePosition 10 ;
 			rdfs:label "Arme"@fr , "Weapon"@en .
 			
-		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-eye> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-eye> a knora-base:ListNode ;
 			knora-base:listNodeName "eye" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 			knora-base:listNodePosition 11 ;
 			rdfs:label "Oeil"@fr , "Eye"@en .
 			
-		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-text> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-text> a knora-base:ListNode ;
 			knora-base:listNodeName "text" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 			knora-base:listNodePosition 12 ;
 			rdfs:label "Texte"@fr , "Text"@en .
 			
-		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-colours> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-colours> a knora-base:ListNode ;
 			knora-base:listNodeName "colours" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 			knora-base:listNodePosition 13 ;
 			rdfs:label "Couleurs"@fr , "Colours"@en .
 					
-		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-paradise> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-paradise> a knora-base:ListNode ;
 			knora-base:listNodeName "paradise" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 			knora-base:listNodePosition 14 ;
 			rdfs:label "Paradis"@fr , "Paradise"@en .
 			
-		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-hell> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-hell> a knora-base:ListNode ;
 			knora-base:listNodeName "hell" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 			knora-base:listNodePosition 15 ;
 			rdfs:label "Enfer"@fr , "Hell"@en .
 			
-		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-othersym> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-othersym> a knora-base:ListNode ;
 			knora-base:listNodeName "othersym" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 			knora-base:listNodePosition 16 ;
 			rdfs:label "Autre symbole"@fr , "Other symbol"@en .
 			
-	<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-agency> a knora-base:ListNode ;
+	<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-agency> a knora-base:ListNode ;
 		knora-base:listNodeName "agency" ;
-		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 		knora-base:listNodePosition 3 ;
 		rdfs:label "Agentivité"@fr , "Agency"@en ;
-		knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-trinity> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-jesus> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-mary> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-holyspirit>,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-muhammad> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-buddha> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-budddeity> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-greekdeity> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-hindudeity> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-egydeity> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-angel> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-saint> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-prophet> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-monk> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-otherhuman> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-otheranim> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-animal> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-fantasy> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-faceless> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-multiple> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-demon> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-sentient> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-nonsentient> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-active> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-passive> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-distinct> ,
-							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-within> .
+		knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-trinity> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-jesus> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-mary> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-holyspirit>,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-muhammad> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-buddha> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-budddeity> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-greekdeity> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-hindudeity> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-egydeity> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-angel> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-saint> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-prophet> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-monk> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-otherhuman> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-otheranim> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-animal> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-fantasy> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-faceless> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-multiple> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-demon> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-sentient> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-nonsentient> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-active> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-passive> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-distinct> ,
+							<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-within> .
 
-		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-trinity> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-trinity> a knora-base:ListNode ;
 			knora-base:listNodeName "trinity" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 			knora-base:listNodePosition 0 ;
 			rdfs:label "Trinité"@fr , "Trinity"@en .
 			
-		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-jesus> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-jesus> a knora-base:ListNode ;
 			knora-base:listNodeName "jesus" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 			knora-base:listNodePosition 1 ;
 			rdfs:label "Jésus"@fr , "Jesus"@en .
 			
-		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-mary> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-mary> a knora-base:ListNode ;
 			knora-base:listNodeName "mary" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 			knora-base:listNodePosition 2 ;
 			rdfs:label "Marie"@fr , "Mary"@en .
 			
-		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-holyspirit> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-holyspirit> a knora-base:ListNode ;
 			knora-base:listNodeName "holyspirit" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 			knora-base:listNodePosition 3 ;
 			rdfs:label "Saint-Esprit"@fr , "Holy Spirit"@en .
 			
-		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-muhammad> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-muhammad> a knora-base:ListNode ;
 			knora-base:listNodeName "muhammad" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 			knora-base:listNodePosition 4 ;
 			rdfs:label "Mahomet"@fr , "Muhammad"@en .
 			
-		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-buddha> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-buddha> a knora-base:ListNode ;
 			knora-base:listNodeName "buddha" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 			knora-base:listNodePosition 5 ;
 			rdfs:label "Bouddha"@fr , "Buddha"@en .
 			
-		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-budddeity> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-budddeity> a knora-base:ListNode ;
 			knora-base:listNodeName "budddeity" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 			knora-base:listNodePosition 6 ;
 			rdfs:label "Divinité bouddhiste"@fr , "Buddhist deity"@en .
 			
-		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-greekdeity> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-greekdeity> a knora-base:ListNode ;
 			knora-base:listNodeName "greekdeity" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 			knora-base:listNodePosition 7 ;
 			rdfs:label "Divinité grecque"@fr , "Ancient Greek deity"@en .
 			
-		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-hindudeity> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-hindudeity> a knora-base:ListNode ;
 			knora-base:listNodeName "hindudeity" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 			knora-base:listNodePosition 8 ;
 			rdfs:label "Divinité hindoue"@fr , "Hindu deity"@en .
 			
-		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-egydeity> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-egydeity> a knora-base:ListNode ;
 			knora-base:listNodeName "egydeity" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 			knora-base:listNodePosition 9 ;
 			rdfs:label "Divinité égyptienne"@fr , "Egyptian deity"@en .
 			
-		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-angel> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-angel> a knora-base:ListNode ;
 			knora-base:listNodeName "angel" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 			knora-base:listNodePosition 10 ;
 			rdfs:label "Ange"@fr , "Angel"@en .
 			
-		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-saint> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-saint> a knora-base:ListNode ;
 			knora-base:listNodeName "saint" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 			knora-base:listNodePosition 11 ;
 			rdfs:label "Saint"@fr , "Saint"@en .
 			
-		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-prophet> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-prophet> a knora-base:ListNode ;
 			knora-base:listNodeName "prophet" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 			knora-base:listNodePosition 12 ;
 			rdfs:label "Prophète"@fr , "Prophet"@en .
 			
-		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-monk> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-monk> a knora-base:ListNode ;
 			knora-base:listNodeName "monk" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 			knora-base:listNodePosition 13 ;
 			rdfs:label "Moine ou autre ecclésiastique"@fr , "Monk or other clergyman"@en .
 					
-		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-otherhuman> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-otherhuman> a knora-base:ListNode ;
 			knora-base:listNodeName "otherhuman" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 			knora-base:listNodePosition 14 ;
 			rdfs:label "Autre - humain"@fr , "Other human"@en .
 			
-		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-otheranim> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-otheranim> a knora-base:ListNode ;
 			knora-base:listNodeName "otheranim" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 			knora-base:listNodePosition 15 ;
 			rdfs:label "Autre - animal"@fr , "Other animal"@en .
 			
-		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-animal> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-animal> a knora-base:ListNode ;
 			knora-base:listNodeName "animal" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 			knora-base:listNodePosition 16 ;
 			rdfs:label "Animal/aux"@fr , "Animal(s)"@en .
 			
-		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-fantasy> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-fantasy> a knora-base:ListNode ;
 			knora-base:listNodeName "fantasy" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 			knora-base:listNodePosition 17 ;
 			rdfs:label "Créature fantastique"@fr , "Fantasy creature"@en .
 					
-		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-faceless> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-faceless> a knora-base:ListNode ;
 			knora-base:listNodeName "faceless" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 			knora-base:listNodePosition 18 ;
 			rdfs:label "Sans visage"@fr , "Faceless"@en .
 			
-		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-multiple> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-multiple> a knora-base:ListNode ;
 			knora-base:listNodeName "multiple" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 			knora-base:listNodePosition 19 ;
 			rdfs:label "Multiple"@fr , "Multiple"@en .
 			
-		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-demon> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-demon> a knora-base:ListNode ;
 			knora-base:listNodeName "demon" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 			knora-base:listNodePosition 16 ;
 			rdfs:label "Démon(s)"@fr , "Demon(s)"@en .
 			
-		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-sentient> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-sentient> a knora-base:ListNode ;
 			knora-base:listNodeName "sentient" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 			knora-base:listNodePosition 17 ;
 			rdfs:label "Sensible"@fr , "Sentient"@en .
 			
-		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-nonsentient> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-nonsentient> a knora-base:ListNode ;
 			knora-base:listNodeName "nonsentient" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 			knora-base:listNodePosition 18 ;
 			rdfs:label "Non-sensible"@fr , "Non-sentient"@en .
 			
-		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-active> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-active> a knora-base:ListNode ;
 			knora-base:listNodeName "active" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 			knora-base:listNodePosition 19 ;
 			rdfs:label "Actif"@fr , "Active"@en .
 			
-		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-passive> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-passive> a knora-base:ListNode ;
 			knora-base:listNodeName "passive" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 			knora-base:listNodePosition 20 ;
 			rdfs:label "Passif"@fr , "Passive"@en .
 					
-		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-distinct> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-distinct> a knora-base:ListNode ;
 			knora-base:listNodeName "distinct" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 			knora-base:listNodePosition 21 ;
 			rdfs:label "Distinct du monde"@fr , "Distinct from the world"@en .
 			
-		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-within> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-within> a knora-base:ListNode ;
 			knora-base:listNodeName "within" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 			knora-base:listNodePosition 22 ;
 			rdfs:label "Dans le monde"@fr , "Within the world"@en .
 			
-	<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-nocontext> a knora-base:ListNode ;
+	<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-nocontext> a knora-base:ListNode ;
 		knora-base:listNodeName "nocontext" ;
-		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 		knora-base:listNodePosition 4 ;
 		rdfs:label "Pas de contexte"@fr , "No background"@en .
 		
-	<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-sexofgod> a knora-base:ListNode ;
+	<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-sexofgod> a knora-base:ListNode ;
 		knora-base:listNodeName "sexofgod" ;
-		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 		knora-base:listNodePosition 5 ;
 		rdfs:label "Sexe de dieu"@fr , "Sex of god"@en ;
-		knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-female> ,
-										<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-male> ,
-										<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-polysexual> ,
-										<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-asexual> .
+		knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-female> ,
+										<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-male> ,
+										<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-polysexual> ,
+										<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-asexual> .
 
-					<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-female> a knora-base:ListNode ;
+					<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-female> a knora-base:ListNode ;
 					knora-base:listNodeName "female" ;
-					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 					knora-base:listNodePosition 0 ;
 					rdfs:label "Femme/fille"@fr , "Woman/girl"@en .
 
-					<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-male> a knora-base:ListNode ;
+					<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-male> a knora-base:ListNode ;
 					knora-base:listNodeName "male" ;
-					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 					knora-base:listNodePosition 1 ;
 					rdfs:label "Homme/garçon"@fr , "Man/boy"@en .
 
-					<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-polysexual> a knora-base:ListNode ;
+					<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-polysexual> a knora-base:ListNode ;
 					knora-base:listNodeName "polysexual" ;
-					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 					knora-base:listNodePosition 2 ;
 					rdfs:label "Polysexué"@fr , "Polysexual"@en .
 
-					<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-asexual> a knora-base:ListNode ;
+					<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-asexual> a knora-base:ListNode ;
 					knora-base:listNodeName "asexual" ;
-					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 					knora-base:listNodePosition 3 ;
 					rdfs:label "Asexué"@fr , "Asexual"@en .
 		
-	<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-attributes> a knora-base:ListNode ;
+	<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-attributes> a knora-base:ListNode ;
 		knora-base:listNodeName "attributes" ;
-		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 		knora-base:listNodePosition 6 ;
 		rdfs:label "Attributs de dieu"@fr , "Attributes of god"@en ;
-		knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-aura> ,
-										<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-halo> ,
-										<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-wings> ,
-										<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-multilimbs> ,
-										<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-multieyes> ,
-										<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-mask> ,
-										<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-weapon2> ,
-										<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-lightning> .
+		knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-aura> ,
+										<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-halo> ,
+										<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-wings> ,
+										<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-multilimbs> ,
+										<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-multieyes> ,
+										<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-mask> ,
+										<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-weapon2> ,
+										<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-lightning> .
 										
-				<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-aura> a knora-base:ListNode ;
+				<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-aura> a knora-base:ListNode ;
 					knora-base:listNodeName "aura" ;
-					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 					knora-base:listNodePosition 0 ;
 					rdfs:label "Aura"@fr , "Aura"@en .
 					
-				<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-halo> a knora-base:ListNode ;
+				<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-halo> a knora-base:ListNode ;
 					knora-base:listNodeName "halo" ;
-					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 					knora-base:listNodePosition 1 ;
 					rdfs:label "Auréole"@fr , "Halo"@en .
 					
-				<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-wings> a knora-base:ListNode ;
+				<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-wings> a knora-base:ListNode ;
 					knora-base:listNodeName "wings" ;
-					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 					knora-base:listNodePosition 2 ;
 					rdfs:label "Ailes"@fr , "Wings"@en .
 					
-				<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-multilimbs> a knora-base:ListNode ;
+				<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-multilimbs> a knora-base:ListNode ;
 					knora-base:listNodeName "multilimbs" ;
-					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 					knora-base:listNodePosition 3 ;
 					rdfs:label "Membres multiples"@fr , "Multiple limbs"@en .
 					
-				<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-multieyes> a knora-base:ListNode ;
+				<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-multieyes> a knora-base:ListNode ;
 					knora-base:listNodeName "multieyes" ;
-					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 					knora-base:listNodePosition 4 ;
 					rdfs:label "Yeux multiples"@fr , "Multiple eyes"@en .
 					
-				<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-mask> a knora-base:ListNode ;
+				<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-mask> a knora-base:ListNode ;
 					knora-base:listNodeName "mask" ;
-					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 					knora-base:listNodePosition 5 ;
 					rdfs:label "Masque"@fr , "Mask"@en .
 					
-				<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-weapon2> a knora-base:ListNode ;
+				<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-weapon2> a knora-base:ListNode ;
 					knora-base:listNodeName "weapon2" ;
-					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 					knora-base:listNodePosition 6 ;
 					rdfs:label "Arme"@fr , "Weapon"@en .
 					
-				<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-lightning> a knora-base:ListNode ;
+				<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-lightning> a knora-base:ListNode ;
 					knora-base:listNodeName "lightning" ;
-					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 					knora-base:listNodePosition 7 ;
 					rdfs:label "Foudre"@fr , "Lightning"@en .
 		
-	<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-framing> a knora-base:ListNode ;
+	<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-framing> a knora-base:ListNode ;
 		knora-base:listNodeName "framing" ;
-		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 		knora-base:listNodePosition 7 ;
 		rdfs:label "Cadrage"@fr , "Framing"@en ;
-		knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-full> ,
-										<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-partial> .
+		knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-full> ,
+										<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-partial> .
 		
-				<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-full> a knora-base:ListNode ;
+				<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-full> a knora-base:ListNode ;
 					knora-base:listNodeName "full" ;
-					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 					knora-base:listNodePosition 0 ;
 					rdfs:label "Cadrage complet"@fr , "Full framing"@en .
 					
-				<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-partial> a knora-base:ListNode ;
+				<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-partial> a knora-base:ListNode ;
 					knora-base:listNodeName "partial" ;
-					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 					knora-base:listNodePosition 1 ;
 					rdfs:label "Cadrage partiel"@fr , "Partial framing"@en .
 		
-	<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-relational> a knora-base:ListNode ;
+	<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-relational> a knora-base:ListNode ;
 		knora-base:listNodeName "relational" ;
-		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 		knora-base:listNodePosition 7 ;
 		rdfs:label "Relationnel"@fr , "Relational"@en ;
-		knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-gazeviewer> ,
-										<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-gazein> ,
-										<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-gazeoff> .
+		knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-gazeviewer> ,
+										<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-gazein> ,
+										<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-gazeoff> .
 		
-				<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-gazeviewer> a knora-base:ListNode ;
+				<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-gazeviewer> a knora-base:ListNode ;
 					knora-base:listNodeName "gazeviewer" ;
-					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 					knora-base:listNodePosition 0 ;
 					rdfs:label "Regarde vers l'observateur"@fr , "Gazing at viewer"@en .
 					
-				<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-gazein> a knora-base:ListNode ;
+				<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-gazein> a knora-base:ListNode ;
 					knora-base:listNodeName "gazein" ;
-					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 					knora-base:listNodePosition 1 ;
 					rdfs:label "Regarde dans la composition"@fr , "Gazing within composition"@en .
 					
-				<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2-gazeoff> a knora-base:ListNode ;
+				<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther-gazeoff> a knora-base:ListNode ;
 					knora-base:listNodeName "gazeoff" ;
-					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList2> ;
+					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther> ;
 					knora-base:listNodePosition 2 ;
 					rdfs:label "Regarde ailleurs"@fr , "Gazing off"@en .
 
