@@ -486,7 +486,7 @@
            			"Author(s) of the comment"@en ;
 		   	   rdfs:comment "Auteur(s) du commentaire."@fr ,
 					"Author(s) of the comment."@en ;
-               salsah-gui:guiOrder "17"^^xsd:integer ;
+               salsah-gui:guiOrder "21"^^xsd:integer ;
                salsah-gui:guiElement salsah-gui:Pulldown ;
                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-CommentAuthorList>" .
 
@@ -501,7 +501,7 @@
 		   rdfs:comment "Commentaire en anglais."@fr ,
 				"Comment in English."@en ;
          salsah-gui:guiElement salsah-gui:Textarea ;
-         salsah-gui:guiOrder "15"^^xsd:integer ;
+         salsah-gui:guiOrder "19"^^xsd:integer ;
 		 salsah-gui:guiAttribute "width=95%" ,
                         		"rows=10" .
 
@@ -517,7 +517,7 @@
 		   rdfs:comment "Commentaire en français."@fr ,
 				"Comment in French."@en ;
          salsah-gui:guiElement salsah-gui:Textarea ;
-         salsah-gui:guiOrder "16"^^xsd:integer ;
+         salsah-gui:guiOrder "20"^^xsd:integer ;
 		 salsah-gui:guiAttribute "width=95%" ,
                         		"rows=10" .
 
@@ -532,7 +532,7 @@
 		   		 rdfs:comment "Commentaire du collecteur en langue originale (observations)."@fr ,
 					"Comment of the collector in original language (observations)."@en ;
 		         salsah-gui:guiElement salsah-gui:Textarea ;
-		         salsah-gui:guiOrder "14"^^xsd:integer ;
+		         salsah-gui:guiOrder "18"^^xsd:integer ;
 				 salsah-gui:guiAttribute "width=95%" ,
 		                        		"rows=10" .
 
@@ -546,7 +546,7 @@
 							"Original language of the comment"@en ;
 		   		 		 rdfs:comment "Langue originale du commentaire."@fr ,
 							"Original language of the comment."@en ;
-						 salsah-gui:guiOrder "13"^^xsd:integer ;
+						 salsah-gui:guiOrder "17"^^xsd:integer ;
 			             salsah-gui:guiElement salsah-gui:Pulldown ;
 		          	     salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList>" .
 
@@ -598,7 +598,7 @@
 						 rdfs:comment "Description en langue originale non-corrigée."@fr ,
 							"Description in original language non-corrected."@en ;
 						 salsah-gui:guiElement salsah-gui:Textarea ;
-			             salsah-gui:guiOrder "9"^^xsd:integer ;
+			             salsah-gui:guiOrder "13"^^xsd:integer ;
 						 salsah-gui:guiAttribute "width=95%" ,
 										         "rows=3" .
 
@@ -611,7 +611,7 @@
 							"Author of the description"@en ;
 		   		 		 rdfs:comment "Auteur de la description."@fr ,
 							"Author of the description."@en ;
-						 salsah-gui:guiOrder "12"^^xsd:integer ;
+						 salsah-gui:guiOrder "16"^^xsd:integer ;
 			             salsah-gui:guiElement salsah-gui:Pulldown ;
 		          	     salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-DescriptionAuthorList>" .
 
@@ -626,7 +626,7 @@
 			   rdfs:comment "Description en anglais."@fr ,
 					"Description in English."@en ;
 			   salsah-gui:guiElement salsah-gui:Textarea ;
-               salsah-gui:guiOrder "10"^^xsd:integer ;
+               salsah-gui:guiOrder "14"^^xsd:integer ;
 			   salsah-gui:guiAttribute "width=95%" ,
 							         "rows=3" .
 
@@ -641,7 +641,7 @@
 			   rdfs:comment "Description en français."@fr ,
 					"Description in English."@en ;
 			   salsah-gui:guiElement salsah-gui:Textarea ;
-               salsah-gui:guiOrder "11"^^xsd:integer ;
+               salsah-gui:guiOrder "15"^^xsd:integer ;
 			   salsah-gui:guiAttribute "width=95%" ,
 							         "rows=3" .
 
@@ -681,7 +681,7 @@
 			   		 rdfs:comment "Description en langue originale corrigée."@fr ,
 						"Description in original language, corrected."@en ;
 				   	 salsah-gui:guiElement salsah-gui:Textarea ;
-	               	 salsah-gui:guiOrder "8"^^xsd:integer ;
+	               	 salsah-gui:guiOrder "12"^^xsd:integer ;
 				     salsah-gui:guiAttribute "width=95%" ,
 								         "rows=3" .
 
@@ -695,7 +695,7 @@
 								"Original language of the description"@en ;
 		   		 		 	 rdfs:comment "Langue originale de la description."@fr ,
 								"Original language of the description."@en ;
-							 salsah-gui:guiOrder "7"^^xsd:integer ;
+							 salsah-gui:guiOrder "11"^^xsd:integer ;
 				             salsah-gui:guiElement salsah-gui:Pulldown ;
 			          	     salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList>" .
 
@@ -802,7 +802,7 @@
 				rdfs:comment "Commentaire interne (en accès public)."@fr ,
 					 	"Internal comment (public drawing)."@en ;
 		         salsah-gui:guiElement salsah-gui:Textarea ;
-		         salsah-gui:guiOrder "24"^^xsd:integer ;
+		         salsah-gui:guiOrder "25"^^xsd:integer ;
 				 salsah-gui:guiAttribute "width=95%" ,
 		                        		"rows=10" .
 
@@ -816,7 +816,7 @@
 				rdfs:comment "Commentaire interne (dessin en accès restreint)."@fr ,
 					 	"Internal comment (private drawing)."@en ;
 		         salsah-gui:guiElement salsah-gui:Textarea ;
-		         salsah-gui:guiOrder "2"^^xsd:integer ;
+		         salsah-gui:guiOrder "25"^^xsd:integer ;
 				 salsah-gui:guiAttribute "width=95%" ,
 		                        		"rows=10" .
 
@@ -1031,7 +1031,7 @@
           	rdfs:comment "Contrôle qualité associé"@fr ,
 					 	"Has quality control"@en ;
           	salsah-gui:guiElement salsah-gui:Searchbox ;
-          	salsah-gui:guiOrder "23"^^xsd:integer .
+          	salsah-gui:guiOrder "24"^^xsd:integer .
 
 ###  http://www.knora.org/ontology/0105#hasQualityValue
 :hasQualityValue rdf:type owl:ObjectProperty ;
@@ -1078,29 +1078,29 @@
       	   	  salsah-gui:guiOrder "2"^^xsd:integer .
 
 
-###  http://www.knora.org/ontology/0105#includes
-:includes rdf:type owl:ObjectProperty ;
+###  http://www.knora.org/ontology/0105#isRelatedTo
+:isRelatedTo rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf knora-base:hasLinkTo ;
-          knora-base:objectClassConstraint :Passage ;
-          knora-base:subjectClassConstraint :CollectionSite ;
-          rdfs:label "Visite(s) associé(s) à un site de collecte"@fr ,
-                     "Group visit(s) associated with a collection site"@en ;
-          rdfs:comment "Visite(s) associé(s) à un site de collecte."@fr ,
-					 	"Group visit(s) associated with a collection site."@en;
+          knora-base:objectClassConstraint :CollectionSite ;
+          knora-base:subjectClassConstraint :Passage ;
+          rdfs:label "Site de collecte associé à une visite"@fr ,
+                     "Collection site associated with a group visit"@en ;
+          rdfs:comment "Site de collecte associé à une visite."@fr ,
+					 	"Collection site associated with a group visit."@en;
           salsah-gui:guiElement salsah-gui:Searchbox ;
           salsah-gui:guiOrder "11"^^xsd:integer .
 
 
 
-###  http://www.knora.org/ontology/0105#includesValue
-:includesValue rdf:type owl:ObjectProperty ;
+###  http://www.knora.org/ontology/0105#isRelatedToValue
+:isRelatedToValue rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf knora-base:hasLinkToValue ;
           knora-base:objectClassConstraint knora-base:LinkValue ;
-          knora-base:subjectClassConstraint :CollectionSite ;
-          rdfs:label "Visite(s) associé(s) à un site de collecte"@fr ,
-                     "Group visit(s) associated with a collection site"@en ;
-          rdfs:comment "Visite(s) associé(s) à un site de collecte."@fr ,
-					 	"Group visit(s) associated with a collection site."@en .
+          knora-base:subjectClassConstraint :Passage ;
+          rdfs:label "Site de collecte associé à une visite"@fr ,
+                     "Collection site associated with a group visit"@en ;
+          rdfs:comment "Site de collecte associé à une visite."@fr ,
+					 	"Collection site associated with a group visit."@en .
 
 
 ####  http://www.knora.org/ontology/0105#instruction
@@ -1220,7 +1220,7 @@
 		   		 		 	 		rdfs:comment "Restitution de l'instruction en langue originale non-corrigée."@fr ,
 										"Recall of the task in original language non-corrected."@en ;
 									salsah-gui:guiElement salsah-gui:Textarea ;
-					                salsah-gui:guiOrder "4"^^xsd:integer ;
+					                salsah-gui:guiOrder "6"^^xsd:integer ;
 								    salsah-gui:guiAttribute "width=95%" ,
 												         "rows=3" .
 
@@ -1235,7 +1235,7 @@
 		   		 		  rdfs:comment "Restitution de l'instruction en anglais."@fr ,
 									"Recall of the task in English."@en ;
 						  salsah-gui:guiElement salsah-gui:Textarea ;
-			              salsah-gui:guiOrder "5"^^xsd:integer ;
+			              salsah-gui:guiOrder "7"^^xsd:integer ;
 						  salsah-gui:guiAttribute "width=95%" ,
 										         "rows=3" .
 
@@ -1250,9 +1250,21 @@
 		   		 		  rdfs:comment "Restitution de l'instruction en français."@fr ,
 									"Recall of the task in French."@en ;
 						  salsah-gui:guiElement salsah-gui:Textarea ;
-			              salsah-gui:guiOrder "6"^^xsd:integer ;
+			              salsah-gui:guiOrder "8"^^xsd:integer ;
 						  salsah-gui:guiAttribute "width=95%" ,
 										         "rows=3" .
+
+###  http://www.knora.org/ontology/0105#hasInstructionRestitutionAuthor
+:hasInstructionRestitutionAuthor rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf knora-base:hasValue ;
+                          knora-base:objectClassConstraint knora-base:TextValue ;
+                          knora-base:subjectClassConstraint :Verso ;
+                          rdfs:label "Author of the recall"@fr ,
+									"Author of the recall"@en ;
+		   		 		  rdfs:comment "RAuthor of the recall."@fr ,
+									"Author of the recall."@en ;
+						  salsah-gui:guiElement salsah-gui:Textarea ;
+						  salsah-gui:guiOrder "9"^^xsd:integer .
 
 
 ###  http://www.knora.org/ontology/0105#hasInstructionRestitutionOriginal
@@ -1265,7 +1277,7 @@
 		   		 		 	 	rdfs:comment "Restitution de l'instruction en langue originale corrigée."@fr ,
 									"Recall of the task in original language, corrected."@en ;
 							    salsah-gui:guiElement salsah-gui:Textarea ;
-				                salsah-gui:guiOrder "3"^^xsd:integer ;
+				                salsah-gui:guiOrder "5"^^xsd:integer ;
 							    salsah-gui:guiAttribute "width=95%" ,
 											         "rows=3" .
 
@@ -1279,7 +1291,7 @@
 											"Original language of the recall of the task"@en ;
 		   		 		 	 			rdfs:comment "Langue originale de restitution de l'instruction."@fr ,
 											"Original language of the recall of the task."@en ;
-										salsah-gui:guiOrder "2"^^xsd:integer ;
+										salsah-gui:guiOrder "4"^^xsd:integer ;
 							            salsah-gui:guiElement salsah-gui:Pulldown ;
 						          	    salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList>" .
 
@@ -1384,24 +1396,37 @@
 ###  http://www.knora.org/ontology/0105#hasKeyword
 :hasKeyword rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf knora-base:hasValue ;
-          rdfs:label "Mots-clés"@fr ,
-                     "Keywords"@en ;
-          rdfs:comment "Mot-clés selon le dessin de l'enfant et sa description écrite"@fr ,
-					 "Keywords based on the child's drawing and its related written description"@en ;
+          rdfs:label "Mots-clés: contexte (général)"@fr ,
+                     "Keywords: context (general)"@en ;
+          rdfs:comment "Mots-clés: contexte (général)"@fr ,
+					 "Keywords: context (general)"@en ;
 		  salsah-gui:guiOrder "22"^^xsd:integer ;
           knora-base:objectClassConstraint knora-base:ListValue ;
           knora-base:subjectClassConstraint :Drawing ;
           salsah-gui:guiElement salsah-gui:List ;
           salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList>" .
 
+###  http://www.knora.org/ontology/0105#hasKeywordOther
+:hasKeywordOther rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf knora-base:hasValue ;
+          rdfs:label "Mots-clés: autre (ni figure principale, ni contexte, ou les deux)"@fr ,
+                     "Keywords: other (neither principal figure, nor context, or both)"@en ;
+          rdfs:comment "Mots-clés: autre (ni figure principale, ni contexte, ou les deux)"@fr ,
+					 "Keywords: other (neither principal figure, nor context, or both)"@en ;
+		  salsah-gui:guiOrder "23"^^xsd:integer ;
+          knora-base:objectClassConstraint knora-base:ListValue ;
+          knora-base:subjectClassConstraint :Drawing ;
+          salsah-gui:guiElement salsah-gui:List ;
+          salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther>" .
+
 
 ###  http://www.knora.org/ontology/0105#hasDrawingParts
 :hasDrawingParts rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf knora-base:hasValue ;
-          rdfs:label "Dessin simple ou divisé"@fr ,
-                     "Single or divided drawing"@en ;
-          rdfs:comment "Est-ce que le dessin est simple ou composé de plusieurs parties ?"@fr ,
-					 "Is the drawing simple or divided into several parts?"@en ;
+          rdfs:label "Mots-clés: composition générale d'image"@fr ,
+                     "Keywords: general composition of the drawing"@en ;
+          rdfs:comment "Mots-clés: composition générale d'image"@fr ,
+					 "Keywords: general composition of the drawing"@en ;
 		  salsah-gui:guiOrder "17"^^xsd:integer ;
           knora-base:objectClassConstraint knora-base:ListValue ;
           knora-base:subjectClassConstraint :Drawing ;
@@ -1412,10 +1437,10 @@
 ###  http://www.knora.org/ontology/0105#hasFigure
 :hasFigure rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf knora-base:hasValue ;
-          rdfs:label "Elément représenté sur le dessin"@fr ,
-                     "Element represented in the drawing"@en ;
-          rdfs:comment "Comment peut être interprété l'élément principal du dessin ?"@fr ,
-					 "How is the main element in the drawing to be interpreted?"@en ;
+          rdfs:label "Mots-clés: figure ou motif principal (dieu)"@fr ,
+                     "Keywords: main figure or motif (god)"@en ;
+          rdfs:comment "Mots-clés: figure ou motif principal (dieu)"@fr ,
+					 "Keywords: main figure or motif (god)"@en ;
 		  salsah-gui:guiOrder "18"^^xsd:integer ;
           knora-base:objectClassConstraint knora-base:ListValue ;
           knora-base:subjectClassConstraint :Drawing ;
@@ -1426,11 +1451,11 @@
 ###  http://www.knora.org/ontology/0105#hasGodFunction
 :hasGodFunction rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf knora-base:hasValue ;
-          rdfs:label "Fonction de dieu sur le dessin"@fr ,
-                     "Function of god in the drawing"@en ;
-          rdfs:comment "Quelle est l'action ou l'intention de dieu sur le dessin ?"@fr ,
-					 "What is the action or intention born by god?"@en ;
-		  salsah-gui:guiOrder "21"^^xsd:integer ;
+          rdfs:label "Mots-clés: fonction de dieu"@fr ,
+                     "Keywords: function of god"@en ;
+          rdfs:comment "Mots-clés: fonction de dieu"@fr ,
+					 "Keywords: Function of god"@en ;
+		  salsah-gui:guiOrder "20"^^xsd:integer ;
           knora-base:objectClassConstraint knora-base:ListValue ;
           knora-base:subjectClassConstraint :Drawing ;
           salsah-gui:guiElement salsah-gui:Pulldown ;
@@ -1440,11 +1465,11 @@
 ###  http://www.knora.org/ontology/0105#hasGodPosition
 :hasGodPosition rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf knora-base:hasValue ;
-          rdfs:label "Position de dieu sur le dessin"@fr ,
-                     "Position of god in the drawing"@en ;
-          rdfs:comment "Position de dieu par rapport au contexte sur le dessin ?"@fr ,
-					 "Position of god in relation to the background of the image?"@en ;
-		  salsah-gui:guiOrder "20"^^xsd:integer ;
+          rdfs:label "Mots-clés: position de dieu (contexte immédiat)"@fr ,
+                     "Keywords: position of god (immediate context)"@en ;
+          rdfs:comment "Mots-clés: position de dieu (contexte immédiat)"@fr ,
+					 "Keywords: position of god (immediate context)"@en ;
+		  salsah-gui:guiOrder "19"^^xsd:integer ;
           knora-base:objectClassConstraint knora-base:ListValue ;
           knora-base:subjectClassConstraint :Drawing ;
           salsah-gui:guiElement salsah-gui:Pulldown ;
@@ -1454,11 +1479,11 @@
 ###  http://www.knora.org/ontology/0105#hasDrawingReligiousIdentity
 :hasDrawingReligiousIdentity rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf knora-base:hasValue ;
-          rdfs:label "Identité religieuse visuelle du dessin"@fr ,
-                     "Visual religious identity of the drawing"@en ;
-          rdfs:comment "Est-ce qu'il y a une identité religieuse claire sur le dessin et laquelle est-ce ?"@fr ,
-					 "Is there a clear religious identity in the drawing and which one is it?"@en ;
-		  salsah-gui:guiOrder "19"^^xsd:integer ;
+          rdfs:label "Mots-clés: identité religieuse du dessin"@fr ,
+                     "Keywords: religious identity of the image"@en ;
+          rdfs:comment "Mots-clés: identité religieuse du dessin"@fr ,
+					 "Keywords: religious identity of the image"@en ;
+		  salsah-gui:guiOrder "21"^^xsd:integer ;
           knora-base:objectClassConstraint knora-base:ListValue ;
           knora-base:subjectClassConstraint :Drawing ;
           salsah-gui:guiElement salsah-gui:Pulldown ;
@@ -1902,7 +1927,7 @@
                      	"Description is absent"@en ;
 			   	rdfs:comment "Description est absente."@fr ,
 					 	"Description is absent."@en ;
-				salsah-gui:guiOrder "11"^^xsd:integer ;
+				salsah-gui:guiOrder "10"^^xsd:integer ;
        		  	salsah-gui:guiElement salsah-gui:Checkbox .
 
 
@@ -2037,21 +2062,6 @@
 #			   	    rdfs:comment """Super-propriété des propriétés ""hasQuestionnaireBaseFile"" et ""hasQuestionnairePageFile""."""@fr ;
 #		            salsah-gui:guiElement salsah-gui:Searchbox ;
 #		            salsah-gui:guiOrder "3"^^xsd:integer .
-
-
-###  http://www.knora.org/ontology/0105#hasQuestionnaireIndividualComment
-:hasQuestionnaireIndividualComment rdf:type owl:ObjectProperty ;
-                                rdfs:subPropertyOf :hasInternalComment ;
-                                knora-base:objectClassConstraint knora-base:TextValue ;
-                                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
-                                rdfs:label "Commentaire interne (questionnaire individuel)"@fr ,
-                     				"Internal comment (individual questionnaire)"@en ;
-			   			  		rdfs:comment "Commentaire interne (questionnaire individuel)"@fr ,
-					 				"Internal comment (individual questionnaire)"@en ;
-						         salsah-gui:guiElement salsah-gui:Textarea ;
-						         salsah-gui:guiOrder "63"^^xsd:integer ;
-								 salsah-gui:guiAttribute "width=95%" ,
-						                        		"rows=10" .
 
 
 ###  http://www.knora.org/ontology/0105#hasQuestionnairePageComment
@@ -2352,7 +2362,7 @@
                 "Textual data is complete in French"@en ;
 			 rdfs:comment "Consigne, description, les mots sur le recto, et les commentaires sont ajoutés en français."@fr ,
 			  	"Task restitution, description, words on recto and the commentaries are entered in French."@en ;
-       		 salsah-gui:guiOrder "15"^^xsd:integer ;
+       		 salsah-gui:guiOrder "17"^^xsd:integer ;
        		 salsah-gui:guiElement salsah-gui:Checkbox .
 
 ###  http://www.knora.org/ontology/0105#hasTextEnteredEn
@@ -2376,7 +2386,7 @@
                 "Textual data is complete in original language"@en ;
 			 rdfs:comment "Consigne, description, les mots sur le recto, et commentaire sont ajoutés en langue originale."@fr ,
 			  	"Task restitution, description, words on recto and the commentaries are entered in original language."@en ;
-       		 salsah-gui:guiOrder "17"^^xsd:integer ;
+       		 salsah-gui:guiOrder "15"^^xsd:integer ;
        		 salsah-gui:guiElement salsah-gui:Checkbox .
 
 
@@ -2416,7 +2426,7 @@
                      	"Verso is absent"@en ;
 			   	rdfs:comment "Le verso est vierge ou indisponible."@fr ,
 					 	"Verso is blank or not available."@en ;
-				salsah-gui:guiOrder "8"^^xsd:integer ;
+				salsah-gui:guiOrder "2"^^xsd:integer ;
        		    salsah-gui:guiElement salsah-gui:Checkbox .
 
 
@@ -2429,7 +2439,7 @@
                      	"Recall of the task is absent"@en ;
 			   	rdfs:comment "La restitution de consigne est absente."@fr ,
 					 	"Recall of the task is absent."@en ;
-				salsah-gui:guiOrder "8"^^xsd:integer ;
+				salsah-gui:guiOrder "3"^^xsd:integer ;
        		    salsah-gui:guiElement salsah-gui:Checkbox .
 
 
@@ -2443,7 +2453,7 @@
 			  rdfs:comment "Commentaire interne (verso)"@fr ,
 				"Internal comment (verso)"@en ;
 	         salsah-gui:guiElement salsah-gui:Textarea ;
-	         salsah-gui:guiOrder "20"^^xsd:integer ;
+	         salsah-gui:guiOrder "24"^^xsd:integer ;
 			 salsah-gui:guiAttribute "width=95%" ,
 	                        		"rows=10" .
 
@@ -2457,7 +2467,7 @@
                 			"Verso translator (English)"@en ;
 				   rdfs:comment "Traducteur du verso (anglais)."@fr ,
 			  				"Verso translator (English)."@en ;
-			  	   salsah-gui:guiOrder "18"^^xsd:integer ;
+			  	   salsah-gui:guiOrder "22"^^xsd:integer ;
 		           salsah-gui:guiElement salsah-gui:Pulldown ;
                    salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TranslatorList>" .
 
@@ -2472,7 +2482,7 @@
                 			"Verso translator (French)"@en ;
 				   rdfs:comment "Traducteur du verso (français)."@fr ,
 			  				"Verso translator (French)."@en ;
-			  	   salsah-gui:guiOrder "19"^^xsd:integer ;
+			  	   salsah-gui:guiOrder "23"^^xsd:integer ;
 		           salsah-gui:guiElement salsah-gui:Pulldown ;
                    salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TranslatorList>" .
 
@@ -2610,7 +2620,7 @@
           rdfs:comment "Questionnaire individuel fondé sur le questionnaire standardisé suivant"@fr ,
 					 	"Individual questionnaire is based on the following standardized questionnaire"@en ;
           salsah-gui:guiElement salsah-gui:Searchbox ;
-          salsah-gui:guiOrder "3"^^xsd:integer .
+          salsah-gui:guiOrder "2"^^xsd:integer .
 
 ###  http://www.knora.org/ontology/0105#hasModelValue
 :hasModelValue rdf:type owl:ObjectProperty ;
@@ -2621,6 +2631,20 @@
                      "Model questionnaire"@en ;
           rdfs:comment "Questionnaire individuel fondé sur le questionnaire standardisé suivant"@fr ,
 					 	"Individual questionnaire is based on the following standardized questionnaire"@en .
+
+###  http://www.knora.org/ontology/0105#hasQuestionnaireIndividualComment
+:hasQuestionnaireIndividualComment rdf:type owl:ObjectProperty ;
+                                rdfs:subPropertyOf :hasInternalComment ;
+                                knora-base:objectClassConstraint knora-base:TextValue ;
+                                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+                                rdfs:label "Commentaire interne (questionnaire individuel)"@fr ,
+                     				"Internal comment (individual questionnaire)"@en ;
+			   			  		rdfs:comment "Commentaire interne (questionnaire individuel)"@fr ,
+					 				"Internal comment (individual questionnaire)"@en ;
+						         salsah-gui:guiElement salsah-gui:Textarea ;
+						         salsah-gui:guiOrder "200"^^xsd:integer ;
+								 salsah-gui:guiAttribute "width=95%" ,
+						                        		"rows=10" .
 
 ###  http://www.knora.org/ontology/0105#religiousAffiliation
 :religiousAffiliation rdf:type owl:ObjectProperty ;
@@ -4251,15 +4275,7 @@
 #                                [ rdf:type owl:Restriction ;
 #                                  owl:onProperty :hasGeonameCode ;
 #                                  owl:maxCardinality "1"^^xsd:nonNegativeInteger
-#                                ] ,
-							  	[ rdf:type owl:Restriction ;
-	                              owl:onProperty :includes ;
-	                              owl:cardinality "1"^^xsd:nonNegativeInteger
-	                          	] ,
-	                          	[ rdf:type owl:Restriction ;
-	                              owl:onProperty :includesValue ;
-	                              owl:cardinality "1"^^xsd:nonNegativeInteger
-	                          	] ,
+#                                ] ,							  	
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty :hasGlobalLocation ;
                                   owl:cardinality "1"^^xsd:nonNegativeInteger
@@ -4319,6 +4335,10 @@
                            owl:onProperty :hasKeyword ;
 						   owl:minCardinality "0"^^xsd:nonNegativeInteger
                          ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasKeywordOther ;
+						   owl:minCardinality "0"^^xsd:nonNegativeInteger
+                         ] , 
                          [ rdf:type owl:Restriction ;
                            owl:onProperty :hasCodeRecto ;
                            owl:cardinality "1"^^xsd:nonNegativeInteger
@@ -4560,7 +4580,15 @@
                          [ rdf:type owl:Restriction ;
                            owl:onProperty :hasPassageMinAgeRangeYear ;
                            owl:maxCardinality "1"^^xsd:nonNegativeInteger
-                         ] ;
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+	                       owl:onProperty :isRelatedTo ;
+	                       owl:cardinality "1"^^xsd:nonNegativeInteger
+	                     ] ,
+	                     [ rdf:type owl:Restriction ;
+	                       owl:onProperty :isRelatedToValue ;
+	                       owl:cardinality "1"^^xsd:nonNegativeInteger
+	                     ] ;
 		rdfs:label "Visite"@fr ,
             "Group visit"@en ;
         rdfs:comment "Pour un site et une campagne donnés, c’est un groupe particulier qui participe à une activité (classe, etc.)."@fr .
@@ -5464,6 +5492,10 @@
                        ] ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasDescriptionUnavailable ;
+                         owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasInstructionRestitutionAuthor ;
                          owl:maxCardinality "1"^^xsd:nonNegativeInteger
                        ] ;
 		rdfs:label "Verso"@fr ,
