@@ -2622,7 +2622,7 @@
                      "Model questionnaire"@en ;
           rdfs:comment "Questionnaire individuel fondé sur le questionnaire standardisé suivant"@fr ,
 					 	"Individual questionnaire is based on the following standardized questionnaire"@en .
-NO number here?
+
 
 ###  http://www.knora.org/ontology/0105#religiousAffiliation
 :religiousAffiliation rdf:type owl:ObjectProperty ;
@@ -4155,7 +4155,7 @@ NO number here?
 		                salsah-gui:guiOrder "122"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedNumListQ>" .
- .
+ 
 
 #################################################################
 #    Classes
