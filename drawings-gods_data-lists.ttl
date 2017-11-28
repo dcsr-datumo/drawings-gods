@@ -104,8 +104,8 @@
 ###   DescriptionAuthorList
 <http://rdfh.ch/lists/drawings-gods-2016-list-DescriptionAuthorList> a knora-base:ListNode ;
 	knora-base:isRootNode true ;
-	rdfs:comment "Liste de choix pour l'auteur de la description sur le verso"@fr ;
-	rdfs:label "Auteur de la description sur le verso (liste)"@fr , "Author of description on verso (list)"@en ;
+	rdfs:comment "Liste de choix pour l'auteur de la description et de la restitution de la consigne sur le verso"@fr ;
+	rdfs:label "Auteur de la description et de la restitution de la consigne sur le verso (liste)"@fr , "Author of description and of the task restitution on verso (list)"@en ;
 	knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-DescriptionAuthorList-child> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-DescriptionAuthorList-collector> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-DescriptionAuthorList-teacher> ,
@@ -5412,7 +5412,7 @@
 			knora-base:listNodeName "humanoid" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList> ;
 			knora-base:listNodePosition 1 ;
-			rdfs:label "Figure humanoïde"@fr , "humanoid figure"@en ;
+			rdfs:label "Figure humanoïde"@fr , "Humanoid figure"@en ;
 			knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-normalhuman> ,
 										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-culturalfigure> ,
 										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-religiousfigure> ,
