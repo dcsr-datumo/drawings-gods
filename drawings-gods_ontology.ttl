@@ -1257,14 +1257,16 @@
 ###  http://www.knora.org/ontology/0105#hasInstructionRestitutionAuthor
 :hasInstructionRestitutionAuthor rdf:type owl:ObjectProperty ;
                           rdfs:subPropertyOf knora-base:hasValue ;
-                          knora-base:objectClassConstraint knora-base:TextValue ;
+                          knora-base:objectClassConstraint knora-base:ListValue ;
                           knora-base:subjectClassConstraint :Verso ;
                           rdfs:label "Author of the recall"@fr ,
 									"Author of the recall"@en ;
 		   		 		  rdfs:comment "RAuthor of the recall."@fr ,
 									"Author of the recall."@en ;
-						  salsah-gui:guiElement salsah-gui:Textarea ;
+						  salsah-gui:guiElement salsah-gui:Pulldown ;
+		          	      salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-DescriptionAuthorList>" ;
 						  salsah-gui:guiOrder "9"^^xsd:integer .
+
 
 
 ###  http://www.knora.org/ontology/0105#hasInstructionRestitutionOriginal
@@ -1591,7 +1593,7 @@
                      "Material is standard (UNIL)"@en ;
 		  	rdfs:comment "néocolors, feuille A4 blanche, crayon papier."@fr ,
 					 "Neocolors, A4, paper pencil."@en ;
-       		salsah-gui:guiOrder "16"^^xsd:integer ;
+       		salsah-gui:guiOrder "18"^^xsd:integer ;
 	        salsah-gui:guiElement salsah-gui:Checkbox .
 
 
@@ -1604,7 +1606,7 @@
                      "Material is acceptable, but is not UNIL"@en ;
 		  	rdfs:comment "crayons de couleur ou feutre de couleur, feuille A4 blanche, pas d’autocollants, pas de règles et matériel de géométrie..."@fr ,
 					 "Color pencils or feutres, A4 white, no stickers, the rulers were not used..."@en ;
-       		salsah-gui:guiOrder "16"^^xsd:integer ;
+       		salsah-gui:guiOrder "19"^^xsd:integer ;
 	        salsah-gui:guiElement salsah-gui:Checkbox .
 
 
@@ -1914,7 +1916,7 @@
 			   	rdfs:comment "Commentaire interne (contrôle qualité)"@fr ,
 					 	"Internal comment (quality control)"@en ;
 		         salsah-gui:guiElement salsah-gui:Textarea ;
-		         salsah-gui:guiOrder "17"^^xsd:integer ;
+		         salsah-gui:guiOrder "20"^^xsd:integer ;
 				 salsah-gui:guiAttribute "width=95%" ,
 		                        		"rows=10" .
 
@@ -5499,7 +5501,7 @@
                        ] ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasInstructionRestitutionAuthor ;
-                         owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                         owl:minCardinality "0"^^xsd:nonNegativeInteger
                        ] ;
 		rdfs:label "Verso"@fr ,
              	"Verso"@en ;
