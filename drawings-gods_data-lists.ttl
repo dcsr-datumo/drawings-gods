@@ -4261,7 +4261,7 @@
 		knora-base:listNodeName "male" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-GodSexListQ> ;
 		knora-base:listNodePosition 2 ;
-		rdfs:label "Masculin"@fr , "male"@en .
+		rdfs:label "Masculin"@fr , "Male"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-GodSexListQ-neuter> a knora-base:ListNode ;
 		knora-base:listNodeName "neuter" ;
