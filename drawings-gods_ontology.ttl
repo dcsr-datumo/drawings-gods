@@ -2833,9 +2833,9 @@
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
 		                knora-base:objectClassConstraint knora-base:TextValue ;
 						rdfs:label "Familiarité avec le lieu de culte: temple bouddhiste (y compris otera). Pourquoi?"@fr ,
-							"Familiarity with place of worship: Buddhist temple (including otera). Why?"@en ;
+							"Familiarity with place of worship: buddhist temple (including otera). Why?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: temple bouddhiste (y compris otera). Pourquoi?"@fr ,
-							"Familiarity with place of worship: Buddhist temple (including otera). Why?"@en ;
+							"Familiarity with place of worship: buddhist temple (including otera). Why?"@en ;
 		                salsah-gui:guiOrder "23"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
@@ -2847,9 +2847,9 @@
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
 		                knora-base:objectClassConstraint knora-base:TextValue ;
 						rdfs:label "Familiarité avec le lieu de culte: temple bouddhiste (y compris otera). Avec qui?"@fr ,
-							"Familiarity with place of worship: Buddhist temple (including otera). With whom?"@en ;
+							"Familiarity with place of worship: buddhist temple (including otera). With whom?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: temple bouddhiste (y compris otera). Avec qui?"@fr ,
-							"Familiarity with place of worship: Buddhist temple (including otera). With whom?"@en ;
+							"Familiarity with place of worship: buddhist temple (including otera). With whom?"@en ;
 		                salsah-gui:guiOrder "24"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
@@ -2861,9 +2861,9 @@
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
 		                knora-base:objectClassConstraint knora-base:TextValue ;
 						rdfs:label "Familiarité avec le lieu de culte: temple bouddhiste (y compris otera). La dernière fois?"@fr ,
-							"Familiarity with place of worship: Buddhist temple (including otera). Last time?"@en ;
+							"Familiarity with place of worship: buddhist temple (including otera). Last time?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: temple bouddhiste (y compris otera). La dernière fois?"@fr ,
-							"Familiarity with place of worship: Buddhist temple (including otera). Last time?"@en ;
+							"Familiarity with place of worship: buddhist temple (including otera). Last time?"@en ;
 		                salsah-gui:guiOrder "25"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
@@ -2914,8 +2914,8 @@
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
 		                knora-base:objectClassConstraint knora-base:TextValue ;
-						rdfs:label "Familiarité avec le lieu de culte: jinja. Avec qui?"@fr ,
-							"Familiarity with place of worship: jinja. With whom?"@en ;
+						rdfs:label "Familiarité avec le lieu de culte: temple shinto (jinja). Avec qui?"@fr ,
+							"Familiarity with place of worship: shinto temple (jinja). With whom?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: jinja. Avec qui?"@fr ,
 							"Familiarity with place of worship: jinja. With whom?"@en ;
 		                salsah-gui:guiOrder "29"^^xsd:integer ;
@@ -2928,9 +2928,9 @@
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
 		                knora-base:objectClassConstraint knora-base:TextValue ;
-						rdfs:label "Familiarité avec le lieu de culte: jinja. La dernière fois?"@fr ,
+						rdfs:label "Familiarité avec le lieu de culte: temple shinto (jinja). La dernière fois?"@fr ,
 							"Familiarity with place of worship: jinja. Last time?"@en ;
-						rdfs:comment "Familiarité avec le lieu de culte: jinja. La dernière fois?"@fr ,
+						rdfs:comment "Familiarité avec le lieu de culte: shinto temple (jinja). La dernière fois?"@fr ,
 							"Familiarity with place of worship: jinja. Last time?"@en ;
 		                salsah-gui:guiOrder "30"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
@@ -3148,9 +3148,9 @@
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
 		                knora-base:objectClassConstraint knora-base:ListValue ;
 						rdfs:label "Familiarité avec le lieu de culte. Es-tu déjà entré dans un temple non-spécifique?"@fr ,
-							"Familiarity with place of worship. Have you ever entered any non specific temple?"@en ;
+							"Familiarity with place of worship. Have you ever entered any unspecific temple?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte. Es-tu déjà entré dans un temple non-spécifique?"@fr ,
-							"Familiarity with place of worship. Have you ever entered any non specific temple?"@en ;
+							"Familiarity with place of worship. Have you ever entered any unspecific temple?"@en ;
 		                salsah-gui:guiOrder "46"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
@@ -3174,9 +3174,9 @@
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
 		                knora-base:objectClassConstraint knora-base:TextValue ;
 						rdfs:label "Familiarité avec le lieu de culte: temple non-spécifique. Pourquoi?"@fr ,
-							"Familiarity with place of worship: Non-specific temple. Why?"@en ;
+							"Familiarity with place of worship: unspecific temple. Why?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: temple non-spécifique. Pourquoi?"@fr ,
-							"Familiarity with place of worship: Non-specific temple. Why?"@en ;
+							"Familiarity with place of worship: unspecific temple. Why?"@en ;
 		                salsah-gui:guiOrder "48"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
@@ -3188,9 +3188,9 @@
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
 		                knora-base:objectClassConstraint knora-base:TextValue ;
 						rdfs:label "Familiarité avec le lieu de culte: temple non-spécifique. Avec qui?"@fr ,
-							"Familiarity with place of worship: Non-specific temple. With whom?"@en ;
+							"Familiarity with place of worship: unspecific temple. With whom?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: temple non-spécifique. Avec qui?"@fr ,
-							"Familiarity with place of worship: Non-specific temple. With whom?"@en ;
+							"Familiarity with place of worship: unspecific temple. With whom?"@en ;
 		                salsah-gui:guiOrder "49"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
@@ -3202,9 +3202,9 @@
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
 		                knora-base:objectClassConstraint knora-base:TextValue ;
 						rdfs:label "Familiarité avec le lieu de culte: temple non-spécifique. La dernière fois?"@fr ,
-							"Familiarity with place of worship: Non-specific temple. Last time?"@en ;
+							"Familiarity with place of worship: unspecific temple. Last time?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: temple non-spécifique. La dernière fois?"@fr ,
-							"Familiarity with place of worship: Non-specific temple. Last time?"@en ;
+							"Familiarity with place of worship: unspecific temple. Last time?"@en ;
 		                salsah-gui:guiOrder "50"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
