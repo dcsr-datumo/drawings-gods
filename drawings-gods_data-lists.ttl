@@ -104,8 +104,8 @@
 ###   DescriptionAuthorList
 <http://rdfh.ch/lists/drawings-gods-2016-list-DescriptionAuthorList> a knora-base:ListNode ;
 	knora-base:isRootNode true ;
-	rdfs:comment "Liste de choix pour l'auteur de la description sur le verso"@fr ;
-	rdfs:label "Auteur de la description sur le verso (liste)"@fr , "Author of description on verso (list)"@en ;
+	rdfs:comment "Liste de choix pour l'auteur de la description et de la restitution de la consigne sur le verso"@fr ;
+	rdfs:label "Auteur de la description et de la restitution de la consigne sur le verso (liste)"@fr , "Author of description and of the task restitution on verso (list)"@en ;
 	knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-DescriptionAuthorList-child> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-DescriptionAuthorList-collector> ,
 	<http://rdfh.ch/lists/drawings-gods-2016-list-DescriptionAuthorList-teacher> ,
@@ -2157,7 +2157,6 @@
 		knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-chibaPrefecture> ,
 									<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-fukushimaPrefecture> ,
 									<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-kyotoPrefecture> ,
-									<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-nonidentifiedPrefecture> ,
 									<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-tokyoPrefecture> .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-chibaPrefecture> a knora-base:ListNode ;
@@ -2165,8 +2164,7 @@
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
 			knora-base:listNodePosition 0 ;
 			rdfs:label "Préfecture Chiba"@fr , "Chiba Prefecture"@en ;
-			knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-ichikawa> ,
-									<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-fuchu> .
+			knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-ichikawa> .
 
 			<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-ichikawa> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
@@ -2180,19 +2178,6 @@
 					knora-base:listNodeName "ebichikawa" ;
 					knora-base:listNodePosition 0 ;
 					rdfs:label "Ecole bouddhiste à Ichikawa (rix)"@fr , "Buddhist school in Ichikawa (rix)"@en .
-
-			<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-fuchu> a knora-base:ListNode ;
-				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
-				knora-base:listNodeName "fuchu" ;
-				knora-base:listNodePosition 1 ;
-				rdfs:label "Fuchū"@fr , "Fuchū"@en ;
-				knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-epfuchuu> .
-
-				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-epfuchuu> a knora-base:ListNode ;
-					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
-					knora-base:listNodeName "epfuchuu" ;
-					knora-base:listNodePosition 0 ;
-					rdfs:label "Ecole publique à Fuchuu (pfx)"@fr , "Public school in Fuchuu (pfx)"@en .
 
 		<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-fukushimaPrefecture> a knora-base:ListNode ;
 			knora-base:listNodeName "fukushimaPrefecture" ;
@@ -2234,26 +2219,6 @@
 					knora-base:listNodePosition 0 ;
 					rdfs:label "Ecole bouddhiste à Kyoto (ryx)"@fr , "Buddhist school in Kyoto (ryx)"@en .
 
-		<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-nonidentifiedPrefecture> a knora-base:ListNode ;
-			knora-base:listNodeName "nonidentifiedPrefecture" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
-			knora-base:listNodePosition 3 ;
-			rdfs:label "Préfecture Non-identifiée"@fr , "Non-identified Prefecture"@en ;
-			knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-nonidentified1> .
-
-			<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-nonidentified1> a knora-base:ListNode ;
-				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
-				knora-base:listNodeName "nonidentified" ;
-				knora-base:listNodePosition 0 ;
-				rdfs:label "Non-identifiée"@fr , "Non-identified"@en ;
-			knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-nonidentified2> .
-
-				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-nonidentified2> a knora-base:ListNode ;
-					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
-					knora-base:listNodeName "nonidentified" ;
-					knora-base:listNodePosition 0 ;
-					rdfs:label "Ecole non-identifiée (rx)"@fr , "Non-identified school (rx)"@en .
-
 		<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-tokyoPrefecture> a knora-base:ListNode ;
 			knora-base:listNodeName "tokyoPrefecture" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
@@ -2261,7 +2226,8 @@
 			rdfs:label "Préfecture Tokyo"@fr , "Tokyo Prefecture"@en ;
 			knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-itabashi> ,
 									<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-kunitachi> ,
-									<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-nakano> .
+									<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-nakano> ,
+									<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-fuchu> .
 
 			<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-itabashi> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
@@ -2301,6 +2267,19 @@
 					knora-base:listNodeName "ebnakano" ;
 					knora-base:listNodePosition 0 ;
 					rdfs:label "Ecole bouddhiste à Nakano (rnx)"@fr , "Buddhist school in Nakano (rnx)"@en .
+
+			<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-fuchu> a knora-base:ListNode ;
+				knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
+				knora-base:listNodeName "fuchu" ;
+				knora-base:listNodePosition 3 ;
+				rdfs:label "Fuchū"@fr , "Fuchū"@en ;
+				knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-epfuchuu> .
+
+				<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-epfuchuu> a knora-base:ListNode ;
+					knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList> ;
+					knora-base:listNodeName "epfuchuu" ;
+					knora-base:listNodePosition 0 ;
+					rdfs:label "Ecole publique à Fuchuu (pfx)"@fr , "Public school in Fuchuu (pfx)"@en .
 
 	<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList-nepal> a knora-base:ListNode ;
 		knora-base:listNodeName "nepal" ;
@@ -5412,7 +5391,7 @@
 			knora-base:listNodeName "humanoid" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList> ;
 			knora-base:listNodePosition 1 ;
-			rdfs:label "Figure humanoïde"@fr , "humanoid figure"@en ;
+			rdfs:label "Figure anthropomorphique"@fr , "Humanoid figure"@en ;
 			knora-base:hasSubListNode <http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-normalhuman> ,
 										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-culturalfigure> ,
 										<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList-religiousfigure> ,
