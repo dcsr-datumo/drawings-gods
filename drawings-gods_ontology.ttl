@@ -1257,14 +1257,16 @@
 ###  http://www.knora.org/ontology/0105#hasInstructionRestitutionAuthor
 :hasInstructionRestitutionAuthor rdf:type owl:ObjectProperty ;
                           rdfs:subPropertyOf knora-base:hasValue ;
-                          knora-base:objectClassConstraint knora-base:TextValue ;
+                          knora-base:objectClassConstraint knora-base:ListValue ;
                           knora-base:subjectClassConstraint :Verso ;
                           rdfs:label "Auteur de restitution de la consigne"@fr ,
 									"Author of the recall of the task"@en ;
 		   		 		  rdfs:comment "Auteur de restitution de consigne: personne qui a écrit la restitution de la consigne."@fr ,
 									"Author of the recall: the person who wrote the restitution of the task."@en ;
-						  salsah-gui:guiElement salsah-gui:Textarea ;
+						  salsah-gui:guiElement salsah-gui:Pulldown ;
+		          	      salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-DescriptionAuthorList>" ;
 						  salsah-gui:guiOrder "9"^^xsd:integer .
+
 
 
 ###  http://www.knora.org/ontology/0105#hasInstructionRestitutionOriginal
@@ -1591,7 +1593,7 @@
                      "Material is standard (UNIL)"@en ;
 		  	rdfs:comment "néocolors, feuille A4 blanche, crayon papier."@fr ,
 					 "Neocolors, A4, paper pencil."@en ;
-       		salsah-gui:guiOrder "16"^^xsd:integer ;
+       		salsah-gui:guiOrder "18"^^xsd:integer ;
 	        salsah-gui:guiElement salsah-gui:Checkbox .
 
 
@@ -1604,7 +1606,7 @@
                      "Material is acceptable, but is not UNIL"@en ;
 		  	rdfs:comment "crayons de couleur ou feutre de couleur, feuille A4 blanche, pas d’autocollants, pas de règles et matériel de géométrie..."@fr ,
 					 "Color pencils or feutres, A4 white, no stickers, the rulers were not used..."@en ;
-       		salsah-gui:guiOrder "16"^^xsd:integer ;
+       		salsah-gui:guiOrder "19"^^xsd:integer ;
 	        salsah-gui:guiElement salsah-gui:Checkbox .
 
 
@@ -1914,7 +1916,7 @@
 			   	rdfs:comment "Commentaire interne (contrôle qualité)"@fr ,
 					 	"Internal comment (quality control)"@en ;
 		         salsah-gui:guiElement salsah-gui:Textarea ;
-		         salsah-gui:guiOrder "17"^^xsd:integer ;
+		         salsah-gui:guiOrder "20"^^xsd:integer ;
 				 salsah-gui:guiAttribute "width=95%" ,
 		                        		"rows=10" .
 
@@ -2868,7 +2870,7 @@
 							                        "rows=3" .	
 							                        
 ###	http://www.knora.org/ontology/0105#enteredShintoTemple
-:enteredBuddhistTemple rdf:type owl:ObjectProperty ;
+:enteredShintoTemple rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
 		                knora-base:objectClassConstraint knora-base:ListValue ;
@@ -2880,8 +2882,8 @@
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .               
 		                
-###	http://www.knora.org/ontology/0105#jinjaHowOften
-:jinjaHowOften rdf:type owl:ObjectProperty ;
+###	http://www.knora.org/ontology/0105#enteredShintoTempleHowOften
+:enteredShintoTempleHowOften rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
 		                knora-base:objectClassConstraint knora-base:ListValue ;
@@ -2893,8 +2895,8 @@
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
 
-###  http://www.knora.org/ontology/0105#jinjaWhy
-:jinjaWhy rdf:type owl:ObjectProperty ;
+###  http://www.knora.org/ontology/0105#enteredShintoTempleWhy
+:enteredShintoTempleWhy rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
 		                knora-base:objectClassConstraint knora-base:TextValue ;
@@ -2907,8 +2909,8 @@
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .	
 		                
-###  http://www.knora.org/ontology/0105#jinjaWithWhom
-:jinjaWithWhom rdf:type owl:ObjectProperty ;
+###  http://www.knora.org/ontology/0105#enteredShintoTempleWithWhom
+:enteredShintoTempleWithWhom rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
 		                knora-base:objectClassConstraint knora-base:TextValue ;
@@ -2921,8 +2923,8 @@
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
 		                
-###  http://www.knora.org/ontology/0105#jinjaLastTime
-:jinjaLastTime rdf:type owl:ObjectProperty ;
+###  http://www.knora.org/ontology/0105#enteredShintoTempleLastTime
+:enteredShintoTempleLastTime rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
 		                knora-base:objectClassConstraint knora-base:TextValue ;
@@ -3098,8 +3100,8 @@
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
 				
-###  http://www.knora.org/ontology/0105#enteredZoroWhy
-:enteredSynagogueWhy rdf:type owl:ObjectProperty ;
+###  http://www.knora.org/ontology/0105#enteredZorotempleWhy
+:enteredZorotempleWhy rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
 		                knora-base:objectClassConstraint knora-base:TextValue ;
@@ -3112,8 +3114,8 @@
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
 				
-###  http://www.knora.org/ontology/0105#enteredZoroWithWhom
-:enteredSynagogueWithWhom rdf:type owl:ObjectProperty ;
+###  http://www.knora.org/ontology/0105#enteredZorotempleWithWhom
+:enteredZorotempleWithWhom rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
 		                knora-base:objectClassConstraint knora-base:TextValue ;
@@ -3126,8 +3128,8 @@
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .            
 		                
-###  http://www.knora.org/ontology/0105#enteredZoroLastTime
-:enteredSynagogueLastTime rdf:type owl:ObjectProperty ;
+###  http://www.knora.org/ontology/0105#enteredZorotempleLastTime
+:enteredZorotempleLastTime rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
 		                knora-base:objectClassConstraint knora-base:TextValue ;
@@ -4885,6 +4887,14 @@
 										owl:maxCardinality "1"^^xsd:nonNegativeInteger
 										] ,
 										[ rdf:type owl:Restriction ;
+										owl:onProperty :enteredShintoTemple ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :enteredShintoTempleHowOften ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
 										owl:onProperty :enteredHinduTemple ;
 										owl:maxCardinality "1"^^xsd:nonNegativeInteger
 										] ,
@@ -4930,10 +4940,6 @@
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :jinja ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
-										] ,
-										[ rdf:type owl:Restriction ;
-										owl:onProperty :jinjaHowOften ;
 										owl:maxCardinality "1"^^xsd:nonNegativeInteger
 										] ,
 										[ rdf:type owl:Restriction ;
@@ -5145,6 +5151,18 @@
 										owl:maxCardinality "1"^^xsd:nonNegativeInteger
 										] ,
 										[ rdf:type owl:Restriction ;
+										owl:onProperty :enteredShintoTempleWithWhom ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :enteredShintoTempleWhy ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :enteredShintoTempleLastTime ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
 										owl:onProperty :enteredHinduTempleWithWhom ;
 										owl:maxCardinality "1"^^xsd:nonNegativeInteger
 										] ,
@@ -5166,6 +5184,18 @@
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :enteredSynagogueLastTime ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :enteredZorotempleWithWhom ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :enteredZorotempleWhy ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :enteredZorotempleLastTime ;
 										owl:maxCardinality "1"^^xsd:nonNegativeInteger
 										] ,
 										[ rdf:type owl:Restriction ;
@@ -5197,35 +5227,7 @@
 										owl:maxCardinality "1"^^xsd:nonNegativeInteger
 										] ,
 										[ rdf:type owl:Restriction ;
-										owl:onProperty :jinjaOccasion ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
-										] ,
-										[ rdf:type owl:Restriction ;
-										owl:onProperty :jinjaWithWhom ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
-										] ,
-										[ rdf:type owl:Restriction ;
-										owl:onProperty :jinjaWhy ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
-										] ,
-										[ rdf:type owl:Restriction ;
-										owl:onProperty :jinjaLastTime ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
-										] ,
-										[ rdf:type owl:Restriction ;
 										owl:onProperty :oteraOccasion ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
-										] ,
-										[ rdf:type owl:Restriction ;
-										owl:onProperty :oteraWithWhom ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
-										] ,
-										[ rdf:type owl:Restriction ;
-										owl:onProperty :oteraWhy ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
-										] ,
-										[ rdf:type owl:Restriction ;
-										owl:onProperty :oteraLastTime ;
 										owl:maxCardinality "1"^^xsd:nonNegativeInteger
 										] ,
 										[ rdf:type owl:Restriction ;
@@ -5499,7 +5501,7 @@
                        ] ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasInstructionRestitutionAuthor ;
-                         owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                         owl:minCardinality "0"^^xsd:nonNegativeInteger
                        ] ;
 		rdfs:label "Verso"@fr ,
              	"Verso"@en ;
