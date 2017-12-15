@@ -6,12 +6,12 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/>.
 @prefix knora-base: <http://www.knora.org/ontology/knora-base#>.
 @prefix salsah-gui: <http://www.knora.org/ontology/salsah-gui#>.
-@base <http://www.knora.org/ontology/0105>.
+@base <http://www.knora.org/ontology/0105/drawings-gods>.
 
-@prefix drawings-gods: <http://www.knora.org/ontology/0105#>.
-@prefix : <http://www.knora.org/ontology/0105#>.
+@prefix drawings-gods: <http://www.knora.org/ontology/0105/drawings-gods#>.
+@prefix : <http://www.knora.org/ontology/0105/drawings-gods#>.
 
-<http://www.knora.org/ontology/0105> rdf:type owl:Ontology ;
+<http://www.knora.org/ontology/0105/drawings-gods> rdf:type owl:Ontology ;
 												dc:contributor "Christelle Cocco"^^xsd:string,
 																"Olga Serbaeva"^^xsd:string,
 																"Gregory Dessart"^^xsd:string,
@@ -32,7 +32,7 @@
 #    Object Properties
 #################################################################
 
-###  http://www.knora.org/ontology/0105#hasAdditionalTask
+###  http://www.knora.org/ontology/0105/drawings-gods#hasAdditionalTask
 ### suppression predicate property inheritance OK
 :hasAdditionalTask rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf knora-base:hasValue ;
@@ -44,10 +44,10 @@
 					"Additional tasks administered to the child (ex. attachment)"@en ;
                 salsah-gui:guiOrder "9"^^xsd:integer ;
                 salsah-gui:guiElement salsah-gui:Pulldown ;
-                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AdditionalTaskList>" .
+                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AdditionalTaskList>" .
 
 
-###  http://www.knora.org/ontology/0105#hasAge
+###  http://www.knora.org/ontology/0105/drawings-gods#hasAge
 ### a verifier SCC
 ### suppression predicate property inheritance OK
 #:hasAge rdf:type owl:ObjectProperty ;
@@ -60,7 +60,7 @@
 #     salsah-gui:guiOrder "5"^^xsd:integer .
 
 
-###  http://www.knora.org/ontology/0105#hasAgeDecimal
+###  http://www.knora.org/ontology/0105/drawings-gods#hasAgeDecimal
 ### suppression predicate property inheritance OK
 :hasAgeDecimal rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf knora-base:hasValue ;
@@ -74,7 +74,7 @@
      	    salsah-gui:guiOrder "11"^^xsd:integer .
 
 
-###  http://www.knora.org/ontology/0105#hasAgeMonth
+###  http://www.knora.org/ontology/0105/drawings-gods#hasAgeMonth
 ### a verifier SCC OCC
 ### suppression predicate property inheritance OK
 :hasAgeMonth rdf:type owl:ObjectProperty ;
@@ -88,7 +88,7 @@
 
 
 
-###  http://www.knora.org/ontology/0105#hasAgeYear
+###  http://www.knora.org/ontology/0105/drawings-gods#hasAgeYear
 ### a verifier SCC OCC
 ### suppression predicate property inheritance OK
 :hasAgeYear rdf:type owl:ObjectProperty ;
@@ -104,7 +104,7 @@
 
 
 
-###  http://www.knora.org/ontology/0105#hasAnnotationAvailable
+###  http://www.knora.org/ontology/0105/drawings-gods#hasAnnotationAvailable
 ### suppression predicate property inheritance OK
 :hasAnnotationAvailable rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf knora-base:hasValue ;
@@ -118,7 +118,7 @@
 	       		     salsah-gui:guiElement salsah-gui:Checkbox .
 
 
-###  http://www.knora.org/ontology/0105#hasAnnotationComment
+###  http://www.knora.org/ontology/0105/drawings-gods#hasAnnotationComment
 ### suppression predicate property inheritance OK
 :hasAnnotationComment rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf :hasInternalComment ;
@@ -133,7 +133,7 @@
 				 salsah-gui:guiAttribute "width=95%" ,
 		                        		"rows=10" .
 
-###  http://www.knora.org/ontology/0105#hasInstruction
+###  http://www.knora.org/ontology/0105/drawings-gods#hasInstruction
 ### suppression predicate property inheritance OK
 :hasInstruction rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf knora-base:hasLinkTo ;
@@ -147,7 +147,7 @@
           salsah-gui:guiOrder "12"^^xsd:integer .
 
 
-###  http://www.knora.org/ontology/0105#hasInstructionValue
+###  http://www.knora.org/ontology/0105/drawings-gods#hasInstructionValue
 ### suppression predicate property inheritance OK
 :hasInstructionValue rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf knora-base:hasLinkToValue ;
@@ -160,7 +160,7 @@
 
 
 
-###  http://www.knora.org/ontology/0105#hasCollectionContext
+###  http://www.knora.org/ontology/0105/drawings-gods#hasCollectionContext
 ### suppression predicate property inheritance OK
 :hasCollectionContext rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf knora-base:hasLinkTo ;
@@ -174,7 +174,7 @@
           salsah-gui:guiOrder "6"^^xsd:integer .
 
 
-###  http://www.knora.org/ontology/0105#hasCollectionContextValue
+###  http://www.knora.org/ontology/0105/drawings-gods#hasCollectionContextValue
 ### suppression predicate property inheritance OK
 :hasCollectionContextValue rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf knora-base:hasLinkToValue ;
@@ -186,7 +186,7 @@
 					 "The drawing was collected within a given group visit."@en .
 
 
-###  http://www.knora.org/ontology/0105#annotationFile
+###  http://www.knora.org/ontology/0105/drawings-gods#annotationFile
 #:annotationFile rdf:type owl:ObjectProperty ;
 #                rdfs:subPropertyOf :file ,
 #                                   knora-base:hasDocumentFileValue ;
@@ -196,7 +196,7 @@
 #                     	"CSV file"@en .
 
 
-####  http://www.knora.org/ontology/0105#availability
+####  http://www.knora.org/ontology/0105/drawings-gods#availability
 #:availability rdf:type owl:ObjectProperty ;
 #              rdfs:subPropertyOf knora-base:hasValue ;
 #              knora-base:objectClassConstraint knora-base:BooleanValue ;
@@ -207,7 +207,7 @@
 #       		  salsah-gui:guiElement salsah-gui:Checkbox .
 
 
-###  http://www.knora.org/ontology/0105#hasBirthCountry
+###  http://www.knora.org/ontology/0105/drawings-gods#hasBirthCountry
 :hasBirthCountry rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf knora-base:hasValue ;
               knora-base:objectClassConstraint knora-base:ListValue ;
@@ -218,10 +218,10 @@
 					 	"Country of birth"@en ;
               salsah-gui:guiOrder "11"^^xsd:integer ;
               salsah-gui:guiElement salsah-gui:List ;
-              salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-GlobalLocationHList>" .
+              salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-GlobalLocationHList>" .
 
 
-###  http://www.knora.org/ontology/0105#hasBirthDate
+###  http://www.knora.org/ontology/0105/drawings-gods#hasBirthDate
 :hasBirthDate rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf knora-base:hasValue ;
            knora-base:objectClassConstraint knora-base:DateValue ;
@@ -234,7 +234,7 @@
 	      salsah-gui:guiOrder "5"^^xsd:integer .
 
 
-###  http://www.knora.org/ontology/0105#hasCampaignComment
+###  http://www.knora.org/ontology/0105/drawings-gods#hasCampaignComment
 :hasCampaignComment rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf :hasInternalComment ;
                  knora-base:objectClassConstraint knora-base:TextValue ;
@@ -249,7 +249,7 @@
 		                        		"rows=10" .
 
 
-###  http://www.knora.org/ontology/0105#hasCampaignDate
+###  http://www.knora.org/ontology/0105/drawings-gods#hasCampaignDate
 :hasCampaignDate rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf knora-base:hasValue ;
               knora-base:objectClassConstraint knora-base:DateValue ;
@@ -263,7 +263,7 @@
 
 
 
-###  http://www.knora.org/ontology/0105#hasCampaignDescription
+###  http://www.knora.org/ontology/0105/drawings-gods#hasCampaignDescription
 :hasCampaignDescription rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf knora-base:hasValue ;
                      knora-base:objectClassConstraint knora-base:TextValue ;
@@ -279,7 +279,7 @@
 
 
 
-###  http://www.knora.org/ontology/0105#hasCampaignName
+###  http://www.knora.org/ontology/0105/drawings-gods#hasCampaignName
 :hasCampaignName rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf knora-base:hasValue ;
               knora-base:objectClassConstraint knora-base:TextValue ;
@@ -293,7 +293,7 @@
 
 
 
-###  http://www.knora.org/ontology/0105#hasQuestionnaireBaseName
+###  http://www.knora.org/ontology/0105/drawings-gods#hasQuestionnaireBaseName
 :hasQuestionnaireBaseName rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf knora-base:hasValue ;
               knora-base:objectClassConstraint knora-base:TextValue ;
@@ -307,7 +307,7 @@
 
 
 
-###  http://www.knora.org/ontology/0105#hasCampaignPersonContact
+###  http://www.knora.org/ontology/0105/drawings-gods#hasCampaignPersonContact
 :hasCampaignPersonContact rdf:type owl:ObjectProperty ;
                        rdfs:subPropertyOf knora-base:hasValue ;
                        knora-base:objectClassConstraint knora-base:TextValue ;
@@ -321,7 +321,7 @@
 
 
 
-###  http://www.knora.org/ontology/0105#hasCode
+###  http://www.knora.org/ontology/0105/drawings-gods#hasCode
 :hasCode rdf:type owl:ObjectProperty ;
       rdfs:subPropertyOf knora-base:hasValue ;
       knora-base:objectClassConstraint knora-base:TextValue ;
@@ -333,7 +333,7 @@
       salsah-gui:guiOrder "2"^^xsd:integer .
 
 
-###  http://www.knora.org/ontology/0105#hasCodeAlt
+###  http://www.knora.org/ontology/0105/drawings-gods#hasCodeAlt
 :hasCodeAlt rdf:type owl:ObjectProperty ;
          knora-base:objectClassConstraint knora-base:TextValue ;
          knora-base:subjectClassConstraint :Drawing ;
@@ -346,7 +346,7 @@
 	     salsah-gui:guiOrder "2"^^xsd:integer .
 
 
-###  http://www.knora.org/ontology/0105#hasCodePerson
+###  http://www.knora.org/ontology/0105/drawings-gods#hasCodePerson
 :hasCodePerson rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf :hasCode ;
             knora-base:objectClassConstraint knora-base:TextValue ;
@@ -359,7 +359,7 @@
 	        salsah-gui:guiOrder "1"^^xsd:integer .
 
 
-###  http://www.knora.org/ontology/0105#hasCodeRecto
+###  http://www.knora.org/ontology/0105/drawings-gods#hasCodeRecto
 :hasCodeRecto rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf :hasCode ;
            knora-base:objectClassConstraint knora-base:TextValue ;
@@ -372,7 +372,7 @@
 	       salsah-gui:guiOrder "1"^^xsd:integer .
 
 
-###  http://www.knora.org/ontology/0105#hasCodeVerso
+###  http://www.knora.org/ontology/0105/drawings-gods#hasCodeVerso
 :hasCodeVerso rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf :hasCode ;
            knora-base:objectClassConstraint knora-base:TextValue ;
@@ -385,7 +385,7 @@
 	       salsah-gui:guiOrder "1"^^xsd:integer .
 
 
-####  http://www.knora.org/ontology/0105#collectRules
+####  http://www.knora.org/ontology/0105/drawings-gods#collectRules
 #:collectRules rdf:type owl:ObjectProperty ;
 #              rdfs:subPropertyOf knora-base:hasValue ;
 #              knora-base:subjectClassConstraint :Passage ;
@@ -394,7 +394,7 @@
 #           		"Standard collection rules"@en .
 
 
-###  http://www.knora.org/ontology/0105#hasCollectRulesGeneral
+###  http://www.knora.org/ontology/0105/drawings-gods#hasCollectRulesGeneral
 :hasCollectRulesGeneral rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf knora-base:hasValue ;
                      knora-base:subjectClassConstraint :Passage ;
@@ -410,7 +410,7 @@
       				 salsah-gui:guiOrder "10"^^xsd:integer .
 
 
-###  http://www.knora.org/ontology/0105#hasCollectRulesMaterial
+###  http://www.knora.org/ontology/0105/drawings-gods#hasCollectRulesMaterial
 :hasCollectRulesMaterial rdf:type owl:ObjectProperty ;
                       rdfs:subPropertyOf knora-base:hasValue ;
                       knora-base:subjectClassConstraint :Passage ;
@@ -423,7 +423,7 @@
        		  		  salsah-gui:guiElement salsah-gui:Checkbox .
 
 
-###  http://www.knora.org/ontology/0105#hasCollectRulesPlace
+###  http://www.knora.org/ontology/0105/drawings-gods#hasCollectRulesPlace
 :hasCollectRulesPlace rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf knora-base:hasValue ;
                    knora-base:subjectClassConstraint :Passage ;
@@ -436,7 +436,7 @@
        		  	   salsah-gui:guiElement salsah-gui:Checkbox .
 
 
-###  http://www.knora.org/ontology/0105#hasCollectionSiteType
+###  http://www.knora.org/ontology/0105/drawings-gods#hasCollectionSiteType
 :hasCollectionSiteType rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf knora-base:hasValue ;
                     knora-base:objectClassConstraint knora-base:ListValue ;
@@ -447,10 +447,10 @@
 						"Type of site (public, religious school or event)"@en ;
                    salsah-gui:guiOrder "5"^^xsd:integer ;
                    salsah-gui:guiElement salsah-gui:Pulldown ;
-                   salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-CollSiteList>" .
+                   salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-CollSiteList>" .
 
 
-###  http://www.knora.org/ontology/0105#hasCollector
+###  http://www.knora.org/ontology/0105/drawings-gods#hasCollector
 :hasCollector rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf knora-base:hasValue ;
            knora-base:objectClassConstraint knora-base:TextValue ;
@@ -463,7 +463,7 @@
       	   salsah-gui:guiOrder "5"^^xsd:integer .
 
 
-###  http://www.knora.org/ontology/0105#hasCollectorMain
+###  http://www.knora.org/ontology/0105/drawings-gods#hasCollectorMain
 :hasCollectorMain rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf knora-base:hasValue ;
                knora-base:objectClassConstraint knora-base:ListValue ;
@@ -474,10 +474,10 @@
 					"Main contact on the team who is responsible for this specific data collection."@en ;
                salsah-gui:guiOrder "4"^^xsd:integer ;
                salsah-gui:guiElement salsah-gui:Pulldown ;
-               salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-CollectorMainList>" .
+               salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-CollectorMainList>" .
 
 
-###  http://www.knora.org/ontology/0105#hasCommentAuthor
+###  http://www.knora.org/ontology/0105/drawings-gods#hasCommentAuthor
 :hasCommentAuthor rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf knora-base:hasValue ;
                knora-base:objectClassConstraint knora-base:ListValue ;
@@ -488,10 +488,10 @@
 					"Author(s) of the comment."@en ;
                salsah-gui:guiOrder "21"^^xsd:integer ;
                salsah-gui:guiElement salsah-gui:Pulldown ;
-               salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-CommentAuthorList>" .
+               salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-CommentAuthorList>" .
 
 
-###  http://www.knora.org/ontology/0105#hasCommentEn
+###  http://www.knora.org/ontology/0105/drawings-gods#hasCommentEn
 :hasCommentEn rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf :hasImageComment ;
            knora-base:objectClassConstraint knora-base:TextValue ;
@@ -507,7 +507,7 @@
 
 
 
-###  http://www.knora.org/ontology/0105#hasCommentFr
+###  http://www.knora.org/ontology/0105/drawings-gods#hasCommentFr
 :hasCommentFr rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf :hasImageComment ;
            knora-base:objectClassConstraint knora-base:TextValue ;
@@ -522,7 +522,7 @@
                         		"rows=10" .
 
 
-###  http://www.knora.org/ontology/0105#hasCommentOriginal
+###  http://www.knora.org/ontology/0105/drawings-gods#hasCommentOriginal
 :hasCommentOriginal rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf :hasImageComment ;
                  knora-base:objectClassConstraint knora-base:TextValue ;
@@ -537,7 +537,7 @@
 		                        		"rows=10" .
 
 
-###  http://www.knora.org/ontology/0105#hasCommentOriginalLanguage
+###  http://www.knora.org/ontology/0105/drawings-gods#hasCommentOriginalLanguage
 :hasCommentOriginalLanguage rdf:type owl:ObjectProperty ;
                          rdfs:subPropertyOf knora-base:hasValue ;
              	  		 knora-base:objectClassConstraint knora-base:ListValue ;
@@ -548,10 +548,10 @@
 							"Original language of the comment."@en ;
 						 salsah-gui:guiOrder "17"^^xsd:integer ;
 			             salsah-gui:guiElement salsah-gui:Pulldown ;
-		          	     salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList>" .
+		          	     salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-LanguageList>" .
 
 
-###  http://www.knora.org/ontology/0105#hasContext
+###  http://www.knora.org/ontology/0105/drawings-gods#hasContext
 :hasContext rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf knora-base:hasValue ;
          knora-base:objectClassConstraint knora-base:TextValue ;
@@ -566,7 +566,7 @@
                         		"rows=10" .
 
 
-####  http://www.knora.org/ontology/0105#date
+####  http://www.knora.org/ontology/0105/drawings-gods#date
 #### a verifier SCC
 #:date rdf:type owl:ObjectProperty ;
 #      rdfs:subPropertyOf knora-base:hasValue ;
@@ -577,7 +577,7 @@
 #      salsah-gui:guiOrder "3"^^xsd:integer .
 
 
-####  http://www.knora.org/ontology/0105#description
+####  http://www.knora.org/ontology/0105/drawings-gods#description
 #### a verifier SCC
 #:description rdf:type owl:ObjectProperty ;
 #             rdfs:subPropertyOf knora-base:hasValue ;
@@ -588,7 +588,7 @@
 #             salsah-gui:guiOrder "2"^^xsd:integer .
 
 
-###  http://www.knora.org/ontology/0105#hasDescriptionAsIsOriginal
+###  http://www.knora.org/ontology/0105/drawings-gods#hasDescriptionAsIsOriginal
 :hasDescriptionAsIsOriginal rdf:type owl:ObjectProperty ;
                          rdfs:subPropertyOf :hasDrawingDescription ;
                          knora-base:objectClassConstraint knora-base:TextValue ;
@@ -602,7 +602,7 @@
 						 salsah-gui:guiAttribute "width=95%" ,
 										         "rows=3" .
 
-###  http://www.knora.org/ontology/0105#hasDescriptionAuthor
+###  http://www.knora.org/ontology/0105/drawings-gods#hasDescriptionAuthor
 :hasDescriptionAuthor rdf:type owl:ObjectProperty ;
                          rdfs:subPropertyOf knora-base:hasValue ;
              	  		 knora-base:objectClassConstraint knora-base:ListValue ;
@@ -613,10 +613,10 @@
 							"Author of the description."@en ;
 						 salsah-gui:guiOrder "16"^^xsd:integer ;
 			             salsah-gui:guiElement salsah-gui:Pulldown ;
-		          	     salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-DescriptionAuthorList>" .
+		          	     salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-DescriptionAuthorList>" .
 
 
-###  http://www.knora.org/ontology/0105#hasDescriptionEn
+###  http://www.knora.org/ontology/0105/drawings-gods#hasDescriptionEn
 :hasDescriptionEn rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf :hasDrawingDescription ;
                knora-base:objectClassConstraint knora-base:TextValue ;
@@ -631,7 +631,7 @@
 							         "rows=3" .
 
 
-###  http://www.knora.org/ontology/0105#hasDescriptionFr
+###  http://www.knora.org/ontology/0105/drawings-gods#hasDescriptionFr
 :hasDescriptionFr rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf :hasDrawingDescription ;
                knora-base:objectClassConstraint knora-base:TextValue ;
@@ -646,7 +646,7 @@
 							         "rows=3" .
 
 
-###  http://www.knora.org/ontology/0105#hasDescriptionOk
+###  http://www.knora.org/ontology/0105/drawings-gods#hasDescriptionOk
 :hasDescriptionOk rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf knora-base:hasValue ;
                knora-base:objectClassConstraint knora-base:BooleanValue ;
@@ -658,7 +658,7 @@
 			   salsah-gui:guiElement salsah-gui:Checkbox ;
       	       salsah-gui:guiOrder "10"^^xsd:integer .
 
-###  http://www.knora.org/ontology/0105#hasDrawingOk
+###  http://www.knora.org/ontology/0105/drawings-gods#hasDrawingOk
 :hasDrawingOk rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf knora-base:hasValue ;
                knora-base:objectClassConstraint knora-base:BooleanValue ;
@@ -671,7 +671,7 @@
       	       salsah-gui:guiOrder "10"^^xsd:integer .
 
 
-###  http://www.knora.org/ontology/0105#hasDescriptionOriginal
+###  http://www.knora.org/ontology/0105/drawings-gods#hasDescriptionOriginal
 :hasDescriptionOriginal rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf :hasDrawingDescription ;
                      knora-base:objectClassConstraint knora-base:TextValue ;
@@ -686,7 +686,7 @@
 								         "rows=3" .
 
 
-###  http://www.knora.org/ontology/0105#hasDescriptionOriginalLanguage
+###  http://www.knora.org/ontology/0105/drawings-gods#hasDescriptionOriginalLanguage
 :hasDescriptionOriginalLanguage rdf:type owl:ObjectProperty ;
                              rdfs:subPropertyOf knora-base:hasValue ;
                              knora-base:objectClassConstraint knora-base:ListValue ;
@@ -697,10 +697,10 @@
 								"Original language of the description."@en ;
 							 salsah-gui:guiOrder "11"^^xsd:integer ;
 				             salsah-gui:guiElement salsah-gui:Pulldown ;
-			          	     salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList>" .
+			          	     salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-LanguageList>" .
 
 
-###  http://www.knora.org/ontology/0105#hasDiary
+###  http://www.knora.org/ontology/0105/drawings-gods#hasDiary
 :hasDiary rdf:type owl:ObjectProperty ;
        rdfs:subPropertyOf knora-base:hasValue ;
        knora-base:objectClassConstraint knora-base:TextValue ;
@@ -715,7 +715,7 @@
                         		"rows=10" .
 
 
-###  http://www.knora.org/ontology/0105#hasDrawerAgeAssignedMonth
+###  http://www.knora.org/ontology/0105/drawings-gods#hasDrawerAgeAssignedMonth
 :hasDrawerAgeAssignedMonth rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf :hasAgeMonth ;
                         knora-base:subjectClassConstraint :Drawing ;
@@ -728,7 +728,7 @@
 				        salsah-gui:guiOrder "10"^^xsd:integer .
 
 
-###  http://www.knora.org/ontology/0105#hasDrawerAgeAssignedYear
+###  http://www.knora.org/ontology/0105/drawings-gods#hasDrawerAgeAssignedYear
 :hasDrawerAgeAssignedYear rdf:type owl:ObjectProperty ;
                        rdfs:subPropertyOf :hasAgeYear ;
                        knora-base:subjectClassConstraint :Drawing ;
@@ -741,7 +741,7 @@
 				       salsah-gui:guiOrder "9"^^xsd:integer .
 
 
-###  http://www.knora.org/ontology/0105#hasDrawerAgeMonth
+###  http://www.knora.org/ontology/0105/drawings-gods#hasDrawerAgeMonth
 :hasDrawerAgeMonth rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf :hasAgeMonth ;
                 knora-base:subjectClassConstraint :Drawing ;
@@ -754,7 +754,7 @@
 		        salsah-gui:guiOrder "8"^^xsd:integer .
 
 
-###  http://www.knora.org/ontology/0105#hasDrawerAgeYear
+###  http://www.knora.org/ontology/0105/drawings-gods#hasDrawerAgeYear
 :hasDrawerAgeYear rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf :hasAgeYear ;
                knora-base:subjectClassConstraint :Drawing ;
@@ -767,7 +767,7 @@
 		       salsah-gui:guiOrder "7"^^xsd:integer .
 
 
-###  http://www.knora.org/ontology/0105#hasDrawingChildTotal
+###  http://www.knora.org/ontology/0105/drawings-gods#hasDrawingChildTotal
 :hasDrawingChildTotal rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf knora-base:hasValue ;
                    knora-base:objectClassConstraint knora-base:IntValue ;
@@ -780,7 +780,7 @@
 		           salsah-gui:guiOrder "7"^^xsd:integer .
 
 
-####  http://www.knora.org/ontology/0105#hasDrawingComment
+####  http://www.knora.org/ontology/0105/drawings-gods#hasDrawingComment
 #:hasDrawingComment rdf:type owl:ObjectProperty ;
 #                rdfs:subPropertyOf :hasInternalComment ;
 #                knora-base:objectClassConstraint knora-base:TextValue ;
@@ -792,7 +792,7 @@
 #			 	salsah-gui:guiElement salsah-gui:SimpleText ;
 #		        salsah-gui:guiOrder "1"^^xsd:integer .
 
-###  http://www.knora.org/ontology/0105#hasDrawingPublicComment
+###  http://www.knora.org/ontology/0105/drawings-gods#hasDrawingPublicComment
 :hasDrawingPublicComment rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf :hasInternalComment ;
                 knora-base:objectClassConstraint knora-base:TextValue ;
@@ -806,7 +806,7 @@
 				 salsah-gui:guiAttribute "width=95%" ,
 		                        		"rows=10" .
 
-###  http://www.knora.org/ontology/0105#hasDrawingPrivateComment
+###  http://www.knora.org/ontology/0105/drawings-gods#hasDrawingPrivateComment
 :hasDrawingPrivateComment rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf :hasInternalComment ;
                 knora-base:objectClassConstraint knora-base:TextValue ;
@@ -821,7 +821,7 @@
 		                        		"rows=10" .
 
 
-###  http://www.knora.org/ontology/0105#hasDrawingDate
+###  http://www.knora.org/ontology/0105/drawings-gods#hasDrawingDate
 :hasDrawingDate rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf knora-base:hasValue ;
              knora-base:subjectClassConstraint :Drawing ;
@@ -834,7 +834,7 @@
 		     salsah-gui:guiOrder "5"^^xsd:integer .
 
 
-###  http://www.knora.org/ontology/0105#hasDrawingDescription
+###  http://www.knora.org/ontology/0105/drawings-gods#hasDrawingDescription
 :hasDrawingDescription rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf knora-base:hasValue ;
                     knora-base:subjectClassConstraint :Verso ;
@@ -845,7 +845,7 @@
 		            salsah-gui:guiOrder "2"^^xsd:integer .
 
 
-###  http://www.knora.org/ontology/0105#hasDrawingPassageTotal
+###  http://www.knora.org/ontology/0105/drawings-gods#hasDrawingPassageTotal
 :hasDrawingPassageTotal rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf knora-base:hasValue ;
                      knora-base:objectClassConstraint knora-base:IntValue ;
@@ -858,7 +858,7 @@
 		             salsah-gui:guiOrder "11"^^xsd:integer .
 
 
-####  http://www.knora.org/ontology/0105#hasDrawingTotal
+####  http://www.knora.org/ontology/0105/drawings-gods#hasDrawingTotal
 #### a verifier SCC
 #:hasDrawingTotal rdf:type owl:ObjectProperty ;
 #              rdfs:subPropertyOf knora-base:hasValue ;
@@ -869,7 +869,7 @@
 #           	  salsah-gui:guiOrder "5"^^xsd:integer .
 
 
-###  http://www.knora.org/ontology/0105#hasDrawingType
+###  http://www.knora.org/ontology/0105/drawings-gods#hasDrawingType
 :hasDrawingType rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf knora-base:hasValue ;
              knora-base:objectClassConstraint knora-base:ListValue ;
@@ -880,10 +880,10 @@
 					 	"Specify whether a drawing of god or another drawing (parent, himself/ herself...) is concerned."@en ;
              salsah-gui:guiOrder "4"^^xsd:integer ;
              salsah-gui:guiElement salsah-gui:Pulldown ;
-             salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-DrawingTypeList>" .
+             salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-DrawingTypeList>" .
 
 
-###  http://www.knora.org/ontology/0105#hasEthnicity
+###  http://www.knora.org/ontology/0105/drawings-gods#hasEthnicity
 :hasEthnicity rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf knora-base:hasValue ;
            knora-base:objectClassConstraint knora-base:ListValue ;
@@ -894,17 +894,17 @@
 					 	"Ethnicity."@en ;
            salsah-gui:guiOrder "10"^^xsd:integer ;
            salsah-gui:guiElement salsah-gui:Pulldown ;
-           salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-EthnicityList>" .
+           salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-EthnicityList>" .
 
 
-###  http://www.knora.org/ontology/0105#file
+###  http://www.knora.org/ontology/0105/drawings-gods#file
 #:file rdf:type owl:ObjectProperty ;
 #      rdfs:subPropertyOf knora-base:hasFileValue ;
 #      rdfs:label "Fichier(s) lié(s)"@fr ,
 #		"Attached file(s)"@en .
 
 
-###  http://www.knora.org/ontology/0105#hasFirstname
+###  http://www.knora.org/ontology/0105/drawings-gods#hasFirstname
 :hasFirstname rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf :hasPersonName ;
            knora-base:objectClassConstraint knora-base:TextValue ;
@@ -917,7 +917,7 @@
       	   salsah-gui:guiOrder "3"^^xsd:integer .
 
 
-####  http://www.knora.org/ontology/0105#gender
+####  http://www.knora.org/ontology/0105/drawings-gods#gender
 #:gender rdf:type owl:ObjectProperty ;
 #        rdfs:subPropertyOf knora-base:hasValue ;
 #        knora-base:objectClassConstraint knora-base:ListValue ;
@@ -925,9 +925,9 @@
 #			"Gender"@en ;
 #        salsah-gui:guiOrder "1"^^xsd:integer ;
 #        salsah-gui:guiElement salsah-gui:Pulldown ;
-#        salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-GenderList>" .
+#        salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-GenderList>" .
 
-###  http://www.knora.org/ontology/0105#hasGeonameCode
+###  http://www.knora.org/ontology/0105/drawings-gods#hasGeonameCode
 :hasGeonameCode rdf:type owl:ObjectProperty ;
         rdfs:subPropertyOf knora-base:hasValue ;
         knora-base:objectClassConstraint knora-base:GeonameValue ;
@@ -940,7 +940,7 @@
       	salsah-gui:guiOrder "2"^^xsd:integer .
 
 
-###  http://www.knora.org/ontology/0105#hasGrayscale
+###  http://www.knora.org/ontology/0105/drawings-gods#hasGrayscale
 :hasGrayscale rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf knora-base:hasValue ;
            knora-base:objectClassConstraint knora-base:BooleanValue ;
@@ -953,7 +953,7 @@
        	   salsah-gui:guiElement salsah-gui:Checkbox .
 
 
-###  http://www.knora.org/ontology/0105#hasComment
+###  http://www.knora.org/ontology/0105/drawings-gods#hasComment
 :hasComment rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf knora-base:hasLinkTo ;
             knora-base:objectClassConstraint :TextOnDrawing ;
@@ -964,7 +964,7 @@
             salsah-gui:guiOrder "15"^^xsd:integer .
 
 
-###  http://www.knora.org/ontology/0105#hasCommentValue
+###  http://www.knora.org/ontology/0105/drawings-gods#hasCommentValue
 ### suppression predicate property inheritance OK
 :hasCommentValue rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf knora-base:hasLinkToValue ;
@@ -974,7 +974,7 @@
                      	"Text written on the drawing"@en .
 
 
-###  http://www.knora.org/ontology/0105#hasDrawing
+###  http://www.knora.org/ontology/0105/drawings-gods#hasDrawing
 :hasDrawing rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf knora-base:hasLinkTo ;
             knora-base:objectClassConstraint :Drawing ;
@@ -987,7 +987,7 @@
             salsah-gui:guiOrder "6"^^xsd:integer .
 
 
-###  http://www.knora.org/ontology/0105#hasDrawingValue
+###  http://www.knora.org/ontology/0105/drawings-gods#hasDrawingValue
 :hasDrawingValue rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf knora-base:hasLinkToValue ;
             knora-base:objectClassConstraint knora-base:LinkValue ;
@@ -997,7 +997,7 @@
             rdfs:comment "Est l'auteur des dessins suivants"@fr ,
 					 	"Is the author of the following drawings"@en .
 
-###  http://www.knora.org/ontology/0105#hasLinkedFile
+###  http://www.knora.org/ontology/0105/drawings-gods#hasLinkedFile
 :hasLinkedFile rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf knora-base:hasLinkTo ;
           knora-base:objectClassConstraint :PersonLinkedFile ;
@@ -1010,7 +1010,7 @@
           salsah-gui:guiOrder "8"^^xsd:integer .
 
 
-###  http://www.knora.org/ontology/0105#hasLinkedFileValue
+###  http://www.knora.org/ontology/0105/drawings-gods#hasLinkedFileValue
 :hasLinkedFileValue rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf knora-base:hasLinkToValue ;
           knora-base:objectClassConstraint knora-base:LinkValue ;
@@ -1021,7 +1021,7 @@
 					 	"E.g.: attachment test."@en .
 
 
-###  http://www.knora.org/ontology/0105#hasQuality
+###  http://www.knora.org/ontology/0105/drawings-gods#hasQuality
 :hasQuality rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf knora-base:hasLinkTo ;
             knora-base:objectClassConstraint :QualityData ;
@@ -1033,7 +1033,7 @@
           	salsah-gui:guiElement salsah-gui:Searchbox ;
           	salsah-gui:guiOrder "24"^^xsd:integer .
 
-###  http://www.knora.org/ontology/0105#hasQualityValue
+###  http://www.knora.org/ontology/0105/drawings-gods#hasQualityValue
 :hasQualityValue rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf knora-base:hasLinkToValue ;
             knora-base:objectClassConstraint knora-base:LinkValue ;
@@ -1044,7 +1044,7 @@
 					 	"Has quality control"@en .
 
 
-###  http://www.knora.org/ontology/0105#hasVerso
+###  http://www.knora.org/ontology/0105/drawings-gods#hasVerso
 :hasVerso rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf knora-base:hasLinkTo ;
           knora-base:objectClassConstraint :Verso ;
@@ -1056,7 +1056,7 @@
           salsah-gui:guiElement salsah-gui:Searchbox ;
           salsah-gui:guiOrder "14"^^xsd:integer .
 
-###  http://www.knora.org/ontology/0105#hasVersoValue
+###  http://www.knora.org/ontology/0105/drawings-gods#hasVersoValue
 :hasVersoValue rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf knora-base:hasLinkToValue ;
           knora-base:objectClassConstraint knora-base:LinkValue ;
@@ -1067,7 +1067,7 @@
 					 	"Verso attached to the drawing"@en.
 
 
-###  http://www.knora.org/ontology/0105#hasImageComment
+###  http://www.knora.org/ontology/0105/drawings-gods#hasImageComment
 :hasImageComment rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf knora-base:hasValue ;
               knora-base:objectClassConstraint knora-base:TextValue ;
@@ -1078,7 +1078,7 @@
       	   	  salsah-gui:guiOrder "2"^^xsd:integer .
 
 
-###  http://www.knora.org/ontology/0105#isRelatedTo
+###  http://www.knora.org/ontology/0105/drawings-gods#isRelatedTo
 :isRelatedTo rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf knora-base:hasLinkTo ;
           knora-base:objectClassConstraint :CollectionSite ;
@@ -1092,7 +1092,7 @@
 
 
 
-###  http://www.knora.org/ontology/0105#isRelatedToValue
+###  http://www.knora.org/ontology/0105/drawings-gods#isRelatedToValue
 :isRelatedToValue rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf knora-base:hasLinkToValue ;
           knora-base:objectClassConstraint knora-base:LinkValue ;
@@ -1103,7 +1103,7 @@
 					 	"Collection site associated with a group visit."@en .
 
 
-####  http://www.knora.org/ontology/0105#instruction
+####  http://www.knora.org/ontology/0105/drawings-gods#instruction
 #:instruction rdf:type owl:ObjectProperty ;
 #             rdfs:subPropertyOf knora-base:hasValue ;
 #             knora-base:objectClassConstraint knora-base:ListValue ;
@@ -1114,7 +1114,7 @@
 #             salsah-gui:guiElement salsah-gui:Pulldown .
 
 
-###  http://www.knora.org/ontology/0105#hasInstructionComment
+###  http://www.knora.org/ontology/0105/drawings-gods#hasInstructionComment
 :hasInstructionComment rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf :hasInternalComment ;
                     knora-base:objectClassConstraint knora-base:TextValue ;
@@ -1128,7 +1128,7 @@
 					 salsah-gui:guiAttribute "width=95%" ,
 			                        		"rows=10" .
 
-###  http://www.knora.org/ontology/0105#hasInstructionCode
+###  http://www.knora.org/ontology/0105/drawings-gods#hasInstructionCode
 :hasInstructionCode rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf knora-base:hasValue ;
                     knora-base:objectClassConstraint knora-base:ListValue ;
@@ -1139,10 +1139,10 @@
 					 	"Type of instruction"@en ;
 					salsah-gui:guiOrder "1"^^xsd:integer ;
         	        salsah-gui:guiElement salsah-gui:Pulldown ;
-                    salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-InstructionCodeList>" .
+                    salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-InstructionCodeList>" .
 
 
-###  http://www.knora.org/ontology/0105#hasInstructionEn
+###  http://www.knora.org/ontology/0105/drawings-gods#hasInstructionEn
 :hasInstructionEn rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf knora-base:hasValue ;
                knora-base:subjectClassConstraint :Instruction ;
@@ -1153,10 +1153,10 @@
 					 	"Instruction in English/"@en ;
 			   salsah-gui:guiOrder "4"^^xsd:integer ;
         	   salsah-gui:guiElement salsah-gui:Pulldown ;
-               salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-InstructionEnList>" .
+               salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-InstructionEnList>" .
 
 
-###  http://www.knora.org/ontology/0105#hasInstructionFr
+###  http://www.knora.org/ontology/0105/drawings-gods#hasInstructionFr
 :hasInstructionFr rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf knora-base:hasValue ;
                knora-base:subjectClassConstraint :Instruction ;
@@ -1167,10 +1167,10 @@
 					 	"Instruction in French."@en ;
 			   salsah-gui:guiOrder "5"^^xsd:integer ;
         	   salsah-gui:guiElement salsah-gui:Pulldown ;
-               salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-InstructionFrList>" .
+               salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-InstructionFrList>" .
 
 
-###  http://www.knora.org/ontology/0105#hasInstructionOriginal
+###  http://www.knora.org/ontology/0105/drawings-gods#hasInstructionOriginal
 :hasInstructionOriginal rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf knora-base:hasValue ;
                      knora-base:subjectClassConstraint :Instruction ;
@@ -1181,10 +1181,10 @@
 					 	"Instruction in original language."@en ;
 					 salsah-gui:guiOrder "3"^^xsd:integer ;
         	   		 salsah-gui:guiElement salsah-gui:Pulldown ;
-                     salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-InstructionOriginalList>" .
+                     salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-InstructionOriginalList>" .
 
 
-###  http://www.knora.org/ontology/0105#hasInstructionOriginalLanguage
+###  http://www.knora.org/ontology/0105/drawings-gods#hasInstructionOriginalLanguage
 :hasInstructionOriginalLanguage rdf:type owl:ObjectProperty ;
                              rdfs:subPropertyOf knora-base:hasValue ;
                              knora-base:objectClassConstraint knora-base:ListValue ;
@@ -1195,11 +1195,11 @@
 								"Original language of the instruction."@en ;
 							 salsah-gui:guiOrder "2"^^xsd:integer ;
 				             salsah-gui:guiElement salsah-gui:Pulldown ;
-			          	     salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList>" .
+			          	     salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-LanguageList>" .
 
 
 
-###  http://www.knora.org/ontology/0105#hasInstructionRestitution
+###  http://www.knora.org/ontology/0105/drawings-gods#hasInstructionRestitution
 :hasInstructionRestitution rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf knora-base:hasValue ;
                         knora-base:objectClassConstraint knora-base:TextValue ;
@@ -1210,7 +1210,7 @@
 		                salsah-gui:guiOrder "2"^^xsd:integer .
 
 
-###  http://www.knora.org/ontology/0105#hasInstructionRestitutionAsIsOriginal
+###  http://www.knora.org/ontology/0105/drawings-gods#hasInstructionRestitutionAsIsOriginal
 :hasInstructionRestitutionAsIsOriginal rdf:type owl:ObjectProperty ;
                                     rdfs:subPropertyOf :hasInstructionRestitution ;
                                     knora-base:objectClassConstraint knora-base:TextValue ;
@@ -1225,7 +1225,7 @@
 												         "rows=3" .
 
 
-###  http://www.knora.org/ontology/0105#hasInstructionRestitutionEn
+###  http://www.knora.org/ontology/0105/drawings-gods#hasInstructionRestitutionEn
 :hasInstructionRestitutionEn rdf:type owl:ObjectProperty ;
                           rdfs:subPropertyOf :hasInstructionRestitution ;
                           knora-base:objectClassConstraint knora-base:TextValue ;
@@ -1240,7 +1240,7 @@
 										         "rows=3" .
 
 
-###  http://www.knora.org/ontology/0105#hasInstructionRestitutionFr
+###  http://www.knora.org/ontology/0105/drawings-gods#hasInstructionRestitutionFr
 :hasInstructionRestitutionFr rdf:type owl:ObjectProperty ;
                           rdfs:subPropertyOf :hasInstructionRestitution ;
                           knora-base:objectClassConstraint knora-base:TextValue ;
@@ -1254,7 +1254,7 @@
 						  salsah-gui:guiAttribute "width=95%" ,
 										         "rows=3" .
 
-###  http://www.knora.org/ontology/0105#hasInstructionRestitutionAuthor
+###  http://www.knora.org/ontology/0105/drawings-gods#hasInstructionRestitutionAuthor
 :hasInstructionRestitutionAuthor rdf:type owl:ObjectProperty ;
                           rdfs:subPropertyOf knora-base:hasValue ;
                           knora-base:objectClassConstraint knora-base:ListValue ;
@@ -1264,12 +1264,12 @@
 		   		 		  rdfs:comment "Auteur de restitution de consigne: personne qui a écrit la restitution de la consigne."@fr ,
 									"Author of the recall: the person who wrote the restitution of the task."@en ;
 						  salsah-gui:guiElement salsah-gui:Pulldown ;
-		          	      salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-DescriptionAuthorList>" ;
+		          	      salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-DescriptionAuthorList>" ;
 						  salsah-gui:guiOrder "9"^^xsd:integer .
 
 
 
-###  http://www.knora.org/ontology/0105#hasInstructionRestitutionOriginal
+###  http://www.knora.org/ontology/0105/drawings-gods#hasInstructionRestitutionOriginal
 :hasInstructionRestitutionOriginal rdf:type owl:ObjectProperty ;
                                 rdfs:subPropertyOf :hasInstructionRestitution ;
                                 knora-base:objectClassConstraint knora-base:TextValue ;
@@ -1284,7 +1284,7 @@
 											         "rows=3" .
 
 
-###  http://www.knora.org/ontology/0105#hasInstructionRestitutionOriginalLanguage
+###  http://www.knora.org/ontology/0105/drawings-gods#hasInstructionRestitutionOriginalLanguage
 :hasInstructionRestitutionOriginalLanguage rdf:type owl:ObjectProperty ;
                                         rdfs:subPropertyOf knora-base:hasValue ;
                                         knora-base:objectClassConstraint knora-base:ListValue ;
@@ -1295,10 +1295,10 @@
 											"Original language of the recall of the task."@en ;
 										salsah-gui:guiOrder "4"^^xsd:integer ;
 							            salsah-gui:guiElement salsah-gui:Pulldown ;
-						          	    salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList>" .
+						          	    salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-LanguageList>" .
 
 
-###  http://www.knora.org/ontology/0105#hasInstructionTranslator
+###  http://www.knora.org/ontology/0105/drawings-gods#hasInstructionTranslator
 :hasInstructionTranslator rdf:type owl:ObjectProperty ;
                        rdfs:subPropertyOf :hasTranslator ;
                        knora-base:objectClassConstraint knora-base:ListValue ;
@@ -1309,10 +1309,10 @@
 									"Translator of instruction."@en ;
 					   salsah-gui:guiOrder "6"^^xsd:integer ;
 		               salsah-gui:guiElement salsah-gui:Pulldown ;
-               	    salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TranslatorList>" .
+               	    salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-TranslatorList>" .
 
 
-###  http://www.knora.org/ontology/0105#hasInternalComment
+###  http://www.knora.org/ontology/0105/drawings-gods#hasInternalComment
 :hasInternalComment rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf knora-base:hasValue ;
                  knora-base:objectClassConstraint knora-base:TextValue ;
@@ -1324,7 +1324,7 @@
 		         salsah-gui:guiOrder "1"^^xsd:integer .
 
 
-###  http://www.knora.org/ontology/0105#isAnnotationOf
+###  http://www.knora.org/ontology/0105/drawings-gods#isAnnotationOf
 :isAnnotationOf rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf knora-base:hasLinkTo ;
                 knora-base:objectClassConstraint :Drawing ;
@@ -1336,7 +1336,7 @@
 				salsah-gui:guiElement salsah-gui:Searchbox ;
               	salsah-gui:guiOrder "3"^^xsd:integer .
 
-###  http://www.knora.org/ontology/0105#isAnnotationOfValue
+###  http://www.knora.org/ontology/0105/drawings-gods#isAnnotationOfValue
 :isAnnotationOfValue rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf knora-base:hasLinkToValue ;
                 knora-base:objectClassConstraint knora-base:LinkValue ;
@@ -1347,7 +1347,7 @@
 					 "Drawing concerned by the annotation."@en .
 
 
-###  http://www.knora.org/ontology/0105#isAttachedTo
+###  http://www.knora.org/ontology/0105/drawings-gods#isAttachedTo
 :isAttachedTo rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf knora-base:hasLinkTo ;
               knora-base:objectClassConstraint :CollectionSite ;
@@ -1360,7 +1360,7 @@
               salsah-gui:guiOrder "8"^^xsd:integer .
 
 
-###  http://www.knora.org/ontology/0105#isAttachedToValue
+###  http://www.knora.org/ontology/0105/drawings-gods#isAttachedToValue
 :isAttachedToValue rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf knora-base:hasLinkToValue ;
               knora-base:objectClassConstraint knora-base:LinkValue ;
@@ -1371,7 +1371,7 @@
 					 "Collection site(s) concerned by the research wave."@en .
 
 
-###  http://www.knora.org/ontology/0105#isBasedOn
+###  http://www.knora.org/ontology/0105/drawings-gods#isBasedOn
 :isBasedOn rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf knora-base:hasLinkTo ;
            knora-base:objectClassConstraint :QuestionnaireBase ;
@@ -1384,7 +1384,7 @@
            salsah-gui:guiOrder "7"^^xsd:integer .
 
 
-###  http://www.knora.org/ontology/0105#isBasedOnValue
+###  http://www.knora.org/ontology/0105/drawings-gods#isBasedOnValue
 :isBasedOnValue rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf knora-base:hasLinkToValue ;
            knora-base:objectClassConstraint knora-base:LinkValue ;
@@ -1395,7 +1395,7 @@
 					 "Research wave based on a standardized questionnaire."@en .
 
 
-###  http://www.knora.org/ontology/0105#hasKeyword
+###  http://www.knora.org/ontology/0105/drawings-gods#hasKeyword
 :hasKeyword rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf knora-base:hasValue ;
           rdfs:label "Mots-clés: contexte (général)"@fr ,
@@ -1406,9 +1406,9 @@
           knora-base:objectClassConstraint knora-base:ListValue ;
           knora-base:subjectClassConstraint :Drawing ;
           salsah-gui:guiElement salsah-gui:List ;
-          salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHList>" .
+          salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-KeywordsHList>" .
 
-###  http://www.knora.org/ontology/0105#hasKeywordOther
+###  http://www.knora.org/ontology/0105/drawings-gods#hasKeywordOther
 :hasKeywordOther rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf knora-base:hasValue ;
           rdfs:label "Mots-clés: autre (ni figure principale, ni contexte, ou les deux)"@fr ,
@@ -1419,10 +1419,10 @@
           knora-base:objectClassConstraint knora-base:ListValue ;
           knora-base:subjectClassConstraint :Drawing ;
           salsah-gui:guiElement salsah-gui:List ;
-          salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-KeywordsHListOther>" .
+          salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-KeywordsHListOther>" .
 
 
-###  http://www.knora.org/ontology/0105#hasDrawingParts
+###  http://www.knora.org/ontology/0105/drawings-gods#hasDrawingParts
 :hasDrawingParts rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf knora-base:hasValue ;
           rdfs:label "Mots-clés: composition générale d'image"@fr ,
@@ -1433,10 +1433,10 @@
           knora-base:objectClassConstraint knora-base:ListValue ;
           knora-base:subjectClassConstraint :Drawing ;
           salsah-gui:guiElement salsah-gui:List ;
-          salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-DrawingPartsHList>" .
+          salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-DrawingPartsHList>" .
 
 
-###  http://www.knora.org/ontology/0105#hasFigure
+###  http://www.knora.org/ontology/0105/drawings-gods#hasFigure
 :hasFigure rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf knora-base:hasValue ;
           rdfs:label "Mots-clés: figure ou motif principal (dieu)"@fr ,
@@ -1447,10 +1447,10 @@
           knora-base:objectClassConstraint knora-base:ListValue ;
           knora-base:subjectClassConstraint :Drawing ;
           salsah-gui:guiElement salsah-gui:List ;
-          salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-FiguresHList>" .
+          salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-FiguresHList>" .
 
 
-###  http://www.knora.org/ontology/0105#hasGodFunction
+###  http://www.knora.org/ontology/0105/drawings-gods#hasGodFunction
 :hasGodFunction rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf knora-base:hasValue ;
           rdfs:label "Mots-clés: fonction de dieu"@fr ,
@@ -1461,10 +1461,10 @@
           knora-base:objectClassConstraint knora-base:ListValue ;
           knora-base:subjectClassConstraint :Drawing ;
           salsah-gui:guiElement salsah-gui:Pulldown ;
-          salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-GodFunctionList>" .
+          salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-GodFunctionList>" .
 
 
-###  http://www.knora.org/ontology/0105#hasGodPosition
+###  http://www.knora.org/ontology/0105/drawings-gods#hasGodPosition
 :hasGodPosition rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf knora-base:hasValue ;
           rdfs:label "Mots-clés: position de dieu (contexte immédiat)"@fr ,
@@ -1475,10 +1475,10 @@
           knora-base:objectClassConstraint knora-base:ListValue ;
           knora-base:subjectClassConstraint :Drawing ;
           salsah-gui:guiElement salsah-gui:Pulldown ;
-          salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-GodPositionList>" .
+          salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-GodPositionList>" .
 
 
-###  http://www.knora.org/ontology/0105#hasDrawingReligiousIdentity
+###  http://www.knora.org/ontology/0105/drawings-gods#hasDrawingReligiousIdentity
 :hasDrawingReligiousIdentity rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf knora-base:hasValue ;
           rdfs:label "Mots-clés: identité religieuse du dessin"@fr ,
@@ -1489,9 +1489,9 @@
           knora-base:objectClassConstraint knora-base:ListValue ;
           knora-base:subjectClassConstraint :Drawing ;
           salsah-gui:guiElement salsah-gui:Pulldown ;
-          salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-DrawingReligiousIdentityList>" .
+          salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-DrawingReligiousIdentityList>" .
 
-####  http://www.knora.org/ontology/0105#language
+####  http://www.knora.org/ontology/0105/drawings-gods#language
 #:language rdf:type owl:ObjectProperty ;
 #          rdfs:subPropertyOf knora-base:hasValue ;
 #          knora-base:objectClassConstraint knora-base:ListValue ;
@@ -1499,11 +1499,11 @@
 #                     "Languages"@en ;
 #		  salsah-gui:guiOrder "1"^^xsd:integer ;
 #          salsah-gui:guiElement salsah-gui:Pulldown ;
-#          salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/6cce4ce5>" ;
-##          salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList>" ..
+#          salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/6cce4ce5>" ;
+##          salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-LanguageList>" ..
 
 
-###  http://www.knora.org/ontology/0105#hasLanguageNative
+###  http://www.knora.org/ontology/0105/drawings-gods#hasLanguageNative
 :hasLanguageNative rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf knora-base:hasValue ;
                 knora-base:objectClassConstraint knora-base:ListValue ;
@@ -1514,10 +1514,10 @@
 					 "Mother tongue."@en ;
 				salsah-gui:guiOrder "12"^^xsd:integer ;
 	            salsah-gui:guiElement salsah-gui:Pulldown ;
-          	    salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList>" .
+          	    salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-LanguageList>" .
 
 
-###  http://www.knora.org/ontology/0105#hasLanguageOther
+###  http://www.knora.org/ontology/0105/drawings-gods#hasLanguageOther
 :hasLanguageOther rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf knora-base:hasValue ;
                knora-base:objectClassConstraint knora-base:ListValue ;
@@ -1528,10 +1528,10 @@
 					 "Other languages."@en ;
 			   salsah-gui:guiOrder "13"^^xsd:integer ;
 	           salsah-gui:guiElement salsah-gui:Pulldown ;
-          	   salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList>" .
+          	   salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-LanguageList>" .
 
 
-###  http://www.knora.org/ontology/0105#hasLastname
+###  http://www.knora.org/ontology/0105/drawings-gods#hasLastname
 :hasLastname rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf :hasPersonName ;
           knora-base:objectClassConstraint knora-base:TextValue ;
@@ -1544,7 +1544,7 @@
       	  salsah-gui:guiOrder "2"^^xsd:integer .
 
 
-###  http://www.knora.org/ontology/0105#hasGlobalLocation
+###  http://www.knora.org/ontology/0105/drawings-gods#hasGlobalLocation
 :hasGlobalLocation rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf knora-base:hasValue ;
           knora-base:objectClassConstraint knora-base:ListValue ;
@@ -1555,9 +1555,9 @@
 					 "Global geographical location."@en ;
           salsah-gui:guiOrder "2"^^xsd:integer ;
           salsah-gui:guiElement salsah-gui:List ;
-          salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-GlobalLocationHList>" .
+          salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-GlobalLocationHList>" .
 
-###  http://www.knora.org/ontology/0105#hasVillageLocation
+###  http://www.knora.org/ontology/0105/drawings-gods#hasVillageLocation
 :hasVillageLocation rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf knora-base:hasValue ;
           knora-base:objectClassConstraint knora-base:ListValue ;
@@ -1568,9 +1568,9 @@
 					 "Town or village location (for an institution or an event)."@en ;
           salsah-gui:guiOrder "3"^^xsd:integer ;
           salsah-gui:guiElement salsah-gui:List ;
-          salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-VillageHList>" .
+          salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList>" .
 
-###  http://www.knora.org/ontology/0105#hasSchoolLocation
+###  http://www.knora.org/ontology/0105/drawings-gods#hasSchoolLocation
 :hasSchoolLocation rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf knora-base:hasValue ;
           knora-base:objectClassConstraint knora-base:ListValue ;
@@ -1581,10 +1581,10 @@
 					 "School location."@en ;
           salsah-gui:guiOrder "4"^^xsd:integer ;
           salsah-gui:guiElement salsah-gui:List ;
-          salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-SchoolHList>" .
+          salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList>" .
 
 
-###  http://www.knora.org/ontology/0105#hasMaterialOk
+###  http://www.knora.org/ontology/0105/drawings-gods#hasMaterialOk
 :hasMaterialOk rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf knora-base:hasValue ;
             knora-base:objectClassConstraint knora-base:BooleanValue ;
@@ -1597,7 +1597,7 @@
 	        salsah-gui:guiElement salsah-gui:Checkbox .
 
 
-###  http://www.knora.org/ontology/0105#hasMaterialCurrent
+###  http://www.knora.org/ontology/0105/drawings-gods#hasMaterialCurrent
 :hasMaterialCurrent rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf knora-base:hasValue ;
             knora-base:objectClassConstraint knora-base:BooleanValue ;
@@ -1610,7 +1610,7 @@
 	        salsah-gui:guiElement salsah-gui:Checkbox .
 
 
-####  http://www.knora.org/ontology/0105#maxAgeRangeYear
+####  http://www.knora.org/ontology/0105/drawings-gods#maxAgeRangeYear
 #:maxAgeRangeYear rdf:type owl:ObjectProperty ;
 #                 rdfs:subPropertyOf :hasAgeYear ;
 #                 rdfs:label "Age maximal en années"@fr ,
@@ -1618,14 +1618,14 @@
 
 
 
-####  http://www.knora.org/ontology/0105#minAgeRangeYear
+####  http://www.knora.org/ontology/0105/drawings-gods#minAgeRangeYear
 #:minAgeRangeYear rdf:type owl:ObjectProperty ;
 #                 rdfs:subPropertyOf :hasAgeYear ;
 #                 rdfs:label "Age maximal des enfants en années"@fr ,
 #                     "Minimal age of children in years"@en .
 
 
-####  http://www.knora.org/ontology/0105#name
+####  http://www.knora.org/ontology/0105/drawings-gods#name
 #:name rdf:type owl:ObjectProperty ;
 #      rdfs:subPropertyOf knora-base:hasValue ;
 #      knora-base:objectClassConstraint knora-base:TextValue ;
@@ -1635,7 +1635,7 @@
 #      salsah-gui:guiOrder "2"^^xsd:integer .
 
 
-###  http://www.knora.org/ontology/0105#hasNationality
+###  http://www.knora.org/ontology/0105/drawings-gods#hasNationality
 :hasNationality rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf knora-base:hasValue ;
              knora-base:objectClassConstraint knora-base:ListValue ;
@@ -1646,10 +1646,10 @@
 					 "Citizenship."@en ;
 			 salsah-gui:guiOrder "9"^^xsd:integer ;
              salsah-gui:guiElement salsah-gui:Pulldown ;
-             salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-NationalityList>" .
+             salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-NationalityList>" .
 
 
-###  http://www.knora.org/ontology/0105#hasOrientation
+###  http://www.knora.org/ontology/0105/drawings-gods#hasOrientation
 :hasOrientation rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf knora-base:hasValue ;
              knora-base:subjectClassConstraint :Drawing ;
@@ -1660,10 +1660,10 @@
 					 "Sheet orientation (portrait or landscape)."@en ;
 			 salsah-gui:guiOrder "3"^^xsd:integer ;
              salsah-gui:guiElement salsah-gui:Pulldown ;
-             salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-OrientationList>" .
+             salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-OrientationList>" .
 
 
-###  http://www.knora.org/ontology/0105#hasOriginalLanguage
+###  http://www.knora.org/ontology/0105/drawings-gods#hasOriginalLanguage
 ###  a verifier SCC OCC
 :hasOriginalLanguage rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf :language ;
@@ -1671,7 +1671,7 @@
                      "Original language"@en .
 
 
-###  http://www.knora.org/ontology/0105#isPartOfIndividualQuestionnaire
+###  http://www.knora.org/ontology/0105/drawings-gods#isPartOfIndividualQuestionnaire
 :isPartOfIndividualQuestionnaire rdf:type owl:ObjectProperty ;
                                rdfs:subPropertyOf knora-base:isPartOf ;
                                knora-base:subjectClassConstraint :QuestionnairePage ;
@@ -1684,7 +1684,7 @@
 					           salsah-gui:guiOrder "2"^^xsd:integer .
 
 
-###  http://www.knora.org/ontology/0105#isPartOfIndividualQuestionnaireValue
+###  http://www.knora.org/ontology/0105/drawings-gods#isPartOfIndividualQuestionnaireValue
 :isPartOfIndividualQuestionnaireValue rdf:type owl:ObjectProperty ;
 		                            rdfs:subPropertyOf knora-base:isPartOfValue ;
 		                            knora-base:subjectClassConstraint :QuestionnairePage ;
@@ -1695,7 +1695,7 @@
 							 				"Page relevant to a given questionnaire."@en .
 
 
-###  http://www.knora.org/ontology/0105#isPartOfQuestionnaireBase
+###  http://www.knora.org/ontology/0105/drawings-gods#isPartOfQuestionnaireBase
 :isPartOfQuestionnaireBase rdf:type owl:ObjectProperty ;
                          rdfs:subPropertyOf knora-base:isPartOf ;
                          knora-base:subjectClassConstraint :QuestionnaireBaseImage ;
@@ -1708,7 +1708,7 @@
 					     salsah-gui:guiOrder "2"^^xsd:integer .
 
 
-###  http://www.knora.org/ontology/0105#isPartOfQuestionnaireBaseValue
+###  http://www.knora.org/ontology/0105/drawings-gods#isPartOfQuestionnaireBaseValue
 :isPartOfQuestionnaireBaseValue rdf:type owl:ObjectProperty ;
 		                      rdfs:subPropertyOf knora-base:isPartOfValue ;
 		                      knora-base:subjectClassConstraint :QuestionnaireBaseImage ;
@@ -1721,7 +1721,7 @@
 							  salsah-gui:guiOrder "3"^^xsd:integer .
 
 
-###  http://www.knora.org/ontology/0105#hasPassageComment
+###  http://www.knora.org/ontology/0105/drawings-gods#hasPassageComment
 :hasPassageComment rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf :hasInternalComment ;
                 knora-base:objectClassConstraint knora-base:TextValue ;
@@ -1734,7 +1734,7 @@
 		        salsah-gui:guiOrder "16"^^xsd:integer .
 
 
-###  http://www.knora.org/ontology/0105#hasPassageDate
+###  http://www.knora.org/ontology/0105/drawings-gods#hasPassageDate
 :hasPassageDate rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf knora-base:hasValue ;
              knora-base:subjectClassConstraint :Passage ;
@@ -1747,7 +1747,7 @@
 		     salsah-gui:guiOrder "1"^^xsd:integer .
 
 
-###  http://www.knora.org/ontology/0105#hasPassageMaxAgeRangeYear
+###  http://www.knora.org/ontology/0105/drawings-gods#hasPassageMaxAgeRangeYear
 :hasPassageMaxAgeRangeYear rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf knora-base:hasValue ;
                         knora-base:subjectClassConstraint :Passage ;
@@ -1760,7 +1760,7 @@
 				        salsah-gui:guiOrder "13"^^xsd:integer .
 
 
-###  http://www.knora.org/ontology/0105#hasPassageMinAgeRangeYear
+###  http://www.knora.org/ontology/0105/drawings-gods#hasPassageMinAgeRangeYear
 :hasPassageMinAgeRangeYear rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf knora-base:hasValue ;
                         knora-base:subjectClassConstraint :Passage ;
@@ -1773,7 +1773,7 @@
 				        salsah-gui:guiOrder "12"^^xsd:integer .
 
 
-###  http://www.knora.org/ontology/0105#hasPassageNumber
+###  http://www.knora.org/ontology/0105/drawings-gods#hasPassageNumber
 :hasPassageNumber rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf knora-base:hasValue ;
                knora-base:objectClassConstraint knora-base:IntValue ;
@@ -1788,7 +1788,7 @@
                                    "max=-1" .
 
 
-###  http://www.knora.org/ontology/0105#hasPassagePersonContact
+###  http://www.knora.org/ontology/0105/drawings-gods#hasPassagePersonContact
 :hasPassagePersonContact rdf:type owl:ObjectProperty ;
                       rdfs:subPropertyOf knora-base:hasValue ;
                       knora-base:objectClassConstraint knora-base:TextValue ;
@@ -1801,7 +1801,7 @@
 		              salsah-gui:guiOrder "6"^^xsd:integer .
 
 
-###  http://www.knora.org/ontology/0105#hasPassageReligiousIdentity
+###  http://www.knora.org/ontology/0105/drawings-gods#hasPassageReligiousIdentity
 :hasPassageReligiousIdentity rdf:type owl:ObjectProperty ;
                           rdfs:subPropertyOf knora-base:hasValue ;
                           knora-base:objectClassConstraint knora-base:ListValue ;
@@ -1812,10 +1812,10 @@
 					 		"Activity religious context."@en ;
 					 	  salsah-gui:guiOrder "3"^^xsd:integer ;
 	                      salsah-gui:guiElement salsah-gui:List ;
-	                      salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList>" .
+	                      salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-ReligiousIdentityHList>" .
 
 
-###  http://www.knora.org/ontology/0105#hasPersonComment
+###  http://www.knora.org/ontology/0105/drawings-gods#hasPersonComment
 :hasPersonComment rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf :hasInternalComment ;
                knora-base:objectClassConstraint knora-base:TextValue ;
@@ -1829,7 +1829,7 @@
 			 salsah-gui:guiAttribute "width=95%" ,
 	                        		"rows=10" .
 
-###  http://www.knora.org/ontology/0105#hasPersonLinkedFileComment
+###  http://www.knora.org/ontology/0105/drawings-gods#hasPersonLinkedFileComment
 :hasPersonLinkedFileComment rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf :hasInternalComment ;
                knora-base:objectClassConstraint knora-base:TextValue ;
@@ -1844,7 +1844,7 @@
 		                        		"rows=10" .
 
 
-###  http://www.knora.org/ontology/0105#personContact
+###  http://www.knora.org/ontology/0105/drawings-gods#personContact
 ### a verifier SCC
 #:personContact rdf:type owl:ObjectProperty ;
 #               rdfs:subPropertyOf knora-base:hasValue ;
@@ -1855,7 +1855,7 @@
 #               salsah-gui:guiOrder "2"^^xsd:integer .
 
 
-###  http://www.knora.org/ontology/0105#hasPersonGender
+###  http://www.knora.org/ontology/0105/drawings-gods#hasPersonGender
 :hasPersonGender rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf knora-base:hasValue ;
               knora-base:objectClassConstraint knora-base:ListValue ;
@@ -1866,10 +1866,10 @@
 					 	"Gender of the participant."@en ;
 			  salsah-gui:guiOrder "4"^^xsd:integer ;
 	          salsah-gui:guiElement salsah-gui:Pulldown ;
-	          salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-GenderList>" .
+	          salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-GenderList>" .
 
 
-####  http://www.knora.org/ontology/0105#personLanguage
+####  http://www.knora.org/ontology/0105/drawings-gods#personLanguage
 #:personLanguage rdf:type owl:ObjectProperty ;
 #                rdfs:subPropertyOf :language ;
 #                knora-base:subjectClassConstraint :Person ;
@@ -1878,10 +1878,10 @@
 #                     		"Person's language"@en ;
 #                salsah-gui:guiOrder "1"^^xsd:integer ;
 #	            salsah-gui:guiElement salsah-gui:Pulldown ;
-#          	    salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList>" .
+#          	    salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-LanguageList>" .
 
 
-###  http://www.knora.org/ontology/0105#hasPersonName
+###  http://www.knora.org/ontology/0105/drawings-gods#hasPersonName
 :hasPersonName rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf knora-base:hasValue ;
             knora-base:objectClassConstraint knora-base:TextValue ;
@@ -1892,7 +1892,7 @@
       	    salsah-gui:guiOrder "2"^^xsd:integer .
 
 
-###  http://www.knora.org/ontology/0105#hasPhysicalStorage
+###  http://www.knora.org/ontology/0105/drawings-gods#hasPhysicalStorage
 :hasPhysicalStorage rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf knora-base:hasValue ;
                  knora-base:subjectClassConstraint :QualityData ;
@@ -1902,11 +1902,11 @@
 			  	 rdfs:comment "Cote du dossier dans lequel le dessin physique est archivé."@fr ,
 					 	"Code of the file where the physical image is stored."@en ;
 				 salsah-gui:guiElement salsah-gui:List ;
-				 salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-StorageList>" ;
+				 salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-StorageList>" ;
                  salsah-gui:guiOrder "1"^^xsd:integer .
 
 
-###  http://www.knora.org/ontology/0105#hasQualityComment
+###  http://www.knora.org/ontology/0105/drawings-gods#hasQualityComment
 :hasQualityComment rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf :hasInternalComment ;
                 knora-base:objectClassConstraint knora-base:TextValue ;
@@ -1920,7 +1920,7 @@
 				 salsah-gui:guiAttribute "width=95%" ,
 		                        		"rows=10" .
 
-###  http://www.knora.org/ontology/0105#hasDescriptionUnavailable
+###  http://www.knora.org/ontology/0105/drawings-gods#hasDescriptionUnavailable
 :hasDescriptionUnavailable rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf knora-base:hasValue ;
                 knora-base:objectClassConstraint knora-base:BooleanValue ;
@@ -1933,7 +1933,7 @@
        		  	salsah-gui:guiElement salsah-gui:Checkbox .
 
 
-###  http://www.knora.org/ontology/0105#hasQuestionnaireComplete
+###  http://www.knora.org/ontology/0105/drawings-gods#hasQuestionnaireComplete
 :hasQuestionnaireComplete rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf knora-base:hasValue ;
                knora-base:objectClassConstraint knora-base:BooleanValue ;
@@ -1946,7 +1946,7 @@
        		   salsah-gui:guiElement salsah-gui:Checkbox .
 
 
-###  http://www.knora.org/ontology/0105#hasQuestionnaireEntered
+###  http://www.knora.org/ontology/0105/drawings-gods#hasQuestionnaireEntered
 :hasQuestionnaireEntered rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf knora-base:hasValue ;
               knora-base:objectClassConstraint knora-base:BooleanValue ;
@@ -1959,7 +1959,7 @@
        		  salsah-gui:guiElement salsah-gui:Checkbox .
 
 
-###  http://www.knora.org/ontology/0105#hasQuestionnaireBaseComment
+###  http://www.knora.org/ontology/0105/drawings-gods#hasQuestionnaireBaseComment
 :hasQuestionnaireBaseComment rdf:type owl:ObjectProperty ;
                           rdfs:subPropertyOf :hasInternalComment ;
                           knora-base:subjectClassConstraint :QuestionnaireBase ;
@@ -1973,7 +1973,7 @@
 						 salsah-gui:guiAttribute "width=95%" ,
 				                        		"rows=10" .
 
-###  http://www.knora.org/ontology/0105#hasQuestionnaireBaseImageComment
+###  http://www.knora.org/ontology/0105/drawings-gods#hasQuestionnaireBaseImageComment
 :hasQuestionnaireBaseImageComment rdf:type owl:ObjectProperty ;
                           rdfs:subPropertyOf :hasInternalComment ;
                           knora-base:subjectClassConstraint :QuestionnaireBaseImage ;
@@ -1988,7 +1988,7 @@
 				                        		"rows=10" .
 
 
-###  http://www.knora.org/ontology/0105#hasQuestionnaireBaseFile
+###  http://www.knora.org/ontology/0105/drawings-gods#hasQuestionnaireBaseFile
 #:hasQuestionnaireBaseFile rdf:type owl:ObjectProperty ;
 #                       rdfs:subPropertyOf :questionnaireFile ;
 #                       knora-base:subjectClassConstraint :QuestionnaireBaseImage ;
@@ -1998,7 +1998,7 @@
 #					 		"Copy of the standardized questionnaire."@en .
 
 
-###  http://www.knora.org/ontology/0105#hasQuestionnaireBaseOriginalLanguage
+###  http://www.knora.org/ontology/0105/drawings-gods#hasQuestionnaireBaseOriginalLanguage
 :hasQuestionnaireBaseOriginalLanguage rdf:type owl:ObjectProperty ;
                                        rdfs:subPropertyOf knora-base:hasValue ;
                                        knora-base:objectClassConstraint knora-base:ListValue ;
@@ -2009,11 +2009,11 @@
 					 						"Original language of standardized questionnaire, if the questionnaire is in original language."@en ;
 					 				   salsah-gui:guiOrder "2"^^xsd:integer ;
 						               salsah-gui:guiElement salsah-gui:Pulldown ;
-					          	       salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList>" .
+					          	       salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-LanguageList>" .
 
 
 
-###  http://www.knora.org/ontology/0105#hasQuestionnaireBaseSeqnum
+###  http://www.knora.org/ontology/0105/drawings-gods#hasQuestionnaireBaseSeqnum
 :hasQuestionnaireBaseSeqnum rdf:type owl:ObjectProperty ;
                          rdfs:subPropertyOf knora-base:seqnum ;
                          knora-base:subjectClassConstraint :QuestionnaireBaseImage ;
@@ -2029,7 +2029,7 @@
 
 
 
-####  http://www.knora.org/ontology/0105#hasQuestionnaireBaseTranslator
+####  http://www.knora.org/ontology/0105/drawings-gods#hasQuestionnaireBaseTranslator
 #:hasQuestionnaireBaseTranslator rdf:type owl:ObjectProperty ;
 #                             rdfs:subPropertyOf :hasTranslator ;
 #                             knora-base:objectClassConstraint knora-base:ListValue ;
@@ -2040,13 +2040,13 @@
 #					 				"Translator of standardized questionnaire."@en ;
 #					 		 salsah-gui:guiOrder "1"^^xsd:integer ;
 #			                 salsah-gui:guiElement salsah-gui:Pulldown ;
-#               	          salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TranslatorList>" .
+#               	          salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-TranslatorList>" .
 
 
 
 
 
-####  http://www.knora.org/ontology/0105#questionnaireComment
+####  http://www.knora.org/ontology/0105/drawings-gods#questionnaireComment
 #:questionnaireComment rdf:type owl:ObjectProperty ;
 #                      rdfs:subPropertyOf :hasInternalComment ;
 #                      rdfs:label "Commentaire interne (questionnaires)"@fr ,
@@ -2054,7 +2054,7 @@
 
 
 
-###  http://www.knora.org/ontology/0105#questionnaireFile
+###  http://www.knora.org/ontology/0105/drawings-gods#questionnaireFile
 #:questionnaireFile rdf:type owl:ObjectProperty ;
 #                   rdfs:subPropertyOf :file ,
 #                                     knora-base:hasStillImageFileValue ;
@@ -2066,7 +2066,7 @@
 #		            salsah-gui:guiOrder "3"^^xsd:integer .
 
 
-###  http://www.knora.org/ontology/0105#hasQuestionnairePageComment
+###  http://www.knora.org/ontology/0105/drawings-gods#hasQuestionnairePageComment
 :hasQuestionnairePageComment rdf:type owl:ObjectProperty ;
                           rdfs:subPropertyOf :hasInternalComment ;
                           knora-base:objectClassConstraint knora-base:TextValue ;
@@ -2081,7 +2081,7 @@
 				                        		"rows=10" .
 
 
-###  http://www.knora.org/ontology/0105#hasQuestionnairePageFile
+###  http://www.knora.org/ontology/0105/drawings-gods#hasQuestionnairePageFile
 #:hasQuestionnairePageFile rdf:type owl:ObjectProperty ;
 #                       rdfs:subPropertyOf :questionnaireFile ;
 #                       knora-base:subjectClassConstraint :QuestionnairePage ;
@@ -2093,7 +2093,7 @@
 #		               salsah-gui:guiOrder "3"^^xsd:integer .
 
 
-###  http://www.knora.org/ontology/0105#hasQuestionnairePageSeqnum
+###  http://www.knora.org/ontology/0105/drawings-gods#hasQuestionnairePageSeqnum
 :hasQuestionnairePageSeqnum rdf:type owl:ObjectProperty ;
                          rdfs:subPropertyOf knora-base:seqnum ;
                          knora-base:subjectClassConstraint :QuestionnairePage ;
@@ -2108,7 +2108,7 @@
 		                                   "max=-1" .
 
 
-####  http://www.knora.org/ontology/0105#hasRecto
+####  http://www.knora.org/ontology/0105/drawings-gods#hasRecto
 #:hasRecto rdf:type owl:ObjectProperty ;
 #       rdfs:subPropertyOf knora-base:hasValue ;
 #       knora-base:objectClassConstraint knora-base:BooleanValue ;
@@ -2120,7 +2120,7 @@
 #       salsah-gui:guiElement salsah-gui:Checkbox .
 
 
-###  http://www.knora.org/ontology/0105#hasRectoOk
+###  http://www.knora.org/ontology/0105/drawings-gods#hasRectoOk
 :hasRectoOk rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf knora-base:hasValue ;
                 knora-base:objectClassConstraint knora-base:BooleanValue ;
@@ -2133,7 +2133,7 @@
        		    salsah-gui:guiElement salsah-gui:Checkbox .
 
 
-###  http://www.knora.org/ontology/0105#hasRectoCleaned
+###  http://www.knora.org/ontology/0105/drawings-gods#hasRectoCleaned
 :hasRectoCleaned rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf knora-base:hasValue ;
               knora-base:objectClassConstraint knora-base:BooleanValue ;
@@ -2146,7 +2146,7 @@
        		  salsah-gui:guiElement salsah-gui:Checkbox .
 
 
-###  http://www.knora.org/ontology/0105#hasRectoRestricted
+###  http://www.knora.org/ontology/0105/drawings-gods#hasRectoRestricted
 :hasRectoRestricted rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf knora-base:hasValue ;
                  knora-base:objectClassConstraint knora-base:BooleanValue ;
@@ -2159,7 +2159,7 @@
        		     salsah-gui:guiElement salsah-gui:Checkbox .
 
 
-###  http://www.knora.org/ontology/0105#hasRectoToBeCleaned
+###  http://www.knora.org/ontology/0105/drawings-gods#hasRectoToBeCleaned
 :hasRectoToBeCleaned rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf knora-base:hasValue ;
                   knora-base:objectClassConstraint knora-base:BooleanValue ;
@@ -2172,7 +2172,7 @@
        		      salsah-gui:guiElement salsah-gui:Checkbox .
 
 
-####  http://www.knora.org/ontology/0105#religiousIdentity
+####  http://www.knora.org/ontology/0105/drawings-gods#religiousIdentity
 #:religiousIdentity rdf:type owl:ObjectProperty ;
 #                   rdfs:subPropertyOf knora-base:hasValue ;
 #                   knora-base:objectClassConstraint knora-base:ListValue ;
@@ -2181,10 +2181,10 @@
 #			  	   rdfs:comment """Super-propriété des propriétés ""hasPassageReligiousIdentity"" et ""siteReligiousIdentity""."""@fr ;
 #                   salsah-gui:guiOrder "1"^^xsd:integer ;
 #                   salsah-gui:guiElement salsah-gui:List ;
-#                   salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList>" .
+#                   salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-ReligiousIdentityHList>" .
 
 
-###  http://www.knora.org/ontology/0105#reliesUpon
+###  http://www.knora.org/ontology/0105/drawings-gods#reliesUpon
 :reliesUpon rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf knora-base:hasLinkTo ;
           knora-base:objectClassConstraint :Instruction ;
@@ -2197,7 +2197,7 @@
           salsah-gui:guiOrder "6"^^xsd:integer .
 
 
-###  http://www.knora.org/ontology/0105#reliesUponValue
+###  http://www.knora.org/ontology/0105/drawings-gods#reliesUponValue
 :reliesUponValue rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf knora-base:hasLinkToValue ;
           knora-base:objectClassConstraint knora-base:LinkValue ;
@@ -2208,7 +2208,7 @@
 					 "Research wave based on a given set of instructions."@en .
 
 
-###  http://www.knora.org/ontology/0105#hasScannerBrand
+###  http://www.knora.org/ontology/0105/drawings-gods#hasScannerBrand
 :hasScannerBrand rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf knora-base:hasValue ;
                  knora-base:objectClassConstraint knora-base:ListValue ;
@@ -2219,9 +2219,9 @@
 					 "Brand of the scanner used to scan the drawings."@en;
                  salsah-gui:guiOrder "15"^^xsd:integer ;
                  salsah-gui:guiElement salsah-gui:List ;
-                 salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-ScannerBrandList>" .
+                 salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-ScannerBrandList>" .
 
-###  http://www.knora.org/ontology/0105#hashasScannerSettings
+###  http://www.knora.org/ontology/0105/drawings-gods#hashasScannerSettings
 :hasScannerSettings rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf knora-base:hasValue ;
                  knora-base:objectClassConstraint knora-base:ListValue ;
@@ -2232,10 +2232,10 @@
 					 "Are the standard scanner settings respected ? (300dpi, tiff, colour - millions, A4)"@en;
                  salsah-gui:guiOrder "14"^^xsd:integer ;
                  salsah-gui:guiElement salsah-gui:List ;
-                 salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-ScannerSettingsList>" .
+                 salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-ScannerSettingsList>" .
 
 
-###  http://www.knora.org/ontology/0105#hasDrawingOrder
+###  http://www.knora.org/ontology/0105/drawings-gods#hasDrawingOrder
 :hasDrawingOrder rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf knora-base:hasValue ;
                 knora-base:objectClassConstraint knora-base:IntValue ;
@@ -2246,7 +2246,7 @@
         	   	salsah-gui:guiElement salsah-gui:Spinbox .
 
 
-###  http://www.knora.org/ontology/0105#hasSiteComment
+###  http://www.knora.org/ontology/0105/drawings-gods#hasSiteComment
 :hasSiteComment rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf :hasInternalComment ;
              knora-base:objectClassConstraint knora-base:TextValue ;
@@ -2261,7 +2261,7 @@
 	                        		"rows=10" .
 
 
-###  http://www.knora.org/ontology/0105#hasSiteGender
+###  http://www.knora.org/ontology/0105/drawings-gods#hasSiteGender
 :hasSiteGender rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf knora-base:hasValue ;
             knora-base:objectClassConstraint knora-base:ListValue ;
@@ -2272,10 +2272,10 @@
 					 	"Type of school according to the sex of participants (ex. mix school, girls, boys, unknown)."@en ;
 			salsah-gui:guiOrder "8"^^xsd:integer ;
 	        salsah-gui:guiElement salsah-gui:Pulldown ;
-	        salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-GenderListSchool>" .
+	        salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-GenderListSchool>" .
 
 
-###  http://www.knora.org/ontology/0105#hasSiteLanguage
+###  http://www.knora.org/ontology/0105/drawings-gods#hasSiteLanguage
 :hasSiteLanguage rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf knora-base:hasValue ;
               knora-base:objectClassConstraint knora-base:ListValue ;
@@ -2286,10 +2286,10 @@
 					 	"Main language spoken in an institution or at an event."@en ;
 			  salsah-gui:guiElement salsah-gui:Pulldown ;
 			  salsah-gui:guiOrder "7"^^xsd:integer ;
-              salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList>" .
+              salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-LanguageList>" .
 
 
-###  http://www.knora.org/ontology/0105#hasSiteMaxAgeRangeYear
+###  http://www.knora.org/ontology/0105/drawings-gods#hasSiteMaxAgeRangeYear
 :hasSiteMaxAgeRangeYear rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf knora-base:hasValue ;
                      knora-base:subjectClassConstraint :CollectionSite ;
@@ -2302,7 +2302,7 @@
 				     salsah-gui:guiOrder "10"^^xsd:integer .
 
 
-###  http://www.knora.org/ontology/0105#hasSiteMinAgeRangeYear
+###  http://www.knora.org/ontology/0105/drawings-gods#hasSiteMinAgeRangeYear
 :hasSiteMinAgeRangeYear rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf knora-base:hasValue ;
                      knora-base:subjectClassConstraint :CollectionSite ;
@@ -2315,7 +2315,7 @@
 				     salsah-gui:guiOrder "9"^^xsd:integer .
 
 
-###  http://www.knora.org/ontology/0105#hasSiteName
+###  http://www.knora.org/ontology/0105/drawings-gods#hasSiteName
 :hasSiteName rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf knora-base:hasValue ;
           knora-base:objectClassConstraint knora-base:TextValue ;
@@ -2328,7 +2328,7 @@
       	  salsah-gui:guiOrder "1"^^xsd:integer .
 
 
-###  http://www.knora.org/ontology/0105#hasSiteReligiousIdentity
+###  http://www.knora.org/ontology/0105/drawings-gods#hasSiteReligiousIdentity
 :hasSiteReligiousIdentity rdf:type owl:ObjectProperty ;
                        rdfs:subPropertyOf knora-base:hasValue ;
                        knora-base:objectClassConstraint knora-base:ListValue ;
@@ -2339,10 +2339,10 @@
 			  	   	   		"Religious identity of the site (if the site is public, enter as \"none\")."@en ;
 			  	   	   salsah-gui:guiOrder "6"^^xsd:integer ;
 	                   salsah-gui:guiElement salsah-gui:List ;
-	                   salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList>" .
+	                   salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-ReligiousIdentityHList>" .
 
 
-###  http://www.knora.org/ontology/0105#hasTaskOk
+###  http://www.knora.org/ontology/0105/drawings-gods#hasTaskOk
 :hasTaskOk rdf:type owl:ObjectProperty ;
         rdfs:subPropertyOf knora-base:hasValue ;
         knora-base:objectClassConstraint knora-base:BooleanValue ;
@@ -2355,7 +2355,7 @@
         salsah-gui:guiElement salsah-gui:Checkbox .
 
 
-###  http://www.knora.org/ontology/0105#hasTextEnteredFr
+###  http://www.knora.org/ontology/0105/drawings-gods#hasTextEnteredFr
 :hasTextEnteredFr rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf knora-base:hasValue ;
              knora-base:objectClassConstraint knora-base:BooleanValue ;
@@ -2367,7 +2367,7 @@
        		 salsah-gui:guiOrder "17"^^xsd:integer ;
        		 salsah-gui:guiElement salsah-gui:Checkbox .
 
-###  http://www.knora.org/ontology/0105#hasTextEnteredEn
+###  http://www.knora.org/ontology/0105/drawings-gods#hasTextEnteredEn
 :hasTextEnteredEn rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf knora-base:hasValue ;
              knora-base:objectClassConstraint knora-base:BooleanValue ;
@@ -2379,7 +2379,7 @@
        		 salsah-gui:guiOrder "16"^^xsd:integer ;
        		 salsah-gui:guiElement salsah-gui:Checkbox .
 
-###  http://www.knora.org/ontology/0105#hasTextEnteredOr
+###  http://www.knora.org/ontology/0105/drawings-gods#hasTextEnteredOr
 :hasTextEnteredOr rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf knora-base:hasValue ;
              knora-base:objectClassConstraint knora-base:BooleanValue ;
@@ -2392,7 +2392,7 @@
        		 salsah-gui:guiElement salsah-gui:Checkbox .
 
 
-###  http://www.knora.org/ontology/0105#hasTextOnDrawingTranslator
+###  http://www.knora.org/ontology/0105/drawings-gods#hasTextOnDrawingTranslator
 :hasTextOnDrawingTranslator rdf:type owl:ObjectProperty ;
                          rdfs:subPropertyOf :hasTranslator ;
                          knora-base:objectClassConstraint knora-base:ListValue ;
@@ -2403,10 +2403,10 @@
 			  				"Child's comments translator."@en ;
 			  			 salsah-gui:guiOrder "5"^^xsd:integer ;
             			 salsah-gui:guiElement salsah-gui:Pulldown ;
-               	     salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TranslatorList>" .
+               	     salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-TranslatorList>" .
 
 
-###  http://www.knora.org/ontology/0105#hasTranslator
+###  http://www.knora.org/ontology/0105/drawings-gods#hasTranslator
 :hasTranslator rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf knora-base:hasValue ;
             knora-base:objectClassConstraint knora-base:ListValue ;
@@ -2415,11 +2415,11 @@
 			rdfs:comment """Super-propriété des propriétés ""hasTextOnDrawingTranslator"", ""hasInstructionTranslator"", ""hasQuestionnaireBaseTranslator"", ""versoTranslatorFr"" et ""versoTranslatorFr""."""@fr ;
             salsah-gui:guiOrder "1"^^xsd:integer ;
             salsah-gui:guiElement salsah-gui:Pulldown ;
-            salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TranslatorList>" .
+            salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-TranslatorList>" .
 
 
 
-###  http://www.knora.org/ontology/0105#hasVersoUnavailable
+###  http://www.knora.org/ontology/0105/drawings-gods#hasVersoUnavailable
 :hasVersoUnavailable rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf knora-base:hasValue ;
                 knora-base:objectClassConstraint knora-base:BooleanValue ;
@@ -2432,7 +2432,7 @@
        		    salsah-gui:guiElement salsah-gui:Checkbox .
 
 
-###  http://www.knora.org/ontology/0105#hasRecallUnavailable
+###  http://www.knora.org/ontology/0105/drawings-gods#hasRecallUnavailable
 :hasRecallUnavailable rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf knora-base:hasValue ;
                 knora-base:objectClassConstraint knora-base:BooleanValue ;
@@ -2445,7 +2445,7 @@
        		    salsah-gui:guiElement salsah-gui:Checkbox .
 
 
-###  http://www.knora.org/ontology/0105#hasVersoComment
+###  http://www.knora.org/ontology/0105/drawings-gods#hasVersoComment
 :hasVersoComment rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf :hasInternalComment ;
               knora-base:objectClassConstraint knora-base:TextValue ;
@@ -2460,7 +2460,7 @@
 	                        		"rows=10" .
 
 
-###  http://www.knora.org/ontology/0105#hasvVersoTranslatorEn
+###  http://www.knora.org/ontology/0105/drawings-gods#hasvVersoTranslatorEn
 :hasVersoTranslatorEn rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf :hasTranslator ;
                    knora-base:subjectClassConstraint :Verso ;
@@ -2471,11 +2471,11 @@
 			  				"Verso translator (English)."@en ;
 			  	   salsah-gui:guiOrder "22"^^xsd:integer ;
 		           salsah-gui:guiElement salsah-gui:Pulldown ;
-                   salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TranslatorList>" .
+                   salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-TranslatorList>" .
 
 
 
-###  http://www.knora.org/ontology/0105#hasVersoTranslatorFr
+###  http://www.knora.org/ontology/0105/drawings-gods#hasVersoTranslatorFr
 :hasVersoTranslatorFr rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf :hasTranslator ;
                    knora-base:objectClassConstraint knora-base:ListValue ;
@@ -2486,10 +2486,10 @@
 			  				"Verso translator (French)."@en ;
 			  	   salsah-gui:guiOrder "23"^^xsd:integer ;
 		           salsah-gui:guiElement salsah-gui:Pulldown ;
-                   salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TranslatorList>" .
+                   salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-TranslatorList>" .
 
 
-###  http://www.knora.org/ontology/0105#hasBlankPage
+###  http://www.knora.org/ontology/0105/drawings-gods#hasBlankPage
 :hasBlankPage rdf:type owl:ObjectProperty ;
        rdfs:subPropertyOf knora-base:hasValue ;
        knora-base:objectClassConstraint knora-base:BooleanValue ;
@@ -2502,7 +2502,7 @@
        salsah-gui:guiElement salsah-gui:Checkbox .
 
 
-###  http://www.knora.org/ontology/0105#hasWord
+###  http://www.knora.org/ontology/0105/drawings-gods#hasWord
 :hasWord rdf:type owl:ObjectProperty ;
       rdfs:subPropertyOf knora-base:hasValue ;
       knora-base:objectClassConstraint knora-base:TextValue ;
@@ -2513,7 +2513,7 @@
 	   "Property is not meant to be used directly: use \"Words written by child on the recto (English)\", \"Words written by child on the recto (French)\" or \"Words written by child on the recto in original language\" instead. This property is for query purpose only."@en .
 
 
-###  http://www.knora.org/ontology/0105#hasWordEn
+###  http://www.knora.org/ontology/0105/drawings-gods#hasWordEn
 :hasWordEn rdf:type owl:ObjectProperty ;
         rdfs:subPropertyOf :hasWord ;
         knora-base:objectClassConstraint knora-base:TextValue ;
@@ -2528,7 +2528,7 @@
                         		"rows=10" .
 
 
-###  http://www.knora.org/ontology/0105#hasWordFr
+###  http://www.knora.org/ontology/0105/drawings-gods#hasWordFr
 :hasWordFr rdf:type owl:ObjectProperty ;
         rdfs:subPropertyOf :hasWord ;
         knora-base:objectClassConstraint knora-base:TextValue ;
@@ -2543,7 +2543,7 @@
                         		"rows=10" .
 
 
-###  http://www.knora.org/ontology/0105#hasWordOriginal
+###  http://www.knora.org/ontology/0105/drawings-gods#hasWordOriginal
 :hasWordOriginal rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf :hasWord ;
               knora-base:objectClassConstraint knora-base:TextValue ;
@@ -2558,7 +2558,7 @@
 		                        		"rows=10" .
 
 
-###  http://www.knora.org/ontology/0105#hasWordOriginalLanguage
+###  http://www.knora.org/ontology/0105/drawings-gods#hasWordOriginalLanguage
 :hasWordOriginalLanguage rdf:type owl:ObjectProperty ;
                       rdfs:subPropertyOf knora-base:hasValue ;
                       knora-base:subjectClassConstraint :TextOnDrawing ;
@@ -2569,10 +2569,10 @@
 					 			"Original language of child's words written on recto."@en ;
           			  salsah-gui:guiElement salsah-gui:Pulldown ;
 						salsah-gui:guiOrder "1"^^xsd:integer ;
-                     salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList>" .
+                     salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-LanguageList>" .
 
 
-###  http://www.knora.org/ontology/0105#hasIndividualQuestionnaireAttached
+###  http://www.knora.org/ontology/0105/drawings-gods#hasIndividualQuestionnaireAttached
 :hasIndividualQuestionnaireAttached rdf:type owl:ObjectProperty ;
                                rdfs:subPropertyOf knora-base:isPartOf ;
                                knora-base:subjectClassConstraint :Drawing ;
@@ -2584,7 +2584,7 @@
 					 		   salsah-gui:guiElement salsah-gui:Searchbox ;
 					           salsah-gui:guiOrder "16"^^xsd:integer .
 
-###  http://www.knora.org/ontology/0105#hasIndividualQuestionnaireAttachedValue
+###  http://www.knora.org/ontology/0105/drawings-gods#hasIndividualQuestionnaireAttachedValue
 :hasIndividualQuestionnaireAttachedValue rdf:type owl:ObjectProperty ;
 		                            rdfs:subPropertyOf knora-base:isPartOfValue ;
 		                            knora-base:subjectClassConstraint :Drawing ;
@@ -2600,7 +2600,7 @@
 #    Questionnaire properties
 #################################################################
 
-###  http://www.knora.org/ontology/0105#hasQuestionnaireUnavailable
+###  http://www.knora.org/ontology/0105/drawings-gods#hasQuestionnaireUnavailable
 :hasQuestionnaireUnavailable rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf knora-base:hasValue ;
                 knora-base:objectClassConstraint knora-base:BooleanValue ;
@@ -2613,7 +2613,7 @@
        		  	salsah-gui:guiElement salsah-gui:Checkbox .
 
 
-###  http://www.knora.org/ontology/0105#hasModel
+###  http://www.knora.org/ontology/0105/drawings-gods#hasModel
 :hasModel rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf knora-base:hasLinkTo ;
           knora-base:objectClassConstraint :QuestionnaireBase ;
@@ -2625,7 +2625,7 @@
           salsah-gui:guiElement salsah-gui:Searchbox ;
           salsah-gui:guiOrder "2"^^xsd:integer .
 
-###  http://www.knora.org/ontology/0105#hasModelValue
+###  http://www.knora.org/ontology/0105/drawings-gods#hasModelValue
 :hasModelValue rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf knora-base:hasLinkToValue ;
           knora-base:objectClassConstraint knora-base:LinkValue ;
@@ -2635,7 +2635,7 @@
           rdfs:comment "Questionnaire individuel fondé sur le questionnaire standardisé suivant"@fr ,
 					 	"Individual questionnaire is based on the following standardized questionnaire"@en .
 
-###  http://www.knora.org/ontology/0105#hasQuestionnaireIndividualComment
+###  http://www.knora.org/ontology/0105/drawings-gods#hasQuestionnaireIndividualComment
 :hasQuestionnaireIndividualComment rdf:type owl:ObjectProperty ;
                                 rdfs:subPropertyOf :hasInternalComment ;
                                 knora-base:objectClassConstraint knora-base:TextValue ;
@@ -2649,7 +2649,7 @@
 								 salsah-gui:guiAttribute "width=95%" ,
 						                        		"rows=10" .
 
-###  http://www.knora.org/ontology/0105#religiousAffiliation
+###  http://www.knora.org/ontology/0105/drawings-gods#religiousAffiliation
 :religiousAffiliation rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -2660,10 +2660,10 @@
 							"Religious affiliation to which the child identifies themselves"@en ;
 		                salsah-gui:guiOrder "10"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:List ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList>" .
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-ReligiousIdentityHList>" .
 		                
 
-###  http://www.knora.org/ontology/0105#enteredChurch
+###  http://www.knora.org/ontology/0105/drawings-gods#enteredChurch
 :enteredChurch rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -2674,9 +2674,9 @@
 							"Familiarity with place of worship. Have you ever entered a church?"@en ;
 		                salsah-gui:guiOrder "11"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
-###  http://www.knora.org/ontology/0105#enteredChurchHowOften
+###  http://www.knora.org/ontology/0105/drawings-gods#enteredChurchHowOften
 :enteredChurchHowOften rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -2687,9 +2687,9 @@
 							"Familiarity with place of worship: church. How often?"@en ;
 		                salsah-gui:guiOrder "12"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-TimeRelatedListQ>" .
 
-###  http://www.knora.org/ontology/0105#enteredChurchWhy
+###  http://www.knora.org/ontology/0105/drawings-gods#enteredChurchWhy
 :enteredChurchWhy rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -2703,7 +2703,7 @@
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .	
 							                        
-###  http://www.knora.org/ontology/0105#enteredChurchWithWhom
+###  http://www.knora.org/ontology/0105/drawings-gods#enteredChurchWithWhom
 :enteredChurchWithWhom rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -2717,7 +2717,7 @@
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
 		                
-###  http://www.knora.org/ontology/0105#enteredChurchLastTime
+###  http://www.knora.org/ontology/0105/drawings-gods#enteredChurchLastTime
 :enteredChurchLastTime rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -2731,7 +2731,7 @@
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .	
 
-###	http://www.knora.org/ontology/0105#enteredMosque
+###	http://www.knora.org/ontology/0105/drawings-gods#enteredMosque
 :enteredMosque rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -2742,9 +2742,9 @@
 							"Familiarity with place of worship. Have you ever entered a mosque?"@en ;
 		                salsah-gui:guiOrder "16"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
-###	http://www.knora.org/ontology/0105#enteredMosqueHowOften
+###	http://www.knora.org/ontology/0105/drawings-gods#enteredMosqueHowOften
 :enteredMosqueHowOften rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -2755,10 +2755,10 @@
 							"Familiarity with place of worship: mosque. How often?"@en ;
 		                salsah-gui:guiOrder "17"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-TimeRelatedListQ>" .
 		                
 		                
-###  http://www.knora.org/ontology/0105#enteredMosqueWhy
+###  http://www.knora.org/ontology/0105/drawings-gods#enteredMosqueWhy
 :enteredMosqueWhy rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -2772,7 +2772,7 @@
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
 
-###  http://www.knora.org/ontology/0105#enteredMosqueWithWhom
+###  http://www.knora.org/ontology/0105/drawings-gods#enteredMosqueWithWhom
 :enteredMosqueWithWhom rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -2786,7 +2786,7 @@
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .		                
 		                
-###  http://www.knora.org/ontology/0105#enteredMosqueLastTime
+###  http://www.knora.org/ontology/0105/drawings-gods#enteredMosqueLastTime
 :enteredMosqueLastTime rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -2800,7 +2800,7 @@
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .	
 							                        
-###	http://www.knora.org/ontology/0105#enteredBuddhistTemple
+###	http://www.knora.org/ontology/0105/drawings-gods#enteredBuddhistTemple
 :enteredBuddhistTemple rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -2811,9 +2811,9 @@
 							"Familiarity with place of worship. Have you ever entered a buddhist temple (including otera)?"@en ;
 		                salsah-gui:guiOrder "21"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
-###	http://www.knora.org/ontology/0105#enteredBuddhistTempleHowOften
+###	http://www.knora.org/ontology/0105/drawings-gods#enteredBuddhistTempleHowOften
 :enteredBuddhistTempleHowOften rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -2824,10 +2824,10 @@
 							"Familiarity with place of worship: buddhist temple (including otera). How often?"@en ;
 		                salsah-gui:guiOrder "22"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-TimeRelatedListQ>" .
 						                        
 
-###  http://www.knora.org/ontology/0105#enteredBuddhistTempleWhy
+###  http://www.knora.org/ontology/0105/drawings-gods#enteredBuddhistTempleWhy
 :enteredBuddhistTempleWhy rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -2841,7 +2841,7 @@
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .	
 		                
-###  http://www.knora.org/ontology/0105#enteredBuddhistTempleWithWhom
+###  http://www.knora.org/ontology/0105/drawings-gods#enteredBuddhistTempleWithWhom
 :enteredBuddhistTempleWithWhom rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -2855,7 +2855,7 @@
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
 		                
-###  http://www.knora.org/ontology/0105#enteredBuddhistTempleLastTime
+###  http://www.knora.org/ontology/0105/drawings-gods#enteredBuddhistTempleLastTime
 :enteredBuddhistTempleLastTime rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -2869,7 +2869,7 @@
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .	
 							                        
-###	http://www.knora.org/ontology/0105#enteredShintoTemple
+###	http://www.knora.org/ontology/0105/drawings-gods#enteredShintoTemple
 :enteredShintoTemple rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -2880,9 +2880,9 @@
 							"Familiarity with place of worship. Have you ever entered a shinto temple (jinja)?"@en ;
 		                salsah-gui:guiOrder "30"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .               
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .               
 		                
-###	http://www.knora.org/ontology/0105#enteredShintoTempleHowOften
+###	http://www.knora.org/ontology/0105/drawings-gods#enteredShintoTempleHowOften
 :enteredShintoTempleHowOften rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -2893,9 +2893,9 @@
 							"Familiarity with place of worship: a shinto temple (jinja). How often?"@en ;
 		                salsah-gui:guiOrder "31"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-TimeRelatedListQ>" .
 
-###  http://www.knora.org/ontology/0105#enteredShintoTempleWhy
+###  http://www.knora.org/ontology/0105/drawings-gods#enteredShintoTempleWhy
 :enteredShintoTempleWhy rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -2909,7 +2909,7 @@
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .	
 		                
-###  http://www.knora.org/ontology/0105#enteredShintoTempleWithWhom
+###  http://www.knora.org/ontology/0105/drawings-gods#enteredShintoTempleWithWhom
 :enteredShintoTempleWithWhom rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -2923,7 +2923,7 @@
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
 		                
-###  http://www.knora.org/ontology/0105#enteredShintoTempleLastTime
+###  http://www.knora.org/ontology/0105/drawings-gods#enteredShintoTempleLastTime
 :enteredShintoTempleLastTime rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -2937,7 +2937,7 @@
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
 
-###	http://www.knora.org/ontology/0105#enteredHinduTemple
+###	http://www.knora.org/ontology/0105/drawings-gods#enteredHinduTemple
 :enteredHinduTemple rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -2948,9 +2948,9 @@
 							"Familiarity with place of worship. Have you ever entered a hindu temple?"@en ;
 		                salsah-gui:guiOrder "35"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
-###	http://www.knora.org/ontology/0105#enteredHinduTempleHowOften
+###	http://www.knora.org/ontology/0105/drawings-gods#enteredHinduTempleHowOften
 :enteredHinduTempleHowOften rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -2961,9 +2961,9 @@
 							"Familiarity with place of worship: hindu temple. How often?"@en ;
 		                salsah-gui:guiOrder "36"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-TimeRelatedListQ>" .
 
-###  http://www.knora.org/ontology/0105#enteredHinduTempleWhy
+###  http://www.knora.org/ontology/0105/drawings-gods#enteredHinduTempleWhy
 :enteredHinduTempleWhy rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -2977,7 +2977,7 @@
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
 						                        
-###  http://www.knora.org/ontology/0105#enteredHinduTempleWithWhom
+###  http://www.knora.org/ontology/0105/drawings-gods#enteredHinduTempleWithWhom
 :enteredHinduTempleWithWhom rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -2992,7 +2992,7 @@
 							                        "rows=3" .
 
 		                
-###  http://www.knora.org/ontology/0105#enteredHinduTempleLastTime
+###  http://www.knora.org/ontology/0105/drawings-gods#enteredHinduTempleLastTime
 :enteredHinduTempleLastTime rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3006,7 +3006,7 @@
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .	
 							                        
-###	http://www.knora.org/ontology/0105#enteredSynagogue
+###	http://www.knora.org/ontology/0105/drawings-gods#enteredSynagogue
 :enteredSynagogue rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3017,9 +3017,9 @@
 							"Familiarity with place of worship. Have you ever entered a synagogue?"@en ;
 		                salsah-gui:guiOrder "40"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
-###	http://www.knora.org/ontology/0105#enteredSynagogueHowOften
+###	http://www.knora.org/ontology/0105/drawings-gods#enteredSynagogueHowOften
 :enteredSynagogueHowOften rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3030,9 +3030,9 @@
 							"Familiarity with place of worship: synagogue. How often?"@en ;
 		                salsah-gui:guiOrder "41"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-TimeRelatedListQ>" .
 
-###  http://www.knora.org/ontology/0105#enteredSynagogueWhy
+###  http://www.knora.org/ontology/0105/drawings-gods#enteredSynagogueWhy
 :enteredSynagogueWhy rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3046,7 +3046,7 @@
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
 				
-###  http://www.knora.org/ontology/0105#enteredSynagogueWithWhom
+###  http://www.knora.org/ontology/0105/drawings-gods#enteredSynagogueWithWhom
 :enteredSynagogueWithWhom rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3060,7 +3060,7 @@
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .            
 		                
-###  http://www.knora.org/ontology/0105#enteredSynagogueLastTime
+###  http://www.knora.org/ontology/0105/drawings-gods#enteredSynagogueLastTime
 :enteredSynagogueLastTime rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3074,7 +3074,7 @@
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .		   
 				
-###	http://www.knora.org/ontology/0105#enteredZorotemple
+###	http://www.knora.org/ontology/0105/drawings-gods#enteredZorotemple
 :enteredZorotemple rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3085,9 +3085,9 @@
 							"Familiarity with place of worship. Have you ever entered a  zoroastrian temple?"@en ;
 		                salsah-gui:guiOrder "50"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
-###	http://www.knora.org/ontology/0105#enteredZorotempleHowOften
+###	http://www.knora.org/ontology/0105/drawings-gods#enteredZorotempleHowOften
 :enteredZorotempleHowOften rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3098,9 +3098,9 @@
 							"Familiarity with place of worship: zoroastrian temple. How often?"@en ;
 		                salsah-gui:guiOrder "51"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-TimeRelatedListQ>" .
 				
-###  http://www.knora.org/ontology/0105#enteredZorotempleWhy
+###  http://www.knora.org/ontology/0105/drawings-gods#enteredZorotempleWhy
 :enteredZorotempleWhy rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3114,7 +3114,7 @@
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
 				
-###  http://www.knora.org/ontology/0105#enteredZorotempleWithWhom
+###  http://www.knora.org/ontology/0105/drawings-gods#enteredZorotempleWithWhom
 :enteredZorotempleWithWhom rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3128,7 +3128,7 @@
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .            
 		                
-###  http://www.knora.org/ontology/0105#enteredZorotempleLastTime
+###  http://www.knora.org/ontology/0105/drawings-gods#enteredZorotempleLastTime
 :enteredZorotempleLastTime rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3142,7 +3142,7 @@
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .					
 
-###	http://www.knora.org/ontology/0105#enteredTempleNotDefined
+###	http://www.knora.org/ontology/0105/drawings-gods#enteredTempleNotDefined
 :enteredTempleNotDefined rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3153,9 +3153,9 @@
 							"Familiarity with place of worship. Have you ever entered any unspecific temple?"@en ;
 		                salsah-gui:guiOrder "55"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
-###	http://www.knora.org/ontology/0105#enteredTempleNotDefinedHowOften
+###	http://www.knora.org/ontology/0105/drawings-gods#enteredTempleNotDefinedHowOften
 :enteredTempleNotDefinedHowOften rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3166,9 +3166,9 @@
 							"Familiarity with place of worship: any unspecific temple. How often?"@en ;
 		                salsah-gui:guiOrder "56"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-TimeRelatedListQ>" .
 
-###  http://www.knora.org/ontology/0105#enteredTempleNotDefinedWhy
+###  http://www.knora.org/ontology/0105/drawings-gods#enteredTempleNotDefinedWhy
 :enteredTempleNotDefinedWhy rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3182,7 +3182,7 @@
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .	
 
-###  http://www.knora.org/ontology/0105#enteredTempleNotDefinedWithWhom
+###  http://www.knora.org/ontology/0105/drawings-gods#enteredTempleNotDefinedWithWhom
 :enteredTempleNotDefinedWithWhom rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3196,7 +3196,7 @@
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
 
-###  http://www.knora.org/ontology/0105#enteredTempleNotDefinedLastTime
+###  http://www.knora.org/ontology/0105/drawings-gods#enteredTempleNotDefinedLastTime
 :enteredTempleNotDefinedLastTime rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3210,7 +3210,7 @@
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .     		
 				
-###	http://www.knora.org/ontology/0105#visitOnNewYearsEve
+###	http://www.knora.org/ontology/0105/drawings-gods#visitOnNewYearsEve
 :visitOnNewYearsEve rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3221,9 +3221,9 @@
 							"Which temple do you get to visit on New Year's Eve?"@en ;
 		                salsah-gui:guiOrder "60"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-JapanNYListQ>" .
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-JapanNYListQ>" .
 
-###	http://www.knora.org/ontology/0105#jinjaOrOteraNewYearsEve
+###	http://www.knora.org/ontology/0105/drawings-gods#jinjaOrOteraNewYearsEve
 :jinjaOrOteraNewYearsEve rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3234,9 +3234,9 @@
 							"Do you get to visit a temple (jinja or otera) on New Year's Eve?"@en ;
 		                salsah-gui:guiOrder "61"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .
 		                
-###	http://www.knora.org/ontology/0105#enteredjinjaOrOtera
+###	http://www.knora.org/ontology/0105/drawings-gods#enteredjinjaOrOtera
 :enteredjinjaOrOtera rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3247,9 +3247,9 @@
 							"Do you get to visit a temple (jinja or otera) besides New Year's Eve?"@en ;
 		                salsah-gui:guiOrder "62"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .	                
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .	                
 		                
-###  http://www.knora.org/ontology/0105#jinjaOrOteraOccasion
+###  http://www.knora.org/ontology/0105/drawings-gods#jinjaOrOteraOccasion
 :jinjaOrOteraOccasion rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3264,7 +3264,7 @@
 							                        "rows=3" . 		                
 
 
-###	http://www.knora.org/ontology/0105#enteredjinjaOrOteraHowOften
+###	http://www.knora.org/ontology/0105/drawings-gods#enteredjinjaOrOteraHowOften
 :enteredjinjaOrOteraHowOften rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3275,9 +3275,9 @@
 							"Familiarity with place of worship: jinja or otera How often?"@en ;
 		                salsah-gui:guiOrder "64"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-TimeRelatedListQ>" .
 				
-###  http://www.knora.org/ontology/0105#jinjaOrOteraWhy
+###  http://www.knora.org/ontology/0105/drawings-gods#jinjaOrOteraWhy
 :jinjaOrOteraWhy rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3291,7 +3291,7 @@
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .		                
 
-###  http://www.knora.org/ontology/0105#jinjaOrOteraWithWhom
+###  http://www.knora.org/ontology/0105/drawings-gods#jinjaOrOteraWithWhom
 :jinjaOrOteraWithWhom rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3305,7 +3305,7 @@
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .							                        
 							                        
-###  http://www.knora.org/ontology/0105#jinjaOrOteraLastTime
+###  http://www.knora.org/ontology/0105/drawings-gods#jinjaOrOteraLastTime
 :jinjaOrOteraLastTime rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3320,7 +3320,7 @@
 							                        "rows=3" .       							                    						                        
 							                        
 	                               		                
-###	http://www.knora.org/ontology/0105#cultObjectAtHomePresence
+###	http://www.knora.org/ontology/0105/drawings-gods#cultObjectAtHomePresence
 :cultObjectAtHomePresence rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3331,9 +3331,9 @@
 							"Do you have a butsudan or a kamidana at home?"@en ;
 		                salsah-gui:guiOrder "70"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
-###	http://www.knora.org/ontology/0105#cultObjectAtHomePresenceWhich
+###	http://www.knora.org/ontology/0105/drawings-gods#cultObjectAtHomePresenceWhich
 :cultObjectAtHomePresenceWhich rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3344,9 +3344,9 @@
 							"Which one do you have at home: a butsudan or a kamidana?"@en ;
 		                salsah-gui:guiOrder "71"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-JapanObjectListQ>" .					                        
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-JapanObjectListQ>" .					                        
 							                        
-###  http://www.knora.org/ontology/0105#cultObjectAtHomeFamilyMembersActions
+###  http://www.knora.org/ontology/0105/drawings-gods#cultObjectAtHomeFamilyMembersActions
 :cultObjectAtHomeFamilyMembersActions rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3360,7 +3360,7 @@
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" . 						                        
 							                        
-###	http://www.knora.org/ontology/0105#prayingAtHome
+###	http://www.knora.org/ontology/0105/drawings-gods#prayingAtHome
 :prayingAtHome rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3371,9 +3371,9 @@
 							"Do you pray at home?"@en ;
 		                salsah-gui:guiOrder "80"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .						                        
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .						                        
 							                        
-###	http://www.knora.org/ontology/0105#prayingAtHomeWhen
+###	http://www.knora.org/ontology/0105/drawings-gods#prayingAtHomeWhen
 :prayingAtHomeWhen rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3384,9 +3384,9 @@
 							"When do you pray at home?"@en ;
 		                salsah-gui:guiOrder "81"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ>" .							                        
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-TimeRelatedListQ>" .							                        
 							                        
-###  http://www.knora.org/ontology/0105#prayingAtHomeOtherTimes
+###  http://www.knora.org/ontology/0105/drawings-gods#prayingAtHomeOtherTimes
 :prayingAtHomeOtherTimes rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3401,7 +3401,7 @@
 							                        "rows=3" . 
 
 
-###	http://www.knora.org/ontology/0105#seenOtherPeoplePray
+###	http://www.knora.org/ontology/0105/drawings-gods#seenOtherPeoplePray
 :seenOtherPeoplePray rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3412,9 +3412,9 @@
 							"Have you ever seen other people pray?"@en ;
 		                salsah-gui:guiOrder "83"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
-###	http://www.knora.org/ontology/0105#seenOtherPeoplePrayWhen
+###	http://www.knora.org/ontology/0105/drawings-gods#seenOtherPeoplePrayWhen
 :seenOtherPeoplePrayWhen rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3425,9 +3425,9 @@
 							"When/how often did you see other people pray?"@en ;
 		                salsah-gui:guiOrder "84"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-TimeRelatedListQ>" .
 
-###  http://www.knora.org/ontology/0105#seenOtherPeoplePrayWhenOther
+###  http://www.knora.org/ontology/0105/drawings-gods#seenOtherPeoplePrayWhenOther
 :seenOtherPeoplePrayWhenOther rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3441,7 +3441,7 @@
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" . 
 							                        
-###	http://www.knora.org/ontology/0105#prayingWithOtherPeople
+###	http://www.knora.org/ontology/0105/drawings-gods#prayingWithOtherPeople
 :prayingWithOtherPeople rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3452,9 +3452,9 @@
 							"Do you get to pray with other people?"@en ;
 		                salsah-gui:guiOrder "86"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
-###	http://www.knora.org/ontology/0105#prayingWithOtherPeopleHowOften
+###	http://www.knora.org/ontology/0105/drawings-gods#prayingWithOtherPeopleHowOften
 :prayingWithOtherPeopleHowOften rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3465,9 +3465,9 @@
 							"How often do you get to pray with other people?"@en ;
 		                salsah-gui:guiOrder "87"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-TimeRelatedListQ>" .
 		                
-###  http://www.knora.org/ontology/0105#prayingWithOtherPeopleHowOftenOther
+###  http://www.knora.org/ontology/0105/drawings-gods#prayingWithOtherPeopleHowOftenOther
 :prayingWithOtherPeopleHowOftenOther rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3481,7 +3481,7 @@
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" . 
 							                        
-###  http://www.knora.org/ontology/0105#prayingWithOtherPeopleWhen
+###  http://www.knora.org/ontology/0105/drawings-gods#prayingWithOtherPeopleWhen
 :prayingWithOtherPeopleWhen rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3495,7 +3495,7 @@
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" . 
 		                
-###  http://www.knora.org/ontology/0105#prayingWithOtherPeopleLastTime
+###  http://www.knora.org/ontology/0105/drawings-gods#prayingWithOtherPeopleLastTime
 :prayingWithOtherPeopleLastTime rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3509,7 +3509,7 @@
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" . 
 
-###	http://www.knora.org/ontology/0105#prayingAlone
+###	http://www.knora.org/ontology/0105/drawings-gods#prayingAlone
 :prayingAlone rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3520,9 +3520,9 @@
 							"Do you ever pray alone?"@en ;
 		                salsah-gui:guiOrder "91"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .
 		                
-###  http://www.knora.org/ontology/0105#prayingAloneWhen
+###  http://www.knora.org/ontology/0105/drawings-gods#prayingAloneWhen
 :prayingAloneWhen rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3536,7 +3536,7 @@
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
 
-###	http://www.knora.org/ontology/0105#prayingAloneHowOften
+###	http://www.knora.org/ontology/0105/drawings-gods#prayingAloneHowOften
 :prayingAloneHowOften rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3547,9 +3547,9 @@
 							"How often do you get to pray alone?"@en ;
 		                salsah-gui:guiOrder "93"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-TimeRelatedListQ>" .
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-TimeRelatedListQ>" .
 
-###  http://www.knora.org/ontology/0105#prayingAloneHowOftenOther
+###  http://www.knora.org/ontology/0105/drawings-gods#prayingAloneHowOftenOther
 :prayingAloneHowOftenOther rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3563,7 +3563,7 @@
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .  
 		                
-###  http://www.knora.org/ontology/0105#prayingAloneLastTime
+###  http://www.knora.org/ontology/0105/drawings-gods#prayingAloneLastTime
 :prayingAloneLastTime rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3577,7 +3577,7 @@
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" . 							                        
 
-###	http://www.knora.org/ontology/0105#ifIToldYouGodCouldYouDrawJesus
+###	http://www.knora.org/ontology/0105/drawings-gods#ifIToldYouGodCouldYouDrawJesus
 :ifIToldYouGodCouldYouDrawJesus rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3588,9 +3588,9 @@
 							"If I told you god could you draw Jesus?"@en ;
 		                salsah-gui:guiOrder "100"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
-###	http://www.knora.org/ontology/0105#ifIToldYouGodCouldYouDrawMary
+###	http://www.knora.org/ontology/0105/drawings-gods#ifIToldYouGodCouldYouDrawMary
 :ifIToldYouGodCouldYouDrawMary rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3601,9 +3601,9 @@
 							"If I told you god could you draw Mary?"@en ;
 		                salsah-gui:guiOrder "101"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
-###	http://www.knora.org/ontology/0105#ifIToldYouGodCouldYouDrawMoses
+###	http://www.knora.org/ontology/0105/drawings-gods#ifIToldYouGodCouldYouDrawMoses
 :ifIToldYouGodCouldYouDrawMoses rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3614,9 +3614,9 @@
 							"If I told you god could you draw Moses?"@en ;
 		                salsah-gui:guiOrder "102"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
-###	http://www.knora.org/ontology/0105#ifIToldYouGodCouldYouDrawAllah
+###	http://www.knora.org/ontology/0105/drawings-gods#ifIToldYouGodCouldYouDrawAllah
 :ifIToldYouGodCouldYouDrawAllah rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3627,9 +3627,9 @@
 							"If I told you god could you draw Allah?"@en ;
 		                salsah-gui:guiOrder "103"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
-###	http://www.knora.org/ontology/0105#ifIToldYouGodCouldYouDrawMuhammad
+###	http://www.knora.org/ontology/0105/drawings-gods#ifIToldYouGodCouldYouDrawMuhammad
 :ifIToldYouGodCouldYouDrawMuhammad rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3640,9 +3640,9 @@
 							"If I told you god could you draw Muhammad?"@en ;
 		                salsah-gui:guiOrder "104"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
-###	http://www.knora.org/ontology/0105#ifIToldYouGodCouldYouDrawBuddha
+###	http://www.knora.org/ontology/0105/drawings-gods#ifIToldYouGodCouldYouDrawBuddha
 :ifIToldYouGodCouldYouDrawBuddha rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3653,9 +3653,9 @@
 							"If I told you god could you draw Buddha?"@en ;
 		                salsah-gui:guiOrder "105"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
-###	http://www.knora.org/ontology/0105#ifIToldYouGodCouldYouDrawZoro
+###	http://www.knora.org/ontology/0105/drawings-gods#ifIToldYouGodCouldYouDrawZoro
 :ifIToldYouGodCouldYouDrawZoro rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3666,9 +3666,9 @@
 							"If I told you god could you draw Zoroaster?"@en ;
 		                salsah-gui:guiOrder "106"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
-###	http://www.knora.org/ontology/0105#ifIToldYouGodCouldYouDrawSomethingElse
+###	http://www.knora.org/ontology/0105/drawings-gods#ifIToldYouGodCouldYouDrawSomethingElse
 :ifIToldYouGodCouldYouDrawSomethingElse rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3679,9 +3679,9 @@
 							"If I told you god could you draw something different?"@en ;
 		                salsah-gui:guiOrder "107"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
-###  http://www.knora.org/ontology/0105#ifIToldYouGodCouldYouDrawSomethingElseWho
+###  http://www.knora.org/ontology/0105/drawings-gods#ifIToldYouGodCouldYouDrawSomethingElseWho
 :ifIToldYouGodCouldYouDrawSomethingElseWho rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3696,7 +3696,7 @@
 							                        "rows=3" . 
 
 
-###	http://www.knora.org/ontology/0105#whereIsGod
+###	http://www.knora.org/ontology/0105/drawings-gods#whereIsGod
 :whereIsGod rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3707,9 +3707,9 @@
 							"According to you god is located in..."@en ;
 		                salsah-gui:guiOrder "109"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-LocGodListQ>" .
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-LocGodListQ>" .
 		                
-###  http://www.knora.org/ontology/0105#whereIsGodOther
+###  http://www.knora.org/ontology/0105/drawings-gods#whereIsGodOther
 :whereIsGodOther rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3723,7 +3723,7 @@
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" . 		
 
-###	http://www.knora.org/ontology/0105#sexOfGod
+###	http://www.knora.org/ontology/0105/drawings-gods#sexOfGod
 :sexOfGod rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3734,9 +3734,9 @@
 							"Sex of god"@en ;
 		                salsah-gui:guiOrder "111"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-GodSexListQ>" .
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-GodSexListQ>" .
 
-###  http://www.knora.org/ontology/0105#sexOfGodOther
+###  http://www.knora.org/ontology/0105/drawings-gods#sexOfGodOther
 :sexOfGodOther rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3750,7 +3750,7 @@
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" . 
 
-###	http://www.knora.org/ontology/0105#ageOfGod
+###	http://www.knora.org/ontology/0105/drawings-gods#ageOfGod
 :ageOfGod rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3761,9 +3761,9 @@
 							"Age of god"@en ;
 		                salsah-gui:guiOrder "113"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-GodAgeListQ>" .
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-GodAgeListQ>" .
 
-###  http://www.knora.org/ontology/0105#ageOfGodOther
+###  http://www.knora.org/ontology/0105/drawings-gods#ageOfGodOther
 :ageOfGodOther rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3777,7 +3777,7 @@
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" . 
 							                        
-###	http://www.knora.org/ontology/0105#knowWhatWordGodMeans
+###	http://www.knora.org/ontology/0105/drawings-gods#knowWhatWordGodMeans
 :knowWhatWordGodMeans rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3788,9 +3788,9 @@
 							"Do you know what the word god mean?"@en ;
 		                salsah-gui:guiOrder "115"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .							                        
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .							                        
 							                        
-###  http://www.knora.org/ontology/0105#whatWordGodMeans
+###  http://www.knora.org/ontology/0105/drawings-gods#whatWordGodMeans
 :whatWordGodMeans rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3804,7 +3804,7 @@
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" . 							                        
 							                        
-###	http://www.knora.org/ontology/0105#knowWhoBuddhaIs
+###	http://www.knora.org/ontology/0105/drawings-gods#knowWhoBuddhaIs
 :knowWhoBuddhaIs rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3815,9 +3815,9 @@
 							"Do you know who Buddha is?"@en ;
 		                salsah-gui:guiOrder "117"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .							                        
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .							                        
 							                        
-###  http://www.knora.org/ontology/0105#whoBuddhaIs
+###  http://www.knora.org/ontology/0105/drawings-gods#whoBuddhaIs
 :whoBuddhaIs rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3832,7 +3832,7 @@
 							                        "rows=3" . 						                        
 							                        
 
-###	http://www.knora.org/ontology/0105#alreadyDrawnGodInThePast
+###	http://www.knora.org/ontology/0105/drawings-gods#alreadyDrawnGodInThePast
 :alreadyDrawnGodInThePast rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3843,10 +3843,10 @@
 							"Have you ever happened to draw god in the past?"@en ;
 		                salsah-gui:guiOrder "119"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
 		                
-###  http://www.knora.org/ontology/0105#alreadyDrawnGodInThePastWhen
+###  http://www.knora.org/ontology/0105/drawings-gods#alreadyDrawnGodInThePastWhen
 :alreadyDrawnGodInThePastWhen rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3861,7 +3861,7 @@
 							                        "rows=3" . 
 		            
 		                
-###  http://www.knora.org/ontology/0105#alreadyDrawnGodInThePastWhat
+###  http://www.knora.org/ontology/0105/drawings-gods#alreadyDrawnGodInThePastWhat
 :alreadyDrawnGodInThePastWhat rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3875,7 +3875,7 @@
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" . 
 
-###  http://www.knora.org/ontology/0105#alreadyDrawnGodInThePastLastTime
+###  http://www.knora.org/ontology/0105/drawings-gods#alreadyDrawnGodInThePastLastTime
 :alreadyDrawnGodInThePastLastTime rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3890,7 +3890,7 @@
 							                        "rows=3" . 
 
 
-###	http://www.knora.org/ontology/0105#baptized
+###	http://www.knora.org/ontology/0105/drawings-gods#baptized
 :baptized rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3901,9 +3901,9 @@
 							"Is the child baptized?"@en ;
 		                salsah-gui:guiOrder "123"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
-###  http://www.knora.org/ontology/0105#baptizedWhen
+###  http://www.knora.org/ontology/0105/drawings-gods#baptizedWhen
 :baptizedWhen rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3917,7 +3917,7 @@
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" . 
 
-###	http://www.knora.org/ontology/0105#communion
+###	http://www.knora.org/ontology/0105/drawings-gods#communion
 :communion rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3928,9 +3928,9 @@
 							"Did the child receive his/her communion?"@en ;
 		                salsah-gui:guiOrder "125"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
-###  http://www.knora.org/ontology/0105#communionWhen
+###  http://www.knora.org/ontology/0105/drawings-gods#communionWhen
 :communionWhen rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3942,7 +3942,7 @@
 		                salsah-gui:guiOrder "126"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Date . 
 
-###  http://www.knora.org/ontology/0105#cathechismWhen
+###  http://www.knora.org/ontology/0105/drawings-gods#cathechismWhen
 :cathechismWhen rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3956,7 +3956,7 @@
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" . 
 
-###  http://www.knora.org/ontology/0105#dadsReligion
+###  http://www.knora.org/ontology/0105/drawings-gods#dadsReligion
 :dadsReligion rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3967,9 +3967,9 @@
 							"Child's dad's religion"@en ;
 		                salsah-gui:guiOrder "128"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:List ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList>" .
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-ReligiousIdentityHList>" .
 
-###  http://www.knora.org/ontology/0105#otherDadsReligion
+###  http://www.knora.org/ontology/0105/drawings-gods#otherDadsReligion
 :otherDadsReligion rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3983,7 +3983,7 @@
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" . 
 
-###  http://www.knora.org/ontology/0105#momsReligion
+###  http://www.knora.org/ontology/0105/drawings-gods#momsReligion
 :momsReligion rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -3994,9 +3994,9 @@
 							"Child's mom's religion"@en ;
 		                salsah-gui:guiOrder "130"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:List ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-ReligiousIdentityHList>" .
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-ReligiousIdentityHList>" .
 
-###  http://www.knora.org/ontology/0105#otherMomsReligion
+###  http://www.knora.org/ontology/0105/drawings-gods#otherMomsReligion
 :otherMomsReligion rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -4010,7 +4010,7 @@
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" . 
 
-###  http://www.knora.org/ontology/0105#placeOfBirth
+###  http://www.knora.org/ontology/0105/drawings-gods#placeOfBirth
 :placeOfBirth rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -4024,7 +4024,7 @@
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" . 
 
-###  http://www.knora.org/ontology/0105#motherTongue
+###  http://www.knora.org/ontology/0105/drawings-gods#motherTongue
 :motherTongue rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -4035,9 +4035,9 @@
 							"Child's mother tongue(s)"@en ;
 		                salsah-gui:guiOrder "133"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList>" .
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-LanguageList>" .
 
-###  http://www.knora.org/ontology/0105#otherMotherTongue
+###  http://www.knora.org/ontology/0105/drawings-gods#otherMotherTongue
 :otherMotherTongue rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -4051,7 +4051,7 @@
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" . 
 							                 
-###	http://www.knora.org/ontology/0105#otherLanguages1
+###	http://www.knora.org/ontology/0105/drawings-gods#otherLanguages1
 :otherLanguages1 rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -4062,9 +4062,9 @@
 							"Does the child speak other languages?"@en ;
 		                salsah-gui:guiOrder "135"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
-###  http://www.knora.org/ontology/0105#otherLanguages2
+###  http://www.knora.org/ontology/0105/drawings-gods#otherLanguages2
 :otherLanguages2 rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -4075,9 +4075,9 @@
 							"Other languages spoken by the child"@en ;
 		                salsah-gui:guiOrder "136"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList>" .
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-LanguageList>" .
 
-###  http://www.knora.org/ontology/0105#languageSpokenMostOften
+###  http://www.knora.org/ontology/0105/drawings-gods#languageSpokenMostOften
 :languageSpokenMostOften rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -4088,9 +4088,9 @@
 							"Language spoken most often by the child"@en ;
 		                salsah-gui:guiOrder "137"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-LanguageList>" .
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-LanguageList>" .
 
-###  http://www.knora.org/ontology/0105#otherLanguageSpokenMostOften
+###  http://www.knora.org/ontology/0105/drawings-gods#otherLanguageSpokenMostOften
 :otherLanguageSpokenMostOften rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -4104,7 +4104,7 @@
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" . 
 		                
-###  http://www.knora.org/ontology/0105#yearsLivingInSwitzerland
+###  http://www.knora.org/ontology/0105/drawings-gods#yearsLivingInSwitzerland
 :yearsLivingInSwitzerland rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -4116,7 +4116,7 @@
 		                salsah-gui:guiOrder "139"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:SimpleText . 
 
-###	http://www.knora.org/ontology/0105#enjoyedTheActivity
+###	http://www.knora.org/ontology/0105/drawings-gods#enjoyedTheActivity
 :enjoyedTheActivity rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -4127,9 +4127,9 @@
 							"Did the child enjoy carrying out this activity"@en ;
 		                salsah-gui:guiOrder "140"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
-###	http://www.knora.org/ontology/0105#carriedOutTaskSeriously
+###	http://www.knora.org/ontology/0105/drawings-gods#carriedOutTaskSeriously
 :carriedOutTaskSeriously rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -4140,9 +4140,9 @@
 							"Did the child carry out this activity seriously"@en ;
 		                salsah-gui:guiOrder "141"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedListQ>" .
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
-###	http://www.knora.org/ontology/0105#selfEsteemExplicit
+###	http://www.knora.org/ontology/0105/drawings-gods#selfEsteemExplicit
 :selfEsteemExplicit rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -4153,9 +4153,9 @@
 							"Self-rated explicit self-esteem"@en ;
 		                salsah-gui:guiOrder "142"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedNumListQ>" .
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedNumListQ>" .
 
-###	http://www.knora.org/ontology/0105#happinessGeneral
+###	http://www.knora.org/ontology/0105/drawings-gods#happinessGeneral
 :happinessGeneral rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -4166,9 +4166,9 @@
 							"Self-rated general happiness"@en ;
 		                salsah-gui:guiOrder "143"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedNumListQ>" .
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedNumListQ>" .
 
-###	http://www.knora.org/ontology/0105#stress
+###	http://www.knora.org/ontology/0105/drawings-gods#stress
 :stress rdf:type owl:ObjectProperty ;
 		                rdfs:subPropertyOf knora-base:hasValue ;
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
@@ -4179,14 +4179,14 @@
 							"Level of recent stress self-rated"@en ;
 		                salsah-gui:guiOrder "144"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
-		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/drawings-gods-2016-list-AgreementRelatedNumListQ>" .
+		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedNumListQ>" .
  
 
 #################################################################
 #    Classes
 #################################################################
 
-###  http://www.knora.org/ontology/0105#Annotation
+###  http://www.knora.org/ontology/0105/drawings-gods#Annotation
 :Annotation rdf:type owl:Class ;
             rdfs:subClassOf knora-base:DocumentRepresentation ,
                             [ rdf:type owl:Restriction ;
@@ -4205,7 +4205,7 @@
 				"Annotation"@en .
 
 
-###  http://www.knora.org/ontology/0105#Campaign
+###  http://www.knora.org/ontology/0105/drawings-gods#Campaign
 :Campaign rdf:type owl:Class ;
           rdfs:subClassOf knora-base:Resource ,
                           [ rdf:type owl:Restriction ;
@@ -4266,7 +4266,7 @@
         	"Research wave."@en .
 
 
-###  http://www.knora.org/ontology/0105#CollectionSite
+###  http://www.knora.org/ontology/0105/drawings-gods#CollectionSite
 :CollectionSite rdf:type owl:Class ;
                 rdfs:subClassOf knora-base:Resource ,
                                 [ rdf:type owl:Restriction ;
@@ -4325,7 +4325,7 @@
 
 
 
-###  http://www.knora.org/ontology/0105#Drawing
+###  http://www.knora.org/ontology/0105/drawings-gods#Drawing
 :Drawing rdf:type owl:Class ;
          rdfs:subClassOf knora-base:StillImageRepresentation ,
                          [ rdf:type owl:Restriction ;
@@ -4458,7 +4458,7 @@
              		 """Resource not meant to be used directly: use "Drawing (public access)" or "Drawing (restricted access)" instead."""@en .
 
 
-###  http://www.knora.org/ontology/0105#DrawingPrivate
+###  http://www.knora.org/ontology/0105/drawings-gods#DrawingPrivate
 :DrawingPrivate rdf:type owl:Class ;
                 rdfs:subClassOf :Drawing ,
                          [ rdf:type owl:Restriction ;
@@ -4471,7 +4471,7 @@
 					"Access to the drawing is restricted."@en .
 
 
-###  http://www.knora.org/ontology/0105#DrawingPublic
+###  http://www.knora.org/ontology/0105/drawings-gods#DrawingPublic
 :DrawingPublic rdf:type owl:Class ;
                rdfs:subClassOf :Drawing ,
                          [ rdf:type owl:Restriction ;
@@ -4482,7 +4482,7 @@
 					"Drawing (public access)"@en .
 
 
-###  http://www.knora.org/ontology/0105#Instruction
+###  http://www.knora.org/ontology/0105/drawings-gods#Instruction
 :Instruction rdf:type owl:Class ;
              rdfs:subClassOf knora-base:Resource ,
                              [ rdf:type owl:Restriction ;
@@ -4519,7 +4519,7 @@
         		"Task explained to the child."@en .
 
 
-###  http://www.knora.org/ontology/0105#Passage
+###  http://www.knora.org/ontology/0105/drawings-gods#Passage
 :Passage rdf:type owl:Class ;
          rdfs:subClassOf knora-base:Resource ,
                          [ rdf:type owl:Restriction ;
@@ -4599,7 +4599,7 @@
         rdfs:comment "Pour un site et une campagne donnés, c’est un groupe particulier qui participe à une activité (classe, etc.)."@fr .
 
 
-###  http://www.knora.org/ontology/0105#Person
+###  http://www.knora.org/ontology/0105/drawings-gods#Person
 :Person rdf:type owl:Class ;
         rdfs:subClassOf knora-base:Resource ,
                         [ rdf:type owl:Restriction ;
@@ -4669,7 +4669,7 @@
 		rdfs:label "Personne"@fr ,
             "Person"@en .
 
-###  http://www.knora.org/ontology/0105#PersonLinkedFile
+###  http://www.knora.org/ontology/0105/drawings-gods#PersonLinkedFile
 :PersonLinkedFile rdf:type owl:Class ;
         rdfs:subClassOf knora-base:DocumentRepresentation ,
                         [ rdf:type owl:Restriction ;
@@ -4682,7 +4682,7 @@
 					 	"E.g.: attachment test."@en .
 
 
-###  http://www.knora.org/ontology/0105#QualityData
+###  http://www.knora.org/ontology/0105/drawings-gods#QualityData
 :QualityData rdf:type owl:Class ;
              rdfs:subClassOf knora-base:Resource ,
                              [ rdf:type owl:Restriction ;
@@ -4768,7 +4768,7 @@
 
 
 
-###  http://www.knora.org/ontology/0105#QuestionnaireBase
+###  http://www.knora.org/ontology/0105/drawings-gods#QuestionnaireBase
 :QuestionnaireBase rdf:type owl:Class ;
                    rdfs:subClassOf knora-base:Resource ,
                                    [ rdf:type owl:Restriction ;
@@ -4791,21 +4791,21 @@
              			"Standardized questionnaire"@en .
 
 
-###  http://www.knora.org/ontology/0105#QuestionnaireBaseEn
+###  http://www.knora.org/ontology/0105/drawings-gods#QuestionnaireBaseEn
 :QuestionnaireBaseEn rdf:type owl:Class ;
                      rdfs:subClassOf :QuestionnaireBaseImage ;
                      rdfs:label "Page de questionnaire standardisé en anglais"@fr ,
              			"Standardized questionnaire page in English"@en .
 
 
-###  http://www.knora.org/ontology/0105#QuestionnaireBaseFr
+###  http://www.knora.org/ontology/0105/drawings-gods#QuestionnaireBaseFr
 :QuestionnaireBaseFr rdf:type owl:Class ;
                      rdfs:subClassOf :QuestionnaireBaseImage ;
                      rdfs:label "Page de questionnaire standardisé en français"@fr ,
              			"Standardized questionnaire page in French"@en .
 
 
-###  http://www.knora.org/ontology/0105#QuestionnaireBaseImage
+###  http://www.knora.org/ontology/0105/drawings-gods#QuestionnaireBaseImage
 :QuestionnaireBaseImage rdf:type owl:Class ;
                         rdfs:subClassOf knora-base:Resource ,
                                         knora-base:StillImageRepresentation ,
@@ -4832,7 +4832,7 @@
 
 
 
-###  http://www.knora.org/ontology/0105#QuestionnaireBaseOriginal
+###  http://www.knora.org/ontology/0105/drawings-gods#QuestionnaireBaseOriginal
 :QuestionnaireBaseOriginal rdf:type owl:Class ;
                            rdfs:subClassOf :QuestionnaireBaseImage ;
 #                                           [ rdf:type owl:Restriction ;
@@ -4843,7 +4843,7 @@
              					"Standardized questionnaire page in original language"@en .
 
 
-###  http://www.knora.org/ontology/0105#QuestionnaireIndividual
+###  http://www.knora.org/ontology/0105/drawings-gods#QuestionnaireIndividual
 :QuestionnaireIndividual rdf:type owl:Class ;
                          rdfs:subClassOf knora-base:Resource ,
                                          [ rdf:type owl:Restriction ;
@@ -5350,7 +5350,7 @@
              				"Individual questionnaire"@en .
 
 
-###  http://www.knora.org/ontology/0105#QuestionnairePage
+###  http://www.knora.org/ontology/0105/drawings-gods#QuestionnairePage
 :QuestionnairePage rdf:type owl:Class ;
                    rdfs:subClassOf knora-base:StillImageRepresentation ,
                                    [ rdf:type owl:Restriction ;
@@ -5373,7 +5373,7 @@
              			"Individual questionnaire page"@en .
 
 
-###  http://www.knora.org/ontology/0105#TextOnDrawing
+###  http://www.knora.org/ontology/0105/drawings-gods#TextOnDrawing
 :TextOnDrawing rdf:type owl:Class ;
                rdfs:subClassOf knora-base:Resource ,
                                [ rdf:type owl:Restriction ;
@@ -5404,7 +5404,7 @@
 
 
 
-###  http://www.knora.org/ontology/0105#Verso
+###  http://www.knora.org/ontology/0105/drawings-gods#Verso
 :Verso rdf:type owl:Class ;
        rdfs:subClassOf knora-base:StillImageRepresentation ,
                        [ rdf:type owl:Restriction ;
