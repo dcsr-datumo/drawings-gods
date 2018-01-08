@@ -114,7 +114,7 @@
                      	"Full annotation done"@en ;
 					 rdfs:comment "Annotation effectuée"@fr ,
 					 	"Annotation done"@en ;
-					 salsah-gui:guiOrder "15"^^xsd:integer ;
+					 salsah-gui:guiOrder "14"^^xsd:integer ;
 	       		     salsah-gui:guiElement salsah-gui:Checkbox .
 
 
@@ -390,7 +390,7 @@
 #              rdfs:subPropertyOf knora-base:hasValue ;
 #              knora-base:subjectClassConstraint :Passage ;
 #              knora-base:objectClassConstraint knora-base:Value ;
-#              rdfs:label "Règles standard de collecte"@fr ,
+#              rdfs:label "Règles standards de collecte"@fr ,
 #           		"Standard collection rules"@en .
 
 
@@ -415,9 +415,9 @@
                       rdfs:subPropertyOf knora-base:hasValue ;
                       knora-base:subjectClassConstraint :Passage ;
                       knora-base:objectClassConstraint knora-base:BooleanValue ;
-                      rdfs:label "Règles standard de collecte pour le matériel"@fr ,
+                      rdfs:label "Règles standards de collecte pour le matériel"@fr ,
            				"Standard rules of the collect for the material"@en ;
-		   			  rdfs:comment "Est-ce que les règles standard ont été respectées pour le type de papier et les couleurs (A4, papier blanc, néocolors)?"@fr ,
+		   			  rdfs:comment "Est-ce que les règles standards ont été respectées pour le type de papier et les couleurs (A4, papier blanc, néocolors)?"@fr ,
 						"Were the standard rules respected for the paper type and the colours (A4, white paper, neocolors)?"@en ;
 					  salsah-gui:guiOrder "7"^^xsd:integer ;
        		  		  salsah-gui:guiElement salsah-gui:Checkbox .
@@ -428,7 +428,7 @@
                    rdfs:subPropertyOf knora-base:hasValue ;
                    knora-base:subjectClassConstraint :Passage ;
                    knora-base:objectClassConstraint knora-base:BooleanValue ;
-                   rdfs:label "Règles standard de collecte pour le lieu"@fr ,
+                   rdfs:label "Règles standards de collecte pour le lieu"@fr ,
            				"Standard rules of the collect for the place"@en ;
 		   		   rdfs:comment "Est-ce que les enfants ne pouvaient pas regarder les autres enfants et étaient dans une pièce intérieure (ex: salle de classe)?"@fr ,
 						"Have the children no possibility to show to other children and were they in an intern place (ex: classroom)?"@en ;
@@ -656,7 +656,7 @@
 			   rdfs:comment "La description de l'image ne contredit pas la consigne."@fr ,
 					"Description is in accordance with the given task."@en ;
 			   salsah-gui:guiElement salsah-gui:Checkbox ;
-      	       salsah-gui:guiOrder "11"^^xsd:integer .
+      	       salsah-gui:guiOrder "10"^^xsd:integer .
 
 ###  http://www.knora.org/ontology/0105/drawings-gods#hasDrawingOk
 :hasDrawingOk rdf:type owl:ObjectProperty ;
@@ -668,7 +668,7 @@
 			   rdfs:comment "Le dessin est en accord avec la tâche."@fr ,
 					"Drawing is in accordance with the given task."@en ;
 			   salsah-gui:guiElement salsah-gui:Checkbox ;
-      	       salsah-gui:guiOrder "12"^^xsd:integer .
+      	       salsah-gui:guiOrder "10"^^xsd:integer .
 
 
 ###  http://www.knora.org/ontology/0105/drawings-gods#hasDescriptionOriginal
@@ -1593,7 +1593,7 @@
                      "Material is standard (UNIL)"@en ;
 		  	rdfs:comment "néocolors, feuille A4 blanche, crayon papier."@fr ,
 					 "Neocolors, A4, paper pencil."@en ;
-       		salsah-gui:guiOrder "19"^^xsd:integer ;
+       		salsah-gui:guiOrder "18"^^xsd:integer ;
 	        salsah-gui:guiElement salsah-gui:Checkbox .
 
 
@@ -1604,9 +1604,9 @@
             knora-base:subjectClassConstraint :QualityData ;
             rdfs:label "Le matériel est acceptable, mais pas UNIL"@fr ,
                      "Material is acceptable, but is not UNIL"@en ;
-		  	rdfs:comment "crayons de couleur ou feutre de couleur, feuille A4 blanche, pas d’autocollants, pas de règles et matériel de géométrie..."@fr ,
+		  	rdfs:comment "Crayons de couleur ou feutre de couleur, feuille A4 blanche, pas d’autocollants, pas de règles et matériel de géométrie..."@fr ,
 					 "Color pencils or feutres, A4 white, no stickers, the rulers were not used..."@en ;
-       		salsah-gui:guiOrder "20"^^xsd:integer ;
+       		salsah-gui:guiOrder "19"^^xsd:integer ;
 	        salsah-gui:guiElement salsah-gui:Checkbox .
 
 
@@ -1916,7 +1916,7 @@
 			   	rdfs:comment "Commentaire interne (contrôle qualité)"@fr ,
 					 	"Internal comment (quality control)"@en ;
 		         salsah-gui:guiElement salsah-gui:Textarea ;
-		         salsah-gui:guiOrder "21"^^xsd:integer ;
+		         salsah-gui:guiOrder "20"^^xsd:integer ;
 				 salsah-gui:guiAttribute "width=95%" ,
 		                        		"rows=10" .
 
@@ -1942,7 +1942,7 @@
                      	"Questionaire complete (for questionnaires on many pages)"@en ;
 			   rdfs:comment "Toutes les pages du questionnaire sont uploadées."@fr ,
 					 	"All pages of the questionnaire have been uploaded."@en ;
-			   salsah-gui:guiOrder "13"^^xsd:integer ;
+			   salsah-gui:guiOrder "12"^^xsd:integer ;
        		   salsah-gui:guiElement salsah-gui:Checkbox .
 
 
@@ -1955,7 +1955,7 @@
                      	"Questionnaire transcribed"@en ;
 			  rdfs:comment "Le questionnaire est transcrit."@fr ,
 					 	"Questionnaire data has been entered."@en ;
-			  salsah-gui:guiOrder "14"^^xsd:integer ;
+			  salsah-gui:guiOrder "13"^^xsd:integer ;
        		  salsah-gui:guiElement salsah-gui:Checkbox .
 
 
@@ -2226,7 +2226,7 @@
                  rdfs:subPropertyOf knora-base:hasValue ;
                  knora-base:objectClassConstraint knora-base:ListValue ;
                  knora-base:subjectClassConstraint :Passage ;
-                 rdfs:label "Paramètre standards du scanner"@fr ,
+                 rdfs:label "Paramètres standards du scanner"@fr ,
                      "Standard scanner settings"@en ;
           		 rdfs:comment "Est-ce que les paramètres standards du scanner ont bien été respectés ? (300dpi, tiff, colour - millions, A4)"@fr ,
 					 "Are the standard scanner settings respected ? (300dpi, tiff, colour - millions, A4)"@en;
@@ -2351,7 +2351,7 @@
                 "Recall is in accordance with a given task"@en ;
 		rdfs:comment "Enfant a compris et restitué correctement la consigne."@fr ,
 			  	"Child understood correctly and recalled the task properly."@en ;
-		       salsah-gui:guiOrder "10"^^xsd:integer ;
+		       salsah-gui:guiOrder "9"^^xsd:integer ;
         salsah-gui:guiElement salsah-gui:Checkbox .
 
 
@@ -2364,7 +2364,7 @@
                 "Textual data is complete in French"@en ;
 			 rdfs:comment "Consigne, description, les mots sur le recto, et les commentaires sont ajoutés en français."@fr ,
 			  	"Task restitution, description, words on recto and the commentaries are entered in French."@en ;
-       		 salsah-gui:guiOrder "18"^^xsd:integer ;
+       		 salsah-gui:guiOrder "17"^^xsd:integer ;
        		 salsah-gui:guiElement salsah-gui:Checkbox .
 
 ###  http://www.knora.org/ontology/0105/drawings-gods#hasTextEnteredEn
@@ -2376,7 +2376,7 @@
                 "Textual data is complete in English"@en ;
 			 rdfs:comment "Consigne, description, les mots sur le recto, et les commentaires sont ajoutés en anglais."@fr ,
 			  	"Task restitution, description, words on recto and the commentaries are entered in English."@en ;
-       		 salsah-gui:guiOrder "17"^^xsd:integer ;
+       		 salsah-gui:guiOrder "16"^^xsd:integer ;
        		 salsah-gui:guiElement salsah-gui:Checkbox .
 
 ###  http://www.knora.org/ontology/0105/drawings-gods#hasTextEnteredOr
@@ -2388,7 +2388,7 @@
                 "Textual data is complete in original language"@en ;
 			 rdfs:comment "Consigne, description, les mots sur le recto, et commentaire sont ajoutés en langue originale."@fr ,
 			  	"Task restitution, description, words on recto and the commentaries are entered in original language."@en ;
-       		 salsah-gui:guiOrder "16"^^xsd:integer ;
+       		 salsah-gui:guiOrder "15"^^xsd:integer ;
        		 salsah-gui:guiElement salsah-gui:Checkbox .
 
 
@@ -2423,12 +2423,12 @@
 :hasVersoUnavailable rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf knora-base:hasValue ;
                 knora-base:objectClassConstraint knora-base:BooleanValue ;
-              	knora-base:subjectClassConstraint :QualityData ;
+              	knora-base:subjectClassConstraint :Verso ;
                 rdfs:label "Verso est absent"@fr ,
                      	"Verso is absent"@en ;
 			   	rdfs:comment "Le verso est vierge ou indisponible."@fr ,
 					 	"Verso is blank or not available."@en ;
-				salsah-gui:guiOrder "9"^^xsd:integer ;
+				salsah-gui:guiOrder "2"^^xsd:integer ;
        		    salsah-gui:guiElement salsah-gui:Checkbox .
 
 
@@ -2916,8 +2916,8 @@
 		                knora-base:objectClassConstraint knora-base:TextValue ;
 						rdfs:label "Familiarité avec le lieu de culte: temple shinto (jinja). Avec qui?"@fr ,
 							"Familiarity with place of worship: shinto temple (jinja). With whom?"@en ;
-						rdfs:comment "Familiarité avec le lieu de culte: jinja. Avec qui?"@fr ,
-							"Familiarity with place of worship: jinja. With whom?"@en ;
+						rdfs:comment "Familiarité avec le lieu de culte: un temple shinto (jinja). Avec qui?"@fr ,
+							"Familiarity with place of worship: a shinto temple (jinja). With whom?"@en ;
 		                salsah-gui:guiOrder "33"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
@@ -2929,9 +2929,9 @@
 		                knora-base:subjectClassConstraint :QuestionnaireIndividual ;
 		                knora-base:objectClassConstraint knora-base:TextValue ;
 						rdfs:label "Familiarité avec le lieu de culte: temple shinto (jinja). La dernière fois?"@fr ,
-							"Familiarity with place of worship: jinja. Last time?"@en ;
+							"Familiarity with place of worship: a shinto temple (jinja). Last time?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: shinto temple (jinja). La dernière fois?"@fr ,
-							"Familiarity with place of worship: jinja. Last time?"@en ;
+							"Familiarity with place of worship: a shinto temple (jinja). Last time?"@en ;
 		                salsah-gui:guiOrder "34"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
@@ -4760,11 +4760,7 @@
                              [ rdf:type owl:Restriction ;
                                owl:onProperty :hasDrawingOk ;
                                owl:maxCardinality "1"^^xsd:nonNegativeInteger
-                             ] ,
-	                        	[ rdf:type owl:Restriction ;
-	                         owl:onProperty :hasVersoUnavailable ;
-	                         owl:maxCardinality "1"^^xsd:nonNegativeInteger
-	                         ] ;
+                             ] ;
 			rdfs:label "Contrôle qualité des données"@fr ,
              			"Data quality control"@en ;
             rdfs:comment "Means of internal control what has been done and what not. Quality of data decisive for the test"@en .
@@ -5492,6 +5488,10 @@
                          owl:maxCardinality "1"^^xsd:nonNegativeInteger
                        ] ,
                        [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasVersoUnavailable ;
+                         owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                       ] ,
+                       [ rdf:type owl:Restriction ;
                          owl:onProperty :hasRecallUnavailable ;
                          owl:maxCardinality "1"^^xsd:nonNegativeInteger
                        ] ,
@@ -5507,4 +5507,3 @@
              	"Verso"@en ;
 		rdfs:comment "Informations (textes) présentes sur le verso du dessin"@fr ,
 				"Information (text) available on the drawing verso"@en .
-
