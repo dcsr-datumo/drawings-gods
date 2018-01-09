@@ -4760,7 +4760,11 @@
                              [ rdf:type owl:Restriction ;
                                owl:onProperty :hasDrawingOk ;
                                owl:maxCardinality "1"^^xsd:nonNegativeInteger
-                             ] ;
+                             ] ,
+	                        	[ rdf:type owl:Restriction ;
+	                         owl:onProperty :hasVersoUnavailable ;
+	                         owl:maxCardinality "1"^^xsd:nonNegativeInteger
+	                         ] ;
 			rdfs:label "Contrôle qualité des données"@fr ,
              			"Data quality control"@en ;
             rdfs:comment "Means of internal control what has been done and what not. Quality of data decisive for the test"@en .
@@ -5485,10 +5489,6 @@
                        ] ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasInstructionRestitutionOriginal ;
-                         owl:maxCardinality "1"^^xsd:nonNegativeInteger
-                       ] ,
-                       [ rdf:type owl:Restriction ;
-                         owl:onProperty :hasVersoUnavailable ;
                          owl:maxCardinality "1"^^xsd:nonNegativeInteger
                        ] ,
                        [ rdf:type owl:Restriction ;
