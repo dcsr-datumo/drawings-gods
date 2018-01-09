@@ -2608,7 +2608,7 @@
                 rdfs:label "Questionnaire indisponible"@fr ,
                      	"Questionnaire unavailable"@en ;
 			   	rdfs:comment "Questionnaire indisponible."@fr ,
-					 	"uestionnaire unavailable."@en ;
+					 	"Questionnaire unavailable."@en ;
 				salsah-gui:guiOrder "1"^^xsd:integer ;
        		  	salsah-gui:guiElement salsah-gui:Checkbox .
 
