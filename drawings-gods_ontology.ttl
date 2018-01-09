@@ -114,7 +114,7 @@
                      	"Full annotation done"@en ;
 					 rdfs:comment "Annotation effectuée"@fr ,
 					 	"Annotation done"@en ;
-					 salsah-gui:guiOrder "15"^^xsd:integer ;
+					 salsah-gui:guiOrder "16"^^xsd:integer ;
 	       		     salsah-gui:guiElement salsah-gui:Checkbox .
 
 
@@ -1593,7 +1593,7 @@
                      "Material is standard (UNIL)"@en ;
 		  	rdfs:comment "néocolors, feuille A4 blanche, crayon papier."@fr ,
 					 "Neocolors, A4, paper pencil."@en ;
-       		salsah-gui:guiOrder "19"^^xsd:integer ;
+       		salsah-gui:guiOrder "20"^^xsd:integer ;
 	        salsah-gui:guiElement salsah-gui:Checkbox .
 
 
@@ -1606,7 +1606,7 @@
                      "Material is acceptable, but is not UNIL"@en ;
 		  	rdfs:comment "Crayons de couleur ou feutre de couleur, feuille A4 blanche, pas d’autocollants, pas de règles et matériel de géométrie..."@fr ,
 					 "Color pencils or feutres, A4 white, no stickers, the rulers were not used..."@en ;
-       		salsah-gui:guiOrder "20"^^xsd:integer ;
+       		salsah-gui:guiOrder "21"^^xsd:integer ;
 	        salsah-gui:guiElement salsah-gui:Checkbox .
 
 
@@ -1916,7 +1916,7 @@
 			   	rdfs:comment "Commentaire interne (contrôle qualité)"@fr ,
 					 	"Internal comment (quality control)"@en ;
 		         salsah-gui:guiElement salsah-gui:Textarea ;
-		         salsah-gui:guiOrder "21"^^xsd:integer ;
+		         salsah-gui:guiOrder "22"^^xsd:integer ;
 				 salsah-gui:guiAttribute "width=95%" ,
 		                        		"rows=10" .
 
@@ -1942,7 +1942,7 @@
                      	"Questionaire complete (for questionnaires on many pages)"@en ;
 			   rdfs:comment "Toutes les pages du questionnaire sont uploadées."@fr ,
 					 	"All pages of the questionnaire have been uploaded."@en ;
-			   salsah-gui:guiOrder "13"^^xsd:integer ;
+			   salsah-gui:guiOrder "14"^^xsd:integer ;
        		   salsah-gui:guiElement salsah-gui:Checkbox .
 
 
@@ -1955,7 +1955,7 @@
                      	"Questionnaire transcribed"@en ;
 			  rdfs:comment "Le questionnaire est transcrit."@fr ,
 					 	"Questionnaire data has been entered."@en ;
-			  salsah-gui:guiOrder "14"^^xsd:integer ;
+			  salsah-gui:guiOrder "15"^^xsd:integer ;
        		  salsah-gui:guiElement salsah-gui:Checkbox .
 
 
@@ -2364,7 +2364,7 @@
                 "Textual data is complete in French"@en ;
 			 rdfs:comment "Consigne, description, les mots sur le recto, et les commentaires sont ajoutés en français."@fr ,
 			  	"Task restitution, description, words on recto and the commentaries are entered in French."@en ;
-       		 salsah-gui:guiOrder "18"^^xsd:integer ;
+       		 salsah-gui:guiOrder "19"^^xsd:integer ;
        		 salsah-gui:guiElement salsah-gui:Checkbox .
 
 ###  http://www.knora.org/ontology/0105/drawings-gods#hasTextEnteredEn
@@ -2376,7 +2376,7 @@
                 "Textual data is complete in English"@en ;
 			 rdfs:comment "Consigne, description, les mots sur le recto, et les commentaires sont ajoutés en anglais."@fr ,
 			  	"Task restitution, description, words on recto and the commentaries are entered in English."@en ;
-       		 salsah-gui:guiOrder "17"^^xsd:integer ;
+       		 salsah-gui:guiOrder "18"^^xsd:integer ;
        		 salsah-gui:guiElement salsah-gui:Checkbox .
 
 ###  http://www.knora.org/ontology/0105/drawings-gods#hasTextEnteredOr
@@ -2388,7 +2388,7 @@
                 "Textual data is complete in original language"@en ;
 			 rdfs:comment "Consigne, description, les mots sur le recto, et commentaire sont ajoutés en langue originale."@fr ,
 			  	"Task restitution, description, words on recto and the commentaries are entered in original language."@en ;
-       		 salsah-gui:guiOrder "16"^^xsd:integer ;
+       		 salsah-gui:guiOrder "17"^^xsd:integer ;
        		 salsah-gui:guiElement salsah-gui:Checkbox .
 
 
@@ -2604,12 +2604,12 @@
 :hasQuestionnaireUnavailable rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf knora-base:hasValue ;
                 knora-base:objectClassConstraint knora-base:BooleanValue ;
-              	knora-base:subjectClassConstraint :QuestionnaireIndividual ;
+              	knora-base:subjectClassConstraint :QualityData ;
                 rdfs:label "Questionnaire indisponible"@fr ,
                      	"Questionnaire unavailable"@en ;
 			   	rdfs:comment "Questionnaire indisponible."@fr ,
 					 	"Questionnaire unavailable."@en ;
-				salsah-gui:guiOrder "1"^^xsd:integer ;
+				salsah-gui:guiOrder "13"^^xsd:integer ;
        		  	salsah-gui:guiElement salsah-gui:Checkbox .
 
 
@@ -4764,12 +4764,14 @@
 	                        	[ rdf:type owl:Restriction ;
 	                         owl:onProperty :hasVersoUnavailable ;
 	                         owl:maxCardinality "1"^^xsd:nonNegativeInteger
+	                         ] ,
+	                         [ rdf:type owl:Restriction ;
+	                         owl:onProperty :hasQuestionnaireUnavailable ;
+	                         owl:maxCardinality "1"^^xsd:nonNegativeInteger
 	                         ] ;
 			rdfs:label "Contrôle qualité des données"@fr ,
              			"Data quality control"@en ;
             rdfs:comment "Means of internal control what has been done and what not. Quality of data decisive for the test"@en .
-
-
 
 
 ###  http://www.knora.org/ontology/0105/drawings-gods#QuestionnaireBase
