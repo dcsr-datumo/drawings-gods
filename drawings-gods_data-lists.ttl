@@ -4933,20 +4933,13 @@
 			knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList> ;
 			knora-base:listNodePosition 0 ;
 			rdfs:label "Préfecture Chiba"@fr , "Chiba Prefecture"@en ;
-			knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-ichikawa> ,
-									<http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-fuchu> .
+			knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-ichikawa> .
 
 			<http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-ichikawa> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList> ;
 				knora-base:listNodeName "ichikawa" ;
 				knora-base:listNodePosition 0 ;
 				rdfs:label "Ichikawa"@fr , "Ichikawa"@en .
-
-			<http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-fuchu> a knora-base:ListNode ;
-				knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList> ;
-				knora-base:listNodeName "fuchu" ;
-				knora-base:listNodePosition 1 ;
-				rdfs:label "Fuchū"@fr , "Fuchū"@en .
 
 		<http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-fukushimaPrefecture> a knora-base:ListNode ;
 			knora-base:listNodeName "fukushimaPrefecture" ;
@@ -4981,7 +4974,8 @@
 			rdfs:label "Préfecture Tokyo"@fr , "Tokyo Prefecture"@en ;
 			knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-itabashi> ,
 									<http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-kunitachi> ,
-									<http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-nakano> .
+									<http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-nakano> ,
+                                    <http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-fuchu> .
 
 			<http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-itabashi> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList> ;
@@ -5000,6 +4994,12 @@
 				knora-base:listNodeName "nakano" ;
 				knora-base:listNodePosition 2 ;
 				rdfs:label "Nakano"@fr , "Nakano"@en .
+
+			<http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-fuchu> a knora-base:ListNode ;
+				knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList> ;
+				knora-base:listNodeName "fuchu" ;
+				knora-base:listNodePosition 3 ;
+				rdfs:label "Fuchū"@fr , "Fuchū"@en .
 
 	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-nepal> a knora-base:ListNode ;
 		knora-base:listNodeName "nepal" ;
