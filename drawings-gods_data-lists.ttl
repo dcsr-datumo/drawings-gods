@@ -352,7 +352,7 @@
 			knora-base:listNodeName "nonidentifiedRegion" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-GlobalLocationHList> ;
 			knora-base:listNodePosition 2 ;
-			rdfs:label "Region non identifiée"@fr , "Non-identified region"@en .
+			rdfs:label "Région non-identifiée"@fr , "Non-identified region"@en .
 
 	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-GlobalLocationHList-romania> a knora-base:ListNode ;
 		knora-base:listNodeName "romania" ;
@@ -2459,7 +2459,7 @@
 			knora-base:listNodeName "nonidentifiedRegion" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList> ;
 			knora-base:listNodePosition 2 ;
-			rdfs:label "Région non identifiée"@fr , "Non-identified region"@en ;
+			rdfs:label "Région non-identifiée"@fr , "Non-identified region"@en ;
 			knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-nonidentified3> .
 
 			<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-nonidentified3> a knora-base:ListNode ;
@@ -5088,7 +5088,7 @@
 			knora-base:listNodeName "nonidentifiedRegion" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList> ;
 			knora-base:listNodePosition 2 ;
-			rdfs:label "Region non identifiée"@fr , "Non-identified region"@en ;
+			rdfs:label "Région non-identifiée"@fr , "Non-identified region"@en ;
 			knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-nonidentified3> .
 
 			<http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-nonidentified3> a knora-base:ListNode ;
