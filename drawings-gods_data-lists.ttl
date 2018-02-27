@@ -4996,7 +4996,7 @@
 				rdfs:label "Nakano"@fr , "Nakano"@en .
 				
 			<http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-fuchu> a knora-base:ListNode ;
-				knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList> ;
+				knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList> ;
 				knora-base:listNodeName "fuchu" ;
 				knora-base:listNodePosition 3 ;
 				rdfs:label "Fuchū"@fr , "Fuchū"@en .
