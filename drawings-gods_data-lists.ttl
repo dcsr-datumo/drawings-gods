@@ -2307,7 +2307,7 @@
 					knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "epfuchuu" ;
 					knora-base:listNodePosition 0 ;
-					rdfs:label "Ecole publique à Fuchuu (pfx)"@fr , "Public school in Fuchuu (pfx)"@en .
+					rdfs:label "Ecole publique à Fuchū (pfx)"@fr , "Public school in Fuchū (pfx)"@en .
 
 	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-nepal> a knora-base:ListNode ;
 		knora-base:listNodeName "nepal" ;
@@ -4975,7 +4975,7 @@
 			knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-itabashi> ,
 									<http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-kunitachi> ,
 									<http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-nakano> ,
-                                    <http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-fuchu> .
+									<http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-fuchu> .
 
 			<http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-itabashi> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList> ;
@@ -4994,9 +4994,9 @@
 				knora-base:listNodeName "nakano" ;
 				knora-base:listNodePosition 2 ;
 				rdfs:label "Nakano"@fr , "Nakano"@en .
-
+				
 			<http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-fuchu> a knora-base:ListNode ;
-				knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList> ;
+				knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList> ;
 				knora-base:listNodeName "fuchu" ;
 				knora-base:listNodePosition 3 ;
 				rdfs:label "Fuchū"@fr , "Fuchū"@en .
