@@ -1648,7 +1648,7 @@
 				knora-base:listNodePosition 10 ;
 				rdfs:label "Saint-Prex"@fr , "Saint-Prex"@en ;
 				knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-ersptprex> ,
-				knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-saintgingolph> .
+										<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-saintgingolph> .
 
 				<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-ersptprex> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList> ;
