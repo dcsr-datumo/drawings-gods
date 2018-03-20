@@ -1438,8 +1438,7 @@
 			knora-base:listNodePosition 5 ;
 			rdfs:label "Canton du Valais"@fr , "Valais Canton"@en ;
 			knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-bassenendaz> ,
-									<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-hautenendaz> ,
-									<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-saintgingolph> .
+									<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-hautenendaz> .
 
 			<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-bassenendaz> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList> ;
@@ -1466,19 +1465,6 @@
 					knora-base:listNodeName "ephautenendaz" ;
 					knora-base:listNodePosition 0 ;
 					rdfs:label "Ecole publique primaire de Haute-Nendaz (phn)"@fr , "Public primary school of Haute-Nendaz (phn)"@en .
-
-			<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-saintgingolph> a knora-base:ListNode ;
-				knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList> ;
-				knora-base:listNodeName "saintgingolph" ;
-				knora-base:listNodePosition 2 ;
-				rdfs:label "Saint-Gingolph"@fr , "Saint-Gingolph"@en ;
-				knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-bouveret> .
-
-				<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-bouveret> a knora-base:ListNode ;
-					knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList> ;
-					knora-base:listNodeName "bouveret" ;
-					knora-base:listNodePosition 0 ;
-					rdfs:label "Ecole religieuse Camp du Bouveret (rcb)"@fr , "Religious school Camp du Bouveret (rcb)"@en .
 
 		<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-vaudCanton> a knora-base:ListNode ;
 			knora-base:listNodeName "vaudCanton" ;
@@ -1661,13 +1647,20 @@
 				knora-base:listNodeName "saintprex" ;
 				knora-base:listNodePosition 10 ;
 				rdfs:label "Saint-Prex"@fr , "Saint-Prex"@en ;
-				knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-erstprex> .
+				knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-ersptprex> ,
+										<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-saintgingolph> .
 
-				<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-erstprex> a knora-base:ListNode ;
+				<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-ersptprex> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList> ;
-					knora-base:listNodeName "erstprex" ;
+					knora-base:listNodeName "ersptprex" ;
 					knora-base:listNodePosition 0 ;
 					rdfs:label "Ecole religieuse Salle de paroisse de Saint-Prex (rsp)"@fr , "Religious school Room of the parish of Saint-Prex (rsp)"@en .
+					
+				<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-saintgingolph> a knora-base:ListNode ;
+					knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList> ;
+					knora-base:listNodeName "saintgingolph" ;
+					knora-base:listNodePosition 1 ;
+					rdfs:label "Ecole religieuse Camp du Bouveret à Saint-Gingolph (rcb)"@fr , "Religious school Camp du Bouveret in Saint-Gingolph (rcb)"@en .
 
 			<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-tolochenaz> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList> ;
@@ -4704,8 +4697,7 @@
 			knora-base:listNodePosition 5 ;
 			rdfs:label "Canton du Valais"@fr , "Valais Canton"@en ;
 			knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-bassenendaz> ,
-									<http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-hautenendaz> ,
-									<http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-saintgingolph> .
+									<http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-hautenendaz> .
 
 			<http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-bassenendaz> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList> ;
@@ -4718,12 +4710,6 @@
 				knora-base:listNodeName "hautenendaz" ;
 				knora-base:listNodePosition 1 ;
 				rdfs:label "Haute-Nendaz"@fr , "Haute-Nendaz"@en .
-
-			<http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-saintgingolph> a knora-base:ListNode ;
-				knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList> ;
-				knora-base:listNodeName "saintgingolph" ;
-				knora-base:listNodePosition 2 ;
-				rdfs:label "Saint-Gingolph"@fr , "Saint-Gingolph"@en .
 
 		<http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-vaudCanton> a knora-base:ListNode ;
 			knora-base:listNodeName "vaudCanton" ;
@@ -4802,7 +4788,7 @@
 				knora-base:listNodeName "rolle" ;
 				knora-base:listNodePosition 9 ;
 				rdfs:label "Rolle"@fr , "Rolle"@en .
-
+				
 			<http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-saintprex> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList> ;
 				knora-base:listNodeName "saintprex" ;
@@ -6180,7 +6166,7 @@
 										<http://rdfh.ch/lists/0105/drawings-gods-2016-list-FiguresHList-paradise> ,
 										<http://rdfh.ch/lists/0105/drawings-gods-2016-list-FiguresHList-svastika> ,
 										<http://rdfh.ch/lists/0105/drawings-gods-2016-list-FiguresHList-tilak> ,
-										<http://rdfh.ch/lists/0105/drawings-gods-2016-list-FiguresHList-religiousbuilging> ,
+										<http://rdfh.ch/lists/0105/drawings-gods-2016-list-FiguresHList-religiousbuilding> ,
 										<http://rdfh.ch/lists/0105/drawings-gods-2016-list-FiguresHList-stupa> ,
 										<http://rdfh.ch/lists/0105/drawings-gods-2016-list-FiguresHList-stick2> ,
 										<http://rdfh.ch/lists/0105/drawings-gods-2016-list-FiguresHList-yinyang> ,
@@ -6301,11 +6287,11 @@
 				knora-base:listNodePosition 21 ;
 				rdfs:label "Tilak"@fr , "Tilak"@en .
 
-			<http://rdfh.ch/lists/0105/drawings-gods-2016-list-FiguresHList-religiousbuilging> a knora-base:ListNode ;
-				knora-base:listNodeName "religiousbuilging" ;
+			<http://rdfh.ch/lists/0105/drawings-gods-2016-list-FiguresHList-religiousbuilding> a knora-base:ListNode ;
+				knora-base:listNodeName "religiousbuilding" ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-FiguresHList> ;
 				knora-base:listNodePosition 22 ;
-				rdfs:label "Bâtiment religieux"@fr , "Religious builgings"@en .
+				rdfs:label "Bâtiment religieux"@fr , "Religious buildings"@en .
 
 			<http://rdfh.ch/lists/0105/drawings-gods-2016-list-FiguresHList-stupa> a knora-base:ListNode ;
 				knora-base:listNodeName "stupa" ;
