@@ -1694,6 +1694,29 @@
 				  	 				rdfs:comment "Page faisant partie d'un questionnaire individuel donné."@fr ,
 							 				"Page relevant to a given questionnaire."@en .
 
+###  http://www.knora.org/ontology/0105/drawings-gods#isPartOfIndividualQuestionnaire
+:versoIsPartOfIndividualQuestionnaire rdf:type owl:ObjectProperty ;
+                               rdfs:subPropertyOf knora-base:isPartOf ;
+                               knora-base:subjectClassConstraint :Verso ;
+             				   knora-base:objectClassConstraint :QuestionnaireIndividual ;
+                               rdfs:label "Questionnaire individuel correspondant à cette page"@fr ,
+                     				"Relevant individual questionnaire for this page"@en ;
+		  	 				   rdfs:comment "Page faisant partie d'un questionnaire individuel donné."@fr ,
+					 				"Page relevant to a given questionnaire."@en ;
+					 		   salsah-gui:guiElement salsah-gui:Searchbox ;
+					           salsah-gui:guiOrder "2"^^xsd:integer .
+
+
+###  http://www.knora.org/ontology/0105/drawings-gods#isPartOfIndividualQuestionnaireValue
+:versoIsPartOfIndividualQuestionnaireValue rdf:type owl:ObjectProperty ;
+		                            rdfs:subPropertyOf knora-base:isPartOfValue ;
+		                            knora-base:subjectClassConstraint :Verso ;
+             				        knora-base:objectClassConstraint knora-base:LinkValue ;
+		                            rdfs:label "Questionnaire individuel correspondant à cette page"@fr ,
+		                     				"Relevant individual questionnaire for this page"@en ;
+				  	 				rdfs:comment "Page faisant partie d'un questionnaire individuel donné."@fr ,
+							 				"Page relevant to a given questionnaire."@en .
+
 
 ###  http://www.knora.org/ontology/0105/drawings-gods#isPartOfQuestionnaireBase
 :isPartOfQuestionnaireBase rdf:type owl:ObjectProperty ;
@@ -2106,6 +2129,36 @@
 		                 salsah-gui:guiElement salsah-gui:Spinbox ;
 		                 salsah-gui:guiAttribute "min=0" ,
 		                                   "max=-1" .
+
+###  http://www.knora.org/ontology/0105/drawings-gods#drawingHasQuestionnairePageSeqnum
+:drawingHasQuestionnairePageSeqnum rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf knora-base:seqnum ;
+                         knora-base:subjectClassConstraint :Drawing ;
+                         knora-base:objectClassConstraint knora-base:IntValue ;
+                         rdfs:label "Numéro de page du questionnaire individuel"@fr ,
+                     		"Page number of individual questionnaire"@en ;
+			   		   	 rdfs:comment "Numéro de page du questionnaire individuel."@fr ,
+					 		"Page number of individual questionnaire."@en ;
+					 	 salsah-gui:guiOrder "1"^^xsd:integer ;
+		                 salsah-gui:guiElement salsah-gui:Spinbox ;
+		                 salsah-gui:guiAttribute "min=0" ,
+		                                   "max=-1" .
+
+
+###  http://www.knora.org/ontology/0105/drawings-gods#versoHasQuestionnairePageSeqnum
+:versoHasQuestionnairePageSeqnum rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf knora-base:seqnum ;
+                         knora-base:subjectClassConstraint :Verso ;
+                         knora-base:objectClassConstraint knora-base:IntValue ;
+                         rdfs:label "Numéro de page du questionnaire individuel"@fr ,
+                     		"Page number of individual questionnaire"@en ;
+			   		   	 rdfs:comment "Numéro de page du questionnaire individuel."@fr ,
+					 		"Page number of individual questionnaire."@en ;
+					 	 salsah-gui:guiOrder "1"^^xsd:integer ;
+		                 salsah-gui:guiElement salsah-gui:Spinbox ;
+		                 salsah-gui:guiAttribute "min=0" ,
+		                                   "max=-1" .
+
 
 
 ####  http://www.knora.org/ontology/0105/drawings-gods#hasRecto
@@ -4451,6 +4504,10 @@
                          [ rdf:type owl:Restriction ;
                            owl:onProperty :hasIndividualQuestionnaireAttachedValue ;
                            owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :drawingHasQuestionnairePageSeqnum ;
+                           owl:cardinality "1"^^xsd:nonNegativeInteger
                          ] ;
 		rdfs:label "[Dessin]"@fr ,
 			"[Drawing]"@en ;
@@ -5504,6 +5561,18 @@
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasInstructionRestitutionAuthor ;
                          owl:minCardinality "0"^^xsd:nonNegativeInteger
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :versoHasQuestionnairePageSeqnum ;
+                         owl:cardinality "1"^^xsd:nonNegativeInteger
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :versoIsPartOfIndividualQuestionnaire ;
+                         owl:cardinality "1"^^xsd:nonNegativeInteger
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :versoIsPartOfIndividualQuestionnaireValue ;
+                         owl:cardinality "1"^^xsd:nonNegativeInteger
                        ] ;
 		rdfs:label "Verso"@fr ,
              	"Verso"@en ;
