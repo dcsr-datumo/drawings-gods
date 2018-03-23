@@ -1704,7 +1704,7 @@
 		  	 				   rdfs:comment "Page faisant partie d'un questionnaire individuel donné."@fr ,
 					 				"Page relevant to a given questionnaire."@en ;
 					 		   salsah-gui:guiElement salsah-gui:Searchbox ;
-					           salsah-gui:guiOrder "2"^^xsd:integer .
+					           salsah-gui:guiOrder "25"^^xsd:integer .
 
 
 ###  http://www.knora.org/ontology/0105/drawings-gods#isPartOfIndividualQuestionnaireValue
@@ -2135,11 +2135,11 @@
                          rdfs:subPropertyOf knora-base:seqnum ;
                          knora-base:subjectClassConstraint :Drawing ;
                          knora-base:objectClassConstraint knora-base:IntValue ;
-                         rdfs:label "Numéro de page du questionnaire individuel"@fr ,
-                     		"Page number of individual questionnaire"@en ;
-			   		   	 rdfs:comment "Numéro de page du questionnaire individuel."@fr ,
-					 		"Page number of individual questionnaire."@en ;
-					 	 salsah-gui:guiOrder "1"^^xsd:integer ;
+                         rdfs:label "Numéro de page du dessin dans le questionnaire individuel"@fr ,
+                     		"Page number of the drawing in the individual questionnaire"@en ;
+			   		   	 rdfs:comment "Numéro de page du dessin dans le questionnaire individuel."@fr ,
+					 		"Page number of the drawing in the individual questionnaire."@en ;
+					 	 salsah-gui:guiOrder "26"^^xsd:integer ;
 		                 salsah-gui:guiElement salsah-gui:Spinbox ;
 		                 salsah-gui:guiAttribute "min=0" ,
 		                                   "max=-1" .
@@ -2150,11 +2150,11 @@
                          rdfs:subPropertyOf knora-base:seqnum ;
                          knora-base:subjectClassConstraint :Verso ;
                          knora-base:objectClassConstraint knora-base:IntValue ;
-                         rdfs:label "Numéro de page du questionnaire individuel"@fr ,
-                     		"Page number of individual questionnaire"@en ;
-			   		   	 rdfs:comment "Numéro de page du questionnaire individuel."@fr ,
-					 		"Page number of individual questionnaire."@en ;
-					 	 salsah-gui:guiOrder "1"^^xsd:integer ;
+                         rdfs:label "Numéro de page du verso dans le questionnaire individuel"@fr ,
+                     		"Page number of verso in individual questionnaire"@en ;
+			   		   	 rdfs:comment "Numéro de page du verso dans le questionnaire individuel."@fr ,
+					 		"Page number of verso in individual questionnaire."@en ;
+					 	 salsah-gui:guiOrder "26"^^xsd:integer ;
 		                 salsah-gui:guiElement salsah-gui:Spinbox ;
 		                 salsah-gui:guiAttribute "min=0" ,
 		                                   "max=-1" .
@@ -5473,106 +5473,131 @@
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasCommentOriginalLanguage ;
                          owl:minCardinality "0"^^xsd:nonNegativeInteger
+                         # salsah-gui:guiOrder "17"^^xsd:integer ;
                        ] ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasDescriptionOriginalLanguage ;
                          owl:minCardinality "0"^^xsd:nonNegativeInteger
+                         # salsah-gui:guiOrder "11"^^xsd:integer ;
                        ] ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasInstructionRestitutionOriginalLanguage ;
                          owl:minCardinality "0"^^xsd:nonNegativeInteger
+                         # salsah-gui:guiOrder "4"^^xsd:integer ;
                        ] ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasVersoComment ;
                          owl:minCardinality "0"^^xsd:nonNegativeInteger
+                         # salsah-gui:guiOrder "24"^^xsd:integer ;
                        ] ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasVersoTranslatorEn ;
                          owl:minCardinality "0"^^xsd:nonNegativeInteger
+                         # salsah-gui:guiOrder "22"^^xsd:integer ;
                        ] ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasVersoTranslatorFr ;
                          owl:minCardinality "0"^^xsd:nonNegativeInteger
+                         # salsah-gui:guiOrder "23"^^xsd:integer ;
                        ] ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasCodeVerso ;
                          owl:cardinality "1"^^xsd:nonNegativeInteger
+                         # salsah-gui:guiOrder "1"^^xsd:integer .
                        ] ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasCommentAuthor ;
                          owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                         # salsah-gui:guiOrder "21"^^xsd:integer ;
                        ] ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasCommentEn ;
                          owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                         # salsah-gui:guiOrder "19"^^xsd:integer ;
                        ] ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasCommentFr ;
                          owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                         # salsah-gui:guiOrder "20"^^xsd:integer ;
                        ] ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasCommentOriginal ;
                          owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                         # salsah-gui:guiOrder "18"^^xsd:integer ;
                        ] ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasDescriptionAsIsOriginal ;
                          owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                         # salsah-gui:guiOrder "13"^^xsd:integer ;
                        ] ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasDescriptionAuthor ;
                          owl:minCardinality "1"^^xsd:nonNegativeInteger
+                         # salsah-gui:guiOrder "16"^^xsd:integer ;
                        ] ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasDescriptionEn ;
                          owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                         # salsah-gui:guiOrder "14"^^xsd:integer ;
                        ] ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasDescriptionFr ;
                          owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                         # salsah-gui:guiOrder "15"^^xsd:integer ;
                        ] ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasDescriptionOriginal ;
                          owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                         # salsah-gui:guiOrder "12"^^xsd:integer ;
                        ] ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasInstructionRestitutionAsIsOriginal ;
                          owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                         # salsah-gui:guiOrder "6"^^xsd:integer ;
                        ] ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasInstructionRestitutionEn ;
                          owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                         # salsah-gui:guiOrder "7"^^xsd:integer ;
                        ] ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasInstructionRestitutionFr ;
                          owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                         # salsah-gui:guiOrder "8"^^xsd:integer ;
                        ] ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasInstructionRestitutionOriginal ;
                          owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                         # salsah-gui:guiOrder "5"^^xsd:integer ;
                        ] ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasRecallUnavailable ;
                          owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                         # salsah-gui:guiOrder "3"^^xsd:integer ;
                        ] ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasDescriptionUnavailable ;
                          owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                         # salsah-gui:guiOrder "10"^^xsd:integer ;
                        ] ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasInstructionRestitutionAuthor ;
                          owl:minCardinality "0"^^xsd:nonNegativeInteger
-                       ] ,
-                       [ rdf:type owl:Restriction ;
-                         owl:onProperty :versoHasQuestionnairePageSeqnum ;
-                         owl:cardinality "1"^^xsd:nonNegativeInteger
+                         # salsah-gui:guiOrder "9"^^xsd:integer .
                        ] ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :versoIsPartOfIndividualQuestionnaire ;
                          owl:cardinality "1"^^xsd:nonNegativeInteger
+                         # salsah-gui:guiOrder "25"^^xsd:integer .
                        ] ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :versoIsPartOfIndividualQuestionnaireValue ;
                          owl:cardinality "1"^^xsd:nonNegativeInteger
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :versoHasQuestionnairePageSeqnum ;
+                         owl:cardinality "1"^^xsd:nonNegativeInteger
+                         # salsah-gui:guiOrder "26"^^xsd:integer ;
                        ] ;
 		rdfs:label "Verso"@fr ,
              	"Verso"@en ;
