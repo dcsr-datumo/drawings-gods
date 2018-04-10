@@ -1856,7 +1856,7 @@
 :hasPersonLinkedFileComment rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf :hasInternalComment ;
                knora-base:objectClassConstraint knora-base:TextValue ;
-               knora-base:subjectClassConstraint :Person ;
+               knora-base:subjectClassConstraint :PersonLinkedFile ;
                rdfs:label "Commentaire interne (fichiers attachés)"@fr ,
                      	"Internal comment (linked files)"@en ;
 			   rdfs:comment "Commentaire interne (fichiers attachés)"@fr ,
