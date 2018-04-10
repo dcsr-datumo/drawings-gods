@@ -5070,10 +5070,6 @@
 										owl:maxCardinality "1"^^xsd:nonNegativeInteger
 										] ,
 										[ rdf:type owl:Restriction ;
-										owl:onProperty :ifIToldYouGodCouldYouDrawDoNotKnow ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
-										] ,
-										[ rdf:type owl:Restriction ;
 										owl:onProperty :ifIToldYouGodCouldYouDrawSomethingElse ;
 										owl:maxCardinality "1"^^xsd:nonNegativeInteger
 										] ,
@@ -5391,10 +5387,6 @@
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :otherMotherTongue ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
-										] ,
-										[ rdf:type owl:Restriction ;
-										owl:onProperty :otherLanguages3 ;
 										owl:maxCardinality "1"^^xsd:nonNegativeInteger
 										] ,
 										[ rdf:type owl:Restriction ;
