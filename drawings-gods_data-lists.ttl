@@ -3918,7 +3918,8 @@
 	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-TranslatorList-Other> ,
 	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-TranslatorList-YK> ,
 	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-TranslatorList-SS> ,
-	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-TranslatorList-VB> .
+	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-TranslatorList-VB> ,
+	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-TranslatorList-KL> .
 
 	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-TranslatorList-PYB> a knora-base:ListNode ;
 		knora-base:listNodeName "PYB" ;
@@ -3979,6 +3980,12 @@
 		knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-TranslatorList> ;
 		knora-base:listNodePosition 9 ;
 		rdfs:label "Virginie Bartz"@fr , "Virginie Bartz"@en .
+
+	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-TranslatorList-KL> a knora-base:ListNode ;
+		knora-base:listNodeName "KL" ;
+		knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-TranslatorList> ;
+		knora-base:listNodePosition 10 ;
+		rdfs:label "Karine Laubscher"@fr , "Karine Laubscher"@en .
 
 ###   TimeRelatedListQ
 <http://rdfh.ch/lists/0105/drawings-gods-2016-list-TimeRelatedListQ> a knora-base:ListNode ;
