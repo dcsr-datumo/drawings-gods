@@ -833,13 +833,13 @@
 		knora-base:listNodeName "brazil1" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-InstructionEnList> ;
 		knora-base:listNodePosition 12 ;
-		rdfs:label "(BR1eng) In English: Please use this piece of paper and the pencils, crayons, and markers to draw a picture of god. There is no right or wrong way to draw the picture, just draw what you think god looks like."@en .
+		rdfs:label "(BR1eng) In portuguese: Have you ever heard the word god? Close your eyes, imagine God and draw it."@en .
 
 	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-InstructionEnList-brazil2> a knora-base:ListNode ;
 		knora-base:listNodeName "brazil2" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-InstructionEnList> ;
 		knora-base:listNodePosition 13 ;
-		rdfs:label "(BR2eng) In English: Please use this piece of paper and the pencils, crayons, and markers to draw a picture of god. There is no right or wrong way to draw the picture, just draw what you think god looks like."@en .
+		rdfs:label "(BR2eng) In portuguese orally translated into Indian tribal language: Have you ever heard the word god? Close your eyes, imagine God and draw it."@en .
 
 
 ###   InstructionFrList
@@ -940,13 +940,13 @@
 		knora-base:listNodeName "brazil1" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-InstructionFrList> ;
 		knora-base:listNodePosition 12 ;
-		rdfs:label "(BR1fre) En anglais: S'il vous plaît, utilisez ce papier, ces crayons et ces feutres pour dessiner une image de dieu. Il n'y a pas de façon correcte ou incorrecte de dessiner, simplement dessinez comme vous pensez que dieu est."@fr .
+		rdfs:label "(BR1fre) En portugais: Avez-vous déjà entendu le mot dieu? Fermez les yeux, imaginez dieu et dessinez-le."@fr .
 
 	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-InstructionFrList-brazil2> a knora-base:ListNode ;
 		knora-base:listNodeName "brazil2" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-InstructionFrList> ;
 		knora-base:listNodePosition 13 ;
-		rdfs:label "(BR2fre) En anglais: S'il vous plaît, utilisez ce papier, ces crayons et ces feutres pour dessiner une image de dieu. Il n'y a pas de façon correcte ou incorrecte de dessiner, simplement dessinez comme vous pensez que dieu est."@fr .
+		rdfs:label "(BR2fre) En portugais traduit oralement en langue de la tribu indienne: Avez-vous déjà entendu le mot dieu? Fermez les yeux, imaginez dieu et dessinez-le."@fr .
 
 
 ###   LanguageList
@@ -1022,7 +1022,7 @@
 		knora-base:listNodeName "Indian(Brazil)" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-LanguageList> ;
 		knora-base:listNodePosition 8 ;
-		rdfs:label "Langue de tribu indien (Brésil)"@fr , "Language of indian tribe (Brazil)"@en .
+		rdfs:label "Langue de la tribu indienne (Brésil)"@fr , "Language of indian tribe (Brazil)"@en .
 
 <http://rdfh.ch/lists/0105/drawings-gods-2016-list-LanguageList-Japanese> a knora-base:ListNode ;
 		knora-base:listNodeName "japanese" ;
@@ -3024,13 +3024,13 @@
 		knora-base:listNodeName "brazil1" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-InstructionOriginalList> ;
 		knora-base:listNodePosition 12 ;
-		rdfs:label "(BR1or) Alguma vez você já ouviu a palavra deus ? Posteriormente, eles são instruídos a fechar seus olhos, imaginar deus e desenhar." .
+		rdfs:label "(BR1or) Alguma vez você já ouviu a palavra deus ? Feche seus olhos, imaginer deus e desenhe." .
 
 	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-InstructionOriginalList-brazil2> a knora-base:ListNode ;
 		knora-base:listNodeName "brazil2" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-InstructionOriginalList> ;
 		knora-base:listNodePosition 13 ;
-		rdfs:label "(BR2or) Alguma vez você já ouviu a palavra deus ? Posteriormente, eles são instruídos a fechar seus olhos, imaginar deus e desenhar." .
+		rdfs:label "(BR2or) Traduzido oralmente na língua da tribo indígena: Alguma vez você já ouviu a palavra deus ? Feche seus olhos, imaginer deus e desenhe." .
 
 ###   EthnicityList
 
