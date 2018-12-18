@@ -833,13 +833,13 @@
 		knora-base:listNodeName "brazil1" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-InstructionEnList> ;
 		knora-base:listNodePosition 12 ;
-		rdfs:label "(BR1eng) In portuguese: Have you ever heard the word god? Close your eyes, imagine God and draw it."@en .
+		rdfs:label "(BR1eng) In portuguese: Have you ever heard the word god? Close your eyes, imagine god and draw it."@en .
 
 	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-InstructionEnList-brazil2> a knora-base:ListNode ;
 		knora-base:listNodeName "brazil2" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-InstructionEnList> ;
 		knora-base:listNodePosition 13 ;
-		rdfs:label "(BR2eng) In portuguese orally translated into Indian tribal language: Have you ever heard the word god? Close your eyes, imagine God and draw it."@en .
+		rdfs:label "(BR2eng) In portuguese orally translated into Indian tribal language: Have you ever heard the word god? Close your eyes, imagine god and draw it."@en .
 
 
 ###   InstructionFrList
