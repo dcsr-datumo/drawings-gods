@@ -168,7 +168,8 @@
 									<http://rdfh.ch/lists/0105/drawings-gods-2016-list-GlobalLocationHList-netherlands> ,
 									<http://rdfh.ch/lists/0105/drawings-gods-2016-list-GlobalLocationHList-romania> ,
 									<http://rdfh.ch/lists/0105/drawings-gods-2016-list-GlobalLocationHList-russia> ,
-									<http://rdfh.ch/lists/0105/drawings-gods-2016-list-GlobalLocationHList-usa> .
+									<http://rdfh.ch/lists/0105/drawings-gods-2016-list-GlobalLocationHList-usa> ,
+									<http://rdfh.ch/lists/0105/drawings-gods-2016-list-GlobalLocationHList-brazil> .
 
 	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-GlobalLocationHList-switzerland> a knora-base:ListNode ;
 		knora-base:listNodeName "switzerland" ;
@@ -406,6 +407,26 @@
 			knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-GlobalLocationHList> ;
 			knora-base:listNodePosition 0 ;
 			rdfs:label "Ohio"@fr , "Ohio State"@en .
+			
+	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-GlobalLocationHList-brazil> a knora-base:ListNode ;
+		knora-base:listNodeName "brazil" ;
+		knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-GlobalLocationHList> ;
+		knora-base:listNodePosition 8 ;
+		rdfs:label "Brésil"@fr , "Brazil"@en ;
+		knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-GlobalLocationHList-regionSE> ,
+									<http://rdfh.ch/lists/0105/drawings-gods-2016-list-GlobalLocationHList-regionNE> .
+
+		<http://rdfh.ch/lists/0105/drawings-gods-2016-list-GlobalLocationHList-regionSE> a knora-base:ListNode ;
+			knora-base:listNodeName "regionSE" ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-GlobalLocationHList> ;
+			knora-base:listNodePosition 0 ;
+			rdfs:label "Région Sud-Est"@fr , "South-Eastern Region"@en .
+			
+		<http://rdfh.ch/lists/0105/drawings-gods-2016-list-GlobalLocationHList-regionNE> a knora-base:ListNode ;
+			knora-base:listNodeName "regionNE" ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-GlobalLocationHList> ;
+			knora-base:listNodePosition 1 ;
+			rdfs:label "Région Nord-Est"@fr , "North-Eastern Region"@en .
 
 ###   OrientationList
 <http://rdfh.ch/lists/0105/drawings-gods-2016-list-OrientationList> a knora-base:ListNode ;
@@ -732,7 +753,9 @@
 	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-InstructionEnList-switzerland1> ,
 	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-InstructionEnList-switzerland2> ,
 	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-InstructionEnList-switzerland3> ,
-	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-InstructionEnList-usa> .
+	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-InstructionEnList-usa> ,
+	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-InstructionEnList-brazil1> ,
+	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-InstructionEnList-brazil2> .
 
 	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-InstructionEnList-iran1> a knora-base:ListNode ;
 		knora-base:listNodeName "iran1" ;
@@ -806,6 +829,18 @@
 		knora-base:listNodePosition 11 ;
 		rdfs:label "(USeng) In English: Please use this piece of paper and the pencils, crayons, and markers to draw a picture of god. There is no right or wrong way to draw the picture, just draw what you think god looks like."@en .
 
+	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-InstructionEnList-brazil1> a knora-base:ListNode ;
+		knora-base:listNodeName "brazil1" ;
+		knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-InstructionEnList> ;
+		knora-base:listNodePosition 12 ;
+		rdfs:label "(BR1eng) In portuguese: Have you ever heard the word god? Close your eyes, imagine god and draw it."@en .
+
+	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-InstructionEnList-brazil2> a knora-base:ListNode ;
+		knora-base:listNodeName "brazil2" ;
+		knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-InstructionEnList> ;
+		knora-base:listNodePosition 13 ;
+		rdfs:label "(BR2eng) In portuguese orally translated into Indian tribal language: Have you ever heard the word god? Close your eyes, imagine god and draw it."@en .
+
 
 ###   InstructionFrList
 
@@ -825,7 +860,9 @@
 	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-InstructionFrList-switzerland1> ,
 	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-InstructionFrList-switzerland2> ,
 	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-InstructionFrList-switzerland3> ,
-	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-InstructionFrList-usa> .
+	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-InstructionFrList-usa> ,
+	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-InstructionFrList-brazil1> ,
+	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-InstructionFrList-brazil2> .
 
 	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-InstructionFrList-iran1> a knora-base:ListNode ;
 		knora-base:listNodeName "iran1" ;
@@ -899,6 +936,18 @@
 		knora-base:listNodePosition 11 ;
 		rdfs:label "(USfre) En anglais: S'il vous plaît, utilisez ce papier, ces crayons et ces feutres pour dessiner une image de dieu. Il n'y a pas de façon correcte ou incorrecte de dessiner, simplement dessinez comme vous pensez que dieu est."@fr .
 
+	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-InstructionFrList-brazil1> a knora-base:ListNode ;
+		knora-base:listNodeName "brazil1" ;
+		knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-InstructionFrList> ;
+		knora-base:listNodePosition 12 ;
+		rdfs:label "(BR1fre) En portugais: Avez-vous déjà entendu le mot dieu? Fermez les yeux, imaginez dieu et dessinez-le."@fr .
+
+	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-InstructionFrList-brazil2> a knora-base:ListNode ;
+		knora-base:listNodeName "brazil2" ;
+		knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-InstructionFrList> ;
+		knora-base:listNodePosition 13 ;
+		rdfs:label "(BR2fre) En portugais traduit oralement en langue de la tribu indienne: Avez-vous déjà entendu le mot dieu? Fermez les yeux, imaginez dieu et dessinez-le."@fr .
+
 
 ###   LanguageList
 <http://rdfh.ch/lists/0105/drawings-gods-2016-list-LanguageList> a knora-base:ListNode ;
@@ -913,6 +962,7 @@
 							<http://rdfh.ch/lists/0105/drawings-gods-2016-list-LanguageList-French> ,
 							<http://rdfh.ch/lists/0105/drawings-gods-2016-list-LanguageList-Hindi> ,
 							<http://rdfh.ch/lists/0105/drawings-gods-2016-list-LanguageList-Italian> ,
+							<http://rdfh.ch/lists/0105/drawings-gods-2016-list-LanguageList-Indian(Brazil)> ,
 							<http://rdfh.ch/lists/0105/drawings-gods-2016-list-LanguageList-Japanese> ,
 							<http://rdfh.ch/lists/0105/drawings-gods-2016-list-LanguageList-Nepali> ,
 							<http://rdfh.ch/lists/0105/drawings-gods-2016-list-LanguageList-Dutch> ,
@@ -967,41 +1017,47 @@
 		knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-LanguageList> ;
 		knora-base:listNodePosition 7 ;
 		rdfs:label "italien"@fr , "Italian"@en .
+		
+<http://rdfh.ch/lists/0105/drawings-gods-2016-list-LanguageList-Indian(Brazil)> a knora-base:ListNode ;
+		knora-base:listNodeName "Indian(Brazil)" ;
+		knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-LanguageList> ;
+		knora-base:listNodePosition 8 ;
+		rdfs:label "Langue de la tribu indienne (Brésil)"@fr , "Language of indian tribe (Brazil)"@en .
 
 <http://rdfh.ch/lists/0105/drawings-gods-2016-list-LanguageList-Japanese> a knora-base:ListNode ;
 		knora-base:listNodeName "japanese" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-LanguageList> ;
-		knora-base:listNodePosition 8 ;
+		knora-base:listNodePosition 9 ;
 		rdfs:label "japonais"@fr , "Japanese"@en .
 
 <http://rdfh.ch/lists/0105/drawings-gods-2016-list-LanguageList-Nepali> a knora-base:ListNode ;
 		knora-base:listNodeName "nepali" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-LanguageList> ;
-		knora-base:listNodePosition 9 ;
+		knora-base:listNodePosition 10 ;
 		rdfs:label "népali"@fr , "Nepali"@en .
 
 <http://rdfh.ch/lists/0105/drawings-gods-2016-list-LanguageList-Dutch> a knora-base:ListNode ;
 		knora-base:listNodeName "dutch" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-LanguageList> ;
-		knora-base:listNodePosition 10 ;
+		knora-base:listNodePosition 11 ;
 		rdfs:label "néerlandais"@fr , "Dutch"@en .
 
 <http://rdfh.ch/lists/0105/drawings-gods-2016-list-LanguageList-Portuguese> a knora-base:ListNode ;
 		knora-base:listNodeName "portuguese" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-LanguageList> ;
-		knora-base:listNodePosition 11 ;
+		knora-base:listNodePosition 12 ;
 		rdfs:label "portugais"@fr , "Portuguese"@en .
 
 <http://rdfh.ch/lists/0105/drawings-gods-2016-list-LanguageList-Romanian> a knora-base:ListNode ;
 		knora-base:listNodeName "romanian" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-LanguageList> ;
-		knora-base:listNodePosition 12 ;
+		knora-base:listNodePosition 13 ;
 		rdfs:label "roumain"@fr , "Romanian"@en .
 
 <http://rdfh.ch/lists/0105/drawings-gods-2016-list-LanguageList-Russian> a knora-base:ListNode ;
 		knora-base:listNodeName "russian" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-LanguageList> ;
-		knora-base:listNodePosition 13 ;
+		knora-base:listNodePosition 14 ;
 		rdfs:label "russe"@fr , "Russian"@en .
 
 ###    ScannerBrandList
@@ -1092,7 +1148,8 @@
 									<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-netherlands> ,
 									<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-romania> ,
 									<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-russia> ,
-									<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-usa> .
+									<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-usa> ,
+									<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-brazil> .
 
 	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-switzerland> a knora-base:ListNode ;
 		knora-base:listNodeName "switzerland" ;
@@ -2702,6 +2759,173 @@
 					knora-base:listNodeName "pentecost" ;
 					knora-base:listNodePosition 10 ;
 					rdfs:label "Eglise pentecôtiste 4SQ (rss)"@fr , "Pentecostal Church 4SQ (rss)"@en .
+					
+<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-brazil> a knora-base:ListNode ;
+		knora-base:listNodeName "brazil" ;
+		knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList> ;
+		knora-base:listNodePosition 10 ;
+		rdfs:label "Brésil"@fr , "Brazil"@en ;
+		knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-regionSE> ,
+								<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-regionNE> .
+
+		<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-regionSE> a knora-base:ListNode ;
+			knora-base:listNodeName "regionSE" ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList> ;
+			knora-base:listNodePosition 0 ;
+			rdfs:label "Région Sud-Est"@fr , "South-Eastern Region"@en ;
+			knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-SaoPaolo> .
+
+			<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-SaoPaolo> a knora-base:ListNode ;
+				knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList> ;
+				knora-base:listNodeName "SaoPaolo" ;
+				knora-base:listNodePosition 0 ;
+				rdfs:label "São Paulo"@fr , "São Paulo"@en ;
+				knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-spprg> ,
+										<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-sppjj> ,
+										<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-sppim> ,
+										<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-sppji> ,
+										<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-sppmc> ,
+										<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-sppcl> ,
+										<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-spptn> ,
+										<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-sprun> ,
+										<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-sppcq> ,
+										<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-sppcr> ,
+										<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-sppee> ,
+										<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-sppis> ,
+										<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-sprcf> ,
+										<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-sprsv> ,
+										<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-sppcz> ,
+										<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-sppcs> ,
+										<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-sprtw> .
+
+				<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-spprg> a knora-base:ListNode ;
+					knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList> ;
+					knora-base:listNodeName "spprg" ;
+					knora-base:listNodePosition 0 ;
+					rdfs:label "Professor Ronaldo Garibaldi Peretti (prg)"@fr , "Professor Ronaldo Garibaldi Peretti (prg)"@en .
+					
+				<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-sppjj> a knora-base:ListNode ;
+					knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList> ;
+					knora-base:listNodeName "sppjj" ;
+					knora-base:listNodePosition 1 ;
+					rdfs:label "Professor José Joaquim Cardoso de Mello Neto (pjj)"@fr , "Professor José Joaquim Cardoso de Mello Neto (pjj)"@en .
+
+				<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-sppim> a knora-base:ListNode ;
+					knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList> ;
+					knora-base:listNodeName "sppim" ;
+					knora-base:listNodePosition 2 ;
+					rdfs:label "Professora Iracema Marques da Silva (pim)"@fr , "Professora Iracema Marques da Silva (pim)"@en .
+
+				<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-sppji> a knora-base:ListNode ;
+					knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList> ;
+					knora-base:listNodeName "sppji" ;
+					knora-base:listNodePosition 3 ;
+					rdfs:label "Jardim Irene III (pji)"@fr , "Jardim Irene III (pji)"@en .
+					
+				<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-sppmc> a knora-base:ListNode ;
+					knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList> ;
+					knora-base:listNodeName "sppmc" ;
+					knora-base:listNodePosition 4 ;
+					rdfs:label "Professora Maria Rita de Cassia Pinheiro Simões Braga (pmc)"@fr , "Professora Maria Rita de Cassia Pinheiro Simões Braga (pmc)"@en .
+
+				<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-sppcl> a knora-base:ListNode ;
+					knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList> ;
+					knora-base:listNodeName "sppcl" ;
+					knora-base:listNodePosition 5 ;
+					rdfs:label "Campo Limpo III (pcl)"@fr , "Campo Limpo III (pcl)"@en .
+					
+				<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-spptn> a knora-base:ListNode ;
+					knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList> ;
+					knora-base:listNodeName "spptn" ;
+					knora-base:listNodePosition 6 ;
+					rdfs:label "Professor Tenente Ariston de Oliveira (ptn)"@fr , "Professor Tenente Ariston de Oliveira (ptn)"@en .
+
+				<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-sprun> a knora-base:ListNode ;
+					knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList> ;
+					knora-base:listNodeName "sprun" ;
+					knora-base:listNodePosition 7 ;
+					rdfs:label "Colégio UNASP (run)"@fr , "Colégio UNASP (run)"@en .
+
+				<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-sppcq> a knora-base:ListNode ;
+					knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList> ;
+					knora-base:listNodeName "sppcq" ;
+					knora-base:listNodePosition 8 ;
+					rdfs:label "Colégio Conquista (pcq)"@fr , "Colégio Conquista (pcq)"@en .
+
+				<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-sppcr> a knora-base:ListNode ;
+					knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList> ;
+					knora-base:listNodeName "sppcr" ;
+					knora-base:listNodePosition 9 ;
+					rdfs:label "Colégio Renovação (pcr)"@fr , "Colégio Renovação (pcr)"@en .
+					
+				<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-sppee> a knora-base:ListNode ;
+					knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList> ;
+					knora-base:listNodeName "sppee" ;
+					knora-base:listNodePosition 10 ;
+					rdfs:label "Externato Elvira Ramos (pee)"@fr , "Externato Elvira Ramos (pee)"@en .
+
+				<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-sppis> a knora-base:ListNode ;
+					knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList> ;
+					knora-base:listNodeName "sppis" ;
+					knora-base:listNodePosition 11 ;
+					rdfs:label "Isabel a Redentora (pis)"@fr , "Isabel a Redentora (pis)"@en .
+
+				<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-sprcf> a knora-base:ListNode ;
+					knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList> ;
+					knora-base:listNodeName "sprcf" ;
+					knora-base:listNodePosition 12 ;
+					rdfs:label "Escola Adventista de Campo de Fora (rcf)"@fr , "Escola Adventista de Campo de Fora (rcf)"@en .
+
+				<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-sprsv> a knora-base:ListNode ;
+					knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList> ;
+					knora-base:listNodeName "sprsv" ;
+					knora-base:listNodePosition 13 ;
+					rdfs:label "Escola São Vicente de Paulo (rsv)"@fr , "Escola São Vicente de Paulo (rsv)"@en .
+					
+				<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-sppcz> a knora-base:ListNode ;
+					knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList> ;
+					knora-base:listNodeName "sppcz" ;
+					knora-base:listNodePosition 14 ;
+					rdfs:label "Colégio Ciqueira Cézar (pcz)"@fr , "Colégio Ciqueira Cézar (pcz)"@en .
+					
+				<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-sppcs> a knora-base:ListNode ;
+					knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList> ;
+					knora-base:listNodeName "sppcs" ;
+					knora-base:listNodePosition 15 ;
+					rdfs:label "Professora Carolina Cintra da Silveira (pcs)"@fr , "Professora Carolina Cintra da Silveira (pcs)"@en .
+
+				<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-sprtw> a knora-base:ListNode ;
+					knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList> ;
+					knora-base:listNodeName "sprtw" ;
+					knora-base:listNodePosition 16 ;
+					rdfs:label "Escola Adventista Thiago White (rtw)"@fr , "Escola Adventista Thiago White (rtw)"@en .
+
+		<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-regionNE> a knora-base:ListNode ;
+			knora-base:listNodeName "regionNE" ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList> ;
+			knora-base:listNodePosition 1 ;
+			rdfs:label "Région Nord-Est"@fr , "North-Eastern Region"@en ;
+			knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-Maranhao> .
+
+			<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-Maranhao> a knora-base:ListNode ;
+				knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList> ;
+				knora-base:listNodeName "Maranhao" ;
+				knora-base:listNodePosition 0 ;
+				rdfs:label "Maranhão"@fr , "Maranhão"@en ;
+				knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-tribepit> ,
+										<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-triberit> .
+										
+				<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-tribepit> a knora-base:ListNode ;
+					knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList> ;
+					knora-base:listNodeName "tribepit" ;
+					knora-base:listNodePosition 0 ;
+					rdfs:label "Tribu Indienne (pit)"@fr , "Indian Tribe (pit)"@en .
+					
+				<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-triberit> a knora-base:ListNode ;
+					knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList> ;
+					knora-base:listNodeName "triberit" ;
+					knora-base:listNodePosition 1 ;
+					rdfs:label "Tribu Indienne (rit)"@fr , "Indian Tribe (rit)"@en .
 
 ### InstructionOriginalList
 
@@ -2720,7 +2944,9 @@
 		<http://rdfh.ch/lists/0105/drawings-gods-2016-list-InstructionOriginalList-switzerland1> ,
 		<http://rdfh.ch/lists/0105/drawings-gods-2016-list-InstructionOriginalList-switzerland2> ,
 		<http://rdfh.ch/lists/0105/drawings-gods-2016-list-InstructionOriginalList-switzerland3> ,
-		<http://rdfh.ch/lists/0105/drawings-gods-2016-list-InstructionOriginalList-usa> .
+		<http://rdfh.ch/lists/0105/drawings-gods-2016-list-InstructionOriginalList-usa> ,
+		<http://rdfh.ch/lists/0105/drawings-gods-2016-list-InstructionOriginalList-brazil1> ,
+		<http://rdfh.ch/lists/0105/drawings-gods-2016-list-InstructionOriginalList-brazil2> .
 
 	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-InstructionOriginalList-iran1> a knora-base:ListNode ;
 		knora-base:listNodeName "iran1" ;
@@ -2794,6 +3020,17 @@
 		knora-base:listNodePosition 11 ;
 		rdfs:label "(USor) Please use this piece of paper and the pencils, crayons, and markers to draw a picture of god. There is no right or wrong way to draw the picture, just draw what you think god looks like." .
 
+	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-InstructionOriginalList-brazil1> a knora-base:ListNode ;
+		knora-base:listNodeName "brazil1" ;
+		knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-InstructionOriginalList> ;
+		knora-base:listNodePosition 12 ;
+		rdfs:label "(BR1or) Alguma vez você já ouviu a palavra deus ? Feche seus olhos, imaginer deus e desenhe." .
+
+	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-InstructionOriginalList-brazil2> a knora-base:ListNode ;
+		knora-base:listNodeName "brazil2" ;
+		knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-InstructionOriginalList> ;
+		knora-base:listNodePosition 13 ;
+		rdfs:label "(BR2or) Traduzido oralmente na língua da tribo indígena: Alguma vez você já ouviu a palavra deus ? Feche seus olhos, imaginer deus e desenhe." .
 
 ###   EthnicityList
 
@@ -2805,7 +3042,8 @@
 	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-EthnicityList-buryat> ,
 	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-EthnicityList-khaschhetri> ,
 	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-EthnicityList-newar> ,
-	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-EthnicityList-tamang> .
+	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-EthnicityList-tamang> ,
+	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-EthnicityList-indiantribe> .
 
 	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-EthnicityList--> a knora-base:ListNode ;
 		knora-base:listNodeName "-" ;
@@ -2836,6 +3074,13 @@
 		knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-EthnicityList> ;
 		knora-base:listNodePosition 4 ;
 		rdfs:label "Tamang"@fr , "Tamang"@en .
+		
+	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-EthnicityList-indiantribe> a knora-base:ListNode ;
+		knora-base:listNodeName "indiantribe" ;
+		knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-EthnicityList> ;
+		knora-base:listNodePosition 5 ;
+		rdfs:label "Tribu indienne"@fr , "Indian tribe"@en .
+
 
 
 ###   NationalityList
@@ -2846,6 +3091,7 @@
 	rdfs:label "Nationalité (liste)"@fr , "Nationality (list)"@en ;
 	knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-NationalityList--> ,
 	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-NationalityList-american> ,
+	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-NationalityList-brazilian> ,
 	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-NationalityList-dutch> ,
 	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-NationalityList-greek> ,
 	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-NationalityList-iranian> ,
@@ -2866,53 +3112,59 @@
 		knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-NationalityList> ;
 		knora-base:listNodePosition 1 ;
 		rdfs:label "Américain"@fr , "American"@en .
+		
+	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-NationalityList-brazilian> a knora-base:ListNode ;
+		knora-base:listNodeName "brazilian" ;
+		knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-NationalityList> ;
+		knora-base:listNodePosition 2 ;
+		rdfs:label "Brésilien"@fr , "Brazilian"@en .
 
 	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-NationalityList-dutch> a knora-base:ListNode ;
 		knora-base:listNodeName "dutch" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-NationalityList> ;
-		knora-base:listNodePosition 2 ;
+		knora-base:listNodePosition 3 ;
 		rdfs:label "Néerlandais "@fr , "Dutch"@en .
 
 	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-NationalityList-greek> a knora-base:ListNode ;
 		knora-base:listNodeName "greek" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-NationalityList> ;
-		knora-base:listNodePosition 3 ;
+		knora-base:listNodePosition 4 ;
 		rdfs:label "Grec"@fr , "Greek"@en .
 
 	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-NationalityList-iranian> a knora-base:ListNode ;
 		knora-base:listNodeName "iranian" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-NationalityList> ;
-		knora-base:listNodePosition 4 ;
+		knora-base:listNodePosition 5 ;
 		rdfs:label "Iranien"@fr , "Iranian"@en .
 
 	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-NationalityList-japanese> a knora-base:ListNode ;
 		knora-base:listNodeName "japanese" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-NationalityList> ;
-		knora-base:listNodePosition 5 ;
+		knora-base:listNodePosition 6 ;
 		rdfs:label "Japonais"@fr , "Japanese"@en .
 
 	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-NationalityList-nepalese> a knora-base:ListNode ;
 		knora-base:listNodeName "nepalese" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-NationalityList> ;
-		knora-base:listNodePosition 6 ;
+		knora-base:listNodePosition 7 ;
 		rdfs:label "Népalais"@fr , "Nepalese"@en .
 
 	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-NationalityList-romanian> a knora-base:ListNode ;
 		knora-base:listNodeName "romanian" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-NationalityList> ;
-		knora-base:listNodePosition 7 ;
+		knora-base:listNodePosition 8 ;
 		rdfs:label "Roumain"@fr , "Romanian"@en .
 
 	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-NationalityList-russian> a knora-base:ListNode ;
 		knora-base:listNodeName "russian" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-NationalityList> ;
-		knora-base:listNodePosition 8 ;
+		knora-base:listNodePosition 9 ;
 		rdfs:label "Russe"@fr , "Russian"@en .
 
 	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-NationalityList-swiss> a knora-base:ListNode ;
 		knora-base:listNodeName "swiss" ;
 		knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-NationalityList> ;
-		knora-base:listNodePosition 9 ;
+		knora-base:listNodePosition 10 ;
 		rdfs:label "Suisse"@fr , "Swiss"@en .
 
 ###    ReligiousIdentityHList
@@ -3109,7 +3361,8 @@
 	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-StorageList-RU> ,
 	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-StorageList-IR> ,
 	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-StorageList-US> ,
-	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-StorageList-NP> .
+	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-StorageList-NP> ,
+	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-StorageList-BR> .
 
 	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-StorageList-CH> a knora-base:ListNode ;
 		knora-base:listNodeName "CH" ;
@@ -3713,6 +3966,20 @@
 				knora-base:listNodeName "NP1616PAV0101" ;
 				knora-base:listNodePosition 1 ;
 				rdfs:label "NP1616PAV0101"@fr , "NP1616PAV0101"@en .
+				
+	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-StorageList-BR> a knora-base:ListNode ;
+		knora-base:listNodeName "BR" ;
+		knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-StorageList> ;
+		knora-base:listNodePosition 7 ;
+		rdfs:label "BR"@fr , "BR"@en ;
+		knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-StorageList-BR13-15> .
+
+		<http://rdfh.ch/lists/0105/drawings-gods-2016-list-StorageList-BR13-15> a knora-base:ListNode ;
+			knora-base:listNodeName "BR13-15>" ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-StorageList> ;
+			knora-base:listNodePosition 0 ;
+			rdfs:label "BR13-15>"@fr , "BR13-15>"@en .
+
 
 ##########################
 ###Questionnaires
@@ -4526,7 +4793,8 @@
 									<http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-netherlands> ,
 									<http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-romania> ,
 									<http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-russia> ,
-									<http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-usa> .
+									<http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-usa> ,
+									<http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-brazil> .
 
 	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-switzerland> a knora-base:ListNode ;
 		knora-base:listNodeName "switzerland" ;
@@ -5184,6 +5452,40 @@
 				knora-base:listNodeName "tiffin" ;
 				knora-base:listNodePosition 0 ;
 				rdfs:label "Tiffin"@fr , "Tiffin"@en .
+				
+	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-brazil> a knora-base:ListNode ;
+		knora-base:listNodeName "brazil" ;
+		knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList> ;
+		knora-base:listNodePosition 10 ;
+		rdfs:label "Brésil"@fr , "Brazil"@en ;
+		knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-regionSE> ,
+								<http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-regionNE> .
+
+		<http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-regionSE> a knora-base:ListNode ;
+			knora-base:listNodeName "regionSE" ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList> ;
+			knora-base:listNodePosition 0 ;
+			rdfs:label "Région Sud-Est"@fr , "South-Eastern Region"@en ;
+			knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-SaoPaolo> .
+
+			<http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-SaoPaolo> a knora-base:ListNode ;
+				knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList> ;
+				knora-base:listNodeName "SaoPaolo" ;
+				knora-base:listNodePosition 0 ;
+				rdfs:label "São Paulo"@fr , "São Paulo"@en .
+
+		<http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-regionNE> a knora-base:ListNode ;
+			knora-base:listNodeName "regionNE" ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList> ;
+			knora-base:listNodePosition 1 ;
+			rdfs:label "Région Nord-Est"@fr , "North-Eastern Region"@en ;
+			knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-Maranhao> .
+
+			<http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-Maranhao> a knora-base:ListNode ;
+				knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList> ;
+				knora-base:listNodeName "Maranhao" ;
+				knora-base:listNodePosition 0 ;
+				rdfs:label "Maranhão"@fr , "Maranhão"@en .
 
 ###    DrawingPartsHList
 <http://rdfh.ch/lists/0105/drawings-gods-2016-list-DrawingPartsHList> a knora-base:ListNode ;
