@@ -3974,7 +3974,7 @@
 		rdfs:label "BR"@fr , "BR"@en ;
 		knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-StorageList-BR13-15> .
 
-		<http://rdfh.ch/lists/0105/drawings-gods-2016-list-StorageList-BR13-15>> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/0105/drawings-gods-2016-list-StorageList-BR13-15> a knora-base:ListNode ;
 			knora-base:listNodeName "BR13-15>" ;
 			knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-StorageList> ;
 			knora-base:listNodePosition 0 ;
