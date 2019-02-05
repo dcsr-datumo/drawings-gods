@@ -2657,7 +2657,6 @@
 :hasQuestionnaireUnavailable rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf knora-base:hasValue ;
                 knora-base:objectClassConstraint knora-base:BooleanValue ;
-              	knora-base:subjectClassConstraint :QualityData ;
                 rdfs:label "Questionnaire indisponible"@fr ,
                      	"Questionnaire unavailable"@en ;
 			   	rdfs:comment "Questionnaire indisponible."@fr ,
