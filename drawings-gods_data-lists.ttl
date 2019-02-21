@@ -15,6 +15,7 @@
 ###   AdditionalTaskList
 <http://rdfh.ch/lists/0105/drawings-gods-2016-list-AdditionalTaskList> a knora-base:ListNode ;
 	knora-base:isRootNode true ;
+	knora-base:attachedToProject <http://rdfh.ch/projects/0105> ;
 	rdfs:comment "Liste de choix pour les tâches additionnelles"@fr ;
 	rdfs:label "Tâches additionnelles (liste)"@fr , "Additional tasks (list)"@en ;
 	knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-AdditionalTaskList--> ,
@@ -49,6 +50,7 @@
 ###   CommentAuthorList
 <http://rdfh.ch/lists/0105/drawings-gods-2016-list-CommentAuthorList> a knora-base:ListNode ;
 	knora-base:isRootNode true ;
+	knora-base:attachedToProject <http://rdfh.ch/projects/0105> ;
 	rdfs:comment "Liste de choix pour l'auteur du commentaire sur le verso"@fr ;
 	rdfs:label "Auteur du commentaire sur le verso (liste)"@fr , "Author of comment on verso (list)"@en ;
 	knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-CommentAuthorList-nocomment> ,
@@ -104,6 +106,7 @@
 ###   DescriptionAuthorList
 <http://rdfh.ch/lists/0105/drawings-gods-2016-list-DescriptionAuthorList> a knora-base:ListNode ;
 	knora-base:isRootNode true ;
+	knora-base:attachedToProject <http://rdfh.ch/projects/0105> ;
 	rdfs:comment "Liste de choix pour l'auteur de la description et de la restitution de la consigne sur le verso"@fr ;
 	rdfs:label "Auteur de la description et de la restitution de la consigne sur le verso (liste)"@fr , "Author of description and of the task restitution on verso (list)"@en ;
 	knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-DescriptionAuthorList-child> ,
@@ -159,6 +162,7 @@
 ###    GlobalLocationHList
 <http://rdfh.ch/lists/0105/drawings-gods-2016-list-GlobalLocationHList> a knora-base:ListNode ;
 	knora-base:isRootNode true ;
+	knora-base:attachedToProject <http://rdfh.ch/projects/0105> ;
 	rdfs:comment "Liste hiérarchique de choix pour la localisation du site niveau pays et région"@fr ;
 	rdfs:label "Localisation niveau pays et région (liste hiérarchique)"@fr , "Location, level country and region (hierarchical list)"@en ;
 	knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-GlobalLocationHList-switzerland> ,
@@ -431,6 +435,7 @@
 ###   OrientationList
 <http://rdfh.ch/lists/0105/drawings-gods-2016-list-OrientationList> a knora-base:ListNode ;
 	knora-base:isRootNode true ;
+	knora-base:attachedToProject <http://rdfh.ch/projects/0105> ;
 	rdfs:comment "Liste de choix pour l'orientation du dessin"@fr ;
 	rdfs:label "Orientation (liste)"@fr , "Orientation (list)"@en ;
 	knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-OrientationList-portrait> ,
@@ -453,6 +458,7 @@
 
 <http://rdfh.ch/lists/0105/drawings-gods-2016-list-DrawingTypeList> a knora-base:ListNode ;
 	knora-base:isRootNode true ;
+	knora-base:attachedToProject <http://rdfh.ch/projects/0105> ;
 	rdfs:comment "Liste de choix pour le type de dessin"@fr ;
 	rdfs:label "Type de dessin (liste)"@fr , "Type of drawing (list)"@en ;
 	knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-DrawingTypeList-god> ,
@@ -482,6 +488,7 @@
 
 <http://rdfh.ch/lists/0105/drawings-gods-2016-list-GenderList> a knora-base:ListNode ;
 	knora-base:isRootNode true ;
+	knora-base:attachedToProject <http://rdfh.ch/projects/0105> ;
 	rdfs:comment "Liste de choix pour le genre"@fr ;
 	rdfs:label "Genre (liste)"@fr , "Gender (list)"@en ;
 	knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-GenderList-male> ,
@@ -511,6 +518,7 @@
 
 <http://rdfh.ch/lists/0105/drawings-gods-2016-list-GenderListSchool> a knora-base:ListNode ;
 	knora-base:isRootNode true ;
+	knora-base:attachedToProject <http://rdfh.ch/projects/0105> ;
 	rdfs:comment "Liste de choix pour le genre"@fr ;
 	rdfs:label "Genre (liste)"@fr , "Gender (list)"@en ;
 	knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-GenderListSchool-male> ,
@@ -547,6 +555,7 @@
 
 <http://rdfh.ch/lists/0105/drawings-gods-2016-list-CollectorMainList> a knora-base:ListNode ;
 	knora-base:isRootNode true ;
+	knora-base:attachedToProject <http://rdfh.ch/projects/0105> ;
 	rdfs:comment "Liste de choix pour le collecteur principal"@fr ;
 	rdfs:label "Collecteur principal (liste)"@fr , "Main Collector (list)"@en ;
 	knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-CollectorMainList-Kagata> ,
@@ -618,6 +627,7 @@
 
 <http://rdfh.ch/lists/0105/drawings-gods-2016-list-CollSiteList> a knora-base:ListNode ;
 	knora-base:isRootNode true ;
+	knora-base:attachedToProject <http://rdfh.ch/projects/0105> ;
 	rdfs:comment "Liste de choix pour les institutions et les écoles"@fr ;
 	rdfs:label "Site de collecte (liste)"@fr , "Place of collect (list)"@en ;
 	knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-CollSiteList-institution> ,
@@ -696,6 +706,7 @@
 
 <http://rdfh.ch/lists/0105/drawings-gods-2016-list-InstructionCodeList> a knora-base:ListNode ;
 	knora-base:isRootNode true ;
+	knora-base:attachedToProject <http://rdfh.ch/projects/0105> ;
 	rdfs:comment "Liste de choix pour le type de consigne"@fr ;
 	rdfs:label "Type de consigne (liste)"@fr , "Task type (list)"@en ;
 	knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-InstructionCodeList--> ,
@@ -740,6 +751,7 @@
 
 <http://rdfh.ch/lists/0105/drawings-gods-2016-list-InstructionEnList> a knora-base:ListNode ;
 	knora-base:isRootNode true ;
+	knora-base:attachedToProject <http://rdfh.ch/projects/0105> ;
 	rdfs:comment "Liste de choix pour la consigne en Anglais"@fr ;
 	rdfs:label "Consigne Anglais (liste)"@fr , "Task English (list)"@en ;
 	knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-InstructionEnList-iran1> ,
@@ -847,6 +859,7 @@
 
 <http://rdfh.ch/lists/0105/drawings-gods-2016-list-InstructionFrList> a knora-base:ListNode ;
 	knora-base:isRootNode true ;
+	knora-base:attachedToProject <http://rdfh.ch/projects/0105> ;
 	rdfs:comment "Liste de choix pour la consigne"@fr ;
 	rdfs:label "Consigne Anglais (liste)"@fr , "Task English (list)"@en ;
 	knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-InstructionFrList-iran1> ,
@@ -952,6 +965,7 @@
 ###   LanguageList
 <http://rdfh.ch/lists/0105/drawings-gods-2016-list-LanguageList> a knora-base:ListNode ;
 	knora-base:isRootNode true ;
+	knora-base:attachedToProject <http://rdfh.ch/projects/0105> ;
 	rdfs:comment "Liste de choix pour les langues"@fr ;
 	rdfs:label "Langues (liste)"@fr , "Languages (list)"@en ;
 	knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-LanguageList-NotAsked> ,
@@ -1063,6 +1077,7 @@
 ###    ScannerBrandList
 <http://rdfh.ch/lists/0105/drawings-gods-2016-list-ScannerBrandList> a knora-base:ListNode ;
 	knora-base:isRootNode true ;
+	knora-base:attachedToProject <http://rdfh.ch/projects/0105> ;
 	rdfs:comment "Liste des références de scanner"@fr ;
 	rdfs:label "Liste des références de scanner"@fr , "Scanners references list"@en ;
 	knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-ScannerBrandList-Epson> ,
@@ -1104,6 +1119,7 @@
 ###    ScannerSettingsList
 <http://rdfh.ch/lists/0105/drawings-gods-2016-list-ScannerSettingsList> a knora-base:ListNode ;
 	knora-base:isRootNode true ;
+	knora-base:attachedToProject <http://rdfh.ch/projects/0105> ;
 	rdfs:comment "Liste de contrôle de la conformité des numérisation"@fr ;
 	rdfs:label "Images conformes (numérisation)"@fr , "Images fit to standard (digitisation)"@en ;
 	knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-ScannerSettingsList-yes> ,
@@ -1139,6 +1155,7 @@
 ###    SchoolHList
 <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList> a knora-base:ListNode ;
 	knora-base:isRootNode true ;
+	knora-base:attachedToProject <http://rdfh.ch/projects/0105> ;
 	rdfs:comment "Liste hiérarchique de choix pour la localisation du site et la nationalité des participants"@fr ;
 	rdfs:label "Localisation (liste hiérarchique)"@fr , "Location (hierarchical list)"@en ;
 	knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-switzerland> ,
@@ -2931,6 +2948,7 @@
 
 <http://rdfh.ch/lists/0105/drawings-gods-2016-list-InstructionOriginalList> a knora-base:ListNode ;
 	knora-base:isRootNode true ;
+	knora-base:attachedToProject <http://rdfh.ch/projects/0105> ;
 	rdfs:comment "Liste de choix pour la consigne"@fr ;
 	rdfs:label "Consigne en langue originale (liste)"@fr , "Task in original language (list)"@en ;
 	knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-InstructionOriginalList-iran1> ,
@@ -3036,6 +3054,7 @@
 
 <http://rdfh.ch/lists/0105/drawings-gods-2016-list-EthnicityList> a knora-base:ListNode ;
 	knora-base:isRootNode true ;
+	knora-base:attachedToProject <http://rdfh.ch/projects/0105> ;
 	rdfs:comment "Liste de choix pour l'ethnicité"@fr ;
 	rdfs:label "Ethnicité (liste)"@fr , "Ethnicity (list)"@en ;
 	knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-EthnicityList--> ,
@@ -3087,6 +3106,7 @@
 
 <http://rdfh.ch/lists/0105/drawings-gods-2016-list-NationalityList> a knora-base:ListNode ;
 	knora-base:isRootNode true ;
+	knora-base:attachedToProject <http://rdfh.ch/projects/0105> ;
 	rdfs:comment "Liste de choix pour la nationalité"@fr ;
 	rdfs:label "Nationalité (liste)"@fr , "Nationality (list)"@en ;
 	knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-NationalityList--> ,
@@ -3171,6 +3191,7 @@
 
 <http://rdfh.ch/lists/0105/drawings-gods-2016-list-ReligiousIdentityHList> a knora-base:ListNode ;
 	knora-base:isRootNode true ;
+	knora-base:attachedToProject <http://rdfh.ch/projects/0105> ;
 	rdfs:comment "Liste hiérarchique de choix pour les religions (participants et institutions)"@fr ;
 	rdfs:label "Religion (liste hiérarchique)"@fr , "Religion (hierarchical list)"@en ;
 	knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-ReligiousIdentityHList-notasked> ,
@@ -3353,6 +3374,7 @@
 
 	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-StorageList> a knora-base:ListNode ;
 	knora-base:isRootNode true ;
+	knora-base:attachedToProject <http://rdfh.ch/projects/0105> ;
 	rdfs:comment "Liste de choix pour les classeurs physiques dans lesquels les images sont placées"@fr ;
 	rdfs:label "Stockage (liste)"@fr , "Storage (list)"@en ;
 	knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-StorageList-CH> ,
@@ -3990,6 +4012,7 @@
 
 <http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ> a knora-base:ListNode ;
 	knora-base:isRootNode true ;
+	knora-base:attachedToProject <http://rdfh.ch/projects/0105> ;
 	rdfs:comment "Liste de choix pour l'accord"@fr ;
 	rdfs:label "Accord (liste)"@fr , "Agreement (list)"@en ;
 	knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ-notasked> ,
@@ -4091,6 +4114,7 @@
 
 <http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedNumListQ> a knora-base:ListNode ;
 	knora-base:isRootNode true ;
+	knora-base:attachedToProject <http://rdfh.ch/projects/0105> ;
 	rdfs:comment "Liste de choix pour l'accord numérique"@fr ;
 	rdfs:label "Accord (liste)"@fr , "Agreement (list)"@en ;
 	knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedNumListQ--> ,
@@ -4174,6 +4198,7 @@
 ###   TranslatorList
 <http://rdfh.ch/lists/0105/drawings-gods-2016-list-TranslatorList> a knora-base:ListNode ;
 	knora-base:isRootNode true ;
+	knora-base:attachedToProject <http://rdfh.ch/projects/0105> ;
 	rdfs:comment "Liste de choix pour les traducteurs"@fr ;
 	rdfs:label "Traducteur (liste)"@fr , "Translator (list)"@en ;
 	knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-TranslatorList-PYB> ,
@@ -4257,6 +4282,7 @@
 ###   TimeRelatedListQ
 <http://rdfh.ch/lists/0105/drawings-gods-2016-list-TimeRelatedListQ> a knora-base:ListNode ;
 	knora-base:isRootNode true ;
+	knora-base:attachedToProject <http://rdfh.ch/projects/0105> ;
 	rdfs:comment "Liste de choix pour le temps"@fr ;
 	rdfs:label "Temps (liste)"@fr , "Time (list)"@en ;
 	knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-TimeRelatedListQ-notasked> ,
@@ -4391,6 +4417,7 @@
 
 <http://rdfh.ch/lists/0105/drawings-gods-2016-list-GodAgeListQ> a knora-base:ListNode ;
 	knora-base:isRootNode true ;
+	knora-base:attachedToProject <http://rdfh.ch/projects/0105> ;
 	rdfs:comment "Liste de choix pour référence possible de l'âge de(s) dieu(x)"@fr ;
 	rdfs:label "Age de dieu (liste)"@fr , "Age of god (list)"@en ;
 	knora-base:hasSubListNode 	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-GodAgeListQ-notasked> ,
@@ -4442,6 +4469,7 @@
 
 <http://rdfh.ch/lists/0105/drawings-gods-2016-list-GodRelListQ> a knora-base:ListNode ;
 	knora-base:isRootNode true ;
+	knora-base:attachedToProject <http://rdfh.ch/projects/0105> ;
 	rdfs:comment "Liste de choix pour référence possible à/aux dieu(x)"@fr ;
 	rdfs:label "Nom de dieu (liste)"@fr , "Name of god (list)"@en ;
 	knora-base:hasSubListNode 	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-GodRelListQ-notasked> ,
@@ -4508,6 +4536,7 @@
 
 <http://rdfh.ch/lists/0105/drawings-gods-2016-list-GodSexListQ> a knora-base:ListNode ;
 	knora-base:isRootNode true ;
+	knora-base:attachedToProject <http://rdfh.ch/projects/0105> ;
 	rdfs:comment "Liste de choix pour référence possible au sexe de(s) dieu(x)"@fr ;
 	rdfs:label "Genre de dieu (liste)"@fr , "Sex of god (list)"@en ;
 	knora-base:hasSubListNode 	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-GodSexListQ-notasked> ,
@@ -4566,6 +4595,7 @@
 
 <http://rdfh.ch/lists/0105/drawings-gods-2016-list-JapanNYListQ> a knora-base:ListNode ;
 	knora-base:isRootNode true ;
+	knora-base:attachedToProject <http://rdfh.ch/projects/0105> ;
 	rdfs:comment "Liste de choix pour les visites au temple au Japon pendant la fête de Nouvelle An"@fr ;
 	rdfs:label "Visite du temple au Japon pendant le Nouvel An (liste)"@fr , "Temple visit in Japan at New Year Eve (list)"@en ;
 	knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-JapanNYListQ-notasked> ,
@@ -4631,6 +4661,7 @@
 
 <http://rdfh.ch/lists/0105/drawings-gods-2016-list-JapanObjectListQ> a knora-base:ListNode ;
 	knora-base:isRootNode true ;
+	knora-base:attachedToProject <http://rdfh.ch/projects/0105> ;
 	rdfs:comment "Liste de choix pour l'objet de culte à la maison au Japon"@fr ;
 	rdfs:label "Objet de culte à la maison au Japon (liste)"@fr , "Religious object at home in Japan (list)"@en ;
 	knora-base:hasSubListNode 	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-JapanObjectListQ-notasked> ,
@@ -4691,6 +4722,7 @@
 
 <http://rdfh.ch/lists/0105/drawings-gods-2016-list-LocGodListQ> a knora-base:ListNode ;
 	knora-base:isRootNode true ;
+	knora-base:attachedToProject <http://rdfh.ch/projects/0105> ;
 	rdfs:comment "Liste de choix pour référence possible à la position de(s) dieu(x)"@fr ;
 	rdfs:label "Position de dieu (liste)"@fr , "Location of god (list)"@en ;
 	knora-base:hasSubListNode 	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-LocGodListQ-notasked> ,
@@ -4784,6 +4816,7 @@
 ###    VillageHList
 <http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList> a knora-base:ListNode ;
 	knora-base:isRootNode true ;
+	knora-base:attachedToProject <http://rdfh.ch/projects/0105> ;
 	rdfs:comment "Liste hiérarchique de choix pour la localisation du site au niveau village"@fr ;
 	rdfs:label "Location du site niveau village (hierarchical list)"@fr , "Localisation till village level (liste hiérarchique)"@en ;
 	knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-switzerland> ,
@@ -5490,6 +5523,7 @@
 ###    DrawingPartsHList
 <http://rdfh.ch/lists/0105/drawings-gods-2016-list-DrawingPartsHList> a knora-base:ListNode ;
 	knora-base:isRootNode true ;
+	knora-base:attachedToProject <http://rdfh.ch/projects/0105> ;
 	rdfs:comment "Liste hiérarchique de choix : les representations sont-elles composées d'un seul élément ou de multiples éléments"@fr ;
 	rdfs:label "Mots-clés: composition générale d'image"@fr , "Keywords: general composition of the drawing"@en ;
 	knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-DrawingPartsHList--> ,
@@ -5686,6 +5720,7 @@
 ###    FiguresHList
 <http://rdfh.ch/lists/0105/drawings-gods-2016-list-FiguresHList> a knora-base:ListNode ;
 	knora-base:isRootNode true ;
+	knora-base:attachedToProject <http://rdfh.ch/projects/0105> ;
 	rdfs:comment "Liste hiérarchique de choix pour les motifs principaux"@fr ;
 	rdfs:label "Mots-clés: figure ou motif principal (dieu)"@fr , "Keywords: main figure or motif (god)"@en ;
 	knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-FiguresHList--> ,
@@ -6803,6 +6838,7 @@
 ###    GodFunctionList
 <http://rdfh.ch/lists/0105/drawings-gods-2016-list-GodFunctionList> a knora-base:ListNode ;
 	knora-base:isRootNode true ;
+	knora-base:attachedToProject <http://rdfh.ch/projects/0105> ;
 	rdfs:comment "Liste de choix pour les fonctions de dieu"@fr ;
 	rdfs:label "Mots-clés: Fonction de dieu"@fr , "Keywords: Function of god"@en ;
 	knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-GodFunctionList--> ,
@@ -6999,6 +7035,7 @@
 ###    GodPositionList
 <http://rdfh.ch/lists/0105/drawings-gods-2016-list-GodPositionList> a knora-base:ListNode ;
 	knora-base:isRootNode true ;
+	knora-base:attachedToProject <http://rdfh.ch/projects/0105> ;
 	rdfs:comment "Liste hiérarchique de choix pour la position de dieu et la manière d'apparition"@fr ;
 	rdfs:label "Mots-clés: position de dieu (contexte immédiat)"@fr , "Keywords: position of god (immediate context)"@en ;
 	knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-GodPositionList--> ,
@@ -7188,6 +7225,7 @@
 ###    DrawingReligiousIdentityList
 <http://rdfh.ch/lists/0105/drawings-gods-2016-list-DrawingReligiousIdentityList> a knora-base:ListNode ;
 	knora-base:isRootNode true ;
+	knora-base:attachedToProject <http://rdfh.ch/projects/0105> ;
 	rdfs:comment "Liste hiérarchique de choix pour l'identité religieuse de l'image"@fr ;
 	rdfs:label "Identité religieuse du dessin"@fr , "Religious identity of the image"@en ;
 	knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-DrawingReligiousIdentityList-unclear> ,
@@ -7279,6 +7317,7 @@
 ### KeywordsHList
 <http://rdfh.ch/lists/0105/drawings-gods-2016-list-KeywordsHList> a knora-base:ListNode ;
 	knora-base:isRootNode true ;
+	knora-base:attachedToProject <http://rdfh.ch/projects/0105> ;
 	rdfs:comment "Mot-clés: contexte"@fr ;
 	rdfs:label "Mots-clés: contexte (général)"@fr , "Keywords: context (general)"@en ;
 	knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-KeywordsHList-celestial> ,
@@ -7699,6 +7738,7 @@
 ### KeywordsHListOther
 <http://rdfh.ch/lists/0105/drawings-gods-2016-list-KeywordsHListOther> a knora-base:ListNode ;
 	knora-base:isRootNode true ;
+	knora-base:attachedToProject <http://rdfh.ch/projects/0105> ;
 	rdfs:comment "Mot-clés: autre (ni figure principale, ni contexte)"@fr ;
 	rdfs:label "Mots-clés: autre (ni figure principale, ni contexte, ou les deux)"@fr , "Keywords: other (neither principal figure, nor context, or both)"@en ;
 	knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-KeywordsHListOther-celestial> ,
