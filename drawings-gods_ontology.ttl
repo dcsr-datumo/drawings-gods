@@ -22,7 +22,8 @@
 												dc:description """drawings-gods ontology aims at describing research material gathered within a project funded by the Swiss National Founds. Research materials include thousands drawings, data regarding the socio-cultural context of the producers, as well as questionnaires upon those drawings."""^^xsd:string ;
 												dc:rights "to be determined"@en ;
 												dc:title "Ontology design for the SNFS research project \"Drawings of gods\""^^xsd:string ;
-												owl:versionInfo "1.0."^^xsd:string .
+												owl:versionInfo "1.0."^^xsd:string ;
+												knora-base:attachedToProject <http://rdfh.ch/projects/0105> .
 
 
 #################################################################
@@ -337,8 +338,7 @@
            		"Code of the participant"@en ;
 		 	rdfs:comment "ID unique pour chaque personne."@fr ,
 				"ID for each person."@en ;
-			salsah-gui:guiElement salsah-gui:SimpleText ;
-	        salsah-gui:guiOrder "1"^^xsd:integer .
+			salsah-gui:guiElement salsah-gui:SimpleText .
 
 
 ###  http://www.knora.org/ontology/0105/drawings-gods#hasCodeRecto
@@ -422,7 +422,6 @@
            				"Type of site"@en ;
 		   			rdfs:comment "Type de site (institution laïque, religieuse ou événement)."@fr ,
 						"Type of site (public, religious school or event)"@en ;
-                   salsah-gui:guiOrder "5"^^xsd:integer ;
                    salsah-gui:guiElement salsah-gui:Pulldown ;
                    salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-CollSiteList>" .
 
@@ -436,8 +435,7 @@
            	"Collectors in situ"@en ;
 		   rdfs:comment "Collecteurs sur place."@fr ,
 						"Collectors in situ."@en ;
-		   salsah-gui:guiElement salsah-gui:SimpleText ;
-      	   salsah-gui:guiOrder "5"^^xsd:integer .
+		   salsah-gui:guiElement salsah-gui:SimpleText .
 
 
 ###  http://www.knora.org/ontology/0105/drawings-gods#hasCollectorMain
@@ -1819,8 +1817,7 @@
 			  	 rdfs:comment "Cote du dossier dans lequel le dessin physique est archivé."@fr ,
 					 	"Code of the file where the physical image is stored."@en ;
 				 salsah-gui:guiElement salsah-gui:List ;
-				 salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-StorageList>" ;
-                 salsah-gui:guiOrder "1"^^xsd:integer .
+				 salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-StorageList>" .
 
 
 ###  http://www.knora.org/ontology/0105/drawings-gods#hasQualityComment
@@ -1833,7 +1830,6 @@
 			   	rdfs:comment "Commentaire interne (contrôle qualité)"@fr ,
 					 	"Internal comment (quality control)"@en ;
 		         salsah-gui:guiElement salsah-gui:Textarea ;
-		         salsah-gui:guiOrder "22"^^xsd:integer ;
 				 salsah-gui:guiAttribute "width=95%" ,
 		                        		"rows=10" .
 
@@ -1846,7 +1842,6 @@
                      	"Description is absent"@en ;
 			   	rdfs:comment "Description est absente."@fr ,
 					 	"Description is absent."@en ;
-				salsah-gui:guiOrder "10"^^xsd:integer ;
        		  	salsah-gui:guiElement salsah-gui:Checkbox .
 
 
@@ -1859,7 +1854,6 @@
                      	"Questionaire complete (for questionnaires on many pages)"@en ;
 			   rdfs:comment "Toutes les pages du questionnaire sont uploadées."@fr ,
 					 	"All pages of the questionnaire have been uploaded."@en ;
-			   salsah-gui:guiOrder "14"^^xsd:integer ;
        		   salsah-gui:guiElement salsah-gui:Checkbox .
 
 
@@ -1872,7 +1866,6 @@
                      	"Questionnaire transcribed"@en ;
 			  rdfs:comment "Le questionnaire est transcrit."@fr ,
 					 	"Questionnaire data has been entered."@en ;
-			  salsah-gui:guiOrder "15"^^xsd:integer ;
        		  salsah-gui:guiElement salsah-gui:Checkbox .
 
 
@@ -1886,7 +1879,6 @@
 			   			  rdfs:comment "Commentaire interne (questionnaire standardisé)"@fr ,
 					 		"Internal comment (standardized questionnaire)"@en ;
 				         salsah-gui:guiElement salsah-gui:Textarea ;
-				         salsah-gui:guiOrder "2"^^xsd:integer ;
 						 salsah-gui:guiAttribute "width=95%" ,
 				                        		"rows=10" .
 
@@ -1900,7 +1892,6 @@
 			   			  rdfs:comment "Commentaire interne (page de questionnaire standardisé)"@fr ,
 					 		"Internal comment (standardized questionnaire page)"@en ;
 				         salsah-gui:guiElement salsah-gui:Textarea ;
-				         salsah-gui:guiOrder "3"^^xsd:integer ;
 						 salsah-gui:guiAttribute "width=95%" ,
 				                        		"rows=10" .
 
@@ -1924,7 +1915,6 @@
                      						"Language (if the questionnaire is in original language)"@en ;
 			   		   				   rdfs:comment "Langue du questionnaire standardisé, si le questionnaire standardisé est en langue originale."@fr ,
 					 						"Original language of standardized questionnaire, if the questionnaire is in original language."@en ;
-					 				   salsah-gui:guiOrder "2"^^xsd:integer ;
 						               salsah-gui:guiElement salsah-gui:Pulldown ;
 					          	       salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-LanguageList>" .
 
@@ -1939,7 +1929,6 @@
                      		"Page number of standardized questionnaire"@en ;
 			   		   	 rdfs:comment "Numéro de page du questionnaire standardisé."@fr ,
 					 		"Page number of standardized questionnaire."@en ;
-					 	 salsah-gui:guiOrder "1"^^xsd:integer ;
 		                 salsah-gui:guiElement salsah-gui:Spinbox ;
 		                 salsah-gui:guiAttribute "min=0" ,
 		                                   "max=-1" .
@@ -1993,7 +1982,6 @@
 			   			  		rdfs:comment "Commentaire interne (page de questionnaire individuel)"@fr ,
 					 				"Internal comment (individual questionnaire page)"@en ;
 				         salsah-gui:guiElement salsah-gui:Textarea ;
-				         salsah-gui:guiOrder "3"^^xsd:integer ;
 						 salsah-gui:guiAttribute "width=95%" ,
 				                        		"rows=10" .
 
@@ -2019,7 +2007,6 @@
                      		"Page number of individual questionnaire"@en ;
 			   		   	 rdfs:comment "Numéro de page du questionnaire individuel."@fr ,
 					 		"Page number of individual questionnaire."@en ;
-					 	 salsah-gui:guiOrder "1"^^xsd:integer ;
 		                 salsah-gui:guiElement salsah-gui:Spinbox ;
 		                 salsah-gui:guiAttribute "min=0" ,
 		                                   "max=-1" .
@@ -2033,7 +2020,6 @@
                      		"Page number of the drawing in the individual questionnaire"@en ;
 			   		   	 rdfs:comment "Numéro de page du dessin dans le questionnaire individuel."@fr ,
 					 		"Page number of the drawing in the individual questionnaire."@en ;
-					 	 salsah-gui:guiOrder "26"^^xsd:integer ;
 		                 salsah-gui:guiElement salsah-gui:Spinbox ;
 		                 salsah-gui:guiAttribute "min=0" ,
 		                                   "max=-1" .
@@ -2048,7 +2034,6 @@
                      		"Page number of verso in individual questionnaire"@en ;
 			   		   	 rdfs:comment "Numéro de page du verso dans le questionnaire individuel."@fr ,
 					 		"Page number of verso in individual questionnaire."@en ;
-					 	 salsah-gui:guiOrder "26"^^xsd:integer ;
 		                 salsah-gui:guiElement salsah-gui:Spinbox ;
 		                 salsah-gui:guiAttribute "min=0" ,
 		                                   "max=-1" .
@@ -2076,7 +2061,6 @@
                      	"Recto ready for computer analysis"@en ;
 			   	rdfs:comment "Recto prêt pour les analyses informatiques (correspond aux standards définis pour le projet)."@fr ,
 					 	"Recto ready for computer analysis (fits the project's standard)."@en ;
-				salsah-gui:guiOrder "2"^^xsd:integer ;
        		    salsah-gui:guiElement salsah-gui:Checkbox .
 
 
@@ -2089,7 +2073,6 @@
                      	"Recto cleaned up (=image has been modified)"@en ;
 			  rdfs:comment "Le recto a été nettoyé (=image modifiée)."@fr ,
 					 	"Recto cleaned up (=image has been modified)."@en ;
-			  salsah-gui:guiOrder "5"^^xsd:integer ;
        		  salsah-gui:guiElement salsah-gui:Checkbox .
 
 
@@ -2102,7 +2085,6 @@
                      	"Recto unavailable (limited access rights)"@en ;
 			  	 rdfs:comment "Recto indisponible (droits d'accès limités)."@fr ,
 					 	"Recto unavailable (limited access rights)."@en ;
-				 salsah-gui:guiOrder "3"^^xsd:integer ;
        		     salsah-gui:guiElement salsah-gui:Checkbox .
 
 
@@ -2115,7 +2097,6 @@
                      	"Recto to be cleaned  (=list to do)"@en ;
 			  	  rdfs:comment "Le recto contient des informations qui doivent être effacées : il doit être nettoyé et chargé à nouveau."@fr ,
 					 	"The recto contains information that has to be cleaned, i.e. it must be cleaned and reuploaded."@en ;
-				  salsah-gui:guiOrder "4"^^xsd:integer ;
        		      salsah-gui:guiElement salsah-gui:Checkbox .
 
 
@@ -2140,8 +2121,7 @@
                      "Relevant instructions"@en ;
           rdfs:comment "Campagne de collecte fondée sur des instructions données."@fr ,
 					 "Research wave based on a given set of instructions."@en ;
-          salsah-gui:guiElement salsah-gui:Searchbox ;
-          salsah-gui:guiOrder "6"^^xsd:integer .
+          salsah-gui:guiElement salsah-gui:Searchbox .
 
 
 ###  http://www.knora.org/ontology/0105/drawings-gods#reliesUponValue
@@ -2164,7 +2144,6 @@
                      "Brand of the scanner "@en ;
           		 rdfs:comment "Marque du scanner utilisé pour scanner les dessins."@fr ,
 					 "Brand of the scanner used to scan the drawings."@en;
-                 salsah-gui:guiOrder "15"^^xsd:integer ;
                  salsah-gui:guiElement salsah-gui:List ;
                  salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-ScannerBrandList>" .
 
@@ -2177,7 +2156,6 @@
                      "Standard scanner settings"@en ;
           		 rdfs:comment "Est-ce que les paramètres standards du scanner ont bien été respectés ? (300dpi, tiff, colour - millions, A4)"@fr ,
 					 "Are the standard scanner settings respected ? (300dpi, tiff, colour - millions, A4)"@en;
-                 salsah-gui:guiOrder "14"^^xsd:integer ;
                  salsah-gui:guiElement salsah-gui:List ;
                  salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-ScannerSettingsList>" .
 
@@ -2189,7 +2167,6 @@
                 knora-base:subjectClassConstraint :Drawing ;
                 rdfs:label "Numéro de dessin ordonné"@fr ,
                      "Order number of drawing"@en ;
-                salsah-gui:guiOrder "13"^^xsd:integer ;
         	   	salsah-gui:guiElement salsah-gui:Spinbox .
 
 
@@ -2203,7 +2180,6 @@
 			 rdfs:comment "Commentaire interne (site de collecte)"@fr ,
 				"Internal comment (collection site)"@en ;
 	         salsah-gui:guiElement salsah-gui:Textarea ;
-	         salsah-gui:guiOrder "12"^^xsd:integer ;
 			 salsah-gui:guiAttribute "width=95%" ,
 	                        		"rows=10" .
 
@@ -2217,7 +2193,6 @@
                      	"Gender represented on the site"@en ;
 			rdfs:comment "Type d'école en fonction du sexe des participants (ex.: école mixte, de filles, de garçons, non connue)."@fr ,
 					 	"Type of school according to the sex of participants (ex. mix school, girls, boys, unknown)."@en ;
-			salsah-gui:guiOrder "8"^^xsd:integer ;
 	        salsah-gui:guiElement salsah-gui:Pulldown ;
 	        salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-GenderListSchool>" .
 
@@ -2232,7 +2207,6 @@
 			  rdfs:comment "Langue principale parlée dans une institution ou durant un événement."@fr ,
 					 	"Main language spoken in an institution or at an event."@en ;
 			  salsah-gui:guiElement salsah-gui:Pulldown ;
-			  salsah-gui:guiOrder "7"^^xsd:integer ;
               salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-LanguageList>" .
 
 
@@ -2245,8 +2219,7 @@
                      		"Maximal age on collection site (years)"@en ;
                      rdfs:comment "Age maximal sur le site de collecte (années)."@fr ,
 					 		"Maximal age on collection site (years)."@en ;
-					 salsah-gui:guiElement salsah-gui:Spinbox ;
-				     salsah-gui:guiOrder "10"^^xsd:integer .
+					 salsah-gui:guiElement salsah-gui:Spinbox .
 
 
 ###  http://www.knora.org/ontology/0105/drawings-gods#hasSiteMinAgeRangeYear
@@ -2258,8 +2231,7 @@
                      		"Minimal age on collection site (years)"@en ;
                      rdfs:comment "Age minimal sur le site de collecte (années)."@fr ,
 					 		"Minimal age on collection site (years)."@en ;
-					 salsah-gui:guiElement salsah-gui:Spinbox ;
-				     salsah-gui:guiOrder "9"^^xsd:integer .
+					 salsah-gui:guiElement salsah-gui:Spinbox .
 
 
 ###  http://www.knora.org/ontology/0105/drawings-gods#hasSiteName
@@ -2271,8 +2243,7 @@
                      "Site name"@en ;
           rdfs:comment "Nom de l'institution ou de l'événement."@fr ,
 					 "Institution or event name."@en ;
-		  salsah-gui:guiElement salsah-gui:SimpleText ;
-      	  salsah-gui:guiOrder "1"^^xsd:integer .
+		  salsah-gui:guiElement salsah-gui:SimpleText .
 
 
 ###  http://www.knora.org/ontology/0105/drawings-gods#hasSiteReligiousIdentity
@@ -2284,7 +2255,6 @@
                      		"Religious identity of the institution or the event"@en ;
 			  	   	   rdfs:comment "Identité religieuse du site (si le site est public, indiquer \"aucune\")."@fr ,
 			  	   	   		"Religious identity of the site (if the site is public, enter as \"none\")."@en ;
-			  	   	   salsah-gui:guiOrder "6"^^xsd:integer ;
 	                   salsah-gui:guiElement salsah-gui:List ;
 	                   salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-ReligiousIdentityHList>" .
 
@@ -2298,7 +2268,6 @@
                 "Recall is in accordance with a given task"@en ;
 		rdfs:comment "Enfant a compris et restitué correctement la consigne."@fr ,
 			  	"Child understood correctly and recalled the task properly."@en ;
-		       salsah-gui:guiOrder "10"^^xsd:integer ;
         salsah-gui:guiElement salsah-gui:Checkbox .
 
 
@@ -2311,7 +2280,6 @@
                 "Textual data is complete in French"@en ;
 			 rdfs:comment "Consigne, description, les mots sur le recto, et les commentaires sont ajoutés en français."@fr ,
 			  	"Task restitution, description, words on recto and the commentaries are entered in French."@en ;
-       		 salsah-gui:guiOrder "19"^^xsd:integer ;
        		 salsah-gui:guiElement salsah-gui:Checkbox .
 
 ###  http://www.knora.org/ontology/0105/drawings-gods#hasTextEnteredEn
@@ -2323,7 +2291,6 @@
                 "Textual data is complete in English"@en ;
 			 rdfs:comment "Consigne, description, les mots sur le recto, et les commentaires sont ajoutés en anglais."@fr ,
 			  	"Task restitution, description, words on recto and the commentaries are entered in English."@en ;
-       		 salsah-gui:guiOrder "18"^^xsd:integer ;
        		 salsah-gui:guiElement salsah-gui:Checkbox .
 
 ###  http://www.knora.org/ontology/0105/drawings-gods#hasTextEnteredOr
@@ -2335,7 +2302,6 @@
                 "Textual data is complete in original language"@en ;
 			 rdfs:comment "Consigne, description, les mots sur le recto, et commentaire sont ajoutés en langue originale."@fr ,
 			  	"Task restitution, description, words on recto and the commentaries are entered in original language."@en ;
-       		 salsah-gui:guiOrder "17"^^xsd:integer ;
        		 salsah-gui:guiElement salsah-gui:Checkbox .
 
 
@@ -2348,7 +2314,6 @@
                 			"Child's comments translator"@en ;
 						 rdfs:comment "Traducteur des commentaires de l’enfant."@fr ,
 			  				"Child's comments translator."@en ;
-			  			 salsah-gui:guiOrder "5"^^xsd:integer ;
             			 salsah-gui:guiElement salsah-gui:Pulldown ;
                	     salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-TranslatorList>" .
 
@@ -2375,7 +2340,6 @@
                      	"Verso is absent"@en ;
 			   	rdfs:comment "Le verso est vierge ou indisponible."@fr ,
 					 	"Verso is blank or not available."@en ;
-				salsah-gui:guiOrder "9"^^xsd:integer ;
        		    salsah-gui:guiElement salsah-gui:Checkbox .
 
 
@@ -2388,7 +2352,6 @@
                      	"Recall of the task is absent"@en ;
 			   	rdfs:comment "La restitution de consigne est absente."@fr ,
 					 	"Recall of the task is absent."@en ;
-				salsah-gui:guiOrder "3"^^xsd:integer ;
        		    salsah-gui:guiElement salsah-gui:Checkbox .
 
 
@@ -2402,7 +2365,6 @@
 			  rdfs:comment "Commentaire interne (verso)"@fr ,
 				"Internal comment (verso)"@en ;
 	         salsah-gui:guiElement salsah-gui:Textarea ;
-	         salsah-gui:guiOrder "24"^^xsd:integer ;
 			 salsah-gui:guiAttribute "width=95%" ,
 	                        		"rows=10" .
 
@@ -2416,7 +2378,6 @@
                 			"Verso translator (English)"@en ;
 				   rdfs:comment "Traducteur du verso (anglais)."@fr ,
 			  				"Verso translator (English)."@en ;
-			  	   salsah-gui:guiOrder "22"^^xsd:integer ;
 		           salsah-gui:guiElement salsah-gui:Pulldown ;
                    salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-TranslatorList>" .
 
@@ -2431,7 +2392,6 @@
                 			"Verso translator (French)"@en ;
 				   rdfs:comment "Traducteur du verso (français)."@fr ,
 			  				"Verso translator (French)."@en ;
-			  	   salsah-gui:guiOrder "23"^^xsd:integer ;
 		           salsah-gui:guiElement salsah-gui:Pulldown ;
                    salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-TranslatorList>" .
 
@@ -2445,7 +2405,6 @@
                "Blank page"@en ;
 	   rdfs:comment "L'image est une feuille blanche."@fr ,
 			   "Image is a white paper."@en ;
-       salsah-gui:guiOrder "6"^^xsd:integer ;
        salsah-gui:guiElement salsah-gui:Checkbox .
 
 
@@ -2470,7 +2429,6 @@
         rdfs:comment "Texte par l'enfant sur le recto (anglais)."@fr ,
                "Words written by child on the recto (English)."@en ;
        salsah-gui:guiElement salsah-gui:Textarea ;
-       salsah-gui:guiOrder "4"^^xsd:integer ;
 	   salsah-gui:guiAttribute "width=95%" ,
                         		"rows=10" .
 
@@ -2485,7 +2443,6 @@
         rdfs:comment "Texte par l'enfant sur le recto (français)."@fr ,
                "Words written by child on the recto (French)."@en ;
        salsah-gui:guiElement salsah-gui:Textarea ;
-       salsah-gui:guiOrder "3"^^xsd:integer ;
 	   salsah-gui:guiAttribute "width=95%" ,
                         		"rows=10" .
 
@@ -2500,7 +2457,6 @@
         	  rdfs:comment "Texte par l'enfant sur le recto en langue originale."@fr ,
                "Words written by child on the recto in original language."@en ;
 		       salsah-gui:guiElement salsah-gui:Textarea ;
-		       salsah-gui:guiOrder "2"^^xsd:integer ;
 			   salsah-gui:guiAttribute "width=95%" ,
 		                        		"rows=10" .
 
@@ -2515,7 +2471,6 @@
 			   		  rdfs:comment "Langue originale des mots de l'enfant sur le recto."@fr ,
 					 			"Original language of child's words written on recto."@en ;
           			  salsah-gui:guiElement salsah-gui:Pulldown ;
-						salsah-gui:guiOrder "1"^^xsd:integer ;
                      salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-LanguageList>" .
 
 
@@ -2528,8 +2483,7 @@
                      				"Individual questionnaire attached to the drawing"@en ;
 		  	 				   rdfs:comment "Questionnaire individuel associé à ce dessin."@fr ,
 					 				"Individual questionnaire attached to the drawing."@en ;
-					 		   salsah-gui:guiElement salsah-gui:Searchbox ;
-					           salsah-gui:guiOrder "16"^^xsd:integer .
+					 		   salsah-gui:guiElement salsah-gui:Searchbox .
 
 ###  http://www.knora.org/ontology/0105/drawings-gods#hasIndividualQuestionnaireAttachedValue
 :hasIndividualQuestionnaireAttachedValue rdf:type owl:ObjectProperty ;
@@ -2555,7 +2509,6 @@
                      	"Questionnaire unavailable"@en ;
 			   	rdfs:comment "Questionnaire indisponible."@fr ,
 					 	"Questionnaire unavailable."@en ;
-				salsah-gui:guiOrder "13"^^xsd:integer ;
        		  	salsah-gui:guiElement salsah-gui:Checkbox .
 
 
@@ -2568,8 +2521,7 @@
                      "Model questionnaire"@en ;
           rdfs:comment "Questionnaire individuel fondé sur le questionnaire standardisé suivant"@fr ,
 					 	"Individual questionnaire is based on the following standardized questionnaire"@en ;
-          salsah-gui:guiElement salsah-gui:Searchbox ;
-          salsah-gui:guiOrder "2"^^xsd:integer .
+          salsah-gui:guiElement salsah-gui:Searchbox .
 
 ###  http://www.knora.org/ontology/0105/drawings-gods#hasModelValue
 :hasModelValue rdf:type owl:ObjectProperty ;
@@ -2591,7 +2543,6 @@
 			   			  		rdfs:comment "Commentaire interne (questionnaire individuel)"@fr ,
 					 				"Internal comment (individual questionnaire)"@en ;
 						         salsah-gui:guiElement salsah-gui:Textarea ;
-						         salsah-gui:guiOrder "200"^^xsd:integer ;
 								 salsah-gui:guiAttribute "width=95%" ,
 						                        		"rows=10" .
 
@@ -2604,7 +2555,6 @@
 							"Religious affiliation to which the child identifies themselves"@en ;
 						rdfs:comment "Affiliation religieuse à laquelle s’identifie l’enfant"@fr ,
 							"Religious affiliation to which the child identifies themselves"@en ;
-		                salsah-gui:guiOrder "10"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:List ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-ReligiousIdentityHList>" .
 
@@ -2618,7 +2568,6 @@
 							"Familiarity with place of worship. Have you ever entered a church?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte. Es-tu déjà entré dans une église?"@fr ,
 							"Familiarity with place of worship. Have you ever entered a church?"@en ;
-		                salsah-gui:guiOrder "11"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -2631,7 +2580,6 @@
 							"Familiarity with place of worship: church. How often?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: église Fréquence?"@fr ,
 							"Familiarity with place of worship: church. How often?"@en ;
-		                salsah-gui:guiOrder "12"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-TimeRelatedListQ>" .
 
@@ -2644,7 +2592,6 @@
 							"Familiarity with place of worship: church. Why?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: église. Pourquoi?"@fr ,
 							"Familiarity with place of worship: church. Why?"@en ;
-		                salsah-gui:guiOrder "13"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
@@ -2658,7 +2605,6 @@
 							"Familiarity with place of worship: church. With whom?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: église. Avec qui?"@fr ,
 							"Familiarity with place of worship: church. With whom?"@en ;
-		                salsah-gui:guiOrder "14"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
@@ -2672,7 +2618,6 @@
 							"Familiarity with place of worship: church. Last time?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: église. La dernière fois?"@fr ,
 							"Familiarity with place of worship: church. Last time?"@en ;
-		                salsah-gui:guiOrder "15"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
@@ -2686,7 +2631,6 @@
 							"Familiarity with place of worship. Have you ever entered a mosque?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte. Es-tu déjà entré dans une mosquée?"@fr ,
 							"Familiarity with place of worship. Have you ever entered a mosque?"@en ;
-		                salsah-gui:guiOrder "16"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -2699,7 +2643,6 @@
 							"Familiarity with place of worship: mosque. How often?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: la mosquée. Fréquence?"@fr ,
 							"Familiarity with place of worship: mosque. How often?"@en ;
-		                salsah-gui:guiOrder "17"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-TimeRelatedListQ>" .
 
@@ -2713,7 +2656,6 @@
 							"Familiarity with place of worship: mosque. Why?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: la mosquée. Pourquoi?"@fr ,
 							"Familiarity with place of worship: mosque. Why?"@en ;
-		                salsah-gui:guiOrder "18"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
@@ -2727,7 +2669,6 @@
 							"Familiarity with place of worship: mosque. With whom?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: la mosquée. Avec qui?"@fr ,
 							"Familiarity with place of worship: mosque. With whom?"@en ;
-		                salsah-gui:guiOrder "19"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
@@ -2741,7 +2682,6 @@
 							"Familiarity with place of worship: mosque. Last time?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: la mosquée. La dernière fois?"@fr ,
 							"Familiarity with place of worship: mosque. Last time?"@en ;
-		                salsah-gui:guiOrder "20"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
@@ -2755,7 +2695,6 @@
 							"Familiarity with place of worship. Have you ever entered a buddhist temple (including otera)?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte. Es-tu déjà entré dans  un temple bouddhiste (y compris otera)?"@fr ,
 							"Familiarity with place of worship. Have you ever entered a buddhist temple (including otera)?"@en ;
-		                salsah-gui:guiOrder "21"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -2768,7 +2707,6 @@
 							"Familiarity with place of worship: buddhist temple (including otera). How often?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: temple bouddhiste (y compris otera). Fréquence?"@fr ,
 							"Familiarity with place of worship: buddhist temple (including otera). How often?"@en ;
-		                salsah-gui:guiOrder "22"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-TimeRelatedListQ>" .
 
@@ -2782,7 +2720,6 @@
 							"Familiarity with place of worship: buddhist temple (including otera). Why?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: temple bouddhiste (y compris otera). Pourquoi?"@fr ,
 							"Familiarity with place of worship: buddhist temple (including otera). Why?"@en ;
-		                salsah-gui:guiOrder "23"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
@@ -2796,7 +2733,6 @@
 							"Familiarity with place of worship: buddhist temple (including otera). With whom?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: temple bouddhiste (y compris otera). Avec qui?"@fr ,
 							"Familiarity with place of worship: buddhist temple (including otera). With whom?"@en ;
-		                salsah-gui:guiOrder "24"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
@@ -2810,7 +2746,6 @@
 							"Familiarity with place of worship: buddhist temple (including otera). Last time?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: temple bouddhiste (y compris otera). La dernière fois?"@fr ,
 							"Familiarity with place of worship: buddhist temple (including otera). Last time?"@en ;
-		                salsah-gui:guiOrder "25"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
@@ -2824,7 +2759,6 @@
 							"Familiarity with place of worship. Have you ever entered a shinto temple (jinja)?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte. Es-tu déjà entré dans un temple shinto (jinja)?"@fr ,
 							"Familiarity with place of worship. Have you ever entered a shinto temple (jinja)?"@en ;
-		                salsah-gui:guiOrder "30"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -2837,7 +2771,6 @@
 							"Familiarity with place of worship: a shinto temple (jinja). How often?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: un temple shinto (jinja). Fréquence?"@fr ,
 							"Familiarity with place of worship: a shinto temple (jinja). How often?"@en ;
-		                salsah-gui:guiOrder "31"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-TimeRelatedListQ>" .
 
@@ -2850,7 +2783,6 @@
 							"Familiarity with place of worship: a shinto temple (jinja). Why?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: un temple shinto (jinja). Pourquoi?"@fr ,
 							"Familiarity with place of worship: a shinto temple (jinja). Why?"@en ;
-		                salsah-gui:guiOrder "32"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
@@ -2864,7 +2796,6 @@
 							"Familiarity with place of worship: shinto temple (jinja). With whom?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: un temple shinto (jinja). Avec qui?"@fr ,
 							"Familiarity with place of worship: a shinto temple (jinja). With whom?"@en ;
-		                salsah-gui:guiOrder "33"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
@@ -2878,7 +2809,6 @@
 							"Familiarity with place of worship: a shinto temple (jinja). Last time?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: shinto temple (jinja). La dernière fois?"@fr ,
 							"Familiarity with place of worship: a shinto temple (jinja). Last time?"@en ;
-		                salsah-gui:guiOrder "34"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
@@ -2892,7 +2822,6 @@
 							"Familiarity with place of worship. Have you ever entered a hindu temple?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte. Es-tu déjà entré dans un temple hindou?"@fr ,
 							"Familiarity with place of worship. Have you ever entered a hindu temple?"@en ;
-		                salsah-gui:guiOrder "35"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -2905,7 +2834,6 @@
 							"Familiarity with place of worship: hindu temple. How often?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: temple hindou. Fréquence?"@fr ,
 							"Familiarity with place of worship: hindu temple. How often?"@en ;
-		                salsah-gui:guiOrder "36"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-TimeRelatedListQ>" .
 
@@ -2918,7 +2846,6 @@
 							"Familiarity with place of worship: hindu temple. Why?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: temple hindou. Pourquoi?"@fr ,
 							"Familiarity with place of worship: hindu temple. Why?"@en ;
-		                salsah-gui:guiOrder "37"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
@@ -2932,7 +2859,6 @@
 							"Familiarity with place of worship: hindu temple. With whom?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: temple hindou. Avec qui?"@fr ,
 							"Familiarity with place of worship: hindu temple. With whom?"@en ;
-		                salsah-gui:guiOrder "38"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
@@ -2947,7 +2873,6 @@
 							"Familiarity with place of worship: hindu temple. Last time?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: temple hindou. La dernière fois?"@fr ,
 							"Familiarity with place of worship: hindu temple. Last time?"@en ;
-		                salsah-gui:guiOrder "39"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
@@ -2961,7 +2886,6 @@
 							"Familiarity with place of worship. Have you ever entered a synagogue?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte. Es-tu déjà entré dans une synagogue?"@fr ,
 							"Familiarity with place of worship. Have you ever entered a synagogue?"@en ;
-		                salsah-gui:guiOrder "40"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -2974,7 +2898,6 @@
 							"Familiarity with place of worship: synagogue. How often?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: synagogue Fréquence?"@fr ,
 							"Familiarity with place of worship: synagogue. How often?"@en ;
-		                salsah-gui:guiOrder "41"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-TimeRelatedListQ>" .
 
@@ -2987,7 +2910,6 @@
 							"Familiarity with place of worship: synagogue. Why?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: synagogue. Pourquoi?"@fr ,
 							"Familiarity with place of worship: synagogue. Why?"@en ;
-		                salsah-gui:guiOrder "42"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
@@ -3001,7 +2923,6 @@
 							"Familiarity with place of worship: synagogue. With whom?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte : synagogue. Avec qui?"@fr ,
 							"Familiarity with place of worship: synagogue. With whom?"@en ;
-		                salsah-gui:guiOrder "43"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
@@ -3015,7 +2936,6 @@
 							"Familiarity with place of worship: synagogue. Last time?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: synagogue. La dernière fois?"@fr ,
 							"Familiarity with place of worship: synagogue. Last time?"@en ;
-		                salsah-gui:guiOrder "44"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
@@ -3029,7 +2949,6 @@
 							"Familiarity with place of worship. Have you ever entered a  zoroastrian temple?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte. Es-tu déjà entré dans une temple zoroastrien?"@fr ,
 							"Familiarity with place of worship. Have you ever entered a  zoroastrian temple?"@en ;
-		                salsah-gui:guiOrder "50"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -3042,7 +2961,6 @@
 							"Familiarity with place of worship: zoroastrian temple. How often?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: temple zoroastrien Fréquence?"@fr ,
 							"Familiarity with place of worship: zoroastrian temple. How often?"@en ;
-		                salsah-gui:guiOrder "51"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-TimeRelatedListQ>" .
 
@@ -3055,7 +2973,6 @@
 							"Familiarity with place of worship: zoroastrian temple. Why?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: temple zoroastrien. Pourquoi?"@fr ,
 							"Familiarity with place of worship: zoroastrian temple. Why?"@en ;
-		                salsah-gui:guiOrder "52"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
@@ -3069,7 +2986,6 @@
 							"Familiarity with place of worship: zoroastrian temple. With whom?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte : temple zoroastrien. Avec qui?"@fr ,
 							"Familiarity with place of worship: zoroastrian temple. With whom?"@en ;
-		                salsah-gui:guiOrder "53"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
@@ -3083,7 +2999,6 @@
 							"Familiarity with place of worship: zoroastrian temple. Last time?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: temple zoroastrien. La dernière fois?"@fr ,
 							"Familiarity with place of worship: zoroastrian temple. Last time?"@en ;
-		                salsah-gui:guiOrder "54"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
@@ -3097,7 +3012,6 @@
 							"Familiarity with place of worship. Have you ever entered any unspecific temple?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte. Es-tu déjà entré dans un temple non-spécifique?"@fr ,
 							"Familiarity with place of worship. Have you ever entered any unspecific temple?"@en ;
-		                salsah-gui:guiOrder "55"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -3110,7 +3024,6 @@
 							"Familiarity with place of worship: any unspecific temple. How often?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: temple non-spécifique. Fréquence?"@fr ,
 							"Familiarity with place of worship: any unspecific temple. How often?"@en ;
-		                salsah-gui:guiOrder "56"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-TimeRelatedListQ>" .
 
@@ -3123,7 +3036,6 @@
 							"Familiarity with place of worship: unspecific temple. Why?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: temple non-spécifique. Pourquoi?"@fr ,
 							"Familiarity with place of worship: unspecific temple. Why?"@en ;
-		                salsah-gui:guiOrder "57"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
@@ -3137,7 +3049,6 @@
 							"Familiarity with place of worship: unspecific temple. With whom?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: temple non-spécifique. Avec qui?"@fr ,
 							"Familiarity with place of worship: unspecific temple. With whom?"@en ;
-		                salsah-gui:guiOrder "58"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
@@ -3151,7 +3062,6 @@
 							"Familiarity with place of worship: unspecific temple. Last time?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: temple non-spécifique. La dernière fois?"@fr ,
 							"Familiarity with place of worship: unspecific temple. Last time?"@en ;
-		                salsah-gui:guiOrder "59"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
@@ -3165,7 +3075,6 @@
 							"Which temple do you get to visit on New Year's Eve?"@en ;
 						rdfs:comment "Quel temple visitez-vous au Nouvel An?"@fr ,
 							"Which temple do you get to visit on New Year's Eve?"@en ;
-		                salsah-gui:guiOrder "60"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-JapanNYListQ>" .
 
@@ -3178,7 +3087,6 @@
 							"Do you get to visit a temple (jinja or otera) on New Year's Eve?"@en ;
 						rdfs:comment "Est-ce que vous visitez un temple (jinja ou otera) pour le Nouvel An?"@fr ,
 							"Do you get to visit a temple (jinja or otera) on New Year's Eve?"@en ;
-		                salsah-gui:guiOrder "61"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -3191,7 +3099,6 @@
 							"Do you get to visit a temple (jinja or otera) besides New Year's Eve?"@en ;
 						rdfs:comment "Est-ce que vous visitez un temple (jinja ou otera) en dehors du Nouvel An?"@fr ,
 							"Do you get to visit a temple (jinja or otera) besides New Year's Eve?"@en ;
-		                salsah-gui:guiOrder "62"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -3204,7 +3111,6 @@
 							"On what occasion did you visit jinja or otera?"@en ;
 						rdfs:comment "A quelle occasion as-tu visité jinja ou otera?"@fr ,
 							"On what occasion did you visit jinja or otera?"@en ;
-		                salsah-gui:guiOrder "63"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
@@ -3219,7 +3125,6 @@
 							"Familiarity with place of worship: jinja or otera How often?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: jinja ou otera. Fréquence?"@fr ,
 							"Familiarity with place of worship: jinja or otera How often?"@en ;
-		                salsah-gui:guiOrder "64"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-TimeRelatedListQ>" .
 
@@ -3232,7 +3137,6 @@
 							"Familiarity with place of worship: jinja or otera. Why?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: jinja ou otera. Pourquoi?"@fr ,
 							"Familiarity with place of worship: jinja or otera. Why?"@en ;
-		                salsah-gui:guiOrder "65"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
@@ -3246,7 +3150,6 @@
 							"Familiarity with place of worship: jinja or otera. With whom?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: jinja ou otera. Avec qui?"@fr ,
 							"Familiarity with place of worship: jinja or otera. With whom?"@en ;
-		                salsah-gui:guiOrder "66"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
@@ -3260,7 +3163,6 @@
 							"Familiarity with place of worship: jinja or otera. Last time?"@en ;
 						rdfs:comment "Familiarité avec le lieu de culte: : jinja ou otera. La dernière fois?"@fr ,
 							"Familiarity with place of worship: jinja or otera. Last time?"@en ;
-		                salsah-gui:guiOrder "67"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
@@ -3275,7 +3177,6 @@
 							"Do you have a butsudan or a kamidana at home?"@en ;
 						rdfs:comment "Est-ce que tu as un butsudan ou un kamidana à la maison?"@fr ,
 							"Do you have a butsudan or a kamidana at home?"@en ;
-		                salsah-gui:guiOrder "70"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -3288,7 +3189,6 @@
 							"Which one do you have at home: a butsudan or a kamidana?"@en ;
 						rdfs:comment "A la maison, as-tu un butsudan ou un kamidana?"@fr ,
 							"Which one do you have at home: a butsudan or a kamidana?"@en ;
-		                salsah-gui:guiOrder "71"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-JapanObjectListQ>" .
 
@@ -3301,7 +3201,6 @@
 							"What do you or your family do in front of that butsudan or kamidana?"@en ;
 						rdfs:comment "Qu'est-ce que vous ou votre famille faites devant ce butsudan ou ce kamidana?"@fr ,
 							"What do you or your family do in front of that butsudan or kamidana?"@en ;
-		                salsah-gui:guiOrder "72"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
@@ -3315,7 +3214,6 @@
 							"Do you pray at home?"@en ;
 						rdfs:comment "Est-ce que tu pries à la maison?"@fr ,
 							"Do you pray at home?"@en ;
-		                salsah-gui:guiOrder "80"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -3328,7 +3226,6 @@
 							"When do you pray at home?"@en ;
 						rdfs:comment "Quand est-ce que tu pries à la maison?"@fr ,
 							"When do you pray at home?"@en ;
-		                salsah-gui:guiOrder "81"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-TimeRelatedListQ>" .
 
@@ -3341,7 +3238,6 @@
 							"Do you pray at home at other times? Which?"@en ;
 						rdfs:comment "Est-ce que tu pries à d'autres moments à la maison? Quels?"@fr ,
 							"Do you pray at home at other times?Which?"@en ;
-		                salsah-gui:guiOrder "82"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
@@ -3356,7 +3252,6 @@
 							"Have you ever seen other people pray?"@en ;
 						rdfs:comment "As-tu déjà vu des gens prier?"@fr ,
 							"Have you ever seen other people pray?"@en ;
-		                salsah-gui:guiOrder "83"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -3369,7 +3264,6 @@
 							"When/how often did you see other people pray?"@en ;
 						rdfs:comment "A quel moment as-tu déjà vu des gens prier?"@fr ,
 							"When/how often did you see other people pray?"@en ;
-		                salsah-gui:guiOrder "84"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-TimeRelatedListQ>" .
 
@@ -3382,7 +3276,6 @@
 							"On what occasion did you get to see other people pray?"@en ;
 						rdfs:comment "A quelle occasion as-tu vu des gens prier?"@fr ,
 							"On what occasion did you get to see other people pray?"@en ;
-		                salsah-gui:guiOrder "85"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
@@ -3396,7 +3289,6 @@
 							"Do you get to pray with other people?"@en ;
 						rdfs:comment "Est-ce que tu pries avec d'autres gens?"@fr ,
 							"Do you get to pray with other people?"@en ;
-		                salsah-gui:guiOrder "86"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -3409,7 +3301,6 @@
 							"How often do you get to pray with other people?"@en ;
 						rdfs:comment "A quelle fréquence pries-tu avec d'autres gens?"@fr ,
 							"How often do you get to pray with other people?"@en ;
-		                salsah-gui:guiOrder "87"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-TimeRelatedListQ>" .
 
@@ -3422,7 +3313,6 @@
 							"How often do you get to pray with other people? Other..."@en ;
 						rdfs:comment "A quelle fréquence pries-tu avec d'autres gens? Autre..."@fr ,
 							"How often do you get to pray with other people? Other..."@en ;
-		                salsah-gui:guiOrder "88"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
@@ -3436,7 +3326,6 @@
 							"When do you pray with other people?"@en ;
 						rdfs:comment "Quand est-ce que tu pries avec d'autres gens?"@fr ,
 							"When do you pray with other people?"@en ;
-		                salsah-gui:guiOrder "89"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
@@ -3450,7 +3339,6 @@
 							"When did you get to pray with other people for the last time?"@en ;
 						rdfs:comment "Quand as-tu prié avec d'autres gens pour la dernière fois?"@fr ,
 							"When did you get to pray with other people for the last time?"@en ;
-		                salsah-gui:guiOrder "90"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
@@ -3464,7 +3352,6 @@
 							"Do you ever pray alone?"@en ;
 						rdfs:comment "Est-ce qu'il t'arrive de prier seul-e?"@fr ,
 							"Do you ever pray alone?"@en ;
-		                salsah-gui:guiOrder "91"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -3477,7 +3364,6 @@
 							"When do you get to pray alone?"@en ;
 						rdfs:comment "Quand est-ce qu'il t'arrive de prier seul-e?"@fr ,
 							"When do you get to pray alone?"@en ;
-		                salsah-gui:guiOrder "92"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
@@ -3491,7 +3377,6 @@
 							"How often do you get to pray alone?"@en ;
 						rdfs:comment "A quelle fréquence pries-tu seul-e?"@fr ,
 							"How often do you get to pray alone?"@en ;
-		                salsah-gui:guiOrder "93"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-TimeRelatedListQ>" .
 
@@ -3504,7 +3389,6 @@
 							"How often do you get to pray alone? Other..."@en ;
 						rdfs:comment "A quelle fréquence pries-tu seul-e? Autre..."@fr ,
 							"How often do you get to pray alone? Other..."@en ;
-		                salsah-gui:guiOrder "94"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
@@ -3518,7 +3402,6 @@
 							"When did you pray alone for the last time?"@en ;
 						rdfs:comment "Quand as-tu prié seul-e pour la dernière fois?"@fr ,
 							"When did you pray alone for the last time?"@en ;
-		                salsah-gui:guiOrder "95"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
@@ -3532,7 +3415,6 @@
 							"If I told you god could you draw Jesus?"@en ;
 						rdfs:comment "Si je te dis dieu, pourrais-tu dessiner Jésus?"@fr ,
 							"If I told you god could you draw Jesus?"@en ;
-		                salsah-gui:guiOrder "100"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -3545,7 +3427,6 @@
 							"If I told you god could you draw Mary?"@en ;
 						rdfs:comment "Si je te dis dieu, pourrais-tu dessiner Marie?"@fr ,
 							"If I told you god could you draw Mary?"@en ;
-		                salsah-gui:guiOrder "101"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -3558,7 +3439,6 @@
 							"If I told you god could you draw Moses?"@en ;
 						rdfs:comment "Si je te dis dieu, pourrais-tu dessiner Moïse?"@fr ,
 							"If I told you god could you draw Moses?"@en ;
-		                salsah-gui:guiOrder "102"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -3571,7 +3451,6 @@
 							"If I told you god could you draw Allah?"@en ;
 						rdfs:comment "Si je te dis dieu, pourrais-tu dessiner Allah?"@fr ,
 							"If I told you god could you draw Allah?"@en ;
-		                salsah-gui:guiOrder "103"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -3584,7 +3463,6 @@
 							"If I told you god could you draw Muhammad?"@en ;
 						rdfs:comment "Si je te dis dieu, pourrais-tu dessiner Mohammed?"@fr ,
 							"If I told you god could you draw Muhammad?"@en ;
-		                salsah-gui:guiOrder "104"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -3597,7 +3475,6 @@
 							"If I told you god could you draw Buddha?"@en ;
 						rdfs:comment "Si je te dis dieu, pourrais-tu dessiner Bouddha?"@fr ,
 							"If I told you god could you draw Buddha?"@en ;
-		                salsah-gui:guiOrder "105"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -3610,7 +3487,6 @@
 							"If I told you god could you draw Zoroaster?"@en ;
 						rdfs:comment "Si je te dis dieu, pourrais-tu dessiner Zoroastre?"@fr ,
 							"If I told you god could you draw Zoroaster?"@en ;
-		                salsah-gui:guiOrder "106"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -3623,7 +3499,6 @@
 							"If I told you god could you draw something different?"@en ;
 						rdfs:comment "Si je te dis dieu, pourrais-tu dessiner quelquechose de différent?"@fr ,
 							"If I told you god could you draw something different?"@en ;
-		                salsah-gui:guiOrder "107"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -3636,7 +3511,6 @@
 							"Whom/what else could you draw?"@en ;
 						rdfs:comment "Qui/quoi d'autre pourrais-tu dessiner?"@fr ,
 							"Whom/what else could you draw?"@en ;
-		                salsah-gui:guiOrder "108"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
@@ -3651,7 +3525,6 @@
 							"According to you god is located in..."@en ;
 						rdfs:comment "Selon toi, dieu se trouve à..."@fr ,
 							"According to you god is located in..."@en ;
-		                salsah-gui:guiOrder "109"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-LocGodListQ>" .
 
@@ -3664,7 +3537,6 @@
 							"According to you god is located... Other"@en ;
 						rdfs:comment "Selon toi, dieu se trouve... Autre"@fr ,
 							"According to you god is located... Other"@en ;
-		                salsah-gui:guiOrder "110"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
@@ -3678,7 +3550,6 @@
 							"Sex of god"@en ;
 						rdfs:comment "Sexe de dieu"@fr ,
 							"Sex of god"@en ;
-		                salsah-gui:guiOrder "111"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-GodSexListQ>" .
 
@@ -3691,7 +3562,6 @@
 							"Sex of god. Other..."@en ;
 						rdfs:comment "Sexe de dieu. Autre..."@fr ,
 							"Sex of god. Other..."@en ;
-		                salsah-gui:guiOrder "112"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
@@ -3705,7 +3575,6 @@
 							"Age of god"@en ;
 						rdfs:comment "Age de dieu"@fr ,
 							"Age of god"@en ;
-		                salsah-gui:guiOrder "113"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-GodAgeListQ>" .
 
@@ -3718,7 +3587,6 @@
 							"Age of god. Other..."@en ;
 						rdfs:comment "Age de dieu. Autre..."@fr ,
 							"Age of god. Other..."@en ;
-		                salsah-gui:guiOrder "114"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
@@ -3732,7 +3600,6 @@
 							"Do you know what the word god mean?"@en ;
 						rdfs:comment "Sais-tu ce que le mot dieu veut dire?"@fr ,
 							"Do you know what the word god mean?"@en ;
-		                salsah-gui:guiOrder "115"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -3745,7 +3612,6 @@
 							"What the word god means..."@en ;
 						rdfs:comment "Ce que le mot dieu veut dire..."@fr ,
 							"What the word god means..."@en ;
-		                salsah-gui:guiOrder "116"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
@@ -3759,7 +3625,6 @@
 							"Do you know who Buddha is?"@en ;
 						rdfs:comment "Sais-tu qui est Bouddha?"@fr ,
 							"Do you know who Buddha is?"@en ;
-		                salsah-gui:guiOrder "117"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -3773,7 +3638,6 @@
 						rdfs:comment "Qui est Bouddha..."@fr ,
 							"Who Buddha is..."@en ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
-                           salsah-gui:guiOrder "118"^^xsd:integer ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
 
@@ -3787,7 +3651,6 @@
 							"Have you ever happened to draw god in the past?"@en ;
 						rdfs:comment "As-tu déjà dessiné dieu dans le passé?"@fr ,
 							"Have you ever happened to draw god in the past?"@en ;
-		                salsah-gui:guiOrder "119"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -3801,7 +3664,6 @@
 							"When did the child happen to draw god in the past?"@en ;
 						rdfs:comment "Quand l'enfant a-t-il/elle dessiné dieu dans le passé?"@fr ,
 							"When did the child happen to draw god in the past?"@en ;
-		                salsah-gui:guiOrder "120"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
@@ -3816,7 +3678,6 @@
 							"Description of the child's drawing(s) of god in the past."@en ;
 						rdfs:comment "Description du/des dessin(s) de dieu par l'enfant dans le passé."@fr ,
 							"Description of the child's drawing(s) of god in the past."@en ;
-		                salsah-gui:guiOrder "121"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
@@ -3830,7 +3691,6 @@
 							"When did the child happen to draw god for the last time?"@en ;
 						rdfs:comment "Quand l'enfant a dessiné dieu pour la dernière fois?"@fr ,
 							"When did the child happen to draw god for the last time?"@en ;
-		                salsah-gui:guiOrder "122"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
@@ -3845,7 +3705,6 @@
 							"Is the child baptized?"@en ;
 						rdfs:comment "L'enfant est-il/elle baptisé-e"@fr ,
 							"Is the child baptized?"@en ;
-		                salsah-gui:guiOrder "123"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -3858,7 +3717,6 @@
 							"When was the child baptized?"@en ;
 						rdfs:comment "Quand l'enfant a-t-il/elle été baptisé-e?"@fr ,
 							"When was the child baptized?"@en ;
-		                salsah-gui:guiOrder "124"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
@@ -3872,7 +3730,6 @@
 							"Did the child receive his/her communion?"@en ;
 						rdfs:comment "L'enfant a-t-il/elle fait sa communion?"@fr ,
 							"Did the child receive his/her communion?"@en ;
-		                salsah-gui:guiOrder "125"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -3885,7 +3742,6 @@
 							"When did the child receive his/her communion?"@en ;
 						rdfs:comment "Quand l'enfant a-t-il/elle fait sa communion?"@fr ,
 							"When did the child receive his/her communion?"@en ;
-		                salsah-gui:guiOrder "126"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Date .
 
 ###  http://www.knora.org/ontology/0105/drawings-gods#cathechismWhen
@@ -3897,7 +3753,6 @@
 							"When did the child start attending catechism class?"@en ;
 						rdfs:comment "Quand l'enfant a-t-il/elle commencé les cours de catéchisme?"@fr ,
 							"When did the child start attending catechism class?"@en ;
-		                salsah-gui:guiOrder "127"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
@@ -3911,7 +3766,6 @@
 							"Child's dad's religion"@en ;
 						rdfs:comment "La religion du papa de l'enfant"@fr ,
 							"Child's dad's religion"@en ;
-		                salsah-gui:guiOrder "128"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:List ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-ReligiousIdentityHList>" .
 
@@ -3924,7 +3778,6 @@
 							"Child's dad's religion. Other..."@en ;
 						rdfs:comment "La religion du papa de l'enfant. Autre..."@fr ,
 							"Child's dad's religion. Other..."@en ;
-		                salsah-gui:guiOrder "129"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
@@ -3938,7 +3791,6 @@
 							"Child's mom's religion"@en ;
 						rdfs:comment "La religion de la maman de l'enfant"@fr ,
 							"Child's mom's religion"@en ;
-		                salsah-gui:guiOrder "130"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:List ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-ReligiousIdentityHList>" .
 
@@ -3951,7 +3803,6 @@
 							"Child's mom's religion. Other..."@en ;
 						rdfs:comment "La religion de la maman de l'enfant. Autre..."@fr ,
 							"Child's mom's religion. Other..."@en ;
-		                salsah-gui:guiOrder "131"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
@@ -3965,7 +3816,6 @@
 							"Child's place of birth"@en ;
 						rdfs:comment "Lieu de naissance de l'enfant"@fr ,
 							"Child's place of birth"@en ;
-		                salsah-gui:guiOrder "132"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
@@ -3979,7 +3829,6 @@
 							"Child's mother tongue(s)"@en ;
 						rdfs:comment "Langue(s) maternelle(s) de l'enfant"@fr ,
 							"Child's mother tongue(s)"@en ;
-		                salsah-gui:guiOrder "133"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-LanguageList>" .
 
@@ -3992,7 +3841,6 @@
 							"Child's mother tongue(s). Other..."@en ;
 						rdfs:comment "Langue(s) maternelle(s) de l'enfant. Autre..."@fr ,
 							"Child's mother tongue(s). Other..."@en ;
-		                salsah-gui:guiOrder "134"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
@@ -4006,7 +3854,6 @@
 							"Does the child speak other languages?"@en ;
 						rdfs:comment "L'enfant parle-t-il/elle d'autres langues?"@fr ,
 							"Does the child speak other languages?"@en ;
-		                salsah-gui:guiOrder "135"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -4019,7 +3866,6 @@
 							"Other languages spoken by the child"@en ;
 						rdfs:comment "Autres langues parlées par l'enfant"@fr ,
 							"Other languages spoken by the child"@en ;
-		                salsah-gui:guiOrder "136"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-LanguageList>" .
 
@@ -4032,7 +3878,6 @@
 							"Language spoken most often by the child"@en ;
 						rdfs:comment "Langue parlée le plus souvent par l'enfant"@fr ,
 							"Language spoken most often by the child"@en ;
-		                salsah-gui:guiOrder "137"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-LanguageList>" .
 
@@ -4045,7 +3890,6 @@
 							"Language spoken most often by the child. Other..."@en ;
 						rdfs:comment "Langue parlée le plus souvent par l'enfant. Autre..."@fr ,
 							"Language spoken most often by the child. Other..."@en ;
-		                salsah-gui:guiOrder "138"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Textarea ;
 						   salsah-gui:guiAttribute "width=95%" ,
 							                        "rows=3" .
@@ -4059,7 +3903,6 @@
 							"Since when does the child live in Switzerland?"@en ;
 						rdfs:comment "Depuis quand l'enfant habite-t-il/elle en Suisse?"@fr ,
 							"Since when does the child live in Switzerland?"@en ;
-		                salsah-gui:guiOrder "139"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:SimpleText .
 
 ###	http://www.knora.org/ontology/0105/drawings-gods#enjoyedTheActivity
@@ -4071,7 +3914,6 @@
 							"Did the child enjoy carrying out this activity"@en ;
 						rdfs:comment "L'enfant a-t-il/elle apprécié d'effectuer cette activité"@fr ,
 							"Did the child enjoy carrying out this activity"@en ;
-		                salsah-gui:guiOrder "140"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -4084,7 +3926,6 @@
 							"Did the child carry out this activity seriously"@en ;
 						rdfs:comment "L'enfant a-t-il/elle effectué cette activité avec sérieux"@fr ,
 							"Did the child carry out this activity seriously"@en ;
-		                salsah-gui:guiOrder "141"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedListQ>" .
 
@@ -4097,7 +3938,6 @@
 							"Self-rated explicit self-esteem"@en ;
 						rdfs:comment "Estime de soi explicite auto-rapportée"@fr ,
 							"Self-rated explicit self-esteem"@en ;
-		                salsah-gui:guiOrder "142"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedNumListQ>" .
 
@@ -4110,7 +3950,6 @@
 							"Self-rated general happiness"@en ;
 						rdfs:comment "Degré de bonheur général auto-rapporté"@fr ,
 							"Self-rated general happiness"@en ;
-		                salsah-gui:guiOrder "143"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedNumListQ>" .
 
@@ -4123,7 +3962,6 @@
 							"Level of recent stress self-rated"@en ;
 						rdfs:comment "Niveau de stress auto-rapporté"@fr ,
 							"Level of recent stress self-rated"@en ;
-		                salsah-gui:guiOrder "144"^^xsd:integer ;
 		                salsah-gui:guiElement salsah-gui:Pulldown ;
 		                salsah-gui:guiAttribute "hlist=<http://rdfh.ch/lists/0105/drawings-gods-2016-list-AgreementRelatedNumListQ>" .
 
@@ -4209,11 +4047,13 @@
                           ] ,
                           [ rdf:type owl:Restriction ;
                            owl:onProperty :reliesUpon ;
-                           owl:cardinality "1"^^xsd:nonNegativeInteger
+                           owl:cardinality "1"^^xsd:nonNegativeInteger ;
+													 salsah-gui:guiOrder "6"^^xsd:integer
                           ] ,
                           [ rdf:type owl:Restriction ;
                            owl:onProperty :reliesUponValue ;
-                           owl:cardinality "1"^^xsd:nonNegativeInteger
+                           owl:cardinality "1"^^xsd:nonNegativeInteger ;
+													 salsah-gui:guiOrder "6"^^xsd:integer
                           ] ,
                           [ rdf:type owl:Restriction ;
                             owl:onProperty :hasCampaignName ;
@@ -4231,11 +4071,13 @@
                 rdfs:subClassOf knora-base:Resource ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty :hasSiteComment ;
-                                  owl:minCardinality "0"^^xsd:nonNegativeInteger
+                                  owl:minCardinality "0"^^xsd:nonNegativeInteger ;
+																	salsah-gui:guiOrder "12"^^xsd:integer
                                 ] ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty :hasSiteLanguage ;
-                                  owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                  owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+																	salsah-gui:guiOrder "7"^^xsd:integer
                                 ] ,
 #                                [ rdf:type owl:Restriction ;
 #                                  owl:onProperty :hasGeonameCode ;
@@ -4259,7 +4101,8 @@
                                 ] ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty :hasSiteGender ;
-                                  owl:cardinality "1"^^xsd:nonNegativeInteger
+                                  owl:cardinality "1"^^xsd:nonNegativeInteger ;
+																	salsah-gui:guiOrder "8"^^xsd:integer
                                 ] ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty :hasCollectionSiteType ;
@@ -4268,19 +4111,23 @@
                                 ] ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty :hasSiteMaxAgeRangeYear ;
-                                  owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                  owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+																	salsah-gui:guiOrder "10"^^xsd:integer
                                 ] ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty :hasSiteMinAgeRangeYear ;
-                                  owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                  owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+																	salsah-gui:guiOrder "9"^^xsd:integer
                                 ] ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty :hasSiteName ;
-                                  owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                  owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+																	salsah-gui:guiOrder "1"^^xsd:integer
                                 ] ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty :hasSiteReligiousIdentity ;
-                                  owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                  owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+																	salsah-gui:guiOrder "6"^^xsd:integer
                                 ] ;
 				rdfs:label "Site de collecte"@fr ,
             		"Collection site"@en ;
@@ -4334,7 +4181,8 @@
                          ] ,
                          [ rdf:type owl:Restriction ;
                            owl:onProperty :hasDrawingOrder ;
-                           owl:cardinality "1"^^xsd:nonNegativeInteger
+                           owl:cardinality "1"^^xsd:nonNegativeInteger ;
+													 salsah-gui:guiOrder "13"^^xsd:integer
                          ] ,
                          [ rdf:type owl:Restriction ;
                            owl:onProperty :hasAgeDecimal ;
@@ -4437,15 +4285,18 @@
                          ] ,
                          [ rdf:type owl:Restriction ;
                            owl:onProperty :hasIndividualQuestionnaireAttached ;
-                           owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                           owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+													 salsah-gui:guiOrder "16"^^xsd:integer
                          ] ,
                          [ rdf:type owl:Restriction ;
                            owl:onProperty :hasIndividualQuestionnaireAttachedValue ;
-                           owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                           owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+													 salsah-gui:guiOrder "16"^^xsd:integer
                          ] ,
                          [ rdf:type owl:Restriction ;
                            owl:onProperty :drawingHasQuestionnairePageSeqnum ;
-                           owl:cardinality "1"^^xsd:nonNegativeInteger
+                           owl:cardinality "1"^^xsd:nonNegativeInteger ;
+													 salsah-gui:guiOrder "26"^^xsd:integer
                          ] ;
 		rdfs:label "[Dessin]"@fr ,
 			"[Drawing]"@en ;
@@ -4548,11 +4399,13 @@
                          ] ,
                          [ rdf:type owl:Restriction ;
                            owl:onProperty :hasScannerBrand ;
-                           owl:minCardinality "0"^^xsd:nonNegativeInteger
+                           owl:minCardinality "0"^^xsd:nonNegativeInteger ;
+													 salsah-gui:guiOrder "15"^^xsd:integer
                          ] ,
                          [ rdf:type owl:Restriction ;
                            owl:onProperty :hasScannerSettings ;
-                           owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                           owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+													 salsah-gui:guiOrder "14"^^xsd:integer
                          ] ,
                          [ rdf:type owl:Restriction ;
                            owl:onProperty :hasCollectRulesGeneral ;
@@ -4724,7 +4577,8 @@
              rdfs:subClassOf knora-base:Resource ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty :hasQualityComment ;
-                               owl:minCardinality "0"^^xsd:nonNegativeInteger
+                               owl:minCardinality "0"^^xsd:nonNegativeInteger ;
+															 salsah-gui:guiOrder "22"^^xsd:integer
                              ] ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty :hasAnnotationAvailable ;
@@ -4733,7 +4587,8 @@
                              ] ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty :hasRectoOk ;
-                               owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                               owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+															 salsah-gui:guiOrder "2"^^xsd:integer
                              ] ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty :hasDescriptionOk ;
@@ -4752,47 +4607,58 @@
                              ] ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty :hasPhysicalStorage ;
-                               owl:cardinality "1"^^xsd:nonNegativeInteger
+                               owl:cardinality "1"^^xsd:nonNegativeInteger ;
+															 salsah-gui:guiOrder "1"^^xsd:integer
                              ] ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty :hasQuestionnaireComplete ;
-                               owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                               owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+															 salsah-gui:guiOrder "14"^^xsd:integer
                              ] ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty :hasQuestionnaireEntered ;
-                               owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                               owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+															 salsah-gui:guiOrder "15"^^xsd:integer
                              ] ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty :hasRectoCleaned ;
-                               owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                               owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+															 salsah-gui:guiOrder "5"^^xsd:integer
                              ] ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty :hasRectoRestricted ;
-                               owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                               owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+															 salsah-gui:guiOrder "3"^^xsd:integer
                              ] ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty :hasRectoToBeCleaned ;
-                               owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                               owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+															 salsah-gui:guiOrder "4"^^xsd:integer
                              ] ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty :hasTaskOk ;
-                               owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                               owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+															 salsah-gui:guiOrder "10"^^xsd:integer
                              ] ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty :hasTextEnteredFr ;
-                               owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                               owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+															 salsah-gui:guiOrder "19"^^xsd:integer
                              ] ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty :hasTextEnteredEn ;
-                               owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                               owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+															 salsah-gui:guiOrder "18"^^xsd:integer
                              ] ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty :hasTextEnteredOr ;
-                               owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                               owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+															 salsah-gui:guiOrder "17"^^xsd:integer
                              ] ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty :hasBlankPage ;
-                               owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                               owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+															 salsah-gui:guiOrder "6"^^xsd:integer
                              ] ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty :hasMaterialCurrent ;
@@ -4806,11 +4672,13 @@
                              ] ,
 	                        	[ rdf:type owl:Restriction ;
 	                         owl:onProperty :hasVersoUnavailable ;
-	                         owl:maxCardinality "1"^^xsd:nonNegativeInteger
+	                         owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+													 salsah-gui:guiOrder "9"^^xsd:integer
 	                         ] ,
 	                         [ rdf:type owl:Restriction ;
 	                         owl:onProperty :hasQuestionnaireUnavailable ;
-	                         owl:maxCardinality "1"^^xsd:nonNegativeInteger
+	                         owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+													 salsah-gui:guiOrder "13"^^xsd:integer
 	                         ] ;
 			rdfs:label "Contrôle qualité des données"@fr ,
              			"Data quality control"@en ;
@@ -4822,11 +4690,13 @@
                    rdfs:subClassOf knora-base:Resource ,
                                    [ rdf:type owl:Restriction ;
                                      owl:onProperty :hasQuestionnaireBaseComment ;
-                                     owl:minCardinality "0"^^xsd:nonNegativeInteger
+                                     owl:minCardinality "0"^^xsd:nonNegativeInteger ;
+																		 salsah-gui:guiOrder "2"^^xsd:integer
                                    ] ,
                                    [ rdf:type owl:Restriction ;
                                      owl:onProperty :hasQuestionnaireBaseOriginalLanguage ;
-                                     owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                     owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+																		 salsah-gui:guiOrder "2"^^xsd:integer
                                    ] ,
                                    [ rdf:type owl:Restriction ;
                                      owl:onProperty :hasQuestionnaireBaseName ;
@@ -4871,11 +4741,13 @@
                                         ] ,
                                         [ rdf:type owl:Restriction ;
                                           owl:onProperty :hasQuestionnaireBaseImageComment ;
-                                          owl:minCardinality "0"^^xsd:nonNegativeInteger
+                                          owl:minCardinality "0"^^xsd:nonNegativeInteger ;
+																					salsah-gui:guiOrder "3"^^xsd:integer
                                         ] ,
                                         [ rdf:type owl:Restriction ;
                                           owl:onProperty :hasQuestionnaireBaseSeqnum ;
-                                          owl:cardinality "1"^^xsd:nonNegativeInteger
+                                          owl:cardinality "1"^^xsd:nonNegativeInteger ;
+																					salsah-gui:guiOrder "1"^^xsd:integer
                                         ] ;
                         rdfs:label "[Page de questionnaire standardisé]"@fr ,
              				"[Standardized questionnaire page]"@en ;
@@ -4900,415 +4772,519 @@
                          rdfs:subClassOf knora-base:Resource ,
                                          [ rdf:type owl:Restriction ;
                                            owl:onProperty :hasQuestionnaireIndividualComment ;
-                                           owl:minCardinality "0"^^xsd:nonNegativeInteger
+                                           owl:minCardinality "0"^^xsd:nonNegativeInteger ;
+																					 salsah-gui:guiOrder "200"^^xsd:integer
                                          ] ,
                                          [ rdf:type owl:Restriction ;
                                            owl:onProperty :hasModel ;
-                                           owl:cardinality "1"^^xsd:nonNegativeInteger
+                                           owl:cardinality "1"^^xsd:nonNegativeInteger ;
+																					 salsah-gui:guiOrder "2"^^xsd:integer
                                          ] ,
                                          [ rdf:type owl:Restriction ;
                                            owl:onProperty :hasModelValue ;
-                                           owl:cardinality "1"^^xsd:nonNegativeInteger
+                                           owl:cardinality "1"^^xsd:nonNegativeInteger ;
+																					 salsah-gui:guiOrder "2"^^xsd:integer
                                          ] ,
                                          [ rdf:type owl:Restriction ;
                                          owl:onProperty :religiousAffiliation ;
-                                         owl:cardinality "1"^^xsd:nonNegativeInteger
+                                         owl:cardinality "1"^^xsd:nonNegativeInteger ;
+																				 salsah-gui:guiOrder "10"^^xsd:integer
                                          ] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :enteredChurch ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "11"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :enteredChurchHowOften ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "12"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :enteredMosque ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "16"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :enteredMosqueHowOften ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "17"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :enteredBuddhistTemple ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "21"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :enteredBuddhistTempleHowOften ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "22"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :enteredShintoTemple ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "30"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :enteredShintoTempleHowOften ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "31"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :enteredHinduTemple ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "35"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :enteredHinduTempleHowOften ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "36"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :enteredSynagogue ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "40"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :enteredSynagogueHowOften ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "41"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :enteredZorotemple ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "50"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :enteredZorotempleHowOften ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "51"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :enteredTempleNotDefined ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "55"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :enteredTempleNotDefinedHowOften ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "56"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :enteredjinjaOrOtera ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "62"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :enteredjinjaOrOteraHowOften ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "64"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :jinjaOrOteraNewYearsEve ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "61"^^xsd:integer
 										] ,
-										[ rdf:type owl:Restriction ;
-										owl:onProperty :jinja ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
-										] ,
-										[ rdf:type owl:Restriction ;
-										owl:onProperty :jinjaNewYearsEve ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
-										] ,
-										[ rdf:type owl:Restriction ;
-										owl:onProperty :otera ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
-										] ,
-										[ rdf:type owl:Restriction ;
-										owl:onProperty :oteraHowOften ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
-										] ,
-										[ rdf:type owl:Restriction ;
-										owl:onProperty :oteraNewYearsEve ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
-										] ,
+										# disabled on 2019-02-21: properties are not defined.
+										# [ rdf:type owl:Restriction ;
+										# owl:onProperty :jinja ;
+										# owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										# ] ,
+										# [ rdf:type owl:Restriction ;
+										# owl:onProperty :jinjaNewYearsEve ;
+										# owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										# ] ,
+										# [ rdf:type owl:Restriction ;
+										# owl:onProperty :otera ;
+										# owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										# ] ,
+										# [ rdf:type owl:Restriction ;
+										# owl:onProperty :oteraHowOften ;
+										# owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										# ] ,
+										# [ rdf:type owl:Restriction ;
+										# owl:onProperty :oteraNewYearsEve ;
+										# owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										# ] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :visitOnNewYearsEve ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "60"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :cultObjectAtHomePresence ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "70"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :cultObjectAtHomePresenceWhich ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "71"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :knowWhatWordGodMeans ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "115"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :knowWhoBuddhaIs ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "117"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :ifIToldYouGodCouldYouDrawJesus ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "100"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :ifIToldYouGodCouldYouDrawMary ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "101"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :ifIToldYouGodCouldYouDrawMuhammad ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "104"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :ifIToldYouGodCouldYouDrawAllah ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "103"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :ifIToldYouGodCouldYouDrawBuddha ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "105"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :ifIToldYouGodCouldYouDrawMoses ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "102"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :ifIToldYouGodCouldYouDrawZoro ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "106"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :ifIToldYouGodCouldYouDrawSomethingElse ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "107"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :seenOtherPeoplePray ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "83"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :seenOtherPeoplePrayWhen ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "84"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :prayingAtHome ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "80"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :prayingAtHomeWhen ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "81"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :prayingWithOtherPeople ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "86"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :prayingWithOtherPeopleHowOften ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "87"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :prayingAlone ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "91"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :prayingAloneHowOften ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "93"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :whereIsGod ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "109"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :sexOfGod ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "111"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :ageOfGod ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "113"^^xsd:integer
+										] ,
+										[ rdf:type owl:Restriction ;
+										owl:onProperty :ageOfGodOther ;
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "114"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :alreadyDrawnGodInThePast ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "119"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :baptized ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "123"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :communion ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "125"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :otherLanguages1 ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "135"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :enjoyedTheActivity ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "140"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :carriedOutTaskSeriously ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "141"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :selfEsteemExplicit ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "142"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :happinessGeneral ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "143"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :stress ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "144"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :dadsReligion ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "128"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :momsReligion ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "130"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :motherTongue ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "133"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :otherLanguages2 ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "136"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :languageSpokenMostOften ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "137"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :enteredChurchWithWhom ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "14"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :enteredChurchWhy ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "13"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :enteredChurchLastTime ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "15"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :enteredMosqueWithWhom ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "19"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :enteredMosqueWhy ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "18"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :enteredMosqueLastTime ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "20"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :enteredBuddhistTempleWithWhom ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "24"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :enteredBuddhistTempleWhy ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "23"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :enteredBuddhistTempleLastTime ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "25"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :enteredShintoTempleWithWhom ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "33"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :enteredShintoTempleWhy ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "32"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :enteredShintoTempleLastTime ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "34"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :enteredHinduTempleWithWhom ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "38"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :enteredHinduTempleWhy ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "37"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :enteredHinduTempleLastTime ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "39"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :enteredSynagogueWithWhom ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "43"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :enteredSynagogueWhy ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "42"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :enteredSynagogueLastTime ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "44"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :enteredZorotempleWithWhom ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "53"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :enteredZorotempleWhy ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "52"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :enteredZorotempleLastTime ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "54"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :enteredTempleNotDefinedWithWhom ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "58"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :enteredTempleNotDefinedWhy ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "57"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :enteredTempleNotDefinedLastTime ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "59"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :jinjaOrOteraOccasion ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "63"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :jinjaOrOteraWithWhom ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "66"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :jinjaOrOteraWhy ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "65"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :jinjaOrOteraLastTime ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "67"^^xsd:integer
 										] ,
-										[ rdf:type owl:Restriction ;
-										owl:onProperty :oteraOccasion ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
-										] ,
+										# disabled on 2019-02-21: properties are not defined.
+										# [ rdf:type owl:Restriction ;
+										# owl:onProperty :oteraOccasion ;
+										# owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										# ] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :cultObjectAtHomeFamilyMembersActions ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "72"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :whatWordGodMeans ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "116"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :whoBuddhaIs ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "118"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :ifIToldYouGodCouldYouDrawSomethingElseWho ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "108"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :seenOtherPeoplePrayWhenOther ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "85"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :prayingAtHomeOtherTimes ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "82"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :prayingWithOtherPeopleWhen ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "89"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :prayingWithOtherPeopleLastTime ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "90"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :cultObjectAtHomeFamilyMembersActions ;
@@ -5316,75 +5292,93 @@
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :prayingWithOtherPeopleHowOftenOther ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "88"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :prayingAloneWhen ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "92"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :prayingAloneLastTime ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "95"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :prayingAloneHowOftenOther ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "94"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :whereIsGodOther ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "110"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :sexOfGodOther ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "112"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :alreadyDrawnGodInThePastWhen ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "120"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :alreadyDrawnGodInThePastLastTime ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "122"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :alreadyDrawnGodInThePastWhat ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "121"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :baptizedWhen ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "124"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :communionWhen ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "126"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :cathechismWhen ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "127"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :otherDadsReligion ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "129"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :otherMomsReligion ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "131"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :placeOfBirth ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "132"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :otherMotherTongue ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "134"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :otherLanguageSpokenMostOften ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "138"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 										owl:onProperty :yearsLivingInSwitzerland ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
+										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+										salsah-gui:guiOrder "139"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
 			                               owl:onProperty :hasQuestionnaireUnavailable ;
@@ -5399,7 +5393,8 @@
                    rdfs:subClassOf knora-base:StillImageRepresentation ,
                                    [ rdf:type owl:Restriction ;
                                      owl:onProperty :hasQuestionnairePageComment ;
-                                     owl:minCardinality "0"^^xsd:nonNegativeInteger
+                                     owl:minCardinality "0"^^xsd:nonNegativeInteger ;
+																		 salsah-gui:guiOrder "3"^^xsd:integer
                                    ] ,
                                    [ rdf:type owl:Restriction ;
                                      owl:onProperty :isPartOfIndividualQuestionnaire ;
@@ -5413,7 +5408,8 @@
                                    ] ,
                                    [ rdf:type owl:Restriction ;
                                      owl:onProperty :hasQuestionnairePageSeqnum ;
-                                     owl:cardinality "1"^^xsd:nonNegativeInteger
+                                     owl:cardinality "1"^^xsd:nonNegativeInteger ;
+																		 salsah-gui:guiOrder "1"^^xsd:integer
                                    ];
 					rdfs:label "Page de questionnaire individuel"@fr ,
              			"Individual questionnaire page"@en .
@@ -5424,23 +5420,28 @@
                rdfs:subClassOf knora-base:Resource ,
                                [ rdf:type owl:Restriction ;
                                  owl:onProperty :hasTextOnDrawingTranslator ;
-                                 owl:minCardinality "0"^^xsd:nonNegativeInteger
+                                 owl:minCardinality "0"^^xsd:nonNegativeInteger ;
+																 salsah-gui:guiOrder "5"^^xsd:integer
                                ] ,
                                [ rdf:type owl:Restriction ;
                                  owl:onProperty :hasWordEn ;
-                                 owl:cardinality "1"^^xsd:nonNegativeInteger
+                                 owl:cardinality "1"^^xsd:nonNegativeInteger ;
+																 salsah-gui:guiOrder "4"^^xsd:integer
                                ] ,
                                [ rdf:type owl:Restriction ;
                                  owl:onProperty :hasWordFr ;
-                                 owl:cardinality "1"^^xsd:nonNegativeInteger
+                                 owl:cardinality "1"^^xsd:nonNegativeInteger ;
+																 salsah-gui:guiOrder "3"^^xsd:integer
                                ] ,
                                [ rdf:type owl:Restriction ;
                                  owl:onProperty :hasWordOriginal ;
-                                 owl:cardinality "1"^^xsd:nonNegativeInteger
+                                 owl:cardinality "1"^^xsd:nonNegativeInteger ;
+																 salsah-gui:guiOrder "2"^^xsd:integer
                                ] ,
                                [ rdf:type owl:Restriction ;
                                  owl:onProperty :hasWordOriginalLanguage ;
-                                 owl:cardinality "1"^^xsd:nonNegativeInteger
+                                 owl:cardinality "1"^^xsd:nonNegativeInteger ;
+																 salsah-gui:guiOrder "1"^^xsd:integer
                                ] ;
 				rdfs:label "Texte par enfant sur le recto"@fr ,
 							"Words written by child on the recto"@en ;
@@ -5471,17 +5472,17 @@
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasVersoComment ;
                          owl:minCardinality "0"^^xsd:nonNegativeInteger ;
-                         # salsah-gui:guiOrder "24"^^xsd:integer 
+                         salsah-gui:guiOrder "24"^^xsd:integer 
                        ] ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasVersoTranslatorEn ;
                          owl:minCardinality "0"^^xsd:nonNegativeInteger ;
-                         # salsah-gui:guiOrder "22"^^xsd:integer 
+                         salsah-gui:guiOrder "22"^^xsd:integer 
                        ] ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasVersoTranslatorFr ;
                          owl:minCardinality "0"^^xsd:nonNegativeInteger ;
-                         # salsah-gui:guiOrder "23"^^xsd:integer 
+                         salsah-gui:guiOrder "23"^^xsd:integer 
                        ] ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasCodeVerso ;
@@ -5556,12 +5557,12 @@
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasRecallUnavailable ;
                          owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-                         # salsah-gui:guiOrder "3"^^xsd:integer 
+                         salsah-gui:guiOrder "3"^^xsd:integer 
                        ] ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasDescriptionUnavailable ;
                          owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-                         # salsah-gui:guiOrder "10"^^xsd:integer 
+                         salsah-gui:guiOrder "10"^^xsd:integer 
                        ] ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasInstructionRestitutionAuthor ;
@@ -5581,7 +5582,7 @@
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :versoHasQuestionnairePageSeqnum ;
                          owl:cardinality "1"^^xsd:nonNegativeInteger ;
-                         # salsah-gui:guiOrder "26"^^xsd:integer 
+                         salsah-gui:guiOrder "26"^^xsd:integer 
                        ] ;
 		rdfs:label "Verso"@fr ,
              	"Verso"@en ;
