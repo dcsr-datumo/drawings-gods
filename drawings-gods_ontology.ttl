@@ -5287,10 +5287,6 @@
 										salsah-gui:guiOrder "90"^^xsd:integer
 										] ,
 										[ rdf:type owl:Restriction ;
-										owl:onProperty :cultObjectAtHomeFamilyMembersActions ;
-										owl:maxCardinality "1"^^xsd:nonNegativeInteger
-										] ,
-										[ rdf:type owl:Restriction ;
 										owl:onProperty :prayingWithOtherPeopleHowOftenOther ;
 										owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
 										salsah-gui:guiOrder "88"^^xsd:integer
