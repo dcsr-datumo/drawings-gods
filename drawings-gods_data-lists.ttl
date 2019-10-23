@@ -339,7 +339,9 @@
 		rdfs:label "Pays-Bas"@fr , "Netherlands"@en ;
 		knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-GlobalLocationHList-frieslandRegion> ,
 									<http://rdfh.ch/lists/0105/drawings-gods-2016-list-GlobalLocationHList-groningenRegion> ,
-									<http://rdfh.ch/lists/0105/drawings-gods-2016-list-GlobalLocationHList-nonidentifiedRegion> .
+									<http://rdfh.ch/lists/0105/drawings-gods-2016-list-GlobalLocationHList-nonidentifiedRegion> ,
+									<http://rdfh.ch/lists/0105/drawings-gods-2016-list-GlobalLocationHList-drentheRegion> ,
+									<http://rdfh.ch/lists/0105/drawings-gods-2016-list-GlobalLocationHList-overijsselRegion> .
 
 		<http://rdfh.ch/lists/0105/drawings-gods-2016-list-GlobalLocationHList-frieslandRegion> a knora-base:ListNode ;
 			knora-base:listNodeName "frieslandRegion" ;
@@ -358,6 +360,18 @@
 			knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-GlobalLocationHList> ;
 			knora-base:listNodePosition 2 ;
 			rdfs:label "Région non-identifiée"@fr , "Non-identified region"@en .
+			
+		<http://rdfh.ch/lists/0105/drawings-gods-2016-list-GlobalLocationHList-drentheRegion> a knora-base:ListNode ;
+			knora-base:listNodeName "drentheRegion" ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-GlobalLocationHList> ;
+			knora-base:listNodePosition 3 ;
+			rdfs:label "Région de Drenthe"@fr , "Drenthe Region"@en .
+			
+		<http://rdfh.ch/lists/0105/drawings-gods-2016-list-GlobalLocationHList-overijsselRegion> a knora-base:ListNode ;
+			knora-base:listNodeName "overijsselRegion" ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-GlobalLocationHList> ;
+			knora-base:listNodePosition 4 ;
+			rdfs:label "Région d'Overijssel"@fr , "Overijssel Region"@en .
 
 	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-GlobalLocationHList-romania> a knora-base:ListNode ;
 		knora-base:listNodeName "romania" ;
@@ -2459,7 +2473,9 @@
 		rdfs:label "Pays-Bas"@fr , "Netherlands"@en ;
 		knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-frieslandRegion> ,
 									<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-groningenRegion> ,
-									<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-nonidentifiedRegion> .
+									<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-nonidentifiedRegion> ,
+									<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-drentheRegion> ,
+									<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-overijsselRegion> .
 
 		<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-frieslandRegion> a knora-base:ListNode ;
 			knora-base:listNodeName "frieslandRegion" ;
@@ -2541,6 +2557,47 @@
 					knora-base:listNodeName "home" ;
 					knora-base:listNodePosition 0 ;
 					rdfs:label "A la maison (pho)"@fr , "At home (pho)"@en .
+					
+		<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-drentheRegion> a knora-base:ListNode ;
+			knora-base:listNodeName "drentheRegion" ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList> ;
+			knora-base:listNodePosition 3 ;
+			rdfs:label "Région de Drenthe"@fr , "Drenthe Region"@en ;
+			knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-drenthe> .
+			
+			<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-drenthe> a knora-base:ListNode ;
+				knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList> ;
+				knora-base:listNodeName "drenthe" ;
+				knora-base:listNodePosition 0 ;
+				rdfs:label "Dans la région de Drenthe"@fr , "In Drenthe Region"@en ;
+				knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-elschdrenthe> .
+				
+				<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-elschdrenthe> a knora-base:ListNode ;
+					knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList> ;
+					knora-base:listNodeName "elschdrenthe" ;
+					knora-base:listNodePosition 0 ;
+					rdfs:label "Ecole élémentaire dans la région de Drenthe (reb)"@fr , "Elementary school in the region of Drenthe (reb)"@en .
+		
+		<http://rdfh.ch/lists/0105/drawings-gods-2016-list-GlobalLocationHList-overijsselRegion> a knora-base:ListNode ;
+			knora-base:listNodeName "overijsselRegion" ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-GlobalLocationHList> ;
+			knora-base:listNodePosition 4 ;
+			rdfs:label "Région d'Overijssel"@fr , "Overijssel Region"@en .
+			knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-overijssel> .
+
+			<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-overijssel> a knora-base:ListNode ;
+				knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList> ;
+				knora-base:listNodeName "overijssel" ;
+				knora-base:listNodePosition 0 ;
+				rdfs:label "Dans la région de Overijssel"@fr , "In Overijssel Region"@en ;
+				knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-elschoverijssel> .
+				
+				<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-elschoverijssel> a knora-base:ListNode ;
+					knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList> ;
+					knora-base:listNodeName "elschoverijssel" ;
+					knora-base:listNodePosition 0 ;
+					rdfs:label "Ecole élémentaire dans la région de Overijssel (psp)"@fr , "Elementary school in the region of Overijssel (psp)"@en .
+
 
 	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-romania> a knora-base:ListNode ;
 		knora-base:listNodeName "romania" ;
@@ -2584,7 +2641,11 @@
 				knora-base:listNodePosition 0 ;
 				rdfs:label "Iasi"@fr , "Iasi"@en ;
 				knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-bancila> ,
-										<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-mihail> .
+										<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-mihail> ,
+										<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-anghel> ,
+										<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-alexandru> ,
+										<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-lunca> ,
+										<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-hasdeu> .
 
 				<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-bancila> a knora-base:ListNode ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList> ;
@@ -2596,7 +2657,31 @@
 					knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList> ;
 					knora-base:listNodeName "mihail" ;
 					knora-base:listNodePosition 1 ;
-					rdfs:label "Ecole élémentaire Mihail Kogalniceanu , école subordonnée à Costache Antoniu, école élémentaire et secondaire inférieure, Tiganasi (pi)"@fr , "Mihail Kogalniceanu Elementary School, school subordinated to Costache Antoniu Elementary and Middle School, Tiganasi (pi)"@en .
+					rdfs:label "Ecole élémentaire Mihail Kogalniceanu, école subordonnée à Costache Antoniu, école élémentaire et secondaire inférieure, Tiganasi (pi)"@fr , "Mihail Kogalniceanu Elementary School, school subordinated to Costache Antoniu Elementary and Middle School, Tiganasi (pi)"@en .
+	
+				<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-anghel> a knora-base:ListNode ;
+					knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList> ;
+					knora-base:listNodeName "anghel" ;
+					knora-base:listNodePosition 2 ;
+					rdfs:label "Scoala Gimnaziala, Petru Anghel, Probota, judetul Iasi (pap)"@fr , "Scoala Gimnaziala, Petru Anghel, Probota, judetul Iasi (pap)"@en .
+
+				<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-alexandru> a knora-base:ListNode ;
+					knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList> ;
+					knora-base:listNodeName "alexandru" ;
+					knora-base:listNodePosition 3 ;
+					rdfs:label "Scoala Gimnaziala 13, Alexandru cel Bun, Iasi (pac)"@fr , "Scoala Gimnaziala 13, Alexandru cel Bun, Iasi (pac)"@en .
+
+				<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-lunca> a knora-base:ListNode ;
+					knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList> ;
+					knora-base:listNodeName "lunca" ;
+					knora-base:listNodePosition 4 ;
+					rdfs:label "Scoala Gimnaziala nr. 1, Lunca Cetatuii, judetul Iasi (plc)"@fr , "Scoala Gimnaziala nr. 1, Lunca Cetatuii, judetul Iasi (plc)"@en .
+
+				<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-hasdeu> a knora-base:ListNode ;
+					knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList> ;
+					knora-base:listNodeName "hasdeu" ;
+					knora-base:listNodePosition 5 ;
+					rdfs:label "Scoala Gimnaziala nr. 22, B.P. Hasdeu, judetul Iasi (pah)"@fr , "Scoala Gimnaziala nr. 22, B.P. Hasdeu, judetul Iasi (pah)"@en .
 
 			<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-moldavia> a knora-base:ListNode ;
 				knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList> ;
@@ -5343,7 +5428,9 @@
 		rdfs:label "Pays-Bas"@fr , "Netherlands"@en ;
 		knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-frieslandRegion> ,
 									<http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-groningenRegion> ,
-									<http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-nonidentifiedRegion> .
+									<http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-nonidentifiedRegion> ,
+									<http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-drentheRegion> ,
+									<http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-overijsselRegion> .
 
 		<http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-frieslandRegion> a knora-base:ListNode ;
 			knora-base:listNodeName "frieslandRegion" ;
@@ -5390,6 +5477,32 @@
 				knora-base:listNodeName "nonidentified" ;
 				knora-base:listNodePosition 0 ;
 				rdfs:label "Lieu non identifié"@fr , "Non-identified place"@en .
+				
+		<http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-drentheRegion> a knora-base:ListNode ;
+			knora-base:listNodeName "drentheRegion" ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList> ;
+			knora-base:listNodePosition 3 ;
+			rdfs:label "Région de Drenthe"@fr , "Drenthe Region"@en ;
+			knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-drenthe> .
+			
+			<http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-drenthe> a knora-base:ListNode ;
+				knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList> ;
+				knora-base:listNodeName "drenthe" ;
+				knora-base:listNodePosition 0 ;
+				rdfs:label "Dans la région de Drenthe"@fr , "In Drenthe Region"@en .
+						
+		<http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-overijsselRegion> a knora-base:ListNode ;
+			knora-base:listNodeName "overijsselRegion" ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList> ;
+			knora-base:listNodePosition 4 ;
+			rdfs:label "Région de Overijssel"@fr , "Overijssel Region"@en ;
+			knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-overijssel> .
+			
+			<http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-overijssel> a knora-base:ListNode ;
+				knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList> ;
+				knora-base:listNodeName "overijssel" ;
+				knora-base:listNodePosition 0 ;
+				rdfs:label "Dans la région de Overijssel"@fr , "In Overijssel Region"@en .
 
 	<http://rdfh.ch/lists/0105/drawings-gods-2016-list-VillageHList-romania> a knora-base:ListNode ;
 		knora-base:listNodeName "romania" ;
