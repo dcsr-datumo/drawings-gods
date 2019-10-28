@@ -5508,7 +5508,7 @@
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasDescriptionAsIsOriginal ;
                          owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-                         # salsah-gui:guiOrder "12"^^xsd:integer 
+                         salsah-gui:guiOrder "12"^^xsd:integer 
                        ] ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasDescriptionEn ;
@@ -5569,6 +5569,11 @@
                          owl:onProperty :versoIsPartOfIndividualQuestionnaire ;
                          owl:cardinality "1"^^xsd:nonNegativeInteger ;
                          salsah-gui:guiOrder "24"^^xsd:integer 
+                       ] ,
+					   [ rdf:type owl:Restriction ;
+                         owl:onProperty :versoIsPartOfIndividualQuestionnaireValue ;
+                         owl:cardinality "1"^^xsd:nonNegativeInteger ;
+						 salsah-gui:guiOrder "24"^^xsd:integer
                        ] ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :versoHasQuestionnairePageSeqnum ;
