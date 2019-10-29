@@ -8813,7 +8813,7 @@
 				rdfs:label "Les objets ou les armes qui définissent une divinité"@fr , "Arms or object that define a divine being"@en .
 
 				<http://rdfh.ch/lists/0105/drawings-gods-2016-list-KeywordsHListOther-lightning2> a knora-base:ListNode ;
-					knora-base:listNodeName "lightning" ;
+					knora-base:listNodeName "lightning2" ;
 					knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-KeywordsHListOther> ;
 					knora-base:listNodePosition 7 ;
 					rdfs:label "Foudre"@fr , "Lightning"@en .
