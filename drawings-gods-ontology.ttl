@@ -18,8 +18,7 @@
     dc:description "drawings-gods ontology aims at describing research material gathered within a project funded by the Swiss National Founds. Research materials include thousands drawings, data regarding the socio-cultural context of the producers, as well as questionnaires upon those drawings." ;
     dc:rights "to be determined"@en ;
     dc:title "Ontology design for the SNFS research project \"Drawings of gods\"" ;
-    knora-base:attachedToProject <http://rdfh.ch/projects/0105> ;
-    owl:versionInfo "1.0." .
+    knora-base:attachedToProject <http://rdfh.ch/projects/0105> .
 
 drawings-gods:QuestionnaireBaseEn a owl:Class ;
     rdfs:label "Standardized questionnaire page in English"@en,
@@ -3859,7 +3858,7 @@ drawings-gods:Verso a owl:Class ;
                          owl:onProperty drawings-gods:versoHasQuestionnairePageSeqnum ;
                          owl:cardinality "1"^^xsd:nonNegativeInteger ;
                          salsah-gui:guiOrder "25"^^xsd:integer 
-                       ] ;
+                       ] ,
         knora-base:StillImageRepresentation .
 
 drawings-gods:Drawing a owl:Class ;
