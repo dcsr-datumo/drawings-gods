@@ -6274,11 +6274,11 @@
 					knora-base:listNodePosition 0 ;
 					rdfs:label "Ecole élémentaire dans la région de Drenthe (reb)"@fr , "Elementary school in the region of Drenthe (reb)"@en .
 		
-		<http://rdfh.ch/lists/0105/drawings-gods-2016-list-GlobalLocationHList-overijsselRegion> a knora-base:ListNode ;
+		<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-overijsselRegion> a knora-base:ListNode ;
 			knora-base:listNodeName "overijsselRegion_2" ;
-			knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-GlobalLocationHList> ;
+			knora-base:hasRootNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList> ;
 			knora-base:listNodePosition 4 ;
-			rdfs:label "Région d'Overijssel"@fr , "Overijssel Region"@en .
+			rdfs:label "Région d'Overijssel"@fr , "Overijssel Region"@en ;
 			knora-base:hasSubListNode <http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-overijssel> .
 
 			<http://rdfh.ch/lists/0105/drawings-gods-2016-list-SchoolHList-overijssel> a knora-base:ListNode ;
