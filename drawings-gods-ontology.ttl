@@ -1,11 +1,9 @@
-@prefix : <http://www.knora.org/ontology/knora-admin#> .
 @prefix drawings-gods: <http://www.knora.org/ontology/0105/drawings-gods#> .
 @prefix knora-base: <http://www.knora.org/ontology/knora-base#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix salsah-gui: <http://www.knora.org/ontology/salsah-gui#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://www.knora.org/ontology/0105/drawings-gods> a owl:Ontology ;
     dc:contributor "Christelle Cocco",
@@ -18,7 +16,8 @@
     dc:description "drawings-gods ontology aims at describing research material gathered within a project funded by the Swiss National Founds. Research materials include thousands drawings, data regarding the socio-cultural context of the producers, as well as questionnaires upon those drawings." ;
     dc:rights "to be determined"@en ;
     dc:title "Ontology design for the SNFS research project \"Drawings of gods\"" ;
-    knora-base:attachedToProject <http://rdfh.ch/projects/0105> .
+    knora-base:attachedToProject <http://rdfh.ch/projects/0105> ;
+    owl:versionInfo "1.0." .
 
 drawings-gods:QuestionnaireBaseEn a owl:Class ;
     rdfs:label "Standardized questionnaire page in English"@en,
@@ -3730,135 +3729,108 @@ drawings-gods:Verso a owl:Class ;
     rdfs:comment "Information (text) available on the drawing verso"@en,
         "Informations (textes) présentes sur le verso du dessin"@fr ;
     rdfs:subClassOf [ a owl:Restriction ;
-                         owl:onProperty drawings-gods:hasCodeVerso ;
-                         owl:cardinality "1"^^xsd:nonNegativeInteger ;
-                         salsah-gui:guiOrder "1"^^xsd:integer 
-                       ] ,
-                       [ a owl:Restriction ;
-                         owl:onProperty drawings-gods:hasRecallUnavailable ;
-                         owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-                         salsah-gui:guiOrder "2"^^xsd:integer 
-                       ] ,
-                       [ a owl:Restriction ;
-                         owl:onProperty drawings-gods:hasInstructionRestitutionOriginalLanguage ;
-                         owl:minCardinality "0"^^xsd:nonNegativeInteger ;
-                         salsah-gui:guiOrder "3"^^xsd:integer 
-                       ] ,
-                       [ a owl:Restriction ;
-                         owl:onProperty drawings-gods:hasInstructionRestitutionAsIsOriginal ;
-                         owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-                         salsah-gui:guiOrder "4"^^xsd:integer 
-                       ] ,
-                       [ a owl:Restriction ;
-                         owl:onProperty drawings-gods:hasInstructionRestitutionOriginal ;
-                         owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-                         salsah-gui:guiOrder "5"^^xsd:integer 
-                       ] ,
-                       [ a owl:Restriction ;
-                         owl:onProperty drawings-gods:hasInstructionRestitutionEn ;
-                         owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-                         salsah-gui:guiOrder "6"^^xsd:integer 
-                       ] ,
-                       [ a owl:Restriction ;
-                         owl:onProperty drawings-gods:hasInstructionRestitutionFr ;
-                         owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-                         salsah-gui:guiOrder "7"^^xsd:integer 
-                       ] ,
-                       [ a owl:Restriction ;
-                         owl:onProperty drawings-gods:hasInstructionRestitutionAuthor ;
-                         owl:minCardinality "0"^^xsd:nonNegativeInteger ;
-                         salsah-gui:guiOrder "8"^^xsd:integer 
-                       ] ,
-                       [ a owl:Restriction ;
-                         owl:onProperty drawings-gods:hasDescriptionUnavailable ;
-                         owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-                         salsah-gui:guiOrder "9"^^xsd:integer 
-                       ] ,
-                       [ a owl:Restriction ;
-                         owl:onProperty drawings-gods:hasDescriptionOriginalLanguage ;
-                         owl:minCardinality "0"^^xsd:nonNegativeInteger ;
-                         salsah-gui:guiOrder "10"^^xsd:integer 
-                       ] ,
-                       [ a owl:Restriction ;
-                         owl:onProperty drawings-gods:hasDescriptionOriginal ;
-                         owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-                         salsah-gui:guiOrder "11"^^xsd:integer 
-                       ] ,
-                       [ a owl:Restriction ;
-                         owl:onProperty drawings-gods:hasDescriptionAsIsOriginal ;
-                         owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-                         salsah-gui:guiOrder "12"^^xsd:integer 
-                       ] ,
-                       [ a owl:Restriction ;
-                         owl:onProperty drawings-gods:hasDescriptionEn ;
-                         owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-                         salsah-gui:guiOrder "13"^^xsd:integer 
-                       ] ,
-                       [ a owl:Restriction ;
-                         owl:onProperty drawings-gods:hasDescriptionFr ;
-                         owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-                         salsah-gui:guiOrder "14"^^xsd:integer 
-                       ] ,
-                       [ a owl:Restriction ;
-                         owl:onProperty drawings-gods:hasDescriptionAuthor ;
-                         owl:minCardinality "1"^^xsd:nonNegativeInteger ;
-                         salsah-gui:guiOrder "15"^^xsd:integer 
-                       ] ,
-                       [ a owl:Restriction ;
-                         owl:onProperty drawings-gods:hasCommentOriginalLanguage ;
-                         owl:minCardinality "0"^^xsd:nonNegativeInteger ;
-                         salsah-gui:guiOrder "16"^^xsd:integer 
-                       ] ,
-                       [ a owl:Restriction ;
-                         owl:onProperty drawings-gods:hasCommentOriginal ;
-                         owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-                         salsah-gui:guiOrder "17"^^xsd:integer 
-                       ] ,
-                       [ a owl:Restriction ;
-                         owl:onProperty drawings-gods:hasCommentEn ;
-                         owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-                         salsah-gui:guiOrder "18"^^xsd:integer 
-                       ] ,
-                       [ a owl:Restriction ;
-                         owl:onProperty drawings-gods:hasCommentFr ;
-                         owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-                         salsah-gui:guiOrder "19"^^xsd:integer 
-                       ] ,
-                       [ a owl:Restriction ;
-                         owl:onProperty drawings-gods:hasCommentAuthor ;
-                         owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-                         salsah-gui:guiOrder "20"^^xsd:integer 
-                       ] ,
-                       [ a owl:Restriction ;
-                         owl:onProperty drawings-gods:hasVersoTranslatorEn ;
-                         owl:minCardinality "0"^^xsd:nonNegativeInteger ;
-                         salsah-gui:guiOrder "21"^^xsd:integer 
-                       ] ,
-                       [ a owl:Restriction ;
-                         owl:onProperty drawings-gods:hasVersoTranslatorFr ;
-                         owl:minCardinality "0"^^xsd:nonNegativeInteger ;
-                         salsah-gui:guiOrder "22"^^xsd:integer 
-                       ] ,
-                       [ a owl:Restriction ;
-                         owl:onProperty drawings-gods:hasVersoComment ;
-                         owl:minCardinality "0"^^xsd:nonNegativeInteger ;
-                         salsah-gui:guiOrder "23"^^xsd:integer 
-                       ] ,
-                       [ a owl:Restriction ;
-                         owl:onProperty drawings-gods:versoIsPartOfIndividualQuestionnaire ;
-                         owl:cardinality "1"^^xsd:nonNegativeInteger ;
-                         salsah-gui:guiOrder "24"^^xsd:integer 
-                       ] ,
-					   [ a owl:Restriction ;
-                         owl:onProperty drawings-gods:versoIsPartOfIndividualQuestionnaireValue ;
-                         owl:cardinality "1"^^xsd:nonNegativeInteger ;
-						 salsah-gui:guiOrder "24"^^xsd:integer
-                       ] ,
-                       [ a owl:Restriction ;
-                         owl:onProperty drawings-gods:versoHasQuestionnairePageSeqnum ;
-                         owl:cardinality "1"^^xsd:nonNegativeInteger ;
-                         salsah-gui:guiOrder "25"^^xsd:integer 
-                       ] ,
+            salsah-gui:guiOrder 17 ;
+            owl:minCardinality "0"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:hasCommentOriginalLanguage ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 11 ;
+            owl:minCardinality "0"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:hasDescriptionOriginalLanguage ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 4 ;
+            owl:minCardinality "0"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:hasInstructionRestitutionOriginalLanguage ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 24 ;
+            owl:minCardinality "0"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:hasVersoComment ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 22 ;
+            owl:minCardinality "0"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:hasVersoTranslatorEn ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 23 ;
+            owl:minCardinality "0"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:hasVersoTranslatorFr ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 1 ;
+            owl:minCardinality "0"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:hasCodeVerso ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 21 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:hasCommentAuthor ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 19 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:hasCommentEn ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 20 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:hasCommentFr ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 18 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:hasCommentOriginal ],
+        [ a owl:Restriction ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:hasDescriptionAsIsOriginal ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 16 ;
+            owl:minCardinality "0"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:hasDescriptionAuthor ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 14 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:hasDescriptionEn ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 15 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:hasDescriptionFr ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 12 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:hasDescriptionOriginal ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 6 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:hasInstructionRestitutionAsIsOriginal ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 7 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:hasInstructionRestitutionEn ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 8 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:hasInstructionRestitutionFr ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 5 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:hasInstructionRestitutionOriginal ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 3 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:hasRecallUnavailable ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 10 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:hasDescriptionUnavailable ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 9 ;
+            owl:minCardinality "0"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:hasInstructionRestitutionAuthor ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 25 ;
+            owl:minCardinality "0"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:versoIsPartOfIndividualQuestionnaire ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 25 ;
+            owl:minCardinality "0"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:versoIsPartOfIndividualQuestionnaireValue ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 26 ;
+            owl:minCardinality "0"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:versoHasQuestionnairePageSeqnum ],
         knora-base:StillImageRepresentation .
 
 drawings-gods:Drawing a owl:Class ;
@@ -4071,37 +4043,17 @@ drawings-gods:QuestionnaireIndividual a owl:Class ;
             owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
             owl:onProperty drawings-gods:enteredTempleNotDefined ],
         [ a owl:Restriction ;
-            salsah-gui:guiOrder 56 ;
+            salsah-gui:guiOrder 64 ;
             owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty drawings-gods:enteredTempleNotDefinedHowOften ],
+            owl:onProperty drawings-gods:enteredjinjaOrOteraHowOften ],
         [ a owl:Restriction ;
             salsah-gui:guiOrder 62 ;
             owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
             owl:onProperty drawings-gods:enteredjinjaOrOtera ],
         [ a owl:Restriction ;
-            salsah-gui:guiOrder 64 ;
-            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty drawings-gods:enteredjinjaOrOteraHowOften ],
-        [ a owl:Restriction ;
-            salsah-gui:guiOrder 61 ;
-            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty drawings-gods:jinjaOrOteraNewYearsEve ],
-        [ a owl:Restriction ;
-            salsah-gui:guiOrder 60 ;
-            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty drawings-gods:visitOnNewYearsEve ],
-        [ a owl:Restriction ;
             salsah-gui:guiOrder 70 ;
             owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
             owl:onProperty drawings-gods:cultObjectAtHomePresence ],
-        [ a owl:Restriction ;
-            salsah-gui:guiOrder 71 ;
-            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty drawings-gods:cultObjectAtHomePresenceWhich ],
-        [ a owl:Restriction ;
-            salsah-gui:guiOrder 115 ;
-            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty drawings-gods:knowWhatWordGodMeans ],
         [ a owl:Restriction ;
             salsah-gui:guiOrder 117 ;
             owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
@@ -4111,33 +4063,17 @@ drawings-gods:QuestionnaireIndividual a owl:Class ;
             owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
             owl:onProperty drawings-gods:ifIToldYouGodCouldYouDrawJesus ],
         [ a owl:Restriction ;
-            salsah-gui:guiOrder 101 ;
+            salsah-gui:guiOrder 103 ;
             owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty drawings-gods:ifIToldYouGodCouldYouDrawMary ],
+            owl:onProperty drawings-gods:ifIToldYouGodCouldYouDrawAllah ],
         [ a owl:Restriction ;
             salsah-gui:guiOrder 104 ;
             owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
             owl:onProperty drawings-gods:ifIToldYouGodCouldYouDrawMuhammad ],
         [ a owl:Restriction ;
-            salsah-gui:guiOrder 103 ;
-            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty drawings-gods:ifIToldYouGodCouldYouDrawAllah ],
-        [ a owl:Restriction ;
-            salsah-gui:guiOrder 105 ;
-            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty drawings-gods:ifIToldYouGodCouldYouDrawBuddha ],
-        [ a owl:Restriction ;
-            salsah-gui:guiOrder 102 ;
-            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty drawings-gods:ifIToldYouGodCouldYouDrawMoses ],
-        [ a owl:Restriction ;
             salsah-gui:guiOrder 106 ;
             owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
             owl:onProperty drawings-gods:ifIToldYouGodCouldYouDrawZoro ],
-        [ a owl:Restriction ;
-            salsah-gui:guiOrder 107 ;
-            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty drawings-gods:ifIToldYouGodCouldYouDrawSomethingElse ],
         [ a owl:Restriction ;
             salsah-gui:guiOrder 83 ;
             owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
@@ -4147,18 +4083,6 @@ drawings-gods:QuestionnaireIndividual a owl:Class ;
             owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
             owl:onProperty drawings-gods:seenOtherPeoplePrayWhen ],
         [ a owl:Restriction ;
-            salsah-gui:guiOrder 80 ;
-            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty drawings-gods:prayingAtHome ],
-        [ a owl:Restriction ;
-            salsah-gui:guiOrder 81 ;
-            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty drawings-gods:prayingAtHomeWhen ],
-        [ a owl:Restriction ;
-            salsah-gui:guiOrder 86 ;
-            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty drawings-gods:prayingWithOtherPeople ],
-        [ a owl:Restriction ;
             salsah-gui:guiOrder 87 ;
             owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
             owl:onProperty drawings-gods:prayingWithOtherPeopleHowOften ],
@@ -4167,25 +4091,13 @@ drawings-gods:QuestionnaireIndividual a owl:Class ;
             owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
             owl:onProperty drawings-gods:prayingAlone ],
         [ a owl:Restriction ;
-            salsah-gui:guiOrder 93 ;
-            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty drawings-gods:prayingAloneHowOften ],
-        [ a owl:Restriction ;
             salsah-gui:guiOrder 109 ;
             owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
             owl:onProperty drawings-gods:whereIsGod ],
         [ a owl:Restriction ;
-            salsah-gui:guiOrder 111 ;
-            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty drawings-gods:sexOfGod ],
-        [ a owl:Restriction ;
             salsah-gui:guiOrder 113 ;
             owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
             owl:onProperty drawings-gods:ageOfGod ],
-        [ a owl:Restriction ;
-            salsah-gui:guiOrder 114 ;
-            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty drawings-gods:ageOfGodOther ],
         [ a owl:Restriction ;
             salsah-gui:guiOrder 119 ;
             owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
@@ -4195,25 +4107,9 @@ drawings-gods:QuestionnaireIndividual a owl:Class ;
             owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
             owl:onProperty drawings-gods:baptized ],
         [ a owl:Restriction ;
-            salsah-gui:guiOrder 125 ;
-            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty drawings-gods:communion ],
-        [ a owl:Restriction ;
-            salsah-gui:guiOrder 135 ;
-            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty drawings-gods:otherLanguages1 ],
-        [ a owl:Restriction ;
-            salsah-gui:guiOrder 140 ;
-            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty drawings-gods:enjoyedTheActivity ],
-        [ a owl:Restriction ;
             salsah-gui:guiOrder 141 ;
             owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
             owl:onProperty drawings-gods:carriedOutTaskSeriously ],
-        [ a owl:Restriction ;
-            salsah-gui:guiOrder 142 ;
-            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty drawings-gods:selfEsteemExplicit ],
         [ a owl:Restriction ;
             salsah-gui:guiOrder 143 ;
             owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
@@ -4227,33 +4123,13 @@ drawings-gods:QuestionnaireIndividual a owl:Class ;
             owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
             owl:onProperty drawings-gods:dadsReligion ],
         [ a owl:Restriction ;
-            salsah-gui:guiOrder 130 ;
+            salsah-gui:guiOrder 140 ;
             owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty drawings-gods:momsReligion ],
+            owl:onProperty drawings-gods:enjoyedTheActivity ],
         [ a owl:Restriction ;
-            salsah-gui:guiOrder 133 ;
+            salsah-gui:guiOrder 135 ;
             owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty drawings-gods:motherTongue ],
-        [ a owl:Restriction ;
-            salsah-gui:guiOrder 136 ;
-            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty drawings-gods:otherLanguages2 ],
-        [ a owl:Restriction ;
-            salsah-gui:guiOrder 137 ;
-            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty drawings-gods:languageSpokenMostOften ],
-        [ a owl:Restriction ;
-            salsah-gui:guiOrder 14 ;
-            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty drawings-gods:enteredChurchWithWhom ],
-        [ a owl:Restriction ;
-            salsah-gui:guiOrder 13 ;
-            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty drawings-gods:enteredChurchWhy ],
-        [ a owl:Restriction ;
-            salsah-gui:guiOrder 15 ;
-            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty drawings-gods:enteredChurchLastTime ],
+            owl:onProperty drawings-gods:otherLanguages1 ],
         [ a owl:Restriction ;
             salsah-gui:guiOrder 19 ;
             owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
@@ -4263,41 +4139,21 @@ drawings-gods:QuestionnaireIndividual a owl:Class ;
             owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
             owl:onProperty drawings-gods:enteredMosqueWhy ],
         [ a owl:Restriction ;
-            salsah-gui:guiOrder 20 ;
+            salsah-gui:guiOrder 111 ;
             owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty drawings-gods:enteredMosqueLastTime ],
-        [ a owl:Restriction ;
-            salsah-gui:guiOrder 24 ;
-            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty drawings-gods:enteredBuddhistTempleWithWhom ],
-        [ a owl:Restriction ;
-            salsah-gui:guiOrder 23 ;
-            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty drawings-gods:enteredBuddhistTempleWhy ],
-        [ a owl:Restriction ;
-            salsah-gui:guiOrder 25 ;
-            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty drawings-gods:enteredBuddhistTempleLastTime ],
+            owl:onProperty drawings-gods:sexOfGod ],
         [ a owl:Restriction ;
             salsah-gui:guiOrder 33 ;
             owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
             owl:onProperty drawings-gods:enteredShintoTempleWithWhom ],
         [ a owl:Restriction ;
-            salsah-gui:guiOrder 32 ;
+            salsah-gui:guiOrder 125 ;
             owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty drawings-gods:enteredShintoTempleWhy ],
+            owl:onProperty drawings-gods:communion ],
         [ a owl:Restriction ;
-            salsah-gui:guiOrder 34 ;
+            salsah-gui:guiOrder 102 ;
             owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty drawings-gods:enteredShintoTempleLastTime ],
-        [ a owl:Restriction ;
-            salsah-gui:guiOrder 38 ;
-            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty drawings-gods:enteredHinduTempleWithWhom ],
-        [ a owl:Restriction ;
-            salsah-gui:guiOrder 37 ;
-            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty drawings-gods:enteredHinduTempleWhy ],
+            owl:onProperty drawings-gods:ifIToldYouGodCouldYouDrawMoses ],
         [ a owl:Restriction ;
             salsah-gui:guiOrder 39 ;
             owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
@@ -4307,49 +4163,21 @@ drawings-gods:QuestionnaireIndividual a owl:Class ;
             owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
             owl:onProperty drawings-gods:enteredSynagogueWithWhom ],
         [ a owl:Restriction ;
-            salsah-gui:guiOrder 42 ;
+            salsah-gui:guiOrder 53 ;
             owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty drawings-gods:enteredSynagogueWhy ],
+            owl:onProperty drawings-gods:enteredZorotempleWithWhom ],
         [ a owl:Restriction ;
             salsah-gui:guiOrder 44 ;
             owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
             owl:onProperty drawings-gods:enteredSynagogueLastTime ],
         [ a owl:Restriction ;
-            salsah-gui:guiOrder 53 ;
-            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty drawings-gods:enteredZorotempleWithWhom ],
-        [ a owl:Restriction ;
-            salsah-gui:guiOrder 52 ;
-            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty drawings-gods:enteredZorotempleWhy ],
-        [ a owl:Restriction ;
-            salsah-gui:guiOrder 54 ;
-            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty drawings-gods:enteredZorotempleLastTime ],
-        [ a owl:Restriction ;
-            salsah-gui:guiOrder 58 ;
-            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty drawings-gods:enteredTempleNotDefinedWithWhom ],
-        [ a owl:Restriction ;
             salsah-gui:guiOrder 57 ;
             owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
             owl:onProperty drawings-gods:enteredTempleNotDefinedWhy ],
         [ a owl:Restriction ;
-            salsah-gui:guiOrder 59 ;
-            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty drawings-gods:enteredTempleNotDefinedLastTime ],
-        [ a owl:Restriction ;
-            salsah-gui:guiOrder 63 ;
-            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty drawings-gods:jinjaOrOteraOccasion ],
-        [ a owl:Restriction ;
             salsah-gui:guiOrder 66 ;
             owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
             owl:onProperty drawings-gods:jinjaOrOteraWithWhom ],
-        [ a owl:Restriction ;
-            salsah-gui:guiOrder 65 ;
-            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty drawings-gods:jinjaOrOteraWhy ],
         [ a owl:Restriction ;
             salsah-gui:guiOrder 67 ;
             owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
@@ -4359,97 +4187,49 @@ drawings-gods:QuestionnaireIndividual a owl:Class ;
             owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
             owl:onProperty drawings-gods:cultObjectAtHomeFamilyMembersActions ],
         [ a owl:Restriction ;
-            salsah-gui:guiOrder 116 ;
-            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty drawings-gods:whatWordGodMeans ],
-        [ a owl:Restriction ;
-            salsah-gui:guiOrder 118 ;
-            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty drawings-gods:whoBuddhaIs ],
-        [ a owl:Restriction ;
             salsah-gui:guiOrder 108 ;
             owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
             owl:onProperty drawings-gods:ifIToldYouGodCouldYouDrawSomethingElseWho ],
         [ a owl:Restriction ;
-            salsah-gui:guiOrder 85 ;
+            salsah-gui:guiOrder 63 ;
             owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty drawings-gods:seenOtherPeoplePrayWhenOther ],
-        [ a owl:Restriction ;
-            salsah-gui:guiOrder 82 ;
-            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty drawings-gods:prayingAtHomeOtherTimes ],
-        [ a owl:Restriction ;
-            salsah-gui:guiOrder 89 ;
-            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty drawings-gods:prayingWithOtherPeopleWhen ],
+            owl:onProperty drawings-gods:jinjaOrOteraOccasion ],
         [ a owl:Restriction ;
             salsah-gui:guiOrder 90 ;
             owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
             owl:onProperty drawings-gods:prayingWithOtherPeopleLastTime ],
         [ a owl:Restriction ;
-            salsah-gui:guiOrder 88 ;
-            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty drawings-gods:prayingWithOtherPeopleHowOftenOther ],
-        [ a owl:Restriction ;
             salsah-gui:guiOrder 92 ;
             owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
             owl:onProperty drawings-gods:prayingAloneWhen ],
         [ a owl:Restriction ;
-            salsah-gui:guiOrder 95 ;
+            salsah-gui:guiOrder 88 ;
             owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty drawings-gods:prayingAloneLastTime ],
-        [ a owl:Restriction ;
-            salsah-gui:guiOrder 94 ;
-            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty drawings-gods:prayingAloneHowOftenOther ],
+            owl:onProperty drawings-gods:prayingWithOtherPeopleHowOftenOther ],
         [ a owl:Restriction ;
             salsah-gui:guiOrder 110 ;
             owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
             owl:onProperty drawings-gods:whereIsGodOther ],
         [ a owl:Restriction ;
-            salsah-gui:guiOrder 112 ;
-            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty drawings-gods:sexOfGodOther ],
-        [ a owl:Restriction ;
             salsah-gui:guiOrder 120 ;
             owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
             owl:onProperty drawings-gods:alreadyDrawnGodInThePastWhen ],
-        [ a owl:Restriction ;
-            salsah-gui:guiOrder 122 ;
-            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty drawings-gods:alreadyDrawnGodInThePastLastTime ],
-        [ a owl:Restriction ;
-            salsah-gui:guiOrder 121 ;
-            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty drawings-gods:alreadyDrawnGodInThePastWhat ],
         [ a owl:Restriction ;
             salsah-gui:guiOrder 124 ;
             owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
             owl:onProperty drawings-gods:baptizedWhen ],
         [ a owl:Restriction ;
-            salsah-gui:guiOrder 126 ;
+            salsah-gui:guiOrder 121 ;
             owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty drawings-gods:communionWhen ],
-        [ a owl:Restriction ;
-            salsah-gui:guiOrder 127 ;
-            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty drawings-gods:cathechismWhen ],
+            owl:onProperty drawings-gods:alreadyDrawnGodInThePastWhat ],
         [ a owl:Restriction ;
             salsah-gui:guiOrder 129 ;
             owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
             owl:onProperty drawings-gods:otherDadsReligion ],
         [ a owl:Restriction ;
-            salsah-gui:guiOrder 131 ;
+            salsah-gui:guiOrder 95 ;
             owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty drawings-gods:otherMomsReligion ],
-        [ a owl:Restriction ;
-            salsah-gui:guiOrder 132 ;
-            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty drawings-gods:placeOfBirth ],
-        [ a owl:Restriction ;
-            salsah-gui:guiOrder 134 ;
-            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty drawings-gods:otherMotherTongue ],
+            owl:onProperty drawings-gods:prayingAloneLastTime ],
         [ a owl:Restriction ;
             salsah-gui:guiOrder 138 ;
             owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
@@ -4459,7 +4239,199 @@ drawings-gods:QuestionnaireIndividual a owl:Class ;
             owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
             owl:onProperty drawings-gods:yearsLivingInSwitzerland ],
         [ a owl:Restriction ;
+            salsah-gui:guiOrder 132 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:placeOfBirth ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 85 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:seenOtherPeoplePrayWhenOther ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 118 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:whoBuddhaIs ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 54 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:enteredZorotempleLastTime ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 82 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:prayingAtHomeOtherTimes ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 42 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:enteredSynagogueWhy ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 116 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:whatWordGodMeans ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 130 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:momsReligion ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 52 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:enteredZorotempleWhy ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 59 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:enteredTempleNotDefinedLastTime ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 126 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:communionWhen ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 105 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:ifIToldYouGodCouldYouDrawBuddha ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 15 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:enteredChurchLastTime ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 93 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:prayingAloneHowOften ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 58 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:enteredTempleNotDefinedWithWhom ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 127 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:cathechismWhen ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 131 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:otherMomsReligion ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 32 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:enteredShintoTempleWhy ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 13 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:enteredChurchWhy ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 61 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:jinjaOrOteraNewYearsEve ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 24 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:enteredBuddhistTempleWithWhom ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 134 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:otherMotherTongue ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 107 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:ifIToldYouGodCouldYouDrawSomethingElse ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 23 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:enteredBuddhistTempleWhy ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 122 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:alreadyDrawnGodInThePastLastTime ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 137 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:languageSpokenMostOften ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 142 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:selfEsteemExplicit ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 89 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:prayingWithOtherPeopleWhen ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 34 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:enteredShintoTempleLastTime ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 14 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:enteredChurchWithWhom ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 133 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:motherTongue ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 37 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:enteredHinduTempleWhy ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 20 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:enteredMosqueLastTime ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 60 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:visitOnNewYearsEve ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 25 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:enteredBuddhistTempleLastTime ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 71 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:cultObjectAtHomePresenceWhich ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 114 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:ageOfGodOther ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 136 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:otherLanguages2 ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 65 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:jinjaOrOteraWhy ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 86 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:prayingWithOtherPeople ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 112 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:sexOfGodOther ],
+        [ a owl:Restriction ;
             owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
             owl:onProperty drawings-gods:hasQuestionnaireUnavailable ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 115 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:knowWhatWordGodMeans ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 81 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:prayingAtHomeWhen ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 94 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:prayingAloneHowOftenOther ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 56 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:enteredTempleNotDefinedHowOften ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 38 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:enteredHinduTempleWithWhom ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 101 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:ifIToldYouGodCouldYouDrawMary ],
+        [ a owl:Restriction ;
+            salsah-gui:guiOrder 80 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:prayingAtHome ],
         knora-base:Resource .
 
