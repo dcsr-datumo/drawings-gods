@@ -3892,6 +3892,7 @@ drawings-gods:Drawing a owl:Class ;
             owl:minCardinality "0"^^xsd:nonNegativeInteger ;
             owl:onProperty drawings-gods:hasCollectionContext ],
         [ a owl:Restriction ;
+            salsah-gui:guiOrder 6 ;
             owl:minCardinality "0"^^xsd:nonNegativeInteger ;
             owl:onProperty drawings-gods:hasCollectionContextValue ],
         [ a owl:Restriction ;
@@ -4407,9 +4408,6 @@ drawings-gods:QuestionnaireIndividual a owl:Class ;
             salsah-gui:guiOrder 112 ;
             owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
             owl:onProperty drawings-gods:sexOfGodOther ],
-        [ a owl:Restriction ;
-            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty drawings-gods:hasQuestionnaireUnavailable ],
         [ a owl:Restriction ;
             salsah-gui:guiOrder 115 ;
             owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
