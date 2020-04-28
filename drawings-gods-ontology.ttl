@@ -3973,6 +3973,10 @@ drawings-gods:QuestionnaireIndividual a owl:Class ;
     rdfs:label "Individual questionnaire"@en,
         "Questionnaire individuel"@fr ;
     rdfs:subClassOf [ a owl:Restriction ;
+            salsah-gui:guiOrder 0 ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty drawings-gods:hasQuestionnaireUnavailable ],
+        [ a owl:Restriction ;
             salsah-gui:guiOrder 200 ;
             owl:minCardinality "0"^^xsd:nonNegativeInteger ;
             owl:onProperty drawings-gods:hasQuestionnaireIndividualComment ],
